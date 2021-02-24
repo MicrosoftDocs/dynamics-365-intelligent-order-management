@@ -17,4 +17,4 @@ title: Blogs and communities
 
 [!include [banner](includes/banner.md)]
 
-This page provides a list of the videos available for Intelligent Order Management features.   
+This page provides a list of the videos available for Dynamics 365 Intelligent Order Management features.   
