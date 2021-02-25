@@ -22,8 +22,7 @@ Welcome to Dynamics 365 Intelligent Order Management. We're delighted to offer y
 - [Free trial](https://dynamics.microsoft.com/operations-management/)
 
 ## Blogs and communities
-- [Intelligent Order Management Community](https://community.dynamics.com/365/dynamics-365-intelligent-order-management)
 - [Intelligent Order Management Blog](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/b/dynamics-365-intelligent-order-management-blog)
+- [Intelligent Order Management Community](https://community.dynamics.com/365/dynamics-365-intelligent-order-management)
 - [Intelligent Order Management Forum](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/f/dynamics-365-intelligent-order-management-forum)
-
-
+- 
