@@ -2,14 +2,14 @@
 author: josaw1
 description: This page provides a list of the help topics and other resources for Intelligent Order Management features.   
 ms.author: josaw
-ms.service: 
+ms.service: dynamics-365-intelligent-order-management
 ms.date: 03/01/2021
 ms.topic: conceptual
 search.app: 
   - 
 search.audienceType:
   - 
-title:  Intelligent Order Management home page
+title: Intelligent Order Management home page
 ---
 
 # Intelligent Order Management home page
@@ -22,9 +22,8 @@ Welcome to Dynamics 365 Intelligent Order Management. We're delighted to offer y
 - [Free trial](https://dynamics.microsoft.com/operations-management/)
 
 ## Blogs and communities
-- xyz
-- xyz
+- [Intelligent Order Management Community](https://community.dynamics.com/365/dynamics-365-intelligent-order-management)
+- [Intelligent Order Management Blog](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/b/dynamics-365-intelligent-order-management-blog)
+- [Intelligent Order Management Forum](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/f/dynamics-365-intelligent-order-management-forum)
 
-## Videos
-- video1
-- video2
+
