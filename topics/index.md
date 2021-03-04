@@ -7,7 +7,7 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 search.app: 
   - 
-search.audienceType:
+search.audienceType: EndUser
   - 
 title: Intelligent Order Management home page
 ---
