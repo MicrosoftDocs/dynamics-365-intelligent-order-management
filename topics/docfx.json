@@ -41,7 +41,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/dynamics365/order-management/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "recommendations": "true"
     },
     "fileMetadata": {},
     "template": [],
