@@ -5,10 +5,7 @@ ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: how-to
 ms.author: josaw
-search.app: 
-  - 
-search.audienceType: 
-  - 
+
 title: Set up BigCommerce provider
 
 ---
@@ -22,11 +19,11 @@ This topic provides instructions for how to set up the BigCommerce provider in D
 
 BigCommerce is a flexible, open SaaS platform. You can connect to BigCommerce to retrieve orders, products, and related information. The BigCommerce provider enables Intelligent Order Management to access and process purchase orders from BigCommerce.  
   
-For more information about BigCommerce, visit \[their website\](https://www.bigcommerce.com/). To learn more about BigCommerce's API, read their \[public documentation\](https://developer.bigcommerce.com/api-docs).
+For more information about BigCommerce, visit [their website](https://www.bigcommerce.com/). To learn more about BigCommerce's API, read their [public documentation](https://developer.bigcommerce.com/api-docs).
 
 ## Prerequisites 
 
-To set up the BigCommerce provider, you need to have a BigCommerce developer account. You can create an account on \[this page\](https://developer.bigcommerce.com/).
+To set up the BigCommerce provider, you need to have a BigCommerce developer account. You can create an account on [this page](https://developer.bigcommerce.com/).
 
 ## Set up the provider
 
@@ -38,27 +35,19 @@ To set up the BigCommerce provider, you need to have a BigCommerce developer acc
 
 4.  There are two connections that you need to set up in the **Connections** section.
 
-    1.  BigCommerce Common Data Service Connection&lt;I don't see a connector in power automate for this. How do I set it up?&gt;
+    1. BigCommerce Common Data Service Connection <I don't see a connector in power automate for this. How do I set it up?>;
 
-    2.  BigCommerce connection:
+    2. BigCommerce connection:
+          1. Select the connection.
+          1. Select the **Retrieve Connection Link** URL.
+          1. Search for **BigCommerce** and then select the connector.
+          1. Enter the following information: **Connection Name**: enter a name of your choice;**API Key**: enter the BigCommerce API key. You can retrieve it by following the instructions here: https://<your store hash code>.mybigcommerce.com/manage/settings/auth/api-accounts.
+          1. Save the connection.
+          1. Test the connection to ensure that it is established by selecting **Test** in the top ribbon.
+          1. Copy your URL.
+         1. Go back the **Connection URL** page in Intelligent Order Management and paste the URL.
 
-        1.  Select the connection.
-
-        2.  Select the **Retrieve Connection Link** URL.
-
-        3.  Search for **BigCommerce** and then select the connector.
-
-        4.  Enter the following information: **Connection Name**: enter a name of your choice;**API Key**: enter the BigCommerce API key. You can retrieve it by following the instructions here: https://&lt;your store hash code&gt;.mybigcommerce.com/manage/settings/auth/api-accounts
-
-        5.  Save the connection.
-
-        6.  Test the connection to ensure that it is established by selecting **Test** in the top ribbon.
-
-        7.  Copy your URL.
-
-        8.  Go back the **Connection URL** page in Intelligent Order Management and paste the URL.
-
-5.  Go to the **Parameters** tab and add the BigCommerce store hash&lt;where do you find this information?&gt;
+5. Go to the **Parameters** tab and add the BigCommerce store hash&lt;where do you find this information?&gt;
 
 ## Out of box capabilities
 
