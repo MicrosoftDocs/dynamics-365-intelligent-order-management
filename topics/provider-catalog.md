@@ -4,9 +4,10 @@ description: This page provides a list of he providers that are available in Dyn
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
+ms.author: josaw
 search.app: 
   - 
-search.audienceType:
+search.audienceType: 
   - 
 title: Provider catalog
 
@@ -28,4 +29,4 @@ This page contains a list of all the providers that are available in Dynamics 36
 | BigCommerce                             | Provides a communication channel to retrieve orders, products, and related information from BigCommerce.                             | [Ecommerce for a New Era \| BigCommerce](https://www.bigcommerce.com/)                          | [Terms of Service \| BigCommerce](https://www.bigcommerce.com/terms/)                                                   |
 | Inventory Visibility Service            | Enables you to use inventory visibility capabilities in Intelligent Order Management.                                                | **N/A**                                                                                         | [Microsoft Terms of Use \| Intellectual Property](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright) |
 | Fulfillment Optimization Service        | Enables you to use fulfilment optimization capabilities in Intelligent Order Management.                                             | **N/A**                                                                                         | [Microsoft Terms of Use \| Intellectual Property](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright) |
-| Finance & Operation Apps (Dynamics 365) | Provides a communication channel to retrieve orders, products, and related information from Dynamics 365 Finance and Operations apps | [Business Applications \| Microsoft Dynamics 365](https://dynamics.microsoft.com/en-us/)        | [Microsoft Terms of Use \| Intellectual Property](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright) |
+| Finance & Operation Apps (Dynamics 365) | Provides a communication channel to retrieve orders, products, and related information from Dynamics 365 Finance and Operations apps. | [Business Applications \| Microsoft Dynamics 365](https://dynamics.microsoft.com/en-us/)        | [Microsoft Terms of Use \| Intellectual Property](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright) |
