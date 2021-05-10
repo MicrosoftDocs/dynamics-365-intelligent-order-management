@@ -1,4 +1,4 @@
---
+---
 author: josaw1
 description: This topic provides instructions for how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
