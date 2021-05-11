@@ -38,14 +38,22 @@ To set up the BigCommerce provider, you need to have a BigCommerce developer acc
     1. BigCommerce Common Data Service Connection <I don't see a connector in power automate for this. How do I set it up?>;
 
     2. BigCommerce connection:
+ 
           1. Select the connection.
-          1. Select the **Retrieve Connection Link** URL.
-          1. Search for **BigCommerce** and then select the connector.
-          1. Enter the following information: **Connection Name**: enter a name of your choice;**API Key**: enter the BigCommerce API key. You can retrieve it by following the instructions here: https://<your store hash code>.mybigcommerce.com/manage/settings/auth/api-accounts.
-          1. Save the connection.
-          1. Test the connection by selecting **Test** in the top ribbon.
-          1. Copy your URL.
-          1. Go back the **Connection URL** page in Intelligent Order Management and paste the URL.
+
+          3. Select the **Retrieve Connection Link** URL.
+
+          5. Search for **BigCommerce** and then select the connector.
+
+          7. Enter the following information: **Connection Name**: enter a name of your choice;**API Key**: enter the BigCommerce API key. You can retrieve it by following the instructions here: https://<your store hash code>.mybigcommerce.com/manage/settings/auth/api-accounts.
+
+          9. Save the connection.
+
+          11. Test the connection by selecting **Test** in the top ribbon.
+
+          13. Copy your URL.
+
+          15. Go back the **Connection URL** page in Intelligent Order Management and paste the URL.
 
 5. Go to the **Parameters** tab and add the BigCommerce store hash <where do you find this information?>
 
