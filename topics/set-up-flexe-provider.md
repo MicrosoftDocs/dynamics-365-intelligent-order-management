@@ -23,7 +23,7 @@ For more information about Flexe, visit [their website](https://www.flexe.com/wh
 
 ## Prerequisites 
 
-To setup the Flexe provider, you need to have Flexe developer account. You can create an account on [this page](https://developer-sandbox.flexe.com).
+To set up the Flexe provider, you need to have Flexe developer account. You can create an account on [this page](https://developer-sandbox.flexe.com).
 
 ## Set up the provider
 
@@ -49,7 +49,7 @@ To setup the Flexe provider, you need to have Flexe developer account. You can c
 
         1. Save the connection.
 
-        1. Test the connection to ensure that it is established by selecting **Test** in the top ribbon.
+        1. Test the connection by selecting **Test** in the top ribbon.
 
         1. Copy your URL.
 
