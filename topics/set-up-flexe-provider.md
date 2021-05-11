@@ -19,7 +19,7 @@ This topic provides instructions for how to set up the Flexe provider in Dynamic
 
 Flexe is warehousing and fulfillment service that provides simple integrations, performance insights, and scalability. The Flexe provider enables Intelligent Order Management to access and process purchase orders from Flexe.  
   
-For more information about Flexe, visit [their website](https://www.flexe.com/why-flexe/technology-platform). To learn more about Flexe's API, read their \[public documentation\](https://developer-sandbox.flexe.com/doc/public)..
+For more information about Flexe, visit [their website](https://www.flexe.com/why-flexe/technology-platform). To learn more about Flexe's API, read their [public documentation](https://developer-sandbox.flexe.com/doc/public).
 
 ## Prerequisites 
 
@@ -27,7 +27,7 @@ To setup the Flexe provider, you need to have Flexe developer account. You can c
 
 ## Set up the provider
 
-1. In Intelligent Order Management, go to **Providers &gt; Catalog**.
+1. In Intelligent Order Management, go to **Providers > Catalog**.
 
 2. Select **Add Provider** on the **Flexe** tile.
 
