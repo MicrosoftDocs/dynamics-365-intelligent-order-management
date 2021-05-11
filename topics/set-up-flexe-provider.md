@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides instructions for how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
+description: This topic provides information about how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: how-to
@@ -15,17 +15,19 @@ title: Set up Flexe provider
 [!include [banner](includes/banner.md)]
 
 
-This topic provides instructions for how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
+This topic provides information about how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
 
 Flexe is warehousing and fulfillment service that provides simple integrations, performance insights, and scalability. The Flexe provider enables Intelligent Order Management to access and process purchase orders from Flexe.  
   
-For more information about Flexe, visit [their website](https://www.flexe.com/why-flexe/technology-platform). To learn more about Flexe's API, read their [public documentation](https://developer-sandbox.flexe.com/doc/public).
+For more information about Flexe, see the [Flexe website](https://www.flexe.com/why-flexe/technology-platform). To learn more about Flexe's API, see the [Flexe API documentation](https://developer-sandbox.flexe.com/doc/public).
 
 ## Prerequisites 
 
-To set up the Flexe provider, you need to have Flexe developer account. You can create an account on [this page](https://developer-sandbox.flexe.com).
+To set up the Flexe provider, you need to have Flexe developer account. You can create an account on the [Flexe developer portal](https://developer-sandbox.flexe.com).
+
 
 ## Set up the provider
+To set up the provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers > Catalog**.
 
@@ -45,7 +47,9 @@ To set up the Flexe provider, you need to have Flexe developer account. You can 
 
         1. Search for **Flexe** and then select the connector.
 
-        1. Enter the following information: **Connection Name**: enter a name of your choice; **API Key**: enter the Flexe API key. You can retrieve it by following the instructions [here](https://developer-sandbox.flexe.com/tokens).
+        1. Enter the following information: 
+            - **Connection Name**: Enter a name of your choice.
+            - **API Key**: Enter the Flexe API key. You can retrieve it by following the instructions [here](https://developer-sandbox.flexe.com/tokens).
 
         1. Save the connection.
 
@@ -53,28 +57,28 @@ To set up the Flexe provider, you need to have Flexe developer account. You can 
 
         1. Copy your URL.
 
-        1. Go back the **Connection URL** page in Intelligent Order Management and paste the URL.
+        1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
 
 5.  Go to the **Parameters** tab and add the **Owner Id** and **Webhook Name**. <where do I find this information?>
 
-##  Out of box capabilities
+##  Out-of-box capabilities
 
 The Flexe provider has the following capabilities.
 
 Business Events:
 
--   Billing of order confirmed by billing provider: event that indicates that billing was confirmed by Flexe
+-   Billing of order confirmed by billing provider: Event that indicates that billing was confirmed by Flexe.
 
--   Creation of fulfillment line succeeded: event that indicates that a fulfillment line was successfully created.
+-   Creation of fulfillment line succeeded: Event that indicates that a fulfillment line was successfully created.
 
--   Creation of fulfillment order failed: event that indicates that fulfillment of the order failed.
+-   Creation of fulfillment order failed: Event that indicates that fulfillment of the order failed.
 
--   Creation of fulfillment order succeeded: event that indicates that fulfillment of the order succeeded.
+-   Creation of fulfillment order succeeded: Event that indicates that fulfillment of the order succeeded.
 
 Actions: <I don't see any actions in the current environment, is this correct?>
 
 -   Transformation:
 
-    -   Microsoft Dataverse fulfillment line to Flexe order line: transforms a fulfillment order line from Intelligent Order Management to a Flexe order line.
+    -   Microsoft Dataverse fulfillment line to Flexe order line: Transforms a fulfillment order line from Intelligent Order Management to a Flexe order line.
 
-    -   Dataverse fulfillment order to Flexe order: transforms a fulfillment order from Intelligent Order Management to a Flexe order.
+    -   Dataverse fulfillment order to Flexe order: Transforms a fulfillment order from Intelligent Order Management to a Flexe order.
