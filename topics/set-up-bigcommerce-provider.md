@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides instructions for how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
+description: This topic provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: how-to
@@ -15,17 +15,18 @@ title: Set up BigCommerce provider
 [!include [banner](includes/banner.md)]
 
 
-This topic provides instructions for how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
+This topic provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 
 BigCommerce is a flexible, open SaaS platform. You can connect to BigCommerce to retrieve orders, products, and related information. The BigCommerce provider enables Intelligent Order Management to access and process purchase orders from BigCommerce.  
   
-For more information about BigCommerce, visit [their website](https://www.bigcommerce.com/). To learn more about BigCommerce's API, read their [public documentation](https://developer.bigcommerce.com/api-docs).
+For more information about BigCommerce, see the [BigCommerce website](https://www.bigcommerce.com/). To learn more about BigCommerce's API, see the [BigCommerce API documentation](https://developer.bigcommerce.com/api-docs).
 
 ## Prerequisites 
 
-To set up the BigCommerce provider, you need to have a BigCommerce developer account. You can create an account on [this page](https://developer.bigcommerce.com/).
+To set up the BigCommerce provider, you need to have a BigCommerce developer account. You can create an account on the [BigCommerce DevCenter](https://developer.bigcommerce.com/).
 
 ## Set up the provider
+To set up the provider, follow these steps: 
 
 1.  In Intelligent Order Management, go to **Providers > Catalog**.
 
@@ -35,7 +36,7 @@ To set up the BigCommerce provider, you need to have a BigCommerce developer acc
 
 4.  There are two connections that you need to set up in the **Connections** section.
 
-    1. BigCommerce Common Data Service Connection <I don't see a connector in power automate for this. How do I set it up?>;
+    1. BigCommerce Common Data Service Connection <I don't see a connector in power automate for this. How do I set it up? Also, we no longer use Common Data Service, it's Dataverse.>;
 
     2. BigCommerce connection:
  
@@ -45,7 +46,9 @@ To set up the BigCommerce provider, you need to have a BigCommerce developer acc
 
           5. Search for **BigCommerce** and then select the connector.
 
-          7. Enter the following information: **Connection Name**: enter a name of your choice;**API Key**: enter the BigCommerce API key. You can retrieve it by following the instructions here: https://<your store hash code>.mybigcommerce.com/manage/settings/auth/api-accounts.
+          7. Enter the following information: 
+              - **Connection Name**: Enter a name of your choice.
+              - **API Key**: Enter the BigCommerce API key. You can retrieve it by following the instructions here: https://<your store hash code>.mybigcommerce.com/manage/settings/auth/api-accounts
 
           9. Save the connection.
 
@@ -53,25 +56,25 @@ To set up the BigCommerce provider, you need to have a BigCommerce developer acc
 
           13. Copy your URL.
 
-          15. Go back the **Connection URL** page in Intelligent Order Management and paste the URL.
+          15. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
 
 5. Go to the **Parameters** tab and add the BigCommerce store hash <where do you find this information?>
 
-## Out of box capabilities
+## Out-of-box capabilities
 
 The BigCommerce provider has the following capabilities:
 
-Business Events:
+Business events:
 
--   Billing of order confirmed by billing provider: event that indicates that billing was confirmed by BigCommerce
+-   Billing of order confirmed by billing provider: Event that indicates that billing was confirmed by BigCommerce.
 
--   Creation of fulfillment line succeeded: event that indicates that a fulfillment line was successfully created.
+-   Creation of fulfillment line succeeded: Event that indicates that a fulfillment line was successfully created.
 
--   Creation of fulfillment order failed: event that indicates that fulfillment of the order failed.
+-   Creation of fulfillment order failed: Event that indicates that fulfillment of the order failed.
 
--   Creation of fulfillment order succeeded: event that indicates that fulfillment of the order succeeded.
+-   Creation of fulfillment order succeeded: Event that indicates that fulfillment of the order succeeded.
 
 
 Transformation:
 
--   BigCommerce sales order to Microsoft Dataverse sales order: transforms a purchase order from BigCommerce into a sales order in Dataverse.
+-   BigCommerce sales order to Microsoft Dataverse sales order: Transforms a purchase order from BigCommerce into a sales order in Dataverse.
