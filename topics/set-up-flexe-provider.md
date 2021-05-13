@@ -37,9 +37,9 @@ To set up the provider, follow these steps:
 
 4. There are two connections that you need to set up in the **Connections** section.
 
-    1. Flexe Common Data Service connection <I don't see a connector in power automate for this. How do I set it up?>
+    1. Flexe Common Data Service connection.
 
-    1. Flexe connection:
+    3. Flexe connection:
 
         1. Select the connection.
 
@@ -59,7 +59,7 @@ To set up the provider, follow these steps:
 
         1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
 
-5.  Go to the **Parameters** tab and add the **Owner Id** and **Webhook Name**. <where do I find this information?>
+5.  Go to the **Parameters** tab and add the **Owner ID** and **Webhook Name**.
 
 ##  Out-of-box capabilities
 
@@ -75,7 +75,7 @@ Business Events:
 
 -   Creation of fulfillment order succeeded: Event that indicates that fulfillment of the order succeeded.
 
-Actions: <I don't see any actions in the current environment, is this correct?>
+Actions:
 
 -   Transformation:
 
