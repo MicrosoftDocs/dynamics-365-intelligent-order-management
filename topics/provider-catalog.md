@@ -13,7 +13,7 @@ title: Provider catalog
 # Provider catalog
 
 [!include [banner](includes/banner.md)]
-
+[!include [banner](includes/preview-banner.md)]
 
 This topic contains a list of all the providers that are available in Dynamics 365 Intelligent Order Management. You can select a provider to get more detailed information about the provider.
 
