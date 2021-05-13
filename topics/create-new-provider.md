@@ -274,7 +274,7 @@ If the business event that you want to create isn't already in Intelligent Order
 
 If your provider needs a connector that isn't available in Power Automate, you need to create your own Connector. For more information, see [List of all Power Automate connectors](https://docs.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerautomate-connectors).
 
-To create your own Power Automate connector, follow the steps in [<u>Custom connectors overview</u>](https://docs.microsoft.com/en-us/connectors/custom-connectors/).
+To create your own Power Automate connector, follow the steps in [Custom connectors overview](https://docs.microsoft.com/en-us/connectors/custom-connectors/).
 
 After you create your custom connector, add it to your provider solution as a component.
 
@@ -286,7 +286,7 @@ After you create your custom connector, add it to your provider solution as a co
 
 ## Types of Power Automate flows
 
-Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate.](https://docs.microsoft.com/en-us/learn/modules/introduction-power-automate/)
+Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](https://docs.microsoft.com/en-us/learn/modules/introduction-power-automate/).
 
 Add your flows as **Provider Definition Logic Definition** components to your provider.
 
@@ -297,7 +297,7 @@ These flows receive and process messages from an external service and raise the 
 
 The following is an example structure for creating a message handler type of Power Automate flow.
 
-1.  Define a Power Automate trigger. This is typically an HTTP endpoint that is a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger is raised when an external service has data to send to Intelligent Order Management.![Screenshot of trigger for when an HTTP request is received ](media/image1.png)
+1.  Define a Power Automate trigger. This is typically an HTTP endpoint that is a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger is raised when an external service has data to send to Intelligent Order Management.![Screenshot of trigger for when an HTTP request is received](media/trigger.png)
 
 2.  Initialize the message processing. There are two steps involved in this task.
 
@@ -311,7 +311,7 @@ The following is an example structure for creating a message handler type of Pow
 
         3. **ProviderMessageExternalRequestId**: An identifier for the message sent. If no identifier is present, a GUID can be generated. This identifier is used by the pipeline to help prevent the sender from sending duplicate messages. The identifier is dependent on the source payload. For example: concat(triggerOutputs()?\['body'\]?\['type'\]?\['name'\], '\_', triggerOutputs()?\['body'\]?\['id'\]).
 
-![Screenshot of Acknowledge provider message request screen ](media/image2.png)
+![Screenshot of Acknowledge provider message request screen](media/acknowledge.png)
 
 3.  The provider transformation you defined earlier will retrieve the input data and transform it. Intelligent Order Management provides an out-of-box child-flow called **IOM Provider Transformer** that will execute the transformation. Add the following details to process the event or message:
 
@@ -324,10 +324,10 @@ The following is an example structure for creating a message handler type of Pow
     4. **Payload**: Provided when transforming a JSON payload. Power Automate requires the parameters to be passed as a serialized string. Supply a **Payload** or a **Record ID** value, not both.
 
     5. **Record ID**: Provided when transforming a Dataverse record. Supply a **Payload** or a **Record ID** value, not both.  
-        ![Screenshot for transform message with Power Query Online ](media/image3.png)
+        ![Screenshot for transform message with Power Query Online](media/transform.png)
 
 4.  You can insert data into Dataverse by using HTTP requests or the Dataverse connector **Insert** action. If you're doing more than one insert and want to improve performance, wrap the inserts into a change set so that the requests are in a transaction batch.  
-    ![Screenshot of insert messages flow ](media/image4.png)
+    ![Screenshot of insert messages flow](media/InsertImages.png)
 
 5.  If you want your flow to raise a business event, you can use the **Raise Business Event** child flow. Add the following details.
 
@@ -356,7 +356,7 @@ The following is an example structure for creating a message puller type of Powe
     1. **Action name**: Name for the checkpoint.
 
     2. **WorkflowId**: Set the following compose function to retrieve this information: workflow()\['tags'\]\['xrmWorkflowId'\].  
-        ![screenshot of Get checkpoint ](media/image5.png)
+        ![screenshot of Get checkpoint](media/GetCheckpoint.png)
 
 3.  Create an HTTP post request to an external provider to pull the messages. Add the following details.
 
@@ -365,14 +365,14 @@ The following is an example structure for creating a message puller type of Powe
     2. **URL**: The external provider endpoint.
 
     3. **Body**: The JSON request should have the following formula: if(empty(outputs('Get\_Checkpoint')?\['body/Checkpoint'\]), 0, int(outputs('Get\_Checkpoint')?\['body/Checkpoint'\])).  
-        ![Screenshot for Pull messages ](media/image6.png)
+        ![Screenshot for Pull messages](media/pull.png)
 
 4.  Parse the messages pulled in step 3. Add the following details.
 
     1. **Content**: The body retrieved from step 3.
 
     2. **Schema**: The structure of the body retrieved in step 3.  
-        ![Screenshot for Parse messages ](media/image7.png)
+        ![Screenshot for Parse messages](media/parse.png)
 
 5.  Process messages to loop through each message from step 4.
 
@@ -381,21 +381,21 @@ The following is an example structure for creating a message puller type of Powe
     1. **Content**: Current item from **Process Messages**.
 
     2. **Schema**: A single message in JSON format.  
-        ![Screenshot for Process messages 2 ](media/image8.png)
+        ![Screenshot for Process messages 2](media/process2.png)
 
 7.  Call the associated provider message handler that you set up in the prerequisites. Add the following information.
 
     1. **Child flow**: Select your provider message handler.
 
     2. **Message**: The message parsed from step 6.  
-        ![Screenshot for Process messages 3 ](media/image9.png)
+        ![Screenshot for Process messages 3](media/process3.png)
 
 8.  Save the checkpoint to Dataverse. Add the following information.
 
     1. **Checkpoint**: This can be any string value (max 100). In this example, this is the ID of the last processed message.
 
     2. **WorkFlowId**: You can retrieve this ID by adding a compose function set to workflow()\['tags'\]\['xrmWorkflowId'\].  
-        ![Screenshot for Process messages 4 ](media/image10.png)
+        ![Screenshot for Process messages 4](media/process4.png)
 
 Provider action  
 Provider action flows are invoked from the orchestration designer. These flows typically make calls from Intelligent Order Management to external services.
@@ -433,7 +433,7 @@ The following is an example structure for a provider action Power Automate flow.
         4. **Payload**: Provided when transforming an inbound JSON payload. Power Automate requires the parameters to be passed as a serialized string. Add a **Payload** or a **Record ID** value, but not both.
 
         5. **Record ID**: Provided when transforming an outbound Dataverse record. Add a **Payload** or a **Record ID** value, but not both.  
-            ![Screenshot for transform message with Power Query Online ](media/image3.png)
+            ![Screenshot for transform message with Power Query Online](media/transform.png)
 
     2.  Execute any custom actions you've defined. These are actions that are present on the Power Automate connector you're using.
 
@@ -450,9 +450,9 @@ The following is an example structure for a provider action Power Automate flow.
     2. **ExecutionDetails**: Optional log details for testing and debugging purposes.
 
     3. **ProviderActionExecutionEventId**: This value was passed into the action as an input parameter that was defined in step 1.  
-        ![Screenshot of Complete provier action exection ](media/image11.png)
+        ![Screenshot of Complete provider action exection ](media/CompleteAction.png)
 
-Child flow  
+### Child flow  
 A child flow is a sub-flow that is referenced in other Power Automate flows. It's helpful to define a child flow if there are some steps that you repeat across multiple areas. There isn't a specific template or recommended process for child flows, as they're primarily meant to be used for the convenience of consolidating similar steps.  
   
 Provider child flows can't call other provider child flows.
@@ -481,7 +481,7 @@ You must have the following prerequisites before you can save your flows.
 
     -   Set up an Azure account with an active subscription. If you don't have an active account, you need to set up an account on the [Azure website](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-    -   PowerShell must be installed. For more information, see [Installing PowerShell.](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.1)
+    -   PowerShell must be installed. For more information, see [Installing PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.1).
 
     -   Enter the following command in PowerShell to get an access token: az login --allow-no-subscriptions account get-access-token --resource=https://YourDataverseTenantURL.api.crm.dynamics.com/ --query=accessToken --output=tsv \| Set-Clipboard.
 
@@ -492,19 +492,19 @@ To save your Power Automate definition, do the following.
     1.  Find the workflow ID by using a Power Automate action.
 
         1.  Create a compose action with the workflow() expression at the end of your Power Automate flow.  
-            ![Screenshot of Compose action ](media/image12.png)
+            ![Screenshot of Compose action](media/compose.png)
 
         2.  Run Power Automate.
 
         3.  The **xrmWorkflowId** property from the execution results will contain the workflow ID.  
-            ![Screenshot of workflow ID ](media/image13.png)
+            ![Screenshot of workflow ID](media/workflowID.png)
 
         4.  Delete this action from the flow so that it does not run again.
 
     2.  Optionally, you can issue a Get OData request.
 
         1.  Go to the flow that you want to save the workflow ID for. Find the unique identifier in the URL. This is the ID that appears after ../flows/ in the URL.  
-            ![How to find unique identifier ](media/image14.png)
+            ![How to find unique identifier](media/uniqueID.png)
 
         2.  Issue an OData request to retrieve the workflow metadata. The following is an example GET request.  
             GET {Env url}/api/data/v9.1/workflows?$filter=workflowidunique eq '{Unique Workflow Id from the Power Automate U}'&$select=workflowid,workflowidunique
@@ -516,7 +516,7 @@ To save your Power Automate definition, do the following.
     1.  Select the provider definition that you want to save the flow to.
 
     2.  Copy the provider definition ID from the URL. This is the part of the URL ../id={example number}/.  
-        ![How to find the provider definition ID ](media/image15.png)
+        ![How to find the provider definition ID](media/definitionID.png)
 
 3.  Make a note of the option set value for the type of Power Automate that you are saving.
 
@@ -529,6 +529,8 @@ To save your Power Automate definition, do the following.
     4. **Provider message puller**: 192350003
 
 4.  Issue a POST request to save your Power Automate definition. The following is an example request.  
+
+```powerquery-m
     POST: {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionLogicDefinition  
     Body:  
     {
@@ -546,7 +548,8 @@ To save your Power Automate definition, do the following.
 "TimeoutMinutes": {Timeout number ex: 5}
 
 }
-
+``
+   
 5.  Validate that your Provider Definition Logic Definition component was added. To do this, follow these steps:
 
     1.  Go to your provider solution.
@@ -558,8 +561,11 @@ To save your Power Automate definition, do the following.
 If your provider uses customer Power Automate connectors, you must complete the following steps to save connection references to your Power Automate solution.
 
 1.  Issue a GET request to retrieve your connection reference ID. For example:  
-    GET {Env url}/api/data/v9.2/connectionreferences. If you want to filter it further, you can filter by connection reference name. For example:  
+
+```powerquery-m
+GET {Env url}/api/data/v9.2/connectionreferences. If you want to filter it further, you can filter by connection reference name. For example:  
     {Env url}/api/data/v9.2/connectionreferences?$[connectionreferences?$filter=connectionreferencedisplayname](https://orgdb90e3a2.api.crm10.dynamics.com/api/data/v9.2/connectionreferences?$filter=connectionreferencedisplayname) eq 'Provider Example'&$select=connectionreferencelogicalname,connectionreferencedisplayname,connectionreferenceid,connectorid
+```
 
 2.  Validate that the correct connection reference ID was retrieved by searching your Power Automate Client Data.
 
@@ -570,7 +576,9 @@ If your provider uses customer Power Automate connectors, you must complete the 
 3.  Find your Provider Definition ID. This is the same value that you used in Step 2 to save your Power Automate logic definitions.
 
 4.  Issue a post request to save your connection reference. For example:  
-    POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference  
+
+```powerquery-m
+POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference  
     Body:  
     {
 
@@ -579,6 +587,7 @@ If your provider uses customer Power Automate connectors, you must complete the 
 "ConnectionReferenceId": "{Connection reference id previously found}"
 
 }
+```
 
 5.  Validate that your Provider Definition Logic Definition component was added.
 
