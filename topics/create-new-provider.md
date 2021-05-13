@@ -272,7 +272,7 @@ If the business event that you want to create isn't already in Intelligent Order
 
 ## Add a connector
 
-If your provider needs a connector that isn't available in Power Automate, you need to create your own Connector. For more information, see [List of all Power Automate connectors](https://docs.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerautomate-connectors).
+If your provider needs a connector that isn't available in Power Automate, you need to create your own connector. For more information, see [List of all Power Automate connectors](https://docs.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerautomate-connectors).
 
 To create your own Power Automate connector, follow the steps in [Custom connectors overview](https://docs.microsoft.com/en-us/connectors/custom-connectors/).
 
@@ -292,7 +292,7 @@ Add your flows as **Provider Definition Logic Definition** components to your pr
 
 Before you begin the flow creation process, review the types of flows that are used in Intelligent Order Management.
 
-Provider message handler  
+### Provider message handler  
 These flows receive and process messages from an external service and raise the appropriate business event to notify Intelligent Order Management orchestration. These flows are triggered by an external service.
 
 The following is an example structure for creating a message handler type of Power Automate flow.
@@ -345,7 +345,8 @@ The following is an example structure for creating a message handler type of Pow
 
 Provider message pullers are Power Automate flows that pull messages at a regularly defined interval from an external service.
 
-NOTE: A message handler is a prerequisite for a message puller flow.
+> [!NOTE]
+> A message handler is a prerequisite for a message puller flow.
 
 The following is an example structure for creating a message puller type of Power Automate flow.
 
@@ -397,7 +398,7 @@ The following is an example structure for creating a message puller type of Powe
     2. **WorkFlowId**: You can retrieve this ID by adding a compose function set to workflow()\['tags'\]\['xrmWorkflowId'\].  
         ![Screenshot for Process messages 4](media/process4.png)
 
-Provider action  
+### Provider action  
 Provider action flows are invoked from the orchestration designer. These flows typically make calls from Intelligent Order Management to external services.
 
 The key difference between a provider message handler and a provider action is that while a message handler can notify the orchestration designer, it can't be triggered by an action tile in the orchestration designer, whereas a provider action can.
@@ -461,7 +462,9 @@ Provider child flows can't call other provider child flows.
 
 When you understand the types of flows that you want to create, you are ready to create cloud flows. To do this, follow these steps:
 
-1.  Open the default solution in your Power Apps environment. *IMPORTANT: Don't add these solutions to your provider solution.*
+1.  Open the default solution in your Power Apps environment. 
+> [!IMPORTANT]
+> Don't add these solutions to your provider solution.
 
 2.  Select **New**, then select **Cloud Flow**.
 
@@ -528,9 +531,8 @@ To save your Power Automate definition, do the following.
 
     4. **Provider message puller**: 192350003
 
-4.  Issue a POST request to save your Power Automate definition. The following is an example request.  
-
-```powerquery-m
+4.  Issue a POST request to save your Power Automate definition. The following is an example request. 
+ 
     POST: {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionLogicDefinition  
     Body:  
     {
@@ -548,7 +550,6 @@ To save your Power Automate definition, do the following.
 "TimeoutMinutes": {Timeout number ex: 5}
 
 }
-``
    
 5.  Validate that your Provider Definition Logic Definition component was added. To do this, follow these steps:
 
@@ -562,10 +563,8 @@ If your provider uses customer Power Automate connectors, you must complete the 
 
 1.  Issue a GET request to retrieve your connection reference ID. For example:  
 
-```powerquery-m
 GET {Env url}/api/data/v9.2/connectionreferences. If you want to filter it further, you can filter by connection reference name. For example:  
     {Env url}/api/data/v9.2/connectionreferences?$[connectionreferences?$filter=connectionreferencedisplayname](https://orgdb90e3a2.api.crm10.dynamics.com/api/data/v9.2/connectionreferences?$filter=connectionreferencedisplayname) eq 'Provider Example'&$select=connectionreferencelogicalname,connectionreferencedisplayname,connectionreferenceid,connectorid
-```
 
 2.  Validate that the correct connection reference ID was retrieved by searching your Power Automate Client Data.
 
@@ -575,9 +574,8 @@ GET {Env url}/api/data/v9.2/connectionreferences. If you want to filter it furth
 
 3.  Find your Provider Definition ID. This is the same value that you used in Step 2 to save your Power Automate logic definitions.
 
-4.  Issue a post request to save your connection reference. For example:  
-
-```powerquery-m
+4.  Issue a post request to save your connection reference. For example: 
+ 
 POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference  
     Body:  
     {
@@ -587,7 +585,6 @@ POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference
 "ConnectionReferenceId": "{Connection reference id previously found}"
 
 }
-```
 
 5.  Validate that your Provider Definition Logic Definition component was added.
 
