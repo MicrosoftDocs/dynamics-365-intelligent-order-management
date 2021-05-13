@@ -15,11 +15,6 @@ title: Create a new provider
 
 [!include [banner](includes/banner.md)]
 
-
-
-
-# Create a new provider
-
 To create a new provider, use the following steps. You can also use these steps to make additions to existing providers.
 
 ## Define provider architecture
@@ -40,7 +35,6 @@ Use the following table to determine which components you'll need.
 
 When you have a good understanding of the solutions, you can proceed to implementing your provider.
 
-### 
 
 ## Create a provider solution
 
@@ -82,7 +76,7 @@ A provider definition contains details about your provider. The definition deter
 
 ### Add components to solution
 
-### After you create your provider definition, add the provider components to the solution.
+After you create your provider definition, add the provider components to the solution.
 
 1.  Go to your solution.
 
@@ -112,6 +106,7 @@ If your provider requires a transformation, you need to add a provider transform
 
     6. **Transformation**: The Power Query Online MQuery that will be used to transform the input data. For information about Power Query and MQuery, see [What is Power Query?](https://docs.microsoft.com/en-us/power-query/power-query-what-is-power-query) and [Power Query M formula language reference.](https://docs.microsoft.com/en-us/powerquery-m/) The following is an example of a MQuery that transforms a sales order from an external order service to a sales order in Intelligent Order Management.
 
+```powerquery-m
 shared TransformSourceData =
 
 let
@@ -243,12 +238,11 @@ overriddencreatedon = Record.FieldOrDefault(orderheader, "overriddencreatedon")
 salesorder = Record.AddField(orderheader, "order\_details", orderlines)
 
 in Text.FromBinary(Json.FromValue(salesorder));
+```
 
 4.  Select **Save.**
 
 5.  Validate that your transformation component appears correctly. A component type of **IOM Provider Definition Transformation** with the transformation name should be displayed. If it isn't displayed, select **Add existing**, and then select the transformation you just created.
-
-## 
 
 ## Add business event definitions
 
@@ -303,7 +297,7 @@ These flows receive and process messages from an external service and raise the 
 
 The following is an example structure for creating a message handler type of Power Automate flow.
 
-1.  Define a Power Automate trigger. This is typically an HTTP endpoint that is a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger is raised when an external service has data to send to Intelligent Order Management.![Screenshot of trigger for when an HTTP request is reeived ](media/image1.png)
+1.  Define a Power Automate trigger. This is typically an HTTP endpoint that is a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger is raised when an external service has data to send to Intelligent Order Management.![Screenshot of trigger for when an HTTP request is received ](media/image1.png)
 
 2.  Initialize the message processing. There are two steps involved in this task.
 
