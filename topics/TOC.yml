@@ -15,7 +15,7 @@
   - name: Customize and out-of-box provider
     href: customize-provider.md
   - name: Create a new provider
-    href: create-provider.md
+    href: create-new-provider.md
 - name: Blogs and communities
   href: blog-community.md
 - name: Videos
