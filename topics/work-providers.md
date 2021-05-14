@@ -16,7 +16,6 @@ title: Work with providers
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-# Working with providers
 
 A key value proposition of Dynamics 365 Intelligent Order Management is the ability to seamlessly integrate with other systems. To do so, Intelligent Order Management uses providers. Providers are constructs that allow you to connect Intelligent Order Management to external systems.
 
