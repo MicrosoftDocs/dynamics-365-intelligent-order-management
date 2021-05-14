@@ -8,7 +8,7 @@
   items:
   - name: Providers
     items:
-    - name: Working with providers
+    - name: Work with providers
       href: work-providers.md
     - name: Provider catalog
       href: provider-catalog.md
