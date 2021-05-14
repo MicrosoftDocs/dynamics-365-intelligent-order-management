@@ -41,13 +41,13 @@ When you have a good understanding of the solutions, you can proceed to implemen
 
 You need to complete the following tasks in this section to create a provider solution.
 
--   Set up a customer provider.
+-   Set up a custom provider.
 
 -   Add a provider definition.
 
 -   Add the components to your solution.
 
-### Set up a customer provider
+### Set up a custom provider
 
 Create a solution in Power Apps that will contain the components of your provider. To create a new solution in Power Apps, follow the steps in [Create a solution in Power Apps.](https://docs.microsoft.com/powerapps/maker/data-platform/create-solution)
 
@@ -87,7 +87,7 @@ After you create your provider definition, add the provider components to the so
 
 ## Create a provider transformation 
 
-If your provider requires a transformation, you need to add a provider transformation component to your solution.
+If your provider requires a transformation, you need to add a provider transformation component to your solution. You may be required to create multiple transformations.
 
 1.  In your provider solution, select **New.**
 
@@ -247,7 +247,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add business event definitions
 
-If your provider architecture requires business events, you must add **IOM Provider Definition Business Event Definition** components to your solution. You only need to add business events that aren't already in Intelligent Order Management.
+If your provider will create or use new business events, you must add **IOM Provider Definition Business Event Definition** components to your solution. You only need to add business events that aren't already in Intelligent Order Management.
 
 If the business event that you want to create isn't already in Intelligent Order Management, you can create your own.
 
@@ -261,7 +261,7 @@ If the business event that you want to create isn't already in Intelligent Order
 
     2. **Provider**: The provider you're creating this business definition for.
 
-    3. **Associated entity**: The Dataverse entity in Intelligent Order Management that you want this event to be tracked on.
+    3. **Associated entity**: The Dataverse entity in Intelligent Order Management that is changed or affected when the event is created.
 
     4. **Associated state value**: If you want the state of your associated entity to be updated when the business event is raised, include a state value in this field.
 
@@ -305,11 +305,11 @@ The following is an example structure for creating a message handler type of Pow
 
     1.  Initialize the execution result that will be used to track the processing of the message.
 
-    2.  Acknowledge the provider message in Intelligent Order Management so you can track, retry, and display the processing state. This is a Power Automate action that Intelligent Order Management introduces. This action is called **Acknowledge Provider message request in IOM**.
+    2.  Acknowledge the provider message in Intelligent Order Management so you can track, retry, and display the processing state. This is a Power Automate action that Intelligent Order Management introduces. This action is called **Acknowledge Provider message request in IOM**. This action has the following required parameters.
 
         1. **PowerAutomateWorkflowId**: WorkflowId on the message handler definition. You can retrieve this by having a compose function with workflow()\['tags'\].
 
-        2. **PowerAutomateRunId**: The unique Power Automate run that received the message and allows the pipeline to retry the processing and link the execution logs. You can retrieve this by having a compose function with workflow()\['run'\]?\['name'\].
+        2. **PowerAutomateRunId**: The unique identifier for the Power Automate run that received the message and allows the pipeline to retry the processing and link the execution logs. You can retrieve this by having a compose function with workflow()\['run'\]?\['name'\].
 
         3. **ProviderMessageExternalRequestId**: An identifier for the message sent. If no identifier is present, a GUID can be generated. This identifier is used by the pipeline to help prevent the sender from sending duplicate messages. The identifier is dependent on the source payload. For example: concat(triggerOutputs()?\['body'\]?\['type'\]?\['name'\], '\_', triggerOutputs()?\['body'\]?\['id'\]).
 
@@ -337,7 +337,7 @@ The following is an example structure for creating a message handler type of Pow
 
     2. **EntityRecordId**: The ID of the record just created and associated to the event.
 
-6.  Update the message processing state by saving the processing execution result. Add the following details.
+6.  Update the message processing state by using the **Update Provider Message Request Status** action to save the processing execution result. Add the following details.
 
     1. **ProviderMessageRequestExecutionId**: The output ID of the record created to track the progress of the message processing.
 
@@ -354,7 +354,7 @@ The following is an example structure for creating a message puller type of Powe
 
 1.  Use a recurrence workflow to schedule a trigger.
 
-2.  Get a checkpoint from Dataverse. Add the following details.
+2.  Get a checkpoint from Dataverse. Checkpoints track which messages have successfully been pulled from the external provider. Add the following details.
 
     1. **Action name**: Name for the checkpoint.
 
@@ -409,7 +409,7 @@ The following is an example structure for a provider action Power Automate flow.
 
 1.  Start with a manual Power Automate trigger. Actions are invoked by the orchestration service, so they are considered by Power Automate to be manual triggers. The following information will be passed at runtime by the orchestration service.
 
-    1. **ProvderActionExecutionEventId**: The ID for the execution event record.
+    1. **ProviderActionExecutionEventId**: The ID for the execution event record.
 
     2. **EntityRecordId**: The root entity record ID that the orchestration raised the event for. The record can be used to resolve related records.
 
@@ -417,7 +417,7 @@ The following is an example structure for a provider action Power Automate flow.
 
     1.  Initialize the execution result and any other processing variables.
 
-    2.  Acknowledge the start of the action execution. This will allow the pipeline to track, retry, and display the processing state within Intelligent Order Management. Add the following information.
+    2.  Acknowledge the start of the action execution by using the **Start Provider Action Execution** Dataverse action. This will allow the pipeline to track, retry, and display the processing state within Intelligent Order Management. Add the following information.
 
         1. **ProviderActionExecutionEventId:** This value was passed into the action as an input parameter in step 1.
 
@@ -425,7 +425,7 @@ The following is an example structure for a provider action Power Automate flow.
 
 3.  Perform the action.
 
-    1.  If necessary, transform the records as a part of the action.
+    1.  If necessary, transform the records using the **Transform Message with Power Query Online** child flow.
 
         1. **Provider name**: The name of the provider to be linked to the action. The name must be the same name as your provider definition.
 
@@ -440,7 +440,7 @@ The following is an example structure for a provider action Power Automate flow.
 
     2.  Execute any custom actions you've defined. These are actions that are present on the Power Automate connector you're using.
 
-    3.  Raise an action-specific business event. Add the following information.
+    3.  Raise an action-specific business event. Use the **Raise Business Event** child flow. Add the following information.
 
         1. **BusinessEventName**: The name of the event you want to raise.
 
@@ -470,7 +470,7 @@ When you understand the types of flows that you want to create, you are ready to
 
 2.  Select **New**, then select **Cloud Flow**.
 
-3.  Build your Power Automate flow. Use the templates in the previous example for reference.
+3.  Build your Power Automate flow. Use the templates in the previous section for reference.
 
 4.  Refer to the following section to save your flows.
 
@@ -535,6 +535,7 @@ To save your Power Automate definition, do the following.
 
 4.  Issue a POST request to save your Power Automate definition. The following is an example request. 
  
+```HTTP
     POST: {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionLogicDefinition  
     Body:  
     {
@@ -552,7 +553,8 @@ To save your Power Automate definition, do the following.
 "TimeoutMinutes": {Timeout number ex: 5}
 
 }
-   
+```
+
 5.  Validate that your Provider Definition Logic Definition component was added. To do this, follow these steps:
 
     1.  Go to your provider solution.
@@ -565,8 +567,10 @@ If your provider uses customer Power Automate connectors, you must complete the 
 
 1.  Issue a GET request to retrieve your connection reference ID. For example:  
 
+```HTTP
 GET {Env url}/api/data/v9.2/connectionreferences. If you want to filter it further, you can filter by connection reference name. For example:  
     {Env url}/api/data/v9.2/connectionreferences?$[connectionreferences?$filter=connectionreferencedisplayname](https://orgdb90e3a2.api.crm10.dynamics.com/api/data/v9.2/connectionreferences?$filter=connectionreferencedisplayname) eq 'Provider Example'&$select=connectionreferencelogicalname,connectionreferencedisplayname,connectionreferenceid,connectorid
+```
 
 2.  Validate that the correct connection reference ID was retrieved by searching your Power Automate Client Data.
 
@@ -578,6 +582,7 @@ GET {Env url}/api/data/v9.2/connectionreferences. If you want to filter it furth
 
 4.  Issue a post request to save your connection reference. For example: 
  
+```HTTP
 POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference  
     Body:  
     {
@@ -587,6 +592,7 @@ POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference
 "ConnectionReferenceId": "{Connection reference id previously found}"
 
 }
+```
 
 5.  Validate that your Provider Definition Logic Definition component was added.
 
