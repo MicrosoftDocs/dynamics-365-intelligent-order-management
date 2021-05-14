@@ -29,9 +29,9 @@
   - name: Fulfillment optimization
     items:
     - name: Distributed Order Management overview
-      href: https://docs.microsoft.com/en-us/dynamics365/commerce/dom
+      href: https://docs.microsoft.com/en-us/dynamics365/commerce/dom?toc=/dynamics-365-intelligent-order-management-pr/toc.json
     - name: Cost configuration
-      href: https://docs.microsoft.com/en-us/dynamics365/commerce/cost
+      href: https://docs.microsoft.com/en-us/dynamics365/commerce/cost?toc=/dynamics-365-intelligent-order-management-pr/toc.json
 - name: Blogs and communities
   href: blog-community.md
 - name: Videos
