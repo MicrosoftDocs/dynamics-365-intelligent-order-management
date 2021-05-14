@@ -568,13 +568,15 @@ If your provider uses customer Power Automate connectors, you must complete the 
 1.  Issue a GET request to retrieve your connection reference ID. For example:  
 
 ```HTTP
-GET {Env url}/api/data/v9.2/connectionreferences.
+GET {Env url}/api/data/v9.2/connectionreferences
+
 ```
 
-    If you want to filter it further, you can filter by connection reference name. For example:  
+If you want to filter it further, you can filter by connection reference name. For example:  
     
 ```HTTP
     {Env url}/api/data/v9.2/connectionreferences?$[connectionreferences?$filter=connectionreferencedisplayname](https://orgdb90e3a2.api.crm10.dynamics.com/api/data/v9.2/connectionreferences?$filter=connectionreferencedisplayname) eq 'Provider Example'&$select=connectionreferencelogicalname,connectionreferencedisplayname,connectionreferenceid,connectorid
+
 ```
 
 2.  Validate that the correct connection reference ID was retrieved by searching your Power Automate Client Data.
