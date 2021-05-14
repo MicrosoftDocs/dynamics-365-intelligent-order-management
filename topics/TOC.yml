@@ -22,7 +22,7 @@
       href: customize-provider.md
     - name: Create a new provider
       href: create-new-provider.md
-  - name: Distributed Order Management
+  - name: Distributed Order Management (Preview)
     href: dom.md
 - name: Manage your order
   items:
