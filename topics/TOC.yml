@@ -22,14 +22,12 @@
       href: customize-provider.md
     - name: Create a new provider
       href: create-new-provider.md
-  - name: Distributed Order Management (Preview)
-    href: dom.md
 - name: Manage your order
   items:
   - name: Fulfillment optimization
     items:
-    - name: Distributed Order Management overview
-      href: https://docs.microsoft.com/en-us/dynamics365/commerce/dom
+    - name: Distributed Order Management (preview)
+      href: dom.md
     - name: Cost configuration
       href: https://docs.microsoft.com/en-us/dynamics365/commerce/cost
 - name: Blogs and communities
