@@ -16,7 +16,7 @@ title: Deployment
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dynamics 365 Intelligent Order Management is currently in public preview, allowing customers and partners to evaluate and provide feedback. The app runs on the Microsoft Azure infrastructure.
+Dynamics 365 Intelligent Order Management is currently in the public preview release phase, allowing customers and partners to evaluate and provide feedback. Intelligent Order Management is a Software as a Service (SaaS) app that runs on the Microsoft Azure infrastructure.
 
 ## Deployment options
 
@@ -24,7 +24,7 @@ The preview release of Intelligent Order Management can be deployed as a trial i
 
 -   Sign up for trial: Visit the [Dynamics 365 Intelligent Order Management marketing page](https://dynamics.microsoft.com/en-us/intelligent-order-management/) to step through the process of creating a trial system.
 
--   Power Platform Administration Center (PPAC): If you're an existing Microsoft Power Platform administrator, you can deploy a new environment for your organization for evaluation. To learn more about PPAC, see [Working with the admin portals](https://docs.microsoft.com/en-us/power-platform/admin/wp-work-with-admin-portals).
+-   Power Platform Administration Center (PPAC): If you're an existing Microsoft Power Platform admin, you can deploy a new environment for your organization for evaluation. To learn more about PPAC, see [Working with the admin portals](https://docs.microsoft.com/en-us/power-platform/admin/wp-work-with-admin-portals).
 
 ## System requirements
 
