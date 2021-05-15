@@ -43,9 +43,9 @@ Intelligent Order Management is delivered as a cloud-based solution. The core co
 
 -   Orchestration: Flows are configured to manage the journey of an order. Communication with providers creates events that drive an order through the flow. Customers implement business processes for their products and business requirements.
 
--   Inventory Visibility Service: This service provides real-time visibility of inventory in your supply network so that decisions can be made through the order flow. Inventory can be communicated from source and target systems through the orchestration flows and providers.
+-   Inventory Visibility Service: This service provides real-time visibility of inventory in the supply network so that decisions can be made through the order flow. Inventory can be communicated from source and target systems through the orchestration flows and providers.
 
--   Fulfillment optimization: This is a service that can be leveraged through the orchestration flow. The service enables optimization decisions about where an order can be fulfilled using concepts such as cost and closest in distance.
+-   Fulfillment optimization: This is a service that can be leveraged through the orchestration flow. The service enables optimization decisions about where an order can be fulfilled, using concepts such as cost and closest in distance.
 
 -   Insights: Understanding order and fulfillment metrics is critical in decision-making. Dashboards provide visibility to key order data and fulfillment KPIs.
 
@@ -63,23 +63,19 @@ Intelligent Order Management will ship connectors to populate marketplace, e-com
 
 A customer may want to build a provider to an exiting warehouse or manufacturing system in their organization. A partner can build providers to integrate their platforms or apps with the Intelligent Order Management provider ecosystem.
 
-There are two types of providers: 1<sup>st</sup> party and 3<sup>rd</sup> party. 1<sup>st</sup> party providers are for Microsoft apps, such as Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Finance. Services that ship with Intelligent Order Management are also implemented as a provider and are used to communicate between the fulfillment optimization service and the Inventory Visibility service.
+There are two types of providers: First-party and thir-party. First-party providers are for connecting with Microsoft apps, such as Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Finance. Services that ship with Intelligent Order Management are also implemented as a provider and are used to communicate between the fulfillment optimization service and the Inventory Visibility service.
 
-3<sup>rd</sup> party providers are for services that Microsoft doesn't ship. Customers can use them to integrate Intelligent Order Management with different capabilities in e-commerce platforms and fulfillment and logistics systems.
+Third-party providers are for services that Microsoft doesn't ship. Customers can use them to integrate Intelligent Order Management with different capabilities in e-commerce platforms and fulfillment and logistics systems.
 
 For more information, see [Work with providers](work-providers.md).
 
 ### Orchestration
-
-## 
 
 Intelligent Order Management enables the business user to directly change order flows, so they don't have to rely on their IT administrator as much. The supply chain team can leverage the embedded policy designer to design the rules to optimize their business processes.
 
 The supply chain team can use the journey orchestration designer tools to model and automate the response to fulfillment constraints and leverage machine learning to influence and optimize the flow of the order. If an organization predicts or detects constraints in their fulfillment network, the journey orchestration designer tools can help them proactively overcome the bottlenecks and drive efficiencies across the supply chain.
 
 Organizations can scale during peak order volumes by supporting various order intake, fulfillment, and delivery partners using pre-built connectors. The order orchestration engine is built on Microsoft Power Platform, which has more than 200 pre-built connectors, allowing business users to easily connect into this ecosystem. Microsoft will continue to grow the ecosystem of connectors by working with external design partners.
-
-## 
 
 ### Inventory Visibility service
 
