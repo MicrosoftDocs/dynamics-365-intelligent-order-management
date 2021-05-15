@@ -26,7 +26,7 @@ The app and platform were designed following these basic principles.
 
 -   Scale: Understanding that the need to scale to support high transaction volume isn't just for enterprise organizations. Organizations of all types need an app and platform that can scale up and down as needed.
 
--   Leverage the Power Platform: Understanding that customers are looking to technology vendors that can support them in their long-term plans. Leverages an organization's in-house skills or skills of consulting partners.
+-   Leverage the Power Platform: Understanding that customers are looking to technology vendors that can support them in their long-term plans. Leveraging an organization's in-house skills or skills of consulting partners.
 
 The platform was built with the following three architecture concepts.
 
@@ -36,7 +36,7 @@ The platform was built with the following three architecture concepts.
 
 -   Insights: The Insights components enable the flow of data to support the visualization of data in Power BI and allow data to be analyzed in machine learning models with AI Builder.
 
-![Architecture overview diagram](media/image1.png)
+![Architecture overview diagram](media/architecture.png)
 
 ## Data pipeline 
 
