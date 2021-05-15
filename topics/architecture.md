@@ -6,11 +6,11 @@ ms.date: 05/17/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Intelligent Order Management architecture
+title: Architecture overview
 ---
 
 
-# Intelligent Order Management architecture
+# Architecture overview
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
