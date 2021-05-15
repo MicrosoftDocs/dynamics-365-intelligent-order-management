@@ -115,3 +115,5 @@ Before you delete the provider instance, make sure you're not using the provider
 [Customize an out-of-box provider](customize-provider.md)
 
 [Create a new provider](create-new-provider.md)
+
+[Intelligent Order Management architecture](architecture.md)
