@@ -56,8 +56,6 @@ The following is terminology to describe components in the data pipeline.
 
 -   Provider action: A provider action is a single task of unit of operation for a provider, as represented by a Power Automate.
 
-## 
-
 ## Orchestration Engine
 
 Order-to-fulfillment flow is complex in a single business app, but when combined with other cloud services and supply chain partner systems, the complexity grows. To help business users in the organization to visualize and manage this complexity, Intelligent Order Management ships with a business orchestration designer. Business process flows designed with the orchestration designer are compiled into Power Automate flows when the flow is published.
@@ -100,4 +98,4 @@ Intelligent Order Management makes use of the following Microsoft platform techn
 
 [Work with providers](work-providers.md)
 
-[Create a new provider](create-new-provier.md)
+[Create a new provider](create-new-provider.md)
