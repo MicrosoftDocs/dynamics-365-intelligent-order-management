@@ -10,6 +10,8 @@
   href: architecture.md
 - name: Set up Intelligent Order Management
   items:
+  - name: Set up an environment
+    href: setup.md
   - name: Providers
     items:
     - name: Work with providers
