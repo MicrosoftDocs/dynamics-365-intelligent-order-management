@@ -4,6 +4,8 @@
   items:
   - name: Intelligent Order Management overview
     href: overview.md
+- name: Architecture
+  href: architecture.md
 - name: Set up Intelligent Order Management
   items:
   - name: Providers
