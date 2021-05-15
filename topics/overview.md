@@ -85,7 +85,7 @@ The fulfillment orchestration engine uses real-time inventory data to optimize f
 
 ### Fulfillment optimization
 
-Intelligent Order Management ships with a fulfilment optimization service that allows users to define different fulfilment strategies. They act as an engine through the orchestration process to determine the best location to fulfill an order from.
+Intelligent Order Management ships with a fulfillment optimization service that allows users to define different fulfillment strategies. They act as an engine through the orchestration process to determine the best location to fulfill an order from.
 
 ### Insights
 
