@@ -26,7 +26,7 @@
       href: customize-provider.md
     - name: Create a new provider
       href: create-new-provider.md
-- name: Manage your order
+- name: Manage your orders
   items:
   - name: Fulfillment optimization
     items:
@@ -34,6 +34,8 @@
       href: dom.md
     - name: Cost configuration
       href: https://docs.microsoft.com/en-us/dynamics365/commerce/cost
+- name: Globalization
+  href: globalization.md
 - name: Blogs and communities
   href: blog-community.md
 - name: Videos
