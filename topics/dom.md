@@ -6,11 +6,11 @@ ms.date: 05/17/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Distributed Order Management (Preview)
+title: Distributed Order Management (preview)
 ---
 
 
-# Distributed Order Management (Preview)
+# Distributed Order Management (preview)
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
