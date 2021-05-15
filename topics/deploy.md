@@ -22,9 +22,11 @@ Dynamics 365 Intelligent Order Management is currently in the public preview rel
 
 The preview release of Intelligent Order Management can be deployed as a trial in two ways.
 
--   Sign up for trial: Visit the [Dynamics 365 Intelligent Order Management marketing page](https://dynamics.microsoft.com/intelligent-order-management/) to step through the process of creating a trial system.
+-   Sign up for trial: Visit the [Dynamics 365 Intelligent Order Management marketing page](https://dynamics.microsoft.com/intelligent-order-management/). Select **Get started** to step through the process of creating a trial system. You'll be prompted to enter your email address and other information. To access Intelligent Order Management, you must meet at least one of the following requirements: 
+    - Not a part of a Microsoft tenant: If you anen't a part of an existing Microsoft tenant, Microsoft will create a tenant for you, with Inelligent Order Management added to it. You will be the admin of the tenant and environment. 
+    - An admin of an existing Microsoft tenant: If you are an admin of an existing tenant, Microsoft will provide a trial Microsoft Power Apps environment and install the Intelligent Order Management there. If you're a part of an existing Microsoft tenant and not the admin, you won't be able to get access to the trial. 
 
--   Power Platform Administration Center (PPAC): If you're an existing Microsoft Power Platform admin, you can deploy a new environment for your organization for evaluation. To learn more about PPAC, see [Working with the admin portals](https://docs.microsoft.com/power-platform/admin/wp-work-with-admin-portals).
+-   Power Platform Administration Center (PPAC): If you're an existing Microsoft Power Platform admin, you can deploy a new environment for your organization for evaluation. To learn more about PPAC, see [Working with the admin portals](https://docs.microsoft.com/power-platform/admin/wp-work-with-admin-portals). You'll only be able to deploy in trial environments. To learn more about deployment environments, see [About trial environments](https://docs.microsoft.com/power-platform/admin/trial-environments).
 
 ## System requirements
 
