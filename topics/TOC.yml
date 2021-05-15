@@ -6,6 +6,8 @@
     href: overview.md
   - name: Deployment
     href: deploy.md
+  - name: Get support
+    href: support.md
 - name: Architecture
   href: architecture.md
 - name: Set up Intelligent Order Management
