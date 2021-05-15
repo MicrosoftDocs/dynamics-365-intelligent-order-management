@@ -16,7 +16,7 @@ title: Globalization
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-The public preview release of Dynamics 365 Intelligent Oder Management is only available in trial environments.
+The public preview release of Dynamics 365 Intelligent Order Management is only available in trial environments.
 
 ## Regional and language availability
 
