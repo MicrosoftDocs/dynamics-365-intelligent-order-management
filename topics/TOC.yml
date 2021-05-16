@@ -43,7 +43,9 @@
 - name: Administration
   items: 
   - name: Administration overview
-  - href: admin.md
+    href: admin.md
+  - name: Data management
+    href: data-management.md
 - name: Globalization
   href: globalization.md
 - name: Blogs and communities
