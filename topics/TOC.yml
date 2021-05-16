@@ -40,6 +40,10 @@
       href: https://docs.microsoft.com/en-us/dynamics365/commerce/cost
 - name: Reporting and Power BI integration
   href: report-powerbi-integration.md
+- name: Administration
+  items: 
+  - name: Administration overview
+  - href: admin.md
 - name: Globalization
   href: globalization.md
 - name: Blogs and communities
