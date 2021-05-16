@@ -63,7 +63,7 @@ Intelligent Order Management will ship connectors to populate marketplace, e-com
 
 A customer may want to build a provider to an exiting warehouse or manufacturing system in their organization. A partner can build providers to integrate their platforms or apps with the Intelligent Order Management provider ecosystem.
 
-There are two types of providers: First-party and thir-party. First-party providers are for connecting with Microsoft apps, such as Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Finance. Services that ship with Intelligent Order Management are also implemented as a provider and are used to communicate between the fulfillment optimization service and the Inventory Visibility service.
+There are two types of providers: First-party and third-party. First-party providers are for connecting with Microsoft apps, such as Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Finance. Services that ship with Intelligent Order Management are also implemented as a provider and are used to communicate between the fulfillment optimization service and the Inventory Visibility service.
 
 Third-party providers are for services that Microsoft doesn't ship. Customers can use them to integrate Intelligent Order Management with different capabilities in e-commerce platforms and fulfillment and logistics systems.
 
