@@ -19,7 +19,7 @@ Your organization will have access to Dynamics 365 Intelligent Order Management 
 
 ## Security concepts in Microsoft Dataverse
 
-Intelligent Order Management is built as a Microsoft Dataverse application. You can manage security by using concepts such as business units, teams, and users. To learn more about security in Dataverse, see [Security concepts in Microsoft Dataverse](https://docs.microsoft.com/power-platform/admin/wp-security-cds).
+Intelligent Order Management is built as a Microsoft Dataverse app. You can manage security by using concepts such as business units, teams, and users. To learn more about security in Dataverse, see [Security concepts in Microsoft Dataverse](https://docs.microsoft.com/power-platform/admin/wp-security-cds).
 
 ## Manage users
 
@@ -31,4 +31,4 @@ If you plan to implement Intelligent Order Management with a dual-write enabled 
 
 ## Dual-write overview
 
-If you plan to implement Intelligent Order Management with Finance and Operations apps such as Supply Chain Management, Commerce, or Finance , you'll need to configure dual-write. To learn about dual-write, see [Dual-write overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview).
+If you plan to implement Intelligent Order Management with Finance and Operations apps such as Supply Chain Management, Commerce, or Finance, you'll need to configure dual-write. To learn about dual-write, see [Dual-write overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview).
