@@ -33,4 +33,4 @@ To learn more about interactive dashboards, see [Create or edit model-driven app
 
 The preview release of Intelligent Order Management ships with a dashboard called **Order Management** and is based on Power BI technology. This dashboard provides longer-range insights into the order and fulfillment data moving through the app.
 
-To learn more about building dashboards with Power BI, see the [Power BI documentation](https://docs.microsoft.com/en-us/power-bi/).
+To learn more about building dashboards with Power BI, see the [Power BI documentation](https://docs.microsoft.com/power-bi/).
