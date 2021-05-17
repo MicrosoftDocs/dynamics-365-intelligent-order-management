@@ -19,11 +19,11 @@ Dynamics 365 Distributed Order Management is an intelligent optimization servic
 
 In a modern supply network where product fulfillment can be from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or a spike in demand. Distributed Order Management helps you maximize order fulfillment and find the right source for delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling from the closest sources.  
 
-Distributed Order Management is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find distance between shipping address and fulfillment source.
+Distributed Order Management is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find the distance between the shipping address and fulfillment source.
 
-**Dynamics 365 Distributed Order Management is a preview service and can only be used in sandbox environments for non-production purposes.**
+> [!NOTE]
+> Dynamics 365 Distributed Order Management is a preview service and can only be used in sandbox environments for non-production purposes.
 
- 
 ## Set up Distributed Order Management
 
 To enable Distributed Order Management as part of the order orchestration journey, set up the Dynamics 365 Distributed Order Management provider on the **Providers > Catalog** page in Dynamics 365 Intelligent Order Management. Find Dynamics 365 Distributed Order Management in the list of providers and select **Add Provider**. After you accept the terms and conditions, Distributed Order Management will be enabled in the list of installed providers under **Providers > Installed**.
@@ -34,7 +34,7 @@ When the Distributed Order Management provider is set up, you can enable the act
 
 Fulfillment sources are entities like warehouses, distribution centers, retail stores, drop-ship vendors, or virtual sites that house inventory or provide products. Fulfillment sources can be created and modified on the **Fulfillment > Sources** page in Intelligent Order Management.
 
-For each of your fulfillment sources, you can define a name to uniquely identify them, time zone where the source or location resides, type of the source (warehouse or other), address where it is located, latitude and longitude, and whether the system should look up inventory in the Inventory Visibility service for optimized fulfillment based on inventory availability.
+For each of your fulfillment sources, you can define a name to uniquely identify them, time zone where the source or location resides, type of source (warehouse or other), address where it is located, latitude and longitude, and whether the system should look up inventory in the Inventory Visibility service for optimized fulfillment based on inventory availability.
 
 To look up inventory from the Inventory Visibility service, set the **Use real inventory** field to **On**. To include inventory from a source and make the source available to fulfill the order, on the **Fulfillment > Sources** page, set the **Use real inventory** field to **Off**.
 
@@ -42,17 +42,17 @@ For the preview release, the system assumes unlimited inventory. 
 
 ## Fulfillment source lists
 
-Fulfillment source lists enable you to group a list of sources and manage sources in a flexible manner in the fulfillment strategy and within the constraints. Fulfillment source lists can be defined on the **Fulfillment > Source Lists** page in Intelligent Order Management.
+Fulfillment source lists enable you to group a list of sources and manage sources in a flexible manner, within specific constraints. Fulfillment source lists can be defined on the **Fulfillment > Source Lists** page in Intelligent Order Management.
 
 Depending on your business situation, you can define multiple source lists and use them as needed.  
 
-For example, in your strategy definition, you can include all the sources where fulfillment will occur. For your business constraints, you can use a different source list. Further, you can define different minimum inventory constraints for retail stores and warehouses, and assign your warehouses a higher fulfillment priority than your retail stores.  
+For example, in your strategy definition, you can include all the sources where fulfillment will occur. For your business constraints, you can use a different source list. You can also define different minimum inventory constraints for retail stores and warehouses, and assign your warehouses a higher fulfillment priority than your retail stores.  
 
 Active source lists are displayed on the **Fulfillment > Source Lists** page. To create a new source list, select **New**. Provide a name to easily identify the source list and add existing or new sources on the **Sources** tab. To remove a source from a source list, select the source on the **Sources** tab and then select **Remove**.
 
 ## Business constraints 
 
-Business constraints are an optional component for fulfillment optimization. Business constraints are controls that you put in the optimization strategy. As part of the preview release, the following business constraints are supported.  
+Business constraints are an optional component for fulfillment optimization. These are controls that you put in the optimization strategy. As part of the preview release, the following business constraints are supported.  
 
 -   Location or source priority.
 
@@ -60,7 +60,7 @@ Business constraints are an optional component for fulfillment optimization. Bus
 
 -   Maximum distance.
 
-To create or modify constraints, go to the **Fulfillment > Constraints** page in Intelligent Order Management. To create a specific constraint type, select the appropriate constraint type drop-down when you create the constraint.
+To create or modify constraints, go to the **Fulfillment > Constraints** page in Intelligent Order Management. To create a specific constraint type, select the appropriate constraint type when you create the constraint.
 
 Every business constraint shares a set of common attributes as part of its definition. The details differ based on the type of business constraint. The following are common attributes applicable to all business constraints. 
 
@@ -80,21 +80,21 @@ You can define multiple business constraints of each type and apply them to diff
 
 ### Fulfillment location priority constraint 
 
-This constraint type allows organizations to define a hierarchy of sources by using priority. The optimization service will then consider priority when identifying fulfillment sources for specific products. Sources with higher priority are considered first, then the optimization service will resolve to other sources. A source with a priority of **1** is higher priority than a source with priority **2**.  
+The fulfillment location priority constraint type allows organizations to define a hierarchy of sources by using priority. The optimization service will then consider priority when identifying fulfillment sources for specific products. Sources with higher priority are considered first, then the optimization service will resolve to other sources. A source with a priority of **1** is higher priority than a source with priority **2**.  
 
 You can define a location priority at the source list and then define a more specific product-based constraint for source and product in terms of priority.  For write-in products, or unknown products, the optimization service will use location priority and assume 100% inventory is available at the fulfillment source. 
 
 ### Maximum distance constraint 
 
-This business constraint enables an organization to define the maximum distance a source or group of sources can extend to fulfill the order.  
+The maximum distance constraint enables an organization to define the maximum distance a source or group of sources can extend to fulfill the order.  
 
-You can define the maximum distance for a source list and override for a specific source. If there are overlapping maximum distance constraint defined for a source, the optimization service will apply the lower of the defined maximum distance for those sources. 
+You can define the maximum distance for a source list and override for a specific source. If there is an overlapping maximum distance constraint defined for a source, the optimization service will apply the lower of the defined maximum distance for those sources. 
 
 ### Maximum number of fulfillment sources and partial order constraint 
 
-This business constraint enables you to define whether an order or order lines can be fulfilled by one or multiple sources and whether it can be partially fulfilled.  
+The maximum number of fulfillment sources and partial order constraint enables you to define whether an order or order lines can be fulfilled by one or multiple sources and whether it can be partially fulfilled.  
 
-When you create this constraint, under the **Maximum providers per order** field, set **Partial lines** and **Partial orders** to **Yes.**
+When you create this constraint, in the **Maximum providers per order** field, set **Partial lines** and **Partial orders** to **Yes.**
 
 ## Fulfillment strategies 
 
@@ -116,7 +116,7 @@ On the **Strategies** page, enter values for the following.
 
 - **Source List**: The fulfillment sources that must be considered when the optimization service is performing the optimization.  
 
-- **Use real inventory**: Indicates whether the optimization service should consider inventory from the Inventory Visibility service. If this setting is turned off, the system assumes unlimited inventory at the sources. This setting overrides the setting that is defined at the source.  
+- **Use real inventory**: Indicates whether the optimization service should consider inventory from the Inventory Visibility service. If this setting is turned off, the system assumes unlimited inventory at the source. This setting overrides the setting that is defined at the source.  
 
 - **Simulation**: Indicates if the strategy will be used to simulate sourcing. In the **Fulfillment plan** output, the system writes a flag to indicate that the processing run is a simulation. 
 
