@@ -48,7 +48,7 @@ A provider in Intelligent Order Management has the following components.
 
 ## Set up a provider 
 
-Use the steps below to set up a provider.
+Use the following steps to set up a provider.
 
 1.  Go to **Providers > Catalog**.
 
@@ -74,7 +74,7 @@ Use the steps below to set up a provider.
 
     7.  In the **Status** list, the connector will have a status of **Connected**.
 
-    8.  Select the ellipses of the newly created connector and then select **Details.**
+    8.  Select the ellipses (**...**) of the newly created connector and then select **Details.**
 
     9.  Copy the URL found at the top of the page.
 
