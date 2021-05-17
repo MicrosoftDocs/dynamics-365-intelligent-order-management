@@ -36,4 +36,4 @@ The preview release of Intelligent Order Management is supported in the followin
 
 -   United States: East US, South Central US, West US
 
-You can choose to deploy Intelligent Order Management in a data center close to your locale from the regions in the preceeding list.
+You can choose to deploy Intelligent Order Management in a data center close to your locale from the regions in the preceding list.
