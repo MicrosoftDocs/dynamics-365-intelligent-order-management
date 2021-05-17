@@ -18,7 +18,7 @@ title: Architecture overview
 
 Dynamics 365 Intelligent Order Management is built on the Microsoft Power Platform, leveraging the [Power Apps model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/) infrastructure. The architecture was designed to support the requirements of a complex order processing environment where there are many systems and apps in the overall order-to-fulfillment process.
 
-Delivered as a cloud solution, Intelligent Order Management can be deployed quickly in the Microsoft Azure data centers. The app and platform are deployed in a data center region that customers choose for their business, and Microsoft manages the infrastructure. That way, customers can focus on configuring the app to suit business order and fulfillment requirements. To learn more about the data center regions that are supported, see \[Globalization\](add link).
+Delivered as a cloud solution, Intelligent Order Management can be deployed quickly in the Microsoft Azure data centers. The app and platform are deployed in a data center region that customers choose for their business, and Microsoft manages the infrastructure. That way, customers can focus on configuring the app to suit business order and fulfillment requirements. To learn more about the data center regions that are supported, see [Globalization](globalization.md).
 
 The app and platform were designed following these basic principles.
 
