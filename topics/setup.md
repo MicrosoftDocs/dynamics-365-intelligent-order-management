@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information for setting up a Dynamics 365 Intelligent Order Management environment.
+description: This topic provides information about how to set up a Dynamics 365 Intelligent Order Management environment.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
@@ -28,13 +28,13 @@ On the **Welcome and get started** page, you can access the following features.
 
 - **Insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
-- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog,** where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/work-providers.md).
+- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/work-providers.md).
 
 - **Orchestrate your order journeys**: Select **Manage** to go to the pages where you can create and manage order orchestration flows.
 
-- **Explore data management**: Select **Manage** to go to the administration pages for managing data import and export.
+- **Explore data management**: Select **Manage** to go to the administration pages to manage data import and export.
 
-- **Enable fulfillment optimization**: Select **Manage** to go to the pages to configure the fulfillment optimization service with Intelligent Order Management.
+- **Enable fulfillment optimization**: Select **Manage** to go to configure the fulfillment optimization service with Intelligent Order Management.
 
 - **Configure inventory visibility services**: Select **Manage** to go to the pages where you can configure the inventory service to be used with Intelligent Order Management.
 
