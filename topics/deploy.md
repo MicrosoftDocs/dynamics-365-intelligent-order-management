@@ -47,3 +47,6 @@ Microsoft is managing the trial environments for customers to evaluate and provi
 ## Backups
 
 Trial environments are for evaluation and feedback purposes and come with demo data to support evaluations. Trial environments will be deleted after the 30-day trial period if you provision a trial environment and your environment isn't designated to be recovered after the 30-day trial period has ended.
+
+## Additional resources
+[Set up an environment](setup.md)
