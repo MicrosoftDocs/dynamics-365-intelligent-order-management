@@ -20,7 +20,7 @@ The public preview release of Dynamics 365 Intelligent Order Management is only 
 
 ## Regional and language availability
 
-The Intelligent Order Management (Preview) user interface is available in English (en-us) only for the preview release.
+The Intelligent Order Management (Preview) user interface is only available in English (en-us) for the preview release.
 
 More languages will be supported when Intelligent Order Management is released for general availability. This topic will be updated at that time.
 
@@ -28,14 +28,12 @@ More languages will be supported when Intelligent Order Management is released f
 
 The preview release of Intelligent Order Management is supported in the following geographic regions.
 
--   Asia Pacific: Southeast Asia, East Asia.
+-   Asia Pacific: Southeast Asia, East Asia
 
--   Australia: Australia East, Australia SE.
+-   Australia: Australia East, Australia SE
 
--   Europe: North Europe, West Europe.
+-   Europe: North Europe, West Europe
 
--   United States: East US, South Central US, West US.
+-   United States: East US, South Central US, West US
 
-You can choose to deploy Intelligent Order Management in a data center close to your locale from the regions above.
-
-More regions will be supported when Intelligent Order Management is released for general availability. This topic will be updated at that time.
+You can choose to deploy Intelligent Order Management in a data center close to your locale from the regions in the preceeding list.
