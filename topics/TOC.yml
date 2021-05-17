@@ -1,7 +1,47 @@
 - name: Intelligent Order Management home page
   href: index.md
 - name: Get started
-  href: https://dynamics.microsoft.com/intelligent-order-management/
+  items:
+  - name: Intelligent Order Management overview
+    href: overview.md
+  - name: Deployment
+    href: deploy.md
+  - name: Get support
+    href: support.md
+- name: Architecture
+  href: architecture.md
+- name: Set up Intelligent Order Management
+  items:
+  - name: Set up an environment
+    href: setup.md
+  - name: Providers
+    items:
+    - name: Work with providers
+      href: work-providers.md
+    - name: Provider catalog
+      href: provider-catalog.md
+    - name: Customize an out-of-box provider
+      href: customize-provider.md
+    - name: Create a new provider
+      href: create-new-provider.md
+- name: Manage your orders
+  items:
+  - name: Fulfillment optimization
+    items:
+    - name: Distributed Order Management (preview)
+      href: dom.md
+    - name: Cost configuration
+      href: https://docs.microsoft.com/en-us/dynamics365/commerce/cost
+- name: Reporting and Power BI integration
+  href: report-powerbi-integration.md
+- name: Administration
+  items: 
+  - name: Administration overview
+    href: admin.md
+  - name: Data management
+    href: data-management.md
+- name: Globalization
+  href: globalization.md
 - name: Blogs and communities
   href: blog-community.md
 - name: Videos
