@@ -44,7 +44,7 @@ The data pipeline in Intelligent Order Management provides the foundation for th
 
 The following is terminology to describe components in the data pipeline.
 
--   Provider: In Intelligent Order Management, a provider is used to configure the data movement in the data pipeline. Microsoft ships providers out-of-the-box, but customers and partners are encouraged to build their own providers. To learn more, see [work with providers](work-providers.md).
+-   Provider: In Intelligent Order Management, a provider is used to configure the data movement in the data pipeline. Microsoft ships providers out-of-the-box, but customers and partners are encouraged to build their own providers. To learn more, see [Work with providers](work-providers.md).
 
 -   Connectors: Connectors are built using Power Automate. Connectors wrap the external service API that will be used by the provider. Customers can use the available catalog of connectors to build their own provider. To learn more about connectors, see the [Connectors documentation](https://docs.microsoft.com/connectors/).
 
@@ -56,7 +56,7 @@ The following is terminology to describe components in the data pipeline.
 
 -   Provider action: A provider action is a single task of unit of operation for a provider, as represented by a Power Automate.
 
-## Orchestration Engine
+## Orchestration engine
 
 Order-to-fulfillment flow is complex to model in a single business app, but when combined with other cloud services and supply chain partner systems, the complexity grows. To help business users in the organization to visualize and manage this complexity, Intelligent Order Management ships with a business orchestration designer. Business process flows designed with the orchestration designer are compiled into Power Automate flows when the flow is published.
 
@@ -66,9 +66,9 @@ The following is terminology to describe components in the orchestration engine.
 
 -   Orchestration flow types: The preview release of Intelligent Order Management provides two flow types:
 
-    -   Order flow –represents the progression of an order to fulfillment.
+    -   Order flow represents the progression of an order to fulfillment.
 
-    -   Inventory flow – represents the flow of inventory from a master system to the inventory service or to an external system.
+    -   Inventory flow represents the flow of inventory from a master system to the inventory service or to an external system.
 
 -   Policies: Rules and configurations the business user can provide to control an orchestration flow.
 
@@ -90,7 +90,7 @@ Intelligent Order Management makes use of the following Microsoft platform techn
 
 -   Power Query Online: Intelligent Order Management leverages the capabilities of Power Query and the M query language to support transformation in the data pipeline for providers. To learn more, see the [Power Query documentation](https://docs.microsoft.com/power-query/power-query-what-is-power-query).
 
--   Power BI: The dashboards provided in Intelligent Order Management are built using Power BI tools. Customers can extend the solutions or build their own using Power BI. To learn more about Power BI, see the [Power BI overview](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/•%09https:/docs.microsoft.com/power-bi/fundamentals/power-bi-overview).
+-   Power BI: The dashboards provided in Intelligent Order Management are built using Power BI tools. Customers can extend the solutions or build their own using Power BI. To learn more about Power BI, see [Power BI overview](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/•%09https:/docs.microsoft.com/power-bi/fundamentals/power-bi-overview).
 
 -   AI Builder: Machine learning models will be available in later releases of Intelligent Order Management. Customers and partners can use the same technology to build their own models using AI Builder capabilities. To learn more, see the [AI Builder documentation](https://docs.microsoft.com/ai-builder/).
 
