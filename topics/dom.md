@@ -110,7 +110,7 @@ Distributed Order Management batches the orders that are provided as part of the
 
 ### Set up a fulfillment strategy
 
-To define a strategy, go to the **Fulfillment > Strategies** page in Intelligent Order Management and select **New**. For each strategy, you can provide a unique name, description, source list consisting of fulfilment sources for the strategy, and you can configure the strategy to use real inventory.   
+To define a strategy, go to the **Fulfillment > Strategies** page in Intelligent Order Management and select **New**. For each strategy, you can provide a unique name, description, source list consisting of fulfillment sources for the strategy, and you can configure the strategy to use real inventory.   
 
 On the **Strategies** page, enter values for the following.
 
