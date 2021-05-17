@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information on deploying the preview version of Dynamics 365 Intelligent Order Management.
+description: This topic provides information about how to deploy the preview version of Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
@@ -30,7 +30,7 @@ The preview release of Intelligent Order Management can be deployed as a trial i
 
 ## System requirements
 
-You can deploy the preview release through the trial experience which is provisioned and managed by Microsoft. As a customer or a partner, there are no systems prerequisites for using the trial experience.
+You can deploy the preview release through the trial experience, which is provisioned and managed by Microsoft. As a customer or a partner, there are no systems prerequisites for using the trial experience.
 
 ## Local requirements
 
