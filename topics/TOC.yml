@@ -30,8 +30,6 @@
     items:
     - name: Distributed Order Management (preview)
       href: dom.md
-    - name: Cost configuration
-      href: https://docs.microsoft.com/en-us/dynamics365/commerce/cost
 - name: Reporting and Power BI integration
   href: report-powerbi-integration.md
 - name: Administration
