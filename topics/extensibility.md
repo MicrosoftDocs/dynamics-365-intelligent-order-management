@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information about how to deploy the preview version of Dynamics 365 Intelligent Order Management.
+description: This topic provides....
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
