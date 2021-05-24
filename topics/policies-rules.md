@@ -1,8 +1,8 @@
 ---
 author: josaw1
-description: This topic provides an overview of globalization options for Dynamics 365 Intelligent Order Management.
+description: This topic covers policy types and describes how to create a policy with rules in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/17/2021
+ms.date: 05/24/2021
 ms.topic: conceptual
 ms.author: josaw
 
@@ -59,7 +59,7 @@ The following image shows the policy details entered for the “Order line valid
 
 ## Rules
 
-It's easy to create conditional rules in Dynamics 365 Intelligent Order Management by using Condition Builder's intuitive user interface.
+You can create conditional rules in Dynamics 365 Intelligent Order Management by using Condition Builder's user interface.
 
 To add a condition to your flow, select **New step**, and then select **Condition**. An **Add** button appears that, when selected, presents the following options:
 
