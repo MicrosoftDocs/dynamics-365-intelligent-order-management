@@ -16,8 +16,8 @@
   items:
   - name: Set up an environment
     href: setup.md
-  - name: Orchestration designer
-    href: orchestration-designer.md
+  - name: Orchestration flows
+    href: orchestration-flows.md
   - name: Policies and rules
     href: policies-rules.md
   - name: Providers
@@ -30,7 +30,7 @@
       href: customize-provider.md
     - name: Create a new provider
       href: create-new-provider.md
-  - name: nable Bing Maps for your environment
+  - name: Enable Bing Maps for your environment
     href: enable-bing-maps.md
   - name: Enable timeline on Sales order form
     href: enable-timeline-sales-order.md
