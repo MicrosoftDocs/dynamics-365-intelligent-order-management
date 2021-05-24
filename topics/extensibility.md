@@ -35,7 +35,7 @@ Business logic can be extended in Intelligent Order Management in multiple ways,
 Building your own provider enables you to incorporate an external service that you can call through the orchestration flow. For more information about building a new provider, see [Customize an out-of-box provider](customize-provider.md). 
 
 ## Orchestration
-Intelligent Order Management orchestration is business process logic that represents the flow of an order document. You can build your own orchestration flows. For more information, see [Orchestration designer](orchestration-designer.md). 
+Intelligent Order Management orchestration is business process logic that represents the flow of an order document. You can build your own orchestration flows. For more information, see [Orchestration flows](orchestration-flows.md). 
 
 ## Business Intelligence
 Intelligent Order Management is built on and extends the common data model. Understanding the concepts of the common data model will help you to determine what data can be stored with Dynamics 365 Intelligent Order Management, and to identify what you can use to enhance the reporting and business intelligence solutions you design for your business. For more information about the common data model, see [Common Data Model](/common-data-model). 
