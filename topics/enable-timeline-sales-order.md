@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information about how to enable timeline capabilities In Dynamics 365 Intelligent Order Management.
+description: This topic provides information about how to enable timeline capabilities in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/25/2021
 ms.topic: conceptual
@@ -17,7 +17,7 @@ title: Enable timeline on Sales order form
 
 This document describes how to enable timeline capabilities on the **Sales order** form in Dynamics 365 Intelligent Order Management. 
 
-When the timeline is enabled on the **Sales order** form, it will list all business events raised by the orchestration flow in chronological order, which can provide valuable insights into how a sales order and its lines have been processed, and can also help explain the current status of the sales order.
+When the timeline is enabled on the **Sales order** form, it will list all business events raised by the orchestration flow in chronological order. This can provide valuable insights into how a sales order and its lines have been processed, and can also help explain the current status of the sales order.
 
 ## Enable timeline
 
@@ -34,7 +34,7 @@ To enable the timeline on the **Sales order** form, follow these steps.
 > [!NOTE]
 > You must clear the cache on your browser before the timeline can be populated with data.
 
-Once enabled, the timeline should start to list business events as they are raised by the orchestration flow, as shown in the following example image. 
+When enabled, the timeline should start to list business events as they are raised by the orchestration flow, as shown in the following example image. 
 
 ![Timeline of business events](media/timeline.png)
 
