@@ -18,9 +18,9 @@ title: Orchestration designer
 
 This topic covers orchestration flows and describes how to create them in Microsoft Dynamics 365 Intelligent Order Management.
 
-Orchestration flows are a central concept in Dynamics 365 Intelligent Order Management. You can create orchestration flows that determine how data obtained from configured providers are being orchestrated.
+Orchestration flows are a central concept in Intelligent Order Management. You can create orchestration flows that determine how data obtained from configured providers are being orchestrated.
 
-Dynamics 365 Intelligent Order Management supports the ability to define orchestration flows for different purposes such as ordering intake to fulfillment and collecting and distributing inventory visibility information.
+Intelligent Order Management supports the ability to define orchestration flows for different purposes such as ordering intake to fulfillment and collecting and distributing inventory visibility information.
 
 ## Orchestration types
 
@@ -34,21 +34,19 @@ Orchestration types control which actions and elements can be used to define the
 
 An orchestration flow record consists of three fields, as listed in the following table.
 
-| **Orchestration field** | **Purpose** |
+| **Field** | **Description** |
 |-------------------------|-------------------------|
 | Name | A unique name provided by the user. |
-| Orchestration type | Specifies the orchestration type**.** |
+| Orchestration type | Specifies the orchestration type. |
 | Created on | The date and time when the orchestration flow was created. |
-| Status | An orchestration flow can be in two status states:</br>**Unpublished -** The orchestration flow and its actions will not be executed when data flows into the system.</br>**Published -** This status is obtained when the orchestration flow is published using the **Publis**h action in designer view. The orchestration flow and its actions are executed when data flows into the system. |
+| Status | An orchestration flow can be in two status states:</br>**Unpublished -** The orchestration flow and its actions will not be executed when data flows into the system.</br>**Published -** This status is obtained when the orchestration flow is published using the **Publish** action in designer view. The orchestration flow and its actions are executed when data flows into the system. |
 
 
 ## Actions and elements 
 
-Actions and elements can be used to define the orchestration flow in designer view.
+Actions and elements can be used to define the orchestration flow in designer view. The following table lists actions and elements for the order orchestration type.
 
-The following table lists actions and elements for the order orchestration type.
-
-| **Action or Element**                                          | **Purpose**                                                                                                                                                                  |
+| **Action or Element**                                          | **Description**                                                                                                                                                                  |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Validate Order Header                                          | Performs validation on the order header level.                                                                                                                               |
 | Validate Order Line                                            | Performs validation on the order line level.                                                                                                                                 |
@@ -62,11 +60,11 @@ The following table lists actions and elements for the order orchestration type.
 
 The following table lists other available actions and elements.
 
-| **Action or Element** | **Purpose** |
+| **Action or Element** | **Description** |
 |-------------------------|-------------------------|
-| Condition | Allows you to split the orchestration flow into two paths, with no constraint that the paths will merge again:</br>**Yes -** This path will be triggered in case the previous orchestration step succeeded.</br>**No -** This path will be triggered in case the previous orchestration step failed. |
+| Condition | Allows you to split the orchestration flow into two paths, with no constraint that the paths will merge again.</br>**Yes -** This path will be triggered if the previous orchestration step succeeded.</br>**No -** This path will be triggered if the previous orchestration step failed. |
 | Splitter | Allows you to split the orchestration flow into a user-defined number of paths, with no constraint that the paths will merge again.</br>**Note:** Adding a filter policy in the subsequent action is used to define the split in path. |
-| Condition-Merge | Allows you to split the orchestration flow into two paths, with the constraint that the paths will merge again:</br>**Yes -** This path will be triggered in case the previous orchestration step succeeded.</br>**No -** This path will be triggered in case the previous orchestration step failed. |
+| Condition-Merge | Allows you to split the orchestration flow into two paths, with the constraint that the paths will merge again.</br>**Yes -** This path will be triggered if the previous orchestration step succeeded.</br>**No -** This path will be triggered if the previous orchestration step failed. |
 | Splitter-Merge | Allows you to split the orchestration flow into a user-defined number of paths, with the constraint that the paths will merge again.</br>**Note:** Adding a filter policy in the subsequent action is used to define the split in path. |
 
 
@@ -79,7 +77,7 @@ To create a new orchestration flow, follow these steps.
 
 2.  Select **New** to initiate the orchestration flow creation process. The orchestration flow designer canvas opens.
 
-3.  In the upper left corner, enter a unique name like "Test Order flow sample."
+3.  In the upper-left corner, enter a unique name such as "Test Order flow sample."
 
 4.  In the **Orchestration Type** field, select **Order Orchestration**.
 
@@ -129,11 +127,11 @@ To create a new orchestration flow, follow these steps.
 
 The following illustration shows an example orchestration flow named "Test Order flow sample."
 
-![Yedt order flow sample](media/test-order-flow.png)
+![Test order flow sample](media/test-order-flow.png)
 
 > [!NOTES]
-> -   Several orchestration flows of the same type can be in the status "Published" simultaneously. An order and its lines can be processed by multiple orchestration flows. Adding and configuring filter policies is important in case you create and publish several orchestration flows.
-> -   An orchestration flow cannot be edited once published.
+> -   Several orchestration flows of the same type can be in the status "Published" simultaneously. An order and its lines can be processed by multiple orchestration flows. Adding and configuring filter policies is important if you create and publish several orchestration flows.
+> -   An orchestration flow cannot be edited after it is published.
 > -   A published orchestration flow can be stopped, which will update the status to "Unpublished." This ensures that data will no longer flow through that orchestration flow.
-> -   You may receive a message that explains that a stopped orchestration flow cannot be restarted. This message is incorrectly generated from the designer platform and does not apply to the implementation of the designer in Dynamics 365 Intelligent Order Management.
+> -   You may receive a message that explains that a stopped orchestration flow cannot be restarted. This message is incorrectly generated from the designer platform and does not apply to the implementation of the designer in Intelligent Order Management.
 > -   An unpublished orchestration flow can be edited and published again, which will update the status to "Published." This ensures that data will again flow through the new version of the orchestration flow.
