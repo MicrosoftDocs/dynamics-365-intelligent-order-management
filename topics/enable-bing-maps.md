@@ -20,7 +20,7 @@ Dynamics 365 Intelligent Order Management can display information about fulfillm
 
 To enable Bing Maps for your environment, follow these steps.
 
-1.	Select **Settings** > **Advanced Settings**.
+1.	Go to **Settings** > **Advanced Settings**.
 2.	Select **Settings** > **Administration** > **System Settings**.
 3.	On the **General** tab, select **Yes** for **Show Bing Maps on forms**, and then select **OK**.
 
