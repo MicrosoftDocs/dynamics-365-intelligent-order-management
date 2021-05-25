@@ -4,6 +4,8 @@
   items:
   - name: Intelligent Order Management overview
     href: overview.md
+  - name: Before you buy
+    href: before-you-buy.md
   - name: Deployment
     href: deploy.md
   - name: Get support
@@ -14,6 +16,10 @@
   items:
   - name: Set up an environment
     href: setup.md
+  - name: Orchestration flows
+    href: orchestration-flows.md
+  - name: Policies and rules
+    href: policies-rules.md
   - name: Providers
     items:
     - name: Work with providers
@@ -24,6 +30,10 @@
       href: customize-provider.md
     - name: Create a new provider
       href: create-new-provider.md
+  - name: Enable Bing Maps for your environment
+    href: enable-bing-maps.md
+  - name: Enable timeline on Sales order page
+    href: enable-timeline-sales-order.md
 - name: Manage your orders
   items:
   - name: Fulfillment optimization
@@ -38,6 +48,8 @@
     href: admin.md
   - name: Data management
     href: data-management.md
+- name: Extensibility
+  href: extensibility.md
 - name: Globalization
   href: globalization.md
 - name: Blogs and communities
