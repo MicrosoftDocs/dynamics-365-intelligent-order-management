@@ -24,7 +24,7 @@ To enable Bing Maps for your environment, follow these steps.
 2.	Select **Settings** > **Administration** > **System Settings**.
 3.	On the **General** tab, select **Yes** for **Show Bing Maps on forms**, and then select **OK**.
 
-The following example image shows the System Settings screen with the **Show Bing Maps on forms** property highlighted.
+The following example image shows the **System Settings** page with the **Show Bing Maps on forms** option highlighted.
 
-![System Setting page with Show Bing Maps on forms field highlighted](media/system-settings-show-bing-maps.png)
+![System Setting page with Show Bing Maps on forms option highlighted](media/system-settings-show-bing-maps.png)
 
