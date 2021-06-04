@@ -26,6 +26,8 @@
       href: work-providers.md
     - name: Provider catalog
       href: provider-catalog.md
+    - name: Set up Orderful provider
+      href: set-up-orderful-provider.md
     - name: Customize an out-of-box provider
       href: customize-provider.md
     - name: Create a new provider
