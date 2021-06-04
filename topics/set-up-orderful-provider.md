@@ -63,18 +63,9 @@ To set up the provider, follow these steps:
 
 ##  Out-of-box capabilities
 
-The Orderful provider has the following capabilities.
-
-Business events:
-
--   Billing of order confirmed by billing provider: Event that indicates that billing was confirmed by Orderful.
-
--   Creation of fulfillment line succeeded: Event that indicates that a fulfillment line was successfully created.
-
--   Creation of fulfillment order failed: Event that indicates that fulfillment of the order failed.
-
--   Creation of fulfillment order succeeded: Event that indicates that fulfillment of the order succeeded.
-
-Transformation:
-
--   Orderful 850 purchase order to Microsoft Dataverse sales order: Transforms a purchase order from Orderful into a sales order in Dataverse.
+|  Capability | Description |
+| ------------------ | -------------------------------- |
+|    Connection             |    <br>The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.</br><br>Orderful Connection</br><br>Orderful Dataverse (current environment) Connection</br>   |
+|    Parameters             |    <br>Some providers require additional configuration information to retrieve and send information. </br><br>Owner ID</br><br>Webhook Name    </br>    |
+|    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow.             |          |   Business   Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
+|    Transformations        |    <br>Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.</br><br>Orderful 850 Purchase Order to Dataverse Sales Order</br>  |
