@@ -65,8 +65,8 @@ To set up the provider, follow these steps:
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Orderful Connection<**/br><br>**Orderful Dataverse (current environment) Connection**</br>   |
-|    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Owner ID**</br><br>**Webhook Name**</br>  |
+|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Orderful Connection**<br>**Orderful Dataverse (current environment) Connection**</br>   |
+|    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Owner ID**<br>**Webhook Name**</br>  |
 |    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow.   |
 |    Business   Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
 |    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Orderful 850 Purchase Order to Dataverse Sales Order**</br>  |
