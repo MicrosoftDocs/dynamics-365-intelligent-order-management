@@ -39,7 +39,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/dynamics365/order-management/breadcrumb/toc.json",
+      "breadcrumb_path": "breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "feedback_system": "None",
       "recommendations": "true"
