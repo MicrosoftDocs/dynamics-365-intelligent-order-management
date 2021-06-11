@@ -1,3 +1,11 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+  - name: Dynamics 365
+    href: /dynamics365/
+    topicHref: /dynamics365/
+    items:
+      - name: Intelligent Order Management home page
+        tocHref: /dynamics365/intelligent-order-management/
+        topicHref: /dynamics365/intelligent-order-management/index
