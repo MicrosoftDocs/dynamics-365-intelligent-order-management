@@ -19,8 +19,7 @@ This topic provides information about how to set up the Orderful provider in Dyn
 
 Orderful is a cloud electronic data interchange (EDI) platform for manufacturers, distributors, retailers, and technology companies. The Orderful provider enables Intelligent Order Management to access and process purchase orders from Orderful.  
   
-For more information about Orderful, see the [Orderful website](https://orderful.com/). To learn more about Orderful's API, see the [Orderful API documentation](https://docs.orderful.com/).
-
+For more information about Orderful, see the [Orderful website](https://orderful.com/). 
 ## Prerequisites
 
 To set up the Orderful provider, you need to have an Orderful developer account. You can create an account on [Orderful sign-in page](https://ui.orderful.com).
@@ -70,3 +69,7 @@ To set up the provider, follow these steps:
 |    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow.   |
 |    Business   Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
 |    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Orderful 850 Purchase Order to Dataverse Sales Order**</br>  |
+
+## Additional resources
+[Orderful API documentation](https://docs.orderful.com/)
+
