@@ -43,7 +43,7 @@ The Power BI based dashboards are using an architecture modelled in the diagram 
 
 7.  Power BI Dashboard and pages embedded into the Dynamics 365 Intelligent Order Management application
 
-![architecture flow](media/image1.png)
+![architecture flow](media/architecture-flow.png)
 
 **Customizations**
 
