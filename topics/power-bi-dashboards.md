@@ -17,8 +17,9 @@ title: Power BI dashboards in Intelligent Order Management
 
 Dynamics 365 Intelligent Order Management ships with set of dashboards embedded into the user interface which are based on Power BI technology. These dashboards provide longer-range insights into the order and fulfillment data moving through the app.
 
+You don't have to obtain additional licenses to view these dashboards. The Dynamics 365 Intelligent Order Management license allows you to view your data in these Power BI based dashboards.
+
 > [!NOTE]
-> You don't have to obtain additional licenses to view these dashboards. The Dynamics 365 Intelligent Order Management license allows you to view your data in these Power BI based dashboards.
 > Trial environments have a known issue with deploying the embedded Power BI. This is currently not supported by the platform.
 
 ## Integration to Power BI
