@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic describes the Power BI dashboards available in Dynamics 365 Intelligent Order Management.
+description: This topic describes the Power BI dashboards that are available in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 06/15/2021
 ms.topic: conceptual
@@ -15,39 +15,39 @@ title: Power BI dashboards in Intelligent Order Management
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dynamics 365 Intelligent Order Management ships with set of dashboards embedded into the user interface which are based on Power BI technology. These dashboards provide longer-range insights into the order and fulfillment data moving through the app.
+Dynamics 365 Intelligent Order Management includes a set of dashboards embedded into the user interface that are based on Power BI technology. The Power BI dashboards provide longer-range insights into the order and fulfillment data moving through the app.
 
-You don't have to obtain additional licenses to view these dashboards. The Dynamics 365 Intelligent Order Management license allows you to view your data in these Power BI based dashboards.
+The Intelligent Order Management license allows you to view your data in the Power BI based dashboards, so you don't have to obtain additional licenses to view the dashboards.
 
 > [!NOTE]
-> Trial environments have a known issue with deploying the embedded Power BI. This is currently not supported by the platform.
+> There's a known issue with trial environments. Deploying embedded Power BI is currently not supported by the platform.
 
 ## Integration to Power BI
 
-The integration between Power BI and Dynamics 365 Intelligent Order Management is pre-configured and does not require any additional setup.
+Integration between Power BI and Intelligent Order Management is preconfigured and doesn't require additional setup.
 
 ## Architecture
 
-The Power BI based dashboards are using an architecture modelled in the diagram below.
+The Power BI dashboards use the architecture modeled in the diagram below.
 
-1.  Data is created or updated in Dataverse when entries are entered into The Dynamics 365 Intelligent Order Management application.
+1.  Data is created or updated in Microsoft Dataverse when entries are entered in Intelligent Order Management.
 
-2.  The Dataverse data is synchronized to Managed Data Lake leveraging Athena. This synchronization is currently executed every 4 hours. This can currently not be modified.
+2.  The Dataverse data is synchronized to Dataverse managed data lake leveraging Amazon Athena. Synchronization is executed every 4 hours. The synchronization timing can't be modified.
 
-3.  A data snapshot is copied and transferred to the analytics platform storage account
+3.  A data snapshot is copied and transferred to the analytics platform storage account.
 
-4.  Data is transformed for Power BI KPI's
+4.  The data is transformed for Power BI KPI's.
 
-5.  The transformed data is copied and transferred back to the Dataverse, Managed Data Lake
+5.  The transformed data is copied and transferred back to Dataverse managed data lake.
 
-6.  Power BI Dashboard is provisioned or refreshed
+6.  The Power BI Dashboard is provisioned or refreshed.
 
-7.  Power BI Dashboard and pages embedded into the Dynamics 365 Intelligent Order Management application
+7.  Power BI Dashboard and pages are embedded into the Intelligent Order Management application.
 
 ![architecture flow](media/architecture-flow.png)
 
 ## Customizations
 
-Dashboards based on embedded Power BI cannot be customized. The platform currently does not support such actions.
+Customization of dashboards based on embedded Power BI isn't supported. 
 
-The data stored in Managed Data Lake is not accessible for any customizations. In case custom reports or insights are required these can be built accessing data stored in Dataverse
+The data stored in managed data lake isn't accessible for any customizations. If custom reports or insights are required, you can build them by accessing data stored in Dataverse.
