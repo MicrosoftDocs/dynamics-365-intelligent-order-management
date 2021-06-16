@@ -17,7 +17,7 @@ title: Power BI dashboards in Intelligent Order Management
 
 Dynamics 365 Intelligent Order Management includes a set of dashboards embedded into the user interface that are based on Power BI technology. The Power BI dashboards provide longer-range insights into the order and fulfillment data moving through the app.
 
-The Intelligent Order Management license allows you to view your data in the Power BI based dashboards, so you don't have to obtain additional licenses to view the dashboards.
+The Intelligent Order Management license allows you to view your data in the Power BI-based dashboards, so you don't have to obtain additional licenses to view the dashboards.
 
 > [!NOTE]
 > There's a known issue with trial environments. Deploying embedded Power BI is currently not supported by the platform.
@@ -32,11 +32,11 @@ The Power BI dashboards use the architecture modeled in the diagram below.
 
 1.  When data are entered in Intelligent Order Management, it's created or updated in Microsoft Dataverse.
 
-2.  The Dataverse data is synchronized to the Dataverse managed data lake leveraging Amazon Athena. Synchronization is executed every 4 hours. The synchronization timing can't be modified.
+2.  The Dataverse data is synchronized to the Dataverse managed data lake using Amazon Athena. Synchronization is executed every 4 hours. The synchronization timing can't be modified.
 
 3.  A data snapshot is copied and transferred to the analytics platform storage account.
 
-4.  The data is transformed for Power BI KPI's.
+4.  The data is transformed for Power BI KPIs.
 
 5.  The transformed data is copied and transferred back to Dataverse managed data lake.
 
