@@ -30,9 +30,9 @@ Integration between Power BI and Intelligent Order Management is preconfigured a
 
 The Power BI dashboards use the architecture modeled in the diagram below.
 
-1.  Data is created or updated in Microsoft Dataverse when entries are entered in Intelligent Order Management.
+1.  When data are entered in Intelligent Order Management, it's created or updated in Microsoft Dataverse.
 
-2.  The Dataverse data is synchronized to Dataverse managed data lake leveraging Amazon Athena. Synchronization is executed every 4 hours. The synchronization timing can't be modified.
+2.  The Dataverse data is synchronized to the Dataverse managed data lake leveraging Amazon Athena. Synchronization is executed every 4 hours. The synchronization timing can't be modified.
 
 3.  A data snapshot is copied and transferred to the analytics platform storage account.
 
@@ -40,9 +40,9 @@ The Power BI dashboards use the architecture modeled in the diagram below.
 
 5.  The transformed data is copied and transferred back to Dataverse managed data lake.
 
-6.  The Power BI Dashboard is provisioned or refreshed.
+6.  The Power BI workspace is provisioned or refreshed.
 
-7.  Power BI Dashboard and pages are embedded into the Intelligent Order Management application.
+7.  The Power BI reports and pages are embedded in Intelligent Order Management.
 
 ![architecture flow](media/architecture-flow.png)
 
