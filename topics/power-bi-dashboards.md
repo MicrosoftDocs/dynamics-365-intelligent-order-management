@@ -20,7 +20,7 @@ Dynamics 365 Intelligent Order Management includes a set of dashboards embedded 
 The Intelligent Order Management license allows you to view your data in the Power BI-based dashboards, so you don't have to obtain additional licenses to view the dashboards.
 
 > [!NOTE]
-> There's a known issue with trial environments. Deploying embedded Power BI is currently not supported by the platform.
+> There's a known issue with trial environments. Deploying embedded Power BI is currently not supported.
 
 ## Integration to Power BI
 
