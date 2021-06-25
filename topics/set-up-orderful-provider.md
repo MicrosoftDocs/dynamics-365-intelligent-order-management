@@ -19,7 +19,8 @@ This topic provides information about how to set up the Orderful provider in Dyn
 
 Orderful is a cloud electronic data interchange (EDI) platform for manufacturers, distributors, retailers, and technology companies. The Orderful provider enables Intelligent Order Management to access and process purchase orders from Orderful.  
   
-For more information about Orderful, see the [Orderful website](https://orderful.com/). 
+For more information about Orderful, contact Orderful at <sales+msft@orderful.com>. 
+
 ## Prerequisites
 
 To set up the Orderful provider, you need to have an Orderful developer account. You can create an account on [Orderful sign-in page](https://ui.orderful.com).
