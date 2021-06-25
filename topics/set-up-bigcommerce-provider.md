@@ -66,12 +66,8 @@ The BigCommerce provider has the following capabilities:
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|  Business events  | Billing of order confirmed by billing provider: Event that indicates that billing was confirmed by BigCommerce.<br>Creation of fulfillment line succeeded: Event that indicates that a fulfillment line was successfully created.</br><br>Creation of fulfillment order failed: Event that indicates that fulfillment of the order failed.</br><br>Creation of fulfillment order succeeded: Event that indicates that fulfillment of the order succeeded.</br>
-
-
-Transformation:
-
--   BigCommerce sales order to Microsoft Dataverse sales order: Transforms a purchase order from BigCommerce into a sales order in Dataverse.
+|  Business events  | Billing of order confirmed by billing provider: Event that indicates that billing was confirmed by BigCommerce.<br>Creation of fulfillment line succeeded: Event that indicates that a fulfillment line was successfully created.</br><br>Creation of fulfillment order failed: Event that indicates that fulfillment of the order failed.</br><br>Creation of fulfillment order succeeded: Event that indicates that fulfillment of the order succeeded.</br>  |
+| Transformation  |  BigCommerce sales order to Microsoft Dataverse sales order: Transforms a purchase order from BigCommerce into a sales order in Dataverse.|
 
 ## Additional resources
 
