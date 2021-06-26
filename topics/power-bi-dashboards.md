@@ -32,7 +32,7 @@ The Power BI dashboards use the architecture modeled in the following diagram.
 
 1.  When data is entered in Intelligent Order Management, it's created or updated in Microsoft Dataverse.
 
-2.  The Dataverse data is synchronized to the Dataverse-managed data lake using Amazon Athena. Synchronization is executed every 4 hours. The synchronization timing can't be modified.
+2.  The Dataverse data is synchronized to the Dataverse-managed data lake using Athena. Synchronization is executed every 4 hours. The synchronization timing can't be modified.
 
 3.  A data snapshot is copied and transferred to the analytics platform storage account.
 
