@@ -4,7 +4,7 @@ description: This topic helps troubleshoot issues that may occur during sign up 
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 06/29/2021
 ms.topic: conceptual
-ms.author: v-chgri
+ms.author: josaw
 
 title: Troubleshoot your trials sign up experience
 
@@ -15,7 +15,7 @@ title: Troubleshoot your trials sign up experience
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-If you are signing up for the Dynamics 365 Intelligent Order Management (Preview) trial but are getting errors messages like the ones below, this post is for you:
+If you are signing up for the Dynamics 365 Intelligent Order Management (Preview) trial but are getting errors messages like the ones below, this post is for you.
 
 Here are some steps we suggest investigating to work around these issues:
 
@@ -42,10 +42,10 @@ Does your tenant have a Dynamics 365 Customer Engagement (CE) license already as
 1. Navigate to https://dynamics.microsoft.com/intelligent-order-management
 1. Click start free trial.
 1. Provide your email.
-1. Select the option to create a new account. You can see an overview of this process in this blog post. https://community.dynamics.com/365/dynamics-365-intelligent-order-management/b/dynamics-365-intelligent-order-management-blog/posts/dynamics-365-intelligent-order-management-preview-release
+1. Select the option to create a new account. For more information, see [Dynamics 365 Intelligent Order Management (Preview) release](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/b/dynamics-365-intelligent-order-management-blog/posts/dynamics-365-intelligent-order-management-preview-release).
 1. Now you’ll have a new free tenant and will automatically be the admin.
 
-You can see additional information on the deployment options at this help topic. https://docs.microsoft.com/en-us/dynamics365/intelligent-order-management/deploy
+For more information, see [Deployment](deploy.md).
 
 If the issue persists after creating a new tenant, try to deploy the environment directly from the power platform admin center:
 
@@ -72,7 +72,3 @@ For example, if you selected Europe as your region during tenant creation, you c
 Note: We are currently experiencing issues deploying in Canada, and suggest you deploy in another region when deploying.
 
 The purpose of a preview trial is to test in public and take the feedback into the next updates. We’ll continue to monitor the feedback and provide updated instructions.
-
-Looking forward to seeing how you use this product and your feedback.
-
-Dasani
