@@ -6,22 +6,24 @@ ms.date: 07/01/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Troubleshoot your trial sign up experience
+title: Troubleshoot trial sign-up issues
 
 ---
 
-# Troubleshoot your trial sign up experience
+# Troubleshoot trial sign-up issues
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic helps troubleshoot issues that may occur during sign up for the Microsoft Dynamics 365 Intelligent Order Management (Preview) trial.
+This topic helps you troubleshoot issues that may occur during sign up for the Microsoft Dynamics 365 Intelligent Order Management (Preview) trial.
 
 If you are signing up for the Dynamics 365 Intelligent Order Management (Preview) trial but are seeing error messages like those listed below, this topic provides some possible workarounds.
 
 "You're already signed up for this subscription with \_______"
 
 "You are not a member of this organization"
+
+The purpose of a preview trial is to test in public and incorporate feedback improvements into later updates. The Commerce team will continue to monitor trial feedback and provide updated instructions as needed.
 
 ## Sign-in issues
 
@@ -74,6 +76,4 @@ Another common issue is that you may run into errors if you have mismatched regi
 The region you selected when you created your tenant must match the region you select when you sign up for the trial. For example, if you selected Europe as your region during tenant creation, you cannot select United States as your region when deploying your trial.
 
 > [!NOTE] 
-> There have been some issues deploying environments in Canada, so it is suggested that you deploy your environment in another region.
-
-The purpose of a preview trial is to test in public and incorporate feedback improvements into later updates. The Commerce team will continue to monitor trial feedback and provide updated instructions as needed.
+> There have been some reported issues deploying environments in Canada, so it is suggested that you deploy your environment in another region.
