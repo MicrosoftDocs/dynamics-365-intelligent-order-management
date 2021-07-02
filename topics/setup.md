@@ -20,7 +20,7 @@ Dynamics 365 Intelligent Order Management is currently in the public preview rel
 
 To provision a trial environment, see [Deployment](https://docs.microsoft.com/power-platform/admin/trial-environments). After you provision your environment, the **Welcome and get started** page is displayed. The trial environment is preconfigured and you can explore the app using the demo data that's provided.
 
-![Welcome and get started screen ](media/welcome.png)
+![Welcome and get started screen .](media/welcome.png)
 
 ## Configuration
 

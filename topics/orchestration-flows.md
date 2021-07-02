@@ -127,7 +127,7 @@ To create a new orchestration flow, follow these steps.
 
 The following illustration shows an example orchestration flow named "Test Order flow sample."
 
-![Test order flow sample](media/test-order-flow.png)
+![Test order flow sample.](media/test-order-flow.png)
 
 > [!NOTE]
 > -   Several orchestration flows of the same type can be in the status "Published" simultaneously. An order and its lines can be processed by multiple orchestration flows. Adding and configuring filter policies is important if you create and publish several orchestration flows.
