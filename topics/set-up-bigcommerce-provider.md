@@ -23,7 +23,7 @@ For more information about BigCommerce, see the [BigCommerce website](https://ww
 
 ## Prerequisites 
 
-To set up the BigCommerce provider, you need to have a BigCommerce developer account. You can create an account on the [BigCommerce DevCenter](https://developer.bigcommerce.com/).
+You need to set up a sample store. Go to the [BigCommerce home page](https://bigcommerce.com/essentials) and select **Start your free trial**. To remove the 15-day trial limitation, contact BigCommerce.
 
 ## Set up the provider
 To set up the provider, follow these steps: 
@@ -66,8 +66,8 @@ The BigCommerce provider has the following capabilities:
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|  Business events  | Billing of order confirmed by billing provider: Event that indicates that billing was confirmed by BigCommerce.<br>Creation of fulfillment line succeeded: Event that indicates that a fulfillment line was successfully created.</br><br>Creation of fulfillment order failed: Event that indicates that fulfillment of the order failed.</br><br>Creation of fulfillment order succeeded: Event that indicates that fulfillment of the order succeeded.</br>  |
-| Transformation  |  BigCommerce sales order to Microsoft Dataverse sales order: Transforms a purchase order from BigCommerce into a sales order in Dataverse.|
+|  Business events  | **Billing of order confirmed by billing provider**: Event that indicates that billing was confirmed by BigCommerce.<br>**Creation of fulfillment line succeeded**: Event that indicates that a fulfillment line was successfully created.</br><br>**Creation of fulfillment order failed**: Event that indicates that fulfillment of the order failed.</br><br>**Creation of fulfillment order succeeded**: Event that indicates that fulfillment of the order succeeded.</br>  |
+| Transformation  |  **BigCommerce sales order to Microsoft Dataverse sales order**: Transforms a purchase order from BigCommerce into a sales order in Dataverse.|
 
 ## Additional resources
 
