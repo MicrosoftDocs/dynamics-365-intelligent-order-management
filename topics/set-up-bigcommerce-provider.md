@@ -48,7 +48,7 @@ To set up the provider, follow these steps:
 
           7. Enter the following information: 
               - **Connection Name**: Enter a name of your choice.
-              - **API Key**: Enter the BigCommerce API key. You can retrieve it by following the instructions here: https://<your store hash code>.mybigcommerce.com/manage/settings/auth/api-accounts
+              - **API Key**: Enter the BigCommerce API key. You can retrieve it by following the instructions here: https://\<your store hash code\>.mybigcommerce.com/manage/settings/auth/api-accounts.
 
           9. Save the connection.
 
@@ -58,7 +58,7 @@ To set up the provider, follow these steps:
 
           15. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
 
-5. Go to the **Parameters** tab and add the BigCommerce store hash <where do you find this information?>
+5. Go to the **Parameters** tab and add the BigCommerce store hash.
 
 ## Out-of-box capabilities
 
@@ -66,7 +66,7 @@ The BigCommerce provider has the following capabilities:
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|  Business events  | **Billing of order confirmed by billing provider**: Event that indicates that billing was confirmed by BigCommerce.<br>**Creation of fulfillment line succeeded**: Event that indicates that a fulfillment line was successfully created.</br><br>**Creation of fulfillment order failed**: Event that indicates that fulfillment of the order failed.</br><br>**Creation of fulfillment order succeeded**: Event that indicates that fulfillment of the order succeeded.</br>  |
+|  Business events  | **Billing of order confirmed by billing provider**: Event that indicates that billing was confirmed by BigCommerce.</br><br>**Creation of fulfillment line succeeded**: Event that indicates that a fulfillment line was successfully created.</br><br>**Creation of fulfillment order failed**: Event that indicates that fulfillment of the order failed.</br><br>**Creation of fulfillment order succeeded**: Event that indicates that fulfillment of the order succeeded.</br>  |
 | Transformation  |  **BigCommerce sales order to Microsoft Dataverse sales order**: Transforms a purchase order from BigCommerce into a sales order in Dataverse.|
 
 ## Additional resources
