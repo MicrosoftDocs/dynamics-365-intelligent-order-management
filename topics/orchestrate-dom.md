@@ -27,21 +27,21 @@ To configure Intelligent Order Management so that you can orchestrate orders usi
 To create the connections, follow these steps. 
 
 1. Go to **Getting Started \> Configure Settings**. 
-1. Under **Active IOM Platform Connection References**, select **IOM Data Transformer**. 
+1. On the **Active IOM Platform Connection References** page, select **IOM Data Transformer**. 
 1. Under **Connections**, select **Retrieve Connection Link**. A new tab will open. 
 1. If it your first time setting up a connection, you will need to sign up for Microsoft Power Automate. Ensure that you are in right Dataverse environment.  
-1. Go to **Data \> Connections** and select **New Connection** and in the search bar on the right. Enter "IOM Data Transformer" and create a new connection. 
-1. When the connection dialog box appears, accept it and then copy the browser link to the connection and save it locally.
+1. Go to **Data \> Connections**. Select **New Connection**, and in the search bar on the top right enter "IOM Data Transformer" and create a new connection. 
+1. When the connection dialog box appears, accept it and then copy the browser link to the connection.
 1. Select **Save and Close**. 
-1. Select **Microsoft Dataverse**, and then build a connector for Dataverse similar to how you built the connector for **IOM Data Transformer**. 
+1. On the **Active IOM Platform Connection References** page, select **Microsoft Dataverse**, and then build a connector for Dataverse similar to how you built the connector for **IOM Data Transformer**. 
 1. Go to **Catalog \> Add Provider** and select **Dynamics 365 Distributed Order Management**.
 1. Select **Connections**. The connection reference page appears.
 1. Select **Retrieve Connection Link**, and then provide a new Dataverse connection link.
 1. Select **+ New connection**.
 1. In the search box on the top right corner, enter "Dataverse." 
 1. Select the plus symbol ("+") for the new Dataverse connection.
-1. A **Microsoft Dataverse** dialog box appears. Select **Create** to create the connection. Look at modified in the list. 
-1. Open this and retrieve the link to the URL for your connection.
+1. A **Microsoft Dataverse** dialog box appears. Select **Create** to create the connection.  
+1. On the **Connections in IOM** page, you should see the new connection in the list. Select the new connection and retrieve the link to the URL for your connection.
 1. Go to the **IOM Provider** page, select **Save**, and then select **Activate**.  
 1. Select **Save and Close**.
 
@@ -50,7 +50,7 @@ To create the connections, follow these steps.
 Next, you must activate the provider. To activate the provider, follow these steps.
 
 1. Go to **Catalog \> Add Provider** and select **Dynamics 365 Distributed Order Management**.
-1. Select **Activate**. 
+1. Select **Activate**. It will take some time to activate. The action is created automatically. 
 
 ## Configure and publish the orchestration
 
