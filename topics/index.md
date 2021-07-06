@@ -9,6 +9,7 @@ search.app:
   - 
 search.audienceType: EndUser
   - 
+ms.custom: "intro-internal"
 title: Intelligent Order Management home page
 ---
 
