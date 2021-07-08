@@ -20,7 +20,7 @@ This topic describes how to set up distributed order management (DOM) providers 
 > [!NOTE]
 > To orchestrate orders using a DOM provider, you will need to use external DOM providers to bring orders into the system.
 
-## Create the connections
+## Create and configure the connections
 
 To configure Intelligent Order Management so that you can orchestrate orders using a DOM provider, you will first need to create three Dataverse connections, one IOM Data Transformer connection, and one Power Automate Management connection. 
 
