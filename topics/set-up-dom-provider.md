@@ -6,11 +6,11 @@ ms.date: 07/08/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Set up a Distributed Order Management (DOM) provider
+title: Set up a distributed order management (DOM) provider
 
 ---
 
-# Set up a Distributed Order Management (DOM) provider
+# Set up a distributed order management (DOM) provider
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
