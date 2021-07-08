@@ -2,7 +2,7 @@
 author: v-chgri
 description: This topic describes how to orchestrate orders using a distributed order management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 07/06/2021
+ms.date: 07/08/2021
 ms.topic: conceptual
 ms.author: josaw
 
@@ -76,7 +76,7 @@ To configure and publish your orchestration, follow these steps.
     - **Action Type**: "Fulfillment Determination"
     - **Input Events**: "New Order"
     - **Provider Action**: "Send Order to Retail DOM"
-    - **Output Events**: "Send Order to Fullfillment Determination"
+    - **Output Events**: "Send Order to Fulfillment Determination"
 1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
 
 
