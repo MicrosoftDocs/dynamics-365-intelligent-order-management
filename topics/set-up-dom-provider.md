@@ -15,7 +15,7 @@ title: Set up a distributed order management (DOM) provider
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to set up distributed order management (DOM) providers in Microsoft Dynamics 365 Intelligent Order Management.
+This topic describes how to set up a distributed order management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management.
 
 > [!NOTE]
 > To orchestrate orders using a DOM provider, you will need to use external DOM providers to bring orders into the system.
