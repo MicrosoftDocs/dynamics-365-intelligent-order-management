@@ -18,7 +18,7 @@ title: Set up an environment
 
 Dynamics 365 Intelligent Order Management is currently in the public preview release phase so customers can evaluate the app and provide feedback.
 
-To provision a trial environment, see [Deployment](https://docs.microsoft.com/power-platform/admin/trial-environments). After you provision your environment, the **Welcome and get started** page is displayed. The trial environment is preconfigured and you can explore the app using the demo data that's provided.
+To provision a trial environment, see [Deployment](/power-platform/admin/trial-environments.md). After you provision your environment, the **Welcome and get started** page is displayed. The trial environment is preconfigured and you can explore the app using the demo data that's provided.
 
 ![Welcome and get started screen ](media/welcome.png)
 
@@ -28,7 +28,7 @@ On the **Welcome and get started** page, you can access the following features.
 
 - **Insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
-- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/work-providers.md).
+- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Work with providers](work-providers.md).
 
 - **Orchestrate your order journeys**: Select **Manage** to go to the pages where you can create and manage order orchestration flows.
 
