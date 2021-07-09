@@ -26,9 +26,7 @@ DOM is built as a microservice. It reads configuration data such as fulfillment 
 
 ## Set up DOM
 
-To enable DOM as part of the order orchestration journey, set up the Dynamics 365 Distributed Order Management provider on the **Providers > Catalog** page in Dynamics 365 Intelligent Order Management. Find Dynamics 365 Distributed Order Management in the list of providers and select **Add Provider**. After you accept the terms and conditions, DOM will be enabled in the list of installed providers under **Providers > Installed**.
-
-When the DOM provider is set up, you can enable the action **Send Order to DOM** in the order orchestration designer and use its capabilities to optimize orders.
+To enable DOM as part of the order orchestration journey, follow the steps in the [Set up a Distributed Order Management provider](set-up-dom-provider.md) to set up and activate the DOM provider. 
 
 ## Fulfillment sources 
 
@@ -150,3 +148,5 @@ To configure and publish your orchestration, follow these steps.
     - **Output Events**: "Send Order to Fulfillment Determination"
 1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
 
+## Additional resources
+[Set up a Distributed Order Management provider](set-up-dom-provider.md)
