@@ -5,7 +5,7 @@ ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
 ms.author: josaw
-
+ms.custom: "intro-internal"
 title: Administration overview
 ---
 
