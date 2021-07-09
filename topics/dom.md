@@ -6,29 +6,29 @@ ms.date: 05/17/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Distributed Order Management (preview)
+title: Distributed Order Management (Preview)
 ---
 
 
-# Distributed Order Management (preview)
+# Distributed Order Management (Peview)
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dynamics 365 Distributed Order Management is an intelligent optimization service that maximizes order fulfillment within the supply chain network. Distributed Order Management helps you ensure that products are delivered to your customers with the right quantities, from the right sources, and at the right time. Distributed Order Management can help you maximize profits, minimize costs, and satisfy service-level requirements.  
+Dynamics 365 Distributed Order Management (DOM)is an intelligent optimization service that maximizes order fulfillment within the supply chain network. DOM helps you ensure that products are delivered to your customers with the right quantities, from the right sources, and at the right time. DOM can help you maximize profits, minimize costs, and satisfy service-level requirements.  
 
-In a modern supply network where product fulfillment can be from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or a spike in demand. Distributed Order Management helps you maximize order fulfillment and find the right source for delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling from the closest sources.  
+In a modern supply network where product fulfillment can be from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or a spike in demand. DOM helps you maximize order fulfillment and find the right source for delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling from the closest sources.  
 
-Distributed Order Management is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find the distance between the shipping address and fulfillment source.
+DOM is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find the distance between the shipping address and fulfillment source.
 
 > [!NOTE]
 > Dynamics 365 Distributed Order Management is a preview service and can only be used in sandbox environments for non-production purposes.
 
-## Set up Distributed Order Management
+## Set up DOM
 
-To enable Distributed Order Management as part of the order orchestration journey, set up the Dynamics 365 Distributed Order Management provider on the **Providers > Catalog** page in Dynamics 365 Intelligent Order Management. Find Dynamics 365 Distributed Order Management in the list of providers and select **Add Provider**. After you accept the terms and conditions, Distributed Order Management will be enabled in the list of installed providers under **Providers > Installed**.
+To enable DOM as part of the order orchestration journey, set up the Dynamics 365 Distributed Order Management provider on the **Providers > Catalog** page in Dynamics 365 Intelligent Order Management. Find Dynamics 365 Distributed Order Management in the list of providers and select **Add Provider**. After you accept the terms and conditions, DOM will be enabled in the list of installed providers under **Providers > Installed**.
 
-When the Distributed Order Management provider is set up, you can enable the action **Send Order to DOM** in the order orchestration designer and use its capabilities to optimize orders.
+When the DOM provider is set up, you can enable the action **Send Order to DOM** in the order orchestration designer and use its capabilities to optimize orders.
 
 ## Fulfillment sources 
 
@@ -106,7 +106,7 @@ Depending on the nature of your business, you can define multiple optimization s
 
 For the preview release, **Fulfillment from the closest source** is supported as the pre-defined objective in every strategy.
 
-Distributed Order Management batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
+DOM batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
 
 ### Set up a fulfillment strategy
 
@@ -130,6 +130,23 @@ On the **Strategies** page, enter values for the following.
 
 ## Fulfillment optimization as part of order orchestration flows
 
-To enable intelligent optimization using Distributed Order Management as part of the order orchestration journey, add the **Send to DOM** node to the journey designer on the **Orchestration > Flows page**. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Distributed Order Management will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.   
+Refer to the topic [Set up a Distributed Order Management provider](set-up-dom-provider.md) to set up and activate the DOM provider. After the provider is activated, you can enable intelligent optimization using DOM as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. DOM will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.   
 
 An organization can query the fulfillment plan to see the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type including fully sourced, partially sourced, not sourced, or exception.  
+
+### Configure and publish the orchestration
+
+To configure and publish your orchestration, follow these steps.
+
+1. Go to **Active Action Types** and select **Fulfillment Determination**.
+1. On the **Fulfillment Determination** page under **Action Type Input Business Events**, select **Fulfillment Determination**.
+1. Change the **Business Event Definition** to **New Order**.
+1. Select **Save and Close**. 
+1. Go to **Order Orchestration Journey** and add a **Send to DOM** node with following details:
+    - **Name**: "Send to DOM" 
+    - **Action Type**: "Fulfillment Determination"
+    - **Input Events**: "New Order"
+    - **Provider Action**: "Send Order to Retail DOM"
+    - **Output Events**: "Send Order to Fulfillment Determination"
+1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
+
