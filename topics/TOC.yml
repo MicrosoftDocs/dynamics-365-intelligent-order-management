@@ -28,6 +28,10 @@
       href: provider-catalog.md
     - name: Set up Orderful provider
       href: set-up-orderful-provider.md
+    - name: Set up BigCommerce provider
+      href: set-up-bigcommerce-provider.md
+    - name: Set up DOM provider
+      href: set-up-dom-provider.md
     - name: Customize an out-of-box provider
       href: customize-provider.md
     - name: Create a new provider
