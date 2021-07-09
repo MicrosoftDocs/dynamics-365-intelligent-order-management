@@ -6,23 +6,23 @@ ms.date: 07/08/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Set up a distributed order management (DOM) provider
+title: Set up a Distributed Order Management provider
 
 ---
 
-# Set up a distributed order management (DOM) provider
+# Set up a Distributed Order Management provider
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to set up a distributed order management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management.
+This topic describes how to set up a Distributed Order Management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management. For information about DOM, refer to the [Distributed Order Management (Preview)](dom.md) topic.
 
 > [!NOTE]
 > To orchestrate orders using a DOM provider, you will need to use external DOM providers to bring orders into the system.
 
 ## Create and configure the connections
 
-To configure Intelligent Order Management so that you can orchestrate orders using a DOM provider, you will first need to create three Dataverse connections, one IOM Data Transformer connection, and one Power Automate Management connection. 
+To configure Intelligent Order Management so that you can orchestrate orders using a DOM provider, you will first need to create three Dataverse connections, one Intelligent Order Management Data Transformer connection, and one Power Automate Management connection. 
 
 To create and configure the connections, follow these steps. 
 
@@ -62,21 +62,8 @@ Next, you must activate the provider. To activate the provider, follow these ste
 1. Select **Activate**. It will take some time to activate. The provider action is created automatically. 
 
 ## Configure and publish the orchestration
+To configure and publish your orchestration, follow the steps in [Distributed Order Management (Preview)](dom.md#Configure and publish the orchestration).
 
-After the provider is activated, you can add the **Send to Retail DOM** node to the orchestration journey and publish.
-
-To configure and publish your orchestration, follow these steps.
-
-1. Go to **Active Action Types** and select **Fulfillment Determination**.
-1. On the **Fulfillment Determination** page under **Action Type Input Business Events**, select **Fulfillment Determination**.
-1. Change the **Business Event Definition** to **New Order**.
-1. Select **Save and Close**. 
-1. Go to **Order Orchestration Journey** and add a **Send to DOM** node with following details:
-    - **Name**: "Send to DOM" 
-    - **Action Type**: "Fulfillment Determination"
-    - **Input Events**: "New Order"
-    - **Provider Action**: "Send Order to Retail DOM"
-    - **Output Events**: "Send Order to Fulfillment Determination"
-1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
-
+## Additional resources
+[Distributed Order Management (Preview)](dom.md) 
 
