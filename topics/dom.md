@@ -10,7 +10,7 @@ title: Distributed Order Management (Preview)
 ---
 
 
-# Distributed Order Management (Peview)
+# Distributed Order Management (Preview)
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
