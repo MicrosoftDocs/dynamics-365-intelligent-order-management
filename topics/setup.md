@@ -47,13 +47,13 @@ On the **Welcome and get started** page, you can access the following features.
 
 To configure Intelligent Order Management, you first need to create a Dataverse connection, a Power Automate Management connection, and an Intelligent Order Management Data Transformer connection. 
 
-1. Go to the [Power Automate portal](https://us.flow.microsoft.com/) and make sure you are in the corect Intelligent Order Management environment. To check which environment you are in, select **Environments** in the top right corner of the Power Automate portal.
+1. Go to the [Power Automate portal](https://us.flow.microsoft.com/) and make sure you are in the correct Intelligent Order Management environment. To check which environment you are in, select **Environments** in the top-right corner of the Power Automate portal.
 1. Go to **Data > Connections**.
 
 ### Create Dataverse connection
 
 1. On the **Data > Connections** page, select **New connection**.
-2. In the search box in the top right corner, enter **Dataverse**.
+2. In the search box in the top-right corner, enter **Dataverse**.
 3. Select **+** next to **Microsoft Dataverse**.
 
 ![Dataverse logo](media/dataverse-connection.png)
@@ -63,13 +63,13 @@ To configure Intelligent Order Management, you first need to create a Dataverse 
 ### Create Power Automate connection
 
 1. On the **Data > Connections** page, select **New connection**.
-2. In the search box in the top right corner, enter **Power Automate Management**.
+2. In the search box in the top-right corner, enter **Power Automate Management**.
 3. Select **+** next to **Power Automate Management**. When prompted to sign in, use the same credentials you used to sign in to Intelligent Order Management.
 
 ### Create IOM Data Transformer connection
 
 1. On the **Data > Connections** page, select **New connection**.
-2. In the search box in the top right corner, enter **IOM Data Transformer**.
+2. In the search box in the top-right corner, enter **IOM Data Transformer**.
 3. Select **+** next to **IOM Data Transformer**. When prompted to sign in, use the same credentials you used to sign in to Intelligent Order Management.
 
 ## Set up platform connection references
