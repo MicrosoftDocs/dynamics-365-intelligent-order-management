@@ -55,7 +55,7 @@ To create a new policy, follow these steps.
 
 The following image shows the policy details entered for the “Order line validations extended” policy example.
 
-![Order line validations extended policy example](media/order-line-validations-extended.png)
+![Order line validations extended policy example.](media/order-line-validations-extended.png)
 
 ## Rules
 
@@ -117,7 +117,7 @@ To create a new example rule, follow these steps.
 
 The following image shows the "Order source and amount validation" rule example as it would appear in Condition Builder.
 
-![Order source and amount validation rule example](media/order-source-amount-validation.png)
+![Order source and amount validation rule example.](media/order-source-amount-validation.png)
 
 ## Add custom action
 

@@ -44,7 +44,7 @@ The Power BI dashboards use the architecture modeled in the following diagram.
 
 7.  The Power BI reports and pages are embedded in Intelligent Order Management.
 
-![architecture flow](media/architecture-flow.png)
+![architecture flow.](media/architecture-flow.png)
 
 ## Customizations
 
