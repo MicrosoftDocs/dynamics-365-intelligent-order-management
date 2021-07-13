@@ -81,7 +81,7 @@ After you create your connections, you need to configure them.
 3. For each connection reference, do the following:
    1. Select the connection reference.
    1. To retrieve the connection URL, go to the [Power Automate portal](https://us.flow.microsoft.com/). Select the corresponding connection, and then copy the URL for the page. For example, if you are setting up the Intelligent Order Management Data Transformer connection reference, Select the **IOM Data Transformer** connection on the **Connections** page in Power Automate, and copy the URL from your browser’s address bar.
-   1. Go back to the corresponding connection reference page and paste the copied URL in the **Connection URL** field.
+   1. Go back to the corresponding connection reference page in Intelligent Order Management and paste the copied URL in the **Connection URL** field.
 
 > [!NOTE]
 > There are three platform Dataverse connection references. You can use the same Dataverse connection for all three. 
