@@ -110,6 +110,7 @@ Before you delete the provider instance, make sure you're not using the provider
 
 ## Additional resources
 
+[Set up an environment](setup.md)
 [Provider catalog](provider-catalog.md)
 
 [Customize an out-of-box provider](customize-provider.md)
