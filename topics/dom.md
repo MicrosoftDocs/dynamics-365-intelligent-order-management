@@ -134,4 +134,4 @@ An organization can query the fulfillment plan to see the results. Fulfillment p
 
 ## Additional resources
 [Set up Distributed Order Management provider](set-up-dom-provider.md)
-[Orchestration floes](orchestration-flows.md)
+[Orchestration flows](orchestration-flows.md)
