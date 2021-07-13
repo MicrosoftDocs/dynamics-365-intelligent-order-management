@@ -35,17 +35,12 @@ This topic describes how to set up Distributed Order Management (DOM) provider i
 5. On the **Dynamics 365 Distributed Order Management** provider page, select **Activate**.
 6. Select **Save and close**.
 
-## Configure and publish the orchestration
+## Configure provider action
 
-To configure and publish your orchestration, follow these steps.
-
-1. Go to **Order Orchestration Journey** and add a **Send to DOM** node with following details:
-    - **Name**: "Send to DOM" 
-    - **Action Type**: "Fulfillment Determination"
-    - **Input Events**: "New Order"
-    - **Provider Action**: "Send Order to Retail DOM"
-    - **Output Events**: "Send Order to Fulfillment Determination"
-1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
+Typically, customers add this provider action (**Send to DOM**) after order is validated. When added to an orchestration flow, the **Send to DOM** tile should have the following properties.
+-   **Name**: "Send to DOM" 
+-   **Input Events**: "Validation of Order Lines has Succeeded"
+-   **Provider Action**: "Send Order to Retail DOM"
 
 ## Additional resources
 
