@@ -133,5 +133,7 @@ Refer to the topic [Set up a Distributed Order Management provider](set-up-dom-p
 An organization can query the fulfillment plan to see the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type including fully sourced, partially sourced, not sourced, or exception.  
 
 ## Additional resources
+
 [Set up Distributed Order Management provider](set-up-dom-provider.md)
+
 [Orchestration flows](orchestration-flows.md)
