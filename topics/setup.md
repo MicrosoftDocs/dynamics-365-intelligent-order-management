@@ -27,7 +27,7 @@ To provision a trial environment, see [Deployment](https://docs.microsoft.com/po
 On the **Welcome and get started** page, you can access the following features.
 
 - **Configure settings**: Select **Manage** to create and configure required connections.
--
+
 - **Manage insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
 - **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/work-providers.md).
