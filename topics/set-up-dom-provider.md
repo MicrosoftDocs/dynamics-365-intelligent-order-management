@@ -6,42 +6,22 @@ ms.date: 07/08/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Set up a Distributed Order Management provider
+title: Set up Distributed Order Management provider
 
 ---
 
-# Set up a Distributed Order Management provider
+# Set up Distributed Order Management provider
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to set up a Distributed Order Management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management. For information about DOM, refer to the [Distributed Order Management (Preview)](dom.md) topic.
+This topic describes how to set up Distributed Order Management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management. For information about DOM, refer to the [Distributed Order Management (Preview)](dom.md) topic.
 
 > [!NOTE]
-> To orchestrate orders using a DOM provider, you will need to use external DOM providers to bring orders into the system.
+> To orchestrate orders using DOM provider, you will need to use external DOM providers to bring orders into the system.
 
-## Create and configure the connections
 
-To configure Intelligent Order Management so that you can orchestrate orders using a DOM provider, you will first need to create three Dataverse connections, one Intelligent Order Management Data Transformer connection, and one Power Automate Management connection. 
-
-To create and configure the connections, follow these steps. 
-
-1. Go to **Getting Started \> Configure Settings**. 
-1. Create the following new connection references:
-    - IOM Data Transformer
-    - Microsoft Dataverse 
-    - Microsoft Dataverse - Application
-    - Microsoft Dataverse - Integration
-    - Power Automate Management
-1. On the **Active IOM Platform Connection References** page, select **IOM Data Transformer**. 
-1. Under **Connections**, select **Retrieve Connection Link** to open Microsoft Power Automate in a new tab. If it your first time setting up a connection, you will need to sign up for Microsoft Power Automate. Ensure that you are in right Dataverse environment.  
-1. Go to **Data \> Connections**. Select **New Connection**, and in the search bar on the top right enter "IOM Data Transformer" and create a new connection. 
-1. When the connection dialog box appears, accept it and then copy the browser URL to the connection.
-1. On the **IOM Data Transformer** page, paste the copied URL into the **Connection URL** field.
-1. Select **Save and Close**. 
-1. On the **Active IOM Platform Connection References** page, repeat steps 4-8 to configure the remaining four connections. 
-
-## Add and activate the DOM provider
+## Add DOM provider
 
 1. Go to **Providers \>Catalog** and select **Add Provider** on the **Dynamics 365 Distributed Order Management** tile.
 1. Select **Connections**. The **Dynamics 365 Distributed Order Management Dataverse (current environment) Connection** connection reference page appears.
@@ -71,4 +51,5 @@ To configure and publish your orchestration, follow these steps.
 
 ## Additional resources
 [Distributed Order Management (Preview)](dom.md) 
+[Orchestration flows](orchestration-flows.md)
 
