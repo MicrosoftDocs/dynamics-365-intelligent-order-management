@@ -132,21 +132,5 @@ Refer to the topic [Set up a Distributed Order Management provider](set-up-dom-p
 
 An organization can query the fulfillment plan to see the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type including fully sourced, partially sourced, not sourced, or exception.  
 
-### Configure and publish the orchestration
-
-To configure and publish your orchestration, follow these steps.
-
-1. Go to **Active Action Types** and select **Fulfillment Determination**.
-1. On the **Fulfillment Determination** page under **Action Type Input Business Events**, select **Fulfillment Determination**.
-1. Change the **Business Event Definition** to **New Order**.
-1. Select **Save and Close**. 
-1. Go to **Order Orchestration Journey** and add a **Send to DOM** node with following details:
-    - **Name**: "Send to DOM" 
-    - **Action Type**: "Fulfillment Determination"
-    - **Input Events**: "New Order"
-    - **Provider Action**: "Send Order to Retail DOM"
-    - **Output Events**: "Send Order to Fulfillment Determination"
-1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
-
 ## Additional resources
 [Set up a Distributed Order Management provider](set-up-dom-provider.md)
