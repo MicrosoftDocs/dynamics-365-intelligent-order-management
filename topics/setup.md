@@ -26,7 +26,7 @@ To provision a trial environment, see [Deployment](/power-platform/admin/trial-e
 
 On the **Welcome and get started** page, you can access the following features.
 
-- **Configure settings**: Select **Manage** to create and configure required connections. For detailed instructions, refer to the [create connections](setup.md#Create-connections) section below.
+- **Configure settings**: Select **Manage** to create and configure required connections. For detailed instructions, refer to the [create connections](setup.md#create-connections) section below.
 
 - **Manage insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
