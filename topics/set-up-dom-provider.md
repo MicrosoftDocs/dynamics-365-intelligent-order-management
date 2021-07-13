@@ -41,7 +41,7 @@ To create and configure the connections, follow these steps.
 1. Select **Save and Close**. 
 1. On the **Active IOM Platform Connection References** page, repeat steps 4-8 to configure the remaining four connections. 
 
-## Add the DOM provider
+## Add and activate the DOM provider
 
 1. Go to **Providers \>Catalog** and select **Add Provider** on the **Dynamics 365 Distributed Order Management** tile.
 1. Select **Connections**. The **Dynamics 365 Distributed Order Management Dataverse (current environment) Connection** connection reference page appears.
@@ -53,16 +53,21 @@ To create and configure the connections, follow these steps.
 1. On the **Connections in IOM** page, you should now see the new connection in the list with status **Connected**. Select the new connection and paste the copied URL into the **Connection URL** field.
 1. Go to the **Dynamics 365 Distributed Order Management Dataverse (current environment) Connection** connection reference page, select **Save**, and then select **Activate**.  
 1. Select **Save and Close**.
-
-## Activate the DOM provider
-
-Next, you must activate the provider. To activate the provider, follow these steps.
-
 1. Go to **Catalog \> Add Provider** and select **Dynamics 365 Distributed Order Management**.
 1. Select **Activate**. It will take some time to activate. The provider action is created automatically. 
 
+
 ## Configure and publish the orchestration
-To configure and publish your orchestration, follow the steps in [Distributed Order Management (Preview)](dom.md#Configure and publish the orchestration).
+
+To configure and publish your orchestration, follow these steps.
+
+1. Go to **Order Orchestration Journey** and add a **Send to DOM** node with following details:
+    - **Name**: "Send to DOM" 
+    - **Action Type**: "Fulfillment Determination"
+    - **Input Events**: "New Order"
+    - **Provider Action**: "Send Order to Retail DOM"
+    - **Output Events**: "Send Order to Fulfillment Determination"
+1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
 
 ## Additional resources
 [Distributed Order Management (Preview)](dom.md) 
