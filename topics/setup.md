@@ -18,7 +18,7 @@ title: Set up an environment
 
 Dynamics 365 Intelligent Order Management is currently in the public preview release phase so customers can evaluate the app and provide feedback.
 
-To provision a trial environment, see [Deployment](https://docs.microsoft.com/power-platform/admin/trial-environments). After you provision your environment, the **Welcome and get started** page is displayed. The trial environment is preconfigured and you can explore the app using the demo data that's provided.
+To provision a trial environment, see [Deployment](/power-platform/admin/trial-environments.md). After you provision your environment, the **Welcome and get started** page is displayed. The trial environment is preconfigured and you can explore the app using the demo data that's provided.
 
 ![Welcome and get started screen ](media/welcome2.png)
 
@@ -26,11 +26,11 @@ To provision a trial environment, see [Deployment](https://docs.microsoft.com/po
 
 On the **Welcome and get started** page, you can access the following features.
 
-- **Configure settings**: Select **Manage** to create and configure required connections. See [create and configure connections](setup.md#Create and configure connections) below for detailed instructions.
+- **Configure settings**: Select **Manage** to create and configure required connections. For detailed instructions, refer to the [create and configure connections](setup.md#Createconnections) section below.
 
 - **Manage insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
-- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/work-providers.md).
+- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](work-providers.md).
 
 - **Orchestrate your order journeys**: Select **Manage** to go to the pages where you can create and manage order orchestration flows.
 
@@ -43,23 +43,50 @@ On the **Welcome and get started** page, you can access the following features.
 - **Invite your teammates**: Select **Manage** to go to the page where you can invite users to your environment.
 
 
-## Create and configure connections
+## Create connections
 
-To configure Intelligent Order Management so that you can orchestrate orders using a DOM provider, you will first need to create three Dataverse connections, one Intelligent Order Management Data Transformer connection, and one Power Automate Management connection. 
+To configure Intelligent Order Management, you first need to create a Dataverse connection, a Power Automate Management connection, and an Intelligent Order Management Data Transformer connection. 
 
-To create and configure the connections, follow these steps. 
+1. Go to the [Power Automate portal](https://us.flow.microsoft.com/) and make sure you are in the corect Intelligent Order Management environment. To check which environment you are in, select **Environments** in the top right corner of the Power Automate portal.
+1. Go to **Data > Connections**.
 
-1. Go to **Getting Started \> Configure Settings**. 
-1. Create the following new connection references:
-    - IOM Data Transformer
-    - Microsoft Dataverse 
-    - Microsoft Dataverse - Application
-    - Microsoft Dataverse - Integration
-    - Power Automate Management
-1. On the **Active IOM Platform Connection References** page, select **IOM Data Transformer**. 
-1. Under **Connections**, select **Retrieve Connection Link** to open Microsoft Power Automate in a new tab. If it your first time setting up a connection, you will need to sign up for Microsoft Power Automate. Ensure that you are in right Dataverse environment.  
-1. Go to **Data \> Connections**. Select **New Connection**, and in the search bar on the top right enter "IOM Data Transformer" and create a new connection. 
-1. When the connection dialog box appears, accept it and then copy the browser URL to the connection.
-1. On the **IOM Data Transformer** page, paste the copied URL into the **Connection URL** field.
-1. Select **Save and Close**. 
-1. On the **Active IOM Platform Connection References** page, repeat steps 4-8 to configure the remaining four connections. 
+### Create Dataverse connection
+
+1. On the **Data > Connections** page, select **New connection**.
+2. In the search box in the top right corner, enter **Dataverse**.
+3. Select **+** next to **Microsoft Dataverse**.
+
+![Dataverse logo](media/dataverse-connection.png)
+
+4. Select **Create**. When prompted to sign in, use the same credentials you used to sign in to Intelligent Order Management.
+
+### Create Power Automate connection
+
+1. On the **Data > Connections** page, select **New connection**.
+2. In the search box in the top right corner, enter **Power Automate Management**.
+3. Select **+** next to **Power Automate Management**. When prompted to sign in, use the same credentials you used to sign in to Intelligent Order Management.
+
+### Create IOM Data Transformer connection
+
+1. On the **Data > Connections** page, select **New connection**.
+2. In the search box in the top right corner, enter **IOM Data Transformer**.
+3. Select **+** next to **IOM Data Transformer**. When prompted to sign in, use the same credentials you used to sign in to Intelligent Order Management.
+
+## Set up platform connection references
+
+After you create your connections, you need to configure them.
+
+1. Go to the **Welcome and get started** page in Intelligent Order Management.
+2. Select **Configure settings**.
+3. For each connection reference, do the following:
+   1. Select the connection reference.
+   1. To retrieve the connection URL, go to the [Power Automate portal](https://us.flow.microsoft.com/). Select the corresponding connection, and then copy the URL for the page. For example, if you are setting up the Intelligent Order Management Data Transformer connection reference, Select the **IOM Data Transformer** connection on the **Connections** page in Power Automate, and copy the URL from your browser’s address bar.
+   1. Go back to the corresponding connection reference page and paste the copied URL in the **Connection URL** field.
+
+> [!NOTE]
+> There are three platform Dataverse connection references. You can use the same Dataverse connection for all three. 
+
+Once you've configured all of the platform connection references, Intelligent Order Management will turn on the related platform Power Automate flows. This may take a while. 
+
+## Additional resources
+[Work with providers](work-providers.md)
