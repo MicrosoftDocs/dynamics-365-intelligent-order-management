@@ -26,7 +26,9 @@ To provision a trial environment, see [Deployment](https://docs.microsoft.com/po
 
 On the **Welcome and get started** page, you can access the following features.
 
-- **Insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
+- **Configure settings**: Select **Manage** to create and configure required connections.
+-
+- **Manage insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
 - **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/work-providers.md).
 
@@ -39,3 +41,25 @@ On the **Welcome and get started** page, you can access the following features.
 - **Configure inventory visibility services**: Select **Manage** to go to the pages where you can configure the inventory service to be used with Intelligent Order Management.
 
 - **Invite your teammates**: Select **Manage** to go to the page where you can invite users to your environment.
+
+
+## Create and configure the connections
+
+To configure Intelligent Order Management so that you can orchestrate orders using a DOM provider, you will first need to create three Dataverse connections, one Intelligent Order Management Data Transformer connection, and one Power Automate Management connection. 
+
+To create and configure the connections, follow these steps. 
+
+1. Go to **Getting Started \> Configure Settings**. 
+1. Create the following new connection references:
+    - IOM Data Transformer
+    - Microsoft Dataverse 
+    - Microsoft Dataverse - Application
+    - Microsoft Dataverse - Integration
+    - Power Automate Management
+1. On the **Active IOM Platform Connection References** page, select **IOM Data Transformer**. 
+1. Under **Connections**, select **Retrieve Connection Link** to open Microsoft Power Automate in a new tab. If it your first time setting up a connection, you will need to sign up for Microsoft Power Automate. Ensure that you are in right Dataverse environment.  
+1. Go to **Data \> Connections**. Select **New Connection**, and in the search bar on the top right enter "IOM Data Transformer" and create a new connection. 
+1. When the connection dialog box appears, accept it and then copy the browser URL to the connection.
+1. On the **IOM Data Transformer** page, paste the copied URL into the **Connection URL** field.
+1. Select **Save and Close**. 
+1. On the **Active IOM Platform Connection References** page, repeat steps 4-8 to configure the remaining four connections. 
