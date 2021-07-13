@@ -48,6 +48,8 @@ To configure and publish your orchestration, follow these steps.
 1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
 
 ## Additional resources
+
 [Distributed Order Management (Preview)](dom.md) 
+
 [Orchestration flows](orchestration-flows.md)
 
