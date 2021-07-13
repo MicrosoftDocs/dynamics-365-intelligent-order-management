@@ -36,7 +36,7 @@ The platform was built with the following three architecture concepts.
 
 -   Insights: The Insights components enable the flow of data to support the visualization of data in Power BI and allow data to be analyzed in machine learning models with AI Builder.
 
-![Architecture overview diagram](media/architecture.png)
+![Architecture overview diagram.](media/architecture.png)
 
 ## Data pipeline 
 
