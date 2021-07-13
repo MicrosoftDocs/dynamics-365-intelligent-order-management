@@ -42,7 +42,7 @@ To configure and publish your orchestration, follow these steps.
 1. Go to **Order Orchestration Journey** and add a **Send to DOM** node with following details:
     - **Name**: "Send to DOM" 
     - **Action Type**: "Fulfillment Determination"
-    - **Input Events**: "Validation of Order Lines has Succeeded"
+    - **Input Events**: "New Order"
     - **Provider Action**: "Send Order to Retail DOM"
     - **Output Events**: "Send Order to Fulfillment Determination"
 1. Publish your orchestration. This will help you orchestrate orders imported from different providers. It will not run for orders that are created within Intelligent Order Management or within Dataverse directly. 
