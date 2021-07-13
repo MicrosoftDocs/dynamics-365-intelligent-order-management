@@ -36,7 +36,7 @@ To enable the timeline on the **Sales order** page, follow these steps.
 
 When enabled, the timeline should start to list business events as they are raised by the orchestration flow, as shown in the following example image. 
 
-![Timeline of business events](media/timeline.png)
+![Timeline of business events.](media/timeline.png)
 
 ## Additional resources
 
