@@ -37,7 +37,8 @@ This topic describes how to set up Distributed Order Management (DOM) provider i
 
 ## Configure provider action
 
-Typically, customers add this provider action (**Send to DOM**) after order is validated. When added to an orchestration flow, the **Send to DOM** tile should have the following properties.
+Customers typically add this provider action (**Send to DOM**) after an order is validated. When added to an orchestration flow, the **Send to DOM** tile should have the following properties.
+
 -   **Name**: "Send to DOM" 
 -   **Input Events**: "Validation of Order Lines has Succeeded"
 -   **Provider Action**: "Send Order to Retail DOM"
