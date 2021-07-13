@@ -26,7 +26,7 @@ To provision a trial environment, see [Deployment](https://docs.microsoft.com/po
 
 On the **Welcome and get started** page, you can access the following features.
 
-- **Configure settings**: Select **Manage** to create and configure required connections.
+- **Configure settings**: Select **Manage** to create and configure required connections. See [create and configure connections](setup.md#Create and configure connections) below for detailed instructions.
 
 - **Manage insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
@@ -43,7 +43,7 @@ On the **Welcome and get started** page, you can access the following features.
 - **Invite your teammates**: Select **Manage** to go to the page where you can invite users to your environment.
 
 
-## Create and configure the connections
+## Create and configure connections
 
 To configure Intelligent Order Management so that you can orchestrate orders using a DOM provider, you will first need to create three Dataverse connections, one Intelligent Order Management Data Transformer connection, and one Power Automate Management connection. 
 
