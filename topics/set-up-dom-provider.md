@@ -22,20 +22,18 @@ This topic describes how to set up Distributed Order Management (DOM) provider i
 
 
 ## Add DOM provider
-
-1. Go to **Providers \>Catalog** and select **Add Provider** on the **Dynamics 365 Distributed Order Management** tile.
-1. Select **Connections**. The **Dynamics 365 Distributed Order Management Dataverse (current environment) Connection** connection reference page appears.
-1. Select **Retrieve Connection Link**, and then copy the connection URL.
-1. Select **New connection**.
-1. In the search box on the top right corner, enter "Dataverse" to filter for Dataverse connections. 
-1. Select the plus symbol ("+") next to the new Dataverse connection.
-1. A **Microsoft Dataverse** dialog box appears. Select **Create** to create the connection.  
-1. On the **Connections in IOM** page, you should now see the new connection in the list with status **Connected**. Select the new connection and paste the copied URL into the **Connection URL** field.
-1. Go to the **Dynamics 365 Distributed Order Management Dataverse (current environment) Connection** connection reference page, select **Save**, and then select **Activate**.  
-1. Select **Save and Close**.
-1. Go to **Catalog \> Add Provider** and select **Dynamics 365 Distributed Order Management**.
-1. Select **Activate**. It will take some time to activate. The provider action is created automatically. 
-
+ 
+1. In Intelligent Order Management, go to **Providers \> Catalog**.
+2. Select **Add Provider** on the **Dynamics 365 Distributed Order Management** tile.
+3. Select **Create** on the **Terms and Conditions** page.
+4. On the **Connections** page, select **Dynamics 365 Distributed Order Management Dataverse (current environment) Connection**.
+   1. You should've aleady created a Dataverse connection in Power Automate by following the instructions in the "Create connections" section of the [Set up an environment](setup.md#Createconnections) topic. Go to the [Power Automate portal](https://us.flow.microsoft.com/) and copy the URL as described in the "Set up platform connection references" section of the [Set up an environment](setup.md#Createconnections) topic.
+   1. Go back to the corresponding **Dynamics 365 Distributed Order Management Dataverse connection** reference page in Intelligent Order Management and paste the copied URL in the **Connection URL** field.
+   1. Select **Save**.
+   1. Select **Activate**.
+   1. Select **Save and close**.
+5. On the **Dynamics 365 Distributed Order Management** provider page, select **Activate**.
+6. Select **Save and close**.
 
 ## Configure and publish the orchestration
 
