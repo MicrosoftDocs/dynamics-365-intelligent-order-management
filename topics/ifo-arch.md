@@ -41,8 +41,8 @@ Intelligent Fulfillment Optimization is currently available in the United States
 | Europe | Europe |
 | Australia | Australia |
 | Asia Pacific | Asia Pacific |
-| Brazil | No order processing is done. |
-| Canada | No order processing is done. |
+| Brazil | No order optimization is done. |
+| Canada | No order optimization is done. |
 | China | No order optimization is done. |
 | France | No order optimization is done. |
 | Germany | No order optimization is done. |
