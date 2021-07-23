@@ -26,7 +26,7 @@ Intelligent Fulfillment Optimization is built as a microservice. It reads config
 
 ## Set up Intelligent Fulfillment Optimization
 
-To enable Intelligent Fulfillment Optimization as part of the order orchestration journey, follow the steps in the [Set up Intelligent Fulfillment Optimization provider](set-up-iom-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. 
+To enable Intelligent Fulfillment Optimization as part of the order orchestration journey, follow the steps in the [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. 
 
 ## Fulfillment sources 
 
