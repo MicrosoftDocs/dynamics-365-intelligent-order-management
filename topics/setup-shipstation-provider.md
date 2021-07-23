@@ -49,11 +49,9 @@ To set up the provider, follow these steps:
 
         1. Enter the following information: 
             - **Connection Name**: Enter a name of your choice.
-            - **API Key**: Enter the ShipStation API key. You can retrieve it by following the instructions [here](https://ss.shipstation.com/#/settings/api).
+            - **API Key** & **API Secret**: Enter the ShipStation API key as Username and API Secret as Password. You can retrieve them by following the instructions [here](https://ss.shipstation.com/#/settings/api).
 
         1. Save the connection.
-
-        1. Test the connection by selecting **Test** in the top ribbon.
 
         1. Copy your URL.
 
