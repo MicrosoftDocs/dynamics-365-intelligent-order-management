@@ -46,6 +46,8 @@
     items:
     - name: Distributed Order Management (preview)
       href: dom.md
+    - name: Intelligent Fulfillment Optimization architecture
+      href: ifo-arch.md
 - name: Power BI integration
   items:
   - name: Reporting and Power BI integration
