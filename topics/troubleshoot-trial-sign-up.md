@@ -20,7 +20,7 @@ This topic can help troubleshoot issues that occur during sign-up for the Micros
 - "You're already signed up for this subscription with..."
 - "You are not a member of this organization"
 
-The purpose of a preview trial is to test in public and then incorporate improvements into later updates, based on feedback. The Commerce team will continue to monitor trial feedback and will provide updated instructions as required.
+The purpose of a preview trial is to test in public and then incorporate improvements into later updates, based on feedback. The Intelligent Order Management team will continue to monitor trial feedback and will provide updated instructions as required.
 
 ## Sign-in issues
 
