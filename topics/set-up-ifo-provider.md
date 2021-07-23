@@ -47,5 +47,7 @@ Customers typically add this provider action (**Send to Intelligent Fulfillment 
 
 [Intelligent Fulfillment Optimization (preview)](ifo.md) 
 
+[Intelligent Fulfillment Optimization architecture](ifo-arch.md)
+
 [Orchestration flows](orchestration-flows.md)
 
