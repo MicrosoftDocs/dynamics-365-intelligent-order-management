@@ -32,7 +32,7 @@ On the **Welcome and get started** page, you can access the following features.
 
 - **Manage insights and dashboards**: Select **Manage** to go to the **Daily Events** dashboard, where you can learn more about the configuration for reporting and Power BI Integration.
 
-- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Working with providers](work-providers.md).
+- **Set up providers for third-party services**: Select **Manage** to go to the provider **Catalog**, where you can configure providers that you want to use to receive orders or communicate to external systems. To learn about providers, see [Work with providers](work-providers.md).
 
 - **Orchestrate your order journeys**: Select **Manage** to go to the pages where you can create and manage order orchestration flows.
 
