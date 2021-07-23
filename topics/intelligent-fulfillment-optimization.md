@@ -17,26 +17,25 @@ title: Intelligent Fulfillment Optimization
 
 This topic provides an overview of Microsoft Dynamics 365 Intelligent Fulfillment Optimization.
 
-Dynamics 365 Intelligent Fulfillment Optimization service that maximizes orders fulfillment within the supply chain network, so that products are delivered to the customers at the right quantities, from the right sources and at the right time, to maximize profits, minimizing costs and satisfying service-level requirements.  
+Dynamics 365 Intelligent Fulfillment Optimization optimizes order fulfillment within a supply chain network so that products are delivered to customers in the right quantities, from the right sources, at the right time. In doing so Intelligent Fulfillment Optimization can minimize costs, maximize profits, and satisfy service-level requirements.  
   
-In a modern supply network where product fulfillment can be from multiple channels, organizations must adapt to order changes, supplier availability issues, or a spike in demand quickly. Distributed Order Management helps with maximizing order fulfillment and finding right source for delivery of the products based on different business objectives like minimizing costs based on fulfilling from closest sources and within constraints imposed on it.  
+In a modern supply network where product fulfillment can come from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or spikes in demand. Intelligent Fulfillment Optimization helps optimize order fulfillment and find the best sources for product delivery based on business objectives such as minimizing costs due to the closest proximity product fulfillment possible within imposed constraints.  
 
-Intelligent Fulfillment Optimization is built as a micro service on Azure and deployed to multiple geographies. Within each geography, Intelligent Fulfillment Optimization is deployed to two regions with both regions being active, and order processing requests are load balanced between them. If one region becomes unavailable, it is taken out of rotation automatically and order processing will resume on another region that is available. 
+Intelligent Fulfillment Optimization is built as an Azure microservice deployed to multiple geographies. Within each geography, Intelligent Fulfillment Optimization is deployed to two active regions with order processing requests balanced between them. If one region becomes unavailable, it is automatically taken out of rotation and order processing then resumes in the other available region. 
 
-Intelligent Fulfillment Optimization follows Azure regional pairing with each Azure region paired with another region within the same geography. It leverages the benefits of this including:
-•	If there is a broad outage, recovery of at least one region out of every pair is prioritized.
-•	Planned Azure system updates are rolled out to paired regions sequentially to minimize possible downtime.
-•	In most cases with exception of Brazil, regional pairs reside within the same geography to meet data residency requirements. 
+Intelligent Fulfillment Optimization follows Azure regional pairing, where each Azure region paired with another region within the same geography. Such pairing results in the following benefits:
+
+- If there is a broad outage, recovery of at least one region out of every pair is prioritized.
+- Planned Azure system updates are rolled out to paired regions sequentially to minimize possible downtime.
+- In most cases (with the exception of Brazil), regional pairs reside within the same geography to meet data residency requirements. 
 
 For more information on regional pairs, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions). 
 
- 
-Intelligent Fulfillment Optimization can be enabled as part of the order orchestration journey within Intelligent Order Management.  Intelligent Fulfillment Optimization only optimizes orders from geographies where it is available and does not process orders from other geographies even if it is configured in the Order Orchestration journey. Intelligent Fulfillment Optimization will process orders in the same geography where Intelligent Order Management and Power Platform environment is setup. 
+Intelligent Fulfillment Optimization can be enabled as part of the order orchestration journey within Dynamics 365 Intelligent Order Management. Intelligent Fulfillment Optimization only optimizes orders from geographies where it is available and does not process orders from other geographies even if they are configured in the order orchestration journey. Intelligent Fulfillment Optimization processes orders in the same geography where the Intelligent Order Management and Microsoft Power Platform environment is set up. 
 
-United States, Europe, Australia, and Asia Pacific are geographies where Intelligent Fulfillment Optimization is available. For support within additional geographies, please reach out to Intelligent Order Management product team. 
+Intelligent Fulfillment Optimization is currently available in the United States, Europe, Australia, and Asia Pacific geographies. For support within additional geographies, please reach out to the Intelligent Order Management product team. 
 
-
-| Intelligent Order Management / Dataverse Geography | Intelligent Fulfillment Optimization Geography |
+| Intelligent Order Management / Microsoft Dataverse geography | Intelligent Fulfillment Optimization geography |
 |---|---|
 |  United States | United States |
 | Europe  | Europe |
@@ -53,12 +52,11 @@ United States, Europe, Australia, and Asia Pacific are geographies where Intelli
 | United Arab Emirates  | No order optimization. |
 |  United Kingdom | No order optimization. |
 
-
-Intelligent Fulfillment Optimization can be enabled as part of the order orchestration journey by configuring Intelligent Fulfillment Optimization provider as part of the Order Journey.  Once it is enabled as part of orchestration flow, Intelligent Fulfillment optimization will read Fulfillment strategy, business constraints, order information during optimization process from Dataverse and immediately write back fulfillment plans to that specific Dataverse environment. Intelligent Fulfillment Optimization ensures that data is not persisted beyond the order optimization step in the micro-service. 
+Intelligent Fulfillment Optimization can be enabled as part of the order orchestration journey by configuring the Intelligent Fulfillment Optimization provider as part of the order journey. Once it is enabled as part of the orchestration flow, during the optimization process Intelligent Fulfillment Optimization reads fulfillment strategy, business constraints, order information from Dataverse and immediately writes back fulfillment plans to that Dataverse environment. Intelligent Fulfillment Optimization ensures that data does not persist beyond the microservice order optimization stage. 
  
-Intelligent Fulfillment Optimization uses Bing Maps to calculate closest fulfillment source to where order is being shipped. It uses Bing Maps to determine geo codes or latitude and longitude for the Fulfillment source address and shipping address on the order.  It uses Bing Maps to calculate distance between two addresses (two geocodes). If road distance calculation is not enabled, it will use aerial distance between the two locations. Otherwise, it will use road distance calculation.  
+Intelligent Fulfillment Optimization uses Bing Maps to calculate the closest fulfillment source to where an order is being shipped by determining geocodes or latitude and longitude for the fulfillment source address and order shipping address. It uses Bing Maps to calculate the road distance between two addresses (geocodes). If road distance calculation is not enabled, aerial distance between the two locations will be used. 
 
-Bing Maps is a non-regional service and highly available service. Please refer to [Bing Maps terms of use](https://www.microsoft.com/en-us/maps/product) for additional information on this service. 
+Bing Maps is a highly available, non-regional service. For more information, see [Bing Maps terms of use](https://www.microsoft.com/en-us/maps/product). 
 
-Intelligent Fulfillment Optimization also uses Inventory Visibility Service provider to determine inventory on-hand for different products at different fulfillment sources. This can be turned on by configuring “use real inventory” on the Fulfillment strategy and on each specific fulfillment source where inventory needs to be looked up. 
+Intelligent Fulfillment Optimization also uses an inventory visibility service provider to determine on-hand inventory for different products at different fulfillment sources. This feature can be enabled by configuring **use real inventory** on the fulfillment strategy and on each specific fulfillment source where inventory needs to be looked up. 
 
