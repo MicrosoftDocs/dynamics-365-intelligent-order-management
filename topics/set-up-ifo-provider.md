@@ -15,7 +15,7 @@ title: Set up Intelligent Fulfillment Optimization provider
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to set up Intelligent Fulfillment Optimization provider in Microsoft Dynamics 365 Intelligent Order Management. For information about Intelligent Fulfillment Optimization, refer to the [Intelligent Fulfillment Optimization (preview)](iof.md) topic.
+This topic describes how to set up Intelligent Fulfillment Optimization provider in Microsoft Dynamics 365 Intelligent Order Management. For information about Intelligent Fulfillment Optimization, refer to the [Intelligent Fulfillment Optimization (preview)](ifo.md) topic.
 
 > [!NOTE]
 > To orchestrate orders using Intelligent Fulfillment Optimization provider, you will need to use external fulfillment optimization providers to bring orders into the system.
