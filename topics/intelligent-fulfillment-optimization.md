@@ -29,7 +29,7 @@ Intelligent Fulfillment Optimization follows Azure regional pairing, where each 
 - Planned Azure system updates are rolled out to paired regions sequentially to minimize possible downtime.
 - In most cases (with the exception of Brazil), regional pairs reside within the same geography to meet data residency requirements. 
 
-For more information on regional pairs, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions). 
+For more information on regional pairs, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions). 
 
 Intelligent Fulfillment Optimization can be enabled as part of the order orchestration journey within Dynamics 365 Intelligent Order Management. Intelligent Fulfillment Optimization only optimizes orders from geographies where it is available and does not process orders from other geographies even if they are configured in the order orchestration journey. Intelligent Fulfillment Optimization processes orders in the same geography where the Intelligent Order Management and Microsoft Power Platform environment is set up. 
 
