@@ -2,7 +2,7 @@
 author: v-chgri
 description: This topic describes how to orchestrate orders using Intelligent Fulfillment Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: conceptual
 ms.author: josaw
 
