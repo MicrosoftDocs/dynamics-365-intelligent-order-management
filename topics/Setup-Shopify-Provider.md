@@ -36,7 +36,7 @@ To set up the provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers &gt; Catalog**.
 
-2. Select **Add Provider** on the **Orderful** tile.
+2. Select **Add Provider** on the **Shopify** tile.
 
 3. Select **Create** on the **Terms and Conditions** page.
 
