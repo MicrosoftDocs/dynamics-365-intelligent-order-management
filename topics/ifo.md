@@ -6,16 +6,16 @@ ms.date: 07/23/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Intelligent Fulfillment Optimization (preview)
+title: Intelligent Fulfillment Optimization architecture
 
 ---
 
-# Intelligent Fulfillment Optimization (preview)
+# Intelligent Fulfillment Optimization architecture
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic provides an overview of Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
+This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
 
 Intelligent Fulfillment Optimization optimizes order fulfillment in a supply chain network, to help ensure that products are delivered to customers in the correct quantities, from the correct sources, and at the correct time. Intelligent fulfillment optimization can help minimize costs, maximize profits, and satisfy service-level requirements.
 
