@@ -126,6 +126,11 @@ On the **Strategies** page, enter values for the following.
 
 - **Optimization service batching**: The optimization service batches orders that are provided as part of the order orchestration journey and optimizes them together in a batch. The **Aggregation interval minutes** task determines the time window within which orders received are batched together. The **Maximum order line** task determines the number of tasks that should be created based on order lines that are received within the time interval.  
 
+- **Inventory visibility data source**: Specify the data source name that should be considered for inventory lookup.
+
+- **Inventory visibility measure name**: Specify the measure name that contains the inventory on hand for fulfillment optimization.
+
+
 ## Fulfillment optimization as part of order orchestration flows
 
 Refer to the topic [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. After the provider is activated, you can enable intelligent optimization using Intelligent Fulfillment Optimization as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Intelligent Fulfillment Optimization will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.   
