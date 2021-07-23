@@ -1,24 +1,24 @@
 ---
 author: v-chgri
-description: This topic describes how to orchestrate orders using a distributed order management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management.
+description: This topic describes how to orchestrate orders using intelligent order fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 07/08/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Set up Distributed Order Management provider
+title: Set up intelligent order fulfillment provider
 
 ---
 
-# Set up Distributed Order Management provider
+# Set up intelligent order fulfillment provider
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to set up Distributed Order Management (DOM) provider in Microsoft Dynamics 365 Intelligent Order Management. For information about DOM, refer to the [Distributed Order Management (Preview)](dom.md) topic.
+This topic describes how to set up intelligent order fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management. For information about intelligent order fulfillment, refer to the [intelligent order fulfillment (preview)](iof.md) topic.
 
 > [!NOTE]
-> To orchestrate orders using DOM provider, you will need to use external DOM providers to bring orders into the system.
+> To orchestrate orders using intelligent order fulfillment provider, you will need to use external DOM providers to bring orders into the system.
 
 
 ## Add DOM provider
