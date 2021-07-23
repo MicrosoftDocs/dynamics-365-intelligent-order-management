@@ -62,6 +62,8 @@ Intelligent Fulfillment Optimization also uses an inventory visibility service p
 
 ## Additional resources
 
+[Intelligent Fulfillment Optimization (preview)](ifo.md)
+
 [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md)
 
 [Orchestration flows](orchestration-flows.md)
