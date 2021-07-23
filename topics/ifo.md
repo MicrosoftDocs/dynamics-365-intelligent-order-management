@@ -139,6 +139,8 @@ An organization can query the fulfillment plan to see the results. Fulfillment p
 
 ## Additional resources
 
+[Intelligent Fulfillment Optimization architecture](ifo-arch.md)
+
 [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md)
 
 [Orchestration flows](orchestration-flows.md)
