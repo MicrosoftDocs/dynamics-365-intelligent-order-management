@@ -41,25 +41,40 @@ To set up the provider, follow these steps:
 
     2. Orderful connection:
 
-        1. Select the connection.
+       1. Select the connection.
 
-        1. Select the **Retrieve Connection Link** URL.
+       1. Select the **Retrieve Connection Link** URL.
 
-        1. Search for **Orderful** and then select the connector.
+       1. Search for **Orderful** and then select the connector.
 
-        1. Enter the following information: 
-            - **Connection Name**: Enter a name of your choice.
-            - **API Key**: Enter the Orderful API key. You can retrieve it by following the instructions [here](https://ui.orderful.com/settings/api-credentials).
+       1. Enter the following information: 
+          - **Connection Name**: Enter a name of your choice.
+          - **API Key**: Enter the Orderful API key. You can retrieve it by following the instructions [here](https://ui.orderful.com/settings/api-credentials).
 
-        1. Save the connection.
+       1. Save the connection.
 
-        1. Test the connection by selecting **Test** in the top ribbon.
+       1. Test the connection by selecting **Test** in the top ribbon.
 
-        1. Copy your URL.
+       1. Copy your URL.
 
-        1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
+       1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
 
-5.  Go to the **Parameters** tab and add the **Owner Id** and **Webhook Name**. <where do I find this information>
+       1. Select **Save**.
+
+       1. Select **Activate** to activate the connection.
+
+       1. Select **Save and close**.
+
+5.  Go to the **Parameters** tab and add the **Owner Id** and **Webhook Name**. 
+
+6. Select **Save**.
+
+7. Select **Activate** to activate the provider.
+
+8. Select **Save and close**.
+
+9. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
+
 
 ##  Out-of-box capabilities
 

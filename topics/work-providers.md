@@ -38,11 +38,11 @@ A provider in Intelligent Order Management has the following components.
 
 | **Component name** | **Description** | **For more information** |
 |-------------------------|-------------------------|-------------------------|
-| Connection | The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service. For more information, see [Learn to connect to your data using connections and on-premises data gateways.](https://docs.microsoft.com/power-automate/add-manage-connections#delete-a-connection) | <ol type="1"></br><li>Go to **Provider > Catalog** or **Provider > Installed** and select the provider you want to find the connection information for.</li></br><li>On the **Overview** tab in the **Connections** section, the dependent connections are listed.</li></br></ol> |
+| Connection | The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service. For more information, see [Learn to connect to your data using connections and on-premises data gateways.](/power-automate/add-manage-connections#delete-a-connection) | <ol type="1"></br><li>Go to **Provider > Catalog** or **Provider > Installed** and select the provider you want to find the connection information for.</li></br><li>On the **Overview** tab in the **Connections** section, the dependent connections are listed.</li></br></ol> |
 | Business Event | The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.<br/></br><br/></br>All of the out-of-box business events in Intelligent Order Management can be applied for all providers | <ol type="1"></br><li>Go to **Provider > Catalog** or **Provider > Installed** and select the provider you want to find the business event information for.</li></br><li>On the **Event** tab, there are two sections: **Global Events** and **Provider Events**. **Global Events** are provider agnostic. The **Provider Events** section lists the provider-specific events.</li></br></ol> |
 | Action | The actions associated with a provider determine what actions are available to you when you create an orchestration flow.<br/></br><br/></br>If your provider doesn't have any actions, the provider can't be invoked from the orchestration. | <ol type="1"></br><li>Go to **Provider > Catalog** or **Provider > Installed** and select the provider you want to find the action information for.</li></br><li>On the **Actions** tab, the list of all the provider-specific actions is available. The list of provider actions is also available on the **Providers > Provider Actions** page.</li></br></ol> |
 | Parameter | Some providers require additional configuration information to retrieve and send information.<br/></br><br/></br>This additional information is called a provider parameter. | <ol type="1"></br><li>Go to **Provider > Catalog** or **Provider > Installed** and select the provider you want to find the parameter information for.</li></br><li>On the **Parameters** tab, the provider parameters are listed.</li></br></ol> |
-| Transformation | Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br/></br><br/></br>A transformation maps data from an external service to an entity in Intelligent Order Management and from Intelligent Order Management to an external source. For more information, see [What is Power Query?](https://docs.microsoft.com/power-query/power-query-what-is-power-query) | <ol type="1"></br><li>Go to **Provider > Catalog** or **Provider > Installed** and select the provider you want to find the transformations for.</li></br><li>On the **Transformations** tab, the list of the provider-specific actions is available. The list of transformations is also available on the **Providers > Transformations** page.</li></br></ol> |
+| Transformation | Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br/></br><br/></br>A transformation maps data from an external service to an entity in Intelligent Order Management and from Intelligent Order Management to an external source. For more information, see [What is Power Query?](/power-query/power-query-what-is-power-query) | <ol type="1"></br><li>Go to **Provider > Catalog** or **Provider > Installed** and select the provider you want to find the transformations for.</li></br><li>On the **Transformations** tab, the list of the provider-specific actions is available. The list of transformations is also available on the **Providers > Transformations** page.</li></br></ol> |
 
 
 
@@ -62,7 +62,7 @@ Use the following steps to set up a provider.
 
     1.  Select a connection.
 
-    2.  In the **Connection URL** section, select **Retrieve Connection Link**. A connection URL is a unique URL that gets created when you [create a connection in Power Automate](https://docs.microsoft.com/power-automate/add-manage-connections).
+    2.  In the **Connection URL** section, select **Retrieve Connection Link**. A connection URL is a unique URL that gets created when you [create a connection in Power Automate](/power-automate/add-manage-connections).
 
     3.  Select **Create a connection**.
 
@@ -104,11 +104,13 @@ Before you delete the provider instance, make sure you're not using the provider
 
 3.  Select the provider you want to delete and select **Delete** on the top ribbon.
 
-4.  (Optional) If you want to remove connections to your external service in this environment, delete the connections you set up as a part of this provider in Power Automate. To remove a connection, use the steps in [Learn to connect to your data using connections and on-premises data gateways.](https://docs.microsoft.com/power-automate/add-manage-connections#delete-a-connection)
+4.  (Optional) If you want to remove connections to your external service in this environment, delete the connections you set up as a part of this provider in Power Automate. To remove a connection, use the steps in [Learn to connect to your data using connections and on-premises data gateways.](/power-automate/add-manage-connections#delete-a-connection)
 
 
 
 ## Additional resources
+
+[Set up an environment](setup.md)
 
 [Provider catalog](provider-catalog.md)
 

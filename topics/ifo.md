@@ -1,34 +1,32 @@
 ---
 author: josaw1
-description: This topic provides an introduction to Distributed Order Management and instructions on how to set it up in Dynamics 365 Intelligent Order Management.
+description: This topic provides an introduction to Intelligent Fulfillment Optimization and instructions on how to set it up in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Distributed Order Management (preview)
+title: Intelligent Fulfillment Optimization (preview)
 ---
 
 
-# Distributed Order Management (preview)
+# Intelligent Fulfillment Optimization (preview)
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dynamics 365 Distributed Order Management is an intelligent optimization service that maximizes order fulfillment within the supply chain network. Distributed Order Management helps you ensure that products are delivered to your customers with the right quantities, from the right sources, and at the right time. Distributed Order Management can help you maximize profits, minimize costs, and satisfy service-level requirements.  
+Intelligent Fulfillment Optimization is an intelligent optimization service that maximizes order fulfillment within the supply chain network. Intelligent Fulfillment Optimization helps you ensure that products are delivered to your customers with the right quantities, from the right sources, and at the right time. Intelligent Fulfillment Optimization can help you maximize profits, minimize costs, and satisfy service-level requirements.  
 
-In a modern supply network where product fulfillment can be from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or a spike in demand. Distributed Order Management helps you maximize order fulfillment and find the right source for delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling from the closest sources.  
+In a modern supply network where product fulfillment can be from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or a spike in demand. Intelligent Fulfillment Optimization helps you maximize order fulfillment and find the right source for delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling from the closest sources.  
 
-Distributed Order Management is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find the distance between the shipping address and fulfillment source.
+Intelligent Fulfillment Optimization is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find the distance between the shipping address and fulfillment source.
 
 > [!NOTE]
-> Dynamics 365 Distributed Order Management is a preview service and can only be used in sandbox environments for non-production purposes.
+> Intelligent Fulfillment Optimization is a preview service and can only be used in sandbox environments for non-production purposes.
 
-## Set up Distributed Order Management
+## Set up Intelligent Fulfillment Optimization
 
-To enable Distributed Order Management as part of the order orchestration journey, set up the Dynamics 365 Distributed Order Management provider on the **Providers > Catalog** page in Dynamics 365 Intelligent Order Management. Find Dynamics 365 Distributed Order Management in the list of providers and select **Add Provider**. After you accept the terms and conditions, Distributed Order Management will be enabled in the list of installed providers under **Providers > Installed**.
-
-When the Distributed Order Management provider is set up, you can enable the action **Send Order to DOM** in the order orchestration designer and use its capabilities to optimize orders.
+To enable Intelligent Fulfillment Optimization as part of the order orchestration journey, follow the steps in the [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. 
 
 ## Fulfillment sources 
 
@@ -106,7 +104,7 @@ Depending on the nature of your business, you can define multiple optimization s
 
 For the preview release, **Fulfillment from the closest source** is supported as the pre-defined objective in every strategy.
 
-Distributed Order Management batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
+Intelligent Fulfillment Optimization batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
 
 ### Set up a fulfillment strategy
 
@@ -128,8 +126,21 @@ On the **Strategies** page, enter values for the following.
 
 - **Optimization service batching**: The optimization service batches orders that are provided as part of the order orchestration journey and optimizes them together in a batch. The **Aggregation interval minutes** task determines the time window within which orders received are batched together. The **Maximum order line** task determines the number of tasks that should be created based on order lines that are received within the time interval.  
 
+- **Inventory visibility data source**: Specify the data source name that should be considered for inventory lookup.
+
+- **Inventory visibility measure name**: Specify the measure name that contains the inventory on hand for fulfillment optimization.
+
+
 ## Fulfillment optimization as part of order orchestration flows
 
-To enable intelligent optimization using Distributed Order Management as part of the order orchestration journey, add the **Send to DOM** node to the journey designer on the **Orchestration > Flows page**. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Distributed Order Management will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.   
+Refer to the topic [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. After the provider is activated, you can enable intelligent optimization using Intelligent Fulfillment Optimization as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Intelligent Fulfillment Optimization will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.   
 
 An organization can query the fulfillment plan to see the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type including fully sourced, partially sourced, not sourced, or exception.  
+
+## Additional resources
+
+[Intelligent Fulfillment Optimization architecture](ifo-arch.md)
+
+[Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md)
+
+[Orchestration flows](orchestration-flows.md)
