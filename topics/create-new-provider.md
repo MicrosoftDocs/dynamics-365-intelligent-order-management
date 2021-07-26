@@ -26,7 +26,7 @@ Use the following table to determine which components you'll need.
 
 | Condition | Component needed |
 |-------------------------|-------------------------|
-| The service you want to create a provider for doesn't have a connector in Power Automate.</br>For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors.md). | Create a customer connector or use a generic connector. |
+| The service you want to create a provider for doesn't have a connector in Power Automate.</br>For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors). | Create a customer connector or use a generic connector. |
 | Your provider will exchange data between an external service and Microsoft Dataverse. | Your provider will need a provider transformation. Add a provider transformation component for each transformation. |
 | Your provider will execute logic from the orchestration designer. | Create a separate Power Automate flow to represent each of the actions. |
 | Your provider needs to process messages from an external service. | Create a Power Automate Message Handler flow. |
@@ -49,7 +49,7 @@ You need to complete the following tasks in this section to create a provider so
 
 ### Set up a custom provider
 
-Create a solution in Power Apps that will contain the components of your provider. To create a new solution in Power Apps, follow the steps in [Create a solution in Power Apps.](/powerapps/maker/data-platform/create-solution.md)
+Create a solution in Power Apps that will contain the components of your provider. To create a new solution in Power Apps, follow the steps in [Create a solution in Power Apps.](/powerapps/maker/data-platform/create-solution)
 
 ### Add a provider definition
 
@@ -105,7 +105,7 @@ If your provider requires a transformation, you need to add a provider transform
 
     5. **Destination object name**: The destination of the record you want to transform.
 
-    6. **Transformation**: The Power Query Online MQuery that will be used to transform the input data. For information about Power Query and MQuery, see [What is Power Query?](/power-query/power-query-what-is-power-query.md) and [Power Query M formula language reference.](/powerquery-m.md/) The following is an example of a MQuery that transforms a sales order from an external order service to a sales order in Intelligent Order Management.
+    6. **Transformation**: The Power Query Online MQuery that will be used to transform the input data. For information about Power Query and MQuery, see [What is Power Query?](/power-query/power-query-what-is-power-query) and [Power Query M formula language reference.](/powerquery-m/) The following is an example of a MQuery that transforms a sales order from an external order service to a sales order in Intelligent Order Management.
 
 ```powerquery-m
 shared TransformSourceData =
@@ -273,9 +273,9 @@ If the business event that you want to create isn't already in Intelligent Order
 
 ## Add a connector
 
-If your provider needs a connector that isn't available in Power Automate, you need to create your own connector. For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors.md).
+If your provider needs a connector that isn't available in Power Automate, you need to create your own connector. For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors).
 
-To create your own Power Automate connector, follow the steps in [Custom connectors overview](/connectors/custom-connectors.md/).
+To create your own Power Automate connector, follow the steps in [Custom connectors overview](/connectors/custom-connectors/).
 
 After you create your custom connector, add it to your provider solution as a component.
 
@@ -609,4 +609,4 @@ POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference
 
 ## Share your providers
 
-If you want to use your provider definition on another environment or share your solution, you can export your provider solution. For more information, see [Export solutions](https://docs.microsoft.com/powerapps/maker/data-platform/export-solutions).
+If you want to use your provider definition on another environment or share your solution, you can export your provider solution. For more information, see [Export solutions](/powerapps/maker/data-platform/export-solutions).
