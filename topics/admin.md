@@ -13,7 +13,7 @@ title: Administration overview
 # Administration overview
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Your organization will have access to Dynamics 365 Intelligent Order Management after you provision the app. To learn more, see [Deployment](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/deploy.md).
 
