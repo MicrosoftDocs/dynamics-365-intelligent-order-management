@@ -13,7 +13,7 @@ title: Enable timeline on Sales order page
 # Enable timeline on Sales order page
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This document describes how to enable timeline capabilities on the **Sales order** page in Dynamics 365 Intelligent Order Management. 
 
@@ -40,4 +40,4 @@ When enabled, the timeline should start to list business events as they are rais
 
 ## Additional resources
 
-[Configure timeline](/dynamics365/customer-service/customer-service-hub-user-guide-timeline-admin)
+[Configure timeline](/dynamics365/customer-service/customer-service-hub-user-guide-timeline-admin.md)
