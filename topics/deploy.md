@@ -26,7 +26,7 @@ The preview release of Intelligent Order Management can be deployed as a trial i
     - If you aren't a part of a Microsoft tenant: Microsoft will create a tenant for you, and add Intelligent Order Management to it. You'll be the admin of the tenant and environment. 
     - If you're an admin of an existing Microsoft tenant: Microsoft will provide a trial Microsoft Power Apps environment and install Intelligent Order Management there. If you're a part of an existing Microsoft tenant and not the admin, you won't be able to get access to the trial. 
 
--   Power Platform Administration Center (PPAC): If you're an existing Microsoft Power Platform admin, you can deploy a new environment for your organization for evaluation. To learn more about PPAC, see [Working with the admin portals](https://docs.microsoft.com/power-platform/admin/wp-work-with-admin-portals). You'll only be able to deploy in trial environments. To learn more about deployment environments, see [About trial environments](https://docs.microsoft.com/power-platform/admin/trial-environments).
+-   Power Platform Administration Center (PPAC): If you're an existing Microsoft Power Platform admin, you can deploy a new environment for your organization for evaluation. To learn more about PPAC, see [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals). You'll only be able to deploy in trial environments. To learn more about deployment environments, see [About trial environments](/power-platform/admin/trial-environments).
 
 ## System requirements
 
@@ -34,15 +34,15 @@ You can deploy the preview release through the trial experience, which is provis
 
 ## Local requirements
 
-Intelligent Order Management is deployed in the Microsoft Azure data centers. Admins and business users access the app by using a web browser. There are no components that must be downloaded and configured on a user machine. Use a common web browser of your choice, such as Microsoft Edge. For more information about supported web browsers and hardware requirements, see [Web application requirements](https://docs.microsoft.com/power-platform/admin/web-application-requirements).
+Intelligent Order Management is deployed in the Microsoft Azure data centers. Admins and business users access the app by using a web browser. There are no components that must be downloaded and configured on a user machine. Use a common web browser of your choice, such as Microsoft Edge. For more information about supported web browsers and hardware requirements, see [Web application requirements](/power-platform/admin/web-application-requirements).
 
 ## Service protection limits
 
-Service protection limits exist to protect the health of the service. These limits provide a level of protection against random and unexpected surges in request volumes that threaten the availability and performance characteristics of the Microsoft Dataverse platform. Microsoft will publish guidance on the limits for Intelligent Order Management when the app is released for general availability. To learn more about this concept, see [Why choose Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/why-dataverse-overview)
+Service protection limits exist to protect the health of the service. These limits provide a level of protection against random and unexpected surges in request volumes that threaten the availability and performance characteristics of the Microsoft Dataverse platform. Microsoft will publish guidance on the limits for Intelligent Order Management when the app is released for general availability. To learn more about this concept, see [Why choose Microsoft Dataverse?](/powerapps/maker/data-platform/why-dataverse-overview)
 
 ## Capacity add-ons
 
-Microsoft is managing the trial environments for customers to evaluate and provide feedback. More information will be available when the app is released for general availability. To learn more about this concept, see [Why choose Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/why-dataverse-overview)
+Microsoft is managing the trial environments for customers to evaluate and provide feedback. More information will be available when the app is released for general availability. To learn more about this concept, see [Why choose Microsoft Dataverse?](/powerapps/maker/data-platform/why-dataverse-overview)
 
 ## Backups
 
