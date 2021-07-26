@@ -84,15 +84,15 @@ Machine learning is used to analyze data using models and uses advanced algorith
 
 Intelligent Order Management makes use of the following Microsoft platform technologies.
 
--   Dataverse: Data in Intelligent Order Management is provided through the Dataverse platform. For more information, see [Microsoft Dataverse developer guide](/powerapps/developer/data-platform/overview).
+-   Dataverse: Data in Intelligent Order Management is provided through the Dataverse platform. For more information, see [Microsoft Dataverse developer guide](/powerapps/developer/data-platform/overview.md).
 
--   Power Automate: For business users, Intelligent Order Management compiles organization flows into Power Automate. Developers can further extend the solution. To learn more about the capabilities of Power Automate, see [Getting started with Power Automate](/power-automate/getting-started).
+-   Power Automate: For business users, Intelligent Order Management compiles organization flows into Power Automate. Developers can further extend the solution. To learn more about the capabilities of Power Automate, see [Getting started with Power Automate](/power-automate/getting-started.md).
 
 -   Power Query Online: Intelligent Order Management leverages the capabilities of Power Query and the M query language to support transformation in the data pipeline for providers. To learn more, see the [Power Query documentation](/power-query/power-query-what-is-power-query).
 
--   Power BI: The dashboards provided in Intelligent Order Management are built using Power BI tools. Customers can extend the solutions or build their own using Power BI. To learn more about Power BI, see [Power BI overview](/power-bi/fundamentals/power-bi-overview).
+-   Power BI: The dashboards provided in Intelligent Order Management are built using Power BI tools. Customers can extend the solutions or build their own using Power BI. To learn more about Power BI, see [Power BI overview](/power-bi/fundamentals/power-bi-overview.md).
 
--   AI Builder: Machine learning models will be available in later releases of Intelligent Order Management. Customers and partners can use the same technology to build their own models using AI Builder capabilities. To learn more, see the [AI Builder documentation](/ai-builder/).
+-   AI Builder: Machine learning models will be available in later releases of Intelligent Order Management. Customers and partners can use the same technology to build their own models using AI Builder capabilities. To learn more, see the [AI Builder documentation](https://docs.microsoft.com/en-us/ai-builder/).
 
 ## Additional resources
 
