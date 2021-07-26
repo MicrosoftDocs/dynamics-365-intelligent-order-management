@@ -26,7 +26,7 @@ If this option isn't adequate for your needs, you can [create a new provider](cr
 
 ## Modify the provider transformation
 
-To customize an out-of-box provider, you need to modify the transformation for the provider. Intelligent Order Management uses Power Query Online for data transformations. For information about Power Query online, see [What is Power Query?](/power-query/power-query-what-is-power-query.md) and [Power Query M formula language reference.](/powerquery-m.md/)
+To customize an out-of-box provider, you need to modify the transformation for the provider. Intelligent Order Management uses Power Query Online for data transformations. For information about Power Query online, see [What is Power Query?](/power-query/power-query-what-is-power-query) and [Power Query M formula language reference.](/powerquery-m/)
 
 To modify the provider transformation, complete the following steps.
 
