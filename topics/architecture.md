@@ -13,10 +13,10 @@ title: Architecture overview
 # Architecture overview
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 
-Dynamics 365 Intelligent Order Management is built on the Microsoft Power Platform, leveraging the [Power Apps model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/) infrastructure. The architecture was designed to support the requirements of a complex order processing environment where there are many systems and apps in the overall order-to-fulfillment process.
+
+Dynamics 365 Intelligent Order Management is built on the Microsoft Power Platform, leveraging the [Power Apps model-driven apps](/powerapps/maker/model-driven-apps/) infrastructure. The architecture was designed to support the requirements of a complex order processing environment where there are many systems and apps in the overall order-to-fulfillment process.
 
 Delivered as a cloud solution, Intelligent Order Management can be deployed quickly in the Microsoft Azure data centers. The app and platform are deployed in a data center region that customers choose for their business, and Microsoft manages the infrastructure. That way, customers can focus on configuring the app to suit business order and fulfillment requirements. To learn more about the data center regions that are supported, see [Globalization](globalization.md).
 
@@ -64,7 +64,7 @@ The following is terminology to describe components in the orchestration engine.
 
 -   Designer: The tool used by the business user to build orchestration flows.
 
--   Orchestration flow types: The preview release of Intelligent Order Management provides two flow types:
+-   Orchestration flow types: Intelligent Order Management provides two flow types:
 
     -   Order flow represents the progression of an order to fulfillment.
 
@@ -76,7 +76,7 @@ The following is terminology to describe components in the orchestration engine.
 
 ## Insights
 
-The platform manages data through the application lifecycle and is visualized using Power BI. The preview release of Intelligent Order Management provides several dashboards to help the business user understand key order and fulfillment metrics. Customers can use the same technology to present and combine data from other apps as needed.
+The platform manages data through the application lifecycle and is visualized using Power BI. Intelligent Order Management provides several dashboards to help the business user understand key order and fulfillment metrics. Customers can use the same technology to present and combine data from other apps as needed.
 
 Machine learning is used to analyze data using models and uses advanced algorithms to find or predict patterns in data. Customers can build models using AI builder that use data from Intelligent Order Management, so that results are updated on entities used during the order and fulfillments flows. This will help decision making in orchestration flows. Future releases of Intelligent Order Management will provide models out of the box.
 
@@ -84,15 +84,15 @@ Machine learning is used to analyze data using models and uses advanced algorith
 
 Intelligent Order Management makes use of the following Microsoft platform technologies.
 
--   Dataverse: Data in Intelligent Order Management is provided through the Dataverse platform. For more information, see [Microsoft Dataverse developer guide](https://docs.microsoft.com/powerapps/developer/data-platform/overview).
+-   Dataverse: Data in Intelligent Order Management is provided through the Dataverse platform. For more information, see [Microsoft Dataverse developer guide](/powerapps/developer/data-platform/overview).
 
--   Power Automate: For business users, Intelligent Order Management compiles organization flows into Power Automate. Developers can further extend the solution. To learn more about the capabilities of Power Automate, see [Getting started with Power Automate](https://docs.microsoft.com/power-automate/getting-started).
+-   Power Automate: For business users, Intelligent Order Management compiles organization flows into Power Automate. Developers can further extend the solution. To learn more about the capabilities of Power Automate, see [Getting started with Power Automate](/power-automate/getting-started).
 
--   Power Query Online: Intelligent Order Management leverages the capabilities of Power Query and the M query language to support transformation in the data pipeline for providers. To learn more, see the [Power Query documentation](https://docs.microsoft.com/power-query/power-query-what-is-power-query).
+-   Power Query Online: Intelligent Order Management leverages the capabilities of Power Query and the M query language to support transformation in the data pipeline for providers. To learn more, see the [Power Query documentation](/power-query/power-query-what-is-power-query).
 
--   Power BI: The dashboards provided in Intelligent Order Management are built using Power BI tools. Customers can extend the solutions or build their own using Power BI. To learn more about Power BI, see [Power BI overview](https://microsoft.sharepoint.com/teams/D365OperationsRedmond/Shared%20Documents/OMS/Documentation/•%09https:/docs.microsoft.com/power-bi/fundamentals/power-bi-overview).
+-   Power BI: The dashboards provided in Intelligent Order Management are built using Power BI tools. Customers can extend the solutions or build their own using Power BI. To learn more about Power BI, see [Power BI overview](/power-bi/fundamentals/power-bi-overview).
 
--   AI Builder: Machine learning models will be available in later releases of Intelligent Order Management. Customers and partners can use the same technology to build their own models using AI Builder capabilities. To learn more, see the [AI Builder documentation](https://docs.microsoft.com/ai-builder/).
+-   AI Builder: Machine learning models will be available in later releases of Intelligent Order Management. Customers and partners can use the same technology to build their own models using AI Builder capabilities. To learn more, see the [AI Builder documentation](/ai-builder/).
 
 ## Additional resources
 
