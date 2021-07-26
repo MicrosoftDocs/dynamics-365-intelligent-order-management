@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information about how to deploy the preview version of Dynamics 365 Intelligent Order Management.
+description: This topic provides information about how to deploy Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
@@ -14,9 +14,9 @@ title: Deployment
 # Deployment
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-Dynamics 365 Intelligent Order Management is currently in the public preview release phase, allowing customers and partners to evaluate and provide feedback. Intelligent Order Management is a Software as a Service (SaaS) app that runs on the Microsoft Azure infrastructure.
+
+Intelligent Order Management is a Software as a Service (SaaS) app that runs on the Microsoft Azure infrastructure.
 
 ## Deployment options
 
