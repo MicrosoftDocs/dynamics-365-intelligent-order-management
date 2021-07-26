@@ -40,4 +40,4 @@ When enabled, the timeline should start to list business events as they are rais
 
 ## Additional resources
 
-[Configure timeline](/dynamics365/customer-service/customer-service-hub-user-guide-timeline-admin.md)
+[Configure timeline](/dynamics365/customer-service/customer-service-hub-user-guide-timeline-admin)
