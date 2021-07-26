@@ -59,6 +59,6 @@ Intelligent Order Management enables admins and business users to use several di
 
 -   Using the app: Business users can use pages in the app to export to Excel and import from Excel to update data like transactions and master data.
 
--   Maker Portal: Admins can use the Maker Portal to import and export data from Dataverse. To learn more, see [Import or export data from Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-import-export.md).
+-   Maker Portal: Admins can use the Maker Portal to import and export data from Dataverse. To learn more, see [Import or export data from Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-import-export).
 
--   Dataflows: Admins can leverage the capabilities of dataflows to move data between Dataverse and other apps. To learn more, see [Self-service data prep with dataflows](/powerapps/maker/data-platform/self-service-data-prep-with-dataflows.md).
+-   Dataflows: Admins can leverage the capabilities of dataflows to move data between Dataverse and other apps. To learn more, see [Self-service data prep with dataflows](/powerapps/maker/data-platform/self-service-data-prep-with-dataflows).
