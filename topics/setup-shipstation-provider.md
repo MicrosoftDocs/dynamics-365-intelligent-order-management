@@ -1,21 +1,21 @@
 ---
 author: sumanic
-description: This topic provides information about how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
+description: This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 07/27/2021
 ms.topic: how-to
 ms.author: sumanic
 
-title: Set up ShipStation provider
+title: Set up the ShipStation provider
 
 ---
 
-# Set up ShipStation provider
+# Set up the ShipStation provider
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic provides information about how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
+This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 
 ShipStation is a software as a service (SaaS) shipping platform that allows you to manage all your small parcel shipping needs in one place. The ShipStation provider enables Intelligent Order Management to access and manage carrier pickups.  
   
@@ -32,10 +32,10 @@ To set up the ShipStation provider, follow these steps:
 1. In Intelligent Order Management, go to **Providers \> Catalog**.
 1. Select **Add Provider** on the **ShipStation** tile.
 1. Select **Create** on the **Terms and Conditions** page.
-1. In the **Connections** section, set up the ShipStation Dataverse connection.
-1. In the **Connections** section, set up the ShipStation connection:
+1. In the **Connections** section, set up the **ShipStation Dataverse** connection.
+1. In the **Connections** section, set up the **ShipStation** connection:
     1. Select the connection.
-    1. Select the **Retrieve Connection Link** URL.
+    1. Select **Retrieve Connection Link**.
     1. Search for **ShipStation** and then select the connector. 
     1. For **Connection Name**, enter a name for the connection.
     1. For **Username**, enter the ShipStation API key located at https://ss.shipstation.com/#/settings/api. 
@@ -52,7 +52,7 @@ To set up the ShipStation provider, follow these steps:
 
 ##  Out-of-box provider capabilities
 
-The following table lists the out-of-box provider capabilities in Intelligent Order Management.
+The following table describes the out-of-box provider capabilities in Intelligent Order Management.
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
