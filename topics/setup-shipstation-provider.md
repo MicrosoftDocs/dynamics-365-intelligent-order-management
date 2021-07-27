@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic provides information about how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 07/23/2021
+ms.date: 07/27/2021
 ms.topic: how-to
 ms.author: sumanic
 
@@ -17,67 +17,51 @@ title: Set up ShipStation provider
 
 This topic provides information about how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 
-ShipStation is a SaaS (Software as a Service) shipping platform that allows you to manage all your small parcel shipping needs in one place. The ShipStation provider enables Intelligent Order Management to access and manage carrier pickups.  
+ShipStation is a software as a service (SaaS) shipping platform that allows you to manage all your small parcel shipping needs in one place. The ShipStation provider enables Intelligent Order Management to access and manage carrier pickups.  
   
-For more information about ShipStation, contact [here](https://help.shipstation.com/hc/en-us/sections/360004023491-Contact-Support). 
+To contact ShipStation for more information, see [Contact Support](https://help.shipstation.com/hc/en-us/sections/360004023491-Contact-Support). 
 
 ## Prerequisites
 
-To set up the ShipStation provider, you need to have a ShipStation trial account. You can create an account on [ShipStation trial account](https://www.shipstation.com/step1/).
+To set up the ShipStation provider, you must have a ShipStation trial account. To create a trial account, see [Create My Account](https://www.shipstation.com/step1/).
 
-## Set up the provider
+## Set up the ShipStation provider
 
-To set up the provider, follow these steps:
+To set up the ShipStation provider, follow these steps:
 
-1. In Intelligent Order Management, go to **Providers &gt; Catalog**.
+1. In Intelligent Order Management, go to **Providers \> Catalog**.
+1. Select **Add Provider** on the **ShipStation** tile.
+1. Select **Create** on the **Terms and Conditions** page.
+1. In the **Connections** section, set up the ShipStation Dataverse connection.
+1. In the **Connections** section, set up the ShipStation connection:
+    1. Select the connection.
+    1. Select the **Retrieve Connection Link** URL.
+    1. Search for **ShipStation** and then select the connector. 
+    1. For **Connection Name**, enter a name for the connection.
+    1. For **Username**, enter the ShipStation API key located at https://ss.shipstation.com/#/settings/api. 
+    1. For **Password**, enter the ShipStation API secret located at https://ss.shipstation.com/#/settings/api.
+    1. Save the connection.
+    1. Copy the connection URL.
+    1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
+    1. Select **Save**.
+    1. Select **Activate** to activate the connection.
+    1. Select **Save and close**.
+1.  Select **Activate** to activate the provider.
+1.  Select **Save and close**.
+1.  Go to **Providers \> Installed** and confirm that the provider you set up is listed with the status **Activated**.
 
-2. Select **Add Provider** on the **ShipStation** tile.
+##  Out-of-box provider capabilities
 
-3. Select **Create** on the **Terms and Conditions** page.
-
-4. There are two connections that you need to set up in the **Connections** section.
-
-    1. ShipStation Dataverse connection.
-
-    2. ShipStation connection:
-
-        1. Select the connection.
-
-        1. Select the **Retrieve Connection Link** URL.
-
-        1. Search for **ShipStation** and then select the connector.
-
-        1. Enter the following information: 
-            - **Connection Name**: Enter a name of your choice.
-            - **API Key** & **API Secret**: Enter the ShipStation API key as Username and API Secret as Password. You can retrieve them by following the instructions [here](https://ss.shipstation.com/#/settings/api).
-
-        1. Save the connection.
-
-        1. Copy your URL.
-
-        1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
-       
-        1. Select Save.
-       
-        1. Select Activate to activate the connection.
-
-        1. Select Save and close.
-
-5.  Select Activate to activate the provider.
-
-6.  Select Save and close.
-
-7.  Go to Providers > Installed and validate that the provider you set up is listed with the status Activated.
-
-##  Out-of-box capabilities
+The following table lists the out-of-box provider capabilities in Intelligent Order Management.
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**ShipStation Connection**<br>**ShipStation Dataverse (current environment) Connection**</br>   |
+|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br><br>ShipStation-related connections:<br><ul><li>ShipStation connection</li><li>ShipStation Dataverse connection (current environment)</li></ul>   |
 |    Parameters             |    Some providers require additional configuration information to retrieve and send information.
-|    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow.   |
-|    Business   Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
-|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Dataverse Fulfillment Order to ShipStation Order**</br>  |
+|    Provider actions     |    The actions associated with a provider that determine what actions are available to you when you create an orchestration flow.   |
+|    Business events      |   The events defined for a provider are events that the associated provider actions can raise in the orchestration designer.        |
+|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br><br>ShipStation-related transformations:<br><ul><li>Dataverse fulfillment order to ShipStation order</li></ul>  |
 
 ## Additional resources
+
 [ShipStation API documentation](https://www.shipstation.com/docs/api/)
