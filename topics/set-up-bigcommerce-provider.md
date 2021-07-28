@@ -19,11 +19,11 @@ This topic provides information about how to set up the BigCommerce provider in 
 
 BigCommerce is a flexible, open SaaS platform. You can connect to BigCommerce to retrieve orders, products, and related information. The BigCommerce provider enables Intelligent Order Management to access and process purchase orders from BigCommerce.  
 
-For more information about BigCommerce, see the [BigCommerce website](https://www.bigcommerce.com/). 
+For more information about BigCommerce, see the [BigCommerce website](https://www.bigcommerce.com/dm/microsoft/). 
 
 ## Prerequisites 
 
-You need to have a sample store set up. Go to the [BigCommerce Essentials website](https://www.bigcommerce.com/essentials/) and select **Start your free trial**. Follow the instructions to set up your sample store. To remove the 15-day trial limitation, contact BigCommerce.
+You need to have a sample store set up. Go to the [BigCommerce website](https://www.bigcommerce.com/dm/microsoft/) and select **Start your free trial**. Follow the instructions to set up your sample store. To remove the 15-day trial limitation, contact BigCommerce.
 
 ## Set up the provider
 To set up the provider, follow these steps: 
