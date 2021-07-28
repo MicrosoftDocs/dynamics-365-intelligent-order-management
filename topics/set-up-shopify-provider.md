@@ -10,7 +10,7 @@ title: Set up Shopify provider
 
 ---
 
-# Set up the Shopify provider
+# Set up Shopify provider
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
