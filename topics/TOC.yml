@@ -32,6 +32,8 @@
       href: set-up-bigcommerce-provider.md
     - name: Set up ShipStation provider
       href: setup-shipstation-provider.md
+    - name: Set up Intelligent Fulfillment Optimization provider
+      href: set-up-ifo-provider.md
     - name: Customize an out-of-box provider
       href: customize-provider.md
     - name: Create a new provider
@@ -40,12 +42,16 @@
     href: enable-bing-maps.md
   - name: Enable timeline on Sales order page
     href: enable-timeline-sales-order.md
+  - name: Troubleshoot trial sign-up issues
+    href: troubleshoot-trial-sign-up.md
 - name: Manage your orders
   items:
   - name: Fulfillment optimization
     items:
-    - name: Distributed Order Management (preview)
-      href: dom.md
+    - name: Intelligent Fulfillment Optimization (preview)
+      href: ifo.md
+    - name: Intelligent Fulfillment Optimization architecture
+      href: ifo-arch.md
 - name: Power BI integration
   items:
   - name: Reporting and Power BI integration
