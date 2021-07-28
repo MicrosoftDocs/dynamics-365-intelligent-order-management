@@ -56,11 +56,11 @@ The following table describes the out-of-box provider capabilities in Intelligen
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br><br>ShipStation-related connections:<br><ul><li>ShipStation connection</li><li>ShipStation Dataverse connection (current environment)</li></ul>   |
+|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**ShipStation connection**<br>**ShipStation Dataverse connection (current environment)**   |
 |    Parameters             |    Some providers require additional configuration information to retrieve and send information.
 |    Provider actions     |    The actions associated with a provider that determine what actions are available to you when you create an orchestration flow.   |
 |    Business events      |   The events defined for a provider are events that the associated provider actions can raise in the orchestration designer.        |
-|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br><br>ShipStation-related transformations:<br><ul><li>Dataverse fulfillment order to ShipStation order</li></ul>  |
+|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Dataverse fulfillment order to ShipStation order**  |
 
 ## Additional resources
 
