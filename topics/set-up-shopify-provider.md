@@ -15,16 +15,13 @@ title: Set up Shopify provider
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic provides information about how to set up the Shopify provider in Microsoft Dynamics 365 Intelligent Order Management.
+This topic describes how to set up the Shopify provider in Microsoft Dynamics 365 Intelligent Order Management.
 
 Shopify is a flexible, open software as a service (SaaS) platform. You can connect to Shopify to retrieve orders, products, and related information. The Shopify provider enables Dynamics 365 Intelligent Order Management to access and process orders from Shopify. 
   
 For more information about Shopify, see http://www.shopify.com. 
 
 ## Prerequisites
-
-You must have a sample app or store set up. Go to the Shopify website and create a trial account . 
-
 
 To set up the Shopify provider, you must have a Shopify partner trial account. To create a trial account, see [Shopify Signup](https://accounts.shopify.com/signup?rid=e573fe3c-1e76-474a-9fb5-76645ad78172). Follow the instructions to set up your sample store or build your own app. To remove the 30-day trial limitation, contact Shopify.
 
