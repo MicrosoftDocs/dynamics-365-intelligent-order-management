@@ -19,7 +19,7 @@ This topic describes how to set up the ShipStation provider in Dynamics 365 Inte
 
 ShipStation is a software as a service (SaaS) shipping platform that allows you to manage all your small parcel shipping needs in one place. The ShipStation provider enables Intelligent Order Management to access and manage carrier pickups.  
   
-To contact ShipStation for more information, see [Contact Support](https://help.shipstation.com/hc/en-us/sections/360004023491-Contact-Support). 
+To contact ShipStation for more information, see [Contact Support](https://help.shipstation.com/hc/sections/360004023491-Contact-Support). 
 
 ## Prerequisites
 
