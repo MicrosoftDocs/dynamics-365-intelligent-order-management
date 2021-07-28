@@ -6,11 +6,11 @@ ms.date: 07/27/2021
 ms.topic: how-to
 ms.author: sumanic
 
-title: Set up the ShipStation provider
+title: Set up ShipStation provider
 
 ---
 
-# Set up the ShipStation provider
+# Set up ShipStation provider
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
