@@ -23,7 +23,7 @@ For more information about Avalara, contact Avalara [here](https://www.avalara.c
 
 ## Prerequisites
 
-To set up the Avalara provider, you need to have an Avalara developer account. You can Get Started [here](https://www.avalara.com/us/en/get-started.html).
+To set up the Avalara provider, you need to have an Avalara developer account. You can get started [here](https://www.avalara.com/us/en/get-started.html).
 
 ## Set up the provider
 
@@ -81,11 +81,11 @@ To set up the provider, follow these steps:
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Avalara Connection**<br>**Avalara Dataverse (current environment) Connection**</br>   |
+|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Avalara Connection**<br>**Avalara Dataverse (current environment) Connection**   |
 |    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Avalara Company Code**</br>  |
-|    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow. Below two Provider actions are available as Out of the box capabilities: <br>**a. Resolve Address** <br> <br> **b. Calculate Tax** </br>|
+|    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow. Below two Provider actions are available as out of the box capabilities: <br>**Resolve Address**<br>**bCalculate Tax**|
 |    Business   Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
-|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Build Avalara CreateTransaction payload**<br> <br>**Build Avalara ResolveAddress payload**</br>  |
+|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Build Avalara CreateTransaction payload**<br>**Build Avalara ResolveAddress payload** |
 
 ## Additional resources
 [Avalara API documentation](https://developer.avalara.com/documentation/)
