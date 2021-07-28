@@ -38,8 +38,8 @@ To set up the provider, follow these steps:
     1. Select **Retrieve Connection Link**.
     1. Search for **Shopify** and then select the connector. 
     1. For **Connection Name**, enter a name for the connection.
-    1. In order to generate the **API Key**, a private app must be created prior by following instructions for [Private apps](https://help.shopify.com/en/manual/apps/private-apps). Post that enter the Shopify API key, by following the instructions to [Generate credentials](https://help.shopify.com/en/manual/apps/private-apps#generate-credentials-from-the-shopify-admin). 
-    1. Give admin API Read/Write permission for Orders and Products.
+    1. A private app must be created in order to generate an **API Key**. To create a private app, follow [these instructions](https://help.shopify.com/en/manual/apps/private-apps). After you've created the app, follow the instructions to [Generate credentials](https://help.shopify.com/en/manual/apps/private-apps#generate-credentials-from-the-shopify-admin) and then enter the Shopify API key. 
+    1. Give admin API read/write permission for orders and products.
     3. Save the connection.
     4. Test the connection by selecting **Test** in the top ribbon.
     5. Copy the connection URL.
@@ -56,8 +56,8 @@ To set up the provider, follow these steps:
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br><br>Shopify-related connections:<br><ul><li>**Shopify connection**</li><li>**Shopify Dataverse connection (current environment)**</li></ul>   |
-|    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br><br>Shopify-related parameters:<br><ul><li>**Store URL**</li></ul>  |
+|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Shopify connection**<br>**Shopify Dataverse connection (current environment)**   |
+|    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Store URL**  |
 |    Provider actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow.   |
 |    Business events      |   The events defined for a provider are events that the associated provider actions can raise in the orchestration designer.        |
-|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br><br>Shopify-related transformations:<br><ul><li>**Shopify sales order to Dataverse sales order**</li></ul> |
+|    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Shopify sales order to Dataverse sales order** |
