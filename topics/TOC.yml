@@ -32,6 +32,8 @@
       href: set-up-bigcommerce-provider.md
     - name: Set up ShipStation provider
       href: setup-shipstation-provider.md
+    - name: Set up Flexe provider
+      href: setup-flexe-provider.md
     - name: Set up Intelligent Fulfillment Optimization provider
       href: set-up-ifo-provider.md
     - name: Customize an out-of-box provider
