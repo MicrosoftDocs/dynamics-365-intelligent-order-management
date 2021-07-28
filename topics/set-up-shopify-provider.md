@@ -38,7 +38,7 @@ To set up the provider, follow these steps:
     1. Select **Retrieve Connection Link**.
     1. Search for **Shopify** and then select the connector. 
     1. For **Connection Name**, enter a name for the connection.
-    1. In order to generate the **API Key**, a private app must be created prior by following instructions [here](https://help.shopify.com/en/manual/apps/private-apps). Post that enter the Shopify API key, by following the instructions [here](https://help.shopify.com/en/manual/apps/private-apps#generate-credentials-from-the-shopify-admin). 
+    1. In order to generate the **API Key**, a private app must be created prior by following instructions for [Private apps](https://help.shopify.com/en/manual/apps/private-apps). Post that enter the Shopify API key, by following the instructions to [Generate credentials](https://help.shopify.com/en/manual/apps/private-apps#generate-credentials-from-the-shopify-admin). 
     1. Give admin API Read/Write permission for Orders and Products.
     3. Save the connection.
     4. Test the connection by selecting **Test** in the top ribbon.
