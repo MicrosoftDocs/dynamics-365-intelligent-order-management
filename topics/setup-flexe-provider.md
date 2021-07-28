@@ -70,5 +70,5 @@ The Flexe provider has the following capabilities.
 |  Business events   | **Billing of order confirmed by billing provider**: Event that indicates that billing was confirmed by Flexe. <br>**Creation of fulfillment line succeeded**: Event that indicates that a fulfillment line was successfully created. <br>**Creation of fulfillment order failed**: Event that indicates that fulfillment of the order failed. <br>**Creation of fulfillment order succeeded**: Event that indicates that fulfillment of the order succeeded.   |
 |  Transformation    |  **Microsoft Dataverse fulfillment line to Flexe order line**: Transforms a fulfillment order line from Intelligent Order Management to a Flexe order line. <br>**Dataverse fulfillment order to Flexe order**: Transforms a fulfillment order from Intelligent Order Management to a Flexe order.   |
 
-
+## Additional resources
 To learn more about Flexe's API, see the [Flexe API documentation](https://developer-sandbox.flexe.com/doc/public).
