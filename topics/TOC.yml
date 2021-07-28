@@ -30,6 +30,8 @@
       href: set-up-orderful-provider.md
     - name: Set up BigCommerce provider
       href: set-up-bigcommerce-provider.md
+    - name: Set up Avalara provider
+      href: setup-avalara-provider.md
     - name: Set up Intelligent Fulfillment Optimization provider
       href: set-up-ifo-provider.md
     - name: Customize an out-of-box provider
