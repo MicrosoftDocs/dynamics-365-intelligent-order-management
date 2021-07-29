@@ -23,7 +23,7 @@ For more information about BigCommerce, see the [BigCommerce website](https://ww
 
 ## Prerequisites 
 
-You need to have a sample store set up. Go to the [BigCommerce website](https://www.bigcommerce.com/dm/microsoft/) and select **Start your free trial**. Follow the instructions to set up your sample store. To remove the 15-day trial limitation, contact BigCommerce.
+You need to have a sample store set up. Go to the [BigCommerce website](https://www.bigcommerce.com/dm/microsoft/) and select **Start your free trial**. Follow the instructions to set up your sample store. 
 
 ## Set up the provider
 To set up the provider, follow these steps: 
