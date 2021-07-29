@@ -19,7 +19,7 @@ Dynamics 365 Intelligent Order Management comes with an Out of the box Internal 
 
 1. **Define** relationship between identities in an enterprise such that applications and operating systems from one user identity to another, related user identity
 1. **Smooth** integration across multiple systems
-1. Enable one **end to end visualization** of multiple systems representation for same entity.
+1. Enable an **end to end visualization** of multiple systems representation for same entity.
 
 # What is Intelligent Order Management Offering?
 
