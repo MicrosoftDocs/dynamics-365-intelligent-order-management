@@ -66,7 +66,7 @@ Below **Steps** show how quickly you can setup a **Warehouse** mapping:
 
 **Note:** 
 1. Provider based grouping of mappings is not available as part of current release. This will be covered in upcoming releases.
-2. Below mappings are Transactional mappings which need not be configured and is **View Only**.
+2. Below mappings are **Transactional mappings** which need not be configured and is **View Only**.
     1. Orders.
     2. Order Products.
     3. Fulfillment Orders.
