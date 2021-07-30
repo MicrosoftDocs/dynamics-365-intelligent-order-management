@@ -30,7 +30,7 @@ In order to be able to leverage the full potential of Internal External ID mappi
 1. **End to End visibility** in IOM on the connecting systems.
 1. **Flexibility** to add your own mappings.
 
-**Below are the Out of the Box configurations available:**
+**Below are the Out of the Box mapping configurations available:**
 
 1. Accounts
 2. Products
@@ -40,12 +40,34 @@ In order to be able to leverage the full potential of Internal External ID mappi
 6. Unit Groups
 7. Units
 
-You will now see an new page added into the IOM called as **Configuration**. This page will allow you to configure the mapping of columns and values across your different providers.
-
+You will now see a new page added into the IOM called as **Configurations**. This page will allow you to configure the mapping of columns and values across your different providers.
 Each of the above Out of the Box configurations will map to a corresponding **dataverse mapping table** that will preserve these mappings for usability in various integrations with providers.
 
-Below is a **sample example** of one of our provider warehouses being mapped to IOM warehouse.
+**Example Scenario:** Consider a scenario where you are working with multiple providers. Every provider has their own master data setup for **Products** or **Warehouses**. For any integration with these providers, there would be a constant need of transforming these datasets into providers mapping terminology. This is where Intelligent Order Management can help by letting you do a one time mapping setup and leverage that for all subsequent integrations with several providers.
 
+Whenever a transaction flows into IOM, and goes out through a provider, the mapping service will use the external ID mappings to look at values received and sent in the document communication. 
+
+Below **Steps** show how quickly you can setup a **Warehouse** mapping:
+
+1. On the IOM Homepage, at bottom left select the **Configuration** screen.
+2. This will show up all the **Out of the Box Mappings** available.
+3. As an example click on **Warehouses**. This will open the Warehouse mapping screen.
+4. Click on **New** to add a new mapping.
+5. Enter the **IOM Provider** whose master data you wish to map in IOM.
+6. In **Warehouse** enter the IOM Warehouse number.
+7. In **External Field Name** enter the field name for the provider.
+8. In **External Field Value** enter the warehouse number to be mapped for the provider.
+9. Click on **Save & Close**.
+10. This will also create an entry in the dataverse **IOM Warehouse Mapping** table.
+
+![image](media/Warehouse.png)
 ![image](media/warehouseMapping.png)
+![image](media/Table.png)
 
-**Note:** Provider based grouping of mappings is not available as part of current release. This will be covered in upcoming releases.
+**Note:** 
+1. Provider based grouping of mappings is not available as part of current release. This will be covered in upcoming releases.
+2. Below mappings are Transactional mappings which need not be configured and is **View Only**.
+    1. Orders.
+    2. Order Products.
+    3. Fulfillment Orders.
+    4. Fulfillment Order Products.
