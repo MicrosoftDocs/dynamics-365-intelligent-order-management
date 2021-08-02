@@ -19,17 +19,17 @@ This topic provides information about how to set up the Avalara provider in Dyna
 
 Avalara is software for automated tax compliance. The Avalara provider enables Intelligent Order Management to validate address and calculate tax from Avalara.  
   
-For more information about Avalara, contact Avalara [here](https://www.avalara.com/us/en/index.html). 
+For more information about Avalara, see the [Avalara website](https://www.avalara.com/us/en/index.html). 
 
 ## Prerequisites
 
-To set up the Avalara provider, you need to have an Avalara developer account. You can get started [here](https://www.avalara.com/us/en/get-started.html).
+To set up the Avalara provider, you need to have an Avalara developer account. To create an account, go to the [Avalara get started page](https://www.avalara.com/us/en/get-started.html).
 
 ## Set up the provider
 
 To set up the provider, follow these steps:
 
-1. In Intelligent Order Management, go to **Providers &gt; Catalog**.
+1. In Intelligent Order Management, go to **Providers > Catalog**.
 
 2. Select **Add Provider** on the **Avalara** tile.
 
@@ -37,7 +37,7 @@ To set up the provider, follow these steps:
 
 4. There are two connections that you need to set up in the **Connections** section.
 
-    1. Avalara Dataverse (current environment) Connection.
+    1. Avalara Dataverse (current environment) connection.
 
     2. Avalara connection:
 
@@ -49,8 +49,8 @@ To set up the provider, follow these steps:
 
        1. Enter the following information: 
           - **Connection Name**: Enter a name of your choice.
-          - **Username**: Enter Avalara login Username.
-          - **Password**: Enter Avalara password.
+          - **Username**: Enter your Avalara login username.
+          - **Password**: Enter your Avalara password.
 
        1. Save the connection.
 
@@ -82,9 +82,9 @@ To set up the provider, follow these steps:
 |  Capability | Details |
 | ------------------ | -------------------------------- |
 |    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Avalara Connection**<br>**Avalara Dataverse (current environment) Connection**   |
-|    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Avalara Company Code**</br>  |
-|    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow. Below two Provider actions are available as out of the box capabilities: <br>**Resolve Address**<br>**bCalculate Tax**|
-|    Business   Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
+|    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Avalara Company Code**  |
+|    Provider Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow. The two actions below are available as out of the box capabilities: <br>**Resolve Address**<br>**bCalculate Tax**|
+|    Business Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
 |    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Build Avalara CreateTransaction payload**<br>**Build Avalara ResolveAddress payload** |
 
 ## Additional resources
