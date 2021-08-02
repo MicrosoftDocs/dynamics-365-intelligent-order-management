@@ -17,7 +17,7 @@ title: Set up Avalara provider
 
 This topic provides information about how to set up the Avalara provider in Dynamics 365 Intelligent Order Management.
 
-Avalara is software for automated tax compliance. The Avalara provider enables Intelligent Order Management to validate address and calculate tax from Avalara.  
+Avalara is software for automated tax compliance. The Avalara provider enables Intelligent Order Management to validate addresses and calculate tax from Avalara.  
   
 For more information about Avalara, see the [Avalara website](https://www.avalara.com/us/en/index.html). 
 
