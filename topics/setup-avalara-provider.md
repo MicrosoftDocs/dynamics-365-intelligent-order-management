@@ -83,7 +83,7 @@ To set up the provider, follow these steps:
 | ------------------ | -------------------------------- |
 |    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Avalara Connection**<br>**Avalara Dataverse (current environment) Connection**   |
 |    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Avalara Company Code**  |
-|    Provider Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow. The two actions below are available as out of the box capabilities: <br>**Resolve Address**<br>**bCalculate Tax**|
+|    Provider Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow. The following actions are available as out-of-the-box capabilities: <br>**Resolve Address**<br>**Calculate Tax**|
 |    Business Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
 |    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Build Avalara CreateTransaction payload**<br>**Build Avalara ResolveAddress payload** |
 
