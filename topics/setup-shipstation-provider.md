@@ -13,7 +13,7 @@ title: Set up ShipStation provider
 # Set up ShipStation provider
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 
