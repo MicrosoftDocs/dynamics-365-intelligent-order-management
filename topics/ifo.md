@@ -6,14 +6,14 @@ ms.date: 05/17/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Intelligent Fulfillment Optimization (preview)
+title: Intelligent Fulfillment Optimization 
 ---
 
 
-# Intelligent Fulfillment Optimization (preview)
+# Intelligent Fulfillment Optimization
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Intelligent Fulfillment Optimization is an intelligent optimization service that maximizes order fulfillment within the supply chain network. Intelligent Fulfillment Optimization helps you ensure that products are delivered to your customers with the right quantities, from the right sources, and at the right time. Intelligent Fulfillment Optimization can help you maximize profits, minimize costs, and satisfy service-level requirements.  
 
@@ -21,8 +21,6 @@ In a modern supply network where product fulfillment can be from multiple channe
 
 Intelligent Fulfillment Optimization is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find the distance between the shipping address and fulfillment source.
 
-> [!NOTE]
-> Intelligent Fulfillment Optimization is a preview service and can only be used in sandbox environments for non-production purposes.
 
 ## Set up Intelligent Fulfillment Optimization
 
@@ -36,7 +34,7 @@ For each of your fulfillment sources, you can define a name to uniquely identify
 
 To look up inventory from the Inventory Visibility service, set the **Use real inventory** field to **On**. To include inventory from a source and make the source available to fulfill the order, on the **Fulfillment > Sources** page, set the **Use real inventory** field to **Off**.
 
-For the preview release, the system assumes unlimited inventory. 
+The system assumes unlimited inventory. 
 
 ## Fulfillment source lists
 
@@ -50,7 +48,7 @@ Active source lists are displayed on the **Fulfillment > Source Lists** page. To
 
 ## Business constraints 
 
-Business constraints are an optional component for fulfillment optimization. These are controls that you put in the optimization strategy. As part of the preview release, the following business constraints are supported.  
+Business constraints are an optional component for fulfillment optimization. These are controls that you put in the optimization strategy. The following business constraints are supported.  
 
 -   Location or source priority.
 
@@ -102,7 +100,7 @@ The strategy also defines whether unlimited product inventory is used, or real p
 
 Depending on the nature of your business, you can define multiple optimization strategies. You can define the list of fulfillment sources that participates in fulfillment and define constraints that the optimization service must consider. The constraints are hard constraints that the optimization service will mandatorily impose when it determines the optimal source.  
 
-For the preview release, **Fulfillment from the closest source** is supported as the pre-defined objective in every strategy.
+**Fulfillment from the closest source** is supported as the pre-defined objective in every strategy.
 
 Intelligent Fulfillment Optimization batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
 

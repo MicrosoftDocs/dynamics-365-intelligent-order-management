@@ -13,7 +13,7 @@ title: Set up Avalara provider
 # Set up Avalara provider
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic provides information about how to set up the Avalara provider in Dynamics 365 Intelligent Order Management.
 
