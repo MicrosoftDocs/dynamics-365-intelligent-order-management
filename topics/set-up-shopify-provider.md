@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic describes how to set up the Shopify provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 07/28/2021
+ms.date: 08/05/2021
 ms.topic: how-to
 ms.author: sumanic
 
@@ -13,7 +13,7 @@ title: Set up Shopify provider
 # Set up Shopify provider
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic describes how to set up the Shopify provider in Microsoft Dynamics 365 Intelligent Order Management.
 
