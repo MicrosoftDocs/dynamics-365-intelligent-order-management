@@ -14,7 +14,7 @@ title: Policies and rules
 # Policies and rules
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic covers policy types and describes how to create a policy with rules in Dynamics 365 Intelligent Order Management.
 

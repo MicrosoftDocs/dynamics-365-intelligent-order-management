@@ -13,11 +13,8 @@ title: Get support
 # Get support
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-Dynamics 365 Intelligent Order Management is currently in the public preview release phase and is only available for development and evaluation purposes. 
-
-To get support, you can submit questions to the [community site for Dynamics 365 Intelligent Order Management](https://community.dynamics.com/365/dynamics-365-intelligent-order-management). Microsoft is monitoring the community site during the preview phase. 
+To get support, you can submit questions to the [community site for Dynamics 365 Intelligent Order Management](https://community.dynamics.com/365/dynamics-365-intelligent-order-management). Microsoft is monitoring the community site. 
 
 Customers and partners who are part of our private preview program can post questions on the Yammer group. 
 

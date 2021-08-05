@@ -13,7 +13,7 @@ title: Before you buy
 # Before you buy
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 ## Try Intelligent Order Management free for 30 days 
 
@@ -21,4 +21,4 @@ You can try Dynamics 365 Intelligent Order Management for 30 days through a simp
 
 A notification within the application will give you guidance on the time remaining in your public preview trial. After you finish your trial, you can sign up for another trial while the application is still in the public preview phase. Signing up for a new trial will enable you to experience additional features that will be released throughout the public preview phase. 
 
-For more information about how to sign up for the public preview trial, see [Intelligent Order Management](https://dynamics.microsoft.com/eintelligent-order-management/). 
+For more information about how to sign up for the public preview trial, see [Intelligent Order Management](https://dynamics.microsoft.com/intelligent-order-management/). 

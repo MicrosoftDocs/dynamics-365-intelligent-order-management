@@ -13,7 +13,7 @@ title: Data management
 
 # Data management
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 
 
@@ -47,11 +47,11 @@ If you need to set up master data such as accounts or products, you can use the 
 
 ## Transactional data
 
-Order transactions are the main transactional entity in Intelligent Order Management. The focus in the preview release is on sales orders. The common data model in Dataverse includes entities for a sales order header named **Order** and a sales order line named **Order Product**.
+Order transactions are the main transactional entity in Intelligent Order Management. The focus in the current release is on sales orders. The common data model in Dataverse includes entities for a sales order header named **Order** and a sales order line named **Order Product**.
 
 Intelligent Order Management introduces a new transactional entity called a **Fulfillment Order**. This entity includes information about the fulfillment of a sales order line and includes a header named **Fulfillment Order** and lines named **Fulfillment Order Product**.
 
-In the preview release of Intelligent Order Management, orchestration is designed around the order concept of a sales order.
+In Intelligent Order Management, orchestration is designed around the order concept of a sales order.
 
 ## Import and export data
 
@@ -59,6 +59,6 @@ Intelligent Order Management enables admins and business users to use several di
 
 -   Using the app: Business users can use pages in the app to export to Excel and import from Excel to update data like transactions and master data.
 
--   Maker Portal: Admins can use the Maker Portal to import and export data from Dataverse. To learn more, see [Import or export data from Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-import-export).
+-   Maker Portal: Admins can use the Maker Portal to import and export data from Dataverse. To learn more, see [Import or export data from Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-import-export).
 
--   Dataflows: Admins can leverage the capabilities of dataflows to move data between Dataverse and other apps. To learn more, see [Self-service data prep with dataflows](https://docs.microsoft.com/powerapps/maker/data-platform/self-service-data-prep-with-dataflows).
+-   Dataflows: Admins can leverage the capabilities of dataflows to move data between Dataverse and other apps. To learn more, see [Self-service data prep with dataflows](/powerapps/maker/data-platform/self-service-data-prep-with-dataflows).
