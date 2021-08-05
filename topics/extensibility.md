@@ -14,7 +14,7 @@ title: Extensibility
 # Extensibility
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Dynamics 365 Intelligent Order Management is built as a Microsoft Dataverse application that enables customers and partners to extend the application. This topic lists where you can find more information about how the application that can be extended to provide the functionality that your business requires 
 

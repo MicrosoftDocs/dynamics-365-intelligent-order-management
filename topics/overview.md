@@ -13,8 +13,6 @@ title: Intelligent Order Management overview
 # Intelligent Order Management overview
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
-
 
 
 With Dynamics 365 Intelligent Order Management, customers can manage the orchestration of orders through to fulfillment. These capabilities enable organizations to orchestrate order flows across different platforms and apps.
@@ -27,7 +25,7 @@ Customers who want to implement new fulfillment strategies like buy-online ship,
 
 Intelligent Order Management is designed as a Microsoft Dataverse application and shares the common data model with other apps in the Dynamics 365  family. Intelligent Order Management has no dependency on other Dynamics 365 apps. However, it works with both Dynamics 365 and non-Dynamics 365 business apps through the provider framework.
 
-In the preview release of Intelligent Order Management, partners and customers can benefit from the following.
+Partners and customers can benefit from the following.
 
 -   Partners can understand the core architecture and integration capabilities and start developing solutions to integrate with external service or build application functionality.
 

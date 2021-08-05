@@ -13,7 +13,7 @@ title: Before you buy
 # Before you buy
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 ## Try Intelligent Order Management free for 30 days 
 

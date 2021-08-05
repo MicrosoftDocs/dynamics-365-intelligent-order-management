@@ -50,7 +50,7 @@
   items:
   - name: Fulfillment optimization
     items:
-    - name: Intelligent Fulfillment Optimization (preview)
+    - name: Intelligent Fulfillment Optimization
       href: ifo.md
     - name: Intelligent Fulfillment Optimization architecture
       href: ifo-arch.md
