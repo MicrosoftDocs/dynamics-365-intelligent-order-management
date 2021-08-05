@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic provides instructions on how to create a new provider for Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/17/2021
+ms.date: 08/05/2021
 ms.topic: conceptual
 ms.author: josaw
 
@@ -287,7 +287,7 @@ After you create your custom connector, add it to your provider solution as a co
 
 ## Types of Power Automate flows
 
-Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](https://docs.microsoft.com/learn/modules/introduction-power-automate/).
+Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](/learn/modules/introduction-power-automate/).
 
 Add your flows as **Provider Definition Logic Definition** components to your provider.
 
@@ -486,7 +486,7 @@ You must have the following prerequisites before you can save your flows.
 
     -   Set up an Azure account with an active subscription. If you don't have an active account, you need to set up an account on the [Azure website](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-    -   PowerShell must be installed. For more information, see [Installing PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.1).
+    -   PowerShell must be installed. For more information, see [Installing PowerShell](/powershell/scripting/install/installing-powershell?view=powershell-7.1).
 
     -   Enter the following command in PowerShell to get an access token: az login --allow-no-subscriptions account get-access-token --resource=https://YourDataverseTenantURL.api.crm.dynamics.com/ --query=accessToken --output=tsv \| Set-Clipboard.
 
