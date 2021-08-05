@@ -19,7 +19,7 @@ This topic describes how to set up the Shopify provider in Microsoft Dynamics 36
 
 Shopify is a flexible, open software as a service (SaaS) platform. You can connect to Shopify to retrieve orders, products, and related information. The Shopify provider enables Dynamics 365 Intelligent Order Management to access and process orders from Shopify. 
   
-For more information about Shopify, see http://www.shopify.com. 
+For more information about Shopify, see the [Shopify website](http://www.shopify.com). 
 
 ## Prerequisites
 
