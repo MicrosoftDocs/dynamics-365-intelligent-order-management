@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic provides information about how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 08/03/2021
+ms.date: 08/05/2021
 ms.topic: how-to
 ms.author: josaw
 
