@@ -30,8 +30,6 @@
       href: set-up-orderful-provider.md
     - name: Set up BigCommerce provider
       href: set-up-bigcommerce-provider.md
-    - name: Set up Shopify provider
-      href: set-up-shopify-provider.md
     - name: Customize an out-of-box provider
       href: customize-provider.md
     - name: Create a new provider
