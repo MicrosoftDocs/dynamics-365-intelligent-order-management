@@ -13,7 +13,7 @@ title: Set up BigCommerce provider
 # Set up BigCommerce provider
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 

@@ -13,7 +13,7 @@ title: Intelligent Fulfillment Optimization architecture
 # Intelligent Fulfillment Optimization architecture
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
 
@@ -62,7 +62,7 @@ Intelligent Fulfillment Optimization also uses an inventory visibility service p
 
 ## Additional resources
 
-[Intelligent Fulfillment Optimization (preview)](ifo.md)
+[Intelligent Fulfillment Optimization](ifo.md)
 
 [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md)
 

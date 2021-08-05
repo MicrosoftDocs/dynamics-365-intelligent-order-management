@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic provides instructions on how to create a new provider for Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/17/2021
+ms.date: 08/05/2021
 ms.topic: conceptual
 ms.author: josaw
 
@@ -14,7 +14,7 @@ title: Create a new provider
 # Create a new provider
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 To create a new provider, use the following steps. You can also use these steps to make additions to existing providers.
 
@@ -26,7 +26,7 @@ Use the following table to determine which components you'll need.
 
 | Condition | Component needed |
 |-------------------------|-------------------------|
-| The service you want to create a provider for doesn't have a connector in Power Automate.</br>For more information, see [List of all Power Automate connectors](https://docs.microsoft.com/connectors/connector-reference/connector-reference-powerautomate-connectors). | Create a customer connector or use a generic connector. |
+| The service you want to create a provider for doesn't have a connector in Power Automate.</br>For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors). | Create a customer connector or use a generic connector. |
 | Your provider will exchange data between an external service and Microsoft Dataverse. | Your provider will need a provider transformation. Add a provider transformation component for each transformation. |
 | Your provider will execute logic from the orchestration designer. | Create a separate Power Automate flow to represent each of the actions. |
 | Your provider needs to process messages from an external service. | Create a Power Automate Message Handler flow. |
@@ -49,7 +49,7 @@ You need to complete the following tasks in this section to create a provider so
 
 ### Set up a custom provider
 
-Create a solution in Power Apps that will contain the components of your provider. To create a new solution in Power Apps, follow the steps in [Create a solution in Power Apps.](https://docs.microsoft.com/powerapps/maker/data-platform/create-solution)
+Create a solution in Power Apps that will contain the components of your provider. To create a new solution in Power Apps, follow the steps in [Create a solution in Power Apps.](/powerapps/maker/data-platform/create-solution)
 
 ### Add a provider definition
 
@@ -105,7 +105,7 @@ If your provider requires a transformation, you need to add a provider transform
 
     5. **Destination object name**: The destination of the record you want to transform.
 
-    6. **Transformation**: The Power Query Online MQuery that will be used to transform the input data. For information about Power Query and MQuery, see [What is Power Query?](https://docs.microsoft.com/power-query/power-query-what-is-power-query) and [Power Query M formula language reference.](https://docs.microsoft.com/powerquery-m/) The following is an example of a MQuery that transforms a sales order from an external order service to a sales order in Intelligent Order Management.
+    6. **Transformation**: The Power Query Online MQuery that will be used to transform the input data. For information about Power Query and MQuery, see [What is Power Query?](/power-query/power-query-what-is-power-query) and [Power Query M formula language reference.](/powerquery-m/) The following is an example of a MQuery that transforms a sales order from an external order service to a sales order in Intelligent Order Management.
 
 ```powerquery-m
 shared TransformSourceData =
@@ -273,9 +273,9 @@ If the business event that you want to create isn't already in Intelligent Order
 
 ## Add a connector
 
-If your provider needs a connector that isn't available in Power Automate, you need to create your own connector. For more information, see [List of all Power Automate connectors](https://docs.microsoft.com/connectors/connector-reference/connector-reference-powerautomate-connectors).
+If your provider needs a connector that isn't available in Power Automate, you need to create your own connector. For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors).
 
-To create your own Power Automate connector, follow the steps in [Custom connectors overview](https://docs.microsoft.com/connectors/custom-connectors/).
+To create your own Power Automate connector, follow the steps in [Custom connectors overview](/connectors/custom-connectors/).
 
 After you create your custom connector, add it to your provider solution as a component.
 
@@ -287,7 +287,7 @@ After you create your custom connector, add it to your provider solution as a co
 
 ## Types of Power Automate flows
 
-Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](https://docs.microsoft.com/learn/modules/introduction-power-automate/).
+Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](/learn/modules/introduction-power-automate/).
 
 Add your flows as **Provider Definition Logic Definition** components to your provider.
 
@@ -486,7 +486,7 @@ You must have the following prerequisites before you can save your flows.
 
     -   Set up an Azure account with an active subscription. If you don't have an active account, you need to set up an account on the [Azure website](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-    -   PowerShell must be installed. For more information, see [Installing PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.1).
+    -   PowerShell must be installed. For more information, see [Installing PowerShell](/powershell/scripting/install/installing-powershell?view=powershell-7.1).
 
     -   Enter the following command in PowerShell to get an access token: az login --allow-no-subscriptions account get-access-token --resource=https://YourDataverseTenantURL.api.crm.dynamics.com/ --query=accessToken --output=tsv \| Set-Clipboard.
 
@@ -609,4 +609,4 @@ POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference
 
 ## Share your providers
 
-If you want to use your provider definition on another environment or share your solution, you can export your provider solution. For more information, see [Export solutions](https://docs.microsoft.com/powerapps/maker/data-platform/export-solutions).
+If you want to use your provider definition on another environment or share your solution, you can export your provider solution. For more information, see [Export solutions](/powerapps/maker/data-platform/export-solutions).

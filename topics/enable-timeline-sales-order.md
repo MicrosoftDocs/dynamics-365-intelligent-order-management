@@ -13,7 +13,7 @@ title: Enable timeline on Sales order page
 # Enable timeline on Sales order page
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This document describes how to enable timeline capabilities on the **Sales order** page in Dynamics 365 Intelligent Order Management. 
 

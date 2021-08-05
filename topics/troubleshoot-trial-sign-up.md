@@ -1,6 +1,6 @@
 ---
 author: v-chgri
-description: This topic can help troubleshoot issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management (Preview) trial.
+description: This topic can help troubleshoot issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management trial.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 07/01/2021
 ms.topic: conceptual
@@ -13,9 +13,9 @@ title: Troubleshoot trial sign-up issues
 # Troubleshoot trial sign-up issues
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-This topic can help troubleshoot issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management (Preview) trial. It provides some workarounds that you can try if you receive error messages that resemble the following examples when you sign up for the trial:
+
+This topic can help troubleshoot issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management trial. It provides some workarounds that you can try if you receive error messages that resemble the following examples when you sign up for the trial:
 
 - "You're already signed up for this subscription with..."
 - "You are not a member of this organization"
