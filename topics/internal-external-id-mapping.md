@@ -55,8 +55,8 @@ Below **Steps** show how quickly you can setup a **Product** mapping:
 4. Click on **New** to add a new mapping.
 5. Enter the **IOM Provider** instance whose Product master data you wish to map within Inetlligent Order Management.
 6. In **Product** enter the IOM Product number.
-7. In **External Field Name** enter the field name for the provider.
-8. In **External Field Value** enter the Product number to be mapped for the provider.
+7. In **External Field Name** enter the external field name for the provider.
+8. In **External Field Value** enter the external Product number to be mapped for the provider.
 9. Click on **Save & Close**.
 
 ![image](media/prodmap.png)
