@@ -45,24 +45,22 @@ Each of the above Out of the Box configurations will map to a corresponding **da
 
 **Example Scenario:** Consider a scenario where you are working with multiple providers. Every provider has their own master data setup for **Products** or **Warehouses**. For any integration with these providers, there would be a constant need of transforming these datasets into providers mapping terminology. This is where Intelligent Order Management can help by letting you do a one time mapping setup and leverage that for all subsequent integrations with several providers.
 
-Whenever a transaction flows into Dynamics 365 Intelligent Order Management, and goes out through a provider, the mapping service will use the external ID mappings to look at values received and sent in the document communication. 
+Whenever a transaction flows into Dynamics 365 Intelligent Order Management, or goes out through a provider, the mapping service will use the internal\external ID mappings to look up mapped values and transform payload accordingly 
 
-Below **Steps** show how quickly you can setup a **Warehouse** mapping:
+Below **Steps** show how quickly you can setup a **Product** mapping:
 
 1. On the homepage, at bottom left select the **Configuration** screen.
 2. This will show up all the **Out of the Box Mappings** available.
-3. As an example click on **Warehouses**. This will open the Warehouse mapping screen.
+3. As an example click on **Products**. This will open the Products mapping screen.
 4. Click on **New** to add a new mapping.
-5. Enter the **IOM Provider** whose master data you wish to map within Inetlligent Order Management.
-6. In **Warehouse** enter the IOM Warehouse number.
+5. Enter the **IOM Provider** instance whose Product master data you wish to map within Inetlligent Order Management.
+6. In **Product** enter the IOM Product number.
 7. In **External Field Name** enter the field name for the provider.
-8. In **External Field Value** enter the warehouse number to be mapped for the provider.
+8. In **External Field Value** enter the Product number to be mapped for the provider.
 9. Click on **Save & Close**.
-10. This will also create an entry in the dataverse **IOM Warehouse Mapping** table.
 
-![image](media/Warehouse.png)
-![image](media/warehouseMapping.png)
-![image](media/Table.png)
+![image](media/prodmap.png)
+![image](media/ProductsMapping.png)
 
 **Note:** 
 1. Provider based grouping of mappings is not available as part of current release. This will be covered in upcoming releases.
