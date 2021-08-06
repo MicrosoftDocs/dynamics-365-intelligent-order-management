@@ -38,8 +38,6 @@
       href: setup-flexe-provider.md
     - name: Set up Intelligent Fulfillment Optimization provider
       href: set-up-ifo-provider.md
-    - name: Set up Shopify provider
-      href: set-up-shopify-provider.md
     - name: Customize an out-of-box provider
       href: customize-provider.md
     - name: Create a new provider
