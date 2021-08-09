@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic provides information about how to set up a Dynamics 365 Intelligent Order Management environment.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/17/2021
+ms.date: 08/09/2021
 ms.topic: conceptual
 ms.author: josaw
 
@@ -86,7 +86,7 @@ After you create your connections, you need to configure them.
 > [!NOTE]
 > There are three platform Dataverse connection references. You can use the same Dataverse connection for all three. 
 
-Once you've configured all of the platform connection references, Intelligent Order Management will turn on the related platform Power Automate flows. This may take a while. 
+4. Once you've configured all of the platform connection references, select **Activate System** in Intelligent Order Management to turn on the related platform Power Automate flows. This may take a while. 
 
 ## Additional resources
 [Work with providers](work-providers.md)
