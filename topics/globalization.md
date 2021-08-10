@@ -19,10 +19,4 @@ title: Globalization
 ## Localization and translation
 Intelligent Order Management includes functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity.
 
-This topic includes lists of resources that can help you do the following:
-
-- Learn more about developing country/region-specific solutions.
-- Get country/region specific updates.
-- Submit and review regulatory alerts.
-- Learn how to use country/region specific functionality.
-
+Intelligent Optimization Fullfillment is supported in the geographies listed in the [Intelligent Fulfillment Optimization architecture](ifo-arch.md) topic.
