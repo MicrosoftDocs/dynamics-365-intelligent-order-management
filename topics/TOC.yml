@@ -20,8 +20,6 @@
     href: orchestration-flows.md
   - name: Policies and rules
     href: policies-rules.md
-  - name: Internal external ID mapping
-    href: internal-external-id-mapping.md
   - name: Providers
     items:
     - name: Work with providers
