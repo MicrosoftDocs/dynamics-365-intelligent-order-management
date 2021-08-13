@@ -1,78 +1,80 @@
-- name: Intelligent Order Management home page
-  href: index.md
-- name: Get started
+- name: Intelligent Order Management
   items:
-  - name: Intelligent Order Management overview
-    href: overview.md
-  - name: Before you buy
-    href: before-you-buy.md
-  - name: Deployment
-    href: deploy.md
-  - name: Get support
-    href: support.md
-- name: Architecture
-  href: architecture.md
-- name: Set up Intelligent Order Management
-  items:
-  - name: Set up an environment
-    href: setup.md
-  - name: Orchestration flows
-    href: orchestration-flows.md
-  - name: Policies and rules
-    href: policies-rules.md
-  - name: Providers
+  - name: Intelligent Order Management home page
+    href: index.md
+  - name: Get started
     items:
-    - name: Work with providers
-      href: work-providers.md
-    - name: Provider catalog
-      href: provider-catalog.md
-    - name: Set up Orderful provider
-      href: set-up-orderful-provider.md
-    - name: Set up BigCommerce provider
-      href: set-up-bigcommerce-provider.md
-    - name: Set up Avalara provider
-      href: setup-avalara-provider.md
-    - name: Set up ShipStation provider
-      href: setup-shipstation-provider.md
-    - name: Set up Flexe provider
-      href: setup-flexe-provider.md
-    - name: Set up Intelligent Fulfillment Optimization provider
-      href: set-up-ifo-provider.md
-    - name: Customize an out-of-box provider
-      href: customize-provider.md
-    - name: Create a new provider
-      href: create-new-provider.md
-  - name: Enable Bing Maps for your environment
-    href: enable-bing-maps.md
-  - name: Enable timeline on Sales order page
-    href: enable-timeline-sales-order.md
-  - name: Troubleshoot trial sign-up issues
-    href: troubleshoot-trial-sign-up.md
-- name: Manage your orders
-  items:
-  - name: Fulfillment optimization
+    - name: Intelligent Order Management overview
+      href: overview.md
+    - name: Before you buy
+      href: before-you-buy.md
+    - name: Deployment
+      href: deploy.md
+    - name: Get support
+      href: support.md
+  - name: Architecture
+    href: architecture.md
+  - name: Set up Intelligent Order Management
     items:
-    - name: Intelligent Fulfillment Optimization
-      href: ifo.md
-    - name: Intelligent Fulfillment Optimization architecture
-      href: ifo-arch.md
-- name: Power BI integration
-  items:
-  - name: Reporting and Power BI integration
-    href: report-powerbi-integration.md
-  - name: Power BI dashboards
-    href: power-bi-dashboards.md
-- name: Administration
-  items: 
-  - name: Administration overview
-    href: admin.md
-  - name: Data management
-    href: data-management.md
-- name: Extensibility
-  href: extensibility.md
-- name: Globalization
-  href: globalization.md
-- name: Blogs and communities
-  href: blog-community.md
-- name: Videos
-  href: https://www.youtube.com/watch?v=X73HzFPrBb0&feature=youtu.be
+    - name: Set up an environment
+      href: setup.md
+    - name: Orchestration flows
+      href: orchestration-flows.md
+    - name: Policies and rules
+      href: policies-rules.md
+    - name: Providers
+      items:
+      - name: Work with providers
+        href: work-providers.md
+      - name: Provider catalog
+        href: provider-catalog.md
+      - name: Set up Orderful provider
+        href: set-up-orderful-provider.md
+      - name: Set up BigCommerce provider
+        href: set-up-bigcommerce-provider.md
+      - name: Set up Avalara provider
+        href: setup-avalara-provider.md
+      - name: Set up ShipStation provider
+        href: setup-shipstation-provider.md
+      - name: Set up Flexe provider
+        href: setup-flexe-provider.md
+      - name: Set up Intelligent Fulfillment Optimization provider
+        href: set-up-ifo-provider.md
+      - name: Customize an out-of-box provider
+        href: customize-provider.md
+      - name: Create a new provider
+        href: create-new-provider.md
+    - name: Enable Bing Maps for your environment
+      href: enable-bing-maps.md
+    - name: Enable timeline on Sales order page
+      href: enable-timeline-sales-order.md
+    - name: Troubleshoot trial sign-up issues
+      href: troubleshoot-trial-sign-up.md
+  - name: Manage your orders
+    items:
+    - name: Fulfillment optimization
+      items:
+      - name: Intelligent Fulfillment Optimization
+        href: ifo.md
+      - name: Intelligent Fulfillment Optimization architecture
+        href: ifo-arch.md
+  - name: Power BI integration
+    items:
+    - name: Reporting and Power BI integration
+      href: report-powerbi-integration.md
+    - name: Power BI dashboards
+      href: power-bi-dashboards.md
+  - name: Administration
+    items: 
+    - name: Administration overview
+      href: admin.md
+    - name: Data management
+      href: data-management.md
+  - name: Extensibility
+    href: extensibility.md
+  - name: Globalization
+    href: globalization.md
+  - name: Blogs and communities
+    href: blog-community.md
+  - name: Videos
+    href: https://www.youtube.com/watch?v=X73HzFPrBb0&feature=youtu.be
