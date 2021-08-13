@@ -1,51 +1,46 @@
 ---
 author: sumanic
-description: This topic describes the Internal External ID mapping in Dynamics 365 Intelligent Order Management.
+description: This topic describes the internal external ID mapping in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 07/29/2021
+ms.date: 08/13/2021
 ms.topic: conceptual
 ms.author: sumanic
 
-title: Internal External ID mapping in Intelligent Order Management
+title: Internal external ID mapping
 ---
 
 
-# Internal External ID mapping in Intelligent Order Management
+# Internal external ID mapping
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-Dynamics 365 Intelligent Order Management comes with an Out of the box Internal External ID mappings. This will allow you to:
+<!--- waiting for clarification for this section --->
+Dynamics 365 Intelligent Order Management provides out-of-the-box internal external ID mappings. With the internal external ID mappings functionality, you can do the following.
 
-1. **Define** relationship between identities in an enterprise such that applications and operating systems from one user identity to another, related user identity
-1. **Smooth** integration across multiple systems
-1. Enable an **end to end visualization** of multiple systems representation for same entity.
+- Define the relationship between identities in an enterprise across applications and operating systems.
+- Enable an end-to-end visualization of mapping across multiple systems.
+- Configure and add your own mapping and mapping tables.
+- Leverage mapping for multiple integrations.
 
-# What is Intelligent Order Management Offering?
+## Configurations
 
-In order to be able to leverage the full potential of Internal External ID mapping, Intelligent Order Management offers the below:
+The following configurations are provided with Intelligent Order Management.
 
-1. Out of the box **configurable** mapping and mapping tables.
-1. Easy **integration** across multiple systems.
-1. **End to End visibility** in Intelligent Order Management on the connecting systems.
-1. **Flexibility** to add your own mappings.
+- Accounts
+- Products
+- Price Lists
+- Warehouses
+- Currencies
+- Unit Groups
+- Units
 
-**Below are the Out of the Box mapping configurations available:**
+On the **Configurations** page, you can configure the mapping of columns and values across your different providers. Each of the configurations above map to a corresponding Microsoft Dataverse mapping table that will preserve mappings so they can be used in various provider integrations.
 
-1. Accounts
-2. Products
-3. Price Lists
-4. Warehouses
-5. Currencies
-6. Unit Groups
-7. Units
+## Example scenario
 
-You will now see a new page added into the homepage called as **Configurations**. This page will allow you to configure the mapping of columns and values across your different providers.
-Each of the above Out of the Box configurations will map to a corresponding **dataverse mapping table** that will preserve these mappings for usability in various integrations with providers.
+This scenario demonstrates how you can use internal external ID mappings when working with multiple providers. Every provider has a unique master data setup for **Products** or **Warehouses**. To integrate with these providers, you would need to transform each of these datasets into provider mapping terminology. With internal external ID mapping, you can set up the mapping once and leverage the mapping for all subsequent integrations.
 
-**Example Scenario:** Consider a scenario where you are working with multiple providers. Every provider has their own master data setup for **Products** or **Warehouses**. For any integration with these providers, there would be a constant need of transforming these datasets into providers mapping terminology. This is where Intelligent Order Management can help by letting you do a one time mapping setup and leverage that for all subsequent integrations with several providers.
-
-Whenever a transaction flows into Dynamics 365 Intelligent Order Management, or goes out through a provider, the mapping service will use the internal\external ID mappings to look up mapped values and transform payload accordingly 
+When a transaction flows into Intelligent Order Management, or goes out through a provider, the mapping service will use the internal\external ID mappings to look up mapped values and transform payload accordingly 
 
 Below **Steps** show how quickly you can setup a **Product** mapping:
 
