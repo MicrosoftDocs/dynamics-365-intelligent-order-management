@@ -52,15 +52,18 @@ When a transaction flows into or out of Intelligent Order Management through a p
 To set up a product mapping, follow the steps below.
 
 1. In Intelligent Order Management, select **Configuration** on the bottom left to open a page that displays all of the out-of-the-box mappings.
-1. Select **Products**. The **Products mapping** page opens.
-1. Select **New** to add a new mapping.
-1. In the **IOM Provider** field, enter the provider whose product master data you want to map with Intelligent Order Management.
-1. In the **Product** field, enter the Intelligent Order Management product number.
-1. In the **External Field Name** field, enter the external field name for the provider.
-1. In the **External Field Value** field, enter the external product number to be mapped for the provider.
-1. Select **Save & Close**.
+2. Select **Products**. The **New IOM Product Mapping** page opens.
 
 ![new product mapping screenshot](media/prodmap.png)
+
+3. Select **New** to add a new mapping.
+4. In the **IOM Provider** field, enter the provider whose product master data you want to map with Intelligent Order Management.
+5. In the **Product** field, enter the Intelligent Order Management product number.
+6. In the **External Field Name** field, enter the external field name for the provider.
+7. In the **External Field Value** field, enter the external product number to be mapped for the provider.
+8. Select **Save & Close**.
+
+
 
 
 > [!NOTE]
