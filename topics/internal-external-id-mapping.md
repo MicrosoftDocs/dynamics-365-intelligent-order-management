@@ -14,10 +14,10 @@ title: Internal external ID mapping
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Intelligent Order Management provides out-of-the-box internal external ID mappings. With the internal external ID mappings functionality, you can do the following.
+Dynamics 365 Intelligent Order Management provides out-of-the-box internal external ID mappings. With the internal external ID mappings functionality, you can do the following tasks.
 
 - Define the relationship between identities in an enterprise across applications and operating systems.
-- Leverage mapping for multiple integrations.
+- Use the mapping for multiple integrations.
 - Enable an end-to-end visualization of mapping across multiple systems.
 - Configure and add your own mapping and mapping tables.
 
@@ -45,7 +45,7 @@ The mappings listed below are transactional mappings that don't need to be confi
 
 ## Example scenario
 
-This scenario demonstrates how you can use internal external ID mappings when working with multiple providers. Every provider has a unique master data setup for **Products** or **Warehouses**. To integrate with these providers, you would need to transform each of these datasets into provider mapping terminology. With internal external ID mapping, you can set up the mapping once and leverage the mapping for all subsequent integrations.
+This scenario demonstrates how you can use internal external ID mappings when working with multiple providers. Every provider has a unique master data setup for **Products** or **Warehouses**. To integrate with these providers, you would need to transform each of these datasets into provider mapping terminology. With internal external ID mapping, you can set up the mapping once and use it for all subsequent integrations.
 
 When a transaction flows into or out of Intelligent Order Management through a provider, the mapping service uses the internal external ID mappings to look up mapped values and transform the payload.
 
