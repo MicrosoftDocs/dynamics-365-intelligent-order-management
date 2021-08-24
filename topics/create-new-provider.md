@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic provides instructions on how to create a new provider for Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 08/05/2021
+ms.date: 09/01/2021
 ms.topic: conceptual
 ms.author: josaw
 
