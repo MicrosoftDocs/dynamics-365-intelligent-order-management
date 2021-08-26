@@ -12,6 +12,8 @@ title: Run sample order orchestration flow
 
 # Run sample order orchestration flow
 
+[!include [banner](includes/banner.md)]
+
 ## Set up customer
 
 1. Go to **Customers \> Accounts**.
@@ -49,7 +51,6 @@ title: Run sample order orchestration flow
 1. For **External Field Name**, enter "unit."
 1. For **External Field Value**, enter "each."
 1. Select **Save and close**.
-
 
 ## Set up product mapping
 
