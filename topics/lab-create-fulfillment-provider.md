@@ -125,4 +125,4 @@ title: Create fulfillment provider
 1. Select **Add existing\IOM Provider Definition Parameter**.
 1. Select **IOMLabOutboundFulfillmentEmail** and then select **Add** to add it to the solution.
 
-Next step: [Export provider solution](export-provider-solution.md)
+Next step: [Export provider solution](lab-export-provider-solution.md)
