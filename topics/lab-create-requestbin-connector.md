@@ -41,5 +41,5 @@ title: Create RequestBin custom connector
 -	Select **Import**.
 -	Select **Create connector**.
 
-Next step: [Create intake provider](create-intake-provider.md)
+Next step: [Create intake provider](lab-create-intake-provider.md)
 
