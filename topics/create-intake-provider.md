@@ -157,21 +157,21 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Create provider message handler
 
--	On Power App Maker portal, go to **Solutions** and open the **Default Solution**. 
--	Select **New**.
--	Select **Cloud Flow**, and then name it "IOM Lab Order Intake Message Request Handler."
--	Select the trigger type as **Outlook.com – When a new email arrives (V2)**, and then sign in with your outlook.com account credentials.
--	For **Folder**, select **Inbox**.
--	For **To**, select **Recipient email addresses separated by semicolons**.
--	For **CC**, select **CC recipient email addresses separated by semicolons**.
--	For **To or CC*, select **To or CC recipient email addresses separated by semicolons**.
--	For **From**, select **Sender email addresses separated by semicolons**.
--	For **Include Attachments**, select **Yes**.
--	For **Subject Filter**, select **IOMLabOrderIntakeOrder**.
--	For **Importance**, select **Any**.
--	For **Only with Attachment**, select **Yes**.
--	Select **New step** and add "parse json."
--	For **Content**, paste in the following code:
+1. On Power App Maker portal, go to **Solutions** and open the **Default Solution**. 
+1. Select **New**.
+1. Select **Cloud Flow**, and then name it "IOM Lab Order Intake Message Request Handler."
+1. Select the trigger type as **Outlook.com – When a new email arrives (V2)**, and then sign in with your outlook.com account credentials.
+1. For **Folder**, select **Inbox**.
+1. For **To**, select **Recipient email addresses separated by semicolons**.
+1. For **CC**, select **CC recipient email addresses separated by semicolons**.
+1. For **To or CC*, select **To or CC recipient email addresses separated by semicolons**.
+1. For **From**, select **Sender email addresses separated by semicolons**.
+1. For **Include Attachments**, select **Yes**.
+1. For **Subject Filter**, select **IOMLabOrderIntakeOrder**.
+1. For **Importance**, select **Any**.
+1. For **Only with Attachment**, select **Yes**.
+1. Select **New step** and add "parse json."
+1. For **Content**, paste in the following code:
 ```JSON
 {
 "ProviderId": "00000000-0000-0000-0000-000000000000"
@@ -188,50 +188,60 @@ in Text.FromBinary(Json.FromValue(salesorder));
   }
 }
 ```
--	Select **Done**.
--	Select the ellipsis ("**...**") and then select **Rename**. 
--	Rename the action "IOM System Properties."
--	Select **Save**.
--	Select **New step**, add "parse json", and rename to "Initialize Provider Variables."
--	For **Content**, paste in the following code:
+16. Select **Done**.
+17. Select the ellipsis ("**...**") and then select **Rename**. 
+18. Rename the action "IOM System Properties."
+19. Select **Save**.
+20. Select **New step**, add "parse json", and rename to "Initialize Provider Variables."
+21. For **Content**, paste in the following code:
 ```JSON
 {
   "SourceObjectName": "IOMLab Order",
   "DestinationObjectName": "Dataverse Order"
 }
 ``` 
-- Select **Save**.
--	Select **New step**, add "initialize variable", and rename to "Initialize Processing Execution Result."
--	For **Name**, enter "ExecutionResult."
--	For **Type**, select **Boolean**.
--	For **Value**, select **true**.
-- Select **Save**.
--	Select **New step**, add "scope", and rename to "Try."
--	In the **Try** scope, select **Add an action**.
--	Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM."
--	For **Action Name**, enter "msdyn_CreateProviderMessageRequestExecution."
--	For **PowerAutomateWorkflowId**, enter ``workflow()['tags']['xrmWorkflowId']`` as an expression. 
--	For **PowerAutomateRunId**, enter ``workflow()['run']?['name']`` as an expression. 
--	For **ProviderExternalRequestId**, enter ``guid()`` as an expression. 
--	Select **Save**.
--	Select **Add an action**, and then add an "apply to each" control.
--	For **Select an output from previous steps**, enter "Attachments."
--	Select **Add an action** within the **Apply to each** loop, add "run a child flow" from the **Flow** connector, and rename it "Transform Message with Power Query Online."
--	For **Provider Id**, select the **ProviderId** variable.
-- For **Source Object Name**, select the **SourceObjectName** variable.
-- For **Destination Object Name**, select the **DestinationObjectName** variable.
-- For **Payload**, enter ``decodeBase64(items('Apply_to_each')?['ContentBytes'])`` as an expression.
-- Select **Save**.
--	After the transformation step, select **Add an action**, add "run a child flow" from the Flow connector, and rename it "Create Order."
--	For **Child Flow**, enter "IOM Sales Order Creation."
--	For **Payload**, enter ``	string(json(outputs('Transform_Message_with_Power_Query_Online')?['Body']?['result'])?[0][0])`` as an expression.
--	Select **Save**.
--	Collapse the **Try** scope by selecting its title bar.
--	Select **New step**, add "scope", and rename it "Catch."
--	Select … on Catch scope, select Configure run after,
- 
-
-
+22. Select **Save**.
+23. Select **New step**, add "initialize variable", and rename to "Initialize Processing Execution Result."
+24. For **Name**, enter "ExecutionResult."
+25. For **Type**, select **Boolean**.
+26. For **Value**, select **true**.
+27. Select **Save**.
+28. Select **New step**, add "scope", and rename to "Try."
+29. In the **Try** scope, select **Add an action**.
+30. Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM."
+31. For **Action Name**, enter "msdyn_CreateProviderMessageRequestExecution."
+32. For **PowerAutomateWorkflowId**, enter ``workflow()['tags']['xrmWorkflowId']`` as an expression. 
+33. For **PowerAutomateRunId**, enter ``workflow()['run']?['name']`` as an expression. 
+34. For **ProviderExternalRequestId**, enter ``guid()`` as an expression. 
+35. Select **Save**.
+36. Select **Add an action**, and then add an "apply to each" control.
+37. For **Select an output from previous steps**, enter "Attachments."
+38. Select **Add an action** within the **Apply to each** loop, add "run a child flow" from the **Flow** connector, and rename it "Transform Message with Power Query Online."
+39. For **Provider Id**, select the **ProviderId** variable.
+40. For **Source Object Name**, select the **SourceObjectName** variable.
+41. For **Destination Object Name**, select the **DestinationObjectName** variable.
+42. For **Payload**, enter ``decodeBase64(items('Apply_to_each')?['ContentBytes'])`` as an expression.
+43. Select **Save**.
+44. After the transformation step, select **Add an action**, add "run a child flow" from the Flow connector, and rename it "Create Order."
+45. For **Child Flow**, enter "IOM Sales Order Creation."
+46. For **Payload**, enter ``string(json(outputs('Transform_Message_with_Power_Query_Online')?['Body']?['result'])?[0][0])`` as an expression.
+47. Select **Save**.
+48. Collapse the **Try** scope by selecting its title bar.
+49. Select **New step**, add "scope", and rename it "Catch."
+50. In the **Catch** scope, select the ellipsis ("**…**"), and then select **Configure run after**.
+51. Select the **has failed** and **has timed out** checkboxes, and then select **Done**.
+52. In the **Catch** scope, select **Add an action**, add "set variable" and rename it "Set the execution result to failed."
+53. For **Name**, enter "Executionresult."
+54. For **Value**, select **False**.
+55. Select **Save**.
+56. Collapse the **Catch** scope by selecting its title bar.
+57. Select **New step**, add "scope", and rename it "Finally."
+58. In the **Finally** scope, select the ellipsis ("**…**"), and then select **Configure run after**. 
+59. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
+60. In the **Finally** scope, select **Add an action**, add "perform an unbound action" and rename it "Save Provider message request execution result."
+61. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus."
+62. For **ProviderMessageRequestExecutionId**, enter ``outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
+63. Select **Save**.
 
 
 
