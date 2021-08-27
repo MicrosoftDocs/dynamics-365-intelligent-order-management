@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: 
+description: DESCRIPTION TBD
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -25,7 +25,7 @@ title: Create order orchestration
 -	For **Execution Policies**, enter "Order header validation policy."
 -	Select **Save**.
 
-## Add the Validate order header tile
+## Add the Validate order line tile
 
 -	Go to **Orchestration \> Flows** and select **New**.
 -	Select the plus symbol ("+") and then add the **Validate order line** tile.
