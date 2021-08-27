@@ -41,5 +41,5 @@ title: Create RequestBin custom connector
 -	Select **Import**.
 -	Select **Create connector**.
 
-Next step: [Create IOMLabOrderIntakeProvider]()
+Next step: [Create intake provider](create-intake-provider.md)
 
