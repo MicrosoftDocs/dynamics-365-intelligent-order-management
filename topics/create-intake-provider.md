@@ -243,33 +243,38 @@ in Text.FromBinary(Json.FromValue(salesorder));
 62. For **ProviderMessageRequestExecutionId**, enter ``outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
 63. Select **Save**.
 
-
-
-
 ## Add provider definition logic definition to the provider definition
 
+1. In your IOM application, navigate to Providers\Catalog.
+1. Select the newly created IOMLabOrderIntakeProvider.
+1. Select Edit on the menu bar. 
+1. Select Logic definitions tab page.
+1. Select + New IOM Provider Definition Logic Definition.
+1. For **Display Name**, enter "IOM Lab Order Intake Message Request Handler."
+1. For **Logical Name**, enter "msdyn_LabOrderIntakeMessageRequestHandler."
+1. For **Provider Definition**, enter "IOMLabOrderIntakeProvider."
+1. For **Logic Type**, enter "Provide Message Handler."
+1. For **Workflow Name**, enter "IOM Lab Order Intake Message Request Handler."
+1. For **Timeout Minutes**, enter "2."
+1. For **Max Retry Attmepts**, enter "3."
+1. For **Description**, enter "IOM Lab Order Intake Message Request Handler."
+1. Select **Save**. This generates a JSON representation of the message handler cloud flow and fills in the **Client Data** field.
+1. Select **Save and close**.
+1. Select **Connections**. You should see both the **Microsoft Dataverse** and **Outlook.com** connection reference definitions listed. 
+
+> [!NOTE]
+> If you see connections reference definitions other than **Microsoft Dataverse** and **Outlook.com**, this means that you are using more than one Dataverse connection reference in your order intake message handler flow. To fix this, go to your flow and ensure that all Dataverse actions are using the same connection reference.
 
 ## Add provider definition logic definition to IOMLabProviders solution
 
+1. On the Power App Maker portal, navigate to the newly-created solution **IOMLabProviders**.
+1. Select **Add existing\IOM Provider Definition Logic Definition**.
+1. Select **IOM Lab Order Intake Message Request Handler** and then select **Add** to add it to the solution.
 
 ## Add provider definition connection reference to IOMLabProviders solution
 
+1. On Power App Maker portal, navigate to the newly-created solution "IOMLabProviders."
+1. Select **Add existing\IOM Provider Definition Connection Reference**.
+1. Select the **Microsoft Dataverse** and **Outlook.com** connection reference definitions and then select **Add** to add them to the solution. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Next step: [Create new provider definition]().
