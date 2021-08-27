@@ -26,4 +26,4 @@ It is recommended to have one provider per solution, but multiple providers can 
 1. For **Publisher**, select **CDS Default Publisher**.
 1. For **Version**, enter "1.0.0.0."
 
-Next step: [Create RequestBin custom connector]().
+Next step: [Create RequestBin custom connector](lab-create-requestbin-connector.md).
