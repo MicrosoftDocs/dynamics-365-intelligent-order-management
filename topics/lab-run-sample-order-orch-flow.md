@@ -128,31 +128,3 @@ The order will fail the line minimum quantity validation, with the header status
 1. Send the email to the Outlook account used previously to set up IOMLabOrderIntake provider.
 
 The order will fail the header ship to country validation, with status reason "Order Validation Failed."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
