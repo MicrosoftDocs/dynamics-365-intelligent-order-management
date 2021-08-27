@@ -277,4 +277,4 @@ in Text.FromBinary(Json.FromValue(salesorder));
 1. Select **Add existing\IOM Provider Definition Connection Reference**.
 1. Select the **Microsoft Dataverse** and **Outlook.com** connection reference definitions and then select **Add** to add them to the solution. 
 
-Next step: [Create new provider definition]().
+Next step: [Create fulfillment provider](lab-create-fulfillment-provider.md).
