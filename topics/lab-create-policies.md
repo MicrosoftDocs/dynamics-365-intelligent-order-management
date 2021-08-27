@@ -175,5 +175,5 @@ If you've followed along, you should now see the transpiled Power Automate cloud
 1. For **Business Event Definition**, enter "Validation of Order Lines has Succeeded."
 1. Select **Save**.
 
-
+Next step: [Create order orchestration](lab-create-order-orch.md)
 
