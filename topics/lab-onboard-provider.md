@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: DESCRIPTION TBD
+description: Onboard provider instance DESCRIPTION TBD
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
