@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: 
+description: DESCRIPTION TBD
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -16,7 +16,7 @@ title: Create a new provider solution package
 
 It is recommended to have one provider per solution, but multiple providers can be included in the same solution. This is the solution that can be shared and will be installed on IOM environments.
 
-# Create a new provider solution
+## Create a new provider solution
 
 1. Go to the [Power App Maker Portal](https://make.powerapps.com) and sign in with your IOM credentials. 
 1. Go to **Solutions**.
