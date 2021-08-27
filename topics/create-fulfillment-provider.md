@@ -35,7 +35,7 @@ title: Create fulfillment provider
 
 
 
-## Add provider definition logic definition to the provider definition
+## Add provider definition logic definition to the provider definition (Outlook)
 
 1. Go to **Providers \> Catalog**.
 1. Select the newly-created **IOMLabFulfillmentProvider**.
@@ -59,7 +59,7 @@ title: Create fulfillment provider
     1. Select **Save and close**.
 1. Select **Connections**. You should see both the **Microsoft Dataverse** and **Outlook.com** connection reference definitions listed.
 
-## Add provider definition logic definition to IOMLabProviders solution
+## Add provider definition logic definition to IOMLabProviders solution (Outlook)
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing\IOM Provider Definition Logic Definition**.
@@ -75,13 +75,13 @@ title: Create fulfillment provider
 
 
 
-## Add provider definition logic definition to the provider definition
+## Add provider definition logic definition to the provider definition (RequestBin)
 
-1. Go to Providers\Catalog.
-1. Select the newly created IOMLabFulfillmentProvider.
-1. Select Edit on the menu bar. 
-1. Select Logic definitions tab page.
-1. Select + New IOM Provider Definition Logic Definition.
+1. Go to **Providers \> Catalog**.
+1. Select the newly-created **IOMLabFulfillmentProvider**.
+1. Select **Edit** on the menu bar. 
+1. Select the **Logic definitions** tab.
+1. Select **+ New IOM Provider Definition Logic Definition**.
 1. For **Display Name**, enter "IOM Lab Send to Fulfillment (RequestBin)."
 1. For **Logical Name**, enter "msdyn_LabSentToFulfillmentRequestBin."
 1. For **Provider Definition**, enter "IOMLabFulfillmentProvider."
@@ -107,7 +107,7 @@ title: Create fulfillment provider
 1. For **Is Required**, enter "Yes."
 1. Select **Save and close**.
 
-## Add provider definition logic definition to IOMLabProviders solution
+## Add provider definition logic definition to IOMLabProviders solution (RequestBin)
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing\IOM Provider Definition Logic Definition**.
