@@ -14,7 +14,8 @@ title: Onboard provider instance
 
 [!include [banner](includes/banner.md)]
 
-If you followed the previous provider creation steps you can skip this section, since you have already created these application connections.
+> [!NOTE]
+> If you followed the previous provider creation steps you can skip this section, since you have already created these application connections.
 
 ## Create application connections
 
@@ -66,4 +67,6 @@ If you followed the previous provider creation steps you can skip this section, 
 1. Filter the solution component to display only cloud flows. You should now see the following Power Automate flows.
 
 ![Power Automate cloud flows in Intelligent Order Management](./media/power-automate-cloud-flows-3.PNG)
+
+Next step: [Create policies](lab-create-policies.md)
 
