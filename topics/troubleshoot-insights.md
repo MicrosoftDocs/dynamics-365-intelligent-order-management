@@ -6,11 +6,11 @@ ms.date: 09/01/2021
 ms.topic: troubleshooting
 ms.author: josaw
 ms.custom: 
-title: Trial version doesn't display insights
+title: Power BI reports don't provision in trial version
 ---
 
 
-# Trial version doesn't display insights
+# Power BI reports don't provision in trial version
 
 [!include [banner](includes/banner.md)]
 
