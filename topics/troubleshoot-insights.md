@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This troubleshooting topic provides a solution for cases where the fulfillment source table is not automatically enabled for change tracking in Dynamics 365 Intelligent Order Management.
+description: This troubleshooting topic provides a solution for cases where Power BI reports for Dynamics 365 Intelligent Order Management don't provision.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: troubleshooting
@@ -16,21 +16,21 @@ title: Trial version doesn't display insights
 
 In the August 2021 release of Dynamics 365 Intelligent Order Management (version 1.0.03429), the fulfillment source table isn't automatically enabled for change tracking. This issue causes the Microsoft Power BI reports to display "Your reports are being provisioned. Please allow up to 24 hours for the process to complete." for an indefinite period. 
 
-Complete the following steps which will reenable the fulfillment source table to sync and provision the Power BI reports.
+To resolve this issue, complete the following steps. This procedure will reenable the fulfillment source table to sync and provision the Power BI reports.
 
-1.  Disable the Power Bi Insights Setting
+1.  Disable the Power BI Insights setting.
 
-    1.  Open the Intelligent Order Management Application
+    1.  Open Intelligent Order Management.
 
-    2.  Switch to the 'Configurations' site map in the lower corner of the application
+    2.  Switch to the 'Configurations' site map in the lower corner of the application <!-- which corner? is this a button? rewrite this step -->
 
-    3.  Select 'Power Bi Insights' under 'Dashboard Settings'
+    3.  Select **Power Bi Insights** under **Dashboard Settings**.
 
-    4.  Click Manage
+    4.  Select **Manage**.
 
-    5.  Toggle the button into the Disabled State
+    5.  Under **Summary**,set the **Statu** toggle to **Disabled**.
 
-    6.  Click Save
+    6.  Select **Save**.
 
 2.  Enable Change Tracking for the Fulfillment Source table
 
