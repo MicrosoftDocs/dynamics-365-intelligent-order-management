@@ -50,8 +50,6 @@
       href: enable-bing-maps.md
     - name: Enable timeline on Sales order page
       href: enable-timeline-sales-order.md
-    - name: Troubleshoot trial sign-up issues
-      href: troubleshoot-trial-sign-up.md
   - name: Manage your orders
     items:
     - name: Fulfillment optimization
@@ -72,6 +70,14 @@
       href: admin.md
     - name: Data management
       href: data-management.md
+  - name: Troubleshooting
+    items:
+    - name: Trial
+      items:
+      - name: Sign-up issues
+        href: troubleshoot-trial-sign-up.md
+      - name: Power BI reports don't provision
+        href: troubleshoot-insights.md
   - name: Extensibility
     href: extensibility.md
   - name: Globalization
