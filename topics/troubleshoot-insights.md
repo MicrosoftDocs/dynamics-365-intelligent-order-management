@@ -24,11 +24,11 @@ To resolve this issue, complete the following steps. This procedure will reenabl
 
     2.  Switch to the 'Configurations' site map in the lower corner of the application <!-- which corner? is this a button? rewrite this step -->
 
-    3.  Select **Power Bi Insights** under **Dashboard Settings**.
+    3.  Select **Power BI Insights** under **Dashboard Settings**.
 
     4.  Select **Manage**.
 
-    5.  Under **Summary**,set the **Statu** toggle to **Disabled**.
+    5.  Under **Summary**,set the **Status** toggle to **Disabled**.
 
     6.  Select **Save**.
 
@@ -64,13 +64,13 @@ To resolve this issue, complete the following steps. This procedure will reenabl
 
     1.  The table data should automatically start syncing, but please wait at least an hour for the table to be properly processed
 
-4.  Enable the Power Bi Insights setting
+4.  Enable the Power BI Insights setting
 
     1.  Open the Intelligent Order Management Application
 
     2.  Switch to the 'Configurations' site map in the lower corner of the application
 
-    3.  Select 'Power Bi Insights' under 'Dashboard Settings'
+    3.  Select 'Power BI Insights' under 'Dashboard Settings'
 
     4.  Click Manage
 
@@ -78,6 +78,6 @@ To resolve this issue, complete the following steps. This procedure will reenabl
 
     6.  Click Save
 
-5.  Verify Power Bi reports render
+5.  Verify Power BI reports render
 
-    1.  The Power Bi reports should be provisioned and appear within 15 mins
+    1.  The Power BI reports should be provisioned and appear within 15 mins
