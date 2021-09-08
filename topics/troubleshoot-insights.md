@@ -15,7 +15,7 @@ title: Power BI reports don't provision in trial version
 
 In the August 2021 release of Dynamics 365 Intelligent Order Management (version 1.0.03429), the fulfillment source table isn't automatically enabled for change tracking. This issue causes the Microsoft Power BI reports to display the following message for an indefinite period:
 
-    "Your reports are being provisioned. Please allow up to 24 hours for the process to complete."  
+`Your reports are being provisioned. Please allow up to 24 hours for the process to complete.`  
 
 To resolve this issue, complete the following steps. This procedure will reenable the fulfillment source table to sync and provision the Power BI reports.
 
