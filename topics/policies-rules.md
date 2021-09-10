@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic covers policy types and describes how to create a policy with rules in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/24/2021
+ms.date: 09/10/2021
 ms.topic: conceptual
 ms.author: josaw
 
@@ -14,20 +14,18 @@ title: Policies and rules
 # Policies and rules
 
 [!include [banner](includes/banner.md)]
-
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers policy types and describes how to create a policy with rules in Dynamics 365 Intelligent Order Management.
 
 ## Policy types
 
-Policies and their associated rules are used for different purposes in the Intelligent Order Management orchestration flow. Policies are classified into different policy types. Policy types ensure that users can easily select the appropriate policies in the orchestration flow. The four supported policy types are listed in the following table. 
+Policies and their associated rules are used for different purposes in the Intelligent Order Management orchestration flow. Policies are classified into different policy types. Policy types ensure that users can easily select the appropriate policies in the orchestration flow. The two supported policy types are listed in the following table. 
 
 | Policy type                   | Description                                                                                                         |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|
-| Filter policy                 | Allows users to define an   orchestration step that only applies to a selected group that is defined by   rules. |
-| Provider action policy        | Determines provider-specific actions.                                                                            |
-| Execution policy              | Allows validation of data   running through an orchestration flow.                                               |
-| Fulfillment assignment policy | Allows manual fulfillment determination defined by rules.                                                        |
+| Filter policy                 | Allows validation of data running through an orchestration flow. For example, you may want to drive a specific orchestration for a specific provider. Filter policy allows you to filter the orchestration step to run based on the policy success criteria.|
+| Execution policy              | Allows checking and updating data running through an orchestration flow. For example, you may want to assign a specific Fulfillment location to your order whenevr your order quantity is greater than 100. An execution policy will make this assignment simple and configurable.                                            |
 
 ## Policy fields
 
@@ -36,7 +34,7 @@ A policy consists of five fields, as shown in the following table.
 | Policy field       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Policy Name        | A unique name provided by the user.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Policy Type        | The user can select one of four policy types: **Filter policy**, **Provider action policy**, **Execution policy**, **Fulfillment assignment policy**.                                                                                                                                                                                                                                                                                                                                    |
+| Policy Type        | The user can select one of two policy types: **Filter policy** or **Execution policy**.                                                                                                                                                                                                                                                                                                                                    |
 | Policy Criticality | The user can select one of two options: <br>**Information** - The rules of the policy will be evaluated but the orchestration flow will not be stopped in an unsuccessful evaluation.<br> **Critical information** - The rules of the policy will be evaluated and the orchestration flow will be stopped in an unsuccessful evaluation.                                                                                                           |
 | Status              | A policy and its associated rules can be in one of two status states:<br>**Unpublished** - The default status of a policy. A policy and its rules are not available to select in the orchestration flow when in this state.<br>**Published** - This status is obtained when the policy and its associated rules are published using the **Publish** action. The policy and its rules are available to select in the orchestration flow when in this state. |
 | Associated Entity  | The user can select one of four primary entities for the policy: **Order**, **Order product**, **Fulfillment order**, **Fulfillment order product**. The   rules defined can be used against the primary entity or any related entity in the data model.                                                                                                                                                                                                                             |
@@ -61,7 +59,7 @@ The following image shows the policy details entered for the “Order line valid
 
 You can create conditional rules in Intelligent Order Management by using Condition Builder's user interface.
 
-To add a condition to your flow, select **New step**, and then select **Condition**. An **Add** button appears that, when selected, presents the following options:
+To add a condition to your policy, select **New IOM Rule**. An **Add** button appears in the rule definition that, when selected, displays the following options:
 
    - **Add row**: Each individual condition that you check for, such as “the value is greater than 10,” or “the list does not contain Test”, creates a new row in Condition Builder.
    - **Add group**: You can combine one or more rows together in a group. Each group is combined by using either an **And** or an **Or** operator. If you select **And**, then all the condition rows must be true. If you select **Or**, then only one of the condition rows needs to be true.
@@ -84,41 +82,47 @@ The supported operators differentiate each field type, as shown in the following
 | Contains   data               | Y     | Y                  |
 | Does not   contain data       | Y     | Y                  |
 
-## Create a new rule
+## Create a rule
 
 To create a new example rule, follow these steps.
 
 1.	Go to **Orchestration** > **Policies**.
-2.	Select a policy record (for example, “Order line validations extended”).
-3.	Select **New Rule** to initiate the rule creation process.
-4.	In the **Rule Name** field, enter a unique name (for example, “Order source and amount validation”).
-5.	Select **Add**, and then select **Add Row**.
-6.	Select **Currency**.
-7.	Select the **Equals** operator.
-8.	Select **USD**.
-9.	Select **Add**, and then select **Add Row**.
-10.	Select **Amount**.
-11.	Select the **Is less than or equal to** operator.
-12.	Enter “10,000.”
-13.	Select **Add**, and then select **Add Group**.
-14.	Select **Order source**.
-15.	Select the **Equals** operator.
-16.	Select **Call center**.
-17.	Select  **Add**, and then select **Add Group**.
-18.	Change the condition to **Or**.
-19.	Select **Order source**.
-20.	Select the **Equals** operator.
-21.	Select **E-commerce**.
-22.	Select **Save & Close**.
-23.	Select **Publish**.
+1.	Select a policy record (for example, “Order line validations extended”).
+1.	Select **New IOM Rule** to initiate the rule creation process.
+1. In the **Rule Name** field, enter a unique name (for example, “Order product and amount validation”).
 
-> [!NOTE] 
-> Policies and associated rules are validated for errors during the publishing process. 
+### Create a condition
 
-The following image shows the "Order source and amount validation" rule example as it would appear in Condition Builder.
+1. Select **Add**, and then select **Add Row**.
+1. Select **Quantity**.
+1. Select the **Is greater than or equal to** operator.
+1. Enter "50".
+1. Select **Add**, and then select **Add Group**.
+1. Change the condition to "Or".
+1. Select **Product Name**.
+1. Select the **Equals** operator.
+1. Enter "Item A".
+1. Select **Add** at the bottom of the **Or** group, and then select **Add Row**.
+1. Select **Product Name**.
+1. Select the **Equals** operator.
+1. Enter "Item B".
 
-![Order source and amount validation rule example.](media/order-source-amount-validation.png)
+### Create an action
+
+1. Change **Add Action** to **Yes**.
+1. Select **Add**, and then select **Add Row**.
+1. Select **Price Per Unit**.
+1. Select **Set Value operator**.
+1. Enter "20".
+1. Select **Save & Close**.
+1. Select **Publish**.
+
+The following image shows the "Order product and amount validation" rule example as it would appear in the rule editor screen.
+
+![Sample Policy Setup](media/Policy.png)
 
 ## Add custom action
 
-To add a custom action that is not triggered by the orchestration flow when a rule is evaluated, under **Action**, select **Yes** for **Add Action**. You can then create a Power Automate flow that performs the desired action.
+Custom actions can only be added for execution policies. To add a custom action that is not triggered by the orchestration flow when a rule is evaluated, under **Action**, select **Yes** for **Add Action**.
+
+You can then select the fields to set for the associated entity that was chosen when you created the policy.
