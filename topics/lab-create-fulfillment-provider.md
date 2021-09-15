@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: Create fulfillment provider DESCRIPTION TBD
+de scription: Create fulfillment provider DESCRIPTION TBD
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -32,6 +32,24 @@ title: Create fulfillment provider
 1. Select **IOMLabFulfillmentProvider** and then select **Add** to add it to the solution. 
 
 ## Create provider action – send fulfillment payload to Outlook
+
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to **Solutions**.
+1. Open the **Default Solution**.
+1. Select **New**.
+1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (Outlook)".
+1. Select the trigger type as **Manually trigger a flow."
+1. Create a variable initialization action:
+    - For **Name**, enter "ExecutionResult".
+    - For **Type**, select **Boolean**.
+    - For **Value**, enter "true".  
+1. Create a second variable initialization action:
+    - For **Name**, enter "ProcessedSaleOrderLines".
+    - For **Type**, select **Array**.
+1. Create a third variable initialization action:
+    - For **Name**, enter "ProcessedFulfillmentOrderLines".
+    - For **Type**, select **Array**.
+1. Add a **Try** scope.
+1. Within the **Try** scope, add a **perform an unbound action** action as follows:
 
 
 
