@@ -50,6 +50,15 @@ title: Create fulfillment provider
     - For **Type**, select **Array**.
 1. Add a **Try** scope.
 1. Within the **Try** scope, add a **perform an unbound action** action as follows:
+    - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
+    - **PowerAutomateRunId** – Specify the following as an expression: `workflow()['run']?['name']`.
+1. Add a "Get a row by ID" action as follows:
+    - **Row ID** – Under **Dynamic content**, select **EntityRecordId**.
+1. Add a "Send an email" action from the Outlook.com connector, as follows. There are couple of email connectors, make sure to select Outlook.com since that's the connection set up earlier.
+    - On the **To** line, "placeholder@placeholder.com” is used as placeholder text. This will be replaced by a provider parameter in later steps.
+    - On the **Subject** line, "name" obtained is from the **Get fulfillment order** step from **Dynamic content**.
+    - For **Body**, specify the following as an expression: `outputs('Get_fulfillment_order')['body']`
+
 
 
 
