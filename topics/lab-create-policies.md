@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: Create policies DESCRIPTION TBD
+description: This topic describes the steps required to create policies in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -13,6 +13,8 @@ title: Create policies
 # Create policies
 
 [!include [banner](includes/banner.md)]
+
+This topic describes the steps required to create policies in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Create new header validation policy
 
