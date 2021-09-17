@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: Run sample order orchestration flow DESCRIPTION TBD
+description: This topic describes the steps required to run a sample order orchestration flow in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -13,6 +13,8 @@ title: Run sample order orchestration flow
 # Run sample order orchestration flow
 
 [!include [banner](includes/banner.md)]
+
+This topic describes the steps required to run a sample order orchestration flow in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Set up customer
 
