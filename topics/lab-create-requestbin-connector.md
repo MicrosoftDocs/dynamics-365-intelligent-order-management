@@ -27,7 +27,7 @@ This topic describes the steps required to create a RequestBin custom connector 
 
 ## Create custom connector
 
-1. On the Power App Maker Portal, go to the newly created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
 1. Select **New\Custom connector** and name it "RequestBin".
 1. In the **Host** field, enter the public endpoint URL you obtained from RequestBin. Do not prepend ``https://`` to the URL. 
 1. Select **Security**.
