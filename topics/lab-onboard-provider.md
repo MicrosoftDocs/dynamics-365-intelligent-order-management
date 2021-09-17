@@ -24,14 +24,14 @@ This topic describes the steps required to onboard a provider instance in Micros
 ### Create Outlook connection
 
 1. Select **New connection**.
-1. In the search box on the upper right corner, enter "Outlook.com."
+1. In the search box on the upper right corner, enter "Outlook.com".
 1. Select the plus symbol ("**+**") to create the connection.
 1. Sign in with your Outlook credentials (user name and password), which are not related to your IOM credentials.
 
 ### Create RequestBin connection
 
 1. Select **New connection**.
-1. In the search box on the upper right corner, enter "requestbin."
+1. In the search box on the upper right corner, enter "requestbin".
 1. Select the plus symbol ("**+**") to create the connection.
 
 ## Add provider – order intake
