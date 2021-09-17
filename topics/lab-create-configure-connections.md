@@ -24,21 +24,21 @@ Navigate to https://us.flow.microsoft.com/ and ensure you are in the right IOM t
 
 1. Go to **Data \> Connections**.
 1. Select **New connection**.
-1. In the search box on the upper right corner, enter "Dataverse."
+1. In the search box on the upper right corner, enter "Dataverse".
 1. Select the plus symbol "**+**" to create the Dataverse connection. When prompted to sign in, make sure to use the same credentials you used to sign in to IOM.
 
 ### Create Power Automate connection
 
 1. Go to **Data \> Connections**.
 1. Select **New connection**.
-1. In the search box on the upper right corner, enter "Power Automate Management."
+1. In the search box on the upper right corner, enter "Power Automate Management".
 1. Select the plus symbol "**+**" to create the Power Automate connection. When prompted to sign in, make sure to use the same credentials you used to sign in to IOM.
 
 ### Create IOM Data Transformer connection
 
 1. Go to **Data \> Connections**.
 1. Select **New connection**.
-1. In the search box on the upper right corner, enter "IOM Data Transformer."
+1. In the search box on the upper right corner, enter "IOM Data Transformer".
     > [!NOTE]
     > If you don’t see the connector, append ``?addConnectorHideKey=iomtransforme`` to the URL.
 1. Select the plus symbol "**+**" to create the IOM Data Transformer connection. When prompted to sign in, make sure to use the same credentials you used to sign in to IOM.
