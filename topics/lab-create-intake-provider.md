@@ -30,7 +30,7 @@ This topic describes the steps required to create an intake provider in Microsof
 ## Add provider definition to solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition**.
+1. Select **Add existing \> IOM Provider Definition**.
 1. Select **IOMLabOrderIntakeProvider**, and then select **Add** to add it to the solution. 
 
 ## Add transformation to the provider definition
@@ -154,7 +154,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 ## Add provider definition transformation to solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Transformation**.
+1. Select **Add existing \> IOM Provider Definition Transformation**.
 1. Select **IOMLab Order to Dataverse Order**, and then select **Add** to add it to the solution.
 
 ## Create provider message handler
@@ -270,13 +270,13 @@ in Text.FromBinary(Json.FromValue(salesorder));
 ## Add provider definition logic definition to IOMLabProviders solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Logic Definition**.
+1. Select **Add existing \> IOM Provider Definition Logic Definition**.
 1. Select **IOM Lab Order Intake Message Request Handler** and then select **Add** to add it to the solution.
 
 ## Add provider definition connection reference to IOMLabProviders solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Connection Reference**.
+1. Select **Add existing \> IOM Provider Definition Connection Reference**.
 1. Select the **Microsoft Dataverse** and **Outlook.com** connection reference definitions and then select **Add** to add them to the solution. 
 
 Next step: [Create fulfillment provider](lab-create-fulfillment-provider.md).
