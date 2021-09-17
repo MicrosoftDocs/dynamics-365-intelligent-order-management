@@ -166,7 +166,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 1. For **Folder**, select **Inbox**.
 1. For **To**, select **Recipient email addresses separated by semicolons**.
 1. For **CC**, select **CC recipient email addresses separated by semicolons**.
-1. For **To or CC*, select **To or CC recipient email addresses separated by semicolons**.
+1. For **To or CC**, select **To or CC recipient email addresses separated by semicolons**.
 1. For **From**, select **Sender email addresses separated by semicolons**.
 1. For **Include Attachments**, select **Yes**.
 1. For **Subject Filter**, select **IOMLabOrderIntakeOrder**.
@@ -230,7 +230,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 47. Select **Save**.
 48. Collapse the **Try** scope by selecting its title bar.
 49. Select **New step**, add "scope", and rename it "Catch."
-50. In the **Catch** scope, select the ellipsis ("**…**"), and then select **Configure run after**.
+50. In the **Catch** scope, select the ellipsis ("**...**"), and then select **Configure run after**.
 51. Select the **has failed** and **has timed out** checkboxes, and then select **Done**.
 52. In the **Catch** scope, select **Add an action**, add "set variable" and rename it "Set the execution result to failed."
 53. For **Name**, enter "Executionresult."
@@ -238,7 +238,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 55. Select **Save**.
 56. Collapse the **Catch** scope by selecting its title bar.
 57. Select **New step**, add "scope", and rename it "Finally."
-58. In the **Finally** scope, select the ellipsis ("**…**"), and then select **Configure run after**. 
+58. In the **Finally** scope, select the ellipsis ("**...**"), and then select **Configure run after**. 
 59. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
 60. In the **Finally** scope, select **Add an action**, add "perform an unbound action" and rename it "Save Provider message request execution result."
 61. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus."
@@ -248,10 +248,10 @@ in Text.FromBinary(Json.FromValue(salesorder));
 ## Add provider definition logic definition to the provider definition
 
 1. In your IOM application, go to **Providers \> Catalog**.
-1. Select the newly created IOMLabOrderIntakeProvider.
-1. Select Edit on the menu bar. 
-1. Select Logic definitions tab page.
-1. Select + New IOM Provider Definition Logic Definition.
+1. Select the newly-created **IOMLabOrderIntakeProvider**.
+1. Select **Edit** on the menu bar. 
+1. Select the **Logic definitions** tab.
+1. Select **+ New IOM Provider Definition Logic Definition**.
 1. For **Display Name**, enter "IOM Lab Order Intake Message Request Handler."
 1. For **Logical Name**, enter "msdyn_LabOrderIntakeMessageRequestHandler."
 1. For **Provider Definition**, enter "IOMLabOrderIntakeProvider."
