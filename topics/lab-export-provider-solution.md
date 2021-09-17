@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: Export provider solution DESCRIPTION TBD
+description: This topic describes the steps required to export a provider solution in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -13,6 +13,8 @@ title: Export provider solution
 # Export provider solution
 
 [!include [banner](includes/banner.md)]
+
+This topic describes the steps required to export a provider solution in Microsoft Dynamics 365 Intelligent Order Management.
 
 You should now see the following components in your provider solution.
 
