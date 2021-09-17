@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 09/01/2021
+ms.date: 07/27/2021
 ms.topic: how-to
 ms.author: sumanic
 
@@ -25,7 +25,7 @@ To contact ShipStation for more information, see [Contact Support](https://help.
 
 To set up the ShipStation provider, you must have a ShipStation trial account. To create a trial account, see [Create My Account](https://www.shipstation.com/step1/).
 
-## Set up the provider
+## Set up the ShipStation provider
 
 To set up the ShipStation provider, follow these steps:
 
@@ -51,6 +51,8 @@ To set up the ShipStation provider, follow these steps:
 1.  Go to **Providers \> Installed** and confirm that the provider you set up is listed with the status **Activated**.
 
 ##  Out-of-box provider capabilities
+
+The following table describes the out-of-box provider capabilities in Intelligent Order Management.
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
