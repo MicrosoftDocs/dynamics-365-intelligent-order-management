@@ -20,7 +20,7 @@ This topic describes the steps required to run a sample order orchestration flow
 
 1. Go to **Customers \> Accounts**.
 1. Select **New**.
-1. For **Account Name**, enter "DefaultAccount-IOMLabOrderIntakeProvider."
+1. For **Account Name**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
 1. Select **Save and close**.
 
 ## Set up account mapping 
@@ -28,40 +28,40 @@ This topic describes the steps required to run a sample order orchestration flow
 1. In the lower right corner of your IOM application screen, change the area from **IOM** to **Configurations**. If you use a left-to-right (LTR) language, this setting is located in the lower left corner of your application screen. 
 1. Go to **Mappings \> Accounts**.
 1. Select **New**.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider."
-1. For **Customer**, enter "DefaultAccount-IOMLabOrderIntakeProvider."
-1. For **External Field Name**, enter "ProviderName."
-1. For **External Field Value**, enter "IOMLabOrderIntakeProvider."
+1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+1. For **Customer**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
+1. For **External Field Name**, enter "ProviderName".
+1. For **External Field Value**, enter "IOMLabOrderIntakeProvider".
 1. Select **Save and close**.
 
 ## Set up pricelist mapping
 
 1. Go to **Mappings \> Price Lists**.
 1. Select New.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider."
-1. For **Price list**, enter "MasterPriceList."
-1. For **External Field Name**, enter "ProviderName."
-1. For **External Field Value**, enter "IOMLabOrderIntakeProvider."
+1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+1. For **Price list**, enter "MasterPriceList".
+1. For **External Field Name**, enter "ProviderName".
+1. For **External Field Value**, enter "IOMLabOrderIntakeProvider".
 1. Select **Save and close**.
 
 ## Set up unit mapping
 
 1. Go to **Mappings \> Units**.
 1. Select **New**.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider."
-1. For **Unit**, enter "Ea."
-1. For **External Field Name**, enter "unit."
-1. For **External Field Value**, enter "each."
+1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+1. For **Unit**, enter "ea".
+1. For **External Field Name**, enter "unit".
+1. For **External Field Value**, enter "each".
 1. Select **Save and close**.
 
 ## Set up product mapping
 
--	Go to **Mappings \> Products**.
--	Select **New**.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider."
-1. For **Product**, enter "Barista Home."
-1. For **External Field Name**, enter "sku."
-1. For **External Field Value**, enter "883988211855."
+1. Go to **Mappings \> Products**.
+1. Select **New**.
+1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+1. For **Product**, enter "Barista Home".
+1. For **External Field Name**, enter "sku".
+1. For **External Field Value**, enter "883988211855".
 1. Select **Save and close**.
 
 ## Sample sales order payload
@@ -102,31 +102,31 @@ This topic describes the steps required to run a sample order orchestration flow
 
 ### Test run 1
 
-1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder."
+1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
 1. Send the email to the Outlook account used previously to set up IOMLabOrderIntake provider. 
 
-You will receive two emails back with attachment with fulfillment details. The order status reason will be set to "Sent To Fulfillment."
+You will receive two emails back with attachment with fulfillment details. The order status reason will be set to "Sent To Fulfillment".
 
 ### Test run 2
 
 1. Change the **ordernumber** value to "IOMLabOrder002" and the **quantity** value to 10.
-1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder."
+1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
 1. Send the email to the Outlook account used previously to set up IOMLabOrderIntake provider.
 
-You will receive two requests with fulfillment details in your RequestBin. The order status reason will be set to "Sent To Fulfillment."
+You will receive two requests with fulfillment details in your RequestBin. The order status reason will be set to "Sent To Fulfillment".
 
 ### Test run 3
 
-1. Change the **ordernumber** value to "IOMLabOrder003" and the **quantity** value to "1."
-1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder."
+1. Change the **ordernumber** value to "IOMLabOrder003" and the **quantity** value to "1".
+1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
 1. Send the email to the Outlook account used previously to set up IOMLabOrderIntake provider.
 
-The order will fail the line minimum quantity validation, with the header status reason "Order Validation Failed" and the line status reason "Order Line Validation Failed."
+The order will fail the line minimum quantity validation, with the header status reason "Order Validation Failed" and the line status reason "Order Line Validation Failed".
 
 ### Test run 4
 
-1. Change the **ordernumber** value to "IOMLabOrder004" and the **shiptocountry** value to "CA."
-1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder."
+1. Change the **ordernumber** value to "IOMLabOrder004" and the **shiptocountry** value to "CA".
+1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
 1. Send the email to the Outlook account used previously to set up IOMLabOrderIntake provider.
 
-The order will fail the header ship to country validation, with status reason "Order Validation Failed."
+The order will fail the header ship to country validation, with status reason "Order Validation Failed".
