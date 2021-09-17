@@ -19,22 +19,22 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 ## Create new header validation policy
 
 1. Go to **Orchestration \> Policies** and select **New**.
-1. For **Policy Name**, enter "Order header validation policy."
-1. For **Policy Type**, enter "Execution Policy."
-1. For **Policy Criticality**, enter "Critical."
-1. For **Status**, enter "Unpublished."
-1. For **Associated Entity**, enter "Order."
+1. For **Policy Name**, enter "Order header validation policy".
+1. For **Policy Type**, enter "Execution Policy".
+1. For **Policy Criticality**, enter "Critical".
+1. For **Status**, enter "Unpublished".
+1. For **Associated Entity**, enter "Order".
 1. Select **Save**.
 
 ## Create new order header validation policy rule
 
 1. On the order header validation policy form, select **New Rule**.
-1. For **Rule Name**, enter "ShipToCountry - US."
+1. For **Rule Name**, enter "ShipToCountry - US".
 1. For **Rule definition**:
     1. In the first field, select **Ship to Country/Region**.
     1. In the second field, select **Equals**.
     1. In the third field, select **US**.
-1. For **Policy**, enter or select "Order header validation policy."
+1. For **Policy**, enter or select "Order header validation policy".
 1. Select **Save and close**. 
 
 ## Publish the header validation policy
@@ -45,17 +45,17 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 ## Create new line validation policy
 
 1. Go to **Orchestration \> Policies** and select **New**.
-1. For **Policy Name**, enter "Order line validation policy."
-1. For **Policy Type**, enter "Execution Policy."
-1. For **Policy Criticality**, enter "Critical."
-1. For **Status**, enter "Unpublished."
-1. For **Associated Entity**, enter "Order Product."
+1. For **Policy Name**, enter "Order line validation policy".
+1. For **Policy Type**, enter "Execution Policy".
+1. For **Policy Criticality**, enter "Critical".
+1. For **Status**, enter "Unpublished".
+1. For **Associated Entity**, enter "Order Product".
 1. Select **Save**.
 
 ## Create new order line validation policy rule
 
 1. On the order line validation policy form, select **New Rule**.
-1. Under **Condition**, for **Rule Name**, enter "Min quantity."
+1. Under **Condition**, for **Rule Name**, enter "Min quantity".
 1. For **Rule definition**:
     1. In the first field, select **Quantity**.
     1. In the second field, select **Is greater than or equal to**.
@@ -71,17 +71,17 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 ## Create simple fulfillment assignment policy
 
 1. Go to **Orchestration \> Policies** and select **New**.
-1. For **Policy Name**, enter "Simple fulfillment assignment policy."
-1. For **Policy Type**, enter "Execution Policy."
-1. For **Policy Criticality**, enter "Information."
-1. For **Status**, enter "Unpublished."
-1. For **Associated Entity**, enter "Order Product."
+1. For **Policy Name**, enter "Simple fulfillment assignment policy".
+1. For **Policy Type**, enter "Execution Policy".
+1. For **Policy Criticality**, enter "Information".
+1. For **Status**, enter "Unpublished".
+1. For **Associated Entity**, enter "Order Product".
 1. Select **Save**.
 
 ## Create new simple fulfillment assignment policy rule for Seattle
 
 1. On the simple fulfillment assignment policy form, select **New Rule**.
-1. Under **Condition**, for **Rule Name**, enter "Assignment rule- Seattle."
+1. Under **Condition**, for **Rule Name**, enter "Assignment rule- Seattle".
 1. For **Rule definition**:
     1. In the first field, select **Quantity**.
     1. In the second field, select **Is greater than or equal to**.
@@ -95,7 +95,7 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 ## Create new simple fulfillment assignment policy rule for Chicago
 
 1. On the simple fulfillment assignment policy form, select **New Rule**.
-1. Under **Condition**, for **Rule Name**, enter "Assignment rule- Chicago."
+1. Under **Condition**, for **Rule Name**, enter "Assignment rule- Chicago".
 1. For **Rule definition**:
     1. In the first field, select **Quantity**.
     1. In the second field, select **Is less than**.
@@ -114,17 +114,17 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 ## Create filter policy for Seattle store
 
 1. Go to **Orchestration \> Policies** and select **New**.
-1. For **Policy Name**, enter "Fulfillment filter policy - Seattle."
-1. For **Policy Type**, enter "Filter Policy."
-1. For **Policy Criticality**, enter "Information."
-1. For **Status**, enter "Unpublished."
-1. For **Associated Entity**, enter "Fulfillment Order."
+1. For **Policy Name**, enter "Fulfillment filter policy - Seattle".
+1. For **Policy Type**, enter "Filter Policy".
+1. For **Policy Criticality**, enter "Information".
+1. For **Status**, enter "Unpublished".
+1. For **Associated Entity**, enter "Fulfillment Order".
 1. Select **Save**.
 
 ## Create new filter rule for Seattle store
 
 1. On the Fulfillment filter policy - Seattle form, select **New Rule**.
-1. Under **Condition**, for **Rule Name**, enter "Min quantity."
+1. Under **Condition**, for **Rule Name**, enter "Min quantity".
 1. For **Rule definition**:
     1. In the first field, select **Fulfillment Source**.
     1. In the second field, select **Equals**.
@@ -140,17 +140,17 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 ## Create filter policy for Chicago store
 
 1. Go to **Orchestration \> Policies** and select **New**.
-1. For **Policy Name**, enter "Fulfillment filter policy - Chicago."
-1. For **Policy Type**, enter "Filter Policy."
-1. For **Policy Criticality**, enter "Information."
-1. For **Status**, enter "Unpublished."
-1. For **Associated Entity**, enter "Fulfillment Order."
+1. For **Policy Name**, enter "Fulfillment filter policy - Chicago".
+1. For **Policy Type**, enter "Filter Policy".
+1. For **Policy Criticality**, enter "Information".
+1. For **Status**, enter "Unpublished".
+1. For **Associated Entity**, enter "Fulfillment Order".
 1. Select **Save**.
 
 ## Create new filter rule for Chicago store
 
 1. On the **Fulfillment filter policy - Chicago** form, select **New Rule**.
-1. Under **Condition**, for **Rule Name**, enter "Min quantity."
+1. Under **Condition**, for **Rule Name**, enter "Min quantity".
 1. For **Rule definition**:
     1. In the first field, select **Fulfillment Source**.
     1. In the second field, select **Equals**.
@@ -172,9 +172,9 @@ If you've followed along, you should now see the transpiled Power Automate cloud
 1. Go to **Providers \> Action Types**.
 1. Select **Policy Based Fulfillment Determination**.
 1. Select **+ New IOM Action Type Input Business Event**.
-1. For **Name**, enter "Validation of Order Lines has Succeeded."
-1. For **Action Type**, enter "Policy Based Fulfillment Determination." 
-1. For **Business Event Definition**, enter "Validation of Order Lines has Succeeded."
+1. For **Name**, enter "Validation of Order Lines has Succeeded".
+1. For **Action Type**, enter "Policy Based Fulfillment Determination". 
+1. For **Business Event Definition**, enter "Validation of Order Lines has Succeeded".
 1. Select **Save**.
 
 Next step: [Create order orchestration](lab-create-order-orch.md)
