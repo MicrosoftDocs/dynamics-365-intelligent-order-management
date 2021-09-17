@@ -23,9 +23,9 @@ It is recommended to have one provider per solution, but multiple providers can 
 1. Go to the [Power App Maker Portal](https://make.powerapps.com) and sign in with your IOM credentials. 
 1. Go to **Solutions**.
 1. Select **New solution**.
-1. For **Display name**, enter "IOM LabProviders."
-1. For **Name**, enter "IOM LabProviders."
+1. For **Display name**, enter "IOM LabProviders".
+1. For **Name**, enter "IOM LabProviders".
 1. For **Publisher**, select **CDS Default Publisher**.
-1. For **Version**, enter "1.0.0.0."
+1. For **Version**, enter "1.0.0.0".
 
 Next step: [Create RequestBin custom connector](lab-create-requestbin-connector.md).
