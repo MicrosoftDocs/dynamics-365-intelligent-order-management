@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: Create and configure connections DESCRIPTION TBD
+description: This topic describes the steps required to create and configure connections in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -14,6 +14,7 @@ title: Create and configure connections
 
 [!include [banner](includes/banner.md)]
 
+This topic describes the steps required to create and configure connections in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Create platform Power Automate connections
 
