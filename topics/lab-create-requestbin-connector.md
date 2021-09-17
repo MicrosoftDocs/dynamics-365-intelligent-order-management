@@ -33,9 +33,9 @@ This topic describes the steps required to create a RequestBin custom connector 
 1. Select **Security**.
 1. Select **Definition**.
 1. Select **+ New action**. 
-1. For **Summary**, enter "Create fulfillment order."
-1. For **Description**, enter "Create fulfillment order."
-1. For **Operation ID**, enter "CreateFulfillmentOrder."
+1. For **Summary**, enter "Create fulfillment order".
+1. For **Description**, enter "Create fulfillment order".
+1. For **Operation ID**, enter "CreateFulfillmentOrder".
 1. For **Visibility**, select **none**.
 1. Under **Request**, select **Import from sample**.
 1. For **Verb**, select **POST**.
