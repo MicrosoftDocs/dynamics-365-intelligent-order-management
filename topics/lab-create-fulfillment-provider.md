@@ -20,11 +20,11 @@ This topic describes the steps required to create a fulfillment provider in Micr
 
 1. Go to **Providers \> Catalog**.
 1. Select **New Provider Definition**.
-1. For **Display Name**, enter "IOMLabFulfillmentProvider."
-1. For **Logical Name**, enter "msdyn_IOMLabFulfillmentProvider."
-1. For **Description**, enter "IOM lab fulfillment provider."
-1. For **Logo**, select "IOMLab.png."
-1. For **Service Type**, enter "Fulfillment."
+1. For **Display Name**, enter "IOMLabFulfillmentProvider".
+1. For **Logical Name**, enter "msdyn_IOMLabFulfillmentProvider".
+1. For **Description**, enter "IOM lab fulfillment provider".
+1. For **Logo**, select "IOMLab.png".
+1. For **Service Type**, enter "Fulfillment".
 1. Select **Save and close**.
 
 ## Add provider definition to solution
@@ -39,7 +39,7 @@ This topic describes the steps required to create a fulfillment provider in Micr
 1. Open the **Default Solution**.
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (Outlook)".
-1. Select the trigger type as **Manually trigger a flow."
+1. Select the trigger type as **Manually trigger a flow**.
 1. (Step to configure trigger properties.)
 1. Create a variable initialization action:
     - For **Name**, enter "ExecutionResult".
@@ -127,15 +127,15 @@ This topic describes the steps required to create a fulfillment provider in Micr
 1. Select **Edit** on the menu bar. 
 1. Select the **Logic definitions** tab.
 1. Select **+ New IOM Provider Definition Logic Definition**.
-1. For **Display Name**, enter "IOM Lab Send to Fulfillment (Outlook)."
-1. For **Logical Name**, enter "msdyn_LabSentToFulfillmentOutlook."
-1. For **Provider Definition**, enter "IOMLabFulfillmentProvider."
-1. For **Logic Type**, enter "Provider Action."
-1. For **Workflow Name**, enter "IOM Lab Send to Fulfillment (Outlook)."
-1. For **Timeout Minutes**, enter "2."
-1. For **Max Retry Attempts**, enter "3."
-1. For **Description**, enter "IOM Lab Send to Fulfillment (Outlook)."
-1. For **Action Type**, enter "Send to Fulfillment."
+1. For **Display Name**, enter "IOM Lab Send to Fulfillment (Outlook)".
+1. For **Logical Name**, enter "msdyn_LabSentToFulfillmentOutlook".
+1. For **Provider Definition**, enter "IOMLabFulfillmentProvider".
+1. For **Logic Type**, enter "Provider Action".
+1. For **Workflow Name**, enter "IOM Lab Send to Fulfillment (Outlook)".
+1. For **Timeout Minutes**, enter "2".
+1. For **Max Retry Attempts**, enter "3".
+1. For **Description**, enter "IOM Lab Send to Fulfillment (Outlook)".
+1. For **Action Type**, enter "Send to Fulfillment".
 1. Select **Save**. This will generate a JSON representation of the message handler cloud flow and populate the **Client Data** field.
 1. Replace the placeholder email with provider parameter as follows:
     1. Copy the text block in the **Client Data** field and paste it into Notepad. 
@@ -162,7 +162,7 @@ This topic describes the steps required to create a fulfillment provider in Micr
 1. Open the **Default Solution**.
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (RequestBin)".
-1. Select the trigger type as **Manually trigger a flow."
+1. Select the trigger type as **Manually trigger a flow**.
 1. (Step to configure trigger properties.)
 1. Create a variable initialization action:
     - For **Name**, enter "ExecutionResult".
@@ -247,15 +247,15 @@ This topic describes the steps required to create a fulfillment provider in Micr
 1. Select **Edit** on the menu bar. 
 1. Select the **Logic definitions** tab.
 1. Select **+ New IOM Provider Definition Logic Definition**.
-1. For **Display Name**, enter "IOM Lab Send to Fulfillment (RequestBin)."
-1. For **Logical Name**, enter "msdyn_LabSentToFulfillmentRequestBin."
-1. For **Provider Definition**, enter "IOMLabFulfillmentProvider."
-1. For **Logic Type**, enter "Provider Action."
-1. For **Workflow Name**, enter "IOM Lab Send to Fulfillment (RequestBin)."
-1. For **Timeout Minutes**, enter "2."
-1. For **Max Retry Attempts**, enter "3."
-1. For **Description**, enter "IOM Lab Send to Fulfillment (RequestBin)."
-1. For **Action Type**, enter "Send to Fulfillment."
+1. For **Display Name**, enter "IOM Lab Send to Fulfillment (RequestBin)".
+1. For **Logical Name**, enter "msdyn_LabSentToFulfillmentRequestBin".
+1. For **Provider Definition**, enter "IOMLabFulfillmentProvider".
+1. For **Logic Type**, enter "Provider Action".
+1. For **Workflow Name**, enter "IOM Lab Send to Fulfillment (RequestBin)".
+1. For **Timeout Minutes**, enter "2".
+1. For **Max Retry Attempts**, enter "3".
+1. For **Description**, enter "IOM Lab Send to Fulfillment (RequestBin)".
+1. For **Action Type**, enter "Send to Fulfillment".
 1. Select **Save**. This will generate a JSON representation of the message handler cloud flow and populate the **Client Data** field.
 1. Select **Save and close**.
 1. Select **Connections**. You should see the **Microsoft Dataverse**, **Outlook.com**, and **RequestBin** connection reference definitions listed.
@@ -264,12 +264,12 @@ This topic describes the steps required to create a fulfillment provider in Micr
 
 1. Select **Parameters**. 
 1. Select **+ New IOM Provider Definition Parameter**.
-1. For **Display Name**, enter "IOMLAbOutboundFulfillmentEmail."
-1. For **Data Type**, enter "Text."
-1. For **Provider Definition**, enter "IOMLabFulfillmentProvider."
-1. For **Key**, enter "IOMLabOutboundFulfillmentEmail."
-1. For **Logical Name**, enter "msdyn_IOMLabOutboundFulfillmentEmail."
-1. For **Is Required**, enter "Yes."
+1. For **Display Name**, enter "IOMLAbOutboundFulfillmentEmail".
+1. For **Data Type**, enter "Text".
+1. For **Provider Definition**, enter "IOMLabFulfillmentProvider".
+1. For **Key**, enter "IOMLabOutboundFulfillmentEmail".
+1. For **Logical Name**, enter "msdyn_IOMLabOutboundFulfillmentEmail".
+1. For **Is Required**, enter "Yes".
 1. Select **Save and close**.
 
 ## Add provider definition logic definition to IOMLabProviders solution (RequestBin)
