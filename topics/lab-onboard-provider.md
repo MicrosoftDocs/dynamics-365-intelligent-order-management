@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: Onboard provider instance DESCRIPTION TBD
+description: This topic describes the steps required to onboard a provider instancen in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: how-to
@@ -13,6 +13,8 @@ title: Onboard provider instance
 # Onboard provider instance
 
 [!include [banner](includes/banner.md)]
+
+This topic describes the steps required to onboard a provider instancen in Microsoft Dynamics 365 Intelligent Order Management.
 
 > [!NOTE]
 > If you followed the previous provider creation steps you can skip this section, since you have already created these application connections.
