@@ -29,7 +29,7 @@ This topic describes the steps required to create an intake provider in Microsof
 
 ## Add provider definition to solution
 
-1. On the Power App Maker portal, navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing\IOM Provider Definition**.
 1. Select **IOMLabOrderIntakeProvider**, and then select **Add** to add it to the solution. 
 
@@ -153,13 +153,13 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add provider definition transformation to solution
 
-1. On the Power App Maker portal, navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing\IOM Provider Definition Transformation**.
 1. Select **IOMLab Order to Dataverse Order**, and then select **Add** to add it to the solution.
 
 ## Create provider message handler
 
-1. On Power App Maker portal, go to **Solutions** and open the **Default Solution**. 
+1. Go to the [Power App Maker portal](https://make.powerapps.com), navigate to **Solutions**, and open the **Default Solution**. 
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Order Intake Message Request Handler."
 1. Select the trigger type as **Outlook.com – When a new email arrives (V2)**, and then sign in with your outlook.com account credentials.
@@ -247,7 +247,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add provider definition logic definition to the provider definition
 
-1. In your IOM application, navigate to Providers\Catalog.
+1. In your IOM application, go to **Providers \> Catalog**.
 1. Select the newly created IOMLabOrderIntakeProvider.
 1. Select Edit on the menu bar. 
 1. Select Logic definitions tab page.
@@ -269,13 +269,13 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add provider definition logic definition to IOMLabProviders solution
 
-1. On the Power App Maker portal, navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing\IOM Provider Definition Logic Definition**.
 1. Select **IOM Lab Order Intake Message Request Handler** and then select **Add** to add it to the solution.
 
 ## Add provider definition connection reference to IOMLabProviders solution
 
-1. On Power App Maker portal, navigate to the newly-created solution "IOMLabProviders."
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing\IOM Provider Definition Connection Reference**.
 1. Select the **Microsoft Dataverse** and **Outlook.com** connection reference definitions and then select **Add** to add them to the solution. 
 
