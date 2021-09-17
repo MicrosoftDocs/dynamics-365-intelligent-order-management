@@ -30,7 +30,7 @@ This topic describes the steps required to create a fulfillment provider in Micr
 ## Add provider definition to solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition**.
+1. Select **Add existing \> IOM Provider Definition**.
 1. Select **IOMLabFulfillmentProvider** and then select **Add** to add it to the solution. 
 
 ## Create provider action – send fulfillment payload to Outlook
@@ -147,13 +147,13 @@ This topic describes the steps required to create a fulfillment provider in Micr
 ## Add provider definition logic definition to IOMLabProviders solution (Outlook)
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Logic Definition**.
+1. Select **Add existing \> IOM Provider Definition Logic Definition**.
 1. Select **IOM Lab Send To Fulfillment (Outlook)** and then select **Add** to add it to the solution. 
 
 ## Add provider definition connection references to IOMLabProviders solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Connection Reference**.
+1. Select **Add existing \> IOM Provider Definition Connection Reference**.
 1. Select both the **Microsoft Dataverse** and **Outlook.com** provider definition connection references, and then select **Add** to add them to the solution. 
 
 ## Create provider action – send fulfillment payload to RequestBin
@@ -275,19 +275,19 @@ This topic describes the steps required to create a fulfillment provider in Micr
 ## Add provider definition logic definition to IOMLabProviders solution (RequestBin)
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Logic Definition**.
+1. Select **Add existing \> IOM Provider Definition Logic Definition**.
 1. Select **IOM Lab Send To Fulfillment (RequestBin)** and then select **Add** to add it to the solution. 
 
 ## Add provider definition connection reference to IOMLabProviders solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Connection Reference**.
+1. Select **Add existing \> IOM Provider Definition Connection Reference**.
 1. Select **RequestBin** and then select **Add** to add it to the solution.
 
 ## Add provider definition parameter to IOMLabProviders solution
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing\IOM Provider Definition Parameter**.
+1. Select **Add existing \> IOM Provider Definition Parameter**.
 1. Select **IOMLabOutboundFulfillmentEmail** and then select **Add** to add it to the solution.
 
 Next step: [Export provider solution](lab-export-provider-solution.md)
