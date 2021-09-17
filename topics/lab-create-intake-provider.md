@@ -20,11 +20,11 @@ This topic describes the steps required to create an intake provider in Microsof
 
 1. Go to **Providers \> Catalog**.
 1. Select **New Provider Definition**.
-1. For **Display Name**, enter "IOMLabOrderIntakeProvider."
-1. For **Logical Name**, enter "msdyn_IOMLabOrderIntakeProvider."
-1. For **Logo**, select "IOMLab.png."
-1. For **Service Type**, enter "Order intake."
-1. For **Description**, enter "IOM lab order intake provider."
+1. For **Display Name**, enter "IOMLabOrderIntakeProvider".
+1. For **Logical Name**, enter "msdyn_IOMLabOrderIntakeProvider".
+1. For **Logo**, select "IOMLab.png".
+1. For **Service Type**, enter "Order intake".
+1. For **Description**, enter "IOM lab order intake provider".
 1. Select **Save and close**.
 
 ## Add provider definition to solution
@@ -40,11 +40,11 @@ This topic describes the steps required to create an intake provider in Microsof
 1. Select **Edit** on the menu bar. 
 1. Select the **Transformations** tab.
 1. Select **+ New IOM Provider Definition Transformation**.
-1. For **Display Name**, enter "IOMLab Order to Dataverse Order." 
-1. For **Logical Name**, enter "msdyn_IOMLabOrderIntake_Order."
+1. For **Display Name**, enter "IOMLab Order to Dataverse Order". 
+1. For **Logical Name**, enter "msdyn_IOMLabOrderIntake_Order".
 1. For **Provider Definition**, enter or select **IOMLabOrderIntakeProvider**.
-1. For **Source Object Name**, enter "IOMLabOrderIntakeProvider."
-1. For **Destination Object Name**, enter "Dataverse Order."
+1. For **Source Object Name**, enter "IOMLabOrderIntakeProvider".
+1. For **Destination Object Name**, enter "Dataverse Order".
 1. For **Transformation**, paste in the following M query code:
 ```M
 shared ImportMappingKey = [
@@ -124,7 +124,7 @@ let
 in Text.FromBinary(Json.FromValue(salesorder));
 
 ```
-12. For **Transformation Source Type**, enter "JsonPayload."
+12. For **Transformation Source Type**, enter "JsonPayload".
 13. Select **Save**.
 14. Create a JSON file, paste in the following code, and save it.
 ```JSON
@@ -161,7 +161,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com), navigate to **Solutions**, and open the **Default Solution**. 
 1. Select **New**.
-1. Select **Cloud Flow**, and then name it "IOM Lab Order Intake Message Request Handler."
+1. Select **Cloud Flow**, and then name it "IOM Lab Order Intake Message Request Handler".
 1. Select the trigger type as **Outlook.com – When a new email arrives (V2)**, and then sign in with your outlook.com account credentials.
 1. For **Folder**, select **Inbox**.
 1. For **To**, select **Recipient email addresses separated by semicolons**.
@@ -172,7 +172,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 1. For **Subject Filter**, select **IOMLabOrderIntakeOrder**.
 1. For **Importance**, select **Any**.
 1. For **Only with Attachment**, select **Yes**.
-1. Select **New step** and add "parse json."
+1. Select **New step** and add "parse json".
 1. For **Content**, paste in the following code:
 ```JSON
 {
@@ -192,9 +192,9 @@ in Text.FromBinary(Json.FromValue(salesorder));
 ```
 16. Select **Done**.
 17. Select the ellipsis ("**...**") and then select **Rename**. 
-18. Rename the action "IOM System Properties."
+18. Rename the action "IOM System Properties".
 19. Select **Save**.
-20. Select **New step**, add "parse json", and rename to "Initialize Provider Variables."
+20. Select **New step**, add "parse json", and rename to "Initialize Provider Variables".
 21. For **Content**, paste in the following code:
 ```JSON
 {
@@ -203,45 +203,45 @@ in Text.FromBinary(Json.FromValue(salesorder));
 }
 ``` 
 22. Select **Save**.
-23. Select **New step**, add "initialize variable", and rename to "Initialize Processing Execution Result."
-24. For **Name**, enter "ExecutionResult."
+23. Select **New step**, add "initialize variable", and rename to "Initialize Processing Execution Result".
+24. For **Name**, enter "ExecutionResult".
 25. For **Type**, select **Boolean**.
 26. For **Value**, select **true**.
 27. Select **Save**.
-28. Select **New step**, add "scope", and rename to "Try."
+28. Select **New step**, add "scope", and rename to "Try".
 29. In the **Try** scope, select **Add an action**.
-30. Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM."
-31. For **Action Name**, enter "msdyn_CreateProviderMessageRequestExecution."
+30. Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM".
+31. For **Action Name**, enter "msdyn_CreateProviderMessageRequestExecution".
 32. For **PowerAutomateWorkflowId**, enter ``workflow()['tags']['xrmWorkflowId']`` as an expression. 
 33. For **PowerAutomateRunId**, enter ``workflow()['run']?['name']`` as an expression. 
 34. For **ProviderExternalRequestId**, enter ``guid()`` as an expression. 
 35. Select **Save**.
 36. Select **Add an action**, and then add an "apply to each" control.
-37. For **Select an output from previous steps**, enter "Attachments."
-38. Select **Add an action** within the **Apply to each** loop, add "run a child flow" from the **Flow** connector, and rename it "Transform Message with Power Query Online."
+37. For **Select an output from previous steps**, enter "Attachments".
+38. Select **Add an action** within the **Apply to each** loop, add "run a child flow" from the **Flow** connector, and rename it "Transform Message with Power Query Online".
 39. For **Provider Id**, select the **ProviderId** variable.
 40. For **Source Object Name**, select the **SourceObjectName** variable.
 41. For **Destination Object Name**, select the **DestinationObjectName** variable.
 42. For **Payload**, enter ``decodeBase64(items('Apply_to_each')?['ContentBytes'])`` as an expression.
 43. Select **Save**.
-44. After the transformation step, select **Add an action**, add "run a child flow" from the Flow connector, and rename it "Create Order."
-45. For **Child Flow**, enter "IOM Sales Order Creation."
+44. After the transformation step, select **Add an action**, add "run a child flow" from the Flow connector, and rename it "Create Order".
+45. For **Child Flow**, enter "IOM Sales Order Creation".
 46. For **Payload**, enter ``string(json(outputs('Transform_Message_with_Power_Query_Online')?['Body']?['result'])?[0][0])`` as an expression.
 47. Select **Save**.
 48. Collapse the **Try** scope by selecting its title bar.
-49. Select **New step**, add "scope", and rename it "Catch."
+49. Select **New step**, add "scope", and rename it "Catch".
 50. In the **Catch** scope, select the ellipsis ("**...**"), and then select **Configure run after**.
 51. Select the **has failed** and **has timed out** checkboxes, and then select **Done**.
-52. In the **Catch** scope, select **Add an action**, add "set variable" and rename it "Set the execution result to failed."
-53. For **Name**, enter "Executionresult."
+52. In the **Catch** scope, select **Add an action**, add "set variable" and rename it "Set the execution result to failed".
+53. For **Name**, enter "Executionresult".
 54. For **Value**, select **False**.
 55. Select **Save**.
 56. Collapse the **Catch** scope by selecting its title bar.
-57. Select **New step**, add "scope", and rename it "Finally."
+57. Select **New step**, add "scope", and rename it "Finally".
 58. In the **Finally** scope, select the ellipsis ("**...**"), and then select **Configure run after**. 
 59. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
-60. In the **Finally** scope, select **Add an action**, add "perform an unbound action" and rename it "Save Provider message request execution result."
-61. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus."
+60. In the **Finally** scope, select **Add an action**, add "perform an unbound action" and rename it "Save Provider message request execution result".
+61. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus".
 62. For **ProviderMessageRequestExecutionId**, enter ``outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
 63. Select **Save**.
 
@@ -252,14 +252,14 @@ in Text.FromBinary(Json.FromValue(salesorder));
 1. Select **Edit** on the menu bar. 
 1. Select the **Logic definitions** tab.
 1. Select **+ New IOM Provider Definition Logic Definition**.
-1. For **Display Name**, enter "IOM Lab Order Intake Message Request Handler."
-1. For **Logical Name**, enter "msdyn_LabOrderIntakeMessageRequestHandler."
-1. For **Provider Definition**, enter "IOMLabOrderIntakeProvider."
-1. For **Logic Type**, enter "Provide Message Handler."
-1. For **Workflow Name**, enter "IOM Lab Order Intake Message Request Handler."
-1. For **Timeout Minutes**, enter "2."
-1. For **Max Retry Attmepts**, enter "3."
-1. For **Description**, enter "IOM Lab Order Intake Message Request Handler."
+1. For **Display Name**, enter "IOM Lab Order Intake Message Request Handler".
+1. For **Logical Name**, enter "msdyn_LabOrderIntakeMessageRequestHandler".
+1. For **Provider Definition**, enter "IOMLabOrderIntakeProvider".
+1. For **Logic Type**, enter "Provide Message Handler".
+1. For **Workflow Name**, enter "IOM Lab Order Intake Message Request Handler".
+1. For **Timeout Minutes**, enter "2".
+1. For **Max Retry Attmepts**, enter "3".
+1. For **Description**, enter "IOM Lab Order Intake Message Request Handler".
 1. Select **Save**. This generates a JSON representation of the message handler cloud flow and fills in the **Client Data** field.
 1. Select **Save and close**.
 1. Select **Connections**. You should see both the **Microsoft Dataverse** and **Outlook.com** connection reference definitions listed. 
