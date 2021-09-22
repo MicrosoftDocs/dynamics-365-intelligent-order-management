@@ -197,7 +197,7 @@ To publish the filter policy for the Chicago store, follow these steps.
 
 If you've followed along, you should now see the transpiled Power Automate cloud flows as shown in the following illustration.
 
-![Transpiled Power Automate cloud flows for policies in Intelligent Order Management](./media/power-automate-cloud-flows-2.PNG)
+![Transpiled Power Automate cloud flows for policies in Intelligent Order Management](media/lab_create_policies.png)
 
 ## Add input event to action type
 
