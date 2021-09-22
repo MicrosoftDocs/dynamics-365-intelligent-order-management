@@ -78,7 +78,7 @@ To view the deployed Power Automate component, follow these steps.
 1. Go to **Solutions \> Default Solution**. 
 1. Filter the solution component to display only cloud flows. You should now see the following Power Automate flows.
 
-![Power Automate cloud flows in Intelligent Order Management](./media/power-automate-cloud-flows-3.PNG)
+![Power Automate cloud flows in Intelligent Order Management](media/lab_power_automate_flows.png.png)
 
-Next step: [Create policies](lab-create-policies.md)
+Next quick start step: [Create policies](lab-create-policies.md)
 
