@@ -23,6 +23,8 @@ This topic describes the steps required to onboard a provider instance in Micros
 
 ### Create Outlook connection
 
+To create an Outlook connection, follow these steps.
+
 1. Select **New connection**.
 1. In the search box on the upper right corner, enter "Outlook.com".
 1. Select the plus symbol ("**+**") to create the connection.
@@ -30,11 +32,15 @@ This topic describes the steps required to onboard a provider instance in Micros
 
 ### Create RequestBin connection
 
+To create a RequestBin connection, follow these steps.
+
 1. Select **New connection**.
 1. In the search box on the upper right corner, enter "requestbin".
 1. Select the plus symbol ("**+**") to create the connection.
 
-## Add provider – order intake
+## Add provider for order intake
+
+To add a provider for order intake, follow these steps.
 
 1. Go to **Providers \> Catalog** and select **Add Provider** on the **IOMLabOrderIntakeProvider** tile.
 1. Under the **Connections** section, select **Microsoft Dataverse** to navigate to the **IOM Provider Connection Reference** form.
@@ -52,7 +58,9 @@ This topic describes the steps required to onboard a provider instance in Micros
     1. Select **Save and close**.
 1. On the IOM provider form, select **Activate**. This action deploys the Power Automate flow that processes the incoming email with order attachment.
 
-## Add provider – fulfillment 
+## Add provider for fulfillment 
+
+To add a provider for fulfillment, follow these steps.
 
 1. Go to **Providers \> Catalog** and select **Add Provider** on the **IOMLabFulfillmentProvider** tile.
 1. Under the **Connections** section, set up all the connections listed. 
@@ -63,6 +71,8 @@ This topic describes the steps required to onboard a provider instance in Micros
     1. Select **Save and close**.
 
 ## View the deployed Power Automate component
+
+To view the deployed Power Automate component, follow these steps.
 
 1. Go to the maker portal at https://make.powerapps.com/ and make sure you are in the right IOM trial environment. To check which environment you are in, select **Environment** icon on the top right corner of the maker portal.
 1. Go to **Solutions \> Default Solution**. 
