@@ -47,5 +47,5 @@ To create a custom connector, follow these steps.
 1. Select **Import**.
 1. Select **Create connector**.
 
-Next step: [Create intake provider](lab-create-intake-provider.md)
+Next quick start step: [Create intake provider](lab-create-intake-provider.md)
 
