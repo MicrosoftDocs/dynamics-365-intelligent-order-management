@@ -18,6 +18,8 @@ This topic describes the steps required to create order orchestration in Microso
 
 ## Add the Validate order header tile
 
+To add the **Validate order header** tile, follow these steps.
+
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Enter a name for your new flow, and then select **Save**.
 1. Select the plus symbol ("+") and then add the **Validate order header** tile.
@@ -29,6 +31,8 @@ This topic describes the steps required to create order orchestration in Microso
 
 ## Add the Validate order line tile
 
+To add the **Validate order line** tile, follow these steps.
+
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Select the plus symbol ("+") and then add the **Validate order line** tile.
 1. For **Name**, enter "Order line validation".
@@ -37,6 +41,8 @@ This topic describes the steps required to create order orchestration in Microso
 1. Select **Save**.
 
 ## Add a Custom tile
+
+To add a **Custom** tile, follow these steps.
 
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Select the plus symbol ("+") and then add a **Custom** tile.
@@ -48,6 +54,8 @@ This topic describes the steps required to create order orchestration in Microso
 
 ## Add a Splitter tile
 
+To add a **Splitter** tile, follow these steps.
+
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Select the plus symbol ("+") and then add a **Splitter** tile.
 1. For **Name**, enter "Fulfillment split".
@@ -55,6 +63,8 @@ This topic describes the steps required to create order orchestration in Microso
 1. Select **Save**.
 
 ## Add a Send to fulfillment tile under Seattle branch
+
+To add a **Send to fulfillment** tile under the Seattle branch, follow these steps.
 
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Under the **Seattle** branch, select the plus symbol ("+") and then add a **Send to fulfillment** tile.
@@ -65,9 +75,9 @@ This topic describes the steps required to create order orchestration in Microso
 1. For **Filter Policy**, enter "Fulfillment filter policy - Seattle".
 1. Select **Save**.
 
-
-
 ## Add a Send to fulfillment tile under Chicago branch
+
+To add a **Send to fulfillment** tile under the Chicago branch, follow these steps.
 
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Under the **Chicago** branch, select the plus symbol ("+") and then add a **Send to fulfillment** tile.
