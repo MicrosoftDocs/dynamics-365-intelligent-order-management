@@ -18,6 +18,8 @@ This topic describes the steps required to create an intake provider in Microsof
 
 ## Create new provider definition
 
+To create new provider definition, follow these steps.
+
 1. Go to **Providers \> Catalog**.
 1. Select **New Provider Definition**.
 1. For **Display Name**, enter "IOMLabOrderIntakeProvider".
@@ -29,11 +31,15 @@ This topic describes the steps required to create an intake provider in Microsof
 
 ## Add provider definition to solution
 
+To add a provider definition to a solution, follow these steps.
+
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition**.
 1. Select **IOMLabOrderIntakeProvider**, and then select **Add** to add it to the solution. 
 
 ## Add transformation to the provider definition
+
+To add a transformation to the provider definition, follow these steps.
 
 1. Go to **Providers \> Catalog**.
 1. Select the newly-created **IOMLabOrderIntakeProvider**.
@@ -153,11 +159,15 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add provider definition transformation to solution
 
+To add a provider definition transformation to a solution, follow these steps.
+
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Transformation**.
 1. Select **IOMLab Order to Dataverse Order**, and then select **Add** to add it to the solution.
 
 ## Create provider message handler
+
+To create a provider message handler, follow these steps.
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com), navigate to **Solutions**, and open the **Default Solution**. 
 1. Select **New**.
@@ -247,6 +257,8 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add provider definition logic definition to the provider definition
 
+To add a provider definition logic definition to the provider definition, follow these steps.
+
 1. In your IOM application, go to **Providers \> Catalog**.
 1. Select the newly-created **IOMLabOrderIntakeProvider**.
 1. Select **Edit** on the menu bar. 
@@ -269,11 +281,15 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add provider definition logic definition to IOMLabProviders solution
 
+To add a provider definition logic definition to the IOMLabProviders solution, follow these steps.
+
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Logic Definition**.
 1. Select **IOM Lab Order Intake Message Request Handler** and then select **Add** to add it to the solution.
 
 ## Add provider definition connection reference to IOMLabProviders solution
+
+To add a provider definition connection reference to the IOMLabProviders solution, follow these steps.
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Connection Reference**.
