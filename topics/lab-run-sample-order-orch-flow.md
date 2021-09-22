@@ -29,7 +29,7 @@ To set up a customer, follow these steps.
 
 To set up account mapping, follow these steps.
 
-1. In the lower right corner of your IOM application screen, change the area from **IOM** to **Configurations**. If you use a left-to-right (LTR) language, this setting is located in the lower left corner of your application screen. 
+1. In the lower right corner of your Intelligent Order Management application screen, change the area from **IOM** to **Configurations**. If you use a left-to-right (LTR) language, this setting is located in the lower left corner of your application screen. 
 1. Go to **Mappings \> Accounts**.
 1. Select **New**.
 1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
@@ -99,7 +99,7 @@ To set up product mapping, follow these steps.
 
 ## Lab scenario
 
-1. Order comes into IOM as email attachment.
+1. Order comes into Intelligent Order Management as email attachment.
 1. Validate order header to make sure "ship to"" country is US.
 1. Validate order line to make sure quantity is greater than 1.
 1. Route order based on quantity.
