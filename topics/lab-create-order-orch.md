@@ -94,6 +94,6 @@ After you are done creating the order orchestration flow, select **Publish** to 
 
 If you've followed along, you should see the transpiled Power Automate cloud flows as shown in the following illustration.
 
-![Transpiled Power Automate cloud flows in Intelligent Order Management](./media/power-automate-cloud-flows.PNG)
+![Transpiled Power Automate cloud flows in Intelligent Order Management](media/lab_order_orch.png)
 
 Next step: [Run sample order orchestration flow](lab-run-sample-order-orch-flow.md)
