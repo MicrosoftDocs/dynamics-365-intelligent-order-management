@@ -295,4 +295,4 @@ To add a provider definition connection reference to the IOMLabProviders solutio
 1. Select **Add existing \> IOM Provider Definition Connection Reference**.
 1. Select the **Microsoft Dataverse** and **Outlook.com** connection reference definitions and then select **Add** to add them to the solution. 
 
-Next step: [Create fulfillment provider](lab-create-fulfillment-provider.md).
+Next quick start step: [Create fulfillment provider](lab-create-fulfillment-provider.md).
