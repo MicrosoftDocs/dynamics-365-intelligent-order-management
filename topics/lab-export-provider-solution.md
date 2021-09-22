@@ -18,7 +18,7 @@ This topic describes the steps required to export a provider solution in Microso
 
 You should now see the following components in your provider solution.
 
-![Provider solution components](./media/provider-solution-components.PNG)
+![Provider solution components](media/lab_export_components.png)
 
 For instructions on exporting your solution, see [Export solutions](/powerapps/maker/data-platform/export-solutions).
 
@@ -35,4 +35,4 @@ To clean up after export, follow these steps.
 > [!NOTE]
 > New flows are generated when instantiating a provider. If these flows are not turned off, more than the expected outgoing payload will be sent.
 
-Next step: [Onboard provider instance](lab-onboard-provider.md)
+Next quick start step: [Onboard provider instance](lab-onboard-provider.md)
