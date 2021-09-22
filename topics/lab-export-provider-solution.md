@@ -22,9 +22,11 @@ You should now see the following components in your provider solution.
 
 For instructions on exporting your solution, see [Export solutions](/powerapps/maker/data-platform/export-solutions).
 
-## Clean up
+## Clean up after export
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to **Solutions \> default solution** and filter on **Cloud flow**.
+To clean up after export, follow these steps.
+
+1. Go to the [Power App Maker portal](https://make.powerapps.com), navigate to **Solutions \> default solution**, and then filter on **Cloud flow**.
 1. Stop the following cloud flows created to initialize provider definition logic definition. 
     - IOM Lab Order Intake Message Request Handler.
     - IOM Lab Send To Fulfillment (Outlook).
