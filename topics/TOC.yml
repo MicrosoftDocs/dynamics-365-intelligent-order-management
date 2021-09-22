@@ -12,6 +12,30 @@
       href: deploy.md
     - name: Get support
       href: support.md
+    - name: Quick start guide
+      items:
+      - name: Quick start overview
+        href: lab-quick-start-overview.md
+      - name: Create and configure connections
+        href: lab-create-configure-connections.md
+      - name: Create a new provider solution package
+        href: lab-create-provider-solution.md
+      - name: Create RequestBin custom connector
+        href: lab-create-requestbin-connector.md
+      - name: Create intake provider
+        href: lab-create-intake-provider.md
+      - name: Create fulfillment provider
+        href: lab-create-fulfillment-provider.md
+      - name: Export provider solution
+        href: lab-export-provider-solution.md
+      - name: Onboard provider instance
+        href: lab-onboard-provider.md
+      - name: Create policies
+        href: lab-create-policies.md
+      - name: Create order orchestration
+        href: lab-create-order-orch.md
+      - name: Run sample order orchestration flow
+        href: lab-run-sample-order-orch-flow.md
   - name: Architecture
     href: architecture.md
   - name: Set up Intelligent Order Management
