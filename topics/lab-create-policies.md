@@ -211,5 +211,5 @@ To add an input event to an action type, follow these steps.
 1. For **Business Event Definition**, enter "Validation of Order Lines has Succeeded".
 1. Select **Save**.
 
-Next step: [Create order orchestration](lab-create-order-orch.md)
+Next quick start step: [Create order orchestration](lab-create-order-orch.md)
 
