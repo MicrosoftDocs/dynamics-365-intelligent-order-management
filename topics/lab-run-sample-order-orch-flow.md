@@ -18,12 +18,16 @@ This topic describes the steps required to run a sample order orchestration flow
 
 ## Set up customer
 
+To set up a customer, follow these steps.
+
 1. Go to **Customers \> Accounts**.
 1. Select **New**.
 1. For **Account Name**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
 1. Select **Save and close**.
 
 ## Set up account mapping 
+
+To set up account mapping, follow these steps.
 
 1. In the lower right corner of your IOM application screen, change the area from **IOM** to **Configurations**. If you use a left-to-right (LTR) language, this setting is located in the lower left corner of your application screen. 
 1. Go to **Mappings \> Accounts**.
@@ -36,6 +40,8 @@ This topic describes the steps required to run a sample order orchestration flow
 
 ## Set up pricelist mapping
 
+To set up pricelist mapping, follow these steps.
+
 1. Go to **Mappings \> Price Lists**.
 1. Select New.
 1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
@@ -46,6 +52,8 @@ This topic describes the steps required to run a sample order orchestration flow
 
 ## Set up unit mapping
 
+To set up unit mapping, follow these steps.
+
 1. Go to **Mappings \> Units**.
 1. Select **New**.
 1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
@@ -55,6 +63,8 @@ This topic describes the steps required to run a sample order orchestration flow
 1. Select **Save and close**.
 
 ## Set up product mapping
+
+To set up product mapping, follow these steps.
 
 1. Go to **Mappings \> Products**.
 1. Select **New**.
@@ -102,12 +112,16 @@ This topic describes the steps required to run a sample order orchestration flow
 
 ### Test run 1
 
+To complete test run 1, follow these steps.
+
 1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
 1. Send the email to the Outlook account used previously to set up IOMLabOrderIntake provider. 
 
 You will receive two emails back with attachment with fulfillment details. The order status reason will be set to "Sent To Fulfillment".
 
 ### Test run 2
+
+To complete test run 2, follow these steps.
 
 1. Change the **ordernumber** value to "IOMLabOrder002" and the **quantity** value to 10.
 1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
@@ -117,6 +131,8 @@ You will receive two requests with fulfillment details in your RequestBin. The o
 
 ### Test run 3
 
+To complete test run 3, follow these steps.
+
 1. Change the **ordernumber** value to "IOMLabOrder003" and the **quantity** value to "1".
 1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
 1. Send the email to the Outlook account used previously to set up IOMLabOrderIntake provider.
@@ -124,6 +140,8 @@ You will receive two requests with fulfillment details in your RequestBin. The o
 The order will fail the line minimum quantity validation, with the header status reason "Order Validation Failed" and the line status reason "Order Line Validation Failed".
 
 ### Test run 4
+
+To complete test run 4, follow these steps.
 
 1. Change the **ordernumber** value to "IOMLabOrder004" and the **shiptocountry** value to "CA".
 1. Save the sample sales order payload as a JSON file and attach it to an email with the subject "IOMLabOrderIntakeOrder".
