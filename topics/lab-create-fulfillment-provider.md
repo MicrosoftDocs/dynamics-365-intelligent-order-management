@@ -292,7 +292,7 @@ To add a provider definition parameter to the provider definition, follow these 
 
 ## Add provider definition logic definition to IOMLabProviders solution (RequestBin)
 
-To add a provider definition logic definition to the IOMLabProviders solution (RequestBin), follow these steps.
+To add a provider definition logic definition to the RequestBin IOMLabProviders solution, follow these steps.
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Logic Definition**.
@@ -314,4 +314,4 @@ To add a provider definition parameter to the IOMLabProviders solution, follow t
 1. Select **Add existing \> IOM Provider Definition Parameter**.
 1. Select **IOMLabOutboundFulfillmentEmail** and then select **Add** to add it to the solution.
 
-Next step: [Export provider solution](lab-export-provider-solution.md)
+Next quick start step: [Export provider solution](lab-export-provider-solution.md)
