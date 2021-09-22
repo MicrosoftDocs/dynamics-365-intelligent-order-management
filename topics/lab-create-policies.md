@@ -18,6 +18,8 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 
 ## Create new header validation policy
 
+To create a new header validation policy, follow these steps.
+
 1. Go to **Orchestration \> Policies** and select **New**.
 1. For **Policy Name**, enter "Order header validation policy".
 1. For **Policy Type**, enter "Execution Policy".
@@ -27,6 +29,8 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 1. Select **Save**.
 
 ## Create new order header validation policy rule
+
+To create new order header validation policy rule, follow these steps.
 
 1. On the order header validation policy form, select **New Rule**.
 1. For **Rule Name**, enter "ShipToCountry - US".
@@ -39,10 +43,14 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 
 ## Publish the header validation policy
 
+To publish the header validation policy, follow these steps.
+
 1. Go to the order header validation policy you created. You should be on this screen already if you followed the above steps.
 1. Select **Publish**.
 
 ## Create new line validation policy
+
+To create a new line validation policy, follow these steps.
 
 1. Go to **Orchestration \> Policies** and select **New**.
 1. For **Policy Name**, enter "Order line validation policy".
@@ -53,6 +61,8 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 1. Select **Save**.
 
 ## Create new order line validation policy rule
+
+To create a new order line validation policy rule, follow these steps.
 
 1. On the order line validation policy form, select **New Rule**.
 1. Under **Condition**, for **Rule Name**, enter "Min quantity".
@@ -65,10 +75,14 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 
 ## Publish the line validation policy
 
+To publish the line validation policy, follow these steps.
+
 1. Go to the order line validation policy you created. You should be on this screen already if you followed the above steps.
 1. Select **Publish**.
 
 ## Create simple fulfillment assignment policy
+
+To create a simple fulfillment assignment policy, follow these steps.
 
 1. Go to **Orchestration \> Policies** and select **New**.
 1. For **Policy Name**, enter "Simple fulfillment assignment policy".
@@ -78,7 +92,9 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 1. For **Associated Entity**, enter "Order Product".
 1. Select **Save**.
 
-## Create new simple fulfillment assignment policy rule for Seattle
+## Create new simple fulfillment assignment policy rule for Seattle store
+
+To create a new simple fulfillment assignment policy rule for the Seattle store, follow these steps.
 
 1. On the simple fulfillment assignment policy form, select **New Rule**.
 1. Under **Condition**, for **Rule Name**, enter "Assignment rule- Seattle".
@@ -92,7 +108,9 @@ This topic describes the steps required to create policies in Microsoft Dynamics
     1. In the third field, enter or select **Seattle store**.
 1. Select **Save and close**.
 
-## Create new simple fulfillment assignment policy rule for Chicago
+## Create new simple fulfillment assignment policy rule for Chicago store
+
+To create a new simple fulfillment assignment policy rule for the Chicago store, follow these steps.
 
 1. On the simple fulfillment assignment policy form, select **New Rule**.
 1. Under **Condition**, for **Rule Name**, enter "Assignment rule- Chicago".
@@ -108,10 +126,14 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 
 ## Publish simple fulfillment assignment policy
 
+To publish the simple fulfillment assignment policy, follow these steps.
+
 1. Go to the simple fulfillment assignment policy you created. You should be on this screen already if you followed the above steps.
 1. Select **Publish**.
 
 ## Create filter policy for Seattle store
+
+To create a filter policy for the Seattle store, follow these steps.
 
 1. Go to **Orchestration \> Policies** and select **New**.
 1. For **Policy Name**, enter "Fulfillment filter policy - Seattle".
@@ -122,6 +144,8 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 1. Select **Save**.
 
 ## Create new filter rule for Seattle store
+
+To create a new filter rule for the Seattle store, follow these steps.
 
 1. On the Fulfillment filter policy - Seattle form, select **New Rule**.
 1. Under **Condition**, for **Rule Name**, enter "Min quantity".
@@ -134,10 +158,14 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 
 ## Publish filter policy for Seattle store
 
+To publish the filter policy for the Seattle store, follow these steps.
+
 1. Go to the Seattle filter policy you created. You should be on this screen already if you followed the above steps.
 1. Select **Publish**.
 
 ## Create filter policy for Chicago store
+
+To create a filter policy for the Chicago store, follow these steps.
 
 1. Go to **Orchestration \> Policies** and select **New**.
 1. For **Policy Name**, enter "Fulfillment filter policy - Chicago".
@@ -148,6 +176,8 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 1. Select **Save**.
 
 ## Create new filter rule for Chicago store
+
+To create a new filter rule for the Chicago store, follow these steps.
 
 1. On the **Fulfillment filter policy - Chicago** form, select **New Rule**.
 1. Under **Condition**, for **Rule Name**, enter "Min quantity".
@@ -160,6 +190,8 @@ This topic describes the steps required to create policies in Microsoft Dynamics
 
 ## Publish filter policy for Chicago store
 
+To publish the filter policy for the Chicago store, follow these steps.
+
 1. Go to the Chicago filter policy you created. You should be on this screen already if you followed the above steps.
 1. Select **Publish**.
 
@@ -168,6 +200,8 @@ If you've followed along, you should now see the transpiled Power Automate cloud
 ![Transpiled Power Automate cloud flows for policies in Intelligent Order Management](./media/power-automate-cloud-flows-2.PNG)
 
 ## Add input event to action type
+
+To add an input event to an action type, follow these steps.
 
 1. Go to **Providers \> Action Types**.
 1. Select **Policy Based Fulfillment Determination**.
