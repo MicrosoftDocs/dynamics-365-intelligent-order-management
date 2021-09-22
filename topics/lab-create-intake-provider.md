@@ -259,7 +259,7 @@ To create a provider message handler, follow these steps.
 
 To add a provider definition logic definition to the provider definition, follow these steps.
 
-1. In your IOM application, go to **Providers \> Catalog**.
+1. In your Intelligent Order Management application, go to **Providers \> Catalog**.
 1. Select the newly-created **IOMLabOrderIntakeProvider**.
 1. Select **Edit** on the menu bar. 
 1. Select the **Logic definitions** tab.
