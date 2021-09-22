@@ -28,7 +28,7 @@ To create an Outlook connection, follow these steps.
 1. Select **New connection**.
 1. In the search box on the upper right corner, enter "Outlook.com".
 1. Select the plus symbol ("**+**") to create the connection.
-1. Sign in with your Outlook credentials (user name and password), which are not related to your IOM credentials.
+1. Sign in with your Outlook credentials (user name and password), which are not related to your Intelligent Order Management credentials.
 
 ### Create RequestBin connection
 
@@ -50,13 +50,13 @@ To add a provider for order intake, follow these steps.
     1. Select **Save**. 
     1. Select **Activate**.
     1. Select **Save and close**.
-1. Under the **Connections** section on the IOM provider form, select **Outlook.com**.
+1. Under the **Connections** section on the Intelligent Order Management provider form, select **Outlook.com**.
 1. Copy the Outlook.com connection URL from the corresponding Power Automate connection details page and paste it into the **Connection URL** field.
 1. On the **IOM Provider Connection Reference** form: 
     1. Select **Save**. 
     1. Select **Activate**.
     1. Select **Save and close**.
-1. On the IOM provider form, select **Activate**. This action deploys the Power Automate flow that processes the incoming email with order attachment.
+1. On the Intelligent Order Management provider form, select **Activate**. This action deploys the Power Automate flow that processes the incoming email with order attachment.
 
 ## Add provider for fulfillment 
 
@@ -74,7 +74,7 @@ To add a provider for fulfillment, follow these steps.
 
 To view the deployed Power Automate component, follow these steps.
 
-1. Go to the maker portal at https://make.powerapps.com/ and make sure you are in the right IOM trial environment. To check which environment you are in, select **Environment** icon on the top right corner of the maker portal.
+1. Go to the maker portal at https://make.powerapps.com/ and make sure you are in the right Intelligent Order Management trial environment. To check which environment you are in, select **Environment** icon on the top right corner of the maker portal.
 1. Go to **Solutions \> Default Solution**. 
 1. Filter the solution component to display only cloud flows. You should now see the following Power Automate flows.
 
