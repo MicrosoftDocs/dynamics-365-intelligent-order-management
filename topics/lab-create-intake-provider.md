@@ -270,7 +270,7 @@ To add a provider definition logic definition to the provider definition, follow
 1. For **Logic Type**, enter "Provide Message Handler".
 1. For **Workflow Name**, enter "IOM Lab Order Intake Message Request Handler".
 1. For **Timeout Minutes**, enter "2".
-1. For **Max Retry Attmepts**, enter "3".
+1. For **Max Retry Attempts**, enter "3".
 1. For **Description**, enter "IOM Lab Order Intake Message Request Handler".
 1. Select **Save**. This generates a JSON representation of the message handler cloud flow and fills in the **Client Data** field.
 1. Select **Save and close**.
