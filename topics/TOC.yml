@@ -12,9 +12,9 @@
       href: deploy.md
     - name: Get support
       href: support.md
-    - name: Quick start guide
+    - name: Quick start lab
       items:
-      - name: Quick start overview
+      - name: Quick start lab overview
         href: lab-quick-start-overview.md
       - name: Create and configure connections
         href: lab-create-configure-connections.md
