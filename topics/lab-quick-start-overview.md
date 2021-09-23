@@ -15,3 +15,7 @@ title: Quick start overview
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the quick start guide for Microsoft Dynamics 365 Intelligent Order Management.
+
+
+
+Next quick start step: [Create and configure connections](lab-create-configure-connections.md)
