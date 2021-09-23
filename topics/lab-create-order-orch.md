@@ -96,4 +96,4 @@ If you've followed along, you should see the transpiled Power Automate cloud flo
 
 ![Transpiled Power Automate cloud flows in Intelligent Order Management](media/lab_order_orch.png)
 
-Next quick start step: [Run sample order orchestration flow](lab-run-sample-order-orch-flow.md)
+Next quick start lab step: [Run sample order orchestration flow](lab-run-sample-order-orch-flow.md)
