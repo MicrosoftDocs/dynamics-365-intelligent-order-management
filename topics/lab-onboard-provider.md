@@ -80,5 +80,5 @@ To view the deployed Power Automate component, follow these steps.
 
 ![Power Automate cloud flows in Intelligent Order Management](media/lab_power_automate_flows.png)
 
-Next quick start step: [Create policies](lab-create-policies.md)
+Next quick start lab step: [Create policies](lab-create-policies.md)
 
