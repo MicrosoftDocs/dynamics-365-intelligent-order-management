@@ -35,4 +35,4 @@ To clean up after export, follow these steps.
 > [!NOTE]
 > New flows are generated when instantiating a provider. If these flows are not turned off, more than the expected outgoing payload will be sent.
 
-Next quick start step: [Onboard provider instance](lab-onboard-provider.md)
+Next quick start lab step: [Onboard provider instance](lab-onboard-provider.md)
