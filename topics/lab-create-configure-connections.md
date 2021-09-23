@@ -64,4 +64,4 @@ To configure platform connection references, follow these steps.
     1. Return to the corresponding Intelligent Order Management platform connection reference page and paste the copied URL into the **Connection URL** field.
 1. Select **Activate System**. 
 
-Next quick start step: [Create provider solution](lab-create-provider-solution.md)
+Next quick start lab step: [Create provider solution](lab-create-provider-solution.md)
