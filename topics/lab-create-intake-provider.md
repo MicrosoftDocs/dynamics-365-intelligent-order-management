@@ -252,7 +252,7 @@ To create a provider message handler, follow these steps.
 59. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
 60. In the **Finally** scope, select **Add an action**, add "perform an unbound action" and rename it "Save Provider message request execution result".
 61. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus".
-62. For **ProviderMessageRequestExecutionId**, enter ``outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
+62. For **ProviderMessageRequestExecutionId**, enter ``@outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
 63. Select **Save**.
 
 ## Add provider definition logic definition to the provider definition
