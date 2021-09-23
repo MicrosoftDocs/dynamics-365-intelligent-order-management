@@ -73,4 +73,4 @@ The following illustration shows an nominal exception flow caused by an order li
 ![Exception flow (order line validation failed)](media/lab_flow_1.png)
 
 
-Next quick start step: [Create and configure connections](lab-create-configure-connections.md)
+Next quick start lab step: [Create and configure connections](lab-create-configure-connections.md)
