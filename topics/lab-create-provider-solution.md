@@ -30,4 +30,4 @@ To create a new provider solution, follow these steps.
 1. For **Publisher**, select **CDS Default Publisher**.
 1. For **Version**, enter "1.0.0.0".
 
-Next quick start step: [Create RequestBin custom connector](lab-create-requestbin-connector.md).
+Next quick start lab step: [Create RequestBin custom connector](lab-create-requestbin-connector.md).
