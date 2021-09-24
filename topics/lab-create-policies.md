@@ -39,7 +39,9 @@ To create new order header validation policy rule, follow these steps.
     1. In the second field, select **Equals**.
     1. In the third field, select **US**.
 1. For **Policy**, enter or select "Order header validation policy".
-1. Select **Save and close**. 
+
+![Order header validation rule](media/lab_order_header_validation_rule.png)
+1. Select **Save & close**. 
 
 ## Publish the header validation policy
 
@@ -71,6 +73,8 @@ To create a new order line validation policy rule, follow these steps.
     1. In the second field, select **Is greater than or equal to**.
     1. In the third field, enter or select **5**.
 1. Under **Action**, set the **Add Action** value to **No**.
+
+![Order line validation rule](media/lab_order_line_validation_rule.png)
 1. Select **Save and close**.
 
 ## Publish the line validation policy
@@ -106,6 +110,8 @@ To create a new simple fulfillment assignment policy rule for the Seattle store,
     1. In the first field, select **Fulfillment Source**.
     1. In the second field, select **Set Value**.
     1. In the third field, enter or select **Seattle store**.
+
+![Assignment rule (Seattle)](media/lab_assignment_rule_seattle.png)
 1. Select **Save and close**.
 
 ## Create new simple fulfillment assignment policy rule for Chicago store
@@ -122,6 +128,8 @@ To create a new simple fulfillment assignment policy rule for the Chicago store,
     1. In the first field, select **Fulfillment Source**.
     1. In the second field, select **Set Value**.
     1. In the third field, enter or select **Chicago store**.
+![Assignment rule (Chicago)](media/lab_assignment_rule_chicago.png)
+
 1. Select **Save and close**.
 
 ## Publish simple fulfillment assignment policy
@@ -154,6 +162,8 @@ To create a new filter rule for the Seattle store, follow these steps.
     1. In the second field, select **Equals**.
     1. In the third field, enter or select **Seattle store**.
 1. Under **Action**, set the **Add Action** value to **No**.
+
+![Filter rule (Seattle)](media/lab_filter_rule_seattle.png)
 1. Select **Save and close**.
 
 ## Publish filter policy for Seattle store
@@ -186,6 +196,8 @@ To create a new filter rule for the Chicago store, follow these steps.
     1. In the second field, select **Equals**.
     1. In the third field, enter or select **Chicago store**.
 1. Under **Action**, set the **Add Action** value to **No**.
+
+![Filter rule (Chicago)](media/lab_filter_rule_chicago.png)
 1. Select **Save and close**.
 
 ## Publish filter policy for Chicago store
