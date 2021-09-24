@@ -88,7 +88,7 @@ To add a **Send to fulfillment** tile under the Seattle branch, follow these ste
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Under the **Seattle** branch, select the plus symbol ("+") and then add a **Send to fulfillment** tile.
 
-![Send to fulfillment tile](media/lab_send_fulfillment_tile.png)
+![Send to fulfillment tile (Seattle)](media/lab_send_fulfillment_tile.png)
 1. In the **Send to fulfillment** dialog box, do the following:
     1. For **Name**, enter "Send to Seattle".
     1. For **Action Type**, enter "Send to Fulfillment".
@@ -96,7 +96,7 @@ To add a **Send to fulfillment** tile under the Seattle branch, follow these ste
     1. For **Provider Action**, enter "IOM Lab Send to Fulfillment (Outlook)".
     1. For **Filter Policy**, enter "Fulfillment filter policy - Seattle".
 
-    ![Send to fulfillment properties](media/lab_send_fulfillment_prop.png)
+    ![Send to fulfillment properties (Seattle)](media/lab_send_fulfillment_prop.png)
 1. Select **Save**.
 
 ## Add a Send to fulfillment tile under Chicago branch
@@ -106,7 +106,7 @@ To add a **Send to fulfillment** tile under the Chicago branch, follow these ste
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Under the **Chicago** branch, select the plus symbol ("+") and then add a **Send to fulfillment** tile.
 
-![Send to fulfillment tile](media/lab_send_fulfillment_tile_2.png)
+![Send to fulfillment tile (Chicago)](media/lab_send_fulfillment_tile_2.png)
 1. In the **Send to fulfillment** dialog box, do the following:
     1. For **Name**, enter "Send to Chicago".
     1. For **Action Type**, enter "Send to Fulfillment".
@@ -114,7 +114,7 @@ To add a **Send to fulfillment** tile under the Chicago branch, follow these ste
     1. For **Provider Action**, enter "IOM Lab Send to Fulfillment (RequestBin)".
     1. For **Filter Policy**, enter "Fulfillment filter policy - Chicago".
 
-    ![Send to fulfillment properties](media/lab_send_fulfillment_prop_2.png)
+    ![Send to fulfillment properties (Chicago)](media/lab_send_fulfillment_prop_2.png)
 1. Select **Save**.
 
 ## Publish the orchestration flow
