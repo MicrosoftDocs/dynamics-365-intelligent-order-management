@@ -37,15 +37,29 @@ To create a custom connector, follow these steps.
 1. Select **Security**.
 1. Select **Definition**.
 1. Select **+ New action**. 
-1. For **Summary**, enter "Create fulfillment order".
-1. For **Description**, enter "Create fulfillment order".
-1. For **Operation ID**, enter "CreateFulfillmentOrder".
-1. For **Visibility**, select **none**.
+1. In the **General** dialog box, do the following:
+    1. For **Summary**, enter "Create fulfillment order".
+    1. For **Description**, enter "Create fulfillment order".
+    1. For **Operation ID**, enter "CreateFulfillmentOrder".
+    1. For **Visibility**, select **none**.
 1. Under **Request**, select **Import from sample**.
-1. For **Verb**, select **POST**.
-1. For **URL**, enter the public endpoint URL you obtained from RequestBin, including ``https://``.
+1. In the **Import from sample** dialog box, do the following:
+    1. For **Verb**, select **POST**.
+    1. For **URL**, enter `https://<URL_FROM_REQUESTBIN>/CreateFulfillmentOrder`, where **\<URL\_FROM\_REQUESTBIN\>** is the public endpoint URL you obtained from RequestBin.
+1. Select **Import**.
+1. Select **+ New action**.
+1. In the **General** dialog box, do the following:
+    1. For **Summary**, enter "Create fulfillment order lines".
+    1. For **Description**, enter "Create fulfillment order lines".
+    1. For **Operation ID**, enter "CreateFulfillmentOrderLines".
+    1. For **Visibility**, select **none**.
+1. Under **Request**, select **Import from sample**.
+1. In the **Import from sample** dialog box, do the following:
+    1. For **Verb**, select **POST**.
+    1. For **URL**, enter `https://<URL_FROM_REQUESTBIN>/CreateFulfillmentOrderLines`, where **\<URL\_FROM\_REQUESTBIN\>** is the public endpoint URL you obtained from RequestBin.
 1. Select **Import**.
 1. Select **Create connector**.
+
 
 Next quick start lab step: [Create intake provider](lab-create-intake-provider.md)
 
