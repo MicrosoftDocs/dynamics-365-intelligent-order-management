@@ -23,6 +23,7 @@ To add the **Validate order header** tile, follow these steps.
 1. Go to **Orchestration \> Flows** and select **New**.
 1. Enter a name for your new flow, and then select **Save**.
 1. Select the plus symbol ("+") and then add the **Validate order header** tile.
+
     ![Validate order header tile](media/lab_validate_order_header_tile.png)
 1. In the **Validate order header** dialog box, do the following:
     1. For **Name**, enter "Order header validation".
