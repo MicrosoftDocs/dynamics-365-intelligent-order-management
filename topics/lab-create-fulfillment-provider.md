@@ -262,46 +262,66 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
 1. Add an "Apply to each" control with a **Create fulfillment order lines** action from the RequestBin connection as follows:
     - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
     - **Current item** is selected from under **Dynamic content**.
+
+    ![Apply to each control (Requestbin)](media/lab_apply_to_each_control_2.png)
 1. Within the loop, add an **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
     - For **Value**, select **Fulfillment line ID** from under **Dynamic content**. 
+
+    ![Append to array action (fulfillment)](media/lab_append_to_array_1.png)
 1. Within the loop, add another **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedSalesOrderLines".
     - For **Value**, select **Sales line ID** from under **Dynamic content**.
+
+    ![Append to array action (sales)](media/lab_append_to_array_2.png)
 1. Collapse the **Try** scope by selecting its title bar. 
 1. Select **New step** and add another scope renamed "Catch".
 1. On the **Catch** scope, select the ellipsis ("**...**"), select **Configure run after**, and configure as follows:
     - Select the **has failed** checkbox.
     - Select the **has timed out** checkbox.
+
+    ![Catch scope)](media/lab_catch_scope.png)
 1. In the **Catch** scope, select **Add an action** and add a **Set variable** action, and rename it "Set the execution result to failed".
 1. Configure the properties as follows:
     - For **Name**, enter "ExecutionResult".
     - For **Value**, enter "false".
+
+    ![Set variable)](media/lab_set_variable.png)
 1. Select **New step**, and add another scope renamed "Finally".
-1. On the **Finally** scope, select the ellipsis ("**...**"),  select **Configure run after**, and configure as follows:
+1. In the **Finally** scope, select the ellipsis ("**...**"),  select **Configure run after**, and configure as follows:
     - Select the **is successful** checkbox.
     - Select the **has timed out** checkbox.
     - Select the **is skipped** checkbox.
     - Select the **has timed out** checkbox.
+
+    ![Finally scope)](media/lab_finally_scope.png)
 1. In the **Finally** scope, add a "condition" step and compare the **ExecutionResult** variable to "true" as follows:
     - In the first field, select the **ExecutionResult** variable.
     - In the second field, select **is equal to**.
     - In the third field, select **true**.
+
+    ![Condition step](media/lab_condition_step.png)
 1. In the **If yes** branch, add a **Run a child flow** action and rename it "Raise Business Events for processed fulfillment order lines".
 1. Configure the properties as follows:
     - For **Child flow**, enter "IOM Raise Business Event".
     - For **BusinessEventDefinitionId**, enter "063d85c8-60a4-eb11-9443-000d3a313675".
     - For **EntityRecordId**, specify the following as expressions: `string(variables('ProcessedFulfillmentOrderLines'))`
+
+    ![Run child flow action (business events)](media/lab_run_child_flow_action_1.png)
 1. In the **If yes** branch, add another **Run a child flow** action and rename it "Raise Sales Order Aggregated Events".
 1. Configure the properties as follows:
    - For **LineBusinessEventDefinitionId**, enter "ccf64002-61a4-eb11-9443-000d3a313675".
    - For **LineRecordId**, specify the following as an expression: `string(variables('ProcessedSalesOrderLines'))`.
    - For **OrderBusinessEventDefinitionId**, enter "48688716-61a4-eb11-9443-000d3a313675".
+
+    ![Run child flow action (aggregated events)](media/lab_run_child_flow_action_2.png)
 1. Collapse the condition step.  
 1. Add a **Perform an unbound action** action as follows:
     - For **Action name**, enter "msdyn_CompleteProviderActionExecution".
     - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content**.
     - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content**.
+
+    ![Perform unbound action)](media/lab_perform_unbound_action.png)
 1. Select **Save**.
 
 ## Add provider definition logic definition to the provider definition (RequestBin)
