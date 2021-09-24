@@ -45,8 +45,11 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 1. Open the **Default Solution**.
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (Outlook)".
-1. Select the trigger type as **Manually trigger a flow**.
-1. (Step to configure trigger properties.)
+1. Select the trigger type as **Manually trigger a flow** and then do the following:
+    1. Select **Add an input**, select **Text**, and then enter "ProviderActionExecutionEventId" in the first field.
+    1. Select **Add an input**, select **Text**, and then enter "EntityRecordId" in the first field.
+
+    ![Manually trigger a flow properties](media/lab_man_trig_flow_prop.png)
 1. Create a variable initialization action:
     - For **Name**, enter "ExecutionResult".
     - For **Type**, select **Boolean**.
@@ -57,18 +60,24 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 1. Create a third variable initialization action:
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
     - For **Type**, select **Array**.
+
+    ![Variable initialization actions](media/lab_variable_init_actions.png)
 1. Add a **Try** scope.
 1. Within the **Try** scope, add a "perform an unbound action" action as follows:
     - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
     - **PowerAutomateRunId**: Specify the following as an expression: `workflow()['run']?['name']`.
-1. Add a "Get a row by ID" action as follows:
+
+    ![Try scope](media/lab_try_scope.png)
+1. Add a **Get a row by ID** action and then do the following:
     - For **Table name**, enter "Fulfillment Orders".
     - For **Row ID**, select **EntityRecordId** under **Dynamic content**.
-1. Add a "Send an email" action from the Outlook.com connector, as follows. There are couple of email connectors, make sure to select Outlook.com since that's the connection set up earlier.
+
+    ![Get a row ID action](media/lab_get_row_id_action.png)
+1. Add a **Send an email** action from the Outlook.com connector, as follows. There are couple of email connectors, make sure to select Outlook.com since that's the connection set up earlier.
     - On the **To** line, "placeholder@placeholder.com” is used as placeholder text. This will be replaced by a provider parameter in later steps.
     - On the **Subject** line, "name" is obtained from the **Get fulfillment order** step under **Dynamic content**.
     - For **Body**, specify the following as an expression: `outputs('Get_fulfillment_order')['body']`
-1. Add a "list rows" action as follows:
+1. Add a **List rows** action as follows:
     - For **Table name**, enter "Fulfillment Order Products".
     - For **Fetch Xml query** enter the following: </br>
     ```XML
@@ -80,14 +89,14 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
           </filter>
        </entity>  
      </fetch>```
-1. Add an "Apply to each" control with a "Send an email" action as follows:
+1. Add an **Apply to each** control with a **Send an email** action as follows:
     - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
     - **name** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
     - **Current item** is selected from under **Dynamic content**.
-1. Within the loop, add an "Append to array variable" action as follows:
+1. Within the loop, add an **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
     - For **Value**, select **Fulfillment line ID** from under **Dynamic content**. 
-1. Within the loop, add another "Append to array variable" action as follows:
+1. Within the loop, add another **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedSalesOrderLines".
     - For **Value**, select **Sales line ID** from under **Dynamic content*.
 1. Collapse the **Try** scope by selecting its title bar. 
@@ -95,7 +104,7 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 1. On the **Catch** scope, select the ellipsis ("**...**"), select **Configure run after**, and configure as follows:
     - Select the **has failed** checkbox.
     - Select the **has timed out** checkbox.
-1. In the **Catch** scope, select **Add an action** and add a "set variable" action, and rename it "Set the execution result to failed".
+1. In the **Catch** scope, select **Add an action** and add a **Set variable** action, and rename it "Set the execution result to failed".
 1. Configure the properties as follows:
     - For **Name**, enter "ExecutionResult".
     - For **Value**, enter "false".
@@ -109,18 +118,18 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
     - In the first field, select the **ExecutionResult** variable.
     - In the second field, select **is equal to**.
     - In the third field, select **true**.
-1. In the **If yes** branch, add a "run a child flow" action and rename it "Raise Business Events for processed fulfillment order lines".
+1. In the **If yes** branch, add a **Run a child flow** action and rename it "Raise Business Events for processed fulfillment order lines".
 1. Configure the properties as follows:
     - For **Child flow**, enter "IOM Raise Business Event".
     - For **BusinessEventDefinitionId**, enter "063d85c8-60a4-eb11-9443-000d3a313675".
     - For **EntityRecordId**, specify the following as expressions: `string(variables('ProcessedFulfillmentOrderLines'))`
-1. In the **If yes** branch, add another "run a child flow" action and rename it "Raise Sales Order Aggregated Events".
+1. In the **If yes** branch, add another **Run a child flow** action and rename it "Raise Sales Order Aggregated Events".
 1. Configure the properties as follows:
    - For **LineBusinessEventDefinitionId**, enter "ccf64002-61a4-eb11-9443-000d3a313675".
    - For **LineRecordId**, specify the following as an expression: `string(variables('ProcessedSalesOrderLines'))`.
    - For **OrderBusinessEventDefinitionId**, enter "48688716-61a4-eb11-9443-000d3a313675".
 1. Collapse the condition step.  
-1. Add a "perform an unbound action" action as follows:
+1. Add a **Perform an unbound action** action as follows:
     - For **Action name**, enter "msdyn_CompleteProviderActionExecution".
     - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content*.
     - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content*.
@@ -189,15 +198,15 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
     - For **Type**, select **Array**.
 1. Add a **Try** scope.
-1. Within the **Try** scope, add a "perform an unbound action" action as follows:
+1. Within the **Try** scope, add a **Perform an unbound action** action as follows:
     - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
     - **PowerAutomateRunId**: Specify the following as an expression: `workflow()['run']?['name']`.
-1. Add a "Get a row by ID" action and configure it as follows:
+1. Add a **Get a row by ID** action and configure it as follows:
     - For **Table name**, enter "Fulfillment Orders".
     - For **Row ID**, select **EntityRecordId** under **Dynamic content**.
-1. Add a "create fulfillment order" action from the RequestBin connector, as follows. 
+1. Add a **Create fulfillment order** action from the RequestBin connector, as follows. 
     - For **Body**, select **body** from under **Dynamic content**.
-1. Add a "list rows" action as follows:
+1. Add a **List rows** action as follows:
     - For **Table name**, enter "Fulfillment Order Products".
     - For **Fetch Xml query** enter the following: </br>
     ```XML
@@ -209,13 +218,13 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
           </filter>
        </entity>  
      </fetch>```
-1. Add an "Apply to each" control with a "Create fulfillment order lines" action from the RequestBin connection as follows:
+1. Add an "Apply to each" control with a **Create fulfillment order lines** action from the RequestBin connection as follows:
     - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content*. 
     - **Current item** is selected from under **Dynamic content*.
-1. Within the loop, add an "Append to array variable" action as follows:
+1. Within the loop, add an **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
     - For **Value**, select **Fulfillment line ID** from under **Dynamic content*. 
-1. Within the loop, add another "Append to array variable" action as follows:
+1. Within the loop, add another **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedSalesOrderLines".
     - For **Value**, select **Sales line ID** from under **Dynamic content*.
 1. Collapse the **Try** scope by selecting its title bar. 
@@ -223,7 +232,7 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
 1. On the **Catch** scope, select the ellipsis ("**...**"), select **Configure run after**, and configure as follows:
     - Select the **has failed** checkbox.
     - Select the **has timed out** checkbox.
-1. In the **Catch** scope, select **Add an action** and add a "set variable" action, and rename it "Set the execution result to failed".
+1. In the **Catch** scope, select **Add an action** and add a **Set variable** action, and rename it "Set the execution result to failed".
 1. Configure the properties as follows:
     - For **Name**, enter "ExecutionResult".
     - For **Value**, enter "false".
@@ -237,18 +246,18 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
     - In the first field, select the **ExecutionResult** variable.
     - In the second field, select **is equal to**.
     - In the third field, select **true**.
-1. In the **If yes** branch, add a "run a child flow" action and rename it "Raise Business Events for processed fulfillment order lines".
+1. In the **If yes** branch, add a **Run a child flow** action and rename it "Raise Business Events for processed fulfillment order lines".
 1. Configure the properties as follows:
     - For **Child flow**, enter "IOM Raise Business Event".
     - For **BusinessEventDefinitionId**, enter "063d85c8-60a4-eb11-9443-000d3a313675".
     - For **EntityRecordId**, specify the following as expressions: `string(variables('ProcessedFulfillmentOrderLines'))`
-1. In the **If yes** branch, add another "run a child flow" action and rename it "Raise Sales Order Aggregated Events".
+1. In the **If yes** branch, add another **Run a child flow** action and rename it "Raise Sales Order Aggregated Events".
 1. Configure the properties as follows:
    - For **LineBusinessEventDefinitionId**, enter "ccf64002-61a4-eb11-9443-000d3a313675".
    - For **LineRecordId**, specify the following as an expression: `string(variables('ProcessedSalesOrderLines'))`.
    - For **OrderBusinessEventDefinitionId**, enter "48688716-61a4-eb11-9443-000d3a313675".
 1. Collapse the condition step.  
-1. Add a "perform an unbound action" action as follows:
+1. Add a **Perform an unbound action** action as follows:
     - For **Action name**, enter "msdyn_CompleteProviderActionExecution".
     - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content*.
     - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content*.
