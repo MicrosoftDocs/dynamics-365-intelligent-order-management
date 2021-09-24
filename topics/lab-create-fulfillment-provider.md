@@ -82,18 +82,20 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 1. Add a **List rows** action as follows:
     - For **Table name**, enter "Fulfillment Order Products".
     - For **Fetch Xml query** enter the following: </br>
+
     ```XML
     <fetch>  
-       <entity name="msdyn_fulfillmentorderdetail">  
+      <entity name="msdyn_fulfillmentorderdetail">  
        <all-attributes />
-   	      <filter>
-          <condition attribute="msdyn_fulfillmentid" operator="eq" value="@{triggerBody()['text_1']}"/>
-          </filter>
-       </entity>  
-     </fetch>```
+   	     <filter>
+         <condition attribute="msdyn_fulfillmentid" operator="eq" value="@{triggerBody()['text_1']}"/>
+         </filter>
+      </entity>  
+    </fetch>
+    ```
 
     ![List rows action](media/lab_list_rows_action.png)
-1. Add an **Apply to each** control with a **Send an email** action as follows:
+1. Add an **Apply to each** control with a **Send an email** action as follows:   
     - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
     - **name** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
     - **Current item** is selected from under **Dynamic content**.
@@ -209,8 +211,11 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
 1. Open the **Default Solution**.
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (RequestBin)".
-1. Select the trigger type as **Manually trigger a flow**.
-1. (Step to configure trigger properties.)
+1. Select the trigger type as **Manually trigger a flow** and then do the following:
+    1. Select **Add an input**, select **Text**, and then enter "ProviderActionExecutionEventId" in the first field.
+    1. Select **Add an input**, select **Text**, and then enter "EntityRecordId" in the first field.
+
+    ![Manually trigger a flow properties (RequestBin)](media/lab_man_trig_flow_prop.png)
 1. Create a variable initialization action:
     - For **Name**, enter "ExecutionResult".
     - For **Type**, select **Boolean**.
@@ -221,27 +226,39 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
 1. Create a third variable initialization action:
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
     - For **Type**, select **Array**.
+
+    ![Variable initialization actions (RequestBin)](media/lab_variable_init_actions.png)
 1. Add a **Try** scope.
 1. Within the **Try** scope, add a **Perform an unbound action** action as follows:
     - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
     - **PowerAutomateRunId**: Specify the following as an expression: `workflow()['run']?['name']`.
+
+    ![Try scope (RequestBin)](media/lab_try_scope.png)
 1. Add a **Get a row by ID** action and configure it as follows:
     - For **Table name**, enter "Fulfillment Orders".
     - For **Row ID**, select **EntityRecordId** under **Dynamic content**.
+
+    ![Get a row ID action (RequestBin)](media/lab_get_row_id_action.png)
 1. Add a **Create fulfillment order** action from the RequestBin connector, as follows. 
     - For **Body**, select **body** from under **Dynamic content**.
+
+    ![Create fulfillment order action)](media/lab_create_fulfillment_order.png)
 1. Add a **List rows** action as follows:
     - For **Table name**, enter "Fulfillment Order Products".
     - For **Fetch Xml query** enter the following: </br>
+
     ```XML
     <fetch>  
-       <entity name="msdyn_fulfillmentorderdetail">  
+      <entity name="msdyn_fulfillmentorderdetail">  
        <all-attributes />
-   	      <filter>
-          <condition attribute="msdyn_fulfillmentid" operator="eq" value="@{triggerBody()['text_1']}"/>
-          </filter>
-       </entity>  
-     </fetch>```
+   	     <filter>
+         <condition attribute="msdyn_fulfillmentid" operator="eq" value="@{triggerBody()['text_1']}"/>
+         </filter>
+      </entity>  
+    </fetch>
+    ```
+
+    ![List rows action](media/lab_list_rows_action.png)
 1. Add an "Apply to each" control with a **Create fulfillment order lines** action from the RequestBin connection as follows:
     - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
     - **Current item** is selected from under **Dynamic content**.
