@@ -153,8 +153,8 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 1. Collapse the condition step.  
 1. Add a **Perform an unbound action** action as follows:
     - For **Action name**, enter "msdyn_CompleteProviderActionExecution".
-    - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content*.
-    - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content*.
+    - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content**.
+    - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content**.
 
     ![Perform unbound action)](media/lab_perform_unbound_action.png)
 1. Select **Save**.
@@ -243,14 +243,14 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
        </entity>  
      </fetch>```
 1. Add an "Apply to each" control with a **Create fulfillment order lines** action from the RequestBin connection as follows:
-    - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content*. 
-    - **Current item** is selected from under **Dynamic content*.
+    - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
+    - **Current item** is selected from under **Dynamic content**.
 1. Within the loop, add an **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
-    - For **Value**, select **Fulfillment line ID** from under **Dynamic content*. 
+    - For **Value**, select **Fulfillment line ID** from under **Dynamic content**. 
 1. Within the loop, add another **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedSalesOrderLines".
-    - For **Value**, select **Sales line ID** from under **Dynamic content*.
+    - For **Value**, select **Sales line ID** from under **Dynamic content**.
 1. Collapse the **Try** scope by selecting its title bar. 
 1. Select **New step** and add another scope renamed "Catch".
 1. On the **Catch** scope, select the ellipsis ("**...**"), select **Configure run after**, and configure as follows:
@@ -283,8 +283,8 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
 1. Collapse the condition step.  
 1. Add a **Perform an unbound action** action as follows:
     - For **Action name**, enter "msdyn_CompleteProviderActionExecution".
-    - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content*.
-    - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content*.
+    - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content**.
+    - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content**.
 1. Select **Save**.
 
 ## Add provider definition logic definition to the provider definition (RequestBin)
