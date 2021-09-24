@@ -23,7 +23,7 @@ To set up a customer, follow these steps.
 1. Go to **Customers \> Accounts**.
 1. Select **New**.
 1. For **Account Name**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
-1. Select **Save and close**.
+1. Select **Save & close**.
 
 ## Set up account mapping 
 
@@ -32,23 +32,25 @@ To set up account mapping, follow these steps.
 1. In the lower right corner of your Intelligent Order Management application screen, change the area from **IOM** to **Configurations**. If you use a left-to-right (LTR) language, this setting is located in the lower left corner of your application screen. 
 1. Go to **Mappings \> Accounts**.
 1. Select **New**.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
-1. For **Customer**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
-1. For **External Field Name**, enter "ProviderName".
-1. For **External Field Value**, enter "IOMLabOrderIntakeProvider".
-1. Select **Save and close**.
+1. On the **New IOM Account Mapping** page, do the following: 
+    1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+    1. For **Customer**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
+    1. For **External Field Name**, enter "ProviderName".
+    1. For **External Field Value**, enter "IOMLabOrderIntakeProvider".
+1. Select **Save & close**.
 
 ## Set up pricelist mapping
 
 To set up pricelist mapping, follow these steps.
 
 1. Go to **Mappings \> Price Lists**.
-1. Select New.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
-1. For **Price list**, enter "MasterPriceList".
-1. For **External Field Name**, enter "ProviderName".
-1. For **External Field Value**, enter "IOMLabOrderIntakeProvider".
-1. Select **Save and close**.
+1. Select **New**.
+1. On the **New IOM Price List Mapping** page, do the following:
+    1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+    1. For **Price list**, enter "MasterPriceList".
+    1. For **External Field Name**, enter "ProviderName".
+    1. For **External Field Value**, enter "IOMLabOrderIntakeProvider".
+1. Select **Save & close**.
 
 ## Set up unit mapping
 
@@ -56,11 +58,12 @@ To set up unit mapping, follow these steps.
 
 1. Go to **Mappings \> Units**.
 1. Select **New**.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
-1. For **Unit**, enter "ea".
-1. For **External Field Name**, enter "unit".
-1. For **External Field Value**, enter "each".
-1. Select **Save and close**.
+1. On the **New IOM Unit Mapping** page, do the following:
+    1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+    1. For **Unit**, enter "ea".
+    1. For **External Field Name**, enter "unit".
+    1. For **External Field Value**, enter "each".
+1. Select **Save & close**.
 
 ## Set up product mapping
 
@@ -68,11 +71,12 @@ To set up product mapping, follow these steps.
 
 1. Go to **Mappings \> Products**.
 1. Select **New**.
-1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
-1. For **Product**, enter "Barista Home".
-1. For **External Field Name**, enter "sku".
-1. For **External Field Value**, enter "883988211855".
-1. Select **Save and close**.
+1. On the **New IOM Product Mapping** page, do the following:
+    1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+    1. For **Product**, enter "Barista Home".
+    1. For **External Field Name**, enter "sku".
+    1. For **External Field Value**, enter "883988211855".
+1. Select **Save & close**.
 
 ## Sample sales order payload
 
