@@ -26,7 +26,7 @@ This topic describes the steps required to onboard a provider instance in Micros
 To create an Outlook connection, follow these steps.
 
 1. Select **New connection**.
-1. In the search box on the upper right corner, enter "Outlook.com".
+1. In the search box in the upper right corner, enter "Outlook.com".
 1. Select the plus symbol ("**+**") to create the connection.
 1. Sign in with your Outlook credentials (user name and password), which are not related to your Intelligent Order Management credentials.
 
@@ -35,7 +35,7 @@ To create an Outlook connection, follow these steps.
 To create a RequestBin connection, follow these steps.
 
 1. Select **New connection**.
-1. In the search box on the upper right corner, enter "requestbin".
+1. In the search box in the upper right corner, enter "requestbin".
 1. Select the plus symbol ("**+**") to create the connection.
 
 ## Add provider for order intake
@@ -43,20 +43,19 @@ To create a RequestBin connection, follow these steps.
 To add a provider for order intake, follow these steps.
 
 1. Go to **Providers \> Catalog** and select **Add Provider** on the **IOMLabOrderIntakeProvider** tile.
-1. Under the **Connections** section, select **Microsoft Dataverse** to navigate to the **IOM Provider Connection Reference** form.
-1. Very similar to how platform connection references are set up, we need to set up connection reference to corresponding Power Automate connections created in previous steps. 
-1. Copy the connection URL from the Dataverse Power Automate connection and paste it into the **Connection URL** field. 
+1. Under the **Connections** section, select **Microsoft Dataverse** to navigate to the **IOM Provider Connection Reference** form. Similar to how platform connection references were set up, you'll need to set up connection references to corresponding Power Automate connections created in previous steps.  
 1. On the **IOM Provider Connection Reference** form: 
+    1. Copy the connection URL from the Dataverse Power Automate connection details page and paste it into the **Connection URL** field.
     1. Select **Save**. 
     1. Select **Activate**.
-    1. Select **Save and close**.
-1. Under the **Connections** section on the Intelligent Order Management provider form, select **Outlook.com**.
-1. Copy the Outlook.com connection URL from the corresponding Power Automate connection details page and paste it into the **Connection URL** field.
+    1. Select **Save & close**.
+1. On the **IOM provider** form, under the **Connections** section select **Outlook.com**.
 1. On the **IOM Provider Connection Reference** form: 
+    1. Copy the Outlook.com connection URL from the corresponding Power Automate connection details page and paste it into the **Connection URL** field.
     1. Select **Save**. 
     1. Select **Activate**.
-    1. Select **Save and close**.
-1. On the Intelligent Order Management provider form, select **Activate**. This action deploys the Power Automate flow that processes the incoming email with order attachment.
+    1. Select **Save & close**.
+1. On the **IOM provider** form, select **Activate**. This action deploys the Power Automate flow that processes the incoming email with order attachment.
 
 ## Add provider for fulfillment 
 
@@ -74,9 +73,9 @@ To add a provider for fulfillment, follow these steps.
 
 To view the deployed Power Automate component, follow these steps.
 
-1. Go to the maker portal at https://make.powerapps.com/ and make sure you are in the right Intelligent Order Management trial environment. To check which environment you are in, select **Environment** icon on the top right corner of the maker portal.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and confirm that you are in the correct Intelligent Order Management trial environment. To check which environment you are in, select the **Environment** icon on the top right corner of the maker portal.
 1. Go to **Solutions \> Default Solution**. 
-1. Filter the solution component to display only cloud flows. You should now see the following Power Automate flows.
+1. Filter the solution component to display only "Cloud flow". You should now see the following Power Automate flows.
 
 ![Power Automate cloud flows in Intelligent Order Management](media/lab_power_automate_flows.png)
 
