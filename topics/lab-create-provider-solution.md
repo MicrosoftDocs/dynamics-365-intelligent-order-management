@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic describes the steps required to create a new provider solution package in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 09/01/2021
+ms.date: 10/01/2021
 ms.topic: how-to
 ms.author: josaw
 
@@ -22,7 +22,7 @@ It is recommended to have one provider per solution, but multiple providers can 
 
 To create a new provider solution, follow these steps.
 
-1. Go to the [Power App Maker Portal](https://make.powerapps.com) and sign in with your IOM credentials. 
+1. Go to the [Power App Maker Portal](https://make.powerapps.com) and sign in with your Intelligent Order Management credentials. 
 1. Go to **Solutions**.
 1. Select **New solution**.
 1. For **Display name**, enter "IOM LabProviders".
