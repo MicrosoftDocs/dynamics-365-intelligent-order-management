@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic provides an overview of the quick start guide for Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 09/01/2021
+ms.date: 10/01/2021
 ms.topic: how-to
 ms.author: josaw
 
@@ -52,7 +52,7 @@ The quick start lab uses the following business components.
 
 ## Lab flows
 
-The quick start lab will illustrate the following flows.
+The quick start lab will demonstrate the following flows.
 
 ### Nominal business flow
 
