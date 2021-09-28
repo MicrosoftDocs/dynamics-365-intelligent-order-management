@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic describes the steps required to create and configure connections in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 09/01/2021
+ms.date: 10/01/2021
 ms.topic: how-to
 ms.author: josaw
 
@@ -18,7 +18,7 @@ This topic describes the steps required to create and configure connections in M
 
 ## Create platform Power Automate connections
 
-Navigate to https://us.flow.microsoft.com/ and ensure you are in the right Intelligent Order Management trial environment. To check which environment you are in, select the **Environment** icon on the top right corner of the Power Automate portal.
+Navigate to https://us.flow.microsoft.com/ and ensure you are in the right Intelligent Order Management trial environment. To confirm which environment you are in, select the **Environment** icon on the top right corner of the Power Automate portal.
 
 ### Create Dataverse connection
 
