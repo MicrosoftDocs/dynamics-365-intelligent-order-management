@@ -182,6 +182,8 @@ To create a provider message handler, follow these steps.
 1. For **Subject Filter**, select **IOMLabOrderIntakeOrder**.
 1. For **Importance**, select **Any**.
 1. For **Only with Attachment**, select **Yes**.
+
+    ![Outlook trigger)](media/lab_trigger_outlook.png)
 1. Select **New step** and add "parse json".
 1. For **Content**, paste in the following code:
     ```JSON
@@ -204,14 +206,16 @@ To create a provider message handler, follow these steps.
 1. Select the ellipsis ("**...**") and then select **Rename**. 
 1. Rename the action "IOM System Properties".
 1. Select **Save**.
+
+    ![System properties action)](media/lab_iom_system_properties_action.png)
 1. Select **New step**, add "parse json", and rename to "Initialize Provider Variables".
 1. For **Content**, paste in the following code:
-```JSON
-{
-  "SourceObjectName": "IOMLab Order",
-  "DestinationObjectName": "Dataverse Order"
-}
-``` 
+    ```JSON
+    {
+      "SourceObjectName": "IOMLab Order",
+      "DestinationObjectName": "Dataverse Order"
+    }
+    ``` 
 1. Select **Save**.
 1. Select **New step**, add "initialize variable", and rename to "Initialize Processing Execution Result".
 1. For **Name**, enter "ExecutionResult".
