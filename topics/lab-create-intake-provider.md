@@ -208,7 +208,7 @@ To create a provider message handler, follow these steps.
 1. Select **Save**.
 
     ![System properties action)](media/lab_iom_system_properties_action.png)
-1. Select **New step**, add "parse json", and rename to "Initialize Provider Variables".
+1. Select **New step**, add a **Parse JSON** action, and rename to "Initialize Provider Variables".
 1. For **Content**, paste in the following code:
     ```JSON
     {
@@ -217,11 +217,13 @@ To create a provider message handler, follow these steps.
     }
     ``` 
 1. Select **Save**.
-1. Select **New step**, add "initialize variable", and rename to "Initialize Processing Execution Result".
+1. Select **New step**, add an **Initialize variable** action, and rename to "Initialize Processing Execution Result".
 1. For **Name**, enter "ExecutionResult".
 1. For **Type**, select **Boolean**.
 1. For **Value**, select **true**.
 1. Select **Save**.
+
+    ![Initialize processing execution result](media/lab_initialize_processing_execution_result.png)
 1. Select **New step**, add "scope", and rename to "Try".
 1. In the **Try** scope, select **Add an action**.
 1. Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM".
@@ -230,34 +232,50 @@ To create a provider message handler, follow these steps.
 1. For **PowerAutomateRunId**, enter ``workflow()['run']?['name']`` as an expression. 
 1. For **ProviderExternalRequestId**, enter ``guid()`` as an expression. 
 1. Select **Save**.
-1. Select **Add an action**, and then add an "apply to each" control.
-1. For **Select an output from previous steps**, enter "Attachments".
-1. Select **Add an action** within the **Apply to each** loop, add "run a child flow" from the **Flow** connector, and rename it "Transform Message with Power Query Online".
+
+    ![Acknowledge provider message](media/lab_acknowledge_provider_message.png)
+1. Select **Add an action**, and then add an **Apply to each** control.
+1. For **Select an output from previous steps**, select **Attachments**.
+
+    ![Apply to each control](media/lab_apply_to_each_control_3.png)
+1. Select **Add an action** within the **Apply to each** loop, add **Run a child flow** from the **Flow** connector, and rename it "Transform Message with Power Query Online".
 1. For **Provider Id**, select the **ProviderId** variable.
 1. For **Source Object Name**, select the **SourceObjectName** variable.
 1. For **Destination Object Name**, select the **DestinationObjectName** variable.
 1. For **Payload**, enter ``decodeBase64(items('Apply_to_each')?['ContentBytes'])`` as an expression.
 1. Select **Save**.
-1. After the transformation step, select **Add an action**, add "run a child flow" from the Flow connector, and rename it "Create Order".
+
+    ![Transform message with Power Query](media/lab_transform_message_power_query.png)
+1. After the transformation step, select **Add an action**, add **Run a child flow** from the Flow connector, and rename it "Create Order".
 1. For **Child Flow**, enter "IOM Sales Order Creation".
 1. For **Payload**, enter ``string(json(outputs('Transform_Message_with_Power_Query_Online')?['Body']?['result'])?[0][0])`` as an expression.
 1. Select **Save**.
+
+    ![Create Order](media/lab_create_order.png)
 1. Collapse the **Try** scope by selecting its title bar.
-1. Select **New step**, add "scope", and rename it "Catch".
+1. Select **New step**, add a scope and rename it "Catch".
 1. In the **Catch** scope, select the ellipsis ("**...**"), and then select **Configure run after**.
 1. Select the **has failed** and **has timed out** checkboxes, and then select **Done**.
-1. In the **Catch** scope, select **Add an action**, add "set variable" and rename it "Set the execution result to failed".
+
+    ![Configure run after](media/lab_configure_run_after.png)
+1. In the **Catch** scope, select **Add an action**, add a **Set variable** action and rename it "Set the execution result to failed".
 1. For **Name**, enter "Executionresult".
 1. For **Value**, select **False**.
 1. Select **Save**.
+
+    ![Set variable action](media/lab_set_variable.png)
 1. Collapse the **Catch** scope by selecting its title bar.
-1. Select **New step**, add "scope", and rename it "Finally".
+1. Select **New step**, add a scope and rename it "Finally".
 1. In the **Finally** scope, select the ellipsis ("**...**"), and then select **Configure run after**. 
 1. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
-1. In the **Finally** scope, select **Add an action**, add "perform an unbound action" and rename it "Save Provider message request execution result".
+
+    ![Configure run after (Finally scope)](media/lab_configure_run_after_2.png)
+1. In the **Finally** scope, select **Add an action**, add a **Perform an unbound action** action and rename it "Save Provider message request execution result".
 1. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus".
 1. For **ProviderMessageRequestExecutionId**, enter ``@outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
 1. Select **Save**.
+
+    ![Save provider message request execution result](media/lab_save_provider_message_request_execution_result.png)
 
 ## Add provider definition logic definition to the provider definition
 
