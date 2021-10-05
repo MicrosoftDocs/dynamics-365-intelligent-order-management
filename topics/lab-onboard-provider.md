@@ -16,10 +16,10 @@ title: Onboard provider instance
 
 This topic describes the steps required to onboard a provider instance in Microsoft Dynamics 365 Intelligent Order Management.
 
+## Create application connections
+
 > [!NOTE]
 > If you followed the previous provider creation steps you can skip this section, since you have already created these application connections.
-
-## Create application connections
 
 ### Create Outlook connection
 
