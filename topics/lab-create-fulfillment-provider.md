@@ -63,7 +63,7 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 
     ![Variable initialization actions](media/lab_variable_init_actions.png)
 1. Add a **Try** scope.
-1. Within the **Try** scope, add a "perform an unbound action" action as follows:
+1. Within the **Try** scope, add a **Perform an unbound action** action as follows:
     - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
     - **PowerAutomateRunId**: Specify the following as an expression: `workflow()['run']?['name']`.
 
