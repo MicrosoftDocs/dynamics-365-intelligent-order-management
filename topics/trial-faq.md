@@ -31,10 +31,10 @@ After you have applied for the license to your tenant, you can remove the sample
 The following limitations apply for the trial:
 
 - The trial is available to you for 30 days. After that, you can request an extension for another 30 days, buy a paid license, or sign up for a new trial.
-- The trial will expire if there’s no activity in the app for 14 consecutive days. Trials tht have expired can't be reactivated, but you can start a new trial.
+- The trial will expire if there’s no activity in the app for 14 consecutive days. Trials that have expired can't be reactivated, but you can start a new trial.
 - You can have only one active trial per app at a time. You can sign up again after your current trial for the app ends.
 
-## Dynamics 365 Intelligent Order Management-specific questions
+## Specific questions for Dynamics 365 Intelligent Order Management
 
 ### How do I start using the trial?
 
@@ -49,7 +49,7 @@ The environment you receive as part of the trial is a fully functional Dynamics 
 
 ### How long does the trial last?
 
-The Intelligent Order Management trial lasts 30 days. As [mentioned above](trial-faq.md#how-do-i-extend-the-trial), you can extend the trial once.
+The Intelligent Order Management trial lasts 30 days. As [mentioned above](trial-faq.md#how-do-i-extend-the-trial), you can extend the trial one time.
 
 ### How do I remove sample data from the trial?
 
