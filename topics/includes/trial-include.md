@@ -8,7 +8,7 @@ If your company doesn't have an existing relationship with Microsoft or you aren
 
 ### What are the system requirements for the trial?
 
-This app is a cloud-based service that doesn't require special software other than an up-to-date web browser, though some restrictions apply. For the best trial experience, avoid accessing the trial site in incognito mode. [Learn more about web application requirements](/power-platform/admin/web-application-requirements).
+This app is a cloud-based service that doesn't require special software other than an up-to-date web browser, though some restrictions apply. For the best trial experience, avoid accessing the trial site in private browsing mode. [Learn more about web application requirements](/power-platform/admin/web-application-requirements).
 
 ### How do I sign up for the trial without a Microsoft 365 tenant?
 
@@ -24,8 +24,8 @@ Yes, you can. To view all available trials, [visit the trial hub page](https://d
 
 When you sign up for the trial, you'll receive an email with the trial details. If you don't see the email in your inbox, check your spam folder. Alternatively, use the following steps to access your app:
 
-1. Go to trial site and select Try for free.
-1. Enter the email ID that you used, to sign up for the trial. You'll be redirected to your trial app.
+1. Go to the trial site and select **Try for free**.
+1. Enter the email ID that you used to sign up for the trial. You'll be redirected to your trial app.
 
 ### How do I add more users to a trial?
 
