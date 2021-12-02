@@ -3,7 +3,7 @@ title: Trial FAQ - Dynamics 365 Intelligent Order Management | Microsoft Docs
 description: Solutions to common questions related to Dynamics 365 Intelligent Order Management trial setup and management. Learn how to resolve platform and app-specific issues.
 author: josaw1
 ms.author: josaw
-ms.date: 11/01/2021 
+ms.date: 12/01/2021 
 ms.topic: get-started
 ms.service: dynamics-365-intelligent-order-management
 ms.custom: template-trial-faq 
