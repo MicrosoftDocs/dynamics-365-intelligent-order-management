@@ -64,13 +64,13 @@ The following illustration shows a nominal business flow in Intelligent Order Ma
 
 The following illustration shows an nominal exception flow caused by an order header validation failure in Intelligent Order Management.
 
-![Exception flow (order header validation failed)](media/lab_flow_1.png)
+![Exception flow (order header validation failed)](media/lab_flow_2.png)
 
 ### Exception flow (order line validation failed)
 
 The following illustration shows an nominal exception flow caused by an order line validation failure in Intelligent Order Management.
 
-![Exception flow (order line validation failed)](media/lab_flow_1.png)
+![Exception flow (order line validation failed)](media/lab_flow_3.png)
 
 
 Next quick start lab step: [Create and configure connections](lab-create-configure-connections.md)
