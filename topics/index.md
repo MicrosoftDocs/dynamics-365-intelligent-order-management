@@ -10,7 +10,7 @@ search.app:
 search.audienceType: EndUser
   - 
 ms.custom: "intro-internal"
-title: Intelligent Order Management home page
+title: Intelligent Order Management home page (Video)
 ---
 
 # Intelligent Order Management home page
