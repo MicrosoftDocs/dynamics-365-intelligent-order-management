@@ -10,6 +10,8 @@ If your company doesn't have an existing relationship with Microsoft or you aren
 
 This app is a cloud-based service that doesn't require special software other than an up-to-date web browser, though some restrictions apply. For the best trial experience, avoid accessing the trial site in private browsing mode. [Learn more about web application requirements](/power-platform/admin/web-application-requirements).
 
+<!--note from Renee: "incognito mode" is specific to Chrome. Could you use "InPrivate mode" for Edge? Or say something more generic like "private browsing"? -->
+
 ### How do I sign up for the trial without a Microsoft 365 tenant?
 
 You can enter a non-work email address and we will create an account and tenant for you.
@@ -47,4 +49,4 @@ The trial expires if there's no activity for 14 consecutive days. An email notif
 
 ### How do I extend the trial?
 
-You can extend the trial for another trial period in the admin center. For instructions, see [Extend your trial](/power-platform/admin/trial-environments#extend-a-trial-standard-environment). You can extend your trial once.
+You can extend the trial for another trial period in the admin center. For instructions, see [Extend your trial](/power-platform/admin/trial-environments#extend-a-trial-standard-environment). You can extend your trial one time.
