@@ -54,9 +54,9 @@ Intelligent Fulfillment Optimization is currently available in the United States
 
 To enable Intelligent Fulfillment Optimization as part of the order orchestration journey, configure the Intelligent Fulfillment Optimization provider as part of the order journey. Then, during the optimization process, Intelligent Fulfillment Optimization reads fulfillment strategy, business constraint, and order information from Dataverse. It then immediately writes fulfillment plans back to the Dataverse environment. Intelligent Fulfillment Optimization ensures that data doesn't persist beyond the microservice order optimization stage.
 
-Intelligent Fulfillment Optimization uses Bing Maps to calculate the fulfillment source that is closest to the address that an order is being shipped to. To do this calculation, it determines geocodes, or latitude and longitude, for the fulfillment source address and the order shipping address. Intelligent Fulfillment Optimization uses Bing Maps to calculate the road distance between two addresses (geocodes). If road distance calculation isn't enabled, aerial distance between the two locations is used.
+Intelligent Fulfillment Optimization uses Azure Maps to calculate the fulfillment source that is closest to the address that an order is being shipped to. To do this calculation, it determines geocodes, or latitude and longitude, for the fulfillment source address and the order shipping address. Intelligent Fulfillment Optimization uses Azure Maps to calculate the road distance between two addresses (geocodes). If road distance calculation isn't enabled, aerial distance between the two locations is used.
 
-Bing Maps is a highly available, non-regional service. For more information, see [Bing Maps terms of use](https://www.microsoft.com/en-us/maps/product).
+Azure Maps is a highly available global service and follows data residency practices for Azure.
 
 Intelligent Fulfillment Optimization also uses an inventory visibility service provider to determine on-hand inventory for different products at different fulfillment sources. You can enable this feature by configuring **use real inventory** on the fulfillment strategy and on each specific fulfillment source where inventory must be looked up.
 
