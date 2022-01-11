@@ -19,7 +19,7 @@ Intelligent Fulfillment Optimization is an intelligent optimization service th
 
 In a modern supply network where product fulfillment can be from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or a spike in demand. Intelligent Fulfillment Optimization helps you maximize order fulfillment and find the right source for delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling from the closest sources.  
 
-Intelligent Fulfillment Optimization is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Bing Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Bing Maps to find the distance between the shipping address and fulfillment source.
+Intelligent Fulfillment Optimization is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Azure Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Azure Maps to find the distance between the shipping address and fulfillment source.
 
 
 ## Set up Intelligent Fulfillment Optimization
