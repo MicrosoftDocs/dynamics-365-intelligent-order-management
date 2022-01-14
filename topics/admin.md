@@ -3,9 +3,9 @@ author: josaw1
 description: This topic provides an overview of the administration and security concepts in Dynamics 365 Intelligent Order Management. 
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
-ms.topic: conceptual
+ms.topic: overview
 ms.author: josaw
-ms.custom: "intro-internal"
+
 title: Administration overview
 ---
 
