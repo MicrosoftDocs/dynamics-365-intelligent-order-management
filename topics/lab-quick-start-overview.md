@@ -3,7 +3,7 @@ author: josaw1
 description: This topic provides an overview of the quick start guide for Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/01/2021
-ms.topic: how-to
+ms.topic: overview
 ms.author: josaw
 
 title: Quick start overview
