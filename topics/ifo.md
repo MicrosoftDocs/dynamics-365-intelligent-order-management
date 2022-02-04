@@ -131,9 +131,15 @@ On the **Strategies** page, enter values for the following.
 
 ## Fulfillment optimization as part of order orchestration flows
 
-Refer to the topic [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. After the provider is activated, you can enable intelligent optimization using Intelligent Fulfillment Optimization as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Intelligent Fulfillment Optimization will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.   
+Refer to the topic [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. After the provider is activated, you can enable intelligent optimization using Intelligent Fulfillment Optimization as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Intelligent Fulfillment Optimization will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.  
 
 An organization can query the fulfillment plan to see the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type including fully sourced, partially sourced, not sourced, or exception.  
+
+## Multiple fulfillment strategies as part of order orchestration flows
+
+Intelligent Order Management supports one published and active orchestration journey. Intelligent Fulfillment Optimization supports setup of multiple fulfillment strategies that can be executed based on neeeds of different businesses. For example, a business might want to fulfill B2B orders from their distribution centers only and B2C orders from all of their fulfillment sources like distribution centers, warehouses and stores. This allows organizations to employ different fulfillment approaches for different sales orders. This can be set during the orchestration journey by setting fulfillment strategy on the sales order with identifier for the strategy. As part of the order import, this can be set based on the source or other transformations can be applied. It can also be set using the policy actions node that allows you to use attributes of the sales order and other entities to set this fulfillment strategy. 
+
+
 
 ## Additional resources
 
