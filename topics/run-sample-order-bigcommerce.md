@@ -6,11 +6,11 @@ ms.date: 02/11/2022
 ms.topic: conceptual
 ms.author: josaw
 
-title: Run sample order orchestration flow from BigCommerce to Dynamics 365 Intelligent Order Management
+title: Run sample order orchestration flow from BigCommerce
 
 ---
 
-# Run sample order orchestration flow from BigCommerce to Dynamics 365 Intelligent Order Management
+# Run sample order orchestration flow from BigCommerce
 
 [!include [banner](includes/banner.md)]
 
