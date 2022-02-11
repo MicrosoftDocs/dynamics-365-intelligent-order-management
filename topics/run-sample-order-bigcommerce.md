@@ -52,10 +52,10 @@ To set up pricelist mapping, follow these steps.
 1. Select **New**.
 1. On the **New Price List Mapping** page, do the following:
     1. In the **Mapping Group** field, enter "Default Mapping Group".
-    1. In the **Provider** fiekd, enter "BigCommerce".
+    1. In the **Provider** field, enter "BigCommerce".
     1. In the **Price list** field, enter "MasterPriceList".
     1. In the **External Field Name** field, enter "ProviderName".
-    1. In the **External Field Value** fiekd, enter "BigCommerce".
+    1. In the **External Field Value** field, enter "BigCommerce".
 1. Select **Save & close**.
 
 ## Set up unit mapping
@@ -68,7 +68,7 @@ After you set up pricelist mapping, you need to set up unit mapping.
     1. In the **Mapping Group** field, enter "Default Mapping Group".
     1. In the **Provider** field, enter "BigCommerce".
     1. In the **Unit** field, enter "ea".
-    1. In the **External Field Name** fiekd, enter "unit".
+    1. In the **External Field Name** field, enter "unit".
     1. In the **External Field Value** field, enter "each".
 1. Select **Save & close**.
 
