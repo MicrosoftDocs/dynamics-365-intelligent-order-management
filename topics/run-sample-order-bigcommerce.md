@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic describes the steps required to run a sample order orchestration flow from BigCommerce to Microsoft Dynamics 365 Intelligent Order Management..
+description: This topic describes the steps required to run a sample order orchestration flow from BigCommerce to Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 02/11/2022
 ms.topic: conceptual
