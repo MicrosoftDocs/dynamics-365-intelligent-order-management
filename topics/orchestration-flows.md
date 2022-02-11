@@ -6,11 +6,11 @@ ms.date: 05/25/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Orchestration designer
+title: Create orchestration flows
 ---
 
 
-# Orchestration flows
+# Create orchestration flows
 
 [!include [banner](includes/banner.md)]
 
