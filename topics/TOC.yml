@@ -47,7 +47,11 @@
     - name: Set up an environment
       href: setup.md
     - name: Orchestration flows
-      href: orchestration-flows.md
+      items: 
+      - name: Create orchestration flows
+        href: orchestration-flows.md
+      - name: Run sample order orchestration flow from BigCommerce
+        href: run-sample-order-bigcommerce.md
     - name: Policies and rules
       href: policies-rules.md
     - name: Internal external ID mapping
