@@ -85,4 +85,5 @@ The BigCommerce provider has the following capabilities:
 
 ## Additional resources
 
-To learn more about BigCommerce's API, see the [BigCommerce API documentation](https://developer.bigcommerce.com/api-docs).
+- To learn more about BigCommerce's API, see the [BigCommerce API documentation](https://developer.bigcommerce.com/api-docs).
+- [Run sample order orchestration flow from BigCommerce](run-sample-order-bigcommerce.md)
