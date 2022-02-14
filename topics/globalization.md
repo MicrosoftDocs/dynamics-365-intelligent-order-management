@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic provides an overview of globalization options for Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 08/10/2021
 ms.topic: conceptual
 ms.author: josaw

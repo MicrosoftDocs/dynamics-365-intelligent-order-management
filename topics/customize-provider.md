@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic provides instructions on how to customize and out-of-box provider in Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/17/2021
 ms.topic: conceptual
 ms.author: josaw
