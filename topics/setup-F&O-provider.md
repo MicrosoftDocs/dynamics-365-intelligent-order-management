@@ -23,40 +23,52 @@ For more information about D365 FinOps, see the [D365 FinOps](https://dynamics.m
 
 ## Prerequisites 
 
-You need to have a sample store set up. Go to the [BigCommerce website](https://www.bigcommerce.com/dm/microsoft/) and select **Start your free trial**. Follow the instructions to set up your sample store. 
+1. You need to have Dual Write setup in your D365 F&O instance. Steps to setup dual write can be found [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
+2. D365 Intelligent Order Management should be installed in the same dataverse instance as that of D365 Finance and Operations.
+3. Mappings associated with Dual Write should be enabled. To make that work do the following:
+   
+   a. Goto Workspaces -> Data management - > Dual-write in D365 Finance and Operations.
+   
+   ![Dual Write mapping navigation](media/DualWriteMapping.png)
+   
+   b. Set the Dual write mappings to enable sync from D365 Intelligent Order Management to D365 Finance and Operations.
+   
+   IOM order mapping filters introduced to delay order sync to FinOps when the order is not ready to sync.
+   CDS sales order headers - msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003
+   CDS sales order line - _msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and          msdyn_statuscode ne 192350001
+   
+   ![DW Sales Order Entity Mapping](media/DWEntityMapping.png)
+   
+   ![DW Sync Query](media/DWQuery.png)
+   
+4. In order to sync an order from D365 IOM to D365 F&O, there are some key parameters that need to be sent in an order. 
+
+   These are **Company** and **Invoice Customer** at Sales Order and **Company**, **Shipping Site**, **Shipping Warehouse** at Sales Order Product.
+   
+   As an example, these values can be passed through a policy definition in IOM. Here is a sample example:
+   
+   ![DW Sales Order Entity Mapping](media/SOHeaderPolicy.png)
+    
+   ![DW Sync Query](media/SalesProductpolicy.png)
+   
+ 
+ **Note:** This setup will enable order sync from D365 Intelligent Order Management to D365 Finance and Operations and vice versa as well. 
+  
 
 ## Set up the provider
 To set up the provider, follow these steps: 
 
 1.  In Intelligent Order Management, go to **Providers > Catalog**.
 
-2.  Select **Add Provider** on the **BigCommerce** tile.
+2.  Select **Add Provider** on the **Microsoft Finance and Operations apps** tile.
 
 3.  Select **Create** on the **Terms and Conditions** page.
 
-4.  There are two connections that you need to set up in the **Connections** section.
+4.  There is one connection that you need to set up in the **Connections** section.
 
-    1. BigCommerce Common Data Service Connection;
+    1. Microsoft Finance and Operations Dataverse (current environment) Connection;
 
-    1. BigCommerce connection:
-
-       1. Select the connection.
-
-       1. Select the **Retrieve Connection Link** URL.
-
-       1. Search for **BigCommerce** and then select the connector.
-
-       1. Enter the following information: 
-          - **Connection Name**: Enter a name of your choice.
-          - **API Key**: Enter the BigCommerce API key. You can retrieve it by following the instructions here: https://\<your store hash code\>.mybigcommerce.com/manage/settings/auth/api-accounts.
-
-       1. Save the connection.
-
-       1. Test the connection by selecting **Test** in the top ribbon.
-
-       1. Copy your URL.
-
-       1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
+       1. Add the Microsoft Dataverse connection.
 
        1. Select **Save**.
 
@@ -64,25 +76,14 @@ To set up the provider, follow these steps:
 
        1. Select **Save and close**.
 
-5. Go to the **Parameters** tab and add the BigCommerce store hash.
+5. Select **Save**.
 
-6. Select **Save**.
+6. Select **Activate** to activate the provider.
 
-7. Select **Activate** to activate the provider.
+7. Select **Save and close**.
 
-8. Select **Save and close**.
+8. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
 
-9. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
+**Note:** In order to sync an order from D365 Finance and Operations to D365 Intelligent Order, please ensure that the order is confirmed in D365 FinOps. Only then the order will be synced to D365 Intelligent Order Management.
 
-## Out-of-box capabilities
-
-The BigCommerce provider has the following capabilities:
-
-|  Capability | Details |
-| ------------------ | -------------------------------- |
-|  Business events  | **Billing of order confirmed by billing provider**: Event that indicates that billing was confirmed by BigCommerce.</br><br>**Creation of fulfillment line succeeded**: Event that indicates that a fulfillment line was successfully created.</br><br>**Creation of fulfillment order failed**: Event that indicates that fulfillment of the order failed.</br><br>**Creation of fulfillment order succeeded**: Event that indicates that fulfillment of the order succeeded.</br>  |
-| Transformation  |  **BigCommerce sales order to Microsoft Dataverse sales order**: Transforms a purchase order from BigCommerce into a sales order in Dataverse.|
-
-## Additional resources
-
-To learn more about BigCommerce's API, see the [BigCommerce API documentation](https://developer.bigcommerce.com/api-docs).
+![F&O Order Confirmation](media/OrderConfirm.png)
