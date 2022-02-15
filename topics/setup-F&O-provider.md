@@ -4,7 +4,7 @@ description: This topic provides information about how to set up the Dynamics 36
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 02/08/2022
 ms.topic: how-to
-ms.author: josaw
+ms.author: sumanic
 
 title: Set up D365 Finance and Operations provider
 
