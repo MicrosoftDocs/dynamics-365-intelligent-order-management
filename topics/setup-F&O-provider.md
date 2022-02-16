@@ -41,6 +41,8 @@ For more information about D365 FinOps, see the [D365 FinOps](https://dynamics.m
    
    ![DW Sync Query](media/DWQuery.png)
    
+    ![DW New Mapping](media/NewEntityMapping.png)
+   
 4. In order to sync an order from D365 IOM to D365 F&O, there are some key parameters that need to be sent in an order. 
 
    These are **Company** and **Invoice Customer** at Sales Order and **Company**, **Shipping Site**, **Shipping Warehouse** at Sales Order Product.
@@ -84,6 +86,18 @@ To set up the provider, follow these steps:
 
 8. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
 
-**Note:** In order to sync an order from D365 Finance and Operations to D365 Intelligent Order, please ensure that the order is confirmed in D365 FinOps. Only then the order will be synced to D365 Intelligent Order Management.
+**Note:** 
+
+1. In order to sync an order from D365 Finance and Operations to D365 Intelligent Order, please ensure that the order is confirmed in D365 FinOps. Only then the order will be synced to D365 Intelligent Order Management.
 
 ![F&O Order Confirmation](media/OrderConfirm.png)
+
+2. In order to send order to FinOps from IOM, we need to call the FinOps provider action in order orchestration flow, either send for fulfillment or accounting.
+
+   Here is a sample example of an orchestration flow:
+
+   ![IOM Orchestration](media/F&OFlow.png)
+
+
+
+
