@@ -41,13 +41,15 @@ For more information about D365 FinOps, see the [D365 FinOps](https://dynamics.m
    
    ![DW Sync Query](media/DWQuery.png)
    
+   c. Mapping fields for both order header and line entities needs to be added as part of this step.
+   
     ![DW New Mapping](media/NewEntityMapping.png)
    
 4. In order to sync an order from D365 IOM to D365 F&O, there are some key parameters that need to be sent in an order. 
 
    These are **Company** and **Invoice Customer** at Sales Order and **Company**, **Shipping Site**, **Shipping Warehouse** at Sales Order Product.
    
-   As an example, these values can be passed through a policy definition in IOM. Here is a sample example:
+   These values can be passed through a policy definition in IOM. Here is a sample example:
    
    ![DW Sales Order Entity Mapping](media/SOHeaderPolicy.png)
     
