@@ -55,7 +55,11 @@
       "feedback_github_repo": "MicrosoftDocs/dynamics-365-intelligent-order-management",
       "recommendations": "true"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.service":{
+        "**.*": "dynamics-365-intelligent-order-management"
+      }
+    },
     "template": [],
     "dest": "dynamics-365-order-management",
     "markdownEngineName": "markdig"

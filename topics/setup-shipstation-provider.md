@@ -1,7 +1,6 @@
 ---
 author: sumanic
 description: This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 07/27/2021
 ms.topic: how-to
 ms.author: sumanic

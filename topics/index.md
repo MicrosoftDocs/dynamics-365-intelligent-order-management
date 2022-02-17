@@ -2,7 +2,6 @@
 author: josaw1
 description: This page provides a list of the help topics and other resources for Intelligent Order Management features.   
 ms.author: josaw
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 03/01/2021
 ms.topic: conceptual
 search.app: dynamics-365-intelligent-order-management

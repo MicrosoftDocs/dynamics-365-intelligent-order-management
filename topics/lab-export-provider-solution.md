@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic describes the steps required to export a provider solution in Microsoft Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/01/2021
 ms.topic: how-to
 ms.author: josaw
