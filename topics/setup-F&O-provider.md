@@ -32,10 +32,11 @@ For more information about D365 FinOps, see the [D365 FinOps](https://dynamics.m
    ![Dual Write mapping navigation](media/DualWriteMapping.png)
    
    b. Set the Dual write mappings to enable sync from D365 Intelligent Order Management to D365 Finance and Operations.
-   
-   IOM order mapping filters introduced to delay order sync to FinOps when the order is not ready to sync.
-   CDS sales order headers - msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003
-   CDS sales order line - _msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and          msdyn_statuscode ne 192350001
+      IOM order mapping filters needs to be introduced to delay order sync to FinOps when the order is not ready to sync.
+
+    **CDS sales order headers - msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003**
+
+    **CDS sales order line - _msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and         msdyn_statuscode ne 192350001**
    
    ![DW Sales Order Entity Mapping](media/DWEntityMapping.png)
    
