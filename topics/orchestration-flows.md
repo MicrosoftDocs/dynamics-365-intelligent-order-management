@@ -5,11 +5,11 @@ ms.date: 05/25/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Orchestration designer
+title: Create orchestration flows
 ---
 
 
-# Orchestration flows
+# Create orchestration flows
 
 [!include [banner](includes/banner.md)]
 
@@ -25,7 +25,7 @@ Intelligent Order Management supports the ability to define orchestration flows 
 
 Orchestration types control which actions and elements can be used to define the orchestration flow. One orchestration type is currently supported out-of-the-box. Additional orchestration types will be released over time.
 
-| **Type**            | **Purpose**                                                                                                        |
+| Type            | Purpose                                                                                                        |
 |---------------------|--------------------------------------------------------------------------------------------------------------------|
 | Order orchestration | Allows users to define an end-to-end orchestration flow for orders, from order capture to fulfillment and billing. |
 
@@ -33,19 +33,19 @@ Orchestration types control which actions and elements can be used to define the
 
 An orchestration flow record consists of three fields, as listed in the following table.
 
-| **Field** | **Description** |
+| Field | Description |
 |-------------------------|-------------------------|
 | Name | A unique name provided by the user. |
 | Orchestration type | Specifies the orchestration type. |
 | Created on | The date and time when the orchestration flow was created. |
-| Status | An orchestration flow can be in two status states:</br>**Unpublished -** The orchestration flow and its actions will not be executed when data flows into the system.</br>**Published -** This status is obtained when the orchestration flow is published using the **Publish** action in designer view. The orchestration flow and its actions are executed when data flows into the system. |
+| Status | <p>An orchestration flow can be in two status states:</p><ul><li>**Unpublished** – The orchestration flow and its actions will not be executed when data flows into the system.</li><li>**Published** – This status is obtained when the orchestration flow is published using the **Publish** action in designer view. The orchestration flow and its actions are executed when data flows into the system.</li></ul> |
 
 
 ## Actions and elements 
 
 Actions and elements can be used to define the orchestration flow in designer view. The following table lists actions and elements for the order orchestration type.
 
-| **Action or Element**                                          | **Description**                                                                                                                                                                  |
+| Action or Element                                          | Description                                                                                                                                                                  |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Validate Order Header                                          | Performs validation on the order header level.                                                                                                                               |
 | Validate Order Line                                            | Performs validation on the order line level.                                                                                                                                 |
@@ -59,12 +59,12 @@ Actions and elements can be used to define the orchestration flow in designer vi
 
 The following table lists other available actions and elements.
 
-| **Action or Element** | **Description** |
+| Action or Element | Description |
 |-------------------------|-------------------------|
-| Condition | Allows you to split the orchestration flow into two paths, with no constraint that the paths will merge again.</br>**Yes -** This path will be triggered if the previous orchestration step succeeded.</br>**No -** This path will be triggered if the previous orchestration step failed. |
-| Splitter | Allows you to split the orchestration flow into a user-defined number of paths, with no constraint that the paths will merge again.</br>**Note:** Adding a filter policy in the subsequent action is used to define the split in path. |
-| Condition-Merge | Allows you to split the orchestration flow into two paths, with the constraint that the paths will merge again.</br>**Yes -** This path will be triggered if the previous orchestration step succeeded.</br>**No -** This path will be triggered if the previous orchestration step failed. |
-| Splitter-Merge | Allows you to split the orchestration flow into a user-defined number of paths, with the constraint that the paths will merge again.</br>**Note:** Adding a filter policy in the subsequent action is used to define the split in path. |
+| Condition | <p>Allows you to split the orchestration flow into two paths, with no constraint that the paths will merge again.</p><ul><li>**Yes** – This path will be triggered if the previous orchestration step succeeded.</li><li>**No** – This path will be triggered if the previous orchestration step failed.</li></ul> |
+| Splitter | <p>Allows you to split the orchestration flow into a user-defined number of paths, with no constraint that the paths will merge again.</p><p>**Note:** Adding a filter policy in the subsequent action is used to define the split in path.</p> |
+| Condition-Merge | <p>Allows you to split the orchestration flow into two paths, with the constraint that the paths will merge again.</p><ul><li>**Yes** – This path will be triggered if the previous orchestration step succeeded.</li><li>**No** – This path will be triggered if the previous orchestration step failed.</li></ul> |
+| Splitter-Merge | <p>Allows you to split the orchestration flow into a user-defined number of paths, with the constraint that the paths will merge again.</p><p>**Note:** Adding a filter policy in the subsequent action is used to define the split in path.</p> |
 
 
 
@@ -98,25 +98,25 @@ To create a new orchestration flow, follow these steps.
 
 13. In the **Input Events** field, select **New order**.
 
-14. Select **Add.**
+14. Select **Add**.
 
-15. In the **Filter Policies** field, select **Filter Policy – BigCommerce.**
+15. In the **Filter Policies** field, select **Filter Policy – BigCommerce**.
 
-16. In the **Execution Policies** field, select **Order header Validation Policy.**
+16. In the **Execution Policies** field, select **Order header Validation Policy**.
 
-17. Select **Add.**
+17. Select **Add**.
 
 18. In the designer canvas under **Order Source 2**, select the plus symbol ("+") to add an **Action** or **Element**.
 
-19. Select **Validate order header.** A dialog box appears on the right.
+19. Select **Validate order header**. A dialog box appears on the right.
 
 20. In the **Name** field, enter "Test validation 2."
 
 21. In the **Input Events** field, select **New order**.
 
-22. Select **Add.**
+22. Select **Add**.
 
-23. In the **Filter Policies** field, select **Filter Policy – Orderful.**
+23. In the **Filter Policies** field, select **Filter Policy – Orderful**.
 
 24. In the **Execution Policies** field, select **Order header Validation Policy**.
 
