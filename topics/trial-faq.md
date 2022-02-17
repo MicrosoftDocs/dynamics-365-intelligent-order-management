@@ -5,7 +5,6 @@ author: josaw1
 ms.author: josaw
 ms.date: 12/01/2021 
 ms.topic: get-started
-ms.service: dynamics-365-intelligent-order-management
 ms.custom: template-trial-faq 
 ms.reviewer: josaw
 ms.subservice: 

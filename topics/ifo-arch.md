@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 07/23/2021
 ms.topic: conceptual
 ms.author: josaw
