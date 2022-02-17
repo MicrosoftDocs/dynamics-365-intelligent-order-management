@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This topic provides information about how to set up the Dynamics 365 Finance & Operations Provider provider in Dynamics 365 Intelligent Order Management.
+description: This topic provides information about how to set up the Dynamics 365 Finance & Operations provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 02/08/2022
 ms.topic: how-to
