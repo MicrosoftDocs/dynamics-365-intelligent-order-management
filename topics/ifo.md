@@ -1,7 +1,8 @@
 ---
 author: josaw1
 description: This topic provides an introduction to Intelligent Fulfillment Optimization and instructions on how to set it up in Dynamics 365 Intelligent Order Management.
-ms.date: 05/17/2021
+ms.service: dynamics-365-intelligent-order-management
+ms.date: 02/24/2021
 ms.topic: conceptual
 ms.author: josaw
 
@@ -103,6 +104,8 @@ Depending on the nature of your business, you can define multiple optimization s
 
 Intelligent Fulfillment Optimization batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
 
+Within a single business, fulfillment optimization can differ based on type of consumer, channel, and other business attributes. Intelligent Order Management supports the use of multiple fulfillment strategies. Businesses can set up multiple fulfillment strategies with policies or by setting the fulfillment strategy attribute on a sales order during the order intake process. 
+
 ### Set up a fulfillment strategy
 
 To define a strategy, go to the **Fulfillment > Strategies** page in Intelligent Order Management and select **New**. For each strategy, you can provide a unique name, description, source list consisting of fulfillment sources for the strategy, and you can configure the strategy to use real inventory.   
@@ -128,11 +131,17 @@ On the **Strategies** page, enter values for the following.
 - **Inventory visibility measure name**: Specify the measure name that contains the inventory on hand for fulfillment optimization.
 
 
-## Fulfillment optimization as part of order orchestration flows
+## Fulfillment optimization in order orchestration flows
 
-Refer to the topic [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. After the provider is activated, you can enable intelligent optimization using Intelligent Fulfillment Optimization as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Intelligent Fulfillment Optimization will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.   
+Refer to the topic [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. After the provider is activated, you can enable intelligent optimization using Intelligent Fulfillment Optimization as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Intelligent Fulfillment Optimization will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.  
 
 An organization can query the fulfillment plan to see the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type including fully sourced, partially sourced, not sourced, or exception.  
+
+## Multiple fulfillment strategies in order orchestration flows
+
+Intelligent Fulfillment Optimization supports multiple fulfillment strategies that can be set up based on the needs of different businesses. For example, a business may want to fulfill B2B orders from their distribution centers only, and B2C orders from all of their fulfillment sources (such as distribution centers, warehouses, and stores). With multiple fulfillment strategies, organizations can employ different fulfillment approaches for different sales orders. 
+
+Businesses can set fulfillment strategy attributes for sales orders during the orchestration journey by adding the fulfillment strategy identifier on the sales order. The fulfillment strategy can be set on a sales order based on the source, or by using transformations as part of order intake process. The fulfillment strategy can also be set with policy actions by using sales order attributes and other entities. With policies, businesses can employ the attributes of different entities in condition builder to set the strategy. If multiple strategies are set up but policy assignment for the fulfillment strategy is not configured, the system will pick the first strategy that is available. 
 
 ## Additional resources
 

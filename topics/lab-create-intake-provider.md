@@ -195,7 +195,7 @@ To create a provider message handler, follow these steps.
     {
       "type": "object",
       "properties": {
-        "ProviderID": {
+        "ProviderId": {
           "type": "string"
         }
       }
@@ -211,7 +211,7 @@ To create a provider message handler, follow these steps.
 1. For **Content**, paste in the following code:
     ```JSON
     {
-      "SourceObjectName": "IOMLab Order",
+      "SourceObjectName": "IOMLabOrderIntakeProvider",
       "DestinationObjectName": "Dataverse Order"
     }
     ``` 
