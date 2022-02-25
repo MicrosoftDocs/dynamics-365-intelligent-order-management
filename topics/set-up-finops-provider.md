@@ -52,7 +52,7 @@ For more information about Finance + Operations, see the [Dynamics 365 Finance](
    
    ![DW Sales Order Entity Mapping](media/SOHeaderPolicy.png)
     
-   For more information, see [Policies and rules](policies-rules).
+   For more information, see [Policies and rules](policies-rules.md).
    
  > [!NOTE]
  > This setup will enable order synchronization from Intelligent Order Management to Finance + Operations in both directions. 
