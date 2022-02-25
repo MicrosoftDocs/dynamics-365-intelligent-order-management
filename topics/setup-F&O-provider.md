@@ -21,7 +21,7 @@ For more information about Finance + Operations, see the [Dynamics 365 Finance](
 
 ## Prerequisites 
 
-- You must have dual-write set up in your Finance + Operations instance. For information on seting up dual-write, see [Guidance for dual-write setup](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
+- You must have dual-write set up in your Finance + Operations instance. For information on setting up dual-write, see [Guidance for dual-write setup](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
 - Intelligent Order Management should be installed in the same dataverse instance as that of Finance + Operations.
 - Mappings associated with dual-write should be enabled. 
 
@@ -39,62 +39,52 @@ For more information about Finance + Operations, see the [Dynamics 365 Finance](
           - **Sync direction**: "Finance and Operation apps to Dataverse"
           - **Transform type**: "Default"   
           - **Default value**: "true" 
-1. In order to synchronize an order from Intelligent Order Management to Finance + Operations, there are some key parameters that need to be sent in an order. 
-
-   These are **Company** and **Invoice Customer** at Sales Order and **Company**, **Shipping Site**, **Shipping Warehouse** at Sales Order Product.
+1. To synchronize an order from Intelligent Order Management to Finance + Operations, some key parameters must be sent in an order: 
+    - **Sales Order** policy parameters:
+        - Company
+        - Invoice Customer
+    - **Sales Order Product** policy parameters:
+        - Company
+        - Shipping Site
+        - Shipping Warehouse
    
-   These values can be passed through a policy definition in IOM. Here is a sample example:
+   These parameter values can be passed through policy rule definitions in Intelligent Order Management, as shown in the following example for a sales order policy:
    
    ![DW Sales Order Entity Mapping](media/SOHeaderPolicy.png)
     
-   ![DW Sync Query](media/SalesProductpolicy.png)
+   For more information, see [Policies and rules](policies-rules).
    
- 
  > [!NOTE]
  > This setup will enable order synchronization from Intelligent Order Management to Finance + Operations in both directions. 
   
-
 ## Set up the provider
 
 To set up the provider, follow these steps: 
 
 1.  In Intelligent Order Management, go to **Providers > Catalog**.
-
-2.  Select **Add Provider** on the **Microsoft Finance and Operations apps** tile.
-
-3.  Select **Create** on the **Terms and Conditions** page.
-
-4.  There is one connection that you need to set up in the **Connections** section.
-
-    1. Microsoft Finance and Operations Dataverse (current environment) Connection;
-
+1.  Select **Add Provider** on the **Microsoft Finance and Operations apps** tile.
+1.  Select **Create** on the **Terms and Conditions** page.
+1.  There is one connection that you need to set up in the **Connections** section.
+    - Microsoft Finance and Operations Dataverse (current environment) Connection:
        1. Add the Microsoft Dataverse connection.
-
        1. Select **Save**.
-
        1. Select **Activate** to activate the connection.
-
        1. Select **Save and close**.
+1. Select **Save**.
+1. Select **Activate** to activate the provider.
+1. Select **Save and close**.
+1. Go to **Providers \> Installed** and validate that the provider you set up is listed with the status **Activated**.
 
-5. Select **Save**.
-
-6. Select **Activate** to activate the provider.
-
-7. Select **Save and close**.
-
-8. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
-
-**Note:** 
-
-1. In order to sync an order from D365 Finance and Operations to D365 Intelligent Order, please ensure that the order is confirmed in D365 FinOps. Only then the order will be synced to D365 Intelligent Order Management.
+> [!NOTE]
+> To successfully synchronize an order from Finance + Operations to Intelligent Order Management, first check that the order is confirmed in Finance + Operation. Only orders confirmed in Finance + Operation can be synced to Intelligent Order Management.
 
 ![F&O Order Confirmation](media/OrderConfirm.png)
 
-2. In order to send order to FinOps from IOM, we need to call the FinOps provider action in order orchestration flow, either send for fulfillment or accounting.
+In order to send an order to Finance + Operations from Intelligent Order Management, you must call the Finance + Operations provider action in the order orchestration flow, whether it is sent to fulfillment or accounting.
 
-   Here is a sample example of an orchestration flow:
+The following illustration shows an example of an order processing orchestration flow with a custom **Send Order to FinOps for Fulfillment** action.
 
-   ![IOM Orchestration](media/F&OFlow.png)
+![IOM Orchestration](media/F&OFlow.png)
 
 
 
