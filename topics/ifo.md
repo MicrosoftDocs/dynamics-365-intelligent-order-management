@@ -104,6 +104,8 @@ Depending on the nature of your business, you can define multiple optimization s
 
 Intelligent Fulfillment Optimization batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
 
+Within a single business, fulfillment optimization can differ based on type of consumer, channel, and other business attributes. Intelligent Order Management supports the use of multiple fulfillment strategies. Businesses can set up multiple fulfillment strategies with policies or by setting the fulfillment strategy attribute on a sales order during the order intake process. 
+
 ### Set up a fulfillment strategy
 
 To define a strategy, go to the **Fulfillment > Strategies** page in Intelligent Order Management and select **New**. For each strategy, you can provide a unique name, description, source list consisting of fulfillment sources for the strategy, and you can configure the strategy to use real inventory.   
@@ -137,7 +139,9 @@ An organization can query the fulfillment plan to see the results. Fulfillment p
 
 ## Multiple fulfillment strategies in order orchestration flows
 
-Intelligent Fulfillment Optimization supports multiple fulfillment strategies that can be set up based on the needs of different businesses. For example, a business may want to fulfill B2B orders from their distribution centers only, and B2C orders from all of their fulfillment sources (such as distribution centers, warehouses, and stores). With multiple fulfillment strategies, organizations can employ different fulfillment approaches for different sales orders. Businesses can set fulfillment strategy attributes for sales orders during the orchestration journey by adding the fulfillment strategy identifier on the sales order. The fulfillment strategy can be set on a sales order based on the source, or by using transformations as part of order intake process. The fulfillment strategy can also be set with policy actions by using sales order attributes and other entities. 
+Intelligent Fulfillment Optimization supports multiple fulfillment strategies that can be set up based on the needs of different businesses. For example, a business may want to fulfill B2B orders from their distribution centers only, and B2C orders from all of their fulfillment sources (such as distribution centers, warehouses, and stores). With multiple fulfillment strategies, organizations can employ different fulfillment approaches for different sales orders. 
+
+Businesses can set fulfillment strategy attributes for sales orders during the orchestration journey by adding the fulfillment strategy identifier on the sales order. The fulfillment strategy can be set on a sales order based on the source, or by using transformations as part of order intake process. The fulfillment strategy can also be set with policy actions by using sales order attributes and other entities. With policies, businesses can employ the attributes of different entities in condition builder to set the strategy. If multiple strategies are set up but policy assignment for the fulfillment strategy is not configured, the system will pick the first strategy that is available. 
 
 ## Additional resources
 
