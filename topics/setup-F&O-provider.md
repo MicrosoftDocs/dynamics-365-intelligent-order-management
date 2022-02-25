@@ -1,52 +1,45 @@
 ---
 author: sumanic
-description: This topic provides information about how to set up the Dynamics 365 Finance & Operations provider in Dynamics 365 Intelligent Order Management.
+description: This topic provides information about how to set up the Microsoft Dynamics 365 Finance and Operations (on-premises) provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 02/08/2022
+ms.date: 02/25/2022
 ms.topic: how-to
 ms.author: sumanic
-
-title: Set up D365 Finance and Operations provider
+title: Set up Dynamics 365 Finance + Operations provider
 
 ---
 
-# Set up Dynamics 365 Finance and Operations provider
+# Set up Dynamics 365 Finance + Operations provider
 
 [!include [banner](includes/banner.md)]
 
+This topic provides information about how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-This topic provides information about how to set up the D365 Finance and Operations provider in Dynamics 365 Intelligent Order Management.
+Finance + Operations helps businesses to manage their global financial systems, operational business processes, and streamlined supply chains to empower business decision makers to make fast, informed decisions. The Dynamics 365 Finance and Operations provider enables Intelligent Order Management to write or consume orders from Finance + Operations and also performs additional supply chain actions.  
 
-D365 Finance and Operations support businesses to manage their global financial systems, operational business processes, and streamlined supply chains to empower people to make fast, informed decisions The D365 FinOps provider enables Intelligent Order Management to write or consume orders from D365 FinOps and performs additional supply chain actions.  
-
-For more information about D365 FinOps, see the [D365 FinOps](https://dynamics.microsoft.com/en-us/finance/overview/) website. 
+For more information about Finance + Operations, see the [Dynamics 365 Finance](https://dynamics.microsoft.com/en-us/finance/overview/) website. 
 
 ## Prerequisites 
 
-1. You need to have Dual Write setup in your D365 F&O instance. Steps to setup dual write can be found [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
-2. D365 Intelligent Order Management should be installed in the same dataverse instance as that of D365 Finance and Operations.
-3. Mappings associated with Dual Write should be enabled. To make that work do the following:
-   
-   a. Goto Workspaces -> Data management - > Dual-write in D365 Finance and Operations.
-   
-   ![Dual Write mapping navigation](media/DualWriteMapping.png)
-   
-   b. Set the Dual write mappings to enable sync from D365 Intelligent Order Management to D365 Finance and Operations.
-      IOM order mapping filters needs to be introduced to delay order sync to FinOps when the order is not ready to sync.
+- You must have dual-write set up in your Finance + Operations instance. For information on seting up dual-write, see [Guidance for dual-write setup](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
+- Intelligent Order Management should be installed in the same dataverse instance as that of Finance + Operations.
+- Mappings associated with dual-write should be enabled. 
 
-    **CDS sales order headers - msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003**
+  To enable mappings associated with dual-write, follow these steps.
 
-    **CDS sales order line - _msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and         msdyn_statuscode ne 192350001**
-   
-   ![DW Sales Order Entity Mapping](media/DWEntityMapping.png)
-   
-   ![DW Sync Query](media/DWQuery.png)
-   
-   c. Mapping fields for both order header and line entities needs to be added as part of this step.
-   
-    ![DW New Mapping](media/NewEntityMapping.png)
-   
-4. In order to sync an order from D365 IOM to D365 F&O, there are some key parameters that need to be sent in an order. 
+  1. In Finance + Operations, go to **Workspaces \> Data management \> Dual-write**.
+  1. Set the dual-write mappings to enable synchronization from Intelligent Order Management to Finance + Operations. IOM order mapping filters must be introduced to delay order synchronization to Finance + Operations when an order is not ready to sync.
+      1. On the dual-write page, select **CDS sales order headers (saleorders)**.
+      1. On the **CDS sales order headers (saleorders)** page, to edit the query select the funnel symbol next to **Microsoft Dataverse.order**.
+      1. In the **Edit query** dialog box, enter the query string `msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003`, and then select **Accept**. 
+      1. On the dual-write page, select **CDS sales order lines (saleorderdetails)**.
+      1. On the **CDS sales order lines (saleorderdetails)** page, to edit the query select the funnel symbol next to **Microsoft Dataverse.order**.
+      1. In the **Edit query** dialog box, enter the query string `msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and msdyn_statuscode ne 192350001`, and then select **Accept**.   
+      1. For both **CDS sales order headers (saleorders)** and **CDS sales order lines (saleorderdetails)**, edit the **msdyn_isreadytosync** entity fields with the following values:
+          - **Sync direction**: "Finance and Operation apps to Dataverse"
+          - **Transform type**: "Default"   
+          - **Default value**: "true" 
+1. In order to synchronize an order from Intelligent Order Management to Finance + Operations, there are some key parameters that need to be sent in an order. 
 
    These are **Company** and **Invoice Customer** at Sales Order and **Company**, **Shipping Site**, **Shipping Warehouse** at Sales Order Product.
    
@@ -57,10 +50,12 @@ For more information about D365 FinOps, see the [D365 FinOps](https://dynamics.m
    ![DW Sync Query](media/SalesProductpolicy.png)
    
  
- **Note:** This setup will enable order sync from D365 Intelligent Order Management to D365 Finance and Operations and vice versa as well. 
+ > [!NOTE]
+ > This setup will enable order synchronization from Intelligent Order Management to Finance + Operations in both directions. 
   
 
 ## Set up the provider
+
 To set up the provider, follow these steps: 
 
 1.  In Intelligent Order Management, go to **Providers > Catalog**.
