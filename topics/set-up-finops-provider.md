@@ -17,13 +17,13 @@ This topic provides information about how to set up the Microsoft Dynamics 365 F
 
 Finance + Operations helps businesses to manage their global financial systems, operational business processes, and streamlined supply chains to empower business decision makers to make fast, informed decisions. The Dynamics 365 Finance and Operations provider enables Intelligent Order Management to write or consume orders from Finance + Operations and also performs additional supply chain actions.  
 
-For more information about Finance + Operations, see the [Dynamics 365 Finance](https://dynamics.microsoft.com/en-us/finance/overview/) website. 
+For more information about Finance + Operations, see the [Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/) website. 
 
 ## Prerequisites 
 
 - You must have dual-write set up in your Finance + Operations instance. For information on setting up dual-write, see [Guidance for dual-write setup](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
 - Intelligent Order Management should be installed in the same dataverse instance as that of Finance + Operations.
-- Mappings associated with dual-write should be enabled. 
+- Mappings associated with dual-write should be enabled in Intelligent Order Management. 
 
   To enable mappings associated with dual-write, follow these steps.
 
@@ -39,7 +39,7 @@ For more information about Finance + Operations, see the [Dynamics 365 Finance](
           - **Sync direction**: "Finance and Operation apps to Dataverse"
           - **Transform type**: "Default"   
           - **Default value**: "true" 
-1. To synchronize an order from Intelligent Order Management to Finance + Operations, some key parameters must be sent in an order: 
+- To synchronize an order from Intelligent Order Management to Finance + Operations, some key parameters must be sent in an order: 
     - **Sales Order** policy parameters:
         - Company
         - Invoice Customer
