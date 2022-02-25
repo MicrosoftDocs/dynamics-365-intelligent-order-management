@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic covers policy types and describes how to create a policy with rules in Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/10/2021
 ms.topic: conceptual
 ms.author: josaw
