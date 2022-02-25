@@ -78,13 +78,11 @@ To set up the provider, follow these steps:
 > [!NOTE]
 > To successfully synchronize an order from Finance + Operations to Intelligent Order Management, first check that the order is confirmed in Finance + Operation. Only orders confirmed in Finance + Operation can be synced to Intelligent Order Management.
 
-![F&O Order Confirmation](media/OrderConfirm.png)
-
 In order to send an order to Finance + Operations from Intelligent Order Management, you must call the Finance + Operations provider action in the order orchestration flow, whether it is sent to fulfillment or accounting.
 
 The following illustration shows an example of an order processing orchestration flow with a custom **Send Order to FinOps for Fulfillment** action.
 
-![IOM Orchestration](media/F&OFlow.png)
+![Orchestration flow with a custom Send Order to FinOps for Fulfillment action](media/F&OFlow.png)
 
 
 
