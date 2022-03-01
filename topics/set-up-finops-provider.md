@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic provides information about how to set up the Microsoft Dynamics 365 Finance and Operations (on-premises) provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 02/25/2022
+ms.date: 03/01/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Set up Dynamics 365 Finance + Operations provider
@@ -28,7 +28,7 @@ For more information about Finance + Operations, see the [Dynamics 365 Finance](
   To enable mappings associated with dual-write, follow these steps.
 
   1. In Finance + Operations, go to **Workspaces \> Data management \> Dual-write**.
-  1. Set the dual-write mappings to enable synchronization from Intelligent Order Management to Finance + Operations. IOM order mapping filters must be introduced to delay order synchronization to Finance + Operations when an order is not ready to sync.
+  1. Set the dual-write mappings to enable synchronization from Intelligent Order Management to Finance + Operations. Order mapping filters must be introduced to delay order synchronization to Finance + Operations when an order is not ready to be synchronized.
       1. On the dual-write page, select **CDS sales order headers (saleorders)**.
       1. On the **CDS sales order headers (saleorders)** page, to edit the query select the funnel symbol next to **Microsoft Dataverse.order**.
       1. In the **Edit query** dialog box, enter the query string `msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003`, and then select **Accept**. 
