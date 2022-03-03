@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic explains how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/01/2022
+ms.date: 03/03/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Set up the Dynamics 365 Finance + Operations provider
@@ -24,8 +24,8 @@ For more information about Finance + Operations, see the [Dynamics 365 Finance](
 This setup will enable order synchronization between Intelligent Order Management and Finance + Operations, in both directions.
 
 - Dual-write must be set up in your Finance + Operations instance. For information about how to set up dual-write, see [Guidance for dual-write setup](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
-- Intelligent Order Management should be installed in the same Dataverse instance that Finance + Operations is installed in.
-- Mappings that are associated with dual-write should be enabled in Intelligent Order Management.
+- Intelligent Order Management must be installed in the same Dataverse instance that Finance + Operations is installed in.
+- Mappings that are associated with dual-write must be enabled in Intelligent Order Management.
 
     To enable mappings that are associated with dual-write, follow these steps.
 
@@ -33,14 +33,14 @@ This setup will enable order synchronization between Intelligent Order Managemen
     1. Set the dual-write mappings to enable synchronization from Intelligent Order Management to Finance + Operations. Order mapping filters must be added to delay order synchronization to Finance + Operations when an order isn't ready to be synced.
 
         1. On the dual-write page, select **CDS sales order headers (saleorders)**.
-        1. On the **CDS sales order headers (saleorders)** page, select the funnel symbol next to **Microsoft Dataverse.order** to edit the query.
+        1. On the **CDS sales order headers (saleorders)** page, select the **Filter** button (funnel symbol) next to **Microsoft Dataverse.order** to edit the query.
         1. In the **Edit query** dialog box, enter the following query string:
 
             `msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003`
 
         1. Select **Accept**.
         1. On the dual-write page, select **CDS sales order lines (saleorderdetails)**.
-        1. On the **CDS sales order lines (saleorderdetails)** page, select the funnel symbol next to **Microsoft Dataverse.order** to edit the query.
+        1. On the **CDS sales order lines (saleorderdetails)** page, select the **Filter** button (funnel symbol) next to **Microsoft Dataverse.order** to edit the query.
         1. In the **Edit query** dialog box, enter the following query string:
 
             `msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and msdyn_statuscode ne 192350001`
@@ -48,9 +48,9 @@ This setup will enable order synchronization between Intelligent Order Managemen
         1. Select **Accept**.
         1. On both the **CDS sales order headers (saleorders)** page and the **CDS sales order lines (saleorderdetails)** page, edit the **msdyn\_isreadytosync** entity fields, and set the following values:
 
-            - **Sync direction:** "Finance and Operation apps to Dataverse"
-            - **Transform type:** "Default"
-            - **Default value:** "true"
+            - **Sync direction:** Finance and Operations apps to Dataverse
+            - **Transform type:** Default
+            - **Default value:** true
 
 - Order synchronization from Intelligent Order Management to Finance + Operations requires that some key parameters be sent in the order:
 
