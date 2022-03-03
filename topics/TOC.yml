@@ -70,6 +70,8 @@
         href: setup-flexe-provider.md
       - name: Set up Intelligent Fulfillment Optimization provider
         href: set-up-ifo-provider.md
+      - name: Set up Dynamics 365 Finance + Operations provider
+        href: set-up-finops-provider.md
       - name: Customize an out-of-box provider
         href: customize-provider.md
       - name: Create a new provider
