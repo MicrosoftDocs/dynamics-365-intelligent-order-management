@@ -13,66 +13,68 @@ The following steps describe the FinOps high level solution for integration with
 5.  FinOps order status event handler is introduced to monitor and raise business events in Intelligent Order Management when the order status is updated in FinOps.
     
 FinOps provider integration scenarios with Intelligent Order Management:
+
 The following scenarios describe the FinOps integration scenarios with Intelligent Order Management.
 
-1.	BigCommerce (new Order) -> Intelligent Order Management -> FinOps (fulfillment) -> FinOps (accounting)
+a.	BigCommerce (new Order) -> Intelligent Order Management -> FinOps (fulfillment) -> FinOps (accounting)
 
-  a.	Order created in BigCommerce
-  b.	Order pulled into Intelligent Order Management from BigCommerce
-  c.	Order validated in Intelligent Order Management
-  d.	Company, site and warehouse assigned in Intelligent Order Management
-  e.	Order sent to FinOps by FinOps provider action
-         i.	Order sent to fulfillment successful event raised in Intelligent Order Management
-  g.	Order shipped in FinOps
-         i.  Order shipped event raised in Intelligent Order Management
-         ii. Order status updated in BigCommerce by provider action
-  h.	Order invoiced in FinOps
-         i.  Order invoiced event raised in Intelligent Order Management
-         ii. Order status updated in BigCommerce by provider action
+  1.	Order created in BigCommerce
+  1.	Order pulled into Intelligent Order Management from BigCommerce
+  1.	Order validated in Intelligent Order Management
+  1.	Company, site and warehouse assigned in Intelligent Order Management
+  1.	Order sent to FinOps by FinOps provider action
+         1.	Order sent to fulfillment successful event raised in Intelligent Order Management
+  1.	Order shipped in FinOps
+         1.  Order shipped event raised in Intelligent Order Management
+         1. Order status updated in BigCommerce by provider action
+  1.	Order invoiced in FinOps
+         1.  Order invoiced event raised in Intelligent Order Management
+         1. Order status updated in BigCommerce by provider action
 
-2.  BigCommerce(new order)->Intelligent Order Management->Flexe(fulfillment)->FinOps(accounting)
+b.  BigCommerce(new order)->Intelligent Order Management->Flexe(fulfillment)->FinOps(accounting)
 
-  a.    Order created in BigCommerce
-  b.    Order pulled into Intelligent Order Management from BigCommerce
-  c.    Order validated in Intelligent Order Management
-  d.    Order sent to Flexe for fulfillment by Flexe provider action
-  e.    Order shipped by Flexe
-  f.    Assgn site warehoues and company in Intelligent Order Management order
-  g.    Order sent to FinOps by FinOps Provider action
-  h.    Order invoiced in FinOps
-  i.     Order invoiced event raised in Intelligent Order Management.
-  j.    Order status updated in BigCommerce by provider action
+  1.    Order created in BigCommerce
+  1.    Order pulled into Intelligent Order Management from BigCommerce
+  1.    Order validated in Intelligent Order Management
+  1.    Order sent to Flexe for fulfillment by Flexe provider action
+  1.    Order shipped by Flexe
+  1.    Assgn site warehoues and company in Intelligent Order Management order
+  1.    Order sent to FinOps by FinOps Provider action
+  1.    Order invoiced in FinOps
+  1.    Order invoiced event raised in Intelligent Order Management.
+  1.    Order status updated in BigCommerce by provider action
 
 
-3.  FinOps(new order) -> Intelligent Order Management -> Flexe(fulfillment) -> FinOps(accounting)
+c.  FinOps(new order) -> Intelligent Order Management -> Flexe(fulfillment) -> FinOps(accounting)
 
-  a.    Order created in FinOps
-  b.    FinOps order sent to Intelligent Order Management by DualWrite
-  c.    Order confirmed in FinOps
-  c.    Order validated in Intelligent Order Management
-  d.    Order sent to Flexe for fulfillment by Flexe provider action
-  e.    Order shipped by Flexe
-  f.    Order status update sent to FinOps by FinOps provider action
-  g.    Order invoiced in FinOps
-  i.    Order invoiced event raised in Intelligent Order Management
+  1.    Order created in FinOps
+  1.    FinOps order sent to Intelligent Order Management by DualWrite
+  1.    Order confirmed in FinOps
+  1.    Order validated in Intelligent Order Management
+  1.    Order sent to Flexe for fulfillment by Flexe provider action
+  1.    Order shipped by Flexe
+  1.    Order status update sent to FinOps by FinOps provider action
+  1.    Order invoiced in FinOps
+  1.    Order invoiced event raised in Intelligent Order Management
 
-4.  FinOps(new order)->Intelligent Order Management->FinOps(fulfillment)->FinOps(accounting)
+d.  FinOps(new order)->Intelligent Order Management->FinOps(fulfillment)->FinOps(accounting)
 
-  a.    Order created in FinOps
-  b.    FinOps order sent to Intelligent Order Management by DualWrite
-  c.    Order confirmed in FinOps
-  d.    Order validated in Intelligent Order Management
-  e.    Order shipped in FinOps
-         i.  Order shipped event raised in Intelligent Order Management
-  f.    Order invoiced in FinOps
-         i.  Order invoiced event received in Intelligent Order Management
+  1.    Order created in FinOps
+  1.    FinOps order sent to Intelligent Order Management by DualWrite
+  1.    Order confirmed in FinOps
+  1.    Order validated in Intelligent Order Management
+  1.    Order shipped in FinOps
+         1.  Order shipped event raised in Intelligent Order Management
+  1.    Order invoiced in FinOps
+         1.  Order invoiced event received in Intelligent Order Management
 
-5.  FinOps(new order)->Intelligent Order Management->Flexe(fuflillment)->SAP(accounting)
-   a.   Order created in FinOps
-   b.   FinOps order sent to Intelligent Order Management by DualWrite
-   c.   Order confirmed in FinOps
-   d.   Order validated in Intelligent Order Management
-   e.   Order sent to Flexe for fulfillment by provider action
-   f.   Order shipped event raised in Intelligent Order Management
-   g.   Order invoiced in SAP
-   h.   Order invoiced event received in Intelligent Order Management
+e.  FinOps(new order)->Intelligent Order Management->Flexe(fuflillment)->SAP(accounting)
+
+   1.   Order created in FinOps
+   1.   FinOps order sent to Intelligent Order Management by DualWrite
+   1.   Order confirmed in FinOps
+   1.   Order validated in Intelligent Order Management
+   1.   Order sent to Flexe for fulfillment by provider action
+   1.   Order shipped event raised in Intelligent Order Management
+   1.   Order invoiced in SAP
+   1.   Order invoiced event received in Intelligent Order Management
