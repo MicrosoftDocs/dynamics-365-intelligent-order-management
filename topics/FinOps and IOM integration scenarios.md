@@ -1,6 +1,6 @@
 The document describes FinOps(Finance and Operations) integration solution and scenarios with Microsoft Dynamics Intelligent Order Management.
 
-Prerequisite: You will need to set up FinOps as a provider and DualWrite enabled in Dataverse and Intelligent Order Management. Follow the instructions in Set up FinOps to set up FinOps provider in Dynamics 365 Intelligent Order Management.
+Prerequisite: You will need to set up FinOps as a provider and DualWrite enabled in Dataverse and Intelligent Order Management. Follow the instructions in [Set up the Dynamics 365 Finance + Operations provider](set-up-finops-provider.md) in Dynamics 365 Intelligent Order Management.
 
 
 FinOps Integration solution:
