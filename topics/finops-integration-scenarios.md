@@ -1,7 +1,7 @@
 ---
 author: anush6121 
 description: The document describes how the Finance + Operations integration solution works with Microsoft Dynamics Intelligent Order Management.
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.topic: overview
 ms.author: anvenkat
 
@@ -16,14 +16,14 @@ The document describes how the Finance + Operations integration solution works w
 
 ## Prerequisites 
 
-You will need to set up Finance + Operations as a provider and enable dual-write in Dataverse and Intelligent Order Management. For more inofmation, see [Set up the Dynamics 365 Finance + Operations provider](set-up-finops-provider.md).
+You will need to set up Finance + Operations as a provider and enable dual-write in Dataverse and Intelligent Order Management. For more information, see [Set up the Dynamics 365 Finance + Operations provider](set-up-finops-provider.md).
 
 ## Finance + Operations integration solution with Intelligent Order Management
 
 The following points describe the Finance + Operations high-level solution for integration with Intelligent Order Management.
 
 - Intelligent Order Management uses dual-write for data synchronization between Finance + Operations and Intelligent Order Management.
-- E-commerce orders will be coming into Intelligent Order Management without company code. Company code will be assigned using a policy before synchin to Finance + Operations.
+- E-commerce orders will be coming into Intelligent Order Management without company code. Company code will be assigned using a policy before synching to Finance + Operations.
 - Finance + Operations provider action will send over order from Intelligent Order Management to Finance + Operations fulfillment or billing when order is ready to sync. 
 - The Finance + Operations data assignment policy and provider actions will be called in designed orchestration flow.
 - Finance + Operations order status event handler is introduced to monitor and raise business events in Intelligent Order Management when the order status is updated in Finance + Operations.
@@ -54,7 +54,7 @@ The following scenarios describe the Finance + Operations integration scenarios 
 1. Order validated in Intelligent Order Management
 1. Order sent to Flexe for fulfillment by Flexe provider action
 1. Order shipped by Flexe
-1. Assign site warehoues and company in Intelligent Order Management order
+1. Assign site warehouses and company in Intelligent Order Management order
 1. Order sent to Finance + Operations by Finance + Operations Provider action
 1. Order invoiced in Finance + Operations
 1. Order invoiced event raised in Intelligent Order Management.
