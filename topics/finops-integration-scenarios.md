@@ -1,6 +1,6 @@
 ---
 author: anush6121 
-description: The document describes how the Microsoft Dynamics 365 Finance + Operations integration solution integrates with Microsoft Dynamics Intelligent Order Management.
+description: The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics Intelligent Order Management.
 ms.date: 03/17/2022
 ms.topic: overview
 ms.author: anvenkat
@@ -12,84 +12,92 @@ title: Finance + Operations integration solution
 
 [!include [banner](includes/banner.md)]
 
-The document describes how the Microsoft Dynamics 365 Finance + Operations integration solution integrates with Microsoft Dynamics Intelligent Order Management.
+The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics Intelligent Order Management.
 
-## Prerequisites 
+## Prerequisites
 
-You will need to set up Finance + Operations as a provider and enable dual-write in Dataverse and Intelligent Order Management. For more information, see [Set up the Dynamics 365 Finance + Operations provider](set-up-finops-provider.md).
+You must set up Finance + Operations as a provider and enable dual-write in Dataverse and Intelligent Order Management. For more information, see [Set up the Dynamics 365 Finance + Operations provider](set-up-finops-provider.md).
 
 ## Finance + Operations integration solution with Intelligent Order Management
 
-The Finance + Operations high-level solution for integration with Intelligent Order Management works in the following ways.
+The Finance + Operations high-level solution for integration with Intelligent Order Management works in the following ways:
 
 - Intelligent Order Management uses dual-write for data synchronization between Finance + Operations and Intelligent Order Management.
-- E-commerce orders will be coming into Intelligent Order Management without company codes. Company codes will be assigned using a policy before synching to Finance + Operations.
-- The Finance + Operations provider action will send over order from Intelligent Order Management to Finance + Operations fulfillment or billing when order is ready to sync. 
-- The Finance + Operations data assignment policy and provider actions will be called in designed orchestration flow.
-- The Finance + Operations order status event handler is introduced to monitor and raise business events in Intelligent Order Management when the order status is updated in Finance + Operations.
-    
+- E-commerce orders that come into Intelligent Order Management won't have company codes. Before synchronization to Finance + Operations, a policy will be used to assign company codes.
+- The Finance + Operations provider action will send an order from Intelligent Order Management to Finance + Operations fulfillment or billing when the order is ready for synchronization. 
+- The Finance + Operations data assignment policy and provider actions will be called in the designed orchestration flow.
+- The Finance + Operations order status event handler will monitor and raise business events in Intelligent Order Management when the order status is updated in Finance + Operations.
+
 ## Finance + Operations provider integration scenarios with Intelligent Order Management
 
-The following scenarios each outline the processes for how Finance + Operations integrates with Intelligent Order Management.
+Following scenarios outline the processes for integration of Finance + Operations with Intelligent Order Management.
 
-#### BigCommerce (new order) \> Intelligent Order Management \> Finance + Operations (fulfillment) \> Finance + Operations (accounting)
+### BigCommerce (new order) \> Intelligent Order Management \> Finance + Operations (fulfillment) \> Finance + Operations (accounting)
 
-1. Order created in BigCommerce.
-1. Order pulled into Intelligent Order Management from BigCommerce.
-1. Order validated in Intelligent Order Management.
-1. Company, site, and warehouse assigned in Intelligent Order Management.
-1. Order sent to Finance + Operations by Finance + Operations provider action.
-    1. Order sent to fulfillment successful event raised in Intelligent Order Management.
-1. Order shipped in Finance + Operations.
-    1. Order shipped event raised in Intelligent Order Management.
-    1. Order status updated in BigCommerce by provider action.
-1. Order invoiced in Finance + Operations.
-    1. Order invoiced event raised in Intelligent Order Management.
-    1. Order status updated in BigCommerce by provider action.
+1. An order is created in BigCommerce.
+1. The order is pulled from BigCommerce into Intelligent Order Management.
+1. The order is validated in Intelligent Order Management.
+1. A company, site, and warehouse are assigned in Intelligent Order Management.
+1. The Finance + Operations provider action sends the order to Finance + Operations.
 
-#### BigCommerce (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> Finance + Operations (accounting)
+    - An "order sent to fulfillment successful" event is raised in Intelligent Order Management.
 
-1. Order created in BigCommerce.
-1. Order pulled into Intelligent Order Management from BigCommerce.
-1. Order validated in Intelligent Order Management.
-1. Order sent to Flexe for fulfillment by Flexe provider action.
-1. Order shipped by Flexe.
-1. Site warehouses and company assigned in Intelligent Order Management order.
-1. Order sent to Finance + Operations by Finance + Operations Provider action.
-1. Order invoiced in Finance + Operations.
-1. Order invoiced event raised in Intelligent Order Management.
-1. Order status updated in BigCommerce by provider action.
+1. The order is shipped in Finance + Operations.
 
-#### Finance + Operations (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> Finance + Operations (accounting)
+    1. An "order shipped" event is raised in Intelligent Order Management.
+    1. The provider action updates the order status in BigCommerce.
 
-1. Order created in Finance + Operations.
-1. Finance + Operations order sent to Intelligent Order Management by dual-write.
-1. Order confirmed in Finance + Operations.
-1. Order validated in Intelligent Order Management.
-1. Order sent to Flexe for fulfillment by Flexe provider action.
-1. Order shipped by Flexe.
-1. Order status update sent to Finance + Operations by Finance + Operations provider action.
-1. Order invoiced in Finance + Operations.
-1. Order invoiced event raised in Intelligent Order Management.
+1. The order is invoiced in Finance + Operations.
 
-#### Finance + Operations (new order) \> Intelligent Order Management \> Finance + Operations (fulfillment) \> Finance + Operations (accounting)
+    1. An "order invoiced" event is raised in Intelligent Order Management.
+    1. The provider action updates the order status in BigCommerce.
 
-1. Order created in Finance + Operations.
-1. Finance + Operations order sent to Intelligent Order Management by dual-write.
-1. Order confirmed in Finance + Operations.
-1. Order validated in Intelligent Order Management.
-1. Order shipped in Finance + Operations.
-    1. Order shipped event raised in Intelligent Order Management.
-1. Order invoiced in Finance + Operations.
-    1. Order invoiced event received in Intelligent Order Management.
+### BigCommerce (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> Finance + Operations (accounting)
 
-#### Finance + Operations (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> SAP (accounting)
+1. An order is created in BigCommerce.
+1. The order is pulled from BigCommerce into Intelligent Order Management.
+1. The order is validated in Intelligent Order Management.
+1. The Flexe provider action sends the order to Flexe for fulfillment.
+1. Flexe ships the order.
+1. Site warehouses and a company are assigned in Intelligent Order Management.
+1. The Finance + Operations provider action sends the order to Finance + Operations.
+1. The order is invoiced in Finance + Operations.
+1. An "order invoiced" event is raised in Intelligent Order Management.
+1. The provider action updates the order status in BigCommerce.
 
-1. Order created in Finance + Operations.
-1. Finance + Operations order sent to Intelligent Order Management by dual-write.
-1. Order confirmed in Finance + Operations.
-1. Order validated in Intelligent Order Management.
-1. Order sent to Flexe for fulfillment by provider action.
-1. Order shipped event raised in Intelligent Order Management.
-1. Order invoiced in SAP.
-1. Order invoiced event received in Intelligent Order Management.
+### Finance + Operations (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> Finance + Operations (accounting)
+
+1. An order is created in Finance + Operations.
+1. Dual-write sends the Finance + Operations order to Intelligent Order Management.
+1. The order is confirmed in Finance + Operations.
+1. The order is validated in Intelligent Order Management.
+1. The Flexe provider action sends the order to Flexe for fulfillment.
+1. Flexe ships the order.
+1. The Finance + Operations provider action sends the order status to Finance + Operations.
+1. The order is invoiced in Finance + Operations.
+1. An "order invoiced" event is raised in Intelligent Order Management.
+
+### Finance + Operations (new order) \> Intelligent Order Management \> Finance + Operations (fulfillment) \> Finance + Operations (accounting)
+
+1. An order is created in Finance + Operations.
+1. Dual-write sends the Finance + Operations order to Intelligent Order Management.
+1. The order is confirmed in Finance + Operations.
+1. The order is validated in Intelligent Order Management.
+1. The order is shipped in Finance + Operations.
+
+    - An "order shipped" event is raised in Intelligent Order Management.
+
+1. The order is invoiced in Finance + Operations.
+
+    - An "order invoiced" event is received in Intelligent Order Management.
+
+### Finance + Operations (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> SAP (accounting)
+
+1. An order is created in Finance + Operations.
+1. Dual-write sends the Finance + Operations order to Intelligent Order Management.
+1. The order is confirmed in Finance + Operations.
+1. The order is validated in Intelligent Order Management.
+1. The provider action sends the order to Flexe for fulfillment.
+1. An "order shipped" event is raised in Intelligent Order Management.
+1. The order is invoiced in SAP.
+1. An "order invoiced" event is received in Intelligent Order Management.
