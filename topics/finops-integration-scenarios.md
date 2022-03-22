@@ -1,7 +1,7 @@
 ---
 author: anush6121 
 description: The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics Intelligent Order Management.
-ms.date: 03/17/2022
+ms.date: 03/22/2022
 ms.topic: overview
 ms.author: anvenkat
 
@@ -39,18 +39,13 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. The order is validated in Intelligent Order Management.
 1. A company, site, and warehouse are assigned in Intelligent Order Management.
 1. The Finance + Operations provider action sends the order to Finance + Operations.
-
-    - An "order sent to fulfillment successful" event is raised in Intelligent Order Management.
-
+1. An "order sent to fulfillment successful" event is raised in Intelligent Order Management.
 1. The order is shipped in Finance + Operations.
-
-    1. An "order shipped" event is raised in Intelligent Order Management.
-    1. The provider action updates the order status in BigCommerce.
-
+1. An "order shipped" event is raised in Intelligent Order Management.
+1. The provider action updates the order status in BigCommerce.
 1. The order is invoiced in Finance + Operations.
-
-    1. An "order invoiced" event is raised in Intelligent Order Management.
-    1. The provider action updates the order status in BigCommerce.
+1. An "order invoiced" event is raised in Intelligent Order Management.
+1. The provider action updates the order status in BigCommerce.
 
 ### BigCommerce (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> Finance + Operations (accounting)
 
@@ -84,12 +79,9 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. The order is confirmed in Finance + Operations.
 1. The order is validated in Intelligent Order Management.
 1. The order is shipped in Finance + Operations.
-
-    - An "order shipped" event is raised in Intelligent Order Management.
-
+1. An "order shipped" event is raised in Intelligent Order Management.
 1. The order is invoiced in Finance + Operations.
-
-    - An "order invoiced" event is received in Intelligent Order Management.
+1. An "order invoiced" event is received in Intelligent Order Management.
 
 ### Finance + Operations (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> SAP (accounting)
 
@@ -97,7 +89,7 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. Dual-write sends the Finance + Operations order to Intelligent Order Management.
 1. The order is confirmed in Finance + Operations.
 1. The order is validated in Intelligent Order Management.
-1. The provider action sends the order to Flexe for fulfillment.
+1. The Flexe provider action sends the order to Flexe for fulfillment.
 1. An "order shipped" event is raised in Intelligent Order Management.
 1. The order is invoiced in SAP.
 1. An "order invoiced" event is received in Intelligent Order Management.
