@@ -1,6 +1,6 @@
 ---
 author: anush6121 
-description: The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics Intelligent Order Management.
+description: The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 03/22/2022
 ms.topic: overview
 ms.author: anvenkat
@@ -12,7 +12,7 @@ title: Finance + Operations integration solution
 
 [!include [banner](includes/banner.md)]
 
-The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics Intelligent Order Management.
+The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Prerequisites
 
