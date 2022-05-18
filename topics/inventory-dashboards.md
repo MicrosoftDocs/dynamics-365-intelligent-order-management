@@ -25,7 +25,9 @@ Please follow these steps to view inventory dashboards on an Intelligent Order M
 1. From here, go to the *Index and reservation* section under *Inventory visibility*.
 1. Go to the *Feature management* tab on the far right.
 1. Here enable the xx toggle. Doing this will ensure that data is flowing from Inventory Visibility Service, into Intelligent Order Management, for consumption by this dashboard.
-<img src="IV config image.png" alt="Screenshot of image with configuration" /> 
+
+![Screenshot of inventory dashboard.](../images/InventoryDashboard.png)
+
 1. Finally, the Power BI insights need to be enabled. To do this, go to Power BI Insights on the same left navigation panel. Click on *Manage*, set the status here to *Enabled*, then *Save & Close* on the ribbon.
 
 ## Visualizations
