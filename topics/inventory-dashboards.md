@@ -13,11 +13,12 @@ title: Inventory dashboards
 
 [!include [banner](includes/banner.md)]
 
-Inventory management is one of the most expensive pieces in an order management process. Having visibility into what your business has in stock vs the demand for that item and other relevant KPIs can provide a lot of value and savings. This is what Intelligent Order Management's dashboards will achieve for you. 
+Inventory management is one of the most expensive pieces in an order management process. Having visibility into what your business has in stock vs the demand for that item and other relevant key performance indicators (KPIs) can provide a lot of value and savings. This is what Intelligent Order Management's dashboards will achieve for you. 
 
 In this article let us understand the various KPIs and graphs described in the dashboard.
 
-## Prerequisites and  setup
+## Prerequisites and setup
+
 Please follow these steps to view inventory dashboards on an Intelligent Order Management org:
 1. Please ensure that the org's build version is 1.0.0.4354 or above.
 1. These dashboards can only light up with useful information if the business is using Intelligent Order Management with Inventory Visibility Service, and has it configured to work.
@@ -31,15 +32,19 @@ Please follow these steps to view inventory dashboards on an Intelligent Order M
 1. Finally, the Power BI insights need to be enabled. To do this, go to Power BI Insights on the same left navigation panel. Click on *Manage*, set the status here to *Enabled*, then *Save & Close* on the ribbon.
 
 ## Visualizations
+
 The following sections detail the KPIs and graphs that describe inventory information of the business using Intelligent Order Management. 
+
 ### Filters
 
 We provide two multi-select filters out-of-box to our customers. One is on product name and the other is on location ID. This is an interactive dashboard, and therefore, when you need to drill down on one or more products/locations, the filters will slice your data to show the KPIs and graphs for the selected products/locations.
 
 ##### Product Name
+
 The product names come from the 'Products' (link/ screenshot??) section of IOM. All the products that sales orders can be created for and inventory is recorded for should show up in this section. And this information flows into the Inventory dashboard.
 
 ##### Location ID
+
 The location ID comes from the configuration on the inventory dashboard configuration page. (add more here)
 
 ### KPIs
@@ -75,6 +80,7 @@ The location ID comes from the configuration on the inventory dashboard configur
 1. **Products**: This is a tabular representation of all the products and their individual KPIs as described in the KPI section above.
 
 ## FAQs
+
 1. **How long does it take after setup for the dashboard to light up on the org?**
 <br> It can take up to 24 hours after initial set up for the reports to be provisioned. If it takes more than that, please contact Microsoft Support and we will help you out at the earliest.
 
