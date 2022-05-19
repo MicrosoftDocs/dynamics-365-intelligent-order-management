@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic describes the setup that is required to run a sample order orchestration flow from BigCommerce to Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 02/11/2022
+ms.date: 05/19/2022
 ms.topic: conceptual
 ms.author: josaw
 
@@ -20,21 +20,21 @@ This topic describes the setup that is required to run a sample order orchestrat
 
 Before you can begin, you must set up BigCommerce as a provider in Intelligent Order Management. For more information, see [Set up BigCommerce provider](set-up-bigcommerce-provider.md).
 
-## Create a customer in Big Commerce
+## Create a customer in BigCommerce
 
-The first step is to setup a customer in Big Commerce.
-1. Go to **Customer**
-2. Click on **Add**
-3. Enter the customer details and Add **Company Name** if he orders belong to a Company else leave it blank.
-4. Save the Customer and click on tab **Customer Address Details**
-5. Enter the customer address details and Save.
-6. Logout and Login to have the customer shown for next transactions.
+The first step is to setup a customer in BigCommerce.
 
-**Please Note: If a Company Name was provided in Customer creation for Big Commerce, then please follow the below mappings in Intelligent Order Management, else start from Price List Mpaping**
+1. In BigCommerce, go to the **Customer** page.
+2. Select **Add**
+3. Enter details for the customer. If the orders are from a company, enter the name of the company in the **Company Name** field, otherwise leave the field blank. Select **Save**.
+4. Select the **Customer Address Details** tab.
+5. Enter the customer address information and then select **Save**.
+6. To use the customer for a transaciton, you need to sign out of BigCommerce and then sign back in.
 
-## Set up a customer
+> [!NOTE]
+> If you provided a company name when you created a customer in BigCommerce, follow the steps in the "Set up account mappings" section below. Otherwise, go to the "Set up pricelist mapping" section.
 
-The first step is to set up a customer in Intelligent Order Management.
+## Set up a customer in Intelligent Order Management
 
 1. Go to **Customers \> Accounts**.
 1. Select **New**.
