@@ -20,13 +20,11 @@ The following example image shows an Intelligent Order Management's inventory da
 
 ![Screenshot of inventory dashboard.](media/InventoryDashboard.png)
 
-The following sections cover prerequisites, setup, and the various KPIs and graphs described in the dashboard.
-
 ## Prerequisites and setup
 
-To view inventory dashboards on an Intelligent Order Management organization, you must first ensure that your organization's Intelligent Order Management build version is 1.0.0.4354 or above.
+To view inventory dashboards for your Intelligent Order Management organization, you must first ensure that your organization's Intelligent Order Management build version is 1.0.0.4354 or above.
 
-Dashboards can only provide useful information if your business is using Intelligent Order Management with the Inventory Visibility service and has it configured to work. For more information, see [Inventory Visibility Add-in overview](/dynamics365/supply-chain/inventory/inventory-visibility).
+Dashboards can only provide you with useful information if your ntelligent Order Management organization is configured to use the Inventory Visibility service. For more information, see [Inventory Visibility Add-in overview](/dynamics365/supply-chain/inventory/inventory-visibility).
 
 To configure the Inventory Visibility service for your Intelligent Order Management organization, follow these steps.
 
@@ -51,18 +49,18 @@ Product name information flows into the inventory dashboard from the **Products*
 
 #### Location ID
 
-The location ID data flows into the inventory dashboard from the inventory dashboard configuration page.
+The location ID information flows into the inventory dashboard from the inventory dashboard configuration page.
 
 ### KPIs
 
-- **Physical available**: This value is the sum of all units that are physically available in the warehouse. It includes items that are "soft" reserved. Whenever there's an upload of inventory data to the system, this KPI value is updated. When items are shipped out of warehouses, the number of items is deducted from the KPI value.
+- **Physical available**: This value is the sum of all units that are physically available in the warehouse. It includes items that are "soft reserved". Whenever there's an upload of inventory data to the system, this KPI value is updated. When items are shipped out of warehouses, the number of items is deducted from the KPI value.
 - **Soft reserved**: Once fulfillment optimization occurs and the warehouse(s) are determined for sales orders, the respective items in that warehouse are "soft reserved". When items are soft reserved, the number of these items is added to this KPI value, which ensures that the same items don't get double booked against two different orders. Once soft reserved items are shipped, the number of these items is deducted from this KPI value.
 - **Onhand inventory**: This value shows the number of units actually available when evaluating the warehouse source for sales orders. It's calculated by subtracting the **Soft reserved** KPI value from the **Physical available** KPI value. When a fulfillment optimization runs, the **Onhand inventory** KPI value is the inventory value that is considered.
-- **New order line qty**: This value calculates the total number of units of product in demand by looking at all order lines in a new state and adding all of their quantity values. 
+- **New order line qty**: This value calculates the total number of units of product in demand by looking at all order lines in a new state and adding up all of their quantity values. 
 - **Returned**: This value shows the number of product units that have been returned to the warehouse after being sold to customers.
-- **Return rate**: This value shows the rate of return of units of products that have been returned to the warehouse after being sold to customers. It's calculated as (units returned/units sold) x 100.
-- **Sell rate**: This value shows the rate of items being sold to customers. It's calculated as (units sold - units returned)/(units in stock + units sold)] x 100.
-- **Out-of-stock**: This value shows the number of units of products that have to be replenished in order to fulfill demand. It's calculated as (units in supply - units in demand).
+- **Return rate**: This value shows the rate of return of units of products that have been returned to the warehouse after being sold to customers. It's calculated as `(units returned/units sold) x 100`.
+- **Sell rate**: This value shows the rate of items being sold to customers. It's calculated as `(units sold - units returned)/(units in stock + units sold) x 100`.
+- **Out-of-stock**: This value shows the number of units of products that have to be replenished in order to fulfill demand. It's calculated as `(units in supply - units in demand)`.
 
 ### Graphs
 
