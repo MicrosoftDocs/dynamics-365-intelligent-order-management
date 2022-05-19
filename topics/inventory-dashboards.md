@@ -14,7 +14,7 @@ title: Inventory dashboards
 
 This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
 
-Inventory management is one of the most expensive parts of the order management process. Intelligent Order Management's inventory dashboards can provide you with visibility into which items your business has in stock versus the demand for those items, and can also provide other relevant key performance indicators (KPIs) that can help you lower costs. 
+Inventory management is one of the most expensive parts of the order management process. Intelligent Order Management's inventory dashboards provide you with visibility into which items your business has in stock versus the demand for those items, and also provides other relevant key performance indicators (KPIs) that can help you lower costs. 
 
 The following example image shows an Intelligent Order Management's inventory dashboard.
 
@@ -55,7 +55,7 @@ The location ID information flows into the inventory dashboard from the inventor
 
 - **Physical available**: This value is the sum of all units that are physically available in the warehouse. It includes items that are "soft reserved". Whenever there's an upload of inventory data to the system, this KPI value is updated. When items are shipped out of warehouses, the number of items is deducted from the KPI value.
 - **Soft reserved**: Once fulfillment optimization occurs and the warehouse(s) are determined for sales orders, the respective items in that warehouse are "soft reserved". When items are soft reserved, the number of these items is added to this KPI value, which ensures that the same items don't get double booked against two different orders. Once soft reserved items are shipped, the number of these items is deducted from this KPI value.
-- **Onhand inventory**: This value shows the number of units actually available when evaluating the warehouse source for sales orders. It's calculated by subtracting the **Soft reserved** KPI value from the **Physical available** KPI value. When a fulfillment optimization runs, the **Onhand inventory** KPI value is the inventory value that is considered.
+- **Onhand inventory**: This value shows the number of units available when evaluating the warehouse source for sales orders. It's calculated by subtracting the **Soft reserved** KPI value from the **Physical available** KPI value. When a fulfillment optimization runs, the **Onhand inventory** KPI value is the inventory value that is considered.
 - **New order line qty**: This value calculates the total number of units of product in demand by looking at all order lines in a new state and adding up all of their quantity values. 
 - **Returned**: This value shows the number of product units that have been returned to the warehouse after being sold to customers.
 - **Return rate**: This value shows the rate of return of units of products that have been returned to the warehouse after being sold to customers. It's calculated as `(units returned/units sold) x 100`.
