@@ -14,7 +14,7 @@ title: Inventory dashboards
 
 This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
 
-Inventory management is one of the most expensive parts of the order management process. Intelligent Order Management's inventory dashboards can give you visibility into what items your business has in stock versus the demand for those items, and can also provide other relevant key performance indicators (KPIs) that can help you lower costs. 
+Inventory management is one of the most expensive parts of the order management process. Intelligent Order Management's inventory dashboards can provide you with visibility into which items your business has in stock versus the demand for those items, and can also provide other relevant key performance indicators (KPIs) that can help you lower costs. 
 
 The following example image shows an Intelligent Order Management's inventory dashboard.
 
@@ -55,14 +55,14 @@ The location ID data flows into the inventory dashboard from the inventory dashb
 
 ### KPIs
 
-- **Physical available**: This value is the sum of all units that are physically available in the warehouse. It includes items that are "soft" reserved. Whenever there is an upload of inventory data to the system, this KPI value is updated. When items are shipped out of warehouses, the number of items is deducted from the KPI value.
-- **Soft reserved**: Once fulfillment optimization occurs and the warehouse(s) are determined for sales orders, the respective items in that warehouse are "soft reserved". When items are soft reserved, the number of these items is added to this KPI value, which ensures that the same items do not get double booked against two different orders. Once soft reserved items are shipped, the number of these items is deducted from this KPI value.
-- **Onhand inventory**: This value shows the number of units actually available when evaluating the warehouse source for sales orders. It is calculated by subtracting the **Soft reserved** KPI value from the **Physical available** KPI value. When a fulfillment optimization runs, the **Onhand inventory** KPI value is the inventory value that is considered.
+- **Physical available**: This value is the sum of all units that are physically available in the warehouse. It includes items that are "soft" reserved. Whenever there's an upload of inventory data to the system, this KPI value is updated. When items are shipped out of warehouses, the number of items is deducted from the KPI value.
+- **Soft reserved**: Once fulfillment optimization occurs and the warehouse(s) are determined for sales orders, the respective items in that warehouse are "soft reserved". When items are soft reserved, the number of these items is added to this KPI value, which ensures that the same items don't get double booked against two different orders. Once soft reserved items are shipped, the number of these items is deducted from this KPI value.
+- **Onhand inventory**: This value shows the number of units actually available when evaluating the warehouse source for sales orders. It's calculated by subtracting the **Soft reserved** KPI value from the **Physical available** KPI value. When a fulfillment optimization runs, the **Onhand inventory** KPI value is the inventory value that is considered.
 - **New order line qty**: This value calculates the total number of units of product in demand by looking at all order lines in a new state and adding all of their quantity values. 
 - **Returned**: This value shows the number of product units that have been returned to the warehouse after being sold to customers.
-- **Return rate**: This value shows the rate of return of units of products that have been returned to the warehouse after being sold to customers. It is calculated as (units returned/units sold) x 100.
-- **Sell rate**: This value shows the rate of items being sold to customers. It is calculated as (units sold - units returned)/(units in stock + units sold)] x 100.
-- **Out-of-stock**: This value shows the number of units of products that have to be replenished in order to fulfill demand. It is calculated as (units in supply - units in demand).
+- **Return rate**: This value shows the rate of return of units of products that have been returned to the warehouse after being sold to customers. It's calculated as (units returned/units sold) x 100.
+- **Sell rate**: This value shows the rate of items being sold to customers. It's calculated as (units sold - units returned)/(units in stock + units sold)] x 100.
+- **Out-of-stock**: This value shows the number of units of products that have to be replenished in order to fulfill demand. It's calculated as (units in supply - units in demand).
 
 ### Graphs
 
@@ -79,7 +79,7 @@ The location ID data flows into the inventory dashboard from the inventory dashb
 
 #### How long does it take after setup for the dashboard to provide useful information on the organization?
 
-It can take up to 24 hours after the initial setup for the reports to be provisioned. If it takes longer than that, please contact Microsoft Support for assistance.
+It can take up to 24 hours after the initial setup for the reports to be provisioned. If it takes longer, contact Microsoft Support for assistance.
 
 #### Does the inventory dashboard represent data in real time?
 
@@ -91,16 +91,16 @@ Yes, there are product name and location ID filters that can be used to refine t
 
 #### Can I sort the data differently than what is made available out-of-box?
 
-Yes. When you hover on a graph you will see three small icons appear on the top right corner of the graph. To resort the data, select the ellipsis, select **Sort axis**, and then select the option that you want.
+Yes. When you hover on a graph, you'll see a vertical ellipsis on the top right corner of the graph. To resort the data, select the ellipsis, select **Sort axis**, and then select the option that you want.
 
 #### Can I modify the KPIs that the dashboard provides?
 
-At this time the KPIs provided are the only ones currently available. After doing market research, these KPIs were determined to be the most useful for the majority of businesses. If you have suggestions regarding adding or modifying the KPIs or graphs, reach out to the team at <D365OMS@microsoft.com>.
+At this time, the KPIs provided are the only ones currently available. After doing market research, these KPIs were determined to be the most useful for most businesses. If you have suggestions regarding adding or modifying the KPIs or graphs, reach out to the team at <D365OMS@microsoft.com>.
 
 #### I'm unsure how some of these KPIs are being calculated, how do I get more information?
 
-The way these KPIs are calculated is described in the [KPIs](#kpis) section above. In Intelligent Order Management you can also hover on the KPI number (not the KPI name) to see a tooltip that describes how that KPI is being calculated.
+The way these KPIs are calculated is described in the [KPIs](#kpis) section above. You can also hover on an inventory dashboard KPI number (not the KPI name) to see a tooltip that describes how that KPI is being calculated.
 
 #### Can I look for historical information of the inventory?
 
-All data displayed on the inventory dashboard is a current representation of the inventory system (keeping in mind a latency time of 4-10 hours). Looking at previous states of the inventory system is not currently supported.
+All data displayed on the inventory dashboard is a current representation of the inventory system (keeping in mind a latency time of 4-10 hours). Looking at previous states of the inventory system isn't currently supported.
