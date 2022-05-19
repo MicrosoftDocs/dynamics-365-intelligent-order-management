@@ -66,10 +66,10 @@ The location ID data flows into the inventory dashboard from the inventory dashb
 
 ### Graphs
 
-- **Supply by product name**: This stacked bar chart shows a break down of the inventory supply by product name. It shows the distribution of onhand, soft reserved and returned quantities of the product. Each bar total represents the physical available KPI for the product.
-- **Supply by location ID**: This stacked bar chart shows a break down of the inventory supply by the location. It shows the distribution of onhand, soft reserved and returned quantities of the product. Each bar total represents the physical available KPI for the location.
+- **Supply by product name**: This stacked bar chart shows a breakdown of the inventory supply by product name. It shows the distribution of on hand, soft reserved, and returned quantities of the product. Each bar total represents the physical available KPI for the product.
+- **Supply by location ID**: This stacked bar chart shows a breakdown of the inventory supply by location. It shows the distribution of on hand, soft reserved, and returned quantities of the product. Each bar total represents the physical available KPI for location.
 - **Return rate by product name**: This bar chart shows the rate of return broken down by product name.
-- **Stockout and near stockout item**: This chart shows the number of units of products that are under stocked or nearing that state as compared to its demand. The bars below the zero line represent the products that are under stocked and the values on the bar represent the number of units of said products that need immediate attention. The bars above the zero line represent the products that are nearing the under stocked state and the values on the bar represent the number of units of said products that will be left once the current demand is satisfied.
+- **Stockout and near stockout item**: This chart shows the number of product units that are understocked or nearing that state as compared to demand. The bars below the zero line represent the products that are understocked, and the values on the bar represent the number for those product units that need immediate attention. The bars above the zero line represent the products that are nearing the understocked state, and the values on the bar represent the number of those product units that will remain once the current demand is satisfied.
 
 ### Table
 
@@ -79,7 +79,7 @@ The location ID data flows into the inventory dashboard from the inventory dashb
 
 #### How long does it take after setup for the dashboard to provide useful information on the organization?
 
-It can take up to 24 hours after the initial set up for the reports to be provisioned. If it takes longer than that, please contact Microsoft Support for assistance.
+It can take up to 24 hours after the initial setup for the reports to be provisioned. If it takes longer than that, please contact Microsoft Support for assistance.
 
 #### Does the inventory dashboard represent data in real time?
 
