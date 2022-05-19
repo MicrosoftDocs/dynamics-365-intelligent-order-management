@@ -24,7 +24,7 @@ The following example image shows an Intelligent Order Management's inventory da
 
 To view inventory dashboards for your Intelligent Order Management organization, you must first ensure that your organization's Intelligent Order Management build version is 1.0.0.4354 or above.
 
-Dashboards can only provide you with useful information if your ntelligent Order Management organization is configured to use the Inventory Visibility service. For more information, see [Inventory Visibility Add-in overview](/dynamics365/supply-chain/inventory/inventory-visibility).
+Dashboards can only provide you with useful information if your Intelligent Order Management organization is configured to use the Inventory Visibility service. For more information, see [Inventory Visibility Add-in overview](/dynamics365/supply-chain/inventory/inventory-visibility).
 
 To configure the Inventory Visibility service for your Intelligent Order Management organization, follow these steps.
 
