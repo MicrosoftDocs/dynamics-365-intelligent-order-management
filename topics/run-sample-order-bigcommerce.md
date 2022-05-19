@@ -20,6 +20,18 @@ This topic describes the setup that is required to run a sample order orchestrat
 
 Before you can begin, you must set up BigCommerce as a provider in Intelligent Order Management. For more information, see [Set up BigCommerce provider](set-up-bigcommerce-provider.md).
 
+## Create a customer in Big Commerce
+
+The first step is to setup a customer in Big Commerce.
+1. Go to **Customer**
+2. Click on **Add**
+3. Enter the customer details and Add **Company Name** if he orders belong to a Company else leave it blank.
+4. Save the Customer and click on tab **Customer Address Details**
+5. Enter the customer address details and Save.
+6. Logout and Login to have the customer shown for next transactions.
+
+**Please Note: If a Company Name was provided in Customer creation for Big Commerce, then please follow the below mappings in Intelligent Order Management, else start from Price List Mpaping**
+
 ## Set up a customer
 
 The first step is to set up a customer in Intelligent Order Management.
