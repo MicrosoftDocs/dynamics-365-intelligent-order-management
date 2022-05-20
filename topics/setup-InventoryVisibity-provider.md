@@ -79,7 +79,7 @@ In order to add this provider for use in orchestration below are some key config
    4. Available For Reservation Calculated Measure
    5. Settings Button
 
-Once validated the above settings, configure or reuse the physical measures and calculated measure across your Datasources.
+Once validated the above settings, **configure** or **reuse** the physical measures and calculated measure across your Datasources.
 
 Note: The below Inventory Visibility Provider can be used to connect to Inventory service available as part of Intelligent Order management as well a Dynamics 365 FinOps Inventory visibility instance to soft reserve or update inventory on Shipment or Receipt at Returns.
 However the upload capability using blob storage is exclusive to Intelligent Order Management and can be leveraged to upload only at IOM Inventory service instance.
