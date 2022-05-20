@@ -23,7 +23,7 @@ To learn more about Inventory Visibility service, see [Inventory Visibility Add 
 
 ## Prerequisites
 
-Inventory Visibilty add in is a first party out of the box addin that will be available as part of Intelligent Order Management product.
+Inventory Visibilty add in is a first party out of the box add-in that will be available as part of Dynamics 365 Intelligent Order Management.
 In order to add this provider for use in orchestration below are some key configurations to validate and update post installation.
 
 1. Navigate to Inventory Visibility -> **Index And Reservations site map area**
@@ -122,14 +122,16 @@ To set up the provider, follow these steps:
         10. **Scrapped Physical Measure**: Please enter the same physical measure name that you have defined in above setup for scrapped quantity.
 
 
+5. Click on **Save** and **Activate** the provider.
+
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Provider actions       |The actions associated with a provider that determine what actions are available to you when you create an orchestration flow.   | 
+|**Provider actions**       |The actions associated with a provider that determine what actions are available to you when you create an orchestration flow.   | 
 |                           |**Bulk or Delta Inventory Upload** : Part of Inventory Orchestration| 
 |                           |**Inventory Update on Receipt** : Part of Order Orchestration| 
 |                           |**Inventory Update on Shipment** : Part of Order Orchestration| 
 |                           |**Soft Reserve Inventory** : Part of Order Orchestration|
-|    Transformations        |Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service. |
+|**Transformations**        |Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service. |
 |                           |**Dataverse Inventory Onhand Data to Inventory Visibility Onhand Changes**|
 
 ## Additional resources
