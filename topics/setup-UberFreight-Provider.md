@@ -13,7 +13,7 @@ title: Set up Uber Freight provider
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about how to set up the Uber Freight provider in Dynamics 365 Intelligent Order Management.
+This topic describes how to set up the Uber Freight provider in Dynamics 365 Intelligent Order Management.
 
 Uber Freight is a division of Uber created to focus on trucking freight across North America. It connects independent drivers with shippers who need their cargo transported from one location to another.  
 
