@@ -1,8 +1,8 @@
 ---
 author: sumanic
-description: This topic describes how to set up the Inventory Visibility  provider in Dynamics 365 Intelligent Order Management.
+description: This topic describes how to set up the Inventory Visibility provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/19/2022
+ms.date: 05/24/2022
 ms.topic: how-to
 ms.author: sumanic
 
@@ -14,16 +14,15 @@ title: Set up Inventory Visibility
 
 [!include [banner](includes/banner.md)]
 
-
 This topic describes how to set up the Inventory Visibility provider in Dynamics 365 Intelligent Order Management.
 
 The Inventory Visibility Add-in (also referred to as the Inventory Visibility service) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels.  
   
-To learn more about Inventory Visibility service, see [Inventory Visibility Add In](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility). 
+To learn more about Inventory Visibility service, see [Inventory Visibility Add In](/dynamics365/supply-chain/inventory/inventory-visibility). 
 
 ## Prerequisites
 
-Inventory Visibilty add in is a first party out of the box add-in that will be available as part of Dynamics 365 Intelligent Order Management.
+Inventory Visibility add in is a first party out of the box add-in that will be available as part of Dynamics 365 Intelligent Order Management.
 In order to add this provider for use in orchestration below are some key configurations to validate and update post installation.
 
 1. Navigate to Inventory Visibility -> **Index And Reservations site map area**
@@ -96,7 +95,7 @@ To set up the provider, follow these steps:
 
 4.  There are two connections that you need to set up in the **Connections** section.
 
-    1. Inventory Visibilty Dataverse (current environment) Connection
+    1. Inventory Visibility Dataverse (current environment) Connection
 
     1. Blob storage connection:
 
@@ -136,4 +135,4 @@ To set up the provider, follow these steps:
 
 ## Additional resources
 
-[Setting up Inventory Service in Dynamics 365 FinOps](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-setup#inventory-visibility-prerequisites)
+[Setting up Inventory Service in Dynamics 365 FinOps](/dynamics365/supply-chain/inventory/inventory-visibility-setup#inventory-visibility-prerequisites)
