@@ -51,7 +51,7 @@ The Uber Freight provider has the following capabilities:
 |  Capability | Details |
 | ------------------ | -------------------------------- |
 | Transformation  |  **Dataverse Fulfillment Order to Uber Freight Quote**: Transforms a fulfillment order from Dataverse to Uber Freight to generate a quote.|
-|                 |  **Dataverse Fulfillment Order to Uber Freight Tender**: Transforms a fulfillment order from Dataverse to Uber Freight to generate a shipment booking.|
+| Transformation  |  **Dataverse Fulfillment Order to Uber Freight Tender**: Transforms a fulfillment order from Dataverse to Uber Freight to generate a shipment booking.|
 
 ## Additional resources
 
