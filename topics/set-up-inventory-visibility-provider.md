@@ -21,7 +21,7 @@ To learn more about the Inventory Visibility service, see [Inventory Visibility 
 
 ## Prerequisites
 
-The Inventory Visibility Add-in is a first-party, out-of-the-box service that will be available as part of Dynamics 365 Intelligent Order Management. In order to add this provider for use in orchestration, after installing the add-in, you must validate and update the following configurations.
+The Inventory Visibility Add-in is a first-party, out-of-the-box service that will be available as part of Dynamics 365 Intelligent Order Management. In order to add this provider for use in orchestration, after installing the add-in you must validate and update the following configurations.
 
 1. Go to **Inventory Visibility \> Index And Reservations site map area**.
 1. Confirm that the following tabs appear on the page:
@@ -68,7 +68,7 @@ The Inventory Visibility Add-in is a first-party, out-of-the-box service that wi
    - **Physical Measure** column
    - **Available For Reservation Data Source** column
    - **Available For Reservation Calculated Measure** column
-   - **Settings** nutton
+   - **Settings** button
 
 Once validated, the settings above configure or reuse the physical and calculated measures across your data sources.
 
