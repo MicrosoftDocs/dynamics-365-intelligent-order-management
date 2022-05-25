@@ -1,7 +1,7 @@
 ---
 author: sumanic
 description: This topic provides information about how to set up the Uber Freight provider in Dynamics 365 Intelligent Order Management.
-ms.date: 05/24/2022
+ms.date: 05/25/2022
 ms.topic: how-to
 ms.author: sumanic
 
@@ -31,18 +31,18 @@ To set up the provider, follow these steps:
 2.  Select **Add Provider** on the **Uber Freight** tile.
 3.  Select **Create** on the **Terms and Conditions** page.
 4.  There are two connections that you need to set up in the **Connections** section.
-    1. Uber Freight Dataverse (current environment) Connection
-    1. Uber Freight Connection:
+    1. Uber Freight Dataverse (current environment) connection.
+    1. Uber Freight connection:
         1. Select the connection.
         1. Under the **Connection** section, select **Create**.
         1. Enter the **Connection Name**, **API Key**, and **Store Host URL**.
-        1. Select **Save**, and then Select **Activate**.       
+        1. Select **Save**, and then select **Activate**.       
         1. Select **Save and close**.
-5. On the **Overview \> Parameters**, enter the **Uber Freight customer id**.
+5. Go to the **Parameters** tab and enter the **Uber Freight customer ID**.
 6. Select **Save**.
 7. Select **Activate** to activate the provider.
 8. Select **Save and close**.
-9. Go to **Providers \> Installed** and validate that the provider you set up is listed with the status **Activated**.
+9. Go to **Providers \> Installed** and validate that the provider you set up is listed with a status of **Activated**.
 
 ## Out-of-box capabilities
 
