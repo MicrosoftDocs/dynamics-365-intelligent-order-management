@@ -72,8 +72,6 @@ The Inventory Visibility Add-in is a first-party, out-of-the-box service that wi
 
 Once validated, the settings above configure or reuse the physical and calculated measures across your data sources.
 
-
-
 ## Set up the Inventory Visibility provider
 
 > [!NOTE]
@@ -103,6 +101,8 @@ To set up the provider, follow these steps:
     - **Soft Reserved Physical Measure**: The same physical measure name for reservation quantity that you defined during setup.
     - **Scrapped Physical Measure**: The same physical measure name for scrapped quantity that you defined during setup.
 1. Select **Save**, and then select **Activate** to activate the provider.
+
+## Out-of-box capabilities
 
 *Provider actions* are actions associated with a provider that determine what actions are available to you when you create an orchestration flow.
 
