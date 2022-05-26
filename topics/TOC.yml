@@ -79,7 +79,7 @@
       - name: Set up Dynamics 365 Finance + Operations provider
         href: set-up-finops-provider.md
       - name: Set up Uber Freight provider
-        name: set-up-uber-freight-provider.md
+        href: set-up-uber-freight-provider.md
       - name: Customize an out-of-box provider
         href: customize-provider.md
       - name: Create a new provider
