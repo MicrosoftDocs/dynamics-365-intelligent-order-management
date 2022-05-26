@@ -82,6 +82,8 @@
         href: customize-provider.md
       - name: Create a new provider
         href: create-new-provider.md
+    - name: Set up inventory dashboards
+      href: inventory-dashboards.md
     - name: Enable Bing Maps for your environment
       href: enable-bing-maps.md
     - name: Enable timeline capabilities
