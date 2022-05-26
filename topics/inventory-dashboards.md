@@ -1,7 +1,7 @@
 ---
 author: josaw1
 description: This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 05/28/2022
+ms.date: 05/26/2022
 ms.topic: conceptual
 ms.author: josaw
 
@@ -30,7 +30,7 @@ To configure the Inventory Visibility service for your Intelligent Order Managem
 
 1. In Intelligent Order Management for your organization, at the bottom of the left navigation pane, select the area switcher, and then select **Configurations**.
 1. Under **Inventory visibility**, go to the **Index and reservation** section.
-1. On the **Feature management** tab on the right side, turn on the **xx** option. This setting ensures that data flows from the Inventory Visibility service into Intelligent Order Management, so that it can be consumed by the dashboard.
+1. On the **Feature management** tab on the right side, turn on the **OnHandMostSpecificBackgroundService** option. This setting ensures that data flows from the Inventory Visibility service into Intelligent Order Management, so that it can be consumed by the dashboard.
 
     Next, you must enable Microsoft Power BI Insights.
 
