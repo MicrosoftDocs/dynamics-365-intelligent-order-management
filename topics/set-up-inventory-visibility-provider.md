@@ -5,11 +5,11 @@ ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/25/2022
 ms.topic: how-to
 ms.author: sumanic
-title: Set up the Inventory Visibility provider
+title: Set up Inventory Visibility provider
 
 ---
 
-# Set up the Inventory Visibility provider
+# Set up Inventory Visibility provider
 
 [!include [banner](includes/banner.md)]
 
