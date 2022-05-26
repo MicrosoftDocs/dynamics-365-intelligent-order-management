@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic describes the steps required to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/01/2021
 ms.topic: how-to
 ms.author: josaw
@@ -196,7 +195,7 @@ To create a provider message handler, follow these steps.
     {
       "type": "object",
       "properties": {
-        "ProviderID": {
+        "ProviderId": {
           "type": "string"
         }
       }
@@ -212,7 +211,7 @@ To create a provider message handler, follow these steps.
 1. For **Content**, paste in the following code:
     ```JSON
     {
-      "SourceObjectName": "IOMLab Order",
+      "SourceObjectName": "IOMLabOrderIntakeProvider",
       "DestinationObjectName": "Dataverse Order"
     }
     ``` 

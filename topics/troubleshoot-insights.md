@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This troubleshooting topic provides a solution for cases where Microsoft Power BI reports for Dynamics 365 Intelligent Order Management aren't provisioned.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/01/2021
 ms.topic: troubleshooting
 ms.author: josaw

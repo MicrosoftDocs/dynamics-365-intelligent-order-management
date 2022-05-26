@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic provides a list of the providers that are available in Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 08/03/2021
 ms.topic: conceptual
 ms.author: josaw

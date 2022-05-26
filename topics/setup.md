@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic provides information about how to set up a Dynamics 365 Intelligent Order Management environment.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 08/09/2021
 ms.topic: conceptual
 ms.author: josaw

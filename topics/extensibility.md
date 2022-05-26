@@ -1,7 +1,6 @@
 ---
 author: josaw1
 description: This topic provides information about how Dynamics 365 Intelligent Order Management can be extended.
-ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/25/2021
 ms.topic: conceptual
 ms.author: josaw
