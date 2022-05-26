@@ -23,7 +23,7 @@ For more information about the Inventory Visibility service, see [Inventory Visi
 
 The Inventory Visibility Add-in is a first-party, out-of-box service that will be available as part of Intelligent Order Management. To add this provider so that it can be used in orchestration, you must validate and update the following configurations after you install the add-in.
 
-1. Go to **Inventory Visibility \> Index And Reservations site map area**.
+1. Go to **Inventory Visibility \> Index And Reservations** site map area.
 1. Confirm that the following tabs appear on the page:
 
     - Product Index Hierarchy
@@ -94,7 +94,7 @@ After you've completed the preceding validation, the settings configure or reuse
 ## Set up the Inventory Visibility provider
 
 > [!NOTE]
-> - The Inventory Visibility provider can be used to connect both to the inventory service that is available as part of Intelligent Order Management and to a Dynamics 365 Finance and Operations Inventory Visibility instance to soft reserve or update inventory upon shipment or receipt at returns.
+> - The Inventory Visibility provider can be used to connect both to the inventory service that is available as part of Intelligent Order Management and to a Dynamics 365 Finance + Operations Inventory Visibility instance to soft reserve or update inventory upon shipment or receipt at returns.
 > - The upload capability that uses Azure Blob Storage is exclusive to Intelligent Order Management and can be used only to upload an instance of the Intelligent Order Management Inventory service.
 
 To set up the provider, follow these steps.
