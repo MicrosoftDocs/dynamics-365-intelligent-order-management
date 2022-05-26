@@ -5,11 +5,11 @@ ms.date: 05/25/2022
 ms.topic: how-to
 ms.author: sumanic
 
-title: Set up the Uber Freight provider
+title: Set up Uber Freight provider
 
 ---
 
-# Set up the Uber Freight provider
+# Set up Uber Freight provider
 
 [!include [banner](includes/banner.md)]
 
