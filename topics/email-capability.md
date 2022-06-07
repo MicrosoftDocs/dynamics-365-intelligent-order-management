@@ -89,6 +89,7 @@ The following steps ensure email capability with enhanced editor is turned on.
 1. Goto **Solutions** and navigate to **Default Solution** . Ensure **Solution preview on** is turned on.
 1. Under **Default Solution** navigate to **Show Email Preview** setting.
 1. Ensure that the **Default value** is set to **Yes**. If you toggle back to **No**, please be aware that the platform email capabilities will be turned on instead which would be missing some of the key email editor enhancements. Also changing this default setting would also mean that the orchestration flow needs to be changed to use the older templates.
+1. Goto **Setting environment value** , select **+ Add existing value** and choose **Yes** and **Save**
 
 
 
