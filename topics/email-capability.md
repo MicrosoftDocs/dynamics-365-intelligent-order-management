@@ -21,17 +21,17 @@ Dynamics 365 intelligent order management has released following out of the box 
 
 ## Rich and enhanced email template editor
 
-Much of the email editor features has been absorbed from Dynamice 365 marketing application. The documentation can be found here
-https://docs.microsoft.com/en-us/dynamics365/marketing/prepare-marketing-emails.
-As part of the email editor, personalization editor with predefined tokens were created specifically for Intelligent order management use cases.
+Many of the email template editor features are shared with the Microsoft Dynamics 365 marketing application. As part of the email editor, a personalization editor with predefined tokens was created specifically for Intelligent Order Management use cases.
+
+For more information, see [Email marketing overview](/dynamics365/marketing/prepare-marketing-emails). 
 
 ## Out-of-the-box email templates
 
 There are three out-of-the-box email templates that are shipped with the product:
 
-- Order Confirmation : This is the email communication that is sent to the C2(end customer) after an order is received in the application.
-- Shipment confirmation: This is the email communication that is sent to the C2(end customer) after an order items are shipped and contains tracking information.
-- Return pick up confirmation: This is the email communication that is sent to the C2(end customer) after the returns process has started for the C2.
+- **Order Confirmation**: The email communication sent to a customer after an order is received in the application.
+- **Shipment confirmation**: The email communication containing tracking information sent to a customer after order items are shipped.
+- **Return pick up confirmation**: The email communication sent to a customer after a returns process has started.
 
 To access the email templates, go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**.
 
