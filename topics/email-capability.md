@@ -1,10 +1,23 @@
-# Email capabilities within Dynamics 365 Intelligent order management.
+---
+author: anush6121 
+description: This article describes the email capabilities available in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 06/08/2022
+ms.topic: 
+ms.author: anvenkat
 
-## Dynamics 365 intelligent order management has released following out of the box email capabilities :
-1. Rich and enhanced email template editor.
-1. High performant and scalable email sending service.
-1. Out of the box generic email domain that can be used in the "from" portion of the email address.
-1. Three out of the box email templates that can be called within the orchestration flow.
+title: Email capabilities within Dynamics 365 Intelligent order management
+---
+
+# Email capabilities within Dynamics 365 Intelligent order management
+
+This article describes the email capabilities available in Microsoft Dynamics 365 Intelligent Order Management.
+
+Dynamics 365 intelligent order management has released following out of the box email capabilities:
+
+- Rich and enhanced email template editor.
+- High performant and scalable email sending service.
+- Out of the box generic email domain that can be used in the "from" portion of the email address.
+- Three out of the box email templates that can be called within the orchestration flow.
 
 ## Rich and enhanced email template editor
 
@@ -12,18 +25,21 @@ Much of the email editor features has been absorbed from Dynamice 365 marketing 
 https://docs.microsoft.com/en-us/dynamics365/marketing/prepare-marketing-emails.
 As part of the email editor, personalization editor with predefined tokens were created specifically for Intelligent order management use cases.
 
+## Out-of-the-box email templates
 
-## Out of the box email templates
-There are three out of the box email templates that are shipped with the product.
-1. Order Confirmation : This is the email communication that is sent to the C2(end customer) after an order is received in the application.
-1. Shipment confirmation: This is the email communication that is sent to the C2(end customer) after an order items are shipped and contains tracking information.
-1. Return pick up confirmation: This is the email communication that is sent to the C2(end customer) after the returns process has started for the C2.
+There are three out-of-the-box email templates that are shipped with the product:
 
-To access the email templates goto  **Intelligent Order Management > Configurations > Communications > Email templates**
+- Order Confirmation : This is the email communication that is sent to the C2(end customer) after an order is received in the application.
+- Shipment confirmation: This is the email communication that is sent to the C2(end customer) after an order items are shipped and contains tracking information.
+- Return pick up confirmation: This is the email communication that is sent to the C2(end customer) after the returns process has started for the C2.
 
-The templates above can be edited for your own business needs. We strongly recommend to create a new template and then copy the contents from the above templates over ,save and copy and work on top of it.  This is to avoid any upgrade issues with the IOM solutions in the future.
+To access the email templates, go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**.
 
-## Steps to copy and create a new order confirmation template.
+The templates above can be edited for your own business needs. We strongly recommend to create a new template and then copy the contents from the above templates over, save and copy and work on top of it. This is to avoid any upgrade issues with the IOM solutions in the future.
+
+## Copy and create a new order confirmation template
+
+To copy and create a new order confirmation template, follow these steps.
 
 1. Open the order confirmation template and copy the HTML content. Select **</> HTML** to get the content to copy.
 1. After copying and while you are on this page, press F12 on your key board which opens the developer tools. Then open **Console** and exceute the following command. 
@@ -43,30 +59,28 @@ We are working towards an easier solution for copy and create a template in the 
 
 There are a few image placeholders in the out of the box email template and they are as follows:
 
-P1 - Brand logo 
+- **P1**: Brand logo 
+- **P2, P3, P4, P5**: Social media logos (that you can use as your choice)
 
-P2,P3, P4, P5 - social medio logo (that you can use as your choice)
-
-<Insert screenshot1>
-Please note that the current version of intelligent order management does not come with image support and that is currently in development for next release. Currently the images will have to be stored in a Content Distribution Network (CDN) of your choice and publicly accessed via the internet.
+> [!NOTE]
+> The current version of Intelligent Order Management does not come with image support. Images must be stored in a content distribution network (CDN) of your choice and publicly accessed via the internet. Image support is in development for an upcoming release.
 
 ### Predefined tokens
 
-There are number of predefined tokens that are released out of the box to support the three standard templates and beyond within Dynamics 365 Intelligent Order Management.
-The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type** and **Default value** for them. 
-<Insert screenshot2>
-The future of emails within Intelligent Order Management entails customers to be able new tokens with no code to low code.
+There are number of predefined tokens that are released out of the box to support the three standard templates and beyond within Dynamics 365 Intelligent Order Management. The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type** and **Default value** for them. The future of emails within Intelligent Order Management entails customers to be able new tokens with no code to low code.
 
 ## Sending emails through orchestration flow
 
-### Activation of **Dynamics 365 Communication Provider**
+### Activate Dynamics 365 Communication provider
 
-1. Go to **Intelligent Order Management > Providers > Catalog > Dynamics 365 Communication** and select **create**
-1. Once open, go to **Connections** and select **Communications Dataverse (current enviroment) Connection**
-1. Select **Save**, **Activate** and **Save and close**.
-1. Select **Parameters** and enter the from email address in **value** field.
+1. Go to **Intelligent Order Management \> Providers \> Catalog \> Dynamics 365 Communication** and select **Create**.
+1. Go to **Connections** and select **Communications Dataverse (current enviroment) Connection**.
+1. Select **Save**, select **Activate**, and then select **Save and close**.
+1. Select **Parameters** and enter the "from" email address in **value** field. See guidelines below.
   
-Guidelines for from email address: The from email address domain should always be d365iom.com i.e the part that comes after the "@" symbol. The text that appears before "@" symbol can be any text. But recommendation is to have your company/brand name added to it. So, for example, support_<your brand name>@d65iom.com or admin_<your brand name>@d365iom.com or noreply_<your brand name>@d365iom.com.
+#### Guidelines for the "from" email address 
+
+The "from" email address domain (the part that comes after the "@" symbol) should always be `d365iom.com`. The text that appears before "@" symbol can be any text. But recommendation is to have your company or brand name added to it, for example `support_<your brand name>@d65iom.com` or `admin_<your brand name>@d365iom.com` or `noreply_<your brand name>@d365iom.com`.
 
 ### Adding email tile as part of the orchestration flow
 
