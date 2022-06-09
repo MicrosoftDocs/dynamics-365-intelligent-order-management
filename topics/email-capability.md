@@ -1,7 +1,7 @@
 ---
 author: anush6121 
 description: This article describes the email capabilities available in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 06/08/2022
+ms.date: 06/09/2022
 ms.topic: 
 ms.author: anvenkat
 
@@ -35,19 +35,19 @@ There are three out-of-the-box email templates that are shipped with the product
 
 To access the email templates, go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**.
 
-The templates above can be edited for your own business needs. We strongly recommend to create a new template and then copy the contents from the above templates over, save and copy and work on top of it. This is to avoid any upgrade issues with the IOM solutions in the future.
+The templates above can be edited for your own business needs. We strongly recommend creating a new template and then copy the contents from the above templates over, save and copy and work on top of it. This is to avoid any upgrade issues with the IOM solutions in the future.
 
 ## Copy and create a new order confirmation template
 
 To copy and create a new order confirmation template, follow these steps.
 
 1. Open the order confirmation template and copy the HTML content. Select **</> HTML** to get the content to copy.
-1. After copying and while you are on this page, press F12 on your key board which opens the developer tools. Then open **Console** and exceute the following command. 
+1. After copying and while you are on this page, press F12 on your key board which opens the developer tools. Then open **Console** and execute the following command. 
 var placeholders = Xrm.Page.getAttribute('msdyn_placeholders').getValue()
 By doing this you are copying the tokens and placeholders from the template.
-1. Go to **+New** and create a new email template and name it as you desier and save.
-1. On the new templaet, go to **</>HTML** and paste the HTML content we copied in the step 2. Now close the HTML window and save the template.
-1. In the developer tools window (we opened in step 2) run the following the command in the console:
+1. Go to **+New** and create a new email template and name it as you desire and save.
+1. On the new template, go to **</>HTML** and paste the HTML content we copied in the step 2. Now close the HTML window and save the template.
+1. In the developer tools window (we opened in step 2) run the following command in the console:
  Xrm.Page.getAttribute('msdyn_placeholders').setValue(placeholdersStr)
 1. Once run, your new template is similar to the out of the box one and you are free to edit it.
 
@@ -67,7 +67,7 @@ There are a few image placeholders in the out of the box email template and they
 
 ### Predefined tokens
 
-There are number of predefined tokens that are released out of the box to support the three standard templates and beyond within Dynamics 365 Intelligent Order Management. The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type** and **Default value** for them. The future of emails within Intelligent Order Management entails customers to be able new tokens with no code to low code.
+There are a number of predefined tokens that are released out of the box to support the three standard templates and beyond within Dynamics 365 Intelligent Order Management. The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type** and **Default value** for them. The future of emails within Intelligent Order Management entails customers to be able new tokens with no code to low code.
 
 ## Sending emails through orchestration flow
 
