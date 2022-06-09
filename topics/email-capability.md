@@ -5,25 +5,37 @@ ms.date: 06/09/2022
 ms.topic: 
 ms.author: anvenkat
 
-title: Email capabilities within Dynamics 365 Intelligent order management
+title: Email capabilities in Dynamics 365 Intelligent Order Management
 ---
 
-# Email capabilities within Dynamics 365 Intelligent order management
+# Email capabilities in Dynamics 365 Intelligent Order Management
 
 This article describes the email capabilities available in Microsoft Dynamics 365 Intelligent Order Management.
 
-Dynamics 365 intelligent order management has released following out of the box email capabilities:
+Dynamics 365 intelligent order management supports the following out-of-the-box email capabilities:
 
 - Rich and enhanced email template editor.
+- Three email templates that can be called within the orchestration flow.
 - High performant and scalable email sending service.
-- Out of the box generic email domain that can be used in the "from" portion of the email address.
-- Three out of the box email templates that can be called within the orchestration flow.
+- Generic email domain that can be used in the "from" segment of the email address.
 
 ## Rich and enhanced email template editor
 
-Many of the email template editor features are shared with the Microsoft Dynamics 365 marketing application. As part of the email editor, a personalization editor with predefined tokens was created specifically for Intelligent Order Management use cases.
+Many of the email template editor features are shared with the Microsoft Dynamics 365 Marketing application. A personalization editor with predefined tokens that is part of the email editor was created specifically for Intelligent Order Management use cases.
 
 For more information, see [Email marketing overview](/dynamics365/marketing/prepare-marketing-emails). 
+
+### Enable the email capability with enhanced editor feature
+
+To enable the email capability with enhanced editor feature, follow these steps.
+
+1. Sign in into the [Power Apps portals admin center](/power-apps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center) for your enviroment. 
+1. Go to **Solutions \> Default Solution**. Ensure that **Solution preview on** is turned on.
+1. Under **Default Solution**, navigate to the **Show Email Preview** setting.
+1. Ensure that the **Default value** option set to **Yes**.  
+    > [!NOTE]
+    > If you set the **Default value** option back to **No**, the platform email capabilities missing some of the key email editor enhancements will be turned on instead of the enhanced editor feature. Also, the orchestration flow would need to be changed to use the older templates.
+1. Go to **Setting environment value**, select **+ Add existing value**, select **Yes**, and then select **Save**.
 
 ## Out-of-the-box email templates
 
@@ -35,9 +47,25 @@ There are three out-of-the-box email templates that are shipped with the product
 
 To access the email templates, go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**.
 
-The templates above can be edited for your own business needs. We strongly recommend creating a new template and then copy the contents from the above templates over, save and copy and work on top of it. This is to avoid any upgrade issues with the IOM solutions in the future.
+The templates above can be edited for your own business needs. It is recommended that for each template you use, you create a new template and then copy the contents from the relevant out-of-the-box template into it, save it, and then customize it. This will avoid any upgrade issues with future Intelligent Order Management solutions.
 
-## Copy and create a new order confirmation template
+### Sections within an email template
+
+#### Image placeholders
+
+There are a few image placeholders in the out of the box email template and they are as follows:
+
+- **P1**: Brand logo 
+- **P2, P3, P4, P5**: Social media logos that you can use as needed
+
+> [!NOTE]
+> The current version of Intelligent Order Management does not come with image support. Images must be stored in a content distribution network (CDN) of your choice and publicly accessed via the internet. Image support is in development for an upcoming release.
+
+#### Predefined tokens
+
+There are a number of predefined tokens that are released out-of-the-box to support the three standard templates within Dynamics 365 Intelligent Order Management. The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type**, and **Default value** for each token. 
+
+### Copy and create a new order confirmation template
 
 To copy and create a new order confirmation template, follow these steps.
 
@@ -53,57 +81,34 @@ By doing this you are copying the tokens and placeholders from the template.
 
 We are working towards an easier solution for copy and create a template in the upcoming releases. Stay tuned to this page for more updates on this topic.
 
-## Sections within email template
+### Send emails through orchestration flow
 
-### Image placeholders
+#### Activate Dynamics 365 Communication provider
 
-There are a few image placeholders in the out of the box email template and they are as follows:
-
-- **P1**: Brand logo 
-- **P2, P3, P4, P5**: Social media logos (that you can use as your choice)
-
-> [!NOTE]
-> The current version of Intelligent Order Management does not come with image support. Images must be stored in a content distribution network (CDN) of your choice and publicly accessed via the internet. Image support is in development for an upcoming release.
-
-### Predefined tokens
-
-There are a number of predefined tokens that are released out of the box to support the three standard templates and beyond within Dynamics 365 Intelligent Order Management. The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type** and **Default value** for them. The future of emails within Intelligent Order Management entails customers to be able new tokens with no code to low code.
-
-## Sending emails through orchestration flow
-
-### Activate Dynamics 365 Communication provider
+To activate the Dynamics 365 Communication provider, follow these steps.
 
 1. Go to **Intelligent Order Management \> Providers \> Catalog \> Dynamics 365 Communication** and select **Create**.
 1. Go to **Connections** and select **Communications Dataverse (current enviroment) Connection**.
 1. Select **Save**, select **Activate**, and then select **Save and close**.
-1. Select **Parameters** and enter the "from" email address in **value** field. See guidelines below.
+1. Select **Parameters** and enter the "from" email address in **value** field. (See note below.)
   
-#### Guidelines for the "from" email address 
+> [!NOTE]
+> The "from" email address domain (the part that comes after the "@" symbol) should always be `d365iom.com`. The text that appears before "@" symbol can be any text. But recommendation is to have your company or brand name added to it, for example `support_<your brand name>@d65iom.com` or `admin_<your brand name>@d365iom.com` or `noreply_<your brand name>@d365iom.com`.
 
-The "from" email address domain (the part that comes after the "@" symbol) should always be `d365iom.com`. The text that appears before "@" symbol can be any text. But recommendation is to have your company or brand name added to it, for example `support_<your brand name>@d65iom.com` or `admin_<your brand name>@d365iom.com` or `noreply_<your brand name>@d365iom.com`.
+#### Add order confirmation template to an orchestration flow
 
-### Adding email tile as part of the orchestration flow
+To add an order confirmation template to an orchestration flow, follow these steps.
 
-You can add the SendEmail tile in an new or existing flow. Here is an example of how you can add order confirmation template to an orchestration flow.
+1. Add **Send email** in the orchestration flow and provide a **Name** for the tile.
+1. Under **Email Template**, select the **Order Confirmation** email template.
+1. Select **Send Email for Sales Order**, since the order confirmation email will be generated from sales order. For a shipment confirmation template, you would select **Send Email for Fulfillment Order Line**, and for a returns order process you would select **Send Email for Return Order**.
+1. For **Input Events**, select **Validation of Order lines has Succeeded**. An input event indicates when the email should be invoked and can change based on how the orchestration is set up and how the email will be sent.
 
-1. Add **Send email** in the orchestration flow and provide a **Name** for the tile
-1. Select **Order Confirmation** email template under **Email Template**
-1. Select **Send Email for Sales Order** in this example where the email is generated from sales order. For shipment confirmation template, this needs to be **Send Email for Fulfillment Order Line**  and for returns order process this needs to be  **Send Email for Return Order**
-1. Select **Validation of Order lines has Succeeded** for **Input Events**. Input event indicates when the email should be invoked and could change based on how the orchestration is set up and also based on the email being sent out.
+## Check email delivery status
 
-## Email delivery status
+You can check email delivery status in the sales order **Orchestration Step Results** within the sales order view. There should be an orchestration step corresponding to email delivery that will show the delivery status in **Result** column. Further details can be found in **Result Details** column.
 
-Email delivery status can be found in the sales order **Orchestration Step Results** within sales order view. There should be an orchestration step corresponding to email delivery which should show the the status in **Result** column. Further details of the result will be found in **Result Details** column.
 
-## Email feature flag settings
-
-The following steps ensure email capability with enhanced editor is turned on. 
-
-1. Login into the power app admin portal for your enviroment. 
-1. Goto **Solutions** and navigate to **Default Solution** . Ensure **Solution preview on** is turned on.
-1. Under **Default Solution** navigate to **Show Email Preview** setting.
-1. Ensure that the **Default value** is set to **Yes**. If you toggle back to **No**, please be aware that the platform email capabilities will be turned on instead which would be missing some of the key email editor enhancements. Also changing this default setting would also mean that the orchestration flow needs to be changed to use the older templates.
-1. Goto **Setting environment value** , select **+ Add existing value** and choose **Yes** and **Save**
 
 
 
