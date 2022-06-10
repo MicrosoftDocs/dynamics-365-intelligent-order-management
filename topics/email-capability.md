@@ -21,7 +21,7 @@ Dynamics 365 Intelligent Order Management supports the following out-of-the-box 
 
 ## Enhanced email template editor
 
-Many of the email template editor features are shared with the Microsoft Dynamics 365 Marketing application. A personalization editor with predefined tokens that is part of the email editor was created specifically for Intelligent Order Management use cases.
+Many of the email template editor features are shared with the Microsoft Dynamics 365 Marketing application. The personalization editor compoenent with predefined tokens was created specifically for Intelligent Order Management.
 
 For more information, see [Email marketing overview](/dynamics365/marketing/prepare-marketing-emails). 
 
