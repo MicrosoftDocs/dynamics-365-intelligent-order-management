@@ -29,7 +29,7 @@ For more information, see [Email marketing overview](/dynamics365/marketing/prep
 
 To enable the email capability with enhanced editor feature, follow these steps.
 
-1. Sign in into the [Power Apps portals admin center](/power-apps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center) for your enviroment. 
+1. Sign in into the [Power Apps portals admin center](/power-apps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center) for your environment. 
 1. Go to **Solutions \> Default Solution**. Ensure that **Solution preview on** is turned on.
 1. Under **Default Solution**, navigate to the **Show Email Preview** setting.
 1. Ensure that the **Default value** option set to **Yes**.  
@@ -75,8 +75,8 @@ var placeholders = Xrm.Page.getAttribute('msdyn_placeholders').getValue()
 By doing this you are copying the tokens and placeholders from the template.
 1. Go to **+New** and create a new email template and name it as you desire and save.
 1. On the new template, go to **</>HTML** and paste the HTML content we copied in the step 2. Now close the HTML window and save the template.
-1. In the developer tools window (we opened in step 2) run the following command in the console:
- Xrm.Page.getAttribute('msdyn_placeholders').setValue(placeholdersStr)
+1. In the developer tools window, run the following command in the console:
+    `Xrm.Page.getAttribute('msdyn_placeholders').setValue(placeholdersStr)`
 1. Once run, your new template is similar to the out of the box one and you are free to edit it.
 
 We are working towards an easier solution for copy and create a template in the upcoming releases. Stay tuned to this page for more updates on this topic.
@@ -88,7 +88,7 @@ We are working towards an easier solution for copy and create a template in the 
 To activate the Dynamics 365 Communication provider, follow these steps.
 
 1. Go to **Intelligent Order Management \> Providers \> Catalog \> Dynamics 365 Communication** and select **Create**.
-1. Go to **Connections** and select **Communications Dataverse (current enviroment) Connection**.
+1. Go to **Connections** and select **Communications Dataverse (current environment) Connection**.
 1. Select **Save**, select **Activate**, and then select **Save and close**.
 1. Select **Parameters** and enter the "from" email address in **value** field. (See note below.)
   
