@@ -52,7 +52,7 @@ Actions and elements can be used to define the orchestration flow in designer vi
 | Send to DOM                                                    | Sends orders and order lines to the distributed order management (DOM) provider for fulfillment determination. Fulfillment orders and fulfillment order lines are generated. |
 | Assign Fulfillment Source                                      | Allows fulfillment determination to be assigned by simple user-defined policy and rules. Fulfillment orders and fulfillment order lines are generated.                       |
 | Send to Fulfillment                                            | Sends fulfillment orders and fulfillment order lines to the fulfillment provider.                                                                                            |
-| Send to Fulfillment – Dynamics 365 Finance apps | Sends orders and order lines to finance and operations apps. The fulfillment determination takes place in finance and operations apps.                                       |
+| Send to Fulfillment – Dynamics 365 finance and operations apps | Sends orders and order lines to finance and operations apps. The fulfillment determination takes place in finance and operations apps.                                       |
 | Send to Invoice                                                | Sends orders and order lines to the billing provider.                                                                                                                        |
 | Custom                                                         | Allows adding user-defined actions to the orchestration flow. For example, a user-defined action can be used to orchestrate orders to a custom provider.                     |
 
