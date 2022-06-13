@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic describes the setup that is required to run a sample order orchestration flow from BigCommerce to Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/19/2022
+ms.date: 06/13/2022
 ms.topic: conceptual
 ms.author: josaw
 
@@ -27,7 +27,7 @@ The first step is to set up a customer in BigCommerce.
 1. In BigCommerce, go to the **Customer** page.
 2. Select **Add**
 3. Enter details for the customer. If the orders are from a company, enter the name of the company in the **Company Name** field, otherwise leave the field blank. 
-4. Enter the **customer email** and Select **Save**.
+4. Enter the customer's email address in the **Customer email** field and then select **Save**.
 5. Select the **Customer Address Details** tab.
 6. Enter the customer address information and then select **Save**.
 7. To use the customer for a transaction, you need to sign out of BigCommerce and then sign back in.
