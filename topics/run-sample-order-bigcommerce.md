@@ -54,7 +54,7 @@ The first step is to set up a customer in BigCommerce.
 1. On the **New Account Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Account** field, select the Account in case you created one..
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Customer** field, enter **TestBCAccount**.
     1. In the **External Field Name** field, enter **ProviderName**.
     1. In the **External Field Value** field, enter **BigCommerce**.
@@ -68,7 +68,7 @@ The first step is to set up a customer in BigCommerce.
 1. On the **New Price List Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Account** field, select the Account in case you created one.
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Price list** field, enter **MasterPriceList**.
     1. In the **External Field Name** field, enter **ProviderName**.
     1. In the **External Field Value** field, enter **BigCommerce**.
@@ -84,7 +84,7 @@ After you set up pricelist mapping, you must set up unit mapping.
 1. On the **New Unit Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Account** field, select the Account in case you created one.
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Unit** field, enter **ea**.
     1. In the **External Field Name** field, enter **unit**.
     1. In the **External Field Value** field, enter **each**.
@@ -98,7 +98,7 @@ After you set up pricelist mapping, you must set up unit mapping.
 1. On the **New Product Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Account** field, select the Account in case you created one.
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Product** field, enter **Accu Scale**.
     1. In the **External Field Name** field, enter **sku**.
     1. In the **External Field Value** field, enter **ABS**.
