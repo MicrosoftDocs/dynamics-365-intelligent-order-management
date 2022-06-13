@@ -5,7 +5,6 @@ ms.author: josaw
 ms.date: 03/01/2021
 ms.topic: conceptual
 title: Blogs and communities
-
 ---
 
 # Blogs and communities
