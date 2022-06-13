@@ -2,7 +2,7 @@
 author: josaw1
 description: This topic describes the setup that is required to run a sample order orchestration flow from BigCommerce to Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/19/2022
+ms.date: 06/13/2022
 ms.topic: conceptual
 ms.author: josaw
 
@@ -26,10 +26,11 @@ The first step is to set up a customer in BigCommerce.
 
 1. In BigCommerce, go to the **Customer** page.
 2. Select **Add**
-3. Enter details for the customer. If the orders are from a company, enter the name of the company in the **Company Name** field, otherwise leave the field blank. Select **Save**.
-4. Select the **Customer Address Details** tab.
-5. Enter the customer address information and then select **Save**.
-6. To use the customer for a transaction, you need to sign out of BigCommerce and then sign back in.
+3. Enter details for the customer. If the orders are from a company, enter the name of the company in the **Company Name** field, otherwise leave the field blank. 
+4. Enter the customer's email address in the **Customer email** field and then select **Save**.
+5. Select the **Customer Address Details** tab.
+6. Enter the customer address information and then select **Save**.
+7. To use the customer for a transaction, you need to sign out of BigCommerce and then sign back in.
 
 > [!NOTE]
 > If you provided a company name when you created a customer in BigCommerce, follow the steps in the "Set up account mappings" section below. Otherwise, go to the "Set up pricelist mapping" section.
@@ -53,7 +54,7 @@ The first step is to set up a customer in BigCommerce.
 1. On the **New Account Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Provider** field, enter **BigCommerce**.
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Customer** field, enter **TestBCAccount**.
     1. In the **External Field Name** field, enter **ProviderName**.
     1. In the **External Field Value** field, enter **BigCommerce**.
@@ -67,7 +68,7 @@ The first step is to set up a customer in BigCommerce.
 1. On the **New Price List Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Provider** field, enter **BigCommerce**.
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Price list** field, enter **MasterPriceList**.
     1. In the **External Field Name** field, enter **ProviderName**.
     1. In the **External Field Value** field, enter **BigCommerce**.
@@ -83,7 +84,7 @@ After you set up pricelist mapping, you must set up unit mapping.
 1. On the **New Unit Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Provider** field, enter **BigCommerce**.
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Unit** field, enter **ea**.
     1. In the **External Field Name** field, enter **unit**.
     1. In the **External Field Value** field, enter **each**.
@@ -97,7 +98,7 @@ After you set up pricelist mapping, you must set up unit mapping.
 1. On the **New Product Mapping** page, enter the following information:
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
-    1. In the **Provider** field, enter **BigCommerce**.
+    1. In the **Account** field, select the account created if you created one.
     1. In the **Product** field, enter **Accu Scale**.
     1. In the **External Field Name** field, enter **sku**.
     1. In the **External Field Value** field, enter **ABS**.
