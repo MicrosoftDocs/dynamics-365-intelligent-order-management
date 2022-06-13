@@ -48,7 +48,7 @@ This setup will enable order synchronization between Intelligent Order Managemen
         1. Select **Accept**.
         1. On both the **CDS sales order headers (saleorders)** page and the **CDS sales order lines (saleorderdetails)** page, edit the **msdyn\_isreadytosync** entity fields, and set the following values:
 
-            - **Sync direction:** Finance and Operations apps to Dataverse
+            - **Sync direction:** Finance and operations apps to Dataverse
             - **Transform type:** Default
             - **Default value:** true
 
