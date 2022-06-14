@@ -76,9 +76,9 @@ This setup will enable order synchronization between Intelligent Order Managemen
 To set up the Finance + Operations provider, follow these steps.
 
 1. In Intelligent Order Management, go to **Providers \> Catalog**.
-1. On the **Microsoft Finance and Operations apps** tile, select **Add Provider**.
+1. On the **Microsoft finance and operations apps** tile, select **Add Provider**.
 1. On the **Terms and Conditions** page, select **Create**.
-1. In the **Connections** section, you must set up one connection: **Microsoft Finance and Operations Dataverse (current environment) Connection**.
+1. In the **Connections** section, you must set up one connection: **Microsoft finance and operations Dataverse (current environment) Connection**.
 
     1. Add the Dataverse connection.
     1. Select **Save**.
