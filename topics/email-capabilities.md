@@ -47,7 +47,7 @@ There are three out-of-the-box email templates that are shipped with the product
 
 To access the email templates, go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**.
 
-The templates above can be edited for your own business needs. It is recommended that for each template you use, you create a new template copy the contents of the relevant out-of-the-box template into it, save it, and then customize it. This will avoid any issues with future Intelligent Order Management upgrades.
+The templates above can be edited for your own business needs. It is recommended that for each template you use, you create a new template, copy the contents of the relevant out-of-the-box template into it, save it, and then customize it. Copying and modifying out-of-the-box templates will avoid any issues with future Intelligent Order Management upgrades.
 
 ### Sections within an email template
 
@@ -63,7 +63,7 @@ There are a few image placeholders in the out-of-the-box email templates:
 
 #### Predefined tokens
 
-There are a number of predefined tokens that are released out-of-the-box to support the three standard templates within Dynamics 365 Intelligent Order Management. The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type**, and **Default value** values for each token. 
+There are predefined tokens that are released out-of-the-box to support the three standard templates within Dynamics 365 Intelligent Order Management. The entire token list can be found by selecting **Personalization** within the template. By hovering over each of the tokens, you can also find the **Source**, **Data type**, and **Default value** values for each token. 
 
 ### Copy and create a new order confirmation template
 
@@ -116,7 +116,7 @@ To add an order confirmation template to an orchestration flow, follow these ste
 1. Add the **Send email** tile to the orchestration flow and enter a **Name** for the tile.
 1. Under **Email Template**, select the **Order Confirmation** email template.
 1. Select **Send Email for Sales Order**, since the order confirmation email will be generated from sales order. Alternatively, for a shipment confirmation template you would select **Send Email for Fulfillment Order Line**, or for a returns order process you would select **Send Email for Return Order**.
-1. For **Input Events**, select **Validation of Order lines has Succeeded**. An input event indicates when the email should be invoked and can change based on how the orchestration is set up and how the email will be sent.
+1. For **Input Events**, select **Validation of Order lines has Succeeded**. An input event indicates when the email should be invoked and can change based on how the orchestration is configured and how the email will be sent.
 
 ## Check email delivery status
 
