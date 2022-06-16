@@ -87,7 +87,7 @@ To copy and create a new order confirmation template, follow these steps.
     Xrm.Page.getAttribute('msdyn_placeholders').setValue(placeholdersStr)
     ```
 
-1. Once you run the command, your new custom template will be similar to the out-of-the-box version and you will be able to edit it.
+1. Once you run the command, your new custom template will be similar to the out-of-the-box version and you'll be able to edit it.
 
 The Intelligent Order Management team is working towards an easier solution to copy and create a template in upcoming releases.
 
@@ -109,7 +109,7 @@ To activate the Dynamics 365 Communication provider, follow these steps.
 
 #### Add the email template to an orchestration flow
 
-For this example, we will add the order confirmation template to an orchestration flow.
+For this example, we'll add the order confirmation template to an orchestration flow.
 
 To add an order confirmation template to an orchestration flow, follow these steps.
 
