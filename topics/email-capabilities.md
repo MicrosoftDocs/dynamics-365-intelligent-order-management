@@ -1,7 +1,7 @@
 ---
 author: anush6121 
 description: This article describes the email capabilities available in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 06/10/2022
+ms.date: 06/16/2022
 ms.topic: 
 ms.author: anvenkat
 
@@ -70,7 +70,7 @@ There are a number of predefined tokens that are released out-of-the-box to supp
 To copy and create a new order confirmation template, follow these steps.
 
 1. Go to **Intelligent Order Management \> Configurations \> Communications \> Email templates** and open the order confirmation template.
-1. Select **</> HTML** and copy the HTML content.
+1. Select **</> HTML** on the top right and copy the HTML content in the HTML window.
 1. Select F12 on your keyboard to open developer tools in your browser.  
 1. Open **Console** and run the following command to copy the tokens and placeholders from the template:
 
@@ -79,7 +79,7 @@ To copy and create a new order confirmation template, follow these steps.
     ```
 
 1. Select **+New** to create a new email template, name the template, and then save it.
-1. In the new template, select **</>HTML** and paste in the HTML content copied in step 2. 
+1. In the new template, select **</>HTML** on the top right and then paste the HTML content copied in step 2 into the HTML window. 
 1. Close the HTML window and save the template.
 1. In the **Console** section of the developer tools window, run the following command:
 
