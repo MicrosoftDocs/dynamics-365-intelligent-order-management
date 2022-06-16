@@ -47,7 +47,7 @@ There are three out-of-the-box email templates that are shipped with the product
 
 To access the email templates, go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**.
 
-The templates above can be edited for your own business needs. It is recommended that for each template you use, you create a new template, copy the contents of the relevant out-of-the-box template into it, save it, and then customize it. Copying and modifying out-of-the-box templates will avoid any issues with future Intelligent Order Management upgrades.
+The templates above can be edited for your own business needs. It's recommended that for each template you use, you create a new template, copy the contents of the relevant out-of-the-box template into it, save it, and then customize it. Copying and modifying out-of-the-box templates will avoid any issues with future Intelligent Order Management upgrades.
 
 ### Sections within an email template
 
