@@ -14,10 +14,10 @@ This article describes the email capabilities available in Microsoft Dynamics 36
 
 Dynamics 365 Intelligent Order Management supports the following out-of-the-box email capabilities:
 
-- Enhanced email template editor.
+- An enhanced email template editor.
 - Three email templates that can be called within the orchestration flow.
-- High performant and scalable email sending service.
-- Generic email domain that can be used in the "from" segment of the email address.
+- A high performant and scalable email sending service.
+- A generic email domain that can be used in the "from" segment of the email address.
 
 ## Enhanced email template editor
 
@@ -70,7 +70,7 @@ There are a number of predefined tokens that are released out-of-the-box to supp
 To copy and create a new order confirmation template, follow these steps.
 
 1. Go to **Intelligent Order Management \> Configurations \> Communications \> Email templates** and open the order confirmation template.
-1. Select **</> HTML** on the top right and copy the HTML content in the HTML window.
+1. Select **</> HTML** on the top right and copy the HTML content from the **HTML** window.
 1. Select F12 on your keyboard to open developer tools in your browser.  
 1. Open **Console** and run the following command to copy the tokens and placeholders from the template:
 
@@ -79,8 +79,8 @@ To copy and create a new order confirmation template, follow these steps.
     ```
 
 1. Select **+New** to create a new email template, name the template, and then save it.
-1. In the new template, select **</>HTML** on the top right and then paste the HTML content copied in step 2 into the HTML window. 
-1. Close the HTML window and save the template.
+1. In the new template, select **</>HTML** on the top right and then paste the HTML content copied in step 2 into the **HTML** window. 
+1. Close the **HTML** window and save the template.
 1. In the **Console** section of the developer tools window, run the following command:
 
     ```JavaScript
