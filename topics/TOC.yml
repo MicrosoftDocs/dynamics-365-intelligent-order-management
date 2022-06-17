@@ -60,6 +60,8 @@
       items:
       - name: Work with providers
         href: work-providers.md
+      - name: Email capabilities
+        href: email-capabilities.md
       - name: Provider catalog
         href: provider-catalog.md
       - name: Set up Orderful provider

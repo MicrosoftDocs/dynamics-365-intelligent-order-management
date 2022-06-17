@@ -4,12 +4,7 @@ description: This page provides a list of the blogs and community resources avai
 ms.author: josaw
 ms.date: 03/01/2021
 ms.topic: conceptual
-search.app: 
-  - 
-search.audienceType:
-  - 
 title: Blogs and communities
-
 ---
 
 # Blogs and communities
