@@ -1,7 +1,7 @@
 ---
 author: sumanic
 description: This topic provides information about how to set up the Adobe Commerce provider in Dynamics 365 Intelligent Order Management.
-ms.date: 06/21/2022
+ms.date: 06/22/2022
 ms.topic: how-to
 ms.author: sumanic
 
@@ -25,6 +25,7 @@ For more information about Adobe Commerce, see the [Adobe Commerce website](http
 You need to have a sample store set up. Go to the [Adobe Commerce website](https://devdocs.magento.com/cloud/bk-cloud.html) and follow the instructions to set up your account and sample store. 
 
 ## Set up the provider
+
 To set up the provider, follow these steps: 
 
 1.  In Intelligent Order Management, go to **Providers > Catalog**.
