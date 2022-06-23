@@ -1,7 +1,7 @@
 ---
 author: sumanic
 description: This topic provides information about how to set up the Adobe Commerce provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 06/22/2022
+ms.date: 06/23/2022
 ms.topic: how-to
 ms.author: sumanic
 
@@ -15,7 +15,7 @@ title: Set up Adobe Commerce provider
 
 This topic provides information about how to set up the Adobe Commerce provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-Adobe Commerce (formerly Magento) is an e-commerce platform designed to provide online businesses with a flexible shopping cart system and management of the appearance, content, and features of an online store.
+Adobe Commerce (formerly Magento) is an e-commerce platform designed to provide online businesses with a flexible shopping cart system and the ability to manage the appearance, content, and features of an online store.
 
 For more information about Adobe Commerce, see [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html). 
 
@@ -59,7 +59,7 @@ The Adobe Commerce provider has the following capabilities:
 
 ## Run a sample transaction with Adobe Commerce
 
-Once you have your store set up, to set up data for a sample transaction follow these steps in Adobe Commerce and Dynamics 365 Intelligent Order Management. 
+Once you have your store set up, you are ready to run a sample transaction with Adobe Commerce. To set up data for a sample transaction, follow the steps below in Adobe Commerce and Dynamics 365 Intelligent Order Management. 
 
 ### Create a customer in Adobe Commerce
 
@@ -68,12 +68,12 @@ First, we need to set up a customer in Adobe Commerce.
 To set up a customer in Adobe Commerce, follow these steps.
 
 1. In Adobe Commerce, go to the **Customer** page.
-2. Select **Add New Customers**
-3. Enter details for the customer. 
-4. Enter the customer's email address in the **Customer email** field and then select **Save**.
-5. Add the **Customer Address Details**.
-6. Enter the customer address information and then select **Save Customer**.
-7. To use the customer for a transaction, you need to sign out of Adobe Commerce and then sign back in.
+1. Select **Add New Customers**
+1. Enter details for the customer. 
+1. Enter the customer's email address in the **Customer email** field and then select **Save**.
+1. Add the **Customer Address Details**.
+1. Enter the customer address information and then select **Save Customer**.
+1. To use the customer for a transaction, you need to sign out of Adobe Commerce and then sign back in.
 
 ### Configure the mappings in Intelligent Order Management
 
@@ -132,13 +132,13 @@ To set up product mapping, follow these steps.
 
 ### Create an order in Adobe Commerce
 
-Next, you need to create an order from the Adobe Commerce back office experience to submit to Intelligent Order Management.
+Next, you need to create an order in Adobe Commerce to submit to Intelligent Order Management.
 
 To create an order in Adobe Commerce, follow these steps.
 
 1. Sign in to the Adobe Commerce store account that you set up previously.
 1. Go to **Sales \> Orders** and select **Create New Order**.
-1. From the list of customers in the below page, double click the **Customer** you created in the above steps.
+1. From the list of customers, double-click the **Customer** you created in the steps above.
 1. Select **Add Products By SKU** or **Add Products**, enter the product that you set up in Intelligent Order Management, and then select **Enter**.
 1. Scroll down and select **Get shipping methods and rates**, and then select either **Table rate** or **Fixed Rate**.
 1. Select **Submit Order**. An order ID will be generated. 
