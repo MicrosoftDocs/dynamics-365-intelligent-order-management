@@ -5,11 +5,11 @@ ms.date: 06/23/2022
 ms.topic: how-to
 ms.author: sumanic
 
-title: Set up the Adobe Commerce provider
+title: Set up Adobe Commerce provider
 
 ---
 
-# Set up the Adobe Commerce provider
+# Set up Adobe Commerce provider
 
 [!include [banner](includes/banner.md)]
 
