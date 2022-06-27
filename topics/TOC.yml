@@ -82,6 +82,8 @@
         href: set-up-finops-provider.md
       - name: Set up Uber Freight provider
         href: set-up-uber-freight-provider.md
+      - name: Set up Adobe Commerce provider
+        href: set-up-adobe-commerce-provider.md
       - name: Customize an out-of-box provider
         href: customize-provider.md
       - name: Create a new provider
