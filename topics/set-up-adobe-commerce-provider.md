@@ -89,11 +89,11 @@ To set up a customer in Adobe Commerce, follow these steps.
     > [!NOTE]
     > If you use a left-to-right (LTR) language, the setting is in the lower-left corner.
 
-#### Set up pricelist mapping
+#### Set up price list mapping
 
-Next, you must set up pricelist mapping.
+Next, you must set up price list mapping.
 
-To set up pricelist mapping, follow these steps.
+To set up price list mapping, follow these steps.
 
 1. Go to **Mappings \> Price Lists**.
 1. Select **New**.
@@ -109,7 +109,7 @@ To set up pricelist mapping, follow these steps.
 
 #### Set up unit mapping
 
-After you set up pricelist mapping, you must set up unit mapping.
+After you set up price list mapping, you must set up unit mapping.
 
 To set up unit mapping, follow these steps.
 
@@ -137,7 +137,7 @@ To set up product mapping, follow these steps.
 
     1. In the **Mapping Group** field, enter **Default Mapping Group**.
     1. In the **Account** field, select the account that you created (if you created one).
-    1. In the **Product** field, enter **Airpot Duo**.
+    1. In the **Product** field, enter **Airport Duo**.
     1. In the **External Field Name** field, enter **productid**.
     1. In the **External Field Value** field, enter **WS03-XS-Red**.
 
