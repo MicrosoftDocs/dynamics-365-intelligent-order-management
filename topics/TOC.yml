@@ -44,6 +44,8 @@
     href: architecture.md
   - name: Set up Intelligent Order Management
     items:
+    - name: Licensing Intelligent Order Management
+      href: licensing-iom.md
     - name: Set up an environment
       href: setup.md
     - name: Orchestration flows
