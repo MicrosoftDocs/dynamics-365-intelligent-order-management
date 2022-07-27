@@ -1,3 +1,12 @@
+---
+author: bennettray-msft
+description: This page provides instructions on how to license Intelligent Order Management
+ms.author: bennettray
+ms.date: 07/27/2022
+ms.topic: conceptual
+
+title: Intelligent Order Management Licensing
+---
 # Getting a License
 
 In order to install Dynamics 365 Intelligent Order Management, you will
