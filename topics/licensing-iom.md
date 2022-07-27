@@ -47,7 +47,7 @@ it is still required to have this role.
 some cases before Dynamics 365 Intelligent Order Management shows up as
 an installable product
 
-# Applying User License
+## Applying User License
 
 The Dynamics 365 Intelligent Order Management USL is used for assigning
 users who will deploy Power Automate Flows. Dynamics 365 Intelligent
