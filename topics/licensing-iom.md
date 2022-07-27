@@ -1,5 +1,5 @@
 ---
-author: bennettray-msft
+author: raybennett-msft
 description: This page provides instructions on how to license Intelligent Order Management
 ms.author: bennettray
 ms.date: 07/27/2022
@@ -9,21 +9,21 @@ title: Intelligent Order Management Licensing
 ---
 # Getting a License
 
-In order to install Dynamics 365 Intelligent Order Management, you will
+In order to install Dynamics 365 Intelligent Order Management, you'll
 need to have the appropriate licenses installed. This guide will use the
-Trial licenses which will allow full operation of Dynamics 365
-Intelligent Order Management. When you are ready to convert these to a
-Production License, you will work with your Partner and/or your
+Trial licenses, which will allow full operation of Dynamics 365
+Intelligent Order Management. When you're ready to convert your trial license to a
+Production License, you'll work with your Partner, and/or your
 Microsoft Account Executive to get the correct licenses applied.
 
-The first license you will need is the tenant level license for Dynamics
-365 Intelligent Order Management. Once installed, this will allow you to
+The first license you'll need is the tenant level license for Dynamics
+365 Intelligent Order Management. Once installed, the license will allow you to
 install Intelligent Order Management on any environment within that
-tenant. You do not need to assign this license.
+tenant. You don't need to assign this license.
 
-**Note:** you will need to login to the admin portal with an account
+**Note:** you'll need to sign in to the admin portal with an account
 that has the ability to purchase services. Although the license is free,
-it is still required to have this role.
+it's still required to have this role.
 
 1.  Navigate to <https://admin.microsoft.com>
 
@@ -43,7 +43,7 @@ it is still required to have this role.
 
 ![Screenshot showing Start Free Trial button click.](./media/licensing-iom3.png)
 
-**Note:** Licenses are not synced immediately and can take 1-2 days in
+**Note:** Licenses aren't synced immediately and can take 1-2 days in
 some cases before Dynamics 365 Intelligent Order Management shows up as
 an installable product
 
