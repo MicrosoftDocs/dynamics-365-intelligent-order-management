@@ -1,69 +1,52 @@
 ---
 author: raybennett-msft
-description: This page provides instructions on how to license Intelligent Order Management
+description: This article describes how to get a license for Microsoft Dynamics 365 Intelligent Order Management.
 ms.author: bennettray
 ms.date: 07/27/2022
 ms.topic: conceptual
 
-title: Intelligent Order Management Licensing
+title: Get a license for Intelligent Order Management
 ---
-# Getting a License
+# Get a license for Intelligent Order Management
 
-In order to install Dynamics 365 Intelligent Order Management, you'll
-need to have the appropriate licenses installed. This guide will use the
-Trial licenses, which will allow full operation of Dynamics 365
-Intelligent Order Management. When you're ready to convert your trial license to a
-Production License, you'll work with your Partner, and/or your
-Microsoft Account Executive to get the correct licenses applied.
+[!include [banner](includes/banner.md)]
 
-The first license you'll need is the tenant level license for Dynamics
-365 Intelligent Order Management. Once installed, the license will allow you to
-install Intelligent Order Management on any environment within that
-tenant. You don't need to assign this license.
+This article describes how to get a license for Microsoft Dynamics 365 Intelligent Order Management.
 
-**Note:** you'll need to sign in to the admin portal with an account
-that has the ability to purchase services. Although the license is free,
-it's still required to have this role.
+In order to install Dynamics 365 Intelligent Order Management, you'll need to have the appropriate licenses installed. This guide will use the Trial licenses, which will allow full operation of Dynamics 365 Intelligent Order Management. When you're ready to convert your trial license to a Production License, you'll work with your Partner, and/or your Microsoft Account Executive to get the correct licenses applied.
 
-1.  Navigate to <https://admin.microsoft.com>
+The first license you'll need is the tenant level license for Dynamics 365 Intelligent Order Management. Once installed, the license will allow you to install Intelligent Order Management on any environment within that tenant. You don't need to assign this license.
 
-2.  On the left menu, select Billing \> Purchase services
+> [!NOTE]
+> You'll need to sign in to the admin portal with an account that has the ability to purchase services. Although the license is free, it's still required to have this role.
 
-![Screenshot showing Billing, Purchase services navigation.](./media/licensing-iom1.png)
+1. Go to `https://admin.microsoft.com`.
+1. On the left menu, select **Billing \> Purchase services**.
 
-3.  Select the license for Dynamics 365 Intelligent Order Management
-    Trial, click on Details, then click on Start Free Trial
+    ![Screenshot showing Billing, Purchase services navigation.](./media/licensing-iom1.png)
 
-4.  Finish by clicking Try Now and then Continue
+1. Select the license for Dynamics 365 Intelligent Order Management Trial, select **Details**, then select **Start Free Trial**.
+1. Select **Try Now**, and then select **Continue**.
+1. Repeat steps 2-4 for Dynamics 365 Intelligent Order Management Unlimited Site License (USL).
 
-5.  Repeat steps 2-4 but for Dynamics 365 Intelligent Order Management
-    USL
-
-![Screenshot showing both licenses](./media/licensing-iom2.png)
+    ![Screenshot showing both licenses](./media/licensing-iom2.png)
 
 ![Screenshot showing Start Free Trial button click.](./media/licensing-iom3.png)
 
-**Note:** Licenses aren't synced immediately and can take 1-2 days in
-some cases before Dynamics 365 Intelligent Order Management shows up as
-an installable product
+> [!NOTE]
+> Licenses aren't synced immediately and can take 1-2 days in some cases before Dynamics 365 Intelligent Order Management shows up as an installable product
 
-## Applying User License
+## Assign user license
 
-The Dynamics 365 Intelligent Order Management USL is used for assigning
-users who will deploy Power Automate Flows. Dynamics 365 Intelligent
-Order Management uses Power Automate when activating Providers,
-publishing Policies, or publishing Orchestrations. Only users who do one
-of these activities will need a license assigned.
+The Dynamics 365 Intelligent Order Management USL is used for assigning users who will deploy Microsoft Power Automate flows. Dynamics 365 Intelligent Order Management uses Power Automate when activating providers, publishing policies, or publishing orchestrations. Only users who do any of these activities will need a license assigned.
 
-1.  On <https://admin.microsoft.com> navigate to Billing \> Licenses in
-    the left panel
+1. Go to `https://admin.microsoft.com`. 
+1. On the left menu, select **Billing \> Licenses**.
 
-![Screenshot showing navigation to Billing, Licenses](./media/licensing-iom4.png)
+    ![Screenshot showing navigation to Billing, Licenses](./media/licensing-iom4.png)
 
-2.  Open up your Dynamics 365 Intelligent Order Management USL license
-
-3.  Click Assign License, then find the user to assign the license to.
-    Make sure they have the Power Automate licenses and click Assign
+1. Open your Dynamics 365 Intelligent Order Management USL license.
+1. Select **Assign License** to locate a user with Microsoft Power Automate licenses to assign the license to, and then select **Assign**.
 
 ![Screenshot showing USL to select.](./media/licensing-iom5.png)
 
