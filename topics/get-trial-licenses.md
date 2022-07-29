@@ -1,17 +1,17 @@
 ---
 author: raybennett-msft
-description: This article describes how to get a license for Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes how to get trial licenses for Microsoft Dynamics 365 Intelligent Order Management.
 ms.author: bennettray
 ms.date: 07/29/2022
 ms.topic: conceptual
 
-title: Get a license for Intelligent Order Management
+title: Get trial licenses for Intelligent Order Management
 ---
-# Get a license for Intelligent Order Management
+# Get trial licenses for Intelligent Order Management
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to get a license for Microsoft Dynamics 365 Intelligent Order Management.
+This article describes how to get trial licenses for Microsoft Dynamics 365 Intelligent Order Management.
 
 In order to install Dynamics 365 Intelligent Order Management, you'll need to install the appropriate licenses. This article will walk through how to get trial licenses that will allow you to have full operation of Intelligent Order Management. When you're ready to convert your trial licenses to production licenses, you can work with your partner or Microsoft account executive to obtain the correct licenses.
 
