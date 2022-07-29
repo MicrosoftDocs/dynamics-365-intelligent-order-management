@@ -29,15 +29,16 @@ To sign up for the trial licenses, follow these steps.
 1. Go to `https://admin.microsoft.com`.
 1. On the left navigation pane, select **Billing \> Purchase services**.
 
-    ![Screenshot showing Billing, Purchase services navigation.](./media/licensing-iom1.png)
+    ![Screenshot showing Billing > Purchase services navigation.](./media/licensing-iom1.png)
 
 1. Find the license for **Dynamics 365 Intelligent Order Management Trial**, select **Details**, then select **Start free trial**.
-1. Select **Try Now**, and then select **Continue**.
-1. Repeat steps 2-4 to sign up for the **Dynamics 365 Intelligent Order Management (USL) Trial** license.
 
     ![Screenshot showing both licenses](./media/licensing-iom2.png)
 
-![Screenshot showing Start Free Trial button click.](./media/licensing-iom3.png)
+    ![Screenshot showing Start free trial button](./media/licensing-iom3.png)
+
+1. Select **Try Now**, and then select **Continue**.
+1. Repeat steps 2-4 to sign up for the **Dynamics 365 Intelligent Order Management (USL) Trial** license.
 
 > [!NOTE]
 > Licenses aren't synced immediately and can take 1-2 days in some cases before Dynamics 365 Intelligent Order Management appears as an installable product.
