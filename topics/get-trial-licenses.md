@@ -15,7 +15,7 @@ This article describes how to get trial licenses for Microsoft Dynamics 365 Inte
 
 In order to install Dynamics 365 Intelligent Order Management, you'll need to install the appropriate licenses. This article will walk through how to get trial licenses that will allow you to have full operation of Intelligent Order Management. When you're ready to convert your trial licenses to production licenses, you can work with your partner or Microsoft account executive to obtain the correct licenses.
 
-The first tril license you'll need is the tenant level license for Dynamics 365 Intelligent Order Management. Once installed, the tenant level license will allow you to install Intelligent Order Management on any environment within the tenant. You don't need to assign users to the tenant level license.
+The first trial license you'll need is the tenant level license for Dynamics 365 Intelligent Order Management. Once installed, the tenant level license will allow you to install Intelligent Order Management on any environment within the tenant. You don't need to assign users to the tenant level license.
 
 > [!NOTE]
 > Although the tenant level license is free, you'll need to sign in to the Microsoft administrator portal with an account that has the ability to purchase services.
