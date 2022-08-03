@@ -2,7 +2,7 @@
 author: raybennett-msft
 description: This article describes how to get trial licenses that will allow you to have full operation of Microsoft Dynamics 365 Intelligent Order Management.
 ms.author: bennettray
-ms.date: 07/29/2022
+ms.date: 08/03/2022
 ms.topic: conceptual
 
 title: Get trial licenses for Intelligent Order Management
@@ -18,7 +18,7 @@ To install Dynamics 365 Intelligent Order Management, you must install the appro
 The first trial license that you need is the tenant-level license for Dynamics 365 Intelligent Order Management. After you install this license, you can install Dynamics 365 Intelligent Order Management in any environment in your tenant. You don't have to assign the tenant-level license to users.
 
 > [!NOTE]
-> Although the tenant-level license is free, you must sign in to the Microsoft administrator portal by using an account that can purchase services.
+> Although the tenant-level license is free, you must sign in to the Microsoft 365 admin center by using an account that can purchase services.
 
 The second trial license that you need is the Dynamics 365 Intelligent Order Management Unlimited Site License (USL) trial license. This license is used to assign users who will deploy Power Automate flows. Dynamics 365 Intelligent Order Management uses Power Automate when providers are activated, policies are published, or orchestrations are published. Only users who perform any of these activities must have a USL license assigned to them.
 
