@@ -186,7 +186,7 @@ To add a provider definition logic definition to the Outlook provider definition
     1. Select **Save and close**.
 1. Select **Connections**. You should see both the **Microsoft Dataverse** and **Outlook.com** connection reference definitions listed.
 
-## Add pa provider definition logic definition to the Outlook IOMLabProviders solution
+## Add a provider definition logic definition to the Outlook IOMLabProviders solution
 
 To add a provider definition logic definition to the Outlook IOMLabProviders solution, follow these steps.
 
