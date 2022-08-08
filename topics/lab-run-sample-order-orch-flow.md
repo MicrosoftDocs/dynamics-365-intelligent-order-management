@@ -32,7 +32,7 @@ To set up account mapping, follow these steps.
 1. Go to **Mappings \> Accounts**.
 1. Select **New**.
 1. On the **New IOM Account Mapping** page, do the following: 
-    1. For **IOM Provider**, enter "IOMLabOrderIntakeProvider".
+    1. For **Mapping Group**, enter "Default Mapping Group".
     1. For **Customer**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
     1. For **External Field Name**, enter "ProviderName".
     1. For **External Field Value**, enter "IOMLabOrderIntakeProvider".
