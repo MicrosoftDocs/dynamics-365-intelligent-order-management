@@ -22,7 +22,7 @@ Intelligent Order Management includes a catalog of out-of-box providers that you
 
 **Provider Catalog**
 
-[!include [Providers](includes/Providers.md)]
+![Provider Catalog.](media/Providers.png)
 
 ## Provider architecture
 
