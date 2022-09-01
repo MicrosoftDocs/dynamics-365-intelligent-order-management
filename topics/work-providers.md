@@ -1,9 +1,9 @@
 ---
-author: josaw1
+author: sumanic
 description: This topic provides an overview of working with providers and how to set up a provider in Dynamics 365 Intelligent Order Management.
-ms.date: 05/17/2021
+ms.date: 01/09/2022
 ms.topic: conceptual
-ms.author: josaw
+ms.author: sumanic
 
 title: Work with providers
 
@@ -18,8 +18,11 @@ title: Work with providers
 
 A key value proposition of Dynamics 365 Intelligent Order Management is the ability to seamlessly integrate with other systems. To do so, Intelligent Order Management uses "providers". Providers are constructs that allow you to connect Intelligent Order Management to external systems.
 
-Intelligent Order Management includes a catalog of out-of-box providers that you can set up and customize as you need. You can also create your own provider if the catalog does not have the one you need.  
+Intelligent Order Management includes a catalog of out-of-box providers that you can set up and customize as you need. You can also create your own provider if the catalog does not have the one you need. 
 
+**Provider Catalog**
+
+[!include [Providers](includes/Providers.md)]
 
 ## Provider architecture
 
@@ -49,46 +52,38 @@ A provider in Intelligent Order Management has the following components.
 
 Use the following steps to set up a provider.
 
-1.  Go to **Providers > Catalog**.
+1.  Go to **Providers > Library**.
 
-2.  Select **Add Provider** next to the provider you want to set up.
+2.  Click on **Select** or click on the icon next to the provider you want to set up.
 
-3.  Select **Create** to accept the terms and conditions.
+3.  If you wish to add multiple providers, then repeat step 2 for another provider and select **Activate Provider** from the top right.
 
-4.  In the **Display Name** field, enter a new name or leave the default name.
+4.  Once you do that, a wizard will appear to add the connections.
 
-5.  For each of the connections in the **Connections** section do the following:
-
-    1.  Select a connection.
-
-    2.  In the **Connection URL** section, select **Retrieve Connection Link**. A connection URL is a unique URL that gets created when you [create a connection in Power Automate](/power-automate/add-manage-connections).
-
-    3.  Select **Create a connection**.
-
-    4.  Search for your connector.
-
-    5.  Select the connector and enter the required authentication information.
-
-    6.  Select **Create**.
-
-    7.  In the **Status** list, the connector will have a status of **Connected**.
-
-    8.  Select the ellipses (**...**) of the newly created connector and then select **Details.**
-
-    9.  Copy the URL found at the top of the page.
-
-    10. Go back to the **Connection URL** screen in Intelligent Order Management and paste the URL in the **Connection URL** field.
-
-    11. Click **Activate** to activate the connection.
-
-    12. Select **Save**.
-
-    13. Repeat everything in step 5 for each the connections listed.
-
-6.  Select **Activate** in the top ribbon.
-
-7.  Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
-
+5.  In the **Display Name** field, enter a new name or leave the default name.
+6.  Read through the **Terms and Conditions** Select the check box for each provider you have selected.
+7.  Click on **Accept**.
+8.  This will open up the first provider details.
+9.  Scroll down into the **Connections** section.
+10. You will see the Connections associated with that provider will appear.
+11. Click on **Create** beside the provider connection. This will open up a screen to enter the **Connection** details.
+12. Enter the details and click on **Create**.
+13. Once the Connection is added, it will show a **green tick** on th side.
+14. Add the **Microsoft Dataverse** connection. This should auto reference from your system connections and a **green tick** should reflect on the side.
+15. Once successfully added the **Connections**, click on **Next**.
+16. This will take you through the **Parameters** screen. Add any Parameters needed for this Connection.
+17. Select the **Mapping Group**.
+18. Click on **Next**.
+19. This will open the **Transformations** page. Review for any changes needed.
+20. Click on **Next**.
+21. in the **Summary** page review the added **Connections** and **Details**.
+22. Click on **Save**.
+23. Click on **Activate**. This will show a message **Provider activated successfully**.
+24. Click on **Back** button to make any updates.
+25. Click on **Next** for any additional providers selected.
+26. Repeat **Step 6** through **Step 24** for the next providers.
+27. Finally Goto the **Review and Finish** page. 
+28. Review the details and exit. The **Providers** will show **Installed** if not activate dyet and in grey or **Activated** if successful and in green. 
 
 
 ## Delete a provider instance
