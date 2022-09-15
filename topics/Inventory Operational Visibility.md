@@ -79,7 +79,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 7. You will now be able to see a ![View Avail.](media/CheckAvail.png) button.
 8. Enter the product. This could be an **Existing Product** or **Write-in Product**.
 9. Add the **Unit**.
-10. Click on the **View Availibility** button. This will open the query screen.
+10. Click on the **Check Availibility** button. This will open the query screen.
 ![Query Autofill.](media/Autofill.png)
 11. The **Organization ID** and **Product ID** will be auto populated.
 12. In case you have entered the **Fulfillment Source** as well, then the query screen will have the **Location ID** populated as well.
@@ -88,4 +88,4 @@ This query screen can be accessed from multiple areas for different scenarios. B
 15. Click on the **Query** button.
 16. This will display the query results on the right side of the panel.
 17. You could also choose to hide the query section and just display the results. For this on the top right of the screen, change the selection from **Combo** to **Hide search criteria**.
-18. Review the availibility. **Save** the **Order Produts** form.
+18. Review the availibility. **Save** the **Order Products** form.
