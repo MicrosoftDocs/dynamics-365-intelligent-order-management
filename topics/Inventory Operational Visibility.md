@@ -76,7 +76,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 4. Goto the Order Products section in Order and click on **+ Add Products**.
 ![OrderProducts.](media/QuickForm.png)
 6. This will open a quick form on the right side of the screen.
-7. You will now be able to see a ![View Avail.](media/Avail.png) button.
+7. You will now be able to see a ![View Avail.](media/CheckAvail.png) button.
 8. Enter the product. This could be an **Existing Product** or **Write-in Product**.
 9. Add the **Unit**.
 10. Click on the **View Availibility** button. This will open the query screen.
