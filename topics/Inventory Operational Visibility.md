@@ -56,7 +56,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 
 1. Goto the **sitemap** under **Demand planning** and click on **Products**.
 2. Select the product and click on **View**.
-3. On the upper menu bar you will see a button **View Availibility**. Click on that.
+3. On the upper menu bar you will see a button ![View Avail.](media/Avail.png). Click on that.
 4. This will open the same query screen with the **Organization ID** and **Product ID** auto populated. **Organizaion ID** will be auto populated with dataverse organization id for IOM ad with D365 Finance and Operations company id when dual write is enabled.
 5. Enter the below mandatory fileds:
 
@@ -76,7 +76,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 4. Goto the Order Products section in Order and click on **+ Add Products**.
 ![OrderProducts.](media/QuickForm.png)
 6. This will open a quick form on the right side of the screen.
-7. You will now be able to see a **View Availibility** button.
+7. You will now be able to see a ![View Avail.](media/Avail.png) button.
 8. Enter the product. This could be an **Existing Product** or **Write-in Product**.
 9. Add the **Unit**.
 10. Click on the **View Availibility** button. This will open the query screen.
