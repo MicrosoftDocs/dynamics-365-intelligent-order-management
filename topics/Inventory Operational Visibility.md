@@ -23,7 +23,7 @@ In order to give customers these benefits, we are introducing close to real time
 
 [!NOTE]
 This query screen will be smart enough to understand if Dynamics 365 Finance and Operations is enabled in the landcsape. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and showcase the availibility for the same.
-In case Available to Promise is enabled, then this query screen will also allow to query incoming availibility from Dynamics 365 Finance and Operations.
+In case **Available to Promise** is enabled, then this query screen will also allow to query incoming availibility from **Dynamics 365 Finance and Operations**.
 
 ![Inventory Operational Visibility.](media/IVQuery.png)
 
