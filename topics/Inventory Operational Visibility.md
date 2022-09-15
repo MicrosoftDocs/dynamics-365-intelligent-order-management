@@ -29,7 +29,7 @@ In case Available to Promise is enabled, then this query screen will also allow 
 
 ## How to access the Inventory query screen?
 
-This query screen can be accessed from multiple areas for different uecases. Below are some usecases:
+This query screen can be accessed from multiple areas for different scenarios. Below are some usecases:
 
 ### Usecase 1: An Inventory planner looking for operational visibility
 
