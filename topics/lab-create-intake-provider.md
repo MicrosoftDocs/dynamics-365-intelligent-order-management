@@ -183,14 +183,14 @@ To create a provider message handler, follow these steps.
 1. For **Only with Attachment**, select **Yes**.
 
     ![Outlook trigger)](media/lab_trigger_outlook.png)
-1. Select **New step** and add "parse json".
+1. Select **New step** and add "Parse JSON".
 1. For **Content**, paste in the following code:
     ```JSON
     {
     "ProviderId": "00000000-0000-0000-0000-000000000000"
     }
     ```
-1. Select **Generate from sample** and paste in the following sample schema code:
+1. Directly paste in the following sample schema code:
     ```JSON
     {
       "type": "object",
