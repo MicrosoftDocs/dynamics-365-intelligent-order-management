@@ -238,6 +238,7 @@ To create a provider message handler, follow these steps.
 
     ![Apply to each control](media/lab_apply_to_each_control_3.png)
 1. Select **Add an action** within the **Apply to each** loop, add **Run a child flow** from the **Flow** connector, and rename it "Transform Message with Power Query Online".
+1. Select the Child Flow **IOM Provider Transformer**
 1. For **Provider Id**, select the **ProviderId** variable.
 1. For **Source Object Name**, select the **SourceObjectName** variable.
 1. For **Destination Object Name**, select the **DestinationObjectName** variable.
