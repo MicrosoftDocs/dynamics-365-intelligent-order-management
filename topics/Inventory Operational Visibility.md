@@ -19,11 +19,11 @@ Three primary benefits can be attained with a proper operational visibility:
 2. Reduce Supply chain costs.
 3. Improved decision making.
 
-In order to give customers these benefits,we are introducing close to real time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.
+In order to give customers these benefits,we are introducing close to real-time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.
 
 [!NOTE]
-This query screen will be smart enough to understand if Dynamics 365 Finance and Operations is enabled in the landcsape. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and showcase the availibility for the same.
-In case **Available to Promise** is enabled, then this query screen will also allow to query incoming availibility from **Dynamics 365 Finance and Operations**.
+This query screen will be smart enough to understand if Dynamics 365 Finance and Operations is enabled in the landcsape. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and showcase the availability for the same.
+In case **Available to Promise** is enabled, then this query screen will also allow to query incoming availability from **Dynamics 365 Finance and Operations**.
 
 ![Inventory Operational Visibility.](media/IVQuery.png)
 
@@ -37,7 +37,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 2. The left half of the screen is the query screen.
 3. The right side of the screen displays the result.
 4. The **Organization ID** will be auto populated with dataverse organization id for IOM and **Company Id** needs to entered when D365 Finance and Operations dual write is enabled.
-5. Enter the below mandatory fileds:
+5. Enter the below mandatory fields:
 
     5.1 **Site ID**
     
@@ -88,4 +88,4 @@ This query screen can be accessed from multiple areas for different scenarios. B
 15. Click on the **Query** button.
 16. This will display the query results on the right side of the panel.
 17. You could also choose to hide the query section and just display the results. For this on the top right of the screen, change the selection from **Combo** to **Hide search criteria**.
-18. Review the availibility. **Save** the **Order Products** form.
+18. Review the availability. **Save** the **Order Products** form.
