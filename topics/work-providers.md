@@ -66,16 +66,19 @@ Use the following steps to set up one or more providers.
 9.  Scroll down into the **Connections** section.
 10. You will see the Connections associated with that provider will appear.
 11. Click on **Create** beside the provider connection. This will open up a screen to enter the **Connection** details.
-12. Enter the details and click on **Create**.
-13. Once the Connection is added, it will show a **green tick** on the side.
-14. Add the **Microsoft Dataverse** connection. This should auto reference from your system connections and a **green tick** should reflect on the side.
-15. Once successfully added the **Connections**, click on **Next**.
-16. This will take you through the **Parameters** screen. Add any Parameters needed for this provider.
-17. Select the **Mapping Group**.
-18. Click on **Next**.
-19. This will open the **Transformations** page. Review for any changes needed.
-20. Click on **Next**.
-21. in the **Summary** page review the added **Connections** and **Details**.
+
+![image](https://user-images.githubusercontent.com/30285449/191603617-03fd413e-b65f-478d-8ab1-a70f6fa52f22.png)
+
+13. Enter the details and click on **Create**.
+14. Once the Connection is added, it will show a **green tick** on the side.
+15. Add the **Microsoft Dataverse** connection. This should auto reference from your system connections and a **green tick** should reflect on the side.
+16. Once successfully added the **Connections**, click on **Next**.
+17. This will take you through the **Parameters** screen. Add any Parameters needed for this provider.
+18. Select the **Mapping Group**.
+19. Click on **Next**.
+20. This will open the **Transformations** page. Review for any changes needed.
+21. Click on **Next**.
+22. in the **Summary** page review the added **Connections** and **Details**.
 23. Click on **Activate**. This will show a message **Provider activated successfully**.
 24. Click on **Back** button to make any updates.
 25. Click on **Next** for any additional providers selected.
