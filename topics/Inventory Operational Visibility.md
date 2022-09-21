@@ -36,7 +36,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 1. Goto the **sitemap** under **Demand planning** and click on **Operational visibility**.
 2. The left half of the screen is the query screen.
 3. The right side of the screen displays the result.
-4. The **Organization ID** will be auto populated with dataverse organization id for IOM ad with D365 Finance and Operations company id when dual write is enabled.
+4. The **Organization ID** will be auto populated with dataverse organization id for IOM and **Company Id** needs to entered when D365 Finance and Operations dual write is enabled.
 5. Enter the below mandatory fileds:
 
     5.1 **Site ID**
@@ -57,7 +57,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 1. Goto the **sitemap** under **Demand planning** and click on **Products**.
 2. Select the product and click on **View**.
 3. On the upper menu bar you will see a button ![View Avail.](media/Avail.png). Click on that.
-4. This will open the same query screen with the **Organization ID** and **Product ID** auto populated. **Organizaion ID** will be auto populated with dataverse organization id for IOM ad with D365 Finance and Operations company id when dual write is enabled.
+4. This will open the same query screen with the **Organization ID** and **Product ID** auto populated. **Organizaion ID** will be auto populated with dataverse organization id for IOM and **Company Id** needs to be entered in **Organization ID** when dual write is enabled with Dynamics 365 Finance and Operations.
 5. Enter the below mandatory fileds:
 
     5.1 **Site ID**
@@ -81,7 +81,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 9. Add the **Unit**.
 10. Click on the **Check Availibility** button. This will open the query screen.
 ![Query Autofill.](media/Autofill.png)
-11. The **Organization ID** and **Product ID** will be auto populated.
+11. The **Organization ID** and **Product ID** will be auto populated. **Organizaion ID** will be auto populated with dataverse organization id for IOM and **Company Id** needs to be entered in **Organization ID** when dual write is enabled with Dynamics 365 Finance and Operations.
 12. In case you have entered the **Fulfillment Source** as well, then the query screen will have the **Location ID** populated as well.
 13. Enter the **Site ID**.
 14. Check the **Query ATP** selection in case you have uploaded your demand and supply view using [Dynamics 365 Inventory Services.](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise)
