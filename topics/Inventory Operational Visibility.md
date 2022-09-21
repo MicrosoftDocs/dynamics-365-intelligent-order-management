@@ -11,7 +11,7 @@ title: Inventory Operations Visibility
 
 # Inventory Operational Visibility
 
-Inventoy visibility is a key enablement of Dynamics 365 Intelligent Order Management that enables end to end visibility of inventory across your organizational units. Having full visibility enables preparation for the unexpected and helps make better business decisions.
+Inventory visibility is a key enablement of Dynamics 365 Intelligent Order Management that enables end to end visibility of inventory across your organizational units. Having full visibility enables preparation for the unexpected and helps make better business decisions.
 
 Three primary benefits can be attained with a proper operational visibility:
 
@@ -52,7 +52,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
  11. A sample example of this query run looks as below:
 ![Query Results.](media/QueryResult.png)
   
-### Usecase 2 : A customer representative wants to view availibility from Products.
+### Usecase 2 : A customer representative wants to view availability from Products.
 
 1. Goto the **sitemap** under **Demand planning** and click on **Products**.
 2. Select the product and click on **View**.
@@ -68,7 +68,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 8. This will display the query results on the right side of the panel.
 9. You could also choose to hide the query section and just display the results. For this on the top right of the screen, change the selection from **Combo** to **Hide search criteria**.
 
-### Usecase 3 : A customer representative wants to view availibility from Order Products screen.
+### Usecase 3 : A customer representative wants to view availability from Order Products screen.
 
 1. Goto the **sitemap** under **Orders** and click on **Sales Orders**.
 2. Create a new order with the **New** button.
@@ -79,7 +79,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 7. You will now be able to see a ![View Avail.](media/CheckAvail.png) button.
 8. Enter the product. This could be an **Existing Product** or **Write-in Product**.
 9. Add the **Unit**.
-10. Click on the **Check Availibility** button. This will open the query screen.
+10. Click on the **Check Availability** button. This will open the query screen.
 ![Query Autofill.](media/Autofill.png)
 11. The **Organization ID** and **Product ID** will be auto populated. **Organizaion ID** will be auto populated with dataverse organization id for IOM and **Company Id** needs to be entered in **Organization ID** when dual write is enabled with Dynamics 365 Finance and Operations.
 12. In case you have entered the **Fulfillment Source** as well, then the query screen will have the **Location ID** populated as well.
