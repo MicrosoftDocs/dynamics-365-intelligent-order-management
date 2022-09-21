@@ -19,7 +19,7 @@ Three primary benefits can be attained with a proper operational visibility:
 2. Reduce Supply chain costs.
 3. Improved decision making.
 
-In order to give customers these benefits, we are introducing close to real time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.
+In order to give customers these benefits,we are introducing close to real time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.
 
 [!NOTE]
 This query screen will be smart enough to understand if Dynamics 365 Finance and Operations is enabled in the landcsape. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and showcase the availibility for the same.
