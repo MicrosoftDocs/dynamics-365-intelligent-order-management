@@ -92,4 +92,4 @@ This query screen can be accessed from multiple areas for different scenarios. B
 
 ## Additional Resources ##
 
-The query results are displayed base don the physical and calculated measures tha is setup as part of Inventory Setup configuration. To find more details around the setup please refer [here.](https://learn.microsoft.com/en-us/dynamics365/intelligent-order-management/)
+The query results are displayed based on the physical and calculated measures tha is setup as part of Inventory Setup configuration. To find more details around the setup please refer [here.](https://learn.microsoft.com/en-us/dynamics365/intelligent-order-management/)
