@@ -89,3 +89,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 16. This will display the query results on the right side of the panel.
 17. You could also choose to hide the query section and just display the results. For this on the top right of the screen, change the selection from **Combo** to **Hide search criteria**.
 18. Review the availability. **Save** the **Order Products** form.
+
+## Additional Resources ##
+
+The query results are displayed base don the physical and calculated measures tha is setup as part of Inventory Setup configuration. To find more details around the setup please refer [here.](https://learn.microsoft.com/en-us/dynamics365/intelligent-order-management/)
