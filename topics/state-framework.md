@@ -1,5 +1,5 @@
 ﻿---
-author: bennettray
+author: raybennett-msft
 description: This topic describes the State Framework architecture
 ms.date: 09/22/2022
 ms.topic: conceptual
