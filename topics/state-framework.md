@@ -1,4 +1,14 @@
-﻿# State Framework
+﻿---
+author: bennettray
+description: This topic describes the State Framework architecture
+ms.date: 09/22/2022
+ms.topic: conceptual
+ms.author: bennettray
+
+title: State Framework architecture
+
+---
+# State Framework
 The State Framework is a new concept introduced to Dynamics 365 Intelligent Order Management for the October 2022 release. The State Framework is a way of validating business process rules by checking at runtime if the current state of an entity is allowed to move to another state; for example, from **New -> In Progress** would be a successful transition if defined, but **Completed -> In Progress** would throw an error.
 
 Users can add their own State, State Reason and Transitions, but won't be allowed to customize out of the box definitions.
