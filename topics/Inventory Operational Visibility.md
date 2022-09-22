@@ -15,14 +15,14 @@ Inventory visibility is a key enablement of Dynamics 365 Intelligent Order Manag
 
 Three primary benefits can be attained with a proper operational visibility:
 
-1. Keep stock levels optimized.
+1. Optimize stock levels.
 2. Reduce Supply chain costs.
 3. Improved decision making.
 
-In order to give customers these benefits,we are introducing close to real-time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.
+In order to give customers these benefits,we are introducing close to real-time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.This will have information updated from your source system as a fundamental tenant for heterogenous supply chain systems.
 
 [!NOTE]
-This query screen will be smart enough to understand if Dynamics 365 Finance and Operations is enabled in the landcsape. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and showcase the availability for the same.
+This is an intelligent query screen and automatically detects an enabled instance of Dynamics 365. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and showcase the availability for the same.
 In case **Available to Promise** is enabled, then this query screen will also allow to query incoming availability from **Dynamics 365 Finance and Operations**.
 
 ![Inventory Operational Visibility.](media/IVQuery.png)
@@ -31,7 +31,7 @@ In case **Available to Promise** is enabled, then this query screen will also al
 
 This query screen can be accessed from multiple areas for different scenarios. Below are some usecases:
 
-### Usecase 1: An Inventory planner looking for operational visibility
+### Usecase 1: An Inventory planner wants operational visibility
 
 1. Goto the **sitemap** under **Demand planning** and click on **Operational visibility**.
 2. The left half of the screen is the query screen.
