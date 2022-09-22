@@ -41,7 +41,11 @@
       - name: Run sample order orchestration flow
         href: lab-run-sample-order-orch-flow.md
   - name: Architecture
-    href: architecture.md
+    items:
+      - name: Overview
+        href: architecture.md
+      - name: State Framework
+        href: state-framework.md
   - name: Set up Intelligent Order Management
     items:
     - name: Get trial licenses
