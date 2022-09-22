@@ -19,10 +19,10 @@ Three primary benefits can be attained with a proper operational visibility:
 2. Reduce Supply chain costs.
 3. Improved decision making.
 
-In order to give customers these benefits,we are introducing close to real-time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.This will have information updated from your source system as a fundamental tenant for heterogenous supply chain systems.
+In order to give customers these benefits,we are introducing close to real-time inventory query screens that can be used across different areas of Dynamics 365 Intelligent Order Management.This will have information updated from your source system as a fundamental tenant for heterogeneous supply chain systems.
 
 [!NOTE]
-This is an intelligent query screen and automatically detects an enabled instance of Dynamics 365. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and showcase the availability for the same.
+This is an intelligent query screen and automatically detects an enabled instance of Dynamics 365. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and highlight the availability for the same.
 In case **Available to Promise** is enabled, then this query screen will also allow to query incoming availability from **Dynamics 365 Finance and Operations**.
 
 ![Inventory Operational Visibility.](media/IVQuery.png)
@@ -57,7 +57,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 1. Goto the **sitemap** under **Demand planning** and click on **Products**.
 2. Select the product and click on **View**.
 3. On the upper menu bar you will see a button ![View Avail.](media/Avail.png). Click on that.
-4. This will open the same query screen with the **Organization ID** and **Product ID** auto populated. **Organizaion ID** will be auto populated with dataverse organization id for IOM and **Company Id** needs to be entered in **Organization ID** when dual write is enabled with Dynamics 365 Finance and Operations.
+4. This will open the same query screen with the **Organization ID** and **Product ID** auto populated. **Organization ID** will be auto populated with dataverse organization id for Dynamics 365 Intelligent Order Management and **Company Id** needs to be entered in **Organization ID** when dual write is enabled with Dynamics 365 Finance and Operations.
 5. Enter the below mandatory fileds:
 
     5.1 **Site ID**
