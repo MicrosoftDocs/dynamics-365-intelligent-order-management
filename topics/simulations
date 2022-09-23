@@ -1,0 +1,114 @@
+---
+author: derekkwanpm
+description: This topic provides an overview for the AI Simulations feature for IOM.
+ms.date: 09/23/2022
+ms.topic: conceptual
+ms.author: derekkwan
+
+title: IOM Simulations (Coming soon)
+---
+
+
+# IOM Simulations (Coming soon)
+
+[!include [banner](includes/banner.md)]
+
+Please note this feature is currently in development with a planned Private Preview in 2023. If you are interested in previewing this feature, please drop your email address here.
+
+Businesses using an order management system often struggle with visibility into automated fulfillment decisions happening behind the scenes, as well as maintaining some predictability of outcomes over time. Additionally, testing the outcomes of a fulfillment system, or attempting to run experiements to discover better strategies to deploy, have to be performed on real-life orders and customers, risking negative impact on revenue and customer sastisfaction.
+
+The new Simulations feature for IOM is a no-code, business user friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatially improve your business results.
+
+Please note all screenshots below are from a pre-production version of the feature, and may not demonstrate how the end product may appear.
+
+You will be able access Simulations in the left menu of the IOM application, just like you would access any other features of IOM. On the Simulations landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
+
+![Sims landing page](/topics/media/sims_landing.png)
+
+You can also compare the results of previous simulations side by side:
+
+![Sims results comparison](/topics/media/sims_compare.png)
+
+## Creating alerts
+
+
+
+After enabling alerts in private preview, you can find alerts under the "Monitoring" category in the left menu:
+
+![Alerts navigation](/topics/media/alerts_menu.png)
+
+
+
+If this is the first time you are using alerts, you will need to create some alert triggers under "Alerts configuration" first. Alerts configurations are what trigger actual alerts in IOM. In a future release, IOM will have some out-of-the-box alerts that are enabled by default, along with the capability to edit and create your own. But for now, let's create our first alert.
+
+![Alerts configuration](/topics/media/alerts_config.png)
+
+On the Alerts configuration landing page:
+
+1. The top menu includes several functions, including "new"
+2. The table contains a list of current alerts configurations. Clicking on any individual configuration in the list will open the configuration settings and allows you to edit.
+
+Clicking on "new" will open a new configuration settings screen:
+
+![Alerts settings](/topics/media/alerts_config_settings.png)
+
+1. Name your configuration: Use something descriptive so you can easily identify a given configuration amongst other configurations. Example: "Not delivered 1 day past requested date"
+2. Owner: This is automatically set to you, the creator of the configuration. You can however change the owner to someone else in your org if you choose.
+3. Alert action: This is the problematic action that will trigger the alert. For now, there are two options: 
+  1. Not sent to fulfillment
+  2. Not shipped
+4. Expected date: this is the date on an order, when combined with an alert action, that will trigger an alert. For private preview release, only "requested delivery date" will be an option, with more options in upcoming releases.
+5. Time before expected: number of days, hours or minutes between alert action and expected date that will cause an alert to trigger.
+
+Let's take an example: 
+
+1. Alert action = not sent to fulfillment
+2. Expected date = requested delivery date
+3. Time before expected = 3 days
+
+This means that any order with a requested delivery date three days from now, that has not yet been sent to fulfillment, will raise an alert.
+
+Saving in the top menu will save the configuration you're currently working on. Save and close will save the configuration and return you to the previous screen. As soon as a configuration is saved successfully, that configuration is live and will begin generating alerts.
+
+You will be able to see all the alerts that were created back on the Alert configuration list screen. You can also select any existing configurations and edit the settings if desired.
+
+## Viewing alerts
+
+Clicking on "Alerts" in the left menu under the Monitoring category will bring you to the Alerts list page, which contains a list of current orders that match the criteria for your alerts configurations. On this page, you can view any specific order that is under alert, change the status of the alert, as well as access the configuration that is triggering the alert.
+
+Each row in the Alerts list is an order that is currently "under alert".
+
+![Alerts list](/topics/media/alerts_list.png)
+
+1. The Order column contains a link to the actual order in IOM that is currently under alert
+2. The Alert Configuration column contains a link to the actual configuration that is triggering the alert
+3. The Status Reason column contains the status of the **alert**, not the order. This means, if the status is active, the alert is active, while the order might be "in fulfillment", or "sent for delivery". The intention of the **alert status** is to allow you to update the status of an alert if you have already taken an action on the order. As an example, if an order is delayed and triggered an alert, and you expedited the order for delivery, you can then change the **alert status** to resolved. Treat this list of alerts like a "to do list". You want to view which orders are under alert, and "check them off" as you take actions on the order to resolve. The options for alert statuses are:
+    1. Active
+    2. In progress
+    3. On hold
+    4. Inactive
+    5. Resolved
+  
+On the list page is also the familiar top menu with standard functionality, as well as other columns to see when an alert was created, and when an alert was last updated.
+  
+## Updating alerts
+  
+You can change the alert status by selecting any row in the Alerts list screen.
+
+![Alerts statuses](/topics/media/alerts_status.png)
+
+1. Hovering to the left of the Order column will display a selection button. Clicking the selection button will select that row.
+2. The top menu will change when a row is selected. An edit button will appear, which allows you edit the **alert**.
+3. Quick action buttons will also appear for resolve, activate, and deactivate, which updates the Status Reason for the alert. As mentioned in the previous section, this status is for the **alert**, not the actual order.
+
+If you select the edit option, you will be taken to the alert edit screen:
+
+![Alerts editing](/topics/media/alert_edit.png)
+
+1. Familiar top menu allows you to save, save and close, etc
+2. Alert details like owner, order, and configuration are displayed here. The owner of the alert can be changed to someone else in your org.
+3. Alert status can be changed to Active, In Progress, On Hold, or Resolved. If an alert needs to be deactivated, this can be accomplished with the "deactivate" button on the top menu.
+
+## Other details
+
+Please note that IOM alerts is in Private Preview, and we will be continuing to develop new features as well as add performance and stability improvements over time. As of now, if any given alert configuration triggers more than 5000 orders, the alert will not work. While this should rarely happen, some safeguards to take are to ensure the "time before expected" is not too many days before the expected date. As an example, there will be many more orders that have not been sent to delivery 10 days before the expected delivery date, compared to 2 days before the expected delivery date.
