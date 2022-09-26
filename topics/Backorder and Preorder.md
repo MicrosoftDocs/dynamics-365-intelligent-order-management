@@ -48,7 +48,7 @@ c. Appropriate **Settings** described below should be enabled.
    
    iii.Goto **Backorders** and turn **On** the capability.
    
-   iv. Once it is enabled, you will see a section to add **Cancelation SLA**. Here you could enter the number of days upto 
+   iv. Once it is enabled, you will see a section to add **Cancellation SLA**. Here you could enter the number of days upto 
         which you want to try on fulfilling the backorder. After that tenure, the order will be automatically canceled.
         
    ![Backorder Product.](media/Backorder.png)
