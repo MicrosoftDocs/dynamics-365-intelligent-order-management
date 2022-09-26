@@ -140,14 +140,14 @@ An archived version of the policy will have appropriate rules linked based on th
 
 
 |**Policy**|**Type**|
-| :- |
+| :- | :- |
 |**PK** PolicyId|Guid|
 |PolicyVersionId|Guid|
 |PolicyVersionState|enum|
 |PolicyVersionNumber|int|
 
 |**Rule**|**Type**|
-| :- |
+| :- | :- |
 |**PK** RuleId|Guid|
 |**FK** Policy|Guid|
 |RuleDefinition|string|
