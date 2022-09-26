@@ -31,11 +31,11 @@ should be, and sellers can be assured of minimum sales. Additionally, high pre-o
 
 a. **Available To Promise** settings should be enabled. For this follow the below steps:
 
-  i. Goto **Settings**. Click on **Index and Reservation**.
-   
-  ii. Click on the tab **Feature Management and Settings**
-   
-  iii.Enable **OnHandChangeSchedule** option.
+   i. Goto **Settings**. Click on **Index and Reservation**.
+ 
+   ii. Click on the tab **Feature Management and Settings**
+ 
+   iii.Enable **OnHandChangeSchedule** option.
 ![ATP.](media/ATP.png)
 
 b. **On hand schedule changes** should be uploaded in case you want to provide your customers an expected ship date. To do this follow the instructions [here.](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise)
@@ -88,7 +88,7 @@ A job log will be now available to show the list of job runs and their statuses.
 
 ![Job.](media/Job.png)
 
-If a background job fails, you will also be able to manually run it using the **Run** option in the upper menu bar. Select the **Back-Order Job** and this iwll start a new instance of the background job.
+If a background job fails, you will also be able to manually run it using the **Run** option in the upper menu bar. Select the **Back-Order Job** and this will start a new instance of the background job.
 
 On clicking the Job line, you will be able to see the details of the background job run.
 
