@@ -71,7 +71,7 @@ d. Enable **Preorder** eligibility for **Products**.
 
 When an order is created in Dynamics 365 Intelligent Order Management, an inventory check could be initiated as part of **policy assignment** or **Fulfillment and Returns optimization**. In either of these two processes, inventory may not be found for the **Order product**. In such cases the order line is updated with **Status Reason** as **Backorder Hold**.
 
-With the **ATP Settings** enabled, the backordered lines would also be updated with the **First availibility date** for the product and an **Expected Ship date**.
+With the **ATP Settings** enabled, the backordered lines would also be updated with the **Inventory Availibility Date** for the product and an **Estimated Shipment Date**.
 
 Below is a sample order journey with policy based fulfillment asisgnment.
 
