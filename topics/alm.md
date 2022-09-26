@@ -10,7 +10,7 @@ title: Application Lifecycle Management for Dynamics 365 Intelligent Order Manag
 
 # Dynamics 365 Intelligent Order Management Application Lifecycle Management
 
-This report specifies the required tables to migrate data for [Intelligent Order Management’s](https://docs.microsoft.com/dynamics365/intelligent-order-management/overview#:~:text=Intelligent%20Order%20Management%20provides%20a%20single%20view%20of,to%20integrate%20Intelligent%20Order%20management%20with%20other%20systems.) (IOM) configuration. This implementation is phase 1 of the ALM features where these tables require a manual step to add each entity to an unmanaged solution. After the desired entities are added, the solution can be exported where a package file is created with the data of the entities added to the unmanaged solution. There the package file can be imported into another IOM environment where data then can be activated for use. 
+This report specifies the required tables to migrate data for Dynamics 365 Intelligent Order Management configuration. This implementation is phase 1 of the ALM features where these tables require a manual step to add each entity to an unmanaged solution. After the desired entities are added, the solution can be exported where a package file is created with the data of the entities added to the unmanaged solution. There the package file can be imported into another IOM environment where data then can be activated for use. 
 
 ## Setup Tables
 
@@ -139,14 +139,14 @@ To provide the functionality of being able to roll back changes to a specific ve
 An archived version of the policy will have appropriate rules linked based on the Policy ID. The versioning record will be created every time a policy is unpublished. The below tables highlight how the two tables are linked and how the **PolicyVersionId** column will be used to group the versions that are created for a policy. The PolicyVersionId will be populated with PolicyId of the first Policy record created. That value will stay for each subsequent version created while the PolicyId column will have a new Guid populated along with a new rule created linked to that new Guid. 
 
 
-|**Policy**|
+|**Policy**|**Type**|
 | :- |
 |**PK** PolicyId|Guid|
 |PolicyVersionId|Guid|
 |PolicyVersionState|enum|
 |PolicyVersionNumber|int|
 
-|**Rule**|
+|**Rule**|**Type**|
 | :- |
 |**PK** RuleId|Guid|
 |**FK** Policy|Guid|
