@@ -31,39 +31,39 @@ should be, and sellers can be assured of minimum sales. Additionally, high pre-o
 
 a. **Available To Promise** settings should be enabled. For this follow the below steps:
 
-    i.  Goto **Settings**. Click on **Index and Reservation**.
+  i. Goto **Settings**. Click on **Index and Reservation**.
    
-    ii. Click on the tab **Feature Management and Settings**
+  ii. Click on the tab **Feature Management and Settings**
    
-    iii.Enable **OnHandChangeSchedule** option.
+  iii.Enable **OnHandChangeSchedule** option.
 ![ATP.](media/ATP.png)
 
 b. **On hand schedule changes** should be uploaded in case you want to provide your customers an expected ship date. To do this follow the instructions [here.](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise)
 
 c. Appropriate **Settings** described below should be enabled.
 
-    i.  Goto **Settings**. Click on **General app settings**.
+   i.  Goto **Settings**. Click on **General app settings**.
    
-    ii. Goto **Order handling preferences**  and click on **Manage**.
+   ii. Goto **Order handling preferences**  and click on **Manage**.
    
-    iii.Goto **Backorders** and turn **On** the capability.
+   iii.Goto **Backorders** and turn **On** the capability.
    
-    iv. Once it is enabled, you will see a section to add **Cancelation SLA**. Here you could enter the number of days upto 
+   iv. Once it is enabled, you will see a section to add **Cancelation SLA**. Here you could enter the number of days upto 
         which you want to try on fulfilling the backorder. After that tenure, the order will be automatically canceled.
         
    ![Backorder Product.](media/Backorder.png)
    
 d. Enable **Preorder** eligibility for **Products**. 
   
-      i.  Goto **Demand Planning** in sitemap and select **Products**.
+   i.  Goto **Demand Planning** in sitemap and select **Products**.
    
-      ii. Select the **Product** by clicking on the item.
+   ii. Select the **Product** by clicking on the item.
    
-     iii.If the product is preorder eligible then select **Yes** for the field **Pre-order Eligible**.
+   iii.If the product is preorder eligible then select **Yes** for the field **Pre-order Eligible**.
    
-     iv. Once you select it will enable a field to enter the **Launch Date**. Enter the date when this product will be released.
+   iv. Once you select it will enable a field to enter the **Launch Date**. Enter the date when this product will be released.
    
-     v.  Click on **Save** or **Save & Close**.
+   v.  Click on **Save** or **Save & Close**.
 
 ![Preorder Product.](media/Preorder.png)
 
