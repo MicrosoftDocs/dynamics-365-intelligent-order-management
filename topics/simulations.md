@@ -15,11 +15,11 @@ title: IOM Simulations (Coming soon)
 
 *Please note this feature is currently in development with a planned Private Preview in 2023. If you are interested in previewing this feature, please drop your email address here.*
 
-Businesses using an order management system often struggle with visibility into automated fulfillment decisions happening behind the scenes, as well as maintaining some predictability of outcomes over time. Additionally, testing the outcomes of a fulfillment system, or attempting to run experiements to discover better strategies to deploy, have to be performed on real-life orders and customers, risking negative impact on revenue and customer sastisfaction.
+Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiements to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer sastisfaction, revenue, and costs.
 
 The new Simulations feature for IOM is a no-code, business user friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatially improve your business results.
 
-Please note all screenshots below are from a pre-production version of the feature, and may not demonstrate how the end product may appear.
+*Please note all screenshots below are from a pre-production version of the feature, and may not demonstrate how the end product may appear.*
 
 ## Accessing IOM Simulations
 
@@ -76,9 +76,24 @@ When you're done selecting sources, the next step will allow you to select const
 
 ![Sims constraints](/topics/media/sims_constraints.png)
 
-## Viewing results
+### Viewing results
+
+Your Simulation is done! The results page will show business critical KPIs and trends associated with the simulation you ran. You will notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, run over and over again to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the uppper and lower bounds provide the min and max numbers from all the potential results. 
 
 ![Sims results](/topics/media/sims_results.png)
+
+On the results page, you will find several areas.
+
+1. Navigation back to your previous settings screens. You can go back to any previous setting and update it to iterate on the simulation you just ran. As an example, you experimented with 15 miles max distance, and want to use all the exact same settings to see what happens if you changed it to 20 miles. You can run this experiment without having to start over with a new simulation. Clicking on the "commit changes" button on the bottom of the screen will run the simulation again, and the results page will show deltas from the previous simulation.
+2. Configuration summary will show all the settings for the current simulation.
+3. Main KPI area will show all the business critical KPIs for your simulation.
+4. Map / metrics view: will show on a map the fulfillment sources for this simulation. Toggling to metrics view will show you sources in a table format, which includes inventory counts, which source was selected to fulfill which products, distance, and more.
+
+### More info
+
+IOM Simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments, and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. IOM Simulations puts the power of AI in your pocket so you can take ownership for improving your business.
+
+If you would like to sign up to be one of our first customers to try this feature when it is released, drop your contact info here.
 
 
 
