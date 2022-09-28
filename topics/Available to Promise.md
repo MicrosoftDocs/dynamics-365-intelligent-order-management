@@ -98,3 +98,20 @@ For more information about calculated measures, see [Calculated measures](https:
    
    ![IOMmapping.](media/IOMmapping.png)
    
+ # Run a sample transaction with Available to Promise check
+ 
+   Intelligent Order Management will now have the ability to perform Inventpry checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above            **Settings** are enabled then this will also check on Available to Promise dates and determine the **Material Availibility Date** and **Estimated Shipment Date** on    the sales orde line.
+
+   [!NOTE]
+   >- The inventory checks will also happen as part of **Fulfillment and Returns optimization** and based on **ATP Settings**, the sales order lines will be updated      accordingly.
+   
+   Below is a sample order journey with policy based fulfillment assignment.
+
+   ![Sample Orchestration.](media/SampleOrch.png)
+   
+   Below are the **provider actions** that will be available as part of Dynamics 365 Intelligent Order Management and check on **Available to Promise** when **ATP        Settings** are enabled.
+   
+   |**Provider action**|**Description**|
+   |-------------------|---------------|
+   |Send fulfillment process request|This provider action will check for inventory availibility for the assigned fulfillment source on the sales order line and also check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+   |Send to fulfillment optimization|This provider action will determine the best fulfillment location for a sales order line based on inventory check. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
