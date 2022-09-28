@@ -73,7 +73,7 @@ When an order is created in Dynamics 365 Intelligent Order Management, an invent
 
 With the **ATP Settings** enabled, the backordered lines would also be updated with the **Inventory Availibility Date** for the product and an **Estimated Shipment Date**.
 
-Below is a sample order journey with policy based fulfillment asisgnment.
+Below is a sample order journey with policy based fulfillment assignment.
 
 ![Orchestration.](media/SampleOrch.png)
 
