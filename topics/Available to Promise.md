@@ -18,9 +18,9 @@ For many manufacturers, retailers, or sellers, it isn't enough just to know what
 
 # Pre-requisite
 
-a. Submit on-hand change schedule changes to Inventory Visibility rovided that the dates are within the period that is defined by the **Schedule period** setting.
+a. Submit on-hand change schedule changes to Inventory Visibility provider that the dates are within the period that is defined by the **Schedule period** setting.
 
-b. Below are the API details to submit a on-hand schedule change request. Please note that these APIs are available from Dynamics 365 Supply Chain Management Invnetory visibility add in.
+b. Below are the API details to submit a on-hand schedule change request. Please note that these APIs are available from Dynamics 365 Supply Chain Management Inventory visibility add in as well as Dynamics 365 Intelligent Order Management.
 More details can be found in [Dynamics 365 Inventory Services.](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise)
 
 |Path|Method|Description|
@@ -100,12 +100,12 @@ For more information about calculated measures, see [Calculated measures](https:
    
  # Run a sample transaction with Available to Promise check
  
-   Intelligent Order Management will now have the ability to perform Inventpry checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above            **Settings** are enabled then this will also check on Available to Promise dates and determine the **Material Availibility Date** and **Estimated Shipment Date** on    the sales orde line.
+   Intelligent Order Management will now have the ability to perform Inventory checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above            **Settings** are enabled then this will also check on Available to Promise dates and determine the **Material Availibility Date** and **Estimated Shipment Date** on    the sales orde line.
 
    [!NOTE]
    >- The inventory checks will also happen as part of **Fulfillment and Returns optimization** and based on **ATP Settings**, the sales order lines will be updated      accordingly.
    
-   Below is a sample order journey with policy based fulfillment assignment.
+   Here is a sample order journey with policy based fulfillment assignment.
 
    ![Sample Orchestration.](media/SampleOrch.png)
    
@@ -113,5 +113,23 @@ For more information about calculated measures, see [Calculated measures](https:
    
    |**Provider action**|**Description**|
    |-------------------|---------------|
-   |Send fulfillment process request|This provider action will check for inventory availibility for the assigned fulfillment source on the sales order line and also check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
-   |Send to fulfillment optimization|This provider action will determine the best fulfillment location for a sales order line based on inventory check. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+   |Send fulfillment process request|This provider action will check for inventory availibility for the assigned fulfillment source on the sales order line and also  check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+   |Send to fulfillment optimization|This provider action will determine the best fulfillment location for a sales order line based on inventory check. This action     will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+   
+   Below is a sample screen highlighting the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line once the above order orchestration        runs. The inventory check found no inventory and has **backordered** the lines.
+   
+   ![ATP Check.](media/BackorderHold.png)
+   
+   # Application programming interface (API) URLs
+   
+   As a part of Availible to promise feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management and details can be found [here](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by 3rd party ERPs, commerce or supplier systems for inventory query with Available to promise capabilities.
+   
+   |Path|Method|Description|
+|----|------|-----------|
+|/api/environment/{environmentId}/onhand/changeschedule|	POST	|Create one scheduled on-hand change.|
+|/api/environment/{environmentId}/onhand/changeschedule/bulk|	POST	|Create multiple scheduled on-hand changes.|
+|/api/environment/{environmentId}/onhand| POST  |Create one on-hand change event.|
+|/api/environment/{environmentId}/onhand/bulk| POST |Create multiple change events.|
+|/api/environment/{environmentId}/onhand/indexquery| POST |Query by using the POST method.|
+|/api/environment/{environmentId}/onhand| GET |	Query by using the GET method.|
+   
