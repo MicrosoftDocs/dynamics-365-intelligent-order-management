@@ -125,12 +125,29 @@ For more information about calculated measures, see [Calculated measures](https:
    
    As a part of Availible to promise feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management and details can be found [here](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by 3rd party ERPs, commerce or supplier systems for inventory query with Available to promise capabilities.
    
-   |Path|Method|Description|
-|----|------|-----------|
-|/api/environment/{environmentId}/onhand/changeschedule|	POST	|Create one scheduled on-hand change.|
-|/api/environment/{environmentId}/onhand/changeschedule/bulk|	POST	|Create multiple scheduled on-hand changes.|
-|/api/environment/{environmentId}/onhand| POST  |Create one on-hand change event.|
-|/api/environment/{environmentId}/onhand/bulk| POST |Create multiple change events.|
-|/api/environment/{environmentId}/onhand/indexquery| POST |Query by using the POST method.|
-|/api/environment/{environmentId}/onhand| GET |	Query by using the GET method.|
+   Below is a sample payload for Inventory Query to call these services from Dynamics 365 Intelligent Order Management.
+   
+       {
+
+    "API": "OnHandQuery",
+
+    "Payload": "{\"filters\": {\"OrganizationId\": [\"{{orgid}}\"],\"ProductId\": [\"ACSC-SP\"],\"SiteId\": [\"default\",\"1\"],\"LocationId\":    [\"120\"]},\"groupByValues\": [],\"returnNegative\": true }"
+
+      }
+      
+   The associated sample Path would look like below:
+
+      {{orgurl}}/api/data/v9.1/msdyn_IOMInventoryAPICall
+      
+The Request and Response for these payloads are ver much similar to what is available from [Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls)
+The below table highlights the mapping between the Intelligent Order Management APIs, Dynamics 365 Inventory Visibility APIs and corresponding documentations.
+   
+|Intelligent Order Management API Name|Dyamics 365 Inventory Visibily API|Description|Documentation link|
+|----|------|-----------|--------|
+|OnHandQuery|/api/environment/{environmentId}/onhand/indexquery| POST |Query by using the POST method.| [Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-api#query-with-post-method)|
+|OnHandDelta|/api/environment/{environmentId}/onhand| GET |	Query by using the GET method.|
+|OnHandDelta_Bulk|/api/environment/{environmentId}/onhand/bulk| POST |Create multiple change events.|
+|OnHandChangeSchedule|/api/environment/{environmentId}/onhand/changeschedule| POST | Create on hand change schedule. |
+|OnHandChangeSchedule_Bulk|/api/environment/{environmentId}/onhand/changeschedule/bulk|	POST	|Create multiple scheduled on-hand changes.|
+
    
