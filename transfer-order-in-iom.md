@@ -34,4 +34,35 @@ If you are installing the dual-write solution first, the UX package solution wil
 
 ## Initial sync of pre-requisite tables
 To create new **Transfer orders** and work with existing **Transfer orders**, you must sync the reference data between Supply Chain Management and Dataverse. You use the initial write functionality to detect the table relationships and find the tables that you must enable for a given map.
+In the dual write synch settings you will see the pre-requisite tables for both **Transfer Order Header** and **Transfer Order Products**
+Following tables need to be synched for header.
+
+Sites
+Worker
+Modes of delivery
+Terms of delivery
+Warehouses
+
+![Transferheader.](media/Transferheader.png)
+
+Following tables need to be synched for products
+
+Worker
+Modes of delivery
+Terms of delivery
+Styles
+Colors
+Configurations
+Sizes
+Currencies
+Units
+CDS released distinct products
+Sites
+Warehouses
+
+
+
+
+
+
 
