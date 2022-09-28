@@ -139,15 +139,15 @@ For more information about calculated measures, see [Calculated measures](https:
 
       {{orgurl}}/api/data/v9.1/msdyn_IOMInventoryAPICall
       
-The Request and Response for these payloads are ver much similar to what is available from [Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls)
+The Request and Response for these payloads are very much similar to what is available from [Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls)
 The below table highlights the mapping between the Intelligent Order Management APIs, Dynamics 365 Inventory Visibility APIs and corresponding documentations.
    
-|Intelligent Order Management API Name|Dyamics 365 Inventory Visibily API|Description|Documentation link|
-|----|------|-----------|--------|
+|Intelligent Order Management API Name|Dynamics 365 Inventory Visibility API|Method|Description|Documentation link|
+|----|------|-----------|--------|--------|
 |OnHandQuery|/api/environment/{environmentId}/onhand/indexquery| POST |Query by using the POST method.| [Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-api#query-with-post-method)|
-|OnHandDelta|/api/environment/{environmentId}/onhand| GET |	Query by using the GET method.|
-|OnHandDelta_Bulk|/api/environment/{environmentId}/onhand/bulk| POST |Create multiple change events.|
-|OnHandChangeSchedule|/api/environment/{environmentId}/onhand/changeschedule| POST | Create on hand change schedule. |
-|OnHandChangeSchedule_Bulk|/api/environment/{environmentId}/onhand/changeschedule/bulk|	POST	|Create multiple scheduled on-hand changes.|
+|OnHandDelta|/api/environment/{environmentId}/onhand| GET |	Query by using the GET method.|[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-api#create-one-onhand-change-event)|
+|OnHandDelta_Bulk|/api/environment/{environmentId}/onhand/bulk| POST |Create multiple change events.|[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-api#create-multiple-onhand-change-events)|
+|OnHandChangeSchedule|/api/environment/{environmentId}/onhand/changeschedule| POST | Create on hand change schedule. |[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#create-one-on-hand-change-schedule)|
+|OnHandChangeSchedule_Bulk|/api/environment/{environmentId}/onhand/changeschedule/bulk|	POST	|Create multiple scheduled on-hand changes.|[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#create-multiple-on-hand-change-schedules)|
 
    
