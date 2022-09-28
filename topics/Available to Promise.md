@@ -17,10 +17,11 @@ Use of this calculation can greatly increase your order fulfillment capability.
 For many manufacturers, retailers, or sellers, it isn't enough just to know what is currently on hand. They must have full visibility into future availability. This future availability should consider future supply, future demand, and ATP.
 
 # Pre-requisite
+a. Dynamics 365 Inventory Visibility provider is installed. Installation details can be found [here](https://learn.microsoft.com/en-us/dynamics365/intelligent-order-management/set-up-inventory-visibility-provider).
 
-a. Submit on-hand change schedule changes to Inventory Visibility provider that the dates are within the period that is defined by the **Schedule period** setting.
+b. Submit on-hand change schedule changes to Dynamics 365 Inventory Visibility provider that the dates are within the period that is defined by the **Schedule period** setting.
 
-b. Below are the API details to submit a on-hand schedule change request. Please note that these APIs are available from Dynamics 365 Supply Chain Management Inventory visibility add in as well as Dynamics 365 Intelligent Order Management.
+Below are the API details to submit a on-hand schedule change request. Please note that these APIs are available from Dynamics 365 Supply Chain Management Inventory visibility add in as well as Dynamics 365 Intelligent Order Management.
 More details can be found in [Dynamics 365 Inventory Services.](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise)
 
 |Path|Method|Description|
