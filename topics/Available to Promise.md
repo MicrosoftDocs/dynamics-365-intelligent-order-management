@@ -5,13 +5,13 @@ ms.service: dynamics-365-intelligent-order-management
 ms.date: 09/27/2022
 ms.topic: how-to
 ms.author: sumanic
-title: Inventory Available to promise
+title: Inventory Available to Promise
 
 ---
 
 # Inventory Available to Promise
 
-Availible to Promise is a projected amount of inventory that will be available in the incoming period to be able to promise customer orders.
+Available to Promise is a projected amount of inventory that will be available in the incoming period to be able to promise customer orders.
 Use of this calculation can greatly increase your order fulfillment capability.
 
 For many manufacturers, retailers, or sellers, it isn't enough just to know what is currently on hand. They must have full visibility into future availability. This future availability should consider future supply, future demand, and ATP.
@@ -92,7 +92,7 @@ For more information about calculated measures, see [Calculated measures](https:
    v.    Select **atponhand** as **Base Measure**. 
 
          [!NOTE]
-         >-Base Measure is a predefined measure in Inteligent Order Management that will be called from the Inventory check actions 
+         >-Base Measure is a predefined measure in Intelligent Order Management that will be called from the Inventory check actions 
          in orchestration.This Base measure mapping will be maintained with the ATP Seeting calculated measure.
          
    vi.   Select the **Calculated Measure** that you want to map from the defined **Calculated measures** in **ATP Setting**.
@@ -101,7 +101,7 @@ For more information about calculated measures, see [Calculated measures](https:
    
  # Run a sample transaction with Available to Promise check
  
-   Intelligent Order Management will now have the ability to perform Inventory checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above            **Settings** are enabled then this will also check on Available to Promise dates and determine the **Material Availibility Date** and **Estimated Shipment Date** on    the sales orde line.
+   Intelligent Order Management will now have the ability to perform Inventory checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above            **Settings** are enabled then this will also check on Available to Promise dates and determine the **Material Availability Date** and **Estimated Shipment Date** on    the sales orde line.
 
    [!NOTE]
    >- The inventory checks will also happen as part of **Fulfillment and Returns optimization** and based on **ATP Settings**, the sales order lines will be updated      accordingly.
@@ -114,7 +114,7 @@ For more information about calculated measures, see [Calculated measures](https:
    
    |**Provider action**|**Description**|
    |-------------------|---------------|
-   |Send fulfillment process request|This provider action will check for inventory availibility for the assigned fulfillment source on the sales order line and also  check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+   |Send fulfillment process request|This provider action will check for inventory availability for the assigned fulfillment source on the sales order line and also  check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
    |Send to fulfillment optimization|This provider action will determine the best fulfillment location for a sales order line based on inventory check. This action     will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
    
    Below is a sample screen highlighting the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line once the above order orchestration        runs. The inventory check found no inventory and has **backordered** the lines.
@@ -123,7 +123,7 @@ For more information about calculated measures, see [Calculated measures](https:
    
    # Application programming interface (API) URLs
    
-   As a part of Availible to promise feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management and details can be found [here](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by 3rd party ERPs, commerce or supplier systems for inventory query with Available to promise capabilities.
+   As a part of Available to promise feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management and details can be found [here](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by 3rd party ERPs, commerce or supplier systems for inventory query with Available to promise capabilities.
    
    Below is a sample payload for Inventory Query to call these services from Dynamics 365 Intelligent Order Management.
    
