@@ -77,4 +77,24 @@ For more information about calculated measures, see [Calculated measures](https:
    v.    Assign the **Schedule Period**. Currently this is supported to a max of 7 days.
    
   ![ATPSetting.](media/ATPSetting.png)
+  
+  c. The Intelligent Order Management calculated measure mapping must be defined.
+  
+   i.    Goto **Settings**. Click on **Index and Reservation**.
+   
+   ii.   Click on the tab **Intelligent Order Management Mappings**.
+   
+   iii.  Goto the section **Set Calculated Measure Mappings**.
+   
+   iv.   Select the **Data Source** defined in **ATP Setting**.
+   
+   v.    Select **atponhand** as **Base Measure**. 
+
+         [!NOTE]
+         >-Base Measure is a predefined measure in Inteligent Order Management that will be called from the Inventory check actions 
+         in orchestration.This Base measure mapping will be maintained with the ATP Seeting calculated measure.
+         
+   vi.   Select the **Calculated Measure** that you want to map from the defined **Calculated measures** in **ATP Setting**.
+   
+   ![IOMmapping.](media/IOMmapping.png)
    
