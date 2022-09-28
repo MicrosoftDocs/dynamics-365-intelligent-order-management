@@ -77,7 +77,7 @@ Below is a sample order journey with policy based fulfillment asisgnment.
 
 ![Orchestration.](media/SampleOrch.png)
 
-When the order lines are **backordered**, below is a smaple sceen highlighting the key updates that happen to a sales order lines.
+When the order lines are **backordered**, below is a smaple screen highlighting the key updates that happen to a sales order lines.
 
 ![Backorder.](media/BackorderHold.png)
 
