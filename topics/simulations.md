@@ -13,7 +13,7 @@ title: IOM Simulations (Coming soon)
 
 [!include [banner](includes/banner.md)]
 
-*Please note this feature is currently in development with a planned Private Preview in 2023. If you are interested in previewing this feature, please drop your email address here.*
+*Please note this feature is currently in development with a planned Private Preview in 2023. If you are interested in previewing this feature, please drop your [contact info here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).*
 
 Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiements to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer sastisfaction, revenue, and costs.
 
@@ -37,16 +37,18 @@ From the Simulations landing page, you can create a new simulation from the top 
 
 ![Simulations scenarios](/topics/media/sims_scenarios.png)
 
-1. Source optimization: want to see what would be the impact to your costs, delivery times, and inventory if you included or excluded different fulfillment sources within a service area? Source optimiation simulations allow you to swap sources in and out and measure what would happen to your fulfillment network. 
-2. Demand shock impact: 
-3. Expand your fulfillment network:
-4. Introduce new products
+1. **Source optimization**: Want to see what would be the impact to your costs, delivery times, and inventory if you included or excluded different fulfillment sources within a service area? Source optimization simulations allow you to swap sources in and out and measure impact to your fulfillment network. 
+2. **Demand shock impact**: What would be the impact on your current order management network if demand spiked by 2x or 3x in the next few months? How does that change your restocking cadence? How much would it drive up your costs to mainatain delivery times? Demand shock impact simulations will let you simulate various order volumes in the future and see the impact on your distribution centers and overall network. 
+3. **Expand your fulfillment network**: Business expansion is a highly strategic and impactful decision that needs to be data-informed and future-proof. Expanding into a new geo, or simply opening a new distribution center or 3PL in a current service area, can have dramatic impact on your inventory decisions, your delivery times, and costs. Simulating the impact of business expansion across your order management network will allow you to make decisions with more confidence.  
+4. **Introduce new products**: New product expansion can have cannibalization effects on your current product lines, and cause a ripple effect across your order management network as buying patterns change, impacting your carefully planned inventory operations and your fulfillment and delivery plans. Simulating the impact of new product introduction will give you a future view of the expected impact of this type of expansion. 
 
-For the first version of Simulations, we will have available the source optimization scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
+For the first version of Simulations, we will have available the **source optimization** scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
 
 ### Naming your simulation
 
 ![Sims naming form](/topics/media/sim_name.png)
+
+Name your simulation something you will recognize easily at a glance, such as "max distance and source update for los angeles". The description field can be used as a "note", to add more details to help you remember the motivation or goals behind the simulation (or for others to understand the simulation at a glance). 
 
 ### Order types
 
@@ -93,7 +95,7 @@ On the results page, you will find several areas.
 
 IOM Simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments, and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. IOM Simulations puts the power of AI in your pocket so you can take ownership for improving your business.
 
-If you would like to sign up to be one of our first customers to try this feature when it is released, drop your contact info here.
+If you would like to sign up to be one of our first customers to try this feature when it is released, drop your [contact info here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
 
 
 
