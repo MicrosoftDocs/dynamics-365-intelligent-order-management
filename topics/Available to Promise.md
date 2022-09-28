@@ -76,5 +76,5 @@ For more information about calculated measures, see [Calculated measures](https:
    
    v.    Assign the **Schedule Period**. Currently this is supported to a max of 7 days.
    
-    ![ATPSetting.](media/ATPSetting.png)
+  ![ATPSetting.](media/ATPSetting.png)
    
