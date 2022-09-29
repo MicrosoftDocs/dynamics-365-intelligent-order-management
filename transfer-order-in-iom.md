@@ -37,30 +37,44 @@ To create new **Transfer orders** and work with existing **Transfer orders**, yo
 In the dual write synch settings you will see the pre-requisite tables for both **Transfer Order Header** and **Transfer Order Products**
 Following tables need to be synched for header.
 
-Sites
-Worker
-Modes of delivery
-Terms of delivery
-Warehouses
+- Sites
+- Worker
+- Modes of delivery
+- Terms of delivery
+- Warehouses
 
 ![Transferheader.](media/Transferheader.png)
 
 Following tables need to be synched for products
 
-Worker
-Modes of delivery
-Terms of delivery
-Styles
-Colors
-Configurations
-Sizes
-Currencies
-Units
-CDS released distinct products
-Sites
-Warehouses
+- Worker
+- Modes of delivery
+- Terms of delivery
+- Styles
+- Colors
+- Configurations
+- Sizes
+- Currencies
+- Units
+- CDS released distinct products
+- Sites
+- Warehouses
 
+![Tolines.](media/Tolines.png)
 
+## Create **Transfer Order** 
+
+1. To create **Transfer Order** go to the site map entry **Transfer orders** under **Orders**
+1. Select **+New** and enter mandatory fields such as **Name** to denote a **Transfer order** id (which would be the same id in Supply Chain Management).
+   **Company**, **From Warehouse** to denote the transfer from and the **To warehouse** to denote the transfer to warehouse. Also enter **Ship date** if you know when    the transfer will ship out and **Receive date** as to when it will be received. These two are optional fields that can also be left blank.  
+1. To create **Transfer Order Product** select **New Transfer Order product** enter **Product** , **Line number** and **Transfer quantity**. You will notice that
+   several other fields are locked which would mean those data would be populated from Supply chain manageent as part of dual write sync.
+1. If you entered a **Ship date** and **Receive date** on the header, they would default to the lines and can be overriden on the lines.
+1. Once the **Transfer Order Products** is saved, it will sync to Supply Chain Management to be processed further.
+
+## Processing of Transfer Order and Status updates.
+
+## View of **Transfer Order Products** within **Sales Order Products**
 
 
 
