@@ -1,5 +1,5 @@
 ﻿---
-author: bennettray-msft
+author: raybennett-msft
 description: This topic provides an overview of Dynamics 365 Intelligent Order Management Troubleshooting
 ms.date: 10/01/2022
 ms.topic: overview
