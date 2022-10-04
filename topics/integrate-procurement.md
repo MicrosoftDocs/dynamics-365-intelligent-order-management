@@ -101,7 +101,7 @@ As a purchase order progresses in Supply Chain Management, status updates flow b
 
 The **Purchase Order Receipt** entity and **Purchase Order Receipt products** entity provides visibility to the **Received inventory quantity** and **Remaaining inventory quanitty**, along with the **Product receipt date** and **Purchased quantity**. The **Purchase Order Receipt** entity within a purchase order can be accessed via a separate tab on the purchase order form. Fields on this form can provide insights on under-receivals and over-receivals.
 
-![Goods-Receipt product.](media/Goods-Receipt.png)
+![Goods-Receipt product.](media/goods-receipt.png)
 
 For information on detailed mapping between Supply Chain Management purchase order and purchase order line statuses, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
 
@@ -109,5 +109,5 @@ For information on detailed mapping between Supply Chain Management purchase ord
 
  The **Purchase Order product** tab will be available within the **sales order products** will list all of the open purchase order lines for the product.
  
-![POviewinSO.](media/POviewinSO.png)
+![POviewinSO.](media/po-view-SO.png)
 
