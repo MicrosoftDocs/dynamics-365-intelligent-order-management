@@ -68,7 +68,7 @@ The following tables are required for orchestration migration:
 
 To add tables as solution components and export your solution from the source environment, follow these steps.
 
-1. Go to <https://make.preprod.powerapps.com> for your test environment, or <https://make.powerapps.com> for your production environment.
+1. Go to https://make.preprod.powerapps.com for your test environment, or https://make.powerapps.com for your production environment.
 1. Select the appropriate environment in the upper right-hand corner.
     <!--![Screenshot of environment selection](media/developer-alm-1.png)-->
 1. In the left-side navigation pane, select **Solutions**.
@@ -104,18 +104,11 @@ To add tables as solution components and export your solution from the source en
 
 To import your solution into your target environment, follow these steps.
 
-1. In your target environment, within Intelligent Order Management, make sure your orchestrations, providers, and policies are deactivated/unpublished. You'll need to do this step for each provider, policy and orchestration that you're importing.
-1. Back in your maker portal, select your target environment like you did in the previous section, but selecting the environment you want to import the solution to.
-
-![Screenshot showing target environment](media/developer-alm-14.png)
-
-1. Select Import
-
-![Screenshot showing Import](media/developer-alm-14.png)
-
-- Import solution into environment and activate policies, providers, and then orchestration.
-  1. ` `**IN that order.** 
-1. Once the components are activated there the flows for policy will be updated, and orchestration flows will have republished with the data that was imported.
+1. In your target environment, within Intelligent Order Management, ensure that your orchestrations, providers, and policies are deactivated/unpublished. You must do this step for each provider, policy, and orchestration that you're importing.
+1. In your maker portal (https://make.preprod.powerapps.com for your test environment, or https://make.powerapps.com for your production environment), select the target environment you want to import the solution to.
+1. On the menu bar at the top of the page, select **Import**
+1. Import your solution into the target environment and then (in this order) activate policies, providers, and then orchestration.
+1. Once the components are activated, the flows for policy will be updated, and orchestration flows will have to be republished with the data that was imported.
 
 ## Policy and rule versioning
 
@@ -126,8 +119,9 @@ In the policy table, there are two different states of records.
 - **Current** - There is only one current record for the policy.
 - **Archived** - There can be many archived records depending on how many changes have occurred to the linked policy and rules.
 
-An archived version of the policy will have appropriate rules linked based on the Policy ID. The versioning record will be created every time a policy is unpublished. The below tables highlight how the two tables are linked and how the **PolicyVersionId** column will be used to group the versions that are created for a policy. The PolicyVersionId will be populated with PolicyId of the first Policy record created. That value will stay for each subsequent version created while the PolicyId column will have a new Guid populated along with a new rule created linked to that new Guid. 
+An archived version of the policy will have appropriate rules linked based on the policy ID. The versioning record is created every time a policy is unpublished. 
 
+The following tables highlight how the two tables are linked and how the **PolicyVersionId** column is used to group the versions that are created for a policy. The **PolicyVersionId** is populated with the policy ID of the first policy record created. The policy ID value will persist for each subsequent version created, while the **PolicyId** column will be populated a new GUID, along with a new rule created to link to that new GUID. 
 
 |**Policy**|**Type**|
 |:-|:-|
