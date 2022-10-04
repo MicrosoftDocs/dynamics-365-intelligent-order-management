@@ -42,9 +42,9 @@
         href: lab-run-sample-order-orch-flow.md
   - name: Architecture
     items:
-      - name: Overview
+      - name: Architecture overview
         href: architecture.md
-      - name: State Framework
+      - name: State framework architecture
         href: state-framework.md
   - name: Set up Intelligent Order Management
     items:
