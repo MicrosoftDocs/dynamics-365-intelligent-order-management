@@ -18,9 +18,11 @@ Users can add their own state, state reason, and transitions, but aren't allowed
 
 ## State framework data model
 
-![State framework data model](media/state-framework-1.png)
-
 The state framework data model introduces some updates and new additions to the current data model.
+
+The following illustration shows the tables that have been added in the state framework data model.
+
+![State framework data model](media/state-framework-1.png)
 
 ### Updates to the data model
 
@@ -51,9 +53,9 @@ The **State Definition** table enables the creation a set of states that are all
 |**State Definition Properties**|A lookup for associated metadata.|
 |**Readonly**|Setting this state to **True** marks the entity as read only.|
 
-### State Reason Definition
+#### State Definition Reason table
 
-The **State Reason Definition** table is for providing extra details for why something is in that State, but may not be part of indicating a valid state transition. For example, something can have a state of **On Hold**, but have a state reason of **Backorder** or **Preorder**.
+The **State Definition Reason** table is for providing extra details for why something is in that State, but may not be part of indicating a valid state transition. For example, something can have a state of **On Hold**, but have a state reason of **Backorder** or **Preorder**.
 
 |**Field**|**Description**|
 |:-|:-|
@@ -61,7 +63,7 @@ The **State Reason Definition** table is for providing extra details for why som
 |**State**|Which state the state reason is associated with.|
 |**Details**|Name/description of the state reason.|
 
-### State Definition Properties
+#### State Definition Properties table
 
 The **State Definition Properties** table contains extra metadata for each of the states.
 
@@ -70,7 +72,7 @@ The **State Definition Properties** table contains extra metadata for each of th
 |**State Definition Properties**|ID (GUID) for this property.|
 |**Timeline Position**|What order to display this state in the UI on the **Progress Bar Timeline** (introduced in the Oct 2022 release).|
 
-### State Transition
+### State Transition table
 
 The **State Transition** table contains a list of state transitions that will occur when a business event is raised. The business event will only set the state if the current state is in an allowable state.
 
