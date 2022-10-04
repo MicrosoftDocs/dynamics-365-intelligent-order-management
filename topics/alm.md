@@ -114,14 +114,14 @@ The following tables highlight how the two tables are linked and how the **Polic
 
 |**Policy**|**Type**|
 |:-|:-|
-|**PK** PolicyId|Guid|
-|PolicyVersionId|Guid|
+|Primary Key (PK) PolicyId|GUID|
+|PolicyVersionId|GUID|
 |PolicyVersionState|enum|
 |PolicyVersionNumber|int|
 
 |**Rule**|**Type**|
 |:-|:-|
-|**PK** RuleId|Guid|
-|**FK** Policy|Guid|
+|Primary Key (PK) RuleId|GUID|
+|Foreign Key (FK) Policy|GUID|
 |RuleDefinition|string|
 |AssociatedEntity|enum|
