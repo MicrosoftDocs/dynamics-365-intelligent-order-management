@@ -26,7 +26,7 @@ The state framework data model introduces some updates and new additions to the 
 
 #### Entity State/State Reason columns
 
-The state framework introduces two new columns to the entities that are part of Intelligent Order Management. These columns were added to support localizable **State** and **State Reason** status fields. It also introduces a new **ReadOnly** field that indicate that a record shouldn't be editable in the user interface (UI).
+The state framework introduces two new columns to the entities that are part of Intelligent Order Management. These columns were added to support localizable **State** and **State Reason** status fields. It also introduces a new **ReadOnly** field that indicates that a record shouldn't be editable in the user interface (UI).
 
 |**Field**|**Description**|
 |:-|:-|
@@ -48,7 +48,7 @@ The **State Definition** table enables the creation a set of states that are all
 |**State Definition**|ID (GUID) for the state.|
 |**Associated Entity**|Which entity the state belongs to.|
 |**Details**|Name of the state.|
-|**State Definition Properties**|A lookup to associated metadata.|
+|**State Definition Properties**|A lookup for associated metadata.|
 |**Readonly**|Setting this state to **True** marks the entity as read only.|
 
 ### State Reason Definition
@@ -77,7 +77,7 @@ The **State Transition** table contains a list of state transitions that will oc
 |**Field**|**Description**|
 |:-|:-|
 |**State Transition**|ID (GUID) of this state transition.|
-|**Business Event Definition**|Lookup to the **Business Event Definition** table to determine which **Business Event** the record belongs to.|
+|**Business Event Definition**|A lookup to the **Business Event Definition** table to determine which **Business Event** the record belongs to.|
 |**Source State**|The allowable source state to transition from.|
 |**Target State**|Target state to set if coming from an allowable source state.|
 |**Target State Reason**|Target state reason to set if coming from an allowable source state.|
