@@ -70,34 +70,23 @@ To add tables as solution components and export your solution from the source en
 
 1. Go to https://make.preprod.powerapps.com for your test environment, or https://make.powerapps.com for your production environment.
 1. Select the appropriate environment in the upper right-hand corner.
-    <!--![Screenshot of environment selection](media/developer-alm-1.png)-->
 1. In the left-side navigation pane, select **Solutions**.
-    <!--![Screenshot of Solutions selection](media/developer-alm-2.png)-->
 1. On the **Solutions** form, set the solution preview option to **Solution preview off**. 
-    <!--![Screenshot showing solution preview](media/developer-alm-3.png)-->
 1. At the top left, select **+ New Solution**.
-    <!--![Screenshot showing new selection button](media/developer-alm-4.png)-->
 1. In the **New solution** flyout menu, do the following:Enter desired Display Name and Name.
     1. Enter values for **Display Name** and **Name**.
     1. Select any publisher.
     1. Keep the version as 1.0.0.0. This version can be increased as you export solutions, and is required to upgrade a managed solution.
     1. Select **Create**.
-   !--![Screenshot showing version and solution creation](media/developer-alm-5.png)-->
 1. Open the new solution. 
 1. On the menu bar at the top of the page, select **+Add existing**.
-    <!--![Screenshot showing add existing button](media/developer-alm-6.png)-->
 1. On the **Add existing tables** flyout menu, navigate to or search for a table that is required for the data migration, and then select it. The search box is located on the top right side.
 1. Find and select the rest of the required setup tables, and then select **Next**.
-    <!--![Screenshot showing table navigation](media/developer-alm-7.png)--> 
 1. Under **Selected tables**, for each table, select the **Include table metadata** checkbox.
-    <!--![Screenshot showing table metadata](media/developer-alm-8.png)-->
 1. Select **Add**.
 1. Once existing data has been added to the solution, on the menu bar, select **Export**.
-    <!--![Screenshot showing export button](media/developer-alm-9.png)-->
 1. On the **Before you export** flyout menu, under **Publish All Changes**, select **Publish**, and then select **Next**.
-    <!--![Screenshot showing publish changes](media/developer-alm-10.png)-->
 1. On the **Export this solution** flyout menu, under **Export as**, select **Managed (recommended)**, and then select **Export**. This export option creates the package zip file that contains the data that was added as a solution component.
-    <!--![Screenshot showing export managed](media/developer-alm-11.png)-->
 1. Wait for the export to complete, and then download your solution. The solution may download automatically, so check your local **Downloads** folder when you see the export success message with a green background.
 
 ## Import your solution into your target environment
