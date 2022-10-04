@@ -107,7 +107,7 @@ For information on detailed mapping between Supply Chain Management purchase ord
 
 ## Purchase order product view within sales order products
 
- The **Purchase Order product** tab available within the **Sales order products** page lists all of the open purchase order lines for the product, as in the screenshot below.
+ The **Purchase Orders** tab available within the **Sales order products** page lists all of the open purchase order lines for the product, as in the screenshot below.
  
-![Screenshot of the **Purchase Order product** tab.](media/po-view-SO.png)
+![Screenshot of the **Purchase Orders** tab.](media/po-view-sp.png)
 
