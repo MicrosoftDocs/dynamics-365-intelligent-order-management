@@ -16,7 +16,7 @@ The following information specifies the required setup tables to migrate data fo
 
 ## Setup tables
 
-The following tables lists the required setup tables to migrate data for Dynamics 365 Intelligent Order Management configurations.
+The following table lists the required setup tables needed to migrate data for Dynamics 365 Intelligent Order Management configurations.
 
 |**Table Name**|**Solution Location**|
 |:-|:-|
@@ -96,7 +96,7 @@ To add tables as solution components and export your solution from the source en
     <!--![Screenshot showing export button](media/developer-alm-9.png)-->
 1. On the **Before you export** flyout menu, under **Publish All Changes**, select **Publish**, and then select **Next**.
     <!--![Screenshot showing publish changes](media/developer-alm-10.png)-->
-1. On the **Export this solution** flyout menu, under **Export as**, select **Managed (recommended)**, and then slect **Export**. This export option creates the package zip file that contains the data that was added as a solution component.
+1. On the **Export this solution** flyout menu, under **Export as**, select **Managed (recommended)**, and then select **Export**. This export option creates the package zip file that contains the data that was added as a solution component.
     <!--![Screenshot showing export managed](media/developer-alm-11.png)-->
 1. Wait for the export to complete, and then download your solution. The solution may download automatically, so check your local **Downloads** folder when you see the export success message with a green background.
 
@@ -123,8 +123,8 @@ To provide the functionality of being able to roll back changes to a specific ve
 
 In the policy table, there are two different states of records.
 
-- **Current** - There is only one of these records for the policy.
-- **Archived** - There can be many of these records depending on how many changes have occurred to the linked policy and rules.
+- **Current** - There is only one current record for the policy.
+- **Archived** - There can be many archived records depending on how many changes have occurred to the linked policy and rules.
 
 An archived version of the policy will have appropriate rules linked based on the Policy ID. The versioning record will be created every time a policy is unpublished. The below tables highlight how the two tables are linked and how the **PolicyVersionId** column will be used to group the versions that are created for a policy. The PolicyVersionId will be populated with PolicyId of the first Policy record created. That value will stay for each subsequent version created while the PolicyId column will have a new Guid populated along with a new rule created linked to that new Guid. 
 
