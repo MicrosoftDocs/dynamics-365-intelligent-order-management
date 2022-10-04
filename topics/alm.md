@@ -1,14 +1,16 @@
-﻿---
+---
 author: raybennett-msft
-description: This article describes how to move solutions frmo one environment to another, or package them for storage in source control
+description: This article describes how to move solutions from one environment to another, or package them for storage in source control in Microsoft Dynamics 365 Intelligent Order Management.
 ms.author: bennettray
-ms.date: 09/26/2022
+ms.date: 10/04/2022
 ms.topic: conceptual
 
 title: Application Lifecycle Management for Dynamics 365 Intelligent Order Management
 ---
 
-# Dynamics 365 Intelligent Order Management Application Lifecycle Management
+# Application Lifecycle Management for Dynamics 365 Intelligent Order Management
+
+This article describes how to move solutions from one environment to another, or package them for storage in source control in Microsoft Dynamics 365 Intelligent Order Management.
 
 This report specifies the required tables to migrate data for Dynamics 365 Intelligent Order Management configuration. This implementation is phase 1 of the ALM features where these tables require a manual step to add each entity to an unmanaged solution. After the desired entities are added, the solution can be exported where a package file is created with the data of the entities added to the unmanaged solution. There the package file can be imported into another IOM environment where data then can be activated for use. 
 
