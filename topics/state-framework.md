@@ -1,4 +1,4 @@
-﻿---
+---
 author: raybennett-msft
 description: This topic describes the state framework architecture in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 10/04/2022
