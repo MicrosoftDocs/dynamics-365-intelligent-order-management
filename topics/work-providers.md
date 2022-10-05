@@ -1,7 +1,8 @@
 ---
+
 author: sumanic
-description: This topic provides an overview of working with providers and how to set up a provider in Dynamics 365 Intelligent Order Management.
-ms.date: 01/09/2022
+description: This topic provides an overview of working with providers and how to set up a provider in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 10/05/2022
 ms.topic: conceptual
 ms.author: sumanic
 
@@ -14,27 +15,25 @@ title: Work with providers
 
 [!include [banner](includes/banner.md)]
 
+This topic provides an overview of working with providers and how to set up a provider in Microsoft Dynamics 365 Intelligent Order Management.
 
+A key value proposition of Dynamics 365 Intelligent Order Management is the ability to seamlessly integrate with other systems. To do so, Intelligent Order Management uses *providers*. Providers are constructs that allow you to connect Intelligent Order Management to external systems.
 
-A key value proposition of Dynamics 365 Intelligent Order Management is the ability to seamlessly integrate with other systems. To do so, Intelligent Order Management uses "providers". Providers are constructs that allow you to connect Intelligent Order Management to external systems.
+Intelligent Order Management includes a library of out-of-the-box providers that you can set up and customize to meet your needs. You can also create your own provider if the library does not have the one you need. 
 
-Intelligent Order Management includes a library of out-of-box providers that you can set up and customize as you need. You can also create your own provider if the library does not have the one you need. 
+The following image shows an example of providers in the Intelligent Order Management provider library.
 
-**Provider Library**
-
-![Provider Catalog.](media/Providers.png)
+![Intelligent Order Management provider library](media/Providers.png)
 
 ## Provider architecture
 
 Intelligent Order Management providers were designed with the following properties:
 
--   Extensibility: Providers can be extended and customized by leveraging the Microsoft Power Platform.
-
+-   Extensibility: Providers can be extended and customized using the Microsoft Power Platform.
 -   Low code customization: Because providers are built on the Power Platform, customizations require little to no code.
+-   Scale: Providers use Microsoft Power Automate so they can scale up with the volume of incoming messages.
 
--   Scale: Providers leverage Power Automate, so providers can scale with the volume of incoming messages.
-
-### Components
+## Provider components
 
 A provider in Intelligent Order Management has the following components.
 
@@ -46,18 +45,13 @@ A provider in Intelligent Order Management has the following components.
 | Parameter | Some providers require additional configuration information to retrieve and send information.<br/></br><br/></br>This additional information is called a provider parameter. | <ol type="1"></br><li>Go to **Provider > Library** or **Provider > Installed** and select the provider you want to find the parameter information for.</li></br><li>On the **Parameters** tab, the provider parameters are listed.</li></br></ol> |
 | Transformation | Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br/></br><br/></br>A transformation maps data from an external service to an entity in Intelligent Order Management and from Intelligent Order Management to an external source. For more information, see [What is Power Query?](/power-query/power-query-what-is-power-query) | <ol type="1"></br><li>Go to **Provider > Library** or **Provider > Installed** and select the provider you want to find the transformations for.</li></br><li>On the **Transformations** tab, the list of the provider-specific actions is available. The list of transformations is also available on the **Providers > Transformations** page.</li></br></ol> |
 
-
-
 ## Activate one or more providers 
 
 Use the following steps to set up one or more providers.
 
-1.  Go to **Providers > Library**.
-
+1.  Go to **Providers \> Library**.
 2.  Click on **Select** or click on the icon next to the provider you want to set up.
-
 3.  If you wish to add multiple providers, then repeat step 2 for another provider and select **Activate Provider** from the top right.
-
 4.  Once you do that, a wizard will appear to add the connections.
 5.  Read through the **Terms and Conditions** Select the check box for each provider you have selected.
 6.  Click on **Accept**.
@@ -67,7 +61,7 @@ Use the following steps to set up one or more providers.
 10. You will see the Connections associated with that provider will appear.
 11. Click on **Create** beside the provider connection. This will open up a screen to enter the **Connection** details.
 
-![image](https://user-images.githubusercontent.com/30285449/191603617-03fd413e-b65f-478d-8ab1-a70f6fa52f22.png)
+    ![image](https://user-images.githubusercontent.com/30285449/191603617-03fd413e-b65f-478d-8ab1-a70f6fa52f22.png)
 
 13. Enter the details and click on **Create**.
 14. Once the Connection is added, it will show a **green tick** on the side.
@@ -86,22 +80,18 @@ Use the following steps to set up one or more providers.
 27. Finally go to the **Review and Finish** page. 
 28. Review the details and exit. The **Providers** will show **Installed** if not activated yet and in grey or **Activated** if successful and in green. 
 
-
 ## Delete a provider instance
 
 When you delete a provider instance, the system removes any configuration you completed for that provider. None of the information you set up is saved, including the connection details, transformations, and any customizations.
 
-Before you delete the provider instance, make sure you're not using the provider in any of your orchestration flows.
+Before you delete a provider instance, ensure that you're not using the provider in any of your orchestration flows.
 
-1.  Remove any related provider actions from your orchestration flows. Dependent flows will break if you delete a provider without removing the related steps.
+To delete a provider instance, follow these steps.
 
-2.  Go to **Provider > Installed**.
-
-3.  Select the provider you want to delete and select **Delete** on the top ribbon.
-
-4.  (Optional) If you want to remove connections to your external service in this environment, delete the connections you set up as a part of this provider in Power Automate. To remove a connection, use the steps in [Learn to connect to your data using connections and on-premises data gateways.](/power-automate/add-manage-connections#delete-a-connection)
-
-
+1. Remove any related provider actions from your orchestration flows. Dependent flows will break if you delete a provider without removing the related steps.
+1. Go to **Provider \> Installed**.
+1. Select the provider you want to delete, and then on the top ribbon select **Delete**.
+1. Optionally, if you want to remove connections to your external service in this environment, delete the connections you set up as a part of this provider in Power Automate. To remove a connection, follow the steps in [Learn to connect to your data using connections and on-premises data gateways.](/power-automate/add-manage-connections#delete-a-connection).
 
 ## Additional resources
 
