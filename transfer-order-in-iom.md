@@ -1,7 +1,7 @@
 # Integrate Transfer Order in Supply Chain Management with Intelligent Order Management #
 
 **Transfer order** is created by warehouse workers to transfer products from one warehouse or location to another. Some of the common reasons for a **Transfer Order** includes but not limited to the following:
-1. Transfer products fro manufacturing to a distribution facility.
+1. Transfer products from manufacturing to a distribution facility.
 2. Stock replenishment at a store from a distribution center.
 3. Adhoc transfers to a warehouse from another warehouse to meet the spike in demand.
 4. Transfers between warehouses for service purposes such as packaging and customizing requirements.
@@ -74,7 +74,11 @@ Following tables need to be synched for products
 
 ## Processing of Transfer Order and Status updates.
 
+As **Transfer Order** processes in Supply Chain Management the status updates are reflected via Dualwrite in Dataverse and becomes visible in Intelligent Order Management. When **Transfer Order** gets shipped , the status of **Shipped** is updated on the header and lines. **Shipped Quanity** is reflected on the **Transfer Order product** form. When the **Transfer Order** is received in supply chain manaegment , the status of **Received** is updated on the header. The Line status refelcts as **None** after the item is received.
+
 ## View of **Transfer Order Products** within **Sales Order Products**
+
+A view of **Transfer orders** is available inside the **sales order product**  within a separate tab showing the list of Transfers for the order product along with the **shipping** and **receiving warehouse**. This would give visibility of incoming inventory for the assigned warehouse to the sales order product .
 
 
 
