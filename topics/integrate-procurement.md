@@ -17,7 +17,7 @@ This topic describes how to integrate procurement in Microsoft Dynamics 365 Supp
 To extend support for inbound transactions and provide transaction visibility alongside inventory visibility, a **Purchase Orders** entity has been introduced within Intelligent Order Management. The **Purchase Orders** entity includes the following features: 
 
 - Dual-write support for purchase orders is available so that purchase order data seamlessly flows from Microsoft Dataverse into Intelligent Order Management and is visible in real or near real time.
-- Users can create purchase orders from within Intelligent Order Management. Purchase order are then processed in Supply Chain Management via dual-write support.
+- Users can create purchase orders from within Intelligent Order Management. Purchase orders are then processed in Supply Chain Management via dual-write support.
 - The **Purchase Order** entity user interface (UI) fields have been designed to meet the specific needs of support for sales order fulfillment scenarios.
 - Transaction status and visibility of purchase orders from Supply Chain Management is directly available to view within Intelligent Order Management.
 - The **Purchase Order products** view is available on the **Sales Order** products tab, which provides visibility to incoming inventory from individual purchase order transactions. The **Purchase Order products** view is also available on the site map for easy access to individual purchase order line status at the product level.
@@ -60,7 +60,7 @@ To create a purchase order in Intelligent Order Management, follow these steps.
     > If you save the header without entering any of the field values, and then want to immediately edit them after saving, you must first confirm the header in Supply Chain management before you can update any of the fields on the **Purchase Order** form.
 1. Select **Save**.
 1. Select **New Purchase Order Product** and then select **Existing Product**, **Line number**, **Associate to Warehouse**, **Quantity**, and **Unit of measure**. 
-1. Select **Save**. If the transaction saves successfully, this means that the dual-write operation was successful and the purchase order was created and updated within Supply Chain Management.
+1. Select **Save**. If the transaction saves successfully, then the dual-write operation was successful and the purchase order was created and updated within Supply Chain Management.
 
 ## User interface fields on the different entities of Purchase Order
 
