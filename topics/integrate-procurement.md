@@ -36,16 +36,16 @@ For more information on purchase orders, see [Purchase order overview](/dynamics
 - If your environment already has dual-write for sales orders installed, ensure that it's up to date.
 - If you have an older version of Intelligent Order Management running in your instance which already has dual-write installed, ensure that you import the user experience (UX) solution package for purchase orders and transfer orders.
 
-### General guidelines for installing the add-on UX package for new users
+## General guidelines for installing the add-on UX package for new users
 
 - If you're installing Intelligent Order Management first, you should install the dual-write solution before importing the UX package solution.
 - If you're installing the dual-write solution first, the UX package solution will be imported as part of the install. Intelligent Order Management can then be installed afterwards.
 
-### Initial synchronization of prerequisite tables
+## Initial synchronization of prerequisite tables
 
 After all of the prerequisites above have been met, you must do an initial synchronization of the prerequisite and dependent master data and tables so that existing purchase orders are available in both Supply Chain Management and Intelligent Order Management. For instructions on what tables to sync and how to sync them, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
 
-### Dual-write purchase order mapping reference
+## Dual-write purchase order mapping reference
 
 For information on dual-write purchase order mapping, see [Mapping reference](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference#183).
 
@@ -64,25 +64,70 @@ To create a purchase order in Intelligent Order Management, follow these steps.
 
 ## User interface fields on the different entities of Purchase Order
 
-|**Purchase Order header**| **Purchase Order product**| **Purchase Order Goods Receipt header** | **Purchase Order Goods Receipt product** |
-|-----------------------------|----------------------------|---------------------------------------|-----------------------------------------|
-| Name | Purchase Order ID | Name | Name |
-| Purchase Order ID | Existing Product | Purchase Order | Purchase order ID |
-| Contact email | Description | Note | Purchase Order Product |
-| Receiving warehouse | Line number | Company | Quantity |
-| Vendor | Associate to warehouse | Order Vendor  | Product Receipt Number |
-| Vendor Reference | Company  | Record Id | Product Receipt Date |
-| Company | Receiving Site Id | Ship via | Company |
-| Receiving site ID | Quantity | Date received | Expected Delivery Date |
-| Reason Code | Unit cost | Requester Personnel | Ordered Purchase Quantity
-| Reason Comment | Discount amount | Delivery Term | Received Inventory Quantity
-| Delivery Terms | Discount percentage | Remaining Inventory Quantity
-| Shipping via | Total Price | Remaining Purchase Quantity
-| Expected Date | Amount |
-| Confirmed Delivery Date | Purchase Order line status |
-| Delivery address |
+### Purchase Order header fields
 
-### Supported dual-write scenarios
+- Name
+- Purchase Order ID
+- Contact Email
+- Receiving Warehouse
+- Vendor
+- Vendor Reference
+- Company
+- Receiving Site ID
+- Reason Code
+- Reason Comment
+- Delivery Terms
+- Shipping Via
+- Expected Date
+- Confirmed Delivery Dates
+- Delivery Address
+
+### Purchase Order product fields
+
+- Purchase Order ID
+- Existing Product
+- Description
+- Line Number
+- Associate to Warehouse
+- Company
+- Receiving Site ID
+- Quantity
+- Unit Cost
+- Discount Amount
+- Discount Percentage
+- Total Price
+- Amount
+- Purchase Order line Status
+
+### Purchase Order Goods Receipt header fields
+
+- Name
+- Purchase Order
+- Note
+- Company
+- Order Vendor
+- Record ID
+- Ship Via
+- Date Received
+- Requester Personnel
+- Delivery Term
+- Remaining Inventory Quantity
+- Remaining Purchase Quantity
+
+### Purchase Order Goods Receipt product fields
+
+- Name
+- Purchase order ID
+- Purchase Order Product
+- Quantity
+- Product Receipt Number
+- Product Receipt Date
+- Company
+- Expected Delivery Date
+- Ordered Purchase Quantity
+- Received Inventory Quantity
+
+## Supported dual-write scenarios
 
 The following dual-write scenarios are supported:
 
