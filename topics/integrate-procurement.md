@@ -105,9 +105,9 @@ The image shows an example of the **New Purchase Order Receipt Product** page.
 
 For information on detailed mapping between Supply Chain Management purchase order and purchase order line statuses, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
 
-## Purchase order product view within sales order products
+## Purchase order product view on the sales order products page
 
- The **Purchase Orders** tab available within the **Sales order products** page lists all of the open purchase order lines for the product, as shown in the following example image.
+ The **Purchase Orders** tab available on the sales order products page lists all of the open purchase order lines for the product, as shown in the following example image.
  
 ![Screenshot of the **Purchase Orders** tab.](media/po-view-sp.png)
 
