@@ -2,7 +2,7 @@
 author: anvenkat
 description: This topic describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/04/2022
+ms.date: 10/05/2022
 ms.topic: conceptual
 ms.author: anvenkat
 
@@ -29,18 +29,18 @@ To extend support for inbound transactions and provide transaction visibility al
 
  The following prerequisites must be met to activate dual-write support for purchase orders:
 
-- It is important to have the following dual-write packages installed or updated to ensure that you have the latest versions.
+- It's important to have the following dual-write packages installed or updated to ensure that you have the latest versions.
     - Dual-write core solution package
     - Dual-write Application Core package
     - Dual-write Finance package
     - Dual-write Human Resources package
-- If your environment already has dual-write for sales orders installed, ensure that it is up-to-date.
+- If your environment already has dual-write for sales orders installed, ensure that it's up-to-date.
 - If you have an older version of Intelligent Order Management running in your instance which already has dual-write installed, ensure that you import the UX solution package for Purchase Orders and Transfer Orders.
 
 ### General guidelines for installing the add-on UX package for new users
 
-- If you are installing Intelligent Order Management first, you should install the dual-write solution before importing the UX package solution.
-- If you are installing the dual-write solution first, the UX package solution will be imported as part of the install. Intelligent Order Management can then be installed afterwards.
+- If you're installing Intelligent Order Management first, you should install the dual-write solution before importing the UX package solution.
+- If you're installing the dual-write solution first, the UX package solution will be imported as part of the install. Intelligent Order Management can then be installed afterwards.
 
 ### Initial sync of prerequisite tables
 
@@ -56,13 +56,12 @@ To create a purchase order in Intelligent Order Management, follow these steps.
 
 1. Go to **Purchase orders** in site map.
 1. Select **+New**. and enter mandatory fields   and **Save**
-1. On the **Purchase Order** header entity, enter values for the **Name**, **Receiving Warehouse**,**Site**,**Vendor**, and **Company** fields.
-   Note that the **Name** is used to denote the **Purchase Order** number that will be assigned in Supply Chain Management. 
-   Note that if you save the header without entering any of the fields , and would like immediately edit them saving, you will have to first confirm the header in
-   Supply Chain management before you can update any of the fields on the **Purchase Order** form.
+1. On the **Purchase Order** header entity, enter values for the **Name**, **Receiving Warehouse**,**Site**,**Vendor**, and **Company** fields. The **Name** value is used to denote the **Purchase Order** number that will be assigned in Supply Chain Management. 
+    > [!NOTE] 
+    > If you save the header without entering any of the field values, and then want to immediately edit them after saving, you must first confirm the header in Supply Chain management before you can update any of the fields on the **Purchase Order** form.
 3. Select **Save**.
 4. Select **New Purchase Order Product** and then select **Existing Product**, **Line number**, **Associate to Warehouse**, **Quantity**, and **Unit of measure**. 
-5. Select **Save**. If the transaction saves successfully, this means that the dual-write operations was successful and the purchase order was created and updated within Dynamics Supply Chain Management.
+5. Select **Save**. If the transaction saves successfully, this means that the dual-write operation was successful and the purchase order was created and updated within Dynamics Supply Chain Management.
 
 ## User interface fields on the different entities of Purchase Order
 
@@ -99,7 +98,7 @@ The following dual-write scenarios are supported:
 
 As a purchase order progresses in Supply Chain Management, status updates flow back to Intelligent Order Management for tracking and visibility. Open purchase order lines and **purchase order line status** can be viewed by accessing the site map entry **Purchase Order products** to stay informed on incoming inventory. Purchase order product fields such as **Expected date** and **Confirmed delivery date** provide insights to the in-transit purchase orders.
 
-The **Purchase Order Receipt** entity and **Purchase Order Receipt products** entity provides visibility to the **Received inventory quantity** and **Remaaining inventory quanitty**, along with the **Product receipt date** and **Purchased quantity**. The **Purchase Order Receipt** entity within a purchase order can be accessed via a separate tab on the purchase order form. Fields on this form can provide insights on under-receivals and over-receivals. Below is a screenshot of the **New Purchase Order Receipt Product** page.
+The **Purchase Order Receipt** entity and **Purchase Order Receipt products** entity provides visibility to the **Received inventory quantity** and **Remaining inventory quantity**, along with the **Product receipt date** and **Purchased quantity**. The **Purchase Order Receipt** entity within a purchase order can be accessed via a separate tab on the purchase order form. Fields on this form can provide insights on under-receivals and over-receivals. Below is a screenshot of the **New Purchase Order Receipt Product** page.
 
 ![Screenshot of the **New Purchase Order Receipt Product** page](media/goods-receipt.png)
 
