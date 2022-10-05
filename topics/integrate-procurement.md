@@ -62,7 +62,9 @@ To create a purchase order in Intelligent Order Management, follow these steps.
 1. Select **New Purchase Order Product** and then select **Existing Product**, **Line number**, **Associate to Warehouse**, **Quantity**, and **Unit of measure**. 
 1. Select **Save**. If the transaction saves successfully, then the dual-write operation was successful and the purchase order was created and updated within Supply Chain Management.
 
-## User interface fields on the different entities of Purchase Order
+## User interface fields on purchase order entities
+
+The following sections list the user interface fields available for purchase order entities.
 
 ### Purchase Order header fields
 
