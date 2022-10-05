@@ -53,12 +53,12 @@ Use the following steps to set up one or more providers.
 1. Select **Activate Provider** on the top right. If you want to add multiple providers, repeat step 2 for each additional provider.
 1. In the wizard to add the connections, read through the **Terms and Conditions** and select the checkbox for each provider you have selected. 
 1. Select **Accept** to accept the terms and conditions.
-1. For the first provider, select **See details** to open the provider details page. Optionally, here you can edit the provider name or leave it as it is on the **Connection** page.
+1. For the first provider, select **See details** to open the **Provider Activation** page. Optionally, here you can edit the provider name or leave it as it is on the **Connection** page.
+
+    ![Provider Activation page](media/Provactivation.png)
+
 1. Scroll down to the **Connections** section to see the connections associated with that provider.
 1. Next to the provider connection, select **Create**. This will open up a screen to enter the **Connection** details.
-
-    ![image](https://user-images.githubusercontent.com/30285449/191603617-03fd413e-b65f-478d-8ab1-a70f6fa52f22.png)
-
 1. Enter the connection details, and then select **Create**.
 1. Once the connection is added, a green checkmark will appear next to it.
 1. Add the **Microsoft Dataverse** connection. This should auto reference from your system connections and a **green tick** should reflect on the side.
