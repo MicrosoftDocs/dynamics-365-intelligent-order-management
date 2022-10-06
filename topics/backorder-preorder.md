@@ -5,11 +5,11 @@ ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/06/2022
 ms.topic: how-to
 ms.author: sumanic
-title: Backorder and preorder management
+title: Set up backorder and preorder functionality
 
 ---
 
-# Set up and manage backorder and preorder functionality
+# Set up backorder and preorder functionality
 
 [!include [banner](includes/banner.md)]
 
