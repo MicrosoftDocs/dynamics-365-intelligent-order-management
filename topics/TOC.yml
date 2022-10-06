@@ -96,6 +96,8 @@
       href: enable-bing-maps.md
     - name: Enable timeline capabilities
       href: enable-timeline-sales-order.md
+    - name: Integrate Supply Chain Management procurement
+      href: integrate-procurement.md
   - name: Manage your orders
     items:
     - name: Fulfillment optimization
