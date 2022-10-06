@@ -102,7 +102,7 @@ To define the Intelligent Order Management calculated measure mapping, follow th
     > [!NOTE]
     > The base measure is a predefined measure in Intelligent Order Management that is called from the inventory check actions in orchestration. This base measure mapping will be maintained with the **ATP Settings** calculated measure.
          
-1. In the **Calculated Measure** column, select the calculated measure that you defined in **ATP Settings**..
+1. In the **Calculated Measure** column, select the calculated measure that you defined in **ATP Settings**.
    
 ![IOMmapping.](media/IOMmapping.png)
    
