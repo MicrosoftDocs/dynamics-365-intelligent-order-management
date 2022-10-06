@@ -50,7 +50,7 @@ To enable the ATP settings in Intelligent Order Management, follow these steps.
    
 ### Define the calculated measure for ATP settings
 
-Next, you must define the calculated measure for **ATP Setting**.
+Next, you must define the calculated measure for **ATP Settings**.
 
 The ATP calculated measure is a predefined calculated measure that is typically used to find the on-hand quantity that is currently available. The supply quantity is the sum of quantities for those physical measures that have an addition modifier type, and the demand quantity is the sum of quantities for those physical measures that have a subtraction modifier type.
 
@@ -59,7 +59,7 @@ You can add multiple calculated measures to calculate multiple ATP quantities. H
 > [!NOTE]
 > A calculated measure is a composition of physical measures. A calculated measure formula can only include physical measures without duplicates, not calculated measures.
 
-To define the calculated measure for **ATP Setting**, follow these steps.
+To define the calculated measure for **ATP Settings**, follow these steps.
  
 1. Go to **Settings**.
 1. Select **Index and Reservation**.
