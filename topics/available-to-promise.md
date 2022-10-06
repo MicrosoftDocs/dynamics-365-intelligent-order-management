@@ -24,7 +24,7 @@ The following prerequisites must be met to set up and use ATP capabilities in In
 - You must have the Dynamics 365 Inventory Visibility provider installed. For installation steps, see [Set up Inventory Visibility provider](set-up-inventory-visibility-provider.md).
 - Submit on-hand change schedule updates to the Dynamics 365 Inventory Visibility provider that the dates are within the period that is defined by the **Schedule period** setting.
 
-The following table lists the API details to submit a on-hand schedule change request. These APIs are available from the Microsoft Dynamics 365 Supply Chain Management Inventory visibility add-in, as well as Intelligent Order Management. For more information, see [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise).
+The following table lists the API details to submit an on-hand schedule change request. These APIs are available from the Microsoft Dynamics 365 Supply Chain Management Inventory visibility add-in, as well as Intelligent Order Management. For more information, see [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise).
 
 |Path|Method|Description|
 |----|------|-----------|
@@ -99,7 +99,7 @@ To define the Intelligent Order Management calculated measure mapping, follow th
    
  ## Run a sample transaction with ATP check
  
-Intelligent Order Management will now have the ability to perform Inventory checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above     **Settings** are enabled then this will also check on ATP dates and determine the **Material Availability Date** and **Estimated Shipment Date** on the sales order line.
+Intelligent Order Management will now have the ability to perform Inventory checks as an independent provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above     **Settings** are enabled then this will also check on ATP dates and determine the **Material Availability Date** and **Estimated Shipment Date** on the sales order line.
 
 > [!NOTE]
 > The inventory checks will also happen as part of **Fulfillment and Returns optimization** and based on **ATP Settings**, the sales order lines will be updated      accordingly.
@@ -112,7 +112,7 @@ Below are the provider actions that will be available as part of Dynamics 365 In
    
 |**Provider action**|**Description**|
 |-------------------|---------------|
-|Send fulfillment process request|This provider action will check for inventory availability for the assigned fulfillment source on the sales order line and also  check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+|Send fulfillment process request|This provider action will check for inventory availability for the assigned fulfillment source on the sales order line and also  check for promise dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
 |Send to fulfillment optimization|This provider action will determine the best fulfillment location for a sales order line based on inventory check. This action     will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
    
 Below is a sample screen highlighting the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line once the above order orchestration        runs. The inventory check found no inventory and has **backordered** the lines.
