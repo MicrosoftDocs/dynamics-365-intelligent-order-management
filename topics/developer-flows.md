@@ -1,6 +1,6 @@
 ---
 author: raybennett-msft
-description: This topic provides information on Intelligent Order Management Power Automate Flows that you can use to develop your own custom solution.
+description: This article provides information on Intelligent Order Management Power Automate Flows that you can use to develop your own custom solution.
 ms.date: 10/06/2022
 ms.topic: conceptual
 ms.author: bennettray
@@ -25,7 +25,7 @@ Create Account Mapping allows you to create a Customer Account Mapping that will
 | External Field Name | The field name to check from the external datasource for the value | true |
 | External Field Value | The field value in the external datasource to match | true |
 
-**Returns:** The Account ID if created or if already existing. **Note**: this is the ID of the Mapping, not the Account
+**Returns:** The Account ID if created or if already existing. **Note**: this value is the ID of the Mapping, not the Account
 
 ### Create Contact Mapping
 
@@ -39,7 +39,7 @@ Create Contact Mapping allows you to create a Customer Contact Mapping that will
 | External Field Name | The field name to check from the external datasource for the value | true |
 | External Field Value | The field value in the external datasource to match | true |
 
-**Returns:** The Contact ID if created or if already existing. **Note**: this is the ID of the Mapping, not the Contact
+**Returns:** The Contact ID if created or if already existing. **Note**: this value is the ID of the Mapping, not the Contact
 
 ### IOM Create Fulfillment Order Mapping
 
@@ -53,7 +53,7 @@ IOM Create Fulfillment Order Mapping allows you to create a Fulfillment Order Ma
 | External Field Name | The field name to check from the external datasource for the value | true |
 | External Field Value | The field value in the external datasource to match | true |
 
-**Returns:** The Fulfillment Order Mapping ID if created or if already existing. **Note**: this is the ID of the Mapping, not the Fulfillment Order
+**Returns:** The Fulfillment Order Mapping ID if created or if already existing. **Note**: this value is the ID of the Mapping, not the Fulfillment Order
 
 ### IOM Create Fulfillment Order Product Mapping
 
@@ -67,7 +67,7 @@ IOM Create Fulfillment Order Product Mapping allows you to create a Fulfillment 
 | External Field Name | The field name to check from the external datasource for the value | true |
 | External Field Value | The field value in the external datasource to match | true |
 
-**Returns:** The Fulfillment Order Product Mapping ID if created or if already existing. **Note**: this is the ID of the Mapping, not the Fulfillment Order Product
+**Returns:** The Fulfillment Order Product Mapping ID if created or if already existing. **Note**: this value is the ID of the Mapping, not the Fulfillment Order Product
 
 ### IOM Create Order Mapping
 
@@ -81,15 +81,15 @@ IOM Create Order Mapping allows you to create an Order Mapping that will use the
 | External Field Name | The field name to check from the external datasource for the value | true |
 | External Field Value | The field value in the external datasource to match | true |
 
-**Returns:** The Order Mapping ID if created or if already existing. **Note**: this is the ID of the Mapping, not the Order
+**Returns:** The Order Mapping ID if created or if already existing. **Note**: this value is the ID of the Mapping, not the Order
 
 ### IOM Get External Mapping
 
-IOM Get External Mapping retrns the External Field Value that maps to the Internal Field Value for a specific Table and External Field Name
+IOM Get External Mapping returns the External Field Value that maps to the Internal Field Value for a specific Table and External Field Name
 
 | Parameter | Description | Required |
 | :-------- | :---------- | :------- |
-| Mapping Table | The Mapping table to lookup for the external value | true |
+| Mapping Table | The Mapping table to look up for the external value | true |
 | Provider ID | The Provider ID the mapping is for | true |
 | Mapping Group ID | The Mapping Group ID the mapping is for | true |
 | Internal Record Value | The value used internally to match | true |
@@ -99,11 +99,11 @@ IOM Get External Mapping retrns the External Field Value that maps to the Intern
 
 ### IOM Get Internal Mapping
 
-IOM Get Internal Mapping retrns the Internal Field Value that maps to the External Field Value for a specific Table and External Field Name
+IOM Get Internal Mapping returns the Internal Field Value that maps to the External Field Value for a specific Table and External Field Name
 
 | Parameter | Description | Required |
 | :-------- | :---------- | :------- |
-| Mapping Table | The Mapping table to lookup for the external value | true |
+| Mapping Table | The Mapping table to look up for the external value | true |
 | Provider ID | The Provider ID the mapping is for | true |
 | Mapping Group ID | The Mapping Group ID the mapping is for | true |
 | External Field Name | The field name to check from the external datasource for the value | true |
@@ -115,7 +115,7 @@ IOM Get Internal Mapping retrns the Internal Field Value that maps to the Extern
 
 ### Create Fulfillment Tracking
 
-Create Fulfillment Tracking creates a record in the tracking table to associate a tracking number to a Fulfillment Order or Fulfillment Return Order, as well as additional details.
+Create Fulfillment Tracking creates a record in the tracking table to associate a tracking number to a Fulfillment Order or Fulfillment Return Order, and other details.
 
 | Parameter | Description | Required |
 | :-------- | :---------- | :------- |
@@ -127,17 +127,17 @@ Create Fulfillment Tracking creates a record in the tracking table to associate 
 | ShipmentId | Associated Shipment ID if available | false |
 | ShipmentCost | Associated Shipment Cost if available | false |
 | InsuranceCost | Associated Insurance Cost if available | false |
-| Tax | Assocciated Tax if available | false |
+| Tax | Associated Tax if available | false |
 | SurchargeFee | Associated Surcharge Fee if available | false |
 | FulfillmentReturnOrderRecordId | Fulfillment Return Order Record to set Tracking Number on | false |
 
-**Note:** at least one of FulfillmentOrderRecordId or FulfillmentReturnOrderRecordId is needed.
+**Note:** Either FulfillmentOrderRecordId or FulfillmentReturnOrderRecordId is required.
 
 **Returns:** The Tracking Number ID from the Fulfillment Trackings table
 
 ### Fulfillment Line and Aggregated Order Events
 
-Raises a Business Event on a Fulfillment Order Line. When raising this event, a check is done to see if all lines have the same Status. If they have the same Status, the specified Fulfillment Order level Business Event is raised at the header level.
+Raises a Business Event on a Fulfillment Order Line. When this event is raised, a check is done to see if all lines have the same Status. If they have the same Status, the specified Fulfillment Order level Business Event is raised at the header level.
 
 | Parameter | Description | Required |
 | :-------- | :---------- | :------- |
@@ -159,7 +159,7 @@ Creates or updates an existing Account given the specified JSON payload.
 | Payload | JSON representation of the Account | true |
 | Account Id | The ID of the Account to update | false |
 
-**Note:** The Account table has specific fields that are required in the JSON payload. To see what fields are required, navigate to **Dataverse** > **Tables** > **All**, find your table, and click on **Columns**. Use the Required field to determine what is required.
+**Note:** The Account table has specific fields that are required in the JSON payload. To see what fields are required, navigate to **Dataverse** > **Tables** > **All**, find your table, and select on **Columns**. Use the Required field to determine what is required.
 
 **Returns:** The ID of the created or updated Account
 
@@ -172,7 +172,7 @@ Creates or updates an existing Contact given the specified JSON payload.
 | Payload | JSON representation of the Contact | true |
 | Contact Id | The ID of the Account to update | false |
 
-**Note:** The Contact table has specific fields that are required in the JSON payload. To see what fields are required, navigate to **Dataverse** > **Tables** > **All**, find your table, and click on **Columns**. Use the Required field to determine what is required.
+**Note:** The Contact table has specific fields that are required in the JSON payload. To see what fields are required, navigate to **Dataverse** > **Tables** > **All**, find your table, and select on **Columns**. Use the Required field to determine what is required.
 
 **Returns:** The ID of the created or updated Contact
 
@@ -186,13 +186,13 @@ Creates a Sales Order given the specified JSON payload.
 | Payload | JSON representation of the Sales Order and Lines | true |
 | ProviderId | The ID of the calling Provider | false |
 
-**Note:** Both Order and Order Line have specific fields that are required in the JSON payload. To see what fields are required, navigate to **Dataverse** > **Tables** > **All**, find your table, and click on **Columns**. Use the Required field to determine what is required.
+**Note:** Both Order and Order Line have specific fields that are required in the JSON payload. To see what fields are required, navigate to **Dataverse** > **Tables** > **All**, find your table, and select on **Columns**. Use the Required field to determine what is required.
 
 **Returns:** The ID of the created Sales Order
 
 ### IOM Raise Lines and Aggregated Order Events
 
-Raises a Business Event on a Sales Order Line. When raising this event, a check is done to see if all lines have the same Status. If they have the same Status, the specified Order level Business Event is raised at the header level.
+Raises a Business Event on a Sales Order Line. When this event is raised, a check is done to see if all lines have the same Status. If they have the same Status, the specified Order level Business Event is raised at the header level.
 
 | Parameter | Description | Required |
 | :-------- | :---------- | :------- |
@@ -217,7 +217,7 @@ Raises a Business Event for all Lines on a Sales Order
 
 ### IOM Unit Conversion
 
-Converts a quantity from one unit to another using the Unit conversions setup on a Product.
+Converts a quantity from one unit to another using the Unit conversions set up on a Product.
 
 | Parameter | Description | Required |
 | :-------- | :---------- | :------- |
@@ -230,21 +230,21 @@ Converts a quantity from one unit to another using the Unit conversions setup on
 ## Miscellaneous Flows
 ### IOM Provider Transformer
 
-IOM Provider Transformer applies a Power Query transformation defined on a Provider and returns the transformed data. This flow will lookup an active provider instance by ID, and check for a transformation with a matching Source Object Name and Destination Object Name.
+IOM Provider Transformer applies a Power Query transformation defined on a Provider and returns the transformed data. This flow will look up an active provider instance by ID, and check for a transformation with a matching Source Object Name and Destination Object Name.
 
-If the type of transformation is a Dataverse Entity, a Record ID is required. If it is a JsonPayload, a value is required in the Payload field.
+If the type of transformation is a Dataverse Entity, a Record ID is required. If it's a JsonPayload, a value is required in the Payload field.
 
 For a Dataverse Entity, the Record ID provided is looked up for the Entity defined on the Transformation. If a record is found, that record is used for the transformation.
 
 | Parameter | Description | Required |
 | :-------- | :---------- | :------- |
 | Provider ID | Any valid GUID | true |
-| Source Object Name | The Source Object Name to lookup in Provider Transformations | true |
-| Destination Object Name | The Destination Object Name to lookup in Provider Transformations | true |
+| Source Object Name | The Source Object Name to look up in Provider Transformations | true |
+| Destination Object Name | The Destination Object Name to look up in Provider Transformations | true |
 | Payload | JSON payload to transform if type is JsonPayload | false |
-| Record ID | Record to lookup for the Entity associated with the transformation | false |
+| Record ID | Record to look up for the Entity associated with the transformation | false |
 
-**Note:** at least one of Payload or Record ID is required.
+**Note:** either Payload or Record ID is required.
 
 **Note:** Provider ID is a GUID and is replaced when a Provider is activated. You can put any guid here
 
@@ -260,6 +260,6 @@ Raises a Business Event for the supplied Entity Record with an optional payload.
 | EntityRecordId | The Record ID for the Entity associated to the Business Event | true |
 | Payload | An optional payload to deliver with the business event | false |
 
-**Note:** EntityRecordIds can be a comma-delimited list of Record IDs. If this is supplised, a Business Event is raised for each Record
+**Note:** EntityRecordIds can be a comma-delimited list of Record IDs. If a delimited list is supplied, a Business Event is raised for each Record
 
 **Returns:** IsSuccessful true if the Business Event was successfully raised.
