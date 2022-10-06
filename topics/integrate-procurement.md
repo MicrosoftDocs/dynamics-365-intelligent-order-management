@@ -6,11 +6,11 @@ ms.date: 10/05/2022
 ms.topic: conceptual
 ms.author: anvenkat
 
-title: Integrate procurement in Supply Chain Management with Intelligent Order Management
+title: Integrate Supply Chain Management procurement with Intelligent Order Management
 
 ---
 
-# Integrate procurement in Supply Chain Management with Intelligent Order Management
+# Integrate Supply Chain Management procurement with Intelligent Order Management
 
 This topic describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Microsoft Dynamics 365 Intelligent Order Management.
 
