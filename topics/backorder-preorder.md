@@ -26,9 +26,9 @@ Effective backorder management can provide you with the following benefits:
 
 ### How backorder functionality works
 
-When an order is created in Intelligent Order Management, an inventory check can be initiated as part of either the policy assignment or fulfillment and returns optimization processes. In either of these two processes, inventory may not be found for the ordered product. In such cases the order line is then updated with a **Status Reason** of **Backorder Hold**.
+When an order is created in Intelligent Order Management, an inventory check can be initiated as part of either the policy assignment or fulfillment and returns optimization processes. In either of these processes, inventory may not be found for the ordered product. In such cases, the order line is then updated with a **Status Reason** of **Backorder Hold**.
 
-When **ATP Settings** is enabled, backordered lines will have the **Inventory Availability Date** and **Estimated Shipment Date** values updated for the product.
+When [available to promise (ATP) settings are enabled](#enable-atp-settings), backordered lines will have the **Inventory Availability Date** and **Estimated Shipment Date** values updated for the product.
 
 The following image shows an example order orchestration journey with a policy-based fulfillment assignment.
 
@@ -38,13 +38,13 @@ The following example image highlights key updates that happen to a sales order 
 
 ![Backorder key updates](media/BackorderHold.png)
 
-Once a product is backordered, based on the initial prerequisite settings a background job will run automatically to trigger a daily inventory check to determine if inventory is found and the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if an inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
+Once a product is backordered, a background job will automatically run that triggers an inventory check based on the launch date to determine if the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if an inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
 
 A job log will then be available to show the list of job runs and their statuses. The job log (named **Background Jobs**) is located on the **Home Page** left navigation pane under **Monitoring**. Selecting **Background Jobs** will show you the list of job runs, their statuses, and the number of records that have been successfully processed and moved to fulfillment.
 
 ![Active Background Order Processing Job Runs page](media/Job.png)
 
-If a background job fails, you'll also be able to manually run the job using the **Run** option on the upper menu. Select **Back-Order Job** to start a new instance of the background job.
+If a background job fails, you'll also be able to manually run the job using the **Run** option on the upper menu bar. Select **Back-Order Job** to start a new instance of the background job.
 
 If you select the job line, you'll be able to see the details of the background job run.
 
@@ -58,13 +58,13 @@ Preorders allow customers to guarantee immediate delivery on release, manufactur
 
 ### How preorder functionality works
 
-When an order is created in Intelligent Order Management, if the order contains products that are marked as **Preorder eligible** and have a **Launch date**, then those lines in the sales order are updated to a **Status Reason** of **Preorder Hold**.
+When an order is created in Intelligent Order Management, if the order contains products that are marked as **Preorder eligible** and have a launch date, then those lines in the sales order are updated to a status reason of **Preorder Hold**.
 
 The sales order line gets updated with the product launch date as defined in the prerequisite settings.
 
 ![Sales order line with preorder hold status and and launch date highlighted](media/PreOrderHold.png)
 
-Once a product is preordered, a background job will run automatically to trigger an inventory check based on the launch date to determine if the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
+Once a product is preordered, a background job will automatically run that triggers an inventory check based on the launch date to determine if the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
 
 If an inventory check fails and no inventory is found, then the order lines will be updated to a status of **Backorder Hold**.
 
@@ -72,7 +72,7 @@ A job log will then be available to show the list of job runs and their statuses
 
 ![PreorderJob.](media/PreorderJob.png)
 
-If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu. Select **Pre-Order Job** to start a new instance of the background job.
+If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu bar. Select **Pre-Order Job** to start a new instance of the background job.
 
 If you select the job line, you'll be able to see the details of the background job run.
 
@@ -80,13 +80,13 @@ If you select the job line, you'll be able to see the details of the background 
 
 ## Set up backorder and preorder functionality
 
-To set up backorder and preorder functionality in Intelligent Order Management, you must follow the steps below.
+To set up backorder and preorder functionality in Intelligent Order Management, follow the steps below.
 
-### Enable available to promise (ATP) settings
+### Enable ATP settings
 
 First, you must enable the available to promise (ATP) settings. For this follow the below steps:
 
-To enable the available to promise (ATP) settings, follow these steps.
+To enable ATP settings, follow these steps.
 
 1. Go to **Settings**. 
 1. Select **Index and Reservation**.
