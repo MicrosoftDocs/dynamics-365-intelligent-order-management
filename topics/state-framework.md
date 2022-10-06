@@ -1,7 +1,7 @@
 ---
 author: raybennett-msft
 description: This article describes the state framework architecture in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 10/06/2022
+ms.date: 10/07/2022
 ms.topic: conceptual
 ms.author: bennettray
 
@@ -76,15 +76,15 @@ The **State Definition Properties** table contains extra metadata for each state
 
 ### State Transition table
 
-The **State Transition** table contains a list of state transitions that will occur when a business event is raised. The business event will set the state only if the current state is in an allowable state.
+The **State Transition** table contains a list of state transitions that will occur when a business event is raised. The business event will set the state only if the current state is an allowable state.
 
 | Field | Description |
 |---|---|
 | State Transition | The GUID of the state transition. |
 | Business Event Definition | A lookup to the **Business Event Definition** table to determine which business event the record belongs to. |
 | Source State | The allowable source state to transition from. |
-| Target State | The target state to set if coming from an allowable source state. |
-| Target State Reason | The target state reason to set if coming from an allowable source state. |
+| Target State | The target state to set if the state is transitioning from an allowable source state. |
+| Target State Reason | The target state reason to set if the state is transitioning from an allowable source state. |
 
 The following table shows an example of data in this table.
 
@@ -105,7 +105,7 @@ If no record is found in the **State Transition** table for the business event t
 To add a new state and transition, follow these steps.
 
 1. Add a new state definition.
-1. Add a new state reason definition, if it's required.
+1. Add a new state definition reason, if it's required.
 1. Add a new state transition, and then follow these steps:
 
     1. Associate the new state transition with a new business event.
