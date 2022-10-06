@@ -2,13 +2,16 @@
 author: raybennett-msft
 description: This article describes application lifecycle management (ALM) in Microsoft Dynamics 365 Intelligent Order Management. It includes information about how to move solutions from one environment to another or package solutions for storage in source control.
 ms.author: bennettray
-ms.date: 10/04/2022
+ms.date: 10/06/2022
 ms.topic: conceptual
 
 title: Application lifecycle management for Dynamics 365 Intelligent Order Management
+
 ---
 
 # Application lifecycle management for Dynamics 365 Intelligent Order Management
+
+[!include [banner](includes/banner.md)]
 
 This article describes application lifecycle management (ALM) in Microsoft Dynamics 365 Intelligent Order Management. It includes information about how to move solutions from one environment to another or package solutions for storage in source control.
 
