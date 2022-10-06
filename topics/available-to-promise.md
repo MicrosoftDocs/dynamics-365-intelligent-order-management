@@ -35,24 +35,24 @@ The following table lists the API details to submit a on-hand schedule change re
 
 Before you can use ATP, you must enable one or more key setups as below:
 
-a. **Available To Promise** settings should be enabled. For this follow the below steps:
+First, the **Available To Promise** settings should be enabled.
 
-   i. Go to **Settings**. Click on **Index and Reservation**.
- 
-   ii. Click on the tab **Feature Management and Settings**
- 
-   iii.Enable **OnHandChangeSchedule** option.
+To enable the **Available To Promise** settings, follow these steps.
+
+1. Go to **Settings**. Click on **Index and Reservation**.
+1. Click on the tab **Feature Management and Settings**
+1. Enable **OnHandChangeSchedule** option.
    
    ![ATP.](media/ATP.png)
    
- b. The calculated measure for **ATP Setting** must be defined.
+Next, you must define the calculated measure for **ATP Setting**.
 
 The **ATP calculated measure** is a predefined calculated measure that is typically used to find the on-hand quantity that is currently available. The **supply quantity** is the sum of quantities for those physical measures that have a modifier type of addition, and the **demand quantity** is the sum of quantities for those physical measures that have a modifier type of subtraction.
 
 You can add multiple calculated measures to calculate multiple ATP quantities. However, the total number of distinct physical measures across all ATP calculated measures should be less than nine.
 
-[!NOTE]
-> - A calculated measure is a composition of physical measures. Its formula can include only physical measures without duplicates, not calculated measures.
+> [!NOTE]
+> A calculated measure is a composition of physical measures. Its formula can include only physical measures without duplicates, not calculated measures.
 
 **For example**, you set up the following calculated measure:
 
@@ -68,67 +68,62 @@ You can add another calculated measure to calculate the On-hand-physical ATP qua
 
 There are eight distinct physical measures across those two ATP calculated measures: PhysicalInvent, OnHand, Unrestricted, QualityInspection, Inbound, ReservPhysical, SoftReservePhysical, and Outbound.
 
-For more information about calculated measures, see [Calculated measures](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-configuration#calculated-measures).
+For more information about calculated measures, see [Calculated measures](/dynamics365/supply-chain/inventory/inventory-visibility-configuration#calculated-measures).
+
+To define the calculated measure for **ATP Setting**, follow these steps.
  
-   i.    Goto **Settings**. Click on **Index and Reservation**.
- 
-   ii.   Click on the tab **ATP Settings**
-   
-   iii.  Select the **Data Source** from the dropdown.
-   
-   iv.   Select the **Calculated Measure** for the selected **Data Source**.
-   
-   v.    Assign the **Schedule Period**. Currently this is supported to a max of 7 days.
+1. Go to **Settings**. Click on **Index and Reservation**.
+1. Click on the tab **ATP Settings**
+1. Select the **Data Source** from the dropdown.
+1. Select the **Calculated Measure** for the selected **Data Source**.
+1. Assign the **Schedule Period**. Currently this is supported to a max of 7 days.
    
   ![ATPSetting.](media/ATPSetting.png)
   
-  c. The Intelligent Order Management calculated measure mapping must be defined.
-  
-   i.    Goto **Settings**. Click on **Index and Reservation**.
-   
-   ii.   Click on the tab **Intelligent Order Management Mappings**.
-   
-   iii.  Goto the section **Set Calculated Measure Mappings**.
-   
-   iv.   Select the **Data Source** defined in **ATP Setting**.
-   
-   v.    Select **atponhand** as **Base Measure**. 
+Next, you must define the Intelligent Order Management calculated measure mapping.
+ 
+To define the Intelligent Order Management calculated measure mapping, follow these steps.
 
-         [!NOTE]
-         >-Base Measure is a predefined measure in Intelligent Order Management that will be called from the Inventory check actions 
-         in orchestration.This Base measure mapping will be maintained with the ATP Seeting calculated measure.
+1. Go to **Settings**. Click on **Index and Reservation**.
+1. Click on the tab **Intelligent Order Management Mappings**.
+1. Go to the section **Set Calculated Measure Mappings**. 
+1. Select the **Data Source** defined in **ATP Setting**.  
+1. Select **atponhand** as **Base Measure**. 
+
+    > [!NOTE]
+    > **Base Measure** is a predefined measure in Intelligent Order Management that will be called from the Inventory check actions in orchestration. This base measure mapping will be maintained with the **ATP Setting** calculated measure.
          
-   vi.   Select the **Calculated Measure** that you want to map from the defined **Calculated measures** in **ATP Setting**.
+1. Select the **Calculated Measure** that you want to map from the defined **Calculated measures** in **ATP Setting**.
    
    ![IOMmapping.](media/IOMmapping.png)
    
- ## Run a sample transaction with Available to Promise check
+ ## Run a sample transaction with ATP check
  
-   Intelligent Order Management will now have the ability to perform Inventory checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above            **Settings** are enabled then this will also check on Available to Promise dates and determine the **Material Availability Date** and **Estimated Shipment Date** on    the sales orde line.
+Intelligent Order Management will now have the ability to perform Inventory checks as an independnet provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above     **Settings** are enabled then this will also check on ATP dates and determine the **Material Availability Date** and **Estimated Shipment Date** on the sales order line.
 
-   [!NOTE]
-   >- The inventory checks will also happen as part of **Fulfillment and Returns optimization** and based on **ATP Settings**, the sales order lines will be updated      accordingly.
+> [!NOTE]
+> The inventory checks will also happen as part of **Fulfillment and Returns optimization** and based on **ATP Settings**, the sales order lines will be updated      accordingly.
    
-   Here is a sample order journey with policy based fulfillment assignment.
+Here is a sample order journey with policy based fulfillment assignment.
 
    ![Sample Orchestration.](media/SampleOrch.png)
    
-   Below are the **provider actions** that will be available as part of Dynamics 365 Intelligent Order Management and check on **Available to Promise** when **ATP        Settings** are enabled.
+Below are the provider actions that will be available as part of Dynamics 365 Intelligent Order Management and check on **Available to Promise** when **ATP        Settings** are enabled.
    
-   |**Provider action**|**Description**|
-   |-------------------|---------------|
-   |Send fulfillment process request|This provider action will check for inventory availability for the assigned fulfillment source on the sales order line and also  check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
-   |Send to fulfillment optimization|This provider action will determine the best fulfillment location for a sales order line based on inventory check. This action     will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+|**Provider action**|**Description**|
+|-------------------|---------------|
+|Send fulfillment process request|This provider action will check for inventory availability for the assigned fulfillment source on the sales order line and also  check for promide dates if **ATP Setting** is enabled. This action will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
+|Send to fulfillment optimization|This provider action will determine the best fulfillment location for a sales order line based on inventory check. This action     will also generate the Fulfillment order and update the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line.
    
-   Below is a sample screen highlighting the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line once the above order orchestration        runs. The inventory check found no inventory and has **backordered** the lines.
+Below is a sample screen highlighting the **Inventory Availability Date** and **Estimated Ship Date** on the sales order line once the above order orchestration        runs. The inventory check found no inventory and has **backordered** the lines.
    
    ![ATP Check.](media/BackorderHold.png)
    
 ## Application programming interface (API) URLs
    
-   As a part of Available to promise feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management and details can be found [here](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by 3rd party ERPs, commerce or supplier systems for inventory query with Available to promise capabilities.
+As a part of ATP feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management, For more information, see [Submit change schedules, change events, and ATP queries through the API](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by third party ERPs, commerce or supplier systems for inventory query with ATP capabilities.
    
-   Below is a sample payload for Inventory Query to call these services from Dynamics 365 Intelligent Order Management.
+Below is a sample payload for Inventory Query to call these services from Dynamics 365 Intelligent Order Management.
    
        {
 
@@ -142,15 +137,14 @@ For more information about calculated measures, see [Calculated measures](https:
 
       {{orgurl}}/api/data/v9.1/msdyn_IOMInventoryAPICall
       
-The Request and Response for these payloads are very much similar to what is available from [Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls)
-The below table highlights the mapping between the Intelligent Order Management APIs, Dynamics 365 Inventory Visibility APIs and corresponding documentations.
+The Request and Response for these payloads are very much similar to what is available from Supply Chain Management. The following table highlights the mapping between the Intelligent Order Management APIs, Dynamics 365 Inventory Visibility APIs, and the corresponding documentation.
    
 |Intelligent Order Management API Name|Dynamics 365 Inventory Visibility API|Method|Description|Documentation link|
 |----|------|-----------|--------|--------|
-|OnHandQuery|/api/environment/{environmentId}/onhand/indexquery| POST |Query by using the POST method.| [Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-api#query-with-post-method)|
-|OnHandDelta|/api/environment/{environmentId}/onhand| GET |	Query by using the GET method.|[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-api#create-one-onhand-change-event)|
-|OnHandDelta_Bulk|/api/environment/{environmentId}/onhand/bulk| POST |Create multiple change events.|[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-api#create-multiple-onhand-change-events)|
-|OnHandChangeSchedule|/api/environment/{environmentId}/onhand/changeschedule| POST | Create on hand change schedule. |[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#create-one-on-hand-change-schedule)|
-|OnHandChangeSchedule_Bulk|/api/environment/{environmentId}/onhand/changeschedule/bulk|	POST	|Create multiple scheduled on-hand changes.|[Link](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#create-multiple-on-hand-change-schedules)|
+|OnHandQuery|/api/environment/{environmentId}/onhand/indexquery| POST |Query by using the POST method.| [Query by using the post method](/dynamics365/supply-chain/inventory/inventory-visibility-api#query-with-post-method)|
+|OnHandDelta|/api/environment/{environmentId}/onhand| GET |	Query by using the GET method.|[Create one on-hand change event](/dynamics365/supply-chain/inventory/inventory-visibility-api#create-one-onhand-change-event)|
+|OnHandDelta_Bulk|/api/environment/{environmentId}/onhand/bulk| POST |Create multiple change events.|[Create multiple change events](/dynamics365/supply-chain/inventory/inventory-visibility-api#create-multiple-onhand-change-events)|
+|OnHandChangeSchedule|/api/environment/{environmentId}/onhand/changeschedule| POST | Create on hand change schedule. |[Create one on-hand change schedule](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#create-one-on-hand-change-schedule)|
+|OnHandChangeSchedule_Bulk|/api/environment/{environmentId}/onhand/changeschedule/bulk|	POST	|Create multiple scheduled on-hand changes.|[Create multiple on-hand change schedules](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#create-multiple-on-hand-change-schedules)|
 
    
