@@ -79,9 +79,9 @@ To enable preorder eligibility for a product, follow these steps.
 
 ## How backorder works
 
-When an order is created in Dynamics 365 Intelligent Order Management, an inventory check can be initiated as part of either the policy assignment or fulfillment and returns optimization processes. In either of these two processes, inventory may not be found for the ordered product. In such cases the order line is then updated with a **Status Reason** of **Backorder Hold**.
+When an order is created in Intelligent Order Management, an inventory check can be initiated as part of either the policy assignment or fulfillment and returns optimization processes. In either of these two processes, inventory may not be found for the ordered product. In such cases the order line is then updated with a **Status Reason** of **Backorder Hold**.
 
-When **ATP Settings** is enabled, the backordered lines will also be updated with the **Inventory Availability Date** and an **Estimated Shipment Date** values for the product.
+When **ATP Settings** is enabled, backordered lines will have the **Inventory Availability Date** and **Estimated Shipment Date** values updated for the product.
 
 The following image shows an example order orchestration journey with a policy-based fulfillment assignment.
 
@@ -89,40 +89,38 @@ The following image shows an example order orchestration journey with a policy-b
 
 The following example image highlights key updates that happen to a sales order line when the order lines are backordered.
 
-![Backorder.](media/BackorderHold.png)
+![Backorder key updates](media/BackorderHold.png)
 
-Once this happens, based on the initial **pre-requisite settings**, a background job will run automatically that will trigger inventory check everyday once to check if inventory is found and the order lines can be moved to subsequent fulfillment.
-It will be intelligent enough to determine from the orchestration if inventory check would be triggered independently or triggered through **Fulfillment and Returns optimization**.
+Once a product is backordered, based on the initial prerequisite settings a background job will run automatically to trigger a daily inventory check to determine if inventory is found and the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if an inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
 
-A job log will be now available to show the list of job runs and their statuses. This can be located on the **Home Page** left menu under **Monitoring** as **Background Jobs**. It will show you the list of job runs, their statuses and the number of records it has successfully processed and moved to fulfillment.
+A job log will then be available to show the list of job runs and their statuses. The job log (named **Background Jobs**) is located on the **Home Page** left navigation pane under **Monitoring**. Selecting **Background Jobs** will show you the list of job runs, their statuses, and the number of records that have been successfully processed and moved to fulfillment.
 
-![Job.](media/Job.png)
+![Active Background Order Processing Job Runs page](media/Job.png)
 
-If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu bar. Select the **Back-Order Job** and this will start a new instance of the background job.
+If a background job fails, you'll also be able to manually run the job using the **Run** option on the upper menu. Select **Back-Order Job** to start a new instance of the background job.
 
-On clicking the Job line, you'll be able to see the details of the background job run.
+If you select the job line, you'll be able to see the details of the background job run.
 
-![Jobdetails.](media/Jobdetails.png)
+![New Background Order Processing Job Run page](media/Jobdetails.png)
 
 ## How preorder works
 
-When an order is created in Dynamics 365 Intelligent Order Management, if the order contains products that are marked as **Preorder eligible** and has a **Launch date**, then those lines in sales order are moved to **Status Reason** as **Preorder Hold**.
+When an order is created in Intelligent Order Management, if the order contains products that are marked as **Preorder eligible** and have a **Launch date**, then those lines in the sales order are updated to a **Status Reason** of **Preorder Hold**.
 
-The sales order line gets updated with the **Launch Date** from the **Products** defined as part of the **Pre-requisite Settings**.
+The sales order line gets updated with the product launch date as defined in the prerequisite settings.
 
-![Preorder.](media/PreOrderHold.png)
+![Sales order line with preorder hold status and and launch date highlighted](media/PreOrderHold.png)
 
-Once this happens, a background job will run that automatically triggers an inventory check on the **Launch Date** and the order lines can be moved to subsequent fulfillment.
-It will be intelligent enough to determine from the orchestration if inventory check would be triggered independently or triggered through **Fulfillment and Returns optimization**.
+Once a product is preordered, a background job will run automatically to trigger an inventory check based on the launch date to determine if the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
 
-If inventory check fails and no inventory found, then the order lines will move to **Backorder Hold** status.
+If an inventory check fails and no inventory is found, then the order lines will be updated to a status of **Backorder Hold**.
 
-A job log will be now available to show the list of job runs and their statuses. This can be located on the **Home Page** left menu under **Monitoring** as **Background Jobs**. It will show you the list of job runs, their statuses and the number of records it has successfully processed and moved to fulfillment.
+A job log will then be available to show the list of job runs and their statuses. The job log (named **Background Jobs**) is located on the **Home Page** left navigation pane under **Monitoring**. Selecting **Background Jobs** will show you the list of job runs, their statuses, and the number of records that have been successfully processed and moved to fulfillment.
 
 ![PreorderJob.](media/PreorderJob.png)
 
-If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu bar. Select the **Pre-Order Job** and this will start a new instance of the background job.
+If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu. Select **Pre-Order Job** to start a new instance of the background job.
 
-On clicking the Job line, you'll be able to see the details of the background job run.
+If you select the job line, you'll be able to see the details of the background job run.
 
 ![PreJobDetails.](media/Predet.png)
