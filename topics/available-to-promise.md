@@ -24,7 +24,7 @@ The following prerequisites must be met to set up and use ATP capabilities in In
 - You must have the Dynamics 365 Inventory Visibility provider installed. For installation steps, see [Set up Inventory Visibility provider](set-up-inventory-visibility-provider.md).
 - Submit on-hand change schedule updates to the Dynamics 365 Inventory Visibility provider that the dates are within the period that is defined by the **Schedule period** setting.
 
-The following table lists the API details to submit an on-hand schedule change request. These APIs are available from the Microsoft Dynamics 365 Supply Chain Management Inventory visibility add-in, as well as Intelligent Order Management. For more information, see [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise).
+The following table lists the API details to submit an on-hand schedule change request. These APIs are available from the Microsoft Dynamics 365 Supply Chain Management Inventory visibility add-in, and in Intelligent Order Management. For more information, see [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise).
 
 |Path|Method|Description|
 |----|------|-----------|
@@ -76,7 +76,7 @@ To define the calculated measure for **ATP Setting**, follow these steps.
 1. Click on the tab **ATP Settings**
 1. Select the **Data Source** from the dropdown.
 1. Select the **Calculated Measure** for the selected **Data Source**.
-1. Assign the **Schedule Period**. Currently this is supported to a max of 7 days.
+1. Assign the **Schedule Period**. Currently this is supported to a max of seven (7) days.
    
   ![ATPSetting.](media/ATPSetting.png)
   
@@ -99,12 +99,12 @@ To define the Intelligent Order Management calculated measure mapping, follow th
    
  ## Run a sample transaction with ATP check
  
-Intelligent Order Management will now have the ability to perform Inventory checks as an independent provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the above     **Settings** are enabled then this will also check on ATP dates and determine the **Material Availability Date** and **Estimated Shipment Date** on the sales order line.
+Intelligent Order Management will now have the ability to perform Inventory checks as an independent provider action. If the sales order lines are already assigned    a **Fulfillment Source** via a **policy** or **manual order creation**, one can orchestrate the order to perform independent inventory checks. If the settings above are enabled, the system will also check on ATP dates and determine the **Material Availability Date** and **Estimated Shipment Date** on the sales order line.
 
 > [!NOTE]
 > The inventory checks will also happen as part of **Fulfillment and Returns optimization** and based on **ATP Settings**, the sales order lines will be updated      accordingly.
    
-Here is a sample order journey with policy based fulfillment assignment.
+Here's a sample order journey with policy based fulfillment assignment.
 
    ![Sample Orchestration.](media/SampleOrch.png)
    
@@ -121,7 +121,7 @@ Below is a sample screen highlighting the **Inventory Availability Date** and **
    
 ## Application programming interface (API) URLs
    
-As a part of ATP feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management, For more information, see [Submit change schedules, change events, and ATP queries through the API](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by third party ERPs, commerce or supplier systems for inventory query with ATP capabilities.
+As a part of ATP feature capability, you'll also have a set of Application programming interface (API) URLs available from Intelligent Order Management. These URLs will also be available from Supply Chain Management, For more information, see [Submit change schedules, change events, and ATP queries through the API](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by third party ERPs, commerce or supplier systems for inventory query with ATP capabilities.
    
 Below is a sample payload for Inventory Query to call these services from Dynamics 365 Intelligent Order Management.
 
