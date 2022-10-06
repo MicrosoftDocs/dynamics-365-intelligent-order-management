@@ -126,6 +126,10 @@
         href: troubleshoot-trial-sign-up.md
       - name: Power BI reports don't provision
         href: troubleshoot-insights.md
+  - Name: Development
+    items:
+    - name: Power Automate flows
+      href: developer-flows.md
   - name: Extensibility
     href: extensibility.md
   - name: Globalization
