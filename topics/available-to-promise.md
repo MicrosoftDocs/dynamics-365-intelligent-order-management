@@ -124,18 +124,18 @@ Below is a sample screen highlighting the **Inventory Availability Date** and **
 As a part of ATP feature capability, you will also have a set of Application programming interface (API) URLs available from Dynamics 365   Intelligent Order Management. These will also be available from Dynamics 365 Supply Chain Management, For more information, see [Submit change schedules, change events, and ATP queries through the API](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise#api-urls). These URLs can be directly called by third party ERPs, commerce or supplier systems for inventory query with ATP capabilities.
    
 Below is a sample payload for Inventory Query to call these services from Dynamics 365 Intelligent Order Management.
-   
-       {
 
+```JSON
+{
     "API": "OnHandQuery",
-
     "Payload": "{\"filters\": {\"OrganizationId\": [\"{{orgid}}\"],\"ProductId\": [\"ACSC-SP\"],\"SiteId\": [\"default\",\"1\"],\"LocationId\":    [\"120\"]},\"groupByValues\": [],\"returnNegative\": true }"
 
       }
-      
-   The associated sample Path would look like below:
+```
 
-      {{orgurl}}/api/data/v9.1/msdyn_IOMInventoryAPICall
+The associated sample Path would look like below:
+
+`{{orgurl}}/api/data/v9.1/msdyn_IOMInventoryAPICall`
       
 The Request and Response for these payloads are very much similar to what is available from Supply Chain Management. The following table highlights the mapping between the Intelligent Order Management APIs, Dynamics 365 Inventory Visibility APIs, and the corresponding documentation.
    
