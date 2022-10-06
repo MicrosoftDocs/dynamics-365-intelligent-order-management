@@ -17,7 +17,7 @@ This article describes backorder and preorder management in Microsoft Dynamics 3
 
 ## Backorders
 
-A backorder is an order placed for a product or service that can't immediately be fulfilled due to a lack of available supply. When a customer places an order for an item that is not currently in stock, the customer may be informed the product is on backorder and that they can still make payment with the promise of future delivery. Items available on backorder may indicate a date when they will be back in stock.
+A backorder is an order placed for a product or service that can't immediately be fulfilled due to a lack of available supply. When a customer places an order for an item that is not currently in stock, the customer may be informed the product is on backorder and that they can still make payment with the promise of future delivery. Items available on backorder may indicate a date when they'll be back in stock.
 
 Effective backorder management can provide you with the following benefits:
 
@@ -43,8 +43,7 @@ To enable available to promise (ATP) settings, follow these steps.
 1. Select the **Feature Management and Settings** tab.
 1. Turn on the **OnHandChangeSchedule** option.
 
-![ATP](media/ATP.png)
-
+![Enable available to promise (ATP) settings](media/ATP.png)
 
 ### Upload on-hand schedule changes
 
@@ -88,20 +87,20 @@ The following image shows an example order orchestration journey with a policy-b
 
 ![Orchestration journey with a policy-based fulfillment assignment](media/SampleOrch.png)
 
-The following example image highlights key updates that happen to a sales order lines when the order lines are backordered.
+The following example image highlights key updates that happen to a sales order line when the order lines are backordered.
 
 ![Backorder.](media/BackorderHold.png)
 
 Once this happens, based on the initial **pre-requisite settings**, a background job will run automatically that will trigger inventory check everyday once to check if inventory is found and the order lines can be moved to subsequent fulfillment.
-It will be intelligent enough to determine from the orchestation if inventory check would be triggered independently or triggered through **Fulfillment and Returns optimization**.
+It will be intelligent enough to determine from the orchestration if inventory check would be triggered independently or triggered through **Fulfillment and Returns optimization**.
 
 A job log will be now available to show the list of job runs and their statuses. This can be located on the **Home Page** left menu under **Monitoring** as **Background Jobs**. It will show you the list of job runs, their statuses and the number of records it has successfully processed and moved to fulfillment.
 
 ![Job.](media/Job.png)
 
-If a background job fails, you will also be able to manually run it using the **Run** option in the upper menu bar. Select the **Back-Order Job** and this will start a new instance of the background job.
+If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu bar. Select the **Back-Order Job** and this will start a new instance of the background job.
 
-On clicking the Job line, you will be able to see the details of the background job run.
+On clicking the Job line, you'll be able to see the details of the background job run.
 
 ![Jobdetails.](media/Jobdetails.png)
 
@@ -113,8 +112,8 @@ The sales order line gets updated with the **Launch Date** from the **Products**
 
 ![Preorder.](media/PreOrderHold.png)
 
-Once this happens, a background job will run automatically trigger inventory check on the **Lauch Date** and the order lines can be moved to subsequent fulfillment.
-It will be intelligent enough to determine from the orchestation if inventory check would be triggered independently or triggered through **Fulfillment and Returns optimization**.
+Once this happens, a background job will run that automatically triggers an inventory check on the **Launch Date** and the order lines can be moved to subsequent fulfillment.
+It will be intelligent enough to determine from the orchestration if inventory check would be triggered independently or triggered through **Fulfillment and Returns optimization**.
 
 If inventory check fails and no inventory found, then the order lines will move to **Backorder Hold** status.
 
@@ -122,8 +121,8 @@ A job log will be now available to show the list of job runs and their statuses.
 
 ![PreorderJob.](media/PreorderJob.png)
 
-If a background job fails, you will also be able to manually run it using the **Run** option in the upper menu bar. Select the **Pre-Order Job** and this will start a new instance of the background job.
+If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu bar. Select the **Pre-Order Job** and this will start a new instance of the background job.
 
-On clicking the Job line, you will be able to see the details of the background job run.
+On clicking the Job line, you'll be able to see the details of the background job run.
 
 ![PreJobDetails.](media/Predet.png)
