@@ -128,6 +128,8 @@
         href: troubleshoot-insights.md
   - name: Extensibility
     href: extensibility.md
+  - name: Application lifecycle management
+    href: alm.md
   - name: Globalization
     href: globalization.md
   - name: Blogs and communities
