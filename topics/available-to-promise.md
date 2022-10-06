@@ -1,17 +1,19 @@
 ---
 author: sumanic
-description: This article describes available to promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes how to set up available to promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/06/2022
 ms.topic: overview
 ms.author: sumanic
-title: Available to promise inventory capabilities
+title: Set up available to promise inventory capabilities
 
 ---
 
-# Available to promise inventory capabilities
+# Set up available to promise inventory capabilities
 
-This article describes available to promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
+[!include [banner](includes/banner.md)]
+
+This article describes how to set up available to promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
 
 ATP is the projected amount of inventory that will be available in the incoming period to be able to promise customer orders. Use of this calculation can greatly increase your order fulfillment capability.
 
