@@ -2,7 +2,7 @@
 author: raybennett-msft
 description: This article describes application lifecycle management (ALM) in Microsoft Dynamics 365 Intelligent Order Management. It includes information about how to move solutions from one environment to another or package solutions for storage in source control.
 ms.author: bennettray
-ms.date: 10/06/2022
+ms.date: 10/07/2022
 ms.topic: conceptual
 
 title: Application lifecycle management for Dynamics 365 Intelligent Order Management
@@ -84,7 +84,7 @@ To add tables as solution components and export your solution from the source en
     1. Select **Create**.
 
 1. Open the new solution.
-1. On the toolbar, select **Add existing**.
+1. On the toolbar, select **Add existing \> Table**.
 1. In the **Add existing tables** dialog box, find or search for a table that is required for the data migration, and then select it. The search field is located in the upper right.
 1. Find and select the rest of the required setup tables, and then select **Next**.
 1. Under **Selected tables**, select the **Include table metadata** checkbox for each table.
