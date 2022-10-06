@@ -42,13 +42,9 @@ Once a product is backordered, a background job will automatically run that trig
 
 A job log will then be available to show the list of job runs and their statuses. The job log (named **Background Jobs**) is located on the **Home Page** left navigation pane under **Monitoring**. Selecting **Background Jobs** will show you the list of job runs, their statuses, and the number of records that have been successfully processed and moved to fulfillment.
 
-![Active Background Order Processing Job Runs page](media/Job.png)
-
 If a background job fails, you'll also be able to manually run the job using the **Run** option on the upper menu bar. Select **Back-Order Job** to start a new instance of the background job.
 
 If you select the job line, you'll be able to see the details of the background job run.
-
-![New Background Order Processing Job Run page](media/Jobdetails.png)
 
 ## Preorders
 
@@ -70,13 +66,9 @@ If an inventory check fails and no inventory is found, then the order lines will
 
 A job log will then be available to show the list of job runs and their statuses. The job log (named **Background Jobs**) is located on the **Home Page** left navigation pane under **Monitoring**. Selecting **Background Jobs** will show you the list of job runs, their statuses, and the number of records that have been successfully processed and moved to fulfillment.
 
-![PreorderJob.](media/PreorderJob.png)
-
 If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu bar. Select **Pre-Order Job** to start a new instance of the background job.
 
 If you select the job line, you'll be able to see the details of the background job run.
-
-![PreJobDetails](media/Predet.png)
 
 ## Set up backorder and preorder functionality
 
@@ -111,7 +103,7 @@ To enable general app settings, follow these steps.
 1. Set the **Backorders** option to **On**.
 1. After enabling backorders, a **Cancellation SLA** section appears. Optionally, here you can enter the number of days up to which you want to try fulfilling the backorder. After that number of days, the order will automatically be canceled.
         
-![Backorder Product](media/Backorder.png)
+![Order handling preferences page](media/Backorder.png)
    
 ### Enable preorder eligibility for products
 
@@ -125,7 +117,7 @@ To enable preorder eligibility for a product, follow these steps.
 1. For **Launch Date**, enter the date when the product will be released.
 1. Select **Save**, or select **Save & Close**.
 
-![Preorder Product](media/Preorder.png)
+![Product page with launch date highlighted](media/Preorder.png)
 
 
 
