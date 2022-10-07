@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This topic describes the Admin home page in Microsoft Dynamics 365 Intelligent Order Management.
+description: This topic describes the Admin home workspace in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 10/07/2022
 ms.topic: conceptual
 ms.author: sumanic
@@ -15,9 +15,9 @@ title: Admin home workspace
 
 This topic describes the **Admin home** workspace in Microsoft Dynamics 365 Intelligent Order Management.
 
-The Intelligent Order Management administrator workspace called **Admin home** makes all levels of Intelligent Order Management-related setups and settings easily accessible and available to administrators. Access to **Admin home** can be role-based according to customer needs.
+The Intelligent Order Management **Admin home** administrator workspace makes all levels of Intelligent Order Management-related setups and settings easily accessible and available to administrators. Access to **Admin home** can be role-based according to customer needs.
 
-To access the **Admin home** page, on the Intelligent Order Management **Home** page, select **Settings**, and then in the left navigation pane, select **Admin home**. 
+To access the **Admin home** workspace, on the Intelligent Order Management **Home** page, select **Settings**, and then in the left navigation pane, select **Admin home**. 
 
 ![Access Admin home from the home page](media/adminhome.png)
 
@@ -25,7 +25,7 @@ Alternatively, at the bottom of the left navigation pane, select **Intelligent O
 
 ![Admin home page with Settings highlighted](media/adminchangearea.png)
 
-The **Admin home** page contains shortcuts to settings for key areas of Intelligent Order Management. All detailed settings and their subareas are available to access in the left navigation pane.
+The **Admin home** workspace contains shortcuts to settings for key areas of Intelligent Order Management. All detailed settings and their subareas are available to access in the left navigation pane.
 
 ## Key settings areas of the Admin home navigation pane
 
