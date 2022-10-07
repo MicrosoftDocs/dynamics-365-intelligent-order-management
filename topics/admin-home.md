@@ -21,7 +21,7 @@ To access the **Admin home** page, on the Intelligent Order Management **Home** 
 
 ![Access Admin home from the home page](media/adminhome.png)
 
-Alternatively, at the bottom of the left navigation pane, select **Intelligent Order Management** to change the workspace area, select **Settings** in the left navigation pane, and then select **Admin home**.
+Alternatively, at the bottom of the left navigation pane, select **Intelligent Order Management \> Settings** to change the workspace area, and then select **Admin home**.
 
 ![Admin home page with Settings highlighted](media/adminchangearea.png)
 
