@@ -2,7 +2,7 @@
 author: anvenkat
 description: This article describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/05/2022
+ms.date: 10/07/2022
 ms.topic: conceptual
 ms.author: anvenkat
 
@@ -18,7 +18,7 @@ To extend support for inbound transactions and provide transaction visibility al
 
 - Dual-write support for purchase orders is available, so that purchase order data flows seamlessly from Dataverse into Intelligent Order Management and is visible in real or near-real time.
 - Users can create purchase orders in Intelligent Order Management. The purchase orders are then processed in Supply Chain Management via dual-write support.
-- The user interface (UI) fields for the **Purchase Order** entity have been designed to support sales order fulfillment scenarios.
+- The user interface (UI) fields for the **Purchase Orders** entity have been designed to support sales order fulfillment scenarios.
 - Transaction status and visibility of purchase orders from Supply Chain Management are available directly in Intelligent Order Management.
 - The **Purchase Order products** view is available on the **Sales Order** products tab, which provides visibility into incoming inventory from individual purchase order transactions. The **Purchase Order products** view is also available on the site map, for easy access to the status of individual purchase order lines at the product level.
 
