@@ -41,7 +41,11 @@
       - name: Run sample order orchestration flow
         href: lab-run-sample-order-orch-flow.md
   - name: Architecture
-    href: architecture.md
+    items:
+      - name: Architecture overview
+        href: architecture.md
+      - name: State framework architecture
+        href: state-framework.md
   - name: Set up Intelligent Order Management
     items:
     - name: Get trial licenses
@@ -128,6 +132,8 @@
         href: troubleshoot-insights.md
   - name: Extensibility
     href: extensibility.md
+  - name: Application lifecycle management
+    href: alm.md
   - name: Globalization
     href: globalization.md
   - name: Blogs and communities
