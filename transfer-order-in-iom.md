@@ -62,6 +62,8 @@ Following tables need to be synched for products
 
 ![Tolines.](media/Tolines.png)
 
+For dual write mapping reference refer [Dual write mapping reference.](/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference)
+
 ## Create **Transfer Order** 
 
 1. To create **Transfer Order** go to the site map entry **Transfer orders** under **Orders**
@@ -78,7 +80,7 @@ As **Transfer Order** processes in Supply Chain Management the status updates ar
 
 ## View of **Transfer Order Products** within **Sales Order Products**
 
-A view of **Transfer orders** is available inside the **sales order product**  within a separate tab showing the list of Transfers for the order product along with the **shipping** and **receiving warehouse**. This would give visibility of incoming inventory for the assigned warehouse to the sales order product .
+A view of **Transfer orders** is available inside the **sales order product**  within a separate tab showing the list of Transfers for the order product along with the **shipping** and **receiving warehouse**. This would give visibility of incoming inventory for the assigned warehouse to the sales order product. 
 
 
 
