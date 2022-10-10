@@ -13,112 +13,105 @@ title: Set up backorder and preorder functionality
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up and manage backorder and preorder functionality in Microsoft Dynamics 365 Intelligent Order Management. Managing backorders and preorders gives you the flexibility to optimize the handling of your inventory.
+This article describes how to set up and manage backorder and preorder functionality in Microsoft Dynamics 365 Intelligent Order Management. Management of backorders and preorders gives you the flexibility to optimize the handling of your inventory.
 
 ## Backorders
 
-A backorder is an order placed for a product or service that can't immediately be fulfilled due to a lack of available supply. When a customer places an order for an item that is not currently in stock, the customer may be informed the product is on backorder and that they can still make payment with the promise of future delivery. Items available on backorder may indicate a date when they'll be back in stock.
+A backorder is an order that was placed for a product or service, but that can't immediately be fulfilled because of a lack of available supply. Customers who place an order for an item that isn't currently in stock might be informed that the product is on backorder. They might be told that they can still make a payment in return for a promise of future delivery. Items that are on backorder might indicate a date when they will be back in stock.
 
-Effective backorder management can provide you with the following benefits:
+Effective backorder management can provide the following benefits:
 
-- Optimized use of inventory.
-- Regular inventory checks to fulfill backorders.
+- Optimized use of inventory
+- Regular inventory checks to fulfill backorders
 
 ### How backorder functionality works
 
-When an order is created in Intelligent Order Management, an inventory check can be initiated as part of either the policy assignment or fulfillment and returns optimization processes. In either of these processes, inventory may not be found for the ordered product. In such cases, the order line is then updated with a **Status Reason** of **Backorder Hold**.
+When an order is created in Intelligent Order Management, an inventory check can be run as part of either the policy assignment process or the fulfillment and returns optimization process. In both these processes, inventory might not be found for the ordered product. In this case, the order line is updated with a **Status Reason** value of **Backorder Hold**.
 
-When [available to promise (ATP) settings are enabled](#enable-atp-settings), backordered lines will have the **Inventory Availability Date** and **Estimated Shipment Date** values updated for the product.
+If the [available-to-promise (ATP) settings are enabled](#enable-atp-settings), the **Inventory Availability Date** and **Estimated Shipment Date** values for the product will be updated on the backordered lines.
 
-The following image shows an example order orchestration journey with a policy-based fulfillment assignment.
+The following illustration shows an example of an order orchestration journey that has a policy-based fulfillment assignment.
 
-![Orchestration journey with a policy-based fulfillment assignment](media/SampleOrch.png)
+![Orchestration journey with a policy-based fulfillment assignment.](media/SampleOrch.png)
 
-The following example image highlights key updates that happen to a sales order line when the order lines are backordered.
+The example in the following illustration highlights key updates that are made to sales order lines when they are backordered.
 
-![Backorder key updates](media/BackorderHold.png)
+![Key updates to backordered sales order lines.](media/BackorderHold.png)
 
-Once a product is backordered, a background job will automatically run that triggers an inventory check based on the launch date to determine if the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if an inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
+After a product is backordered, a background job that is automatically run triggers an inventory check, based on the launch date, to determine whether the order lines can be moved to subsequent fulfillment. From the orchestration, Intelligent Order Management will determine whether an inventory check should be triggered independently or through the fulfillment and returns optimization process.
 
-A job log will then be available to show the list of job runs and their statuses. The job log (named **Background Jobs**) is located on the **Home Page** left navigation pane under **Monitoring**. Selecting **Background Jobs** will show you the list of job runs, their statuses, and the number of records that have been successfully processed and moved to fulfillment.
+A job log is available, where you can view the list of job runs, the status of each, and the number of records that have been successfully processed and moved to fulfillment. To open the job log, on the **Home** page, in the left navigation, under **Monitoring**, select **Background jobs**.
 
-If a background job fails, you'll also be able to manually run the job using the **Run** option on the upper menu bar. Select **Back-Order Job** to start a new instance of the background job.
+If a background job fails, you can manually run it by using the **Run** option on the upper toolbar. Select **Back-Order Job** to start a new instance of the background job.
 
-If you select the job line, you'll be able to see the details of the background job run.
+To view the details of a background job run, select the job line.
 
 ## Preorders
 
-A preorder is an order placed for a product before that product is released. The ability to handle preorders provides greater flexibility to handle inventory effectively.
+A preorder is an order that is placed for a product before that product is released. The ability to handle preorders gives you more flexibility to handle inventory effectively.
 
-Preorders allow customers to guarantee immediate delivery on release, manufacturers to gauge how much demand there will be (and how large initial production runs should be), and sellers to be assured of minimum sales. High preorder rates can also be used to further increase sales.
+Preorders provide the following benefits:
+
+- **Manufacturers** can gauge how much demand there will be and how large initial production runs should be.
+- **Sellers** can be assured of minimum sales. High preorder rates can also be used to further increase sales.
+- **Customers** can guarantee immediate delivery when products are released.
 
 ### How preorder functionality works
 
-When an order is created in Intelligent Order Management, if the order contains products that are marked as **Preorder eligible** and have a launch date, then those lines in the sales order are updated to a status reason of **Preorder Hold**.
+When an order is created in Intelligent Order Management, if it contains products that are marked as **Preorder eligible** and that have a launch date, those lines on the sales order are updated with a **Status Reason** value of **Preorder Hold**. They are also updated with the product launch date, as defined in the prerequisite settings.
 
-The sales order line gets updated with the product launch date as defined in the prerequisite settings.
+![Sales order line updated with a Preorder Hold status and a launch date.](media/PreOrderHold.png)
 
-![Sales order line with preorder hold status and and launch date highlighted](media/PreOrderHold.png)
+After a product is preordered, a background job that is automatically run triggers an inventory check, based on the launch date, to determine whether the order lines can be moved to subsequent fulfillment. From the orchestration, Intelligent Order Management will determine whether an inventory check should be triggered independently or through the fulfillment and returns optimization process.
 
-Once a product is preordered, a background job will automatically run that triggers an inventory check based on the launch date to determine if the order lines can be moved to subsequent fulfillment. Intelligent Order Management will determine from the orchestration if inventory check should be triggered independently or triggered through the fulfillment and returns optimization process.
+If an inventory check fails, and no inventory is found, the status of the order lines is updated to **Backorder Hold**.
 
-If an inventory check fails and no inventory is found, then the order lines will be updated to a status of **Backorder Hold**.
+A job log will then be available, where you can view the list of job runs, the status of each, and the number of records that have been successfully processed and moved to fulfillment. To open the job log, on the **Home** page, in the left navigation, under **Monitoring**, select **Background Jobs**.
 
-A job log will then be available to show the list of job runs and their statuses. The job log (named **Background Jobs**) is located on the **Home Page** left navigation pane under **Monitoring**. Selecting **Background Jobs** will show you the list of job runs, their statuses, and the number of records that have been successfully processed and moved to fulfillment.
+If a background job fails, you can manually run it by using the **Run** option on the upper toolbar. Select **Pre-Order Job** to start a new instance of the background job.
 
-If a background job fails, you'll also be able to manually run it using the **Run** option in the upper menu bar. Select **Pre-Order Job** to start a new instance of the background job.
-
-If you select the job line, you'll be able to see the details of the background job run.
+To view the details of a background job run, select the job line.
 
 ## Set up backorder and preorder functionality
 
-To set up backorder and preorder functionality in Intelligent Order Management, follow the steps below.
+To set up backorder and preorder functionality in Intelligent Order Management, complete the following procedures.
 
-### Enable ATP settings
+### Enable the ATP settings
 
-First, you must enable the available to promise (ATP) settings. For this follow the below steps:
+First, you must enable the ATP settings.
 
-To enable ATP settings, follow these steps.
+1. Go to **Settings**.
+1. In the left navigation, under **Inventory settings**, select **Index and Reservation**.
+1. On the **Feature Management & Settings** tab, turn on the **OnHandChangeSchedule** option.
 
-1. Go to **Settings**. 
-1. Select **Index and Reservation**.
-1. Select the **Feature Management and Settings** tab.
-1. Turn on the **OnHandChangeSchedule** option.
-
-![Enable available to promise (ATP) settings](media/ATP.png)
+![OnHandChangeSchedule option turned on.](media/ATP.png)
 
 ### Upload on-hand schedule changes
 
-Next, on-hand schedule changes should be uploaded in case you want to provide your customers with an expected ship date. For instructions, see [Inventory Visibility on-hand change schedules and available to promise](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise).
+Next, you should upload on-hand schedule changes in case you want to provide an expected ship date to your customers. For instructions, see [Inventory Visibility on-hand change schedules and available to promise](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise).
 
 ### Enable general app settings
 
 Next, you must enable some general app settings.
 
-To enable general app settings, follow these steps.
-
 1. Go to **Settings**. 
-1. Select **General app settings**.
+1. In the left navigation, under **App settings**, select **General app settings**.
 1. Go to **Order handling preferences**, and then select **Manage**.
 1. Set the **Backorders** option to **On**.
-1. After enabling backorders, a **Cancellation SLA** section appears. Optionally, here you can enter the number of days up to which you want to try fulfilling the backorder. After that number of days, the order will automatically be canceled.
-        
-![Order handling preferences page](media/Backorder.png)
-   
+1. After you enable backorders, a **Cancellation SLA** section appears. Here, you can optionally enter the number of days that you want to try to fulfill the backorder. After that number of days has passed, the order will automatically be canceled.
+
+![Order handling preferences page.](media/Backorder.png)
+
 ### Enable preorder eligibility for products
 
-Next, you must enable preorder eligibility for products. 
+Next, you must enable preorder eligibility for products.
 
 To enable preorder eligibility for a product, follow these steps.
-  
+
 1. In the sitemap, go to **Demand Planning**, and then select **Products**.
 1. Select a product.
-1. If the product is preorder eligible, then for **Pre-order Eligible**, select **Yes**.
-1. For **Launch Date**, enter the date when the product will be released.
-1. Select **Save**, or select **Save & Close**.
+1. If the product is preorder eligible, in the **Pre-order Eligible** field, select **Yes**.
+1. In the **Launch Date** field, enter the date when the product will be released.
+1. Select **Save** or **Save & Close**.
 
-![Product page with launch date highlighted](media/Preorder.png)
-
-
-
-
+![Pre-order Eligible and Launch Date fields on the Product page.](media/Preorder.png)
