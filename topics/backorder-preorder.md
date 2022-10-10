@@ -28,7 +28,7 @@ Effective backorder management can provide the following benefits:
 
 When an order is created in Intelligent Order Management, an inventory check can be run as part of either the policy assignment process or the fulfillment and returns optimization process. In both these processes, inventory might not be found for the ordered product. In this case, the order line is updated with a **Status Reason** value of **Backorder Hold**.
 
-If the [available-to-promise (ATP) settings are enabled](#enable-atp-settings), the **Inventory Availability Date** and **Estimated Shipment Date** values for the product will be updated on the backordered lines.
+If the [available-to-promise (ATP) settings are enabled](#enable-the-atp-settings), the **Inventory Availability Date** and **Estimated Shipment Date** values for the product will be updated on the backordered lines.
 
 The following illustration shows an example of an order orchestration journey that has a policy-based fulfillment assignment.
 
