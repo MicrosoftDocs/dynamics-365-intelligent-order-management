@@ -1,7 +1,7 @@
 ---
 author: raybennett-msft
 description: This article provides an overview of error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 10/05/2022
+ms.date: 10/11/2022
 ms.topic: overview
 ms.author: bennettray
 
@@ -9,6 +9,8 @@ title: Error handling and troubleshooting
 
 ---
 # Error handling and troubleshooting
+
+[!include [banner](includes/banner.md)]
 
 This article provides an overview of error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
 
@@ -18,9 +20,9 @@ Dynamics 365 Intelligent Order Management has five primary error handling screen
 
 On entities such as the Sales order, Fulfillment order, etc. you'll find a tab labeled **Orchestration Step Results** which will give you information about every step that has executed for that record, and its outcome.
 
-    ![Screenshot of Orchestration Step Results Tab](media/troubleshooting-001.png)
+![Screenshot of Orchestration Step Results Tab](media/troubleshooting-001.png)
 
-    ![Screenshot of Orchestration Step Results](media/troubleshooting-002.png)
+![Screenshot of Orchestration Step Results](media/troubleshooting-002.png)
 
 You can use the fields above to get information on the step that ran and its result.
 
@@ -44,15 +46,15 @@ You can get a view of errors in the system for four different error types:
 
 To reach these pages, first navigate to **Monitoring \> Errors** on the left navigation pane.
 
-    ![Screenshot of Errors navigation](media/troubleshooting-003.png)
+![Screenshot of Errors navigation](media/troubleshooting-003.png)
 
-    ![Screenshot of Errors landing page](media/troubleshooting-004.png)
+![Screenshot of Errors landing page](media/troubleshooting-004.png)
 
 ### Provider inbound errors
 
 Provider inbound errors page is used to monitor power automate flows that handle data ingestion. The errors can be triggered either from a polling (scheduled) mechanism, or a webhook that an external system calls into.
 
-    ![Screenshot of Provider inbound errors](media/troubleshooting-005.png)
+![Screenshot of Provider inbound errors](media/troubleshooting-005.png)
 
 The fields available on this form will help you diagnose errors with these inbound providers.
 
@@ -71,7 +73,7 @@ The fields available on this form will help you diagnose errors with these inbou
 
 These errors are associated to outbound calls from Dynamics 365 Intelligent Order Management to a Provider action. You would use this page to determine if the same provider is failing multiple times across the system. These errors might be an indication that something is wrong with a specific provider.
 
-    ![Screnshot of Provider Action Errors](media/troubleshooting-006.png)
+![Screnshot of Provider Action Errors](media/troubleshooting-006.png)
 
 The following fields will help you diagnose the error.
 
@@ -93,7 +95,7 @@ All orchestration steps that have failed across the system. Used as a single sou
 
 Use this page to find all policy/rule failures in your system. 
 
-    ![Screenshot of Policy Errors](media/troubleshooting-007.png)
+![Screenshot of Policy Errors](media/troubleshooting-007.png)
 
 The following fields can be used to help diagnose the failure.
 
