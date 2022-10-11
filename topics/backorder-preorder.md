@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to set up and manage backorder and preorder functionality in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/06/2022
+ms.date: 10/11/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Set up backorder and preorder functionality
@@ -30,11 +30,11 @@ When an order is created in Intelligent Order Management, an inventory check can
 
 If the [available-to-promise (ATP) settings are enabled](#enable-the-atp-settings), the **Inventory Availability Date** and **Estimated Shipment Date** values for the product will be updated on the backordered lines.
 
-The following illustration shows an example of an order orchestration journey that has a policy-based fulfillment assignment.
+The following illustration shows an example of an order orchestration journey that has a policy-based fulfillment assignment. 
 
 ![Orchestration journey with a policy-based fulfillment assignment.](media/SampleOrch.png)
 
-The example in the following illustration highlights key updates that are made to sales order lines when they are backordered.
+The example in the following illustration highlights key updates that are made to sales order lines when they are backordered. The order line is updated with a **State** value of **Sale Order Product on Hold** and a **Status Reason** value of **Backorder Hold**. The **Estimated Shipment Date** and **Inventory Availability Date** values are also updated.
 
 ![Key updates to backordered sales order lines.](media/BackorderHold.png)
 
@@ -54,7 +54,7 @@ Preorders provide the following benefits:
 
 - **Manufacturers** can gauge how much demand there will be and how large initial production runs should be.
 - **Sellers** can be assured of minimum sales. High preorder rates can also be used to further increase sales.
-- **Customers** can guarantee immediate delivery when products are released.
+- **Customers** can be guaranteed immediate delivery when products are released.
 
 ### How preorder functionality works
 
