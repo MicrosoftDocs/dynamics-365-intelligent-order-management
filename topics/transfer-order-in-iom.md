@@ -54,7 +54,7 @@ Following tables need to be synched for header.
 - Terms of delivery
 - Warehouses
 
-![Transferheader.](media/Transferheader.png)
+![Transfer header](media/transfer-header.png)
 
 Following tables need to be synched for products
 
@@ -71,7 +71,7 @@ Following tables need to be synched for products
 - Sites
 - Warehouses
 
-![Tolines.](media/Tolines.png)
+![To lines](media/to-lines.png)
 
 For dual write mapping reference refer [Dual write mapping reference.](/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference)
 
@@ -93,7 +93,7 @@ As **Transfer Order** processes in Supply Chain Management the status updates ar
 
 A view of **Transfer orders** is available inside the **sales order product**  within a separate tab showing the list of Transfers for the order product along with the **shipping** and **receiving warehouse**. This would give visibility of incoming inventory for the assigned warehouse to the sales order product. 
 
-[Transfer order view.](media/TO.png)
+[Transfer order view](media/transfer-order.png)
 
 
 
