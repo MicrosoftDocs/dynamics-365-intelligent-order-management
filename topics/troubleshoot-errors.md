@@ -1,18 +1,18 @@
 ---
 author: raybennett-msft
-description: This article provides an overview of error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 10/11/2022
 ms.topic: overview
 ms.author: bennettray
 
-title: Error handling and troubleshooting
+title: Troubleshoot errors
 
 ---
-# Error handling and troubleshooting
+# Troubleshoot errors
 
 [!include [banner](includes/banner.md)]
 
-This article provides an overview of error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
 
 Dynamics 365 Intelligent Order Management has five primary error handling screens that you can use to diagnose issues with your environment. Each error handling screen provides different information based on the type of error.
 
