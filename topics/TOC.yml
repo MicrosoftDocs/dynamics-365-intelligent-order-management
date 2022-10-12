@@ -124,6 +124,8 @@
     items: 
     - name: Administration overview
       href: admin.md
+    - name: Admin home workspace
+      href: admin-home.md
     - name: Data management
       href: data-management.md
   - name: Troubleshooting
