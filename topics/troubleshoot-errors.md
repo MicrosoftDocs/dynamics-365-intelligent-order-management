@@ -20,8 +20,6 @@ Dynamics 365 Intelligent Order Management has five primary error handling screen
 
 For entities such as sales order and fulfillment order, you can select the **Orchestration Step Results** tab to see information about every step that has executed for that record, and the orchestration result.
 
-<!--![Orchestration Step Results tab](media/troubleshooting-001.png)-->
-
 ![Orchestration Step Results tab](media/troubleshooting-002.png)
 
 The following table lists the **Orchestration Step Results** tab fields and their descriptions.
@@ -29,10 +27,10 @@ The following table lists the **Orchestration Step Results** tab fields and thei
 |**Field**|**Description**|
 |:-|:-|
 |**Created On**|When the step ran.|
-|**Step**|Step in the orchestration journey. Selecting this field takes you to the step result, and you can use this view to see results across all entities.|
-|**Result**|Success/Failure|
-|**Result Details**|If the step passed back an execution result value message, it will appear here. |
-|**Run Id**|Power Automate Run ID|
+|**Step**|The step in the orchestration journey. Selecting this field takes you to the step result, and you can use this view to see results across all entities.|
+|**Result**|**Success** of **Failure**|
+|**Result Details**|If the step passed back an execution result value message, it appears here. |
+|**Run Id**|Microsoft Power Automate run ID|
 |**Processed Record**|Which record this step ran on.|
 
 ## System errors
@@ -44,19 +42,15 @@ You can get a view of errors in the system for four different error types:
 - Orchestration step
 - Policy
 
-To access these error pages, select **Monitoring \> Errors** on the left navigation pane to get to the **Error pages** screen, as shown in the following illustration.
-
-<!--![Screenshot of Errors navigation](media/troubleshooting-003.png)-->
+To access these error pages, select **Monitoring \> Errors** in the left navigation pane to get to the **Error pages** screen, as shown in the following illustration.
 
 ![Screenshot of Errors landing page](media/troubleshooting-004.png)
 
 ### Provider inbound errors
 
-**Provider inbound** errors are used to monitor Power Automate flows that handle data ingestion. These types of errors can be triggered either from a polling (scheduled) mechanism, or a webhook that an external system calls into.
+**Provider inbound** errors are used to monitor Power Automate flows that handle data ingestion. These types of errors can be triggered either from a polling (scheduled) mechanism, or a webhook that an external system calls into. The fields on the **Provider inbound Errors** page can help you diagnose errors with inbound providers.
 
 ![Screenshot of Provider inbound errors](media/troubleshooting-005.png)
-
-The fields available on this form will help you diagnose errors with these inbound providers.
 
 The following table lists the **Provider inbound** error fields and their descriptions.
 
@@ -82,20 +76,20 @@ The following table lists the **Provider action** error fields and their descrip
 |**Field**|**Description**|
 |:-|:-|
 |**Created On**|When the failure occurred.|
-|**Result**|Success / Failure|
+|**Result**|**Success** or **Failure**|
 |**Provider Action**|Which provider action failed.|
 |**Step Execution Result**|Which step the error is associated with.|
 |**Processed Record**|Which record was processed for this failure.|
-|**Result Details**|If the flow returned an execution result, it would be displayed here.|
+|**Result Details**|If the flow returned an execution result, it appears here.|
 |**Run History URL**|The Power Automate flow run that failed.|
 
 ### Orchestration step errors
 
-**Orchestration step** errors show orchestration steps that have failed across the system, and are used to determine if there's a systemic issue across runs. <!--For more information about these errors, see Entity Specific Orchestration Step Results.-->
+**Orchestration step** errors show orchestration steps that have failed across the system, and are used to determine if there's a systemic issue across runs. For more information about these errors, see [Entity-specific orchestration step results](#entity--specific-orchestration-step-results) above.
 
 ### Policy errors
 
-Use the **Policy Errors** page to find all the policy and/or rule failures in your system. 
+You can use the **Policy Errors** page to find all the policy and/or rule failures in your system. 
 
 ![Screenshot of Policy Errors](media/troubleshooting-007.png)
 
@@ -103,26 +97,23 @@ The following table lists the **Policy** error fields and their descriptions.
 
 |**Field**|**Description**|
 |:-|:-|
-|**Created On**|When the policy failure occurred|
-|**Result**|Should be False|
-|**Policy**|Which policy failed|
-|**Step Execution Result**|The step that failed|
-|**Processed Record**|Which record failed|
-|**Result Details**|If an error message was returned the details of that error message|
+|**Created On**|When the policy failure occurred.|
+|**Result**|Should be **Failure**.|
+|**Policy**|Which policy failed.|
+|**Step Execution Result**|The step that failed.|
+|**Processed Record**|Which record failed.|
+|**Result Details**|If an error message was returned, the details of the error message appear here.|
 
 ## Troubleshoot Power Query transformation failures
 
-When a call to Intelligent Order Management Provider Transformer fails, the best way of debugging these failures is to directly observe the power automate execution.
+When a call to Intelligent Order Management Provider Transformer fails, the best way to debug such failures is to directly observe the Power Automate execution.
 
 To directly observe the power automate execution, follow these steps.
 
 1. Navigate to the Power Platform portal for your environment.
 1. Open **Solutions \> Default Solution**.
 1. Search for the cloud flow **IOM Provider Transformer**.
-
-    ![Screenshot of Transformer Flow](media/troubleshooting-008.png)
-
-1. Open the cloud flow and examine the 28 day run history.
+1. Open the cloud flow and examine the **28 day run history**.
 
     ![Screenshot of 28 day run history](media/troubleshooting-009.png)
 
@@ -131,7 +122,7 @@ To directly observe the power automate execution, follow these steps.
 
     ![Screenshot of flow steps](media/troubleshooting-010.png)
 
-1. If successful, you can view the result of the transformation directly. If an exception error is thrown, the exception details can be seen by showing the raw outputs of the call.
+1. If successful, you can view the result of the transformation directly. If an exception error is thrown, the exception details can be viewed by showing the raw outputs of the call.
 
 ### Example errors
 
@@ -139,5 +130,5 @@ The following table lists example error messages and the suggested steps to fix 
 
 |**Error Message**|**Suggested Steps**|
 |:-|:-|
-|**Failed to retrieve a matching provider transformation record**|The provider ID must match an **Active Provider Instance**, not a provider definition. Your source object and destination object on the transformation must match what is shown on your call to Intelligent Order Management Provider Transformer.|
-|**Field ‘field\_name’ was not found on the table**|You are accessing data that has no value provided in the record. You must use **Record.FieldOrDefault** if data is optional and you need a default value.|
+|**Failed to retrieve a matching provider transformation record**.|The provider ID must match an **Active Provider Instance**, not a provider definition. Your source object and destination object on the transformation must match what is shown on your call to **IOM Provider Transformer**.|
+|**Field "field\_name" was not found on the table**.|You are accessing data that has no value provided in the record. If data is optional, you must use **Record.FieldOrDefault** as a default value.|
