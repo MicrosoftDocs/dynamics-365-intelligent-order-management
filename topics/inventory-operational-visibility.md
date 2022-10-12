@@ -36,7 +36,7 @@ This query screen can be accessed from multiple areas for different scenarios. B
 1. Goto the **sitemap** under **Demand planning** and click on **Operational visibility**.
 2. The left half of the screen is the query screen.
 3. The right side of the screen displays the result.
-4. The **Organization ID** will be auto populated with dataverse organization id for IOM and **Company Id** needs to entered when D365 Finance and Operations dual write is enabled.
+4. The **Organization ID** will be auto populated with dataverse organization id when using Intelligent Order Management without Supply chain management and **Company Id** needs to entered in **Organization ID** when D365 Finance and Operations dual write is enabled.
 5. Enter the below mandatory fields:
 
     5.1 **Site ID**
