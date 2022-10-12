@@ -126,7 +126,7 @@
         href: troubleshoot-trial-sign-up.md
       - name: Power BI reports don't provision
         href: troubleshoot-insights.md
-    - name: Troubleshoot errors
+    - name: Error handling and troubleshooting
       href: troubleshoot-errors.md
   - name: Extensibility
     href: extensibility.md
