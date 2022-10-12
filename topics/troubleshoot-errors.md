@@ -85,7 +85,7 @@ The following table lists the **Provider action** error fields and their descrip
 
 ### Orchestration step errors
 
-**Orchestration step** errors show orchestration steps that have failed across the system, and are used to determine if there's a systemic issue across runs. For more information about these errors, see [Entity-specific orchestration step results](#entity--specific-orchestration-step-results) above.
+**Orchestration step** errors show orchestration steps that have failed across the system, and are used to determine if there's a systemic issue across runs. For more information about these errors, see [Entity-specific orchestration step results](#entity-specific-orchestration-step-results) above.
 
 ### Policy errors
 
