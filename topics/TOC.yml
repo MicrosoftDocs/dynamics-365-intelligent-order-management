@@ -100,6 +100,8 @@
       href: enable-bing-maps.md
     - name: Enable timeline capabilities
       href: enable-timeline-sales-order.md
+    - name: Set up available to promise inventory capabilities
+      href: available-to-promise.md
     - name: Set up backorder and preorder functionality
       href: backorder-preorder.md
   - name: Manage your orders
