@@ -1,7 +1,7 @@
 ---
 author: raybennett-msft
 description: This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 10/12/2022
+ms.date: 10/14/2022
 ms.topic: overview
 ms.author: bennettray
 
