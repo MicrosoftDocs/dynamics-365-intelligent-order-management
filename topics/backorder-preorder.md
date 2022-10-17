@@ -12,6 +12,7 @@ title: Set up backorder and preorder functionality
 # Set up backorder and preorder functionality
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to set up and manage backorder and preorder functionality in Microsoft Dynamics 365 Intelligent Order Management. Management of backorders and preorders gives you the flexibility to optimize the handling of your inventory.
 
