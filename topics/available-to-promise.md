@@ -12,6 +12,7 @@ title: Set up available-to-promise inventory capabilities
 # Set up available-to-promise inventory capabilities
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to set up available-to-promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
 
