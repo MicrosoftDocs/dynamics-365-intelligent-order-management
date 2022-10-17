@@ -11,6 +11,8 @@ title: Inventory operations visibility
 
 # Inventory operations visibility
 
+[!include [banner](includes/preview-banner.md)]
+
 Inventory visibility is a key enablement of Dynamics 365 Intelligent Order Management that enables end to end visibility of inventory across your organizational units. Having full visibility enables preparation for the unexpected and helps make better business decisions.
 
 Three primary benefits can be attained with a proper operational visibility:
