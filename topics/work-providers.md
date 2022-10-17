@@ -13,6 +13,7 @@ title: Work with providers
 # Work with providers
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article provides an overview of the process of working with providers and explains how to set up a provider in Microsoft Dynamics 365 Intelligent Order Management.
 
