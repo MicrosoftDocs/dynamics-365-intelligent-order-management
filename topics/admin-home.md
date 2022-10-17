@@ -12,6 +12,7 @@ title: Admin home workspace
 # Admin home workspace
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes the **Admin home** workspace in Microsoft Dynamics 365 Intelligent Order Management.
 
