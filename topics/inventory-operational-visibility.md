@@ -55,7 +55,7 @@ The following screenshot shows an example query result.
 1. In the left navigation pane, select **Demand planning \> Products**.
 1. Select a product, and then select **View**.
 1. On the upper menu bar, select **View Availability**. The **Onhand Query** page appears with the **Organization ID** and **Product ID** values automatically populated. The **Organization ID** field is populated with the Dataverse organization ID for Dynamics 365 Intelligent Order Management. You must enter the **Company ID** value in the **Organization ID** field when dual-write is enabled in Dynamics 365 Finance.
-1. Enter the below mandatory fields:Enter values for the following mandatory fields:
+1. Enter values for the following mandatory fields:
     1. **Site ID**   
     1. **Location ID**. Use the **Warehouse ID** associated with a store or warehouse.
 1. If you've uploaded your demand and supply view using [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox. 
