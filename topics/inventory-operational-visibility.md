@@ -1,8 +1,8 @@
 ---
 author: sumanic
-description: This topic describes Inventory Operations Visibility query screen in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/14/2022
+ms.date: 10/18/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Inventory operations visibility
@@ -11,53 +11,49 @@ title: Inventory operations visibility
 
 # Inventory operations visibility
 
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
-Inventory visibility is a key enablement of Dynamics 365 Intelligent Order Management that enables end to end visibility of inventory across your organizational units. Having full visibility enables preparation for the unexpected and helps make better business decisions.
+This article describes inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
 
-Three primary benefits can be attained with a proper operational visibility:
+Inventory operations visibility is a key feature of Intelligent Order Management that enables end-to-end visibility of inventory across your organizational units. Having full visibility enables you to prepare for the unexpected and helps you make better business decisions.
 
-- Optimize stock levels.
-- Reduce Supply chain costs.
-- Improved decision making.
+Three primary benefits can be attained with inventory operational visibility:
 
-To provide customers with these benefits, Intelligent Order Management is introducing near real-time inventory query screens that can be used across different areas of the application. These inventory query screens will have information updated from your source system as a fundamental tenant for heterogeneous supply chain systems.
+- Optimized stock levels
+- Reduced supply chain costs
+- Improved decision making
+
+To provide customers with these benefits, Intelligent Order Management has introduced near real-time inventory query screens that can be used across different areas of the application. These inventory query screens are updated with information from your source system, which is a fundamental tenet of heterogeneous supply chain systems.
 
 > [!NOTE]
-> This is an intelligent query screen and automatically detects an enabled instance of Dynamics 365. Accordingly this query screen will leverage Dynamics 365 Finance and Operations inventory for querying and highlight the availability for the same.
-In case **Available to Promise** is enabled, then this query screen will also allow to query incoming availability from **Dynamics 365 Finance and Operations**.
+> Intelligent Order Management query screens are intelligent and can automatically detect an enabled instance of Dynamics 365. Inventory query screen use Dynamics 365 Finance inventory capabilities for querying and highlighting product availability. If available-to-promise inventory capabilities are enabled, then an inventory query screen can also query incoming availability from Dynamics 365 Finance.
 
-![Inventory Operational Visibility.](media/IVQuery.png)
+![Inventory Operational Visibility](media/IVQuery.png)
 
-## How to access the Inventory query screen?
+## How to access the inventory query screen?
 
-This query screen can be accessed from multiple areas for different scenarios. Below are some use cases:
+You can access the inventory query screen from multiple areas for different scenarios. The following use cases highlight some of the methods.
 
-### Use case #1: An Inventory planner wants operational visibility
+### Use case #1: An inventory planner wants operational visibility
 
-1. Go to the **sitemap** under **Demand planning** and select **Operational visibility**.
-2. The left half of the screen is the query screen.
-3. The right side of the screen displays the result.
-4. The **Organization ID** will be auto populated with Dataverse organization id when using Intelligent Order Management without Supply chain management and **Company ID** must be entered in **Organization ID** when dual-write is enabled.
-5. Enter the below mandatory fields:
+1. In the left navigation pane, select **Demand planning \> Operational visibility**. On the **Onhand Query** page that appears, the left half of the screen is for queries and the right side displays the results.
+1. The **Organization ID** value will be automatically populated with the Dataverse organization ID when using Intelligent Order Management without Supply Chain Management. You must enter the **Company ID** value in the **Organization ID** field when dual-write is enabled.
+1. Enter value for the following mandatory fields:
+   1. **Site ID** 
+   1. **Location ID**. Use the **Warehouse ID** associated with a store or warehouse.
+1. For **Product ID**, enter the product ID you want to search for. Use the ID associated with product name in the product master.
+1. If you've uploaded your demand and supply view using [Dynamics 365 Inventory Services.](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox. 
+1. Select **Query**. Query results appear on the right side of the page.
+1. To hide the query section of the screen and just display the results, on the top right of the screen, select **Combo \> Hide search criteria**.
 
-    5.1 **Site ID**
-    
-    5.2 **Location ID**. Please use the **Warehouse ID** here associated with a store or warehouse.
+The following screenshot shows an example query result.
 
-6. Enter the **Product ID** you want to search for. Please use the **ID** associated with product name in product master.
-7. Check the **Query ATP** selection in case you've uploaded your demand and supply view using [Dynamics 365 Inventory Services.](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise)
-8. Select **Query**.
-9. This will display the query results on the right side of the panel.
-10. You could also choose to hide the query section and just display the results. For this on the top right of the screen, change the selection from **Combo** to **Hide search criteria**.
-11. A sample example of this query run looks as below:
-
-![Query Results.](media/QueryResult.png)
+![Query Results](media/QueryResult.png)
   
-### Use case #2: A customer representative wants to view availability from Products.
+### Use case #2: A customer representative wants to view availability from the Products screen.
 
-1. Go to the **sitemap** under **Demand planning** and select **Products**.
-2. Select the product and select **View**.
+1. In the left navigation pane, select **Demand planning \> Products**.
+2. Select a product, and then select **View**.
 3. On the upper menu bar, select **View Availability**.
 4. This will open the same query screen with the **Organization ID** and **Product ID** auto populated. **Organization ID** will be auto populated with Dataverse organization id for Dynamics 365 Intelligent Order Management and **Company ID** must be entered in **Organization ID** when dual-write is enabled with Dynamics 365 Finance and Operations.
 5. Enter the below mandatory fields:
