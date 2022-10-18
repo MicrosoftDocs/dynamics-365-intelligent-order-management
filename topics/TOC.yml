@@ -41,7 +41,11 @@
       - name: Run sample order orchestration flow
         href: lab-run-sample-order-orch-flow.md
   - name: Architecture
-    href: architecture.md
+    items:
+      - name: Architecture overview
+        href: architecture.md
+      - name: State framework architecture
+        href: state-framework.md
   - name: Set up Intelligent Order Management
     items:
     - name: Get trial licenses
@@ -98,6 +102,10 @@
       href: enable-timeline-sales-order.md
     - name: Integrate Supply Chain Management procurement
       href: integrate-procurement.md
+    - name: Set up available to promise inventory capabilities
+      href: available-to-promise.md
+    - name: Set up backorder and preorder functionality
+      href: backorder-preorder.md
   - name: Manage your orders
     items:
     - name: Fulfillment optimization
@@ -118,6 +126,8 @@
     items: 
     - name: Administration overview
       href: admin.md
+    - name: Admin home workspace
+      href: admin-home.md
     - name: Data management
       href: data-management.md
   - name: Troubleshooting
@@ -128,8 +138,12 @@
         href: troubleshoot-trial-sign-up.md
       - name: Power BI reports don't provision
         href: troubleshoot-insights.md
+    - name: Error handling and troubleshooting
+      href: troubleshoot-errors.md
   - name: Extensibility
     href: extensibility.md
+  - name: Application lifecycle management
+    href: alm.md
   - name: Globalization
     href: globalization.md
   - name: Blogs and communities
