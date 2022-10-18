@@ -45,7 +45,7 @@ To create the Intelligent Order Management Data Transformer connection, follow t
 1. Select **New connection**.
 1. In the search box on the upper right corner, enter "IOM Data Transformer".
     > [!NOTE]
-    > If you don’t see the connector, append ``?addConnectorHideKey=iomtransforme`` to the URL.
+    > If you don’t see the connector, append ``?addConnectorHideKey=iomtransformer`` to the URL.
 1. Select the plus symbol "**+**" to create the Intelligent Order Management Data Transformer connection. When prompted to sign in, make sure to use the same credentials you used to sign in to Intelligent Order Management.
 
 ## Configure platform connection references

@@ -286,7 +286,7 @@ After you create your custom connector, add it to your provider solution as a co
 
 ## Types of Power Automate flows
 
-Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](/learn/modules/introduction-power-automate/).
+Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](/training/modules/introduction-power-automate/).
 
 Add your flows as **Provider Definition Logic Definition** components to your provider.
 
