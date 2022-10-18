@@ -75,7 +75,7 @@ To view availability from the **Order Products** screen, the customer representa
 1. Enter the order details, and then select **Save** to save the order header.
 1. Go to **Order \> Order Products**, and then select **+ Add Products**. The **Quick Create: Order Product** flyout menu appears on the right.
     ![OrderProducts.](media/QuickForm.png)
-1. Set the **Select Product** toggle to **Existing Product** or **Write-in Product**, and then select or add the product information.
+1. Set the **Select Product** toggle to **Existing** or **Write-in**, and then select or add the product.
 1. Add the **Unit** value.
 1. Select **Check Availability**. The **Onhand Query** page appears with the **Organization ID** and **Product ID** values automatically populated. The **Organization ID** field is populated with the Dataverse organization ID for Dynamics 365 Intelligent Order Management. You must enter the **Company ID** value in the **Organization ID** field when dual-write is enabled in Dynamics 365 Finance. If you've entered the **Fulfillment Source**, the query screen will also have the **Location ID** value populated.
     ![Query Autofill.](media/Autofill.png)
