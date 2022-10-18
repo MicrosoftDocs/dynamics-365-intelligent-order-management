@@ -36,6 +36,8 @@ You can access the inventory query screen from multiple areas for different scen
 
 ### Use case #1: An inventory planner wants operational visibility
 
+To obtain operational visibility, the inventory planner would follow these steps.
+
 1. In the left navigation pane, select **Demand planning \> Operational visibility**. On the **Onhand Query** page that appears, the left half of the screen is for queries and the right side displays the results.
 1. The **Organization ID** value will be automatically populated with the Dataverse organization ID when using Intelligent Order Management without Supply Chain Management. You must enter the **Company ID** value in the **Organization ID** field when dual-write is enabled in Dynamics 365 Finance.
 1. Enter values for the following mandatory fields:
@@ -52,6 +54,8 @@ The following screenshot shows an example query result.
   
 ### Use case #2: A customer representative wants to view availability from the Products screen
 
+To view availability from the **Products** screen, the customer representative would follow these steps.
+
 1. In the left navigation pane, select **Demand planning \> Products**.
 1. Select a product, and then select **View**.
 1. On the upper menu bar, select **View Availability**. The **Onhand Query** page appears with the **Organization ID** and **Product ID** values automatically populated. The **Organization ID** field is populated with the Dataverse organization ID for Dynamics 365 Intelligent Order Management. You must enter the **Company ID** value in the **Organization ID** field when dual-write is enabled in Dynamics 365 Finance.
@@ -63,6 +67,8 @@ The following screenshot shows an example query result.
 1. To hide the query section of the screen and just display the results, on the top right of the screen, select **Combo \> Hide search criteria**.
 
 ### Use case #3: A customer representative wants to view availability from the Order Products screen
+
+To view availability from the **Order Products** screen, the customer representative would follow these steps.
 
 1. In the left navigation pane, select **Orders \> Sales Orders**.
 1. Select  **New** to create a new order.
@@ -76,7 +82,6 @@ The following screenshot shows an example query result.
 1. Enter the **Site ID** value.
 1. Check the **Query ATP** selection in case you've uploaded your demand and supply view using [Dynamics 365 Inventory Services.](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise)
 1. Select **Query**. Query results appear on the right side of the page.
-1. This will display the query results on the right side of the panel.
 1. To hide the query section of the screen and just display the results, on the top right of the screen, select **Combo \> Hide search criteria**.
 1. Review the availability. When done, select **Save** on the **Order Products** form.
 
