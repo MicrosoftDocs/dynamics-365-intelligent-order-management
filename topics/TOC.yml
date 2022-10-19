@@ -102,6 +102,10 @@
       href: enable-timeline-sales-order.md
     - name: Integrate Supply Chain Management transfer orders
       href: integrate-transfer-orders.md
+    - name: Set up available to promise inventory capabilities
+      href: available-to-promise.md
+    - name: Set up backorder and preorder functionality
+      href: backorder-preorder.md
   - name: Manage your orders
     items:
     - name: Fulfillment optimization
@@ -122,6 +126,8 @@
     items: 
     - name: Administration overview
       href: admin.md
+    - name: Admin home workspace
+      href: admin-home.md
     - name: Data management
       href: data-management.md
   - name: Troubleshooting
@@ -132,6 +138,8 @@
         href: troubleshoot-trial-sign-up.md
       - name: Power BI reports don't provision
         href: troubleshoot-insights.md
+    - name: Error handling and troubleshooting
+      href: troubleshoot-errors.md
   - name: Extensibility
     href: extensibility.md
   - name: Application lifecycle management
