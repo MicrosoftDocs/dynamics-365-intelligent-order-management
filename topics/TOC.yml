@@ -140,6 +140,8 @@
         href: troubleshoot-insights.md
     - name: Error handling and troubleshooting
       href: troubleshoot-errors.md
+  - name: Inventory operations visibility
+    href: inventory-visibility.md
   - name: Extensibility
     href: extensibility.md
   - name: Application lifecycle management
