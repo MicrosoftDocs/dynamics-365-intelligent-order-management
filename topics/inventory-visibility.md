@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/18/2022
+ms.date: 10/19/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Inventory operations visibility
