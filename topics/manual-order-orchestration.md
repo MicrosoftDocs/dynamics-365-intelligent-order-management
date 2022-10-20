@@ -56,64 +56,71 @@ Following are some of the new fields that we have introduced on the form.
 > [!NOTE]
 > **Company** is a mandatory field in Supply Chain Management that denotes the legal entity of the customer and the sale transaction. It must be set through orchestration policy. For example, use a rule based policy to set **Company** based on the ship to country or the customer group, etc. Once this is set through Orchestration, it will be available on Order header and Order product forms as read only field.
 
-
 ## Support for bulk changes in Order products form based on order state
 
 ### Bulk update of Fulfillment Source on Order products
 
-To do a bulk update of **Fulfillment Source** on **Order products**, follow these steps.
+To do a bulk update of **Fulfillment Source** on the **Order products** form, follow these steps.
 
 1. To access **Order Products** on the site map go to **Intelligent Order Management \> Order types \> Orders \> Order Products**.
 1. Apply filter on **Order Product** rows that need to be changed , and select **edit**. On the fly out screen, provide the new value of the field that will apply to all of the **Order Product** rows selected and then **save**. 
 1. You will notice that only those rows that were open for edit would be changed with new value. If an **Order Product** row has been sent to fulfillment, the **edit** button will not be visible and a message **One or more records are read only. Records cannot be changed** will be displayed on the top of the screen..
 
-## Cancel Order products
+## Cancel Order product rows manually
 
-To cancel **Order products**, follow these steps.
+To cancel **Order product** rows manually, follow these steps.
 
 1. To cancel one or more **Order product** rows manually, go to **Sales order** and select the **Order product(s)** row(s) that need to be cancelled.
-1. Select **Cancel**. The **Order product** row should change the state to **Cancelled**.
-1. You will notice that the **Order product** rows that are already in fullfilment or delivered will be locked for edit as defined by the **state**.
+1. Select **Cancel**. The **Order product** row should change the state to **Cancelled**. The **Order product** rows that are already in fullfilment or delivered will be locked for edit as defined by the **state**.
 
 ## Determine when an account is on credit hold
 
-To determine when an account is on credit hold, follow these steps.
+To determine when a customer account is on credit hold, follow these steps.
 
-1. To access if the customer **Account** is on credit hold, g oto **Account** , **Accounting tab** and **On hold status**
-1. If **On hold status** is set to anything other than **No**, the customer is on **Credit hold**
-1. As part of sales order save, a check is made against the Customer Account **On hold status** and a notificaiton message is displayed informing the user if the Account is on **Credit hold**.
+1. Go to **Account \> Accounting tab \> On hold status**, To access if the customer **Account** is on credit hold, 
+1. If **On hold status** is set to anything other than **No**, then the customer is on credit hold.
+
+As part of the sales order save operation, a check is made against the customer account **On hold status** and a notification message that the account is on credit hold is displayed.
 
 ## Simple substitution
 
-Intelligent Order Management will allow the maintenance of substitute product in the **Products** master data and reference the same during the order creation. This feature can be turned on when there is a need to substitute one product with another for a limited period of time. 
+The simple substitution feature allows you to substitute and maintain products in the product master data and reference substitute products during order creation. This feature can be turned on when there is a need to substitute one product with another product for a limited period of time. 
 
-To turn on simple substitution, follow these steps.
+To turn on the simple substitution feature, follow these steps.
 
-1. Goto **Settings > General App Settings > Order handling preferences**. then select **Manage**
-1. Select **Simple Substitution** and toggle the switch to **On**
+1. Go to **Settings \> General App Settings \> Order handling preferences**.
+1. Select **Manage**.
+1. Select **Simple Substitution**, and then toggle the switch to **On**.
 
 To maintain the substitute product in **Products**, follow these steps.
 
-1. To maintain substitute product goto **Demand Planning > Products > Additional Details >Product Relationships**
-1. Select **+New Product Relationship**
-1. Choose a substitute product in **Related Product**
-1. In **Sales Relationship Type** choose **Substitute**
-1. In **Direction** choose **Uni-Directional**
+1. Go to **Demand Planning \> Products \> Additional Details \> Product Relationships**.
+1. Select **+New Product Relationship**.
+1. For **Related Product**, select a substitute product.
+1. For **Sales Relationship Type**, select **Substitute**
+1. For **Direction**, select **Uni-Directional**.
 
-This feature allows you to maintain one substitute product in Product master. Please note that by maintaining more than one substitute item, the application will only select the first one found.
+When maintaining more than one substitute item, the application will select the first item found.
 
 ### How does it work?
 
-During order creation either manually or through an intake provider, a plugin will run to check for a subsitute product in the master data for the customer **requested product**. If there is one found, then the subsitute product will be replaced in **Existing Product** field and the customer requested product will be stored in a field **Requested Product**. A flag on the **order product** form  **Is Substitute** will be set to **Yes**. . Both the new fields **Requested Product** and **Is Substitute** will be available on the form for viewing purposes.These fields will be locked for edit to avoid unintentional user updates. Also the plugin will not run during order change and is set to run only during creation. 
+During order creation (either manually or through an intake provider), a plug-in runs to check for a substitute product for the requested customer product in the product master data. If a substitution is found, then the subsitute product appears in the **Existing Product** field and the requested customer product appears in the **Requested Product** field. Also, on the **Order product** form, the **Is Substitute** toggle is set to **Yes**, and both the **Requested Product** and **Is Substitute** fields will be viewable on the form. These fields will be locked to avoid unintentional updates. The plugin only runs during creation doesn't run during order change. 
 
-Note: Please note that if the substitute need to be discontinued or changed, product relationship need to be deleted or changed accordingly.
+> [!NOTE]
+> If you delete or change a substitute product, you must also delete or change the product relationship accordingly.
 
 ## On hand inventory query on Sales order products form
 
-**On hand inventory** check is available in both **sales order products** form and the **products** form to provide visibility to the inventory during order creation.
-Please follow the link here [inventory operational visibility](inventory-visibility.md)
+An on hand inventory check is available on both the **Sales order products** and **Products** forms to provide inventory visibility during order creation.
+For more information, see [Inventory operations visibility](inventory-visibility.md).
 
 ## Clone order
 
-To support reordering of a sales order, **Clone** order feature is introduced on the form. From the Order listing page select the **Order** that needs to be cloned and select **Clone** from the top menu option. You will see a message **Cloning in progress. Please wait**. Once the message disappears, you will see the new order and order products cloned from the selected order. Please note only all mandatory fields are copied from the source order.  
+The clone order feature support the reordering of sales orders.
 
+To clone an existing sales order, follow these steps.
+
+1. On the **Order listing** page, select the order that you want to clone.
+1. On the top menu, select **Clone**. A **Cloning in progress. Please wait** message appears. 
+
+Once the message disappears, you will see the new order and order products cloned from the selected order. Only the mandatory fields are copied from the source order.  
