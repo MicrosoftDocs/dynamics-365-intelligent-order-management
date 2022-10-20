@@ -96,7 +96,7 @@ Note: Please note that if the substitute need to be discontinued or changed, pro
 ## On hand inventory query on Sales order products form
 
 **On hand inventory** check is available in both **sales order products** form and the **products** form to provide visibility to the inventory during order creation.
-Please follow the link here [inventory operational visibility](inventory-operational-visibility.md)
+Please follow the link here [inventory operational visibility](inventory-visibility.md)
 
 ## Clone order
 
