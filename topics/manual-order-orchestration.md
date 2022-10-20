@@ -43,14 +43,14 @@ The following table lists some of the new form fields and their descriptions.
 
 | Field | Description |
 | ----- | ----------- |
-| **Order type** | This field will be set by e-commmerce orders to **Sales order**, or by a batch job that processes subscription contracts to **Subscription**. For all manually created orders, the field value is automatically set to **Sales order**, and the field will be read only.  |
+| **Order type** | This field will be set by e-commerce orders to **Sales order**, or by a batch job that processes subscription contracts to **Subscription**. For all manually created orders, the field value is automatically set to **Sales order**, and the field will be read only.  |
 | **Sales origin**  | Available on the order header to select the order channel through which an order is placed. If Intelligent Order Management has dual-write installed, the **Sales origin** will show preconfigured values from Supply Chain Management. Examples of **Sales origin** values could be e-commerce, email, phone, fax. |
 | **Fulfillment source**  | Available on the **order product** form and denotes the warehouse or the store name that the order will be fulfilled from. This field can be set manually during order creation or overwritten on change. Alternatively it can also be set by orchestration policy or by fulfillment optimization. |
 | **Shipping warehouse**  | Used to specify the warehouse code that matches the warehouse code in Supply Chain Management. The relationship of the **Fulfillment source** to the **Shipping warehouse** code is maintained at **Settings \> Order settings \> Fulfillment settings \> Sources**.  Can't be set manually but will automatically default based on the fulfillment source.|
 | **Bill to address**  | Available on the **Order header** form and can either be captured from e-commerce or manually. If the **Bill to address** value is different than the **Ship to address** value for the order, the values can be captured manually.  |
 | **Is manual**  | A flag that will be set to **Yes** for any manually created orders through the **order** form. This field can be used to configure separate orchestration flows for **manual orders** if necessary. |
-| **Customer order reference**  | Used to specify the customer reference for the sales order and maps to the field in Supply chain management. This field is available for input in a dual-write enabled instance of the application and will map to the same field in Supply Chain Management. |
-| **Invoice account**  | Specifies the account that is financially responsible for the transaction. By default, this field value matches the **Customer Account** value, but can be overwritten manually to specify a different account. This field is available for input in a dual-write enabled instance of the application and maps to the same field on the header in Supply Chain Management. This is a mandatory field in Supply chain management. |
+| **Customer order reference**  | Used to specify the customer reference for the sales order and maps to the field in Supply Chain Management. This field is available for input in a dual-write enabled instance of the application and will map to the same field in Supply Chain Management. |
+| **Invoice account**  | Specifies the account that is financially responsible for the transaction. By default, this field value matches the **Customer Account** value, but can be overwritten manually to specify a different account. This field is available for input in a dual-write enabled instance of the application and maps to the same field on the header in Supply Chain Management. This field is mandatory in Supply Chain Management. |
 | **Shipping site**  | Used to specify the shipping site. Can be set manually on a dual-write enabled instance, or through orchestration policy. |
 
 > [!NOTE]
@@ -62,9 +62,8 @@ The following table lists some of the new form fields and their descriptions.
 
 To do a bulk update of **Fulfillment Source** on the **Order products** form, follow these steps.
 
-1. To access **Order Products** on the site map go to **Intelligent Order Management \> Order types \> Orders \> Order Products**.
-1. Apply filter on **Order Product** rows that need to be changed, and then select **Edit**. On the flyout menu, enter the new value of the field that will apply to all of the **Order Product** rows selected, and then select **Save**. 
-1. You will notice that only those rows that were open for edit would be changed with new value. If an **Order Product** row has been sent to fulfillment, the **Edit** button won't be visible and a **One or more records are read only. Records cannot be changed** message will be displayed on the top of the screen.
+1. To access **Order Products**. on the left navigation pane, select **Intelligent Order Management \> Order types \> Orders \> Order Products**.
+1. Apply a filter on the **Order Product** rows that you want to change, and then select **Edit**. On the flyout menu, enter the new value of the field that will apply to all of the **Order Product** rows selected, and then select **Save**. Only rows that are writable (not read only) are updated with new values. If an **Order Product** row has been sent to fulfillment, the **Edit** button won't be visible, and a **One or more records are read only. Records cannot be changed** message will be displayed on the top of the screen.
 
 ## Cancel Order product rows manually
 
@@ -77,14 +76,14 @@ To cancel **Order product** rows manually, follow these steps.
 
 To determine when a customer account is on credit hold, follow these steps.
 
-1. Go to **Account \> Accounting tab \> On hold status**, To access if the customer **Account** is on credit hold, 
+1. Go to **Account \> Accounting tab \> On hold status**. 
 1. If **On hold status** is set to anything other than **No**, then the customer is on credit hold.
 
-As part of the sales order save operation, a check is made against the customer account **On hold status** and a notification message that the account is on credit hold is displayed.
+As part of the sales order save operation, a check is made against the customer account **On hold status**, and a notification message that the account is on credit hold is displayed.
 
 ## Simple substitution
 
-The simple substitution feature allows you to substitute and maintain products in the product master data and reference substitute products during order creation. This feature can be turned on when there's a need to substitute one product with another product for a limited period of time. 
+The simple substitution feature allows you to substitute and maintain products in the product master data and reference substitute products during order creation. This feature can be turned on when you need to substitute one product with another product for a limited period of time. 
 
 To turn on the simple substitution feature, follow these steps.
 
