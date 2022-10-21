@@ -12,6 +12,7 @@ title: Inventory operations visibility
 # Inventory operations visibility
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
 

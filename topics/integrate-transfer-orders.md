@@ -12,6 +12,7 @@ title: Integrate Supply Chain Management transfer orders with Intelligent Order 
 # Integrate Supply Chain Management transfer orders with Intelligent Order Management
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to integrate transfer orders in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 
