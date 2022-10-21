@@ -13,6 +13,7 @@ title: Fulfillment and Returns Optimization provider overview
 # Fulfillment and Returns Optimization provider overview
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article provides an overview of the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
 
