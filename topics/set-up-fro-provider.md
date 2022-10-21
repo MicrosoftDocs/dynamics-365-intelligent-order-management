@@ -12,6 +12,7 @@ title: Set up the Fulfillment and Returns Optimization provider
 # Set up the Fulfillment and Returns Optimization provider
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to set up the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management. For more information, see [Fulfillment and Returns Optimization provider](fulfillment-returns-optimization.md).
 

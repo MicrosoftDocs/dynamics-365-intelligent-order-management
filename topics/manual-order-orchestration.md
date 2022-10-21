@@ -13,6 +13,7 @@ title: Manual order orchestration in Intelligent Order Management
 # Manual order orchestration in Intelligent Order Management
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes manual order orchestration in Microsoft Dynamics 365 Intelligent Order Management.
 

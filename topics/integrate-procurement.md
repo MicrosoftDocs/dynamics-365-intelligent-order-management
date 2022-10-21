@@ -12,6 +12,9 @@ title: Integrate Supply Chain Management procurement with Intelligent Order Mana
 
 # Integrate Supply Chain Management procurement with Intelligent Order Management
 
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
 This article describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 
 To extend support for inbound transactions and provide transaction visibility alongside inventory visibility, a **Purchase Orders** entity has been introduced in Intelligent Order Management. The **Purchase Orders** entity includes the following features:
