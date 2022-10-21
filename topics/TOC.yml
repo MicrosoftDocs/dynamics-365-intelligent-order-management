@@ -58,6 +58,8 @@
         href: orchestration-flows.md
       - name: Run sample order orchestration flow from BigCommerce
         href: run-sample-order-bigcommerce.md
+      - name: Manual order orchestration
+        href: manual-order-orchestration.md
     - name: Policies and rules
       href: policies-rules.md
     - name: Internal external ID mapping
