@@ -11,6 +11,7 @@ title: State framework architecture
 # State framework architecture
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes the state framework architecture in Microsoft Dynamics 365 Intelligent Order Management.
 
