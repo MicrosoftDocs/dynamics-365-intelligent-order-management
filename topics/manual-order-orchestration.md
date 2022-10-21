@@ -104,7 +104,7 @@ If you maintain more than one substitute item, the application will select the f
 
 ### How simple substitution works
 
-During order creation (either manual or through an intake provider), a plug-in checks for a substitute product for the requested customer product in the product master data. If a substitute product is found, it appears in the **Existing Product** field, and the requested customer product appears in the **Requested Product** field. Additionally, the **Is Substitute** option on the **Order product** page is set to **Yes**, and both the **Requested Product** and **Is Substitute** fields can viewed on that page. These fields are locked for editing to help prevent unintentional updates. The plug-in runs only during order creation. It doesn't run during order changes.
+During order creation (either manual or through an intake provider), a plug-in checks for a substitute product for the requested customer product in the product master data. If a substitute product is found, it appears in the **Existing Product** field, and the requested customer product appears in the **Requested Product** field. Additionally, the **Is Substitute** option on the **Order product** page is set to **Yes**, and both the **Requested Product** and **Is Substitute** fields can be viewed on that page. These fields are locked for editing to help prevent unintentional updates. The plug-in runs only during order creation. It doesn't run during order changes.
 
 > [!NOTE]
 > If you delete or change a substitute product, you must also delete or change the product relationship accordingly.
