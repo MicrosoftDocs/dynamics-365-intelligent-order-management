@@ -135,8 +135,10 @@ To launch the e-commerce demo app, follow these steps.
 
 Once the order is placed, it can be verified inside the Intelligent Order Management sales table. 
 
+To verify the order, follow these steps.
 
-Go back to Intelligent Order Management using the area switcher, then select Sales orders from the side navigation, and find the order you created at the top of the list. Select the order to open it and review order details.
+1. In the left navigation pane, select the area switcher on the bottom left, and then select **Sales orders**.
+1. The order you created appears at the top of the list. Select the order to open it and review the order details.
 
 Once Intelligent Order Management receives an order it runs an orchestration flow, eventually sending it to the appropriate warehouse. 
 
@@ -166,11 +168,15 @@ Once Intelligent Order Management receives an order it runs an orchestration flo
 
 ### 2.1 Demo fulfillment application
 
-Next, use the Demo Fulfillment Provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
+Next, use the demo fulfillment provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
+
+1. In the left navigation pane, select the area switcher on the bottom left, and then select **Demo Providers**.
+1. On the **Demo Providers** page, under **Fulfillment Center - Demo**, select **Launch Demo**.
+1. Select the order in question, then use the wizard to move it through fulfillment steps all the way to shipment. Once this is complete, you should be able to see the updated status reflected in the Intelligent Order Management sales order table.
+
 
 ![IMG 22](media/demoproviders.png)
 
-Here you will select the order in question, then use the wizard to move it through fulfillment steps all the way to shipment. Once this is complete, you should be able to see the updated status reflected in the Intelligent Order Management sales order table. 
 Inbound Accept
 
 ![IMG 23](media/inboundaccept.png)
