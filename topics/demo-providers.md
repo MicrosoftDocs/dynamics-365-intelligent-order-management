@@ -140,30 +140,29 @@ To verify the order, follow these steps.
 1. In the left navigation pane, select the area switcher on the bottom left, and then select **Sales orders**.
 1. The order you created appears at the top of the list. Select the order to open it and review the order details.
 
-Once Intelligent Order Management receives an order it runs an orchestration flow, eventually sending it to the appropriate warehouse. 
+When Intelligent Order Management receives an order, it runs an orchestration flow, eventually sending the order to the appropriate warehouse. 
 
-#### Step 1.2. Select A product from home screen or their respective category page.
+<!-- #### Step 1.2. Select A product from home screen or their respective category page.-->
      
 ![IMG 16](media/contoso1.png)
 
-#### Step 1.3. Select quantity and add it to your cart, then Place Order.
+<!-- #### Step 1.3. Select quantity and add it to your cart, then Place Order.-->
      
 ![IMG 17](media/contoso2.png)
 
+
 ![IMG 18](media/contoso3.png)
 
-#### Step 1.4. You will see a prefilled checkout form with demo customer info. If you want, you can change the info and create an order.
+<!-- #### Step 1.4. You will see a prefilled checkout form with demo customer info. If you want, you can change the info and create an order.-->
 
 ![IMG 19](media/contoso4.png)
 
-#### Step 1.5. Once the order is created successfully, it will redirect to you to a confirmation screen.
+<!-- #### Step 1.5. Once the order is created successfully, it will redirect to you to a confirmation screen.-->
 
 ![IMG 20](media/contoso5.png)
 
 
-
 ![IMG 21](media/salesorders.png)
-
 
 
 ### 2.1 Demo fulfillment application
