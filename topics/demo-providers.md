@@ -154,7 +154,7 @@ Inventory System
 
 Products
  
-![IMG 28](media/products.png)
+<!--![IMG 28](media/products.png)-->
 
 Warehouses
 
