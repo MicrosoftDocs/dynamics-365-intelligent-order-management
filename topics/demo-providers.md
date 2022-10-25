@@ -115,9 +115,30 @@ Once the orchestration flow is published, the demo providers are ready to use. T
 
 ![IMG 15](media/demoproviders.png)
 
-### Step 1.1 Launch Ecommerce – Demo App
+### Step 1.1 Launch the e-commerce demo app
      
-Play the part of a consumer as you place an order at a simulated e-commerce store. The order will then flow into Intelligent Order Management, where you can view its status and details in the sales and fulfillment order tables.
+Launch the e-commerce demo app to play the part of a consumer as you place an order at a simulated e-commerce store. The order will then flow into Intelligent Order Management, where you can view its status and details in the sales and fulfillment order tables.
+
+To launch the e-commerce demo app, follow these steps.
+
+1. In the left navigation pane, select the area switcher on the bottom left, and then select **Demo Providers**.
+1. On the **Demo Providers** page, under **Ecommerce Store - Demo**, select **Launch Demo**. The e-commerce demo site appears.
+1. Select a product from the home screen or from a category page.
+1. Enter or select a quantity.
+1. Select **Add To Cart**.
+1. On the cart page, select **Place Order**.
+1. A prefilled checkout form with demo customer info appears. Optionally, you can change the customer information before creating the order.
+1. Select **Create Order**.
+1. Once the order is created successfully, you are redirected to a confirmation screen.
+
+#### Verify the order in the Intelligent Order Management
+
+Once the order is placed, it can be verified inside the Intelligent Order Management sales table. 
+
+
+Go back to Intelligent Order Management using the area switcher, then select Sales orders from the side navigation, and find the order you created at the top of the list. Select the order to open it and review order details.
+
+Once Intelligent Order Management receives an order it runs an orchestration flow, eventually sending it to the appropriate warehouse. 
 
 #### Step 1.2. Select A product from home screen or their respective category page.
      
@@ -137,13 +158,15 @@ Play the part of a consumer as you place an order at a simulated e-commerce stor
 
 ![IMG 20](media/contoso5.png)
 
-Once the order is placed, it can be verified inside the Intelligent Order Management sales table. Go back to Intelligent Order Management using the area switcher, then select Sales orders from the side navigation, and find the order you created at the top of the list. Select the order to open it and review order details.
+
 
 ![IMG 21](media/salesorders.png)
 
-Once Intelligent Order Management receives an order it runs an orchestration flow, eventually sending it to the appropriate warehouse. Next, use the Demo Fulfillment Provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
+
 
 ### 2.1 Demo fulfillment application
+
+Next, use the Demo Fulfillment Provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
 
 ![IMG 22](media/demoproviders.png)
 
