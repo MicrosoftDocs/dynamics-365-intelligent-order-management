@@ -1,6 +1,6 @@
 ---
 author: rinitha-reddy
-description: This article describes demo providers in Microsoft Dynamics 365 Intelligent Order Management. It helps users ensure orders flow between Intelligent Order Management and other 3rd party providers.
+description: This article describes demo providers in Microsoft Dynamics 365 Intelligent Order Management that help ensure that orders flow between the app and third-party providers.
 ms.author: rikothap
 ms.date: 10/25/2022
 ms.topic: conceptual
@@ -13,10 +13,12 @@ title: Demo providers
 
 [!include [banner](includes/banner.md)]
 
-Demo providers are designed to help you see how orders flow between IOM (Dynamics 365 Intelligent Order Management) and its 3rd party connections. After setting things up, you will be able to generate a test order and monitor its status in IOM as it moves through each step of an orchestration flow from order validation all the way to fulfillment. These simulated providers include:
+This article describes demo providers in Microsoft Dynamics 365 Intelligent Order Management that help ensure that orders flow between the app and third-party providers.
+
+Demo providers are designed to help you see how orders flow between Intelligent Order Management and its third party connections. After setting things up, you will be able to generate a test order and monitor its status in Intelligent Order Management as it moves through each step of an orchestration flow from order validation all the way to fulfillment. These simulated providers include:
 
 - Demo E-commerce (to generate an order)
-- Demo Fulfillment (tp process and fulfill an order)
+- Demo Fulfillment (to process and fulfill an order)
 - Demo Inventory (to update inventory system after fulfillment)
 
 Before you can start using demo providers, you must set them up in four steps:
@@ -26,25 +28,28 @@ Before you can start using demo providers, you must set them up in four steps:
 3. Add providers.
 4. Activate demo order flow.
 
-## Set up Demo Providers
+## Set up demo providers
 
 
 ### Activate connections
 
 1.	Activate connections: 
- a.	From the IOM home page, select Settings, then click on Initial Connections
-     b.	Open each connection and wait for it to establish, confirmed by a green check, then click “Save and close”. 
+ a.	From the Intelligent Order Management home page, select **Settings**, then select **Initial Connections**.
+     b.	Open each connection and wait for it to establish, confirmed by a green check, then select **Save and close**. 
 
-Home->configure->Manage
+**Home \> Configure \> Manage**
 
 ![IMG 1](media/configuration1.png)
 ![IMG 2](media/configuration2.png)
 ![IMG 3](media/configuration3.png)
 
-After all the connections are established, click Activate System at the top.
+After all the connections are established, select **Activate System** at the top.
+
 2.	Change Fulfillment Process policy
-a.	Go to Settings > General app settings > Order handling preferences 
-b.	In the “Fulfillment Process policy”, change from the third option (Inventory check and Fulfillment Order Creation) to the second one (Fulfillment Order Creation)
+
+a.	Go to **Settings \> General app settings \> Order handling preferences**. 
+b.	In the **Fulfillment Process policy**, change from the third option (Inventory check and Fulfillment Order Creation) to the second one (Fulfillment Order Creation).
+
 ![IMG 4](media/orderhandlingpreference.png)
 
 ### Publish Policies
@@ -63,13 +68,14 @@ When activating the providers through the wizard, keep the default settings for 
 ![IMG 8](media/providerconnections.png)
 ![IMG 9](media/providersummary.png)
 
-After you activate the providers, it takes 6 minutes approx. for changes to take effect. You can verify that all the providers are active by going into Provider > Installed and see the status for each of the providers.
+After you activate the providers, it takes six minutes approx. for changes to take effect. You can verify that all the providers are active by going into Provider > Installed and see the status for each of the providers.
 
 ![IMG 10](media/providerlist.png)
 
 ### Publish Demo Orchestration Flow
 
-Go to Orchestrations > Flows, open “Demo Order Journey” and then Save and Publish. 
+Go to **Orchestrations \> Flows**, open **Demo Order Journey**, and then select **Save and Publish**. 
+
 If an issue is faced while publishing the orchestration flow, reselect the provider action and policy and then try again.
 
 ![IMG 11](media/orchestration.png)
@@ -80,16 +86,16 @@ If the policy is not published, make sure that the execution policies for the �
 ![IMG 13](media/orchestrationexecutionpolicies.png)
 ![IMG 14](media/orchestrationforfulfillment.png)
 
-## Use Demo Providers
+## Use demo providers
      
--	Once the orchestration flow is published, these Demo Providers are ready to use.
--	Click the area switcher on the bottom left and select Demo Providers from the list of areas.
+-	Once the orchestration flow is published, these demo providers are ready to use.
+-	Select the area switcher on the bottom left and select **Demo Providers** from the list of areas.
 
 ![IMG 15](media/demoproviders.png)
 
 ### Step 1.1 Launch Ecommerce – Demo App
      
-Play the part of a consumer as you place an order at a simulated e-commerce store. The order will then flow into IOM, where you can view its status and details in the sales and fulfillment order tables.
+Play the part of a consumer as you place an order at a simulated e-commerce store. The order will then flow into Intelligent Order Management, where you can view its status and details in the sales and fulfillment order tables.
 
 ### Step 1.2. Select A product from home screen or their respective category page.
      
@@ -109,17 +115,17 @@ Play the part of a consumer as you place an order at a simulated e-commerce stor
 
 ![IMG 20](media/contoso5.png)
 
-Once the order is placed, it can be verified inside the IOM sales table. Go back to IOM using the area switcher, then select Sales orders from the side navigation, and find the order you created at the top of the list. Click open the order and review order details.
+Once the order is placed, it can be verified inside the Intelligent Order Management sales table. Go back to Intelligent Order Management using the area switcher, then select Sales orders from the side navigation, and find the order you created at the top of the list. Select the order to open it and review order details.
 
 ![IMG 21](media/salesorders.png)
 
-Once IOM receives an order it runs an orchestration flow, eventually sending it to the appropriate warehouse. Next, use the Demo Fulfillment Provider to fulfill the order. Use the area switcher to navigate back to Demo Providers and select Demo Fulfillment Provider.
+Once Intelligent Order Management receives an order it runs an orchestration flow, eventually sending it to the appropriate warehouse. Next, use the Demo Fulfillment Provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
 
-### 2.1 Demo Fulfillment Application
+### 2.1 Demo fulfillment application
 
 ![IMG 22](media/demoproviders.png)
 
-Here you will select the order in question, then use the wizard to move it through fulfillment steps all the way to shipment. Once this is complete, you should be able to see the updated status reflected in IOM’s sales order table. 
+Here you will select the order in question, then use the wizard to move it through fulfillment steps all the way to shipment. Once this is complete, you should be able to see the updated status reflected in the Intelligent Order Management sales order table. 
 Inbound Accept
 
 ![IMG 23](media/inboundaccept.png)
@@ -136,11 +142,12 @@ Order Complete
 
 ![IMG 26](media/ordershipped.png)
 
-Return to the IOM Sales orders table and check the updated status of your order. 
+Return to the Intelligent Order Management Sales orders table and check the updated status of your order. 
 
-### 3.1 Demo Inventory Application
+### 3.1 Demo inventory application
      
-Here is where you can see the information regarding different inventories and their respective products and warehouses. Once the order is shipped to the Fulfillment Center, the quantity of the product is decreased according to the sales order. 
+Here is where you can see the information regarding different inventories and their respective products and warehouses. Once the order is shipped to the fulfillment center, the quantity of the product is decreased according to the sales order. 
+
 Inventory System
 
 ![IMG 27](media/inventorysystem.png)
