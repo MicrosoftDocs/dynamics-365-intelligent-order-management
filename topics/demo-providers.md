@@ -159,43 +159,67 @@ When Intelligent Order Management receives an order, it runs an orchestration fl
 
 Next, launch the demo fulfillment provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
 
+To launch the demo fulfillment application, follow these steps.
+
 1. In the left navigation pane, select the area switcher on the bottom left, and then select **Demo Providers**.
 1. On the **Demo Providers** page, under **Fulfillment Center - Demo**, select **Launch Demo**.
 1. Select the order in question, then use the wizard to move it through fulfillment steps all the way to shipment. Once this is complete, you should be able to see the updated status reflected in the Intelligent Order Management sales order table.
 
+#### Inbound Accept
 
-![IMG 22](media/demoproviders.png)
-
-Inbound Accept
+In the demo fulfillment application, select **Inbound Order** to view details about the inbound order on the **Inbound Order** screen, as shown in the following example image. 
 
 ![IMG 23](media/inboundaccept.png)
 
-Outbound Accept
+Select **Accept** to move to the next screen of the wizard.
+
+#### Outbound Accept
+
+You can view details about the outbound order on the **Outbound Order** screen, as shown in the following example image.
 
 ![IMG 24](media/outboundaccept.png)
 
-Ready & ship
+Select **Accept** to move to the next screen of the wizard.
+
+#### Ready to Ship
+
+You can view details about the ship status of the order on the **Ready to Ship** screen, as shown in the following example image.
 
 ![IMG 25](media/readytoship.png)
 
-Order Complete
+Select **Ship Order** to move to the next screen of the wizard.
+
+#### Order Complete
+
+You can view details about the shipped order on the **Shipped** screen, as shown in the following example image.
 
 ![IMG 26](media/ordershipped.png)
 
-Return to the Intelligent Order Management Sales orders table and check the updated status of your order. 
+Select **Finish** to close the wizard. Return to the Intelligent Order Management and check the updated status of your order in the sales orders table. 
 
 ### Launch the demo inventory application
      
 Here is where you can see the information regarding different inventories and their respective products and warehouses. Once the order is shipped to the fulfillment center, the quantity of the product is decreased according to the sales order. 
 
-Inventory System
+To launch the demo inventory application, follow these steps.
+
+1. In the left navigation pane, select the area switcher on the bottom left, and then select **Demo Providers**.
+1. On the **Demo Providers** page, under **Inventory System - Demo**, select **Launch Demo**.
+
+#### Inventory Dashboard
+
+In the inventory application, select **Inventory Dashboard** to see a list of products with inventory, as shown in the following example image.
 
 ![IMG 27](media/inventorysystem.png)
 
-Products
+#### Products
+
+Select **Products** to see a list of products and product IDs, as shown in the following example image.
  
 ![IMG 28](media/productlist.png)
 
-Warehouses
+#### Warehouses
+
+Select **Warehouses** to see a list of warehouses, as shown in the following example image.
 
 ![IMG 29](media/warehouses.png)
