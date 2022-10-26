@@ -165,9 +165,9 @@ When Intelligent Order Management receives an order, it runs an orchestration fl
 ![IMG 21](media/salesorders.png)
 
 
-### 2.1 Demo fulfillment application
+### 2.1 Launch the demo fulfillment application
 
-Next, use the demo fulfillment provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
+Next, launch the demo fulfillment provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
 
 1. In the left navigation pane, select the area switcher on the bottom left, and then select **Demo Providers**.
 1. On the **Demo Providers** page, under **Fulfillment Center - Demo**, select **Launch Demo**.
@@ -194,7 +194,7 @@ Order Complete
 
 Return to the Intelligent Order Management Sales orders table and check the updated status of your order. 
 
-### 3.1 Demo inventory application
+### 3.1 Launch the demo inventory application
      
 Here is where you can see the information regarding different inventories and their respective products and warehouses. Once the order is shipped to the fulfillment center, the quantity of the product is decreased according to the sales order. 
 
