@@ -114,7 +114,7 @@ To verify the order, follow these steps.
 
 When Intelligent Order Management receives an order, it runs an orchestration flow, eventually sending the order to the appropriate warehouse. 
 
-### Launch the demo fulfillment application
+### Launch the demo fulfillment app
 
 Next, launch the demo fulfillment provider app to fulfill the order. 
 
@@ -124,19 +124,19 @@ To launch the demo fulfillment provider app, follow these steps.
 1. On the **Demo Providers** page, under **Fulfillment Center - Demo**, select **Launch Demo**.
 1. Select the order you placed, then use the wizard to move through the fulfillment steps all the way to shipment. Once you've completed the wizard, you should be able to see the updated status reflected in the Intelligent Order Management sales order table.
 
-#### Inbound Accept
+#### Inbound Order
 
 In the demo fulfillment application, select **Inbound Order** to view details about the inbound order on the **Inbound Order** screen, as shown in the following example image. 
 
-![IMG 23](media/inboundaccept.png)
+![Demo fulfillment app Inbound Order screen](media/inboundaccept.png)
 
 Select **Accept** to move to the next screen of the wizard.
 
-#### Outbound Accept
+#### Outbound Order
 
 You can view details about the outbound order on the **Outbound Order** screen, as shown in the following example image.
 
-![IMG 24](media/outboundaccept.png)
+![Demo fulfillment app Outbound Order screen](media/outboundaccept.png)
 
 Select **Accept** to move to the next screen of the wizard.
 
@@ -144,7 +144,7 @@ Select **Accept** to move to the next screen of the wizard.
 
 You can view details about the ship status of the order on the **Ready to Ship** screen, as shown in the following example image.
 
-![IMG 25](media/readytoship.png)
+![Demo fulfillment app Ready to Ship screen](media/readytoship.png)
 
 Select **Ship Order** to move to the next screen of the wizard.
 
@@ -152,11 +152,11 @@ Select **Ship Order** to move to the next screen of the wizard.
 
 You can view details about the shipped order on the **Shipped** screen, as shown in the following example image.
 
-![IMG 26](media/ordershipped.png)
+![Demo fulfillment app Order Complete screen](media/ordershipped.png)
 
 Select **Finish** to close the wizard. Return to the Intelligent Order Management and check the updated status of your order in the sales orders table. 
 
-### Launch the demo inventory application
+### Launch the demo inventory app
      
 The demo inventory app is where you can see the information regarding different inventories and their respective products and warehouses. Once the order is shipped to the fulfillment center, the quantity of the product is decreased according to the sales order. 
 
@@ -169,16 +169,16 @@ To launch the demo inventory app, follow these steps.
 
 In the demo inventory app, select **Inventory Dashboard** to see a list of products with inventory, as shown in the following example image.
 
-![IMG 27](media/inventorysystem.png)
+![Demo inventory app Inventory Dashboard screen](media/inventorysystem.png)
 
 #### Products
 
 Select **Products** to see a list of products and product IDs, as shown in the following example image.
  
-![IMG 28](media/productlist.png)
+![Demo inventory app Products screen](media/productlist.png)
 
 #### Warehouses
 
 Select **Warehouses** to see a list of warehouses, as shown in the following example image.
 
-![IMG 29](media/warehouses.png)
+![Demo inventory app Warehouses screen](media/warehouses.png)
