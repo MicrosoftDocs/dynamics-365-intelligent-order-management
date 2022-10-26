@@ -1,25 +1,21 @@
 ---
-title: Intelligent Order Management Insights reporting
-description: This article provides a full list of available insights reports in Microsoft Dynamics 365 Intelligent Order Management.
+title: Work with insights reports
+description: This article gives an overview of insights reports in Microsoft Dynamics 365 Intelligent Order Management.
 author: derekkwanpm
 ms.date: 10/26/2022
-ms.topic: conceptual
+ms.topic: overview
 ms.author: derekkwan
 ms.reviewer: josaw
+
 ---
 
-
-# Intelligent Order Management Insights reporting
+# Work with insights reports
 
 [!include [banner](includes/banner.md)]
 
-This article provides a full list of available insights reports in Microsoft Dynamics 365 Intelligent Order Management.
+This article gives an overview of insights reports in Microsoft Dynamics 365 Intelligent Order Management.
 
-Dynamics 365 Intelligent Order Management provides comprehensive out-of-the-box *insights reports* that cover a broad range of key performance indicators (KPIs) that critical to your business. 
-
-You can use insights reports to find various metrics such as products by order line, orders in jeopardy, returns by return reason, on time shipped ratio, and fill rate. 
-
-Intelligent Order Management insights reports are powered by [Microsoft embedded Power BI](/power-bi/developer/embedded/embedded-analytics-power-bi).
+Intelligent Order Management provides comprehensive out-of-the-box insights reports that cover a broad range of key performance indicators (KPIs) that are critical to your business. You can use insights reports to find and analyze various metrics such as products by order line, orders in jeopardy, returns by return reason, on time shipped ratio, and fill rates. Intelligent Order Management insights reports are powered by [Microsoft embedded Power BI](/power-bi/developer/embedded/embedded-analytics-power-bi).
 
 ## Insights report components
 
@@ -27,7 +23,7 @@ Every insights report dashboard includes filters, help text, and multiple settin
 
 ![Insights dashboard navigation.](media/insights_nav.png)
 
-- **Filters** - Each dashboard includes a date filter and data filters that are relevant to the page. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visuals on the entire page.
+- **Filters** - Each dashboard includes date and data filters that are relevant to the page. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visuals on the entire page.
 - **Help text** - Each visual on the dashboard has an **i** symbol that displays helpful information about the related visual.
 - **Settings** - Each visual, when selected, displays a menu with additional settings. These settings include:
     - **Drill up**/**Drill down**/**Next level in hierarchy** - Drill up or down on the current visual to see the next level up or down in data. For example, you can drill up from **Months** to **Year**.
@@ -44,7 +40,7 @@ Every insights report dashboard includes filters, help text, and multiple settin
 
 The following table provides the full list of current metrics and descriptions for insights reports. The description in the table is the same as the help text description available in the product.
 
-The **Category** is located in the left navigation menu. **Page** is the tab on the page where the report exists. For example, when you select **Order dashboard** in the left navigation pane, and then select **Return Insights**, the page with all the returns metrics will open.
+The **Category** is located in the left navigation menu. **Page** is the tab on the page where the report exists. For example, when you select **Order dashboard** in the left navigation pane, and then select **Return Insights**, a page with all the returns metrics will open.
 
 | Category          | Page                 | Metric                          | Type  | Description                                                                                                                                                                                |
 |-------------------|----------------------|---------------------------------|-------|--------------------|
