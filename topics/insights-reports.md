@@ -44,7 +44,7 @@ Every insights report dashboard includes filters, help text, and multiple settin
 
 The following table provides the full list of current metrics and descriptions for insights reports. The description in the table is the same as the help text description available in the product.
 
-The **Category** is located in the left navigation menu. **Page** is the tab on the actual page where the report exists. For example, when you select **Order dashboard** in the left page, and then select **Return Insights**, the page with all the returns metrics will open.
+The **Category** is located in the left navigation menu. **Page** is the tab on the page where the report exists. For example, when you select **Order dashboard** in the left navigation pane, and then select **Return Insights**, the page with all the returns metrics will open.
 
 | Category          | Page                 | Metric                          | Type  | Description                                                                                                                                                                                |
 |-------------------|----------------------|---------------------------------|-------|--------------------|
@@ -153,25 +153,23 @@ The **Category** is located in the left navigation menu. **Page** is the tab on 
 
 ## Customize dashboards 
 
-Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's **Insights** reports or create new reports.
+Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's insights reports or create new reports.
 
-For more details about adminstering roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
+For more information about administering roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
 
-If you do have the  proper access to customize or create **Insights** reports, you will be able to select **Resume editing** on any **Insights** page.Wh
+If you have access to customize or create insights reports, you will be able to select **Resume editing** on any insights page.
 
 ![Customize dashboard step 1](media/customize_dash_1.png)
 
-When you select **Resume editing** you will be in edit mode.
+When you select **Resume editing**, you will be in edit mode.
 
 ![Customize dashboard step 2](media/customize_dash_2.png)
 
-- (1) Editing controls - Use the controls on the top menu bar to save, discard, or publish your current draft. If you publish, you will publish changes for everyone in your organization.
-- (2) Customization controls - There are three controls in the right pane:
-
+- (1) **Edit controls** - Use the controls on the top menu bar to save, discard, or publish your current draft. If you publish, you will publish changes for everyone in your organization.
+- (2) **Customization controls** - There are three controls in the right pane:
     - **Filters** - Expand the **Filters** section to see which filters are currently applied, and to edit or add more.
     - **Visualizations** - Select any visual on the main screen and the select a new visual to change it. For more information about changing the visuals, see [Change the type of visualization in a Power BI report](/power-bi/visuals/power-bi-report-change-visualization-type). You can also edit axis information, legends, and more. For more detailed instructions, see [Customize visualization titles, backgrounds, labels, and legends](/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend).
     - **Fields** - These are the fields available for your current schema. Selecting any visual in the main screen highlights the fields being used for that specific visual. You can add or delete fields and update the data powering any visual from here.
 
-For more information on how to customize PBI reports, see [Customize reports guide](/dynamics365/customer-service/customize-reports)
-
-- (3) New page - Create a new blank page to build your own dashboard of visuals. For instructions about how to add viduals to a page, see [Add visuals to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i?tabs=powerbi-desktop).
+    For more information on how to customize PBI reports, see [Customize reports guide](/dynamics365/customer-service/customize-reports)
+- (3) **New page** - Create a new blank page to build your own dashboard of visuals. For instructions about how to add viduals to a page, see [Add visuals to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i?tabs=powerbi-desktop).
