@@ -37,18 +37,8 @@ Before you can start using demo providers, you must set them up in four stages:
 To activate connections, follow these steps.
 
 1. From the Intelligent Order Management home page, select **Settings**, then select **Initial Connections**.  
-1.	Open each connection, wait for it to establish (confirmed by a green check mark), then select **Save and close**. 
+1. Open each connection, wait for it to establish (confirmed by a green check mark), then select **Save and close**. 
 1. After all the connections are established, on the top menu, select **Activate System**.
-
-<!--
-
-Home \> Configure \> Manage
-
-![IMG 1](media/configuration1.png)
-![IMG 2](media/configuration2.png)
-![IMG 3](media/configuration3.png)
-
--->
 
 ####	Change the fulfillment process policy
 
@@ -115,7 +105,7 @@ Once the orchestration flow is published, the demo providers are ready to use. T
 
 ![IMG 15](media/demoproviders.png)
 
-### Step 1.1 Launch the e-commerce demo app
+### Launch the e-commerce demo app
      
 Launch the e-commerce demo app to play the part of a consumer as you place an order at a simulated e-commerce store. The order will then flow into Intelligent Order Management, where you can view its status and details in the sales and fulfillment order tables.
 
@@ -165,7 +155,7 @@ When Intelligent Order Management receives an order, it runs an orchestration fl
 ![IMG 21](media/salesorders.png)
 
 
-### 2.1 Launch the demo fulfillment application
+### Launch the demo fulfillment application
 
 Next, launch the demo fulfillment provider to fulfill the order. Use the area switcher to navigate back to **Demo Providers**, and then select **Demo Fulfillment Provider**.
 
@@ -194,7 +184,7 @@ Order Complete
 
 Return to the Intelligent Order Management Sales orders table and check the updated status of your order. 
 
-### 3.1 Launch the demo inventory application
+### Launch the demo inventory application
      
 Here is where you can see the information regarding different inventories and their respective products and warehouses. Once the order is shipped to the fulfillment center, the quantity of the product is decreased according to the sales order. 
 
@@ -204,7 +194,7 @@ Inventory System
 
 Products
  
-<!--![IMG 28](media/products.png)-->
+![IMG 28](media/productlist.png)
 
 Warehouses
 
