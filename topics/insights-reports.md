@@ -21,8 +21,6 @@ Intelligent Order Management provides comprehensive out-of-the-box insights repo
 
 Every insights report dashboard includes filters, help text, and multiple settings. 
 
-<!--![Insights dashboard navigation.](media/insights_nav.png)-->
-
 - **Filters** - Each dashboard includes relevant date and data filters. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visual information on the entire dashboard.
 - **Help text** - Each visual component on the dashboard has an **i** symbol that displays helpful information about it.
 - **Settings** - Each visual component displays an ellipsis ("**...**") menu that, when selected, displays additional settings. These settings include:
@@ -153,8 +151,6 @@ Intelligent Order Management allows you to customize insights report dashboards.
 
 If you have access to customize or create insights reports, you'll be able to select **Resume editing** on any insights page to enter edit mode.
 
-<!--![Customize dashboard step 1](media/customize_dash_1.png)-->
-
 The following dashboard UI elements allow you to customize dashboards.
 
 - **Edit controls** - Use the controls on the top menu bar to save, discard, or publish your current draft. If you publish, you'll publish changes for everyone in your organization.
@@ -168,4 +164,4 @@ The following dashboard UI elements allow you to customize dashboards.
 
 The following example image shows a dashboard highlighting edit controls (1), customization controls (2), and the new page control (3).
 
-![Customize dashboard step 2](media/customize_dash_2.png)
+![Insights report dashboard highlighting edit controls, customization controls, and the new page control](media/customize_dash_2.png)
