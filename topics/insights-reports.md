@@ -36,7 +36,7 @@ Every insights report dashboard includes filters, help text, and multiple settin
     - **Get insights** - This setting allows you to view automatically generated insights for a specific visual component, if available.
     - **Sort axis** - This setting allows you to customize axis information on a specific visual component. 
 
-## Insights metrics 
+## Insights report metrics 
 
 The following table provides the full list of current metrics and descriptions for insights reports. The description in the table is the same as the help text description available in the product.
 
@@ -147,7 +147,7 @@ You can access the category in the left navigation menu. You can access a specif
 | Provider insights | Outbound requests    | Outbound requests failed by date by provider   | Graph | Total requests sent TO providers that have failed by date on a trendline.        |
 | Provider insights | Outbound requests    | Outbound requests anomalies on execution time  | Graph | Providers with outbound requests that exceeded the allowable time for an event to process.  |
 
-## Customize dashboards 
+## Customize insight report dashboards 
 
 Intelligent Order Management allows you to customize insights report dashboards. Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's insights reports or create new reports. For more information about administering roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
 
@@ -166,6 +166,6 @@ The following dashboard UI elements allow you to customize dashboards.
     For more information on how to customize Power BI reports, see [Customize reports guide](/dynamics365/customer-service/customize-reports)
 - **New page** - Select the plus symbol (**+**) at the bottom of the dashboard to create a new blank page to build your own dashboard of visual components. For instructions on how to add visual components to a dashboard page, see [Add visuals to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i?tabs=powerbi-desktop).
 
-The following example image shows a dashboard with edit controls (1), customization controls (2), and the new page control (3) highlighted.
+The following example image shows a dashboard highlighting edit controls (1), customization controls (2), and the new page control (3).
 
 ![Customize dashboard step 2](media/customize_dash_2.png)
