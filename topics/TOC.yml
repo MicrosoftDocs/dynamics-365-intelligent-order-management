@@ -130,6 +130,8 @@
       href: report-powerbi-integration.md
     - name: Power BI dashboards
       href: power-bi-dashboards.md
+    - name: Work with insights reports
+      href: insights-reports.md
   - name: Administration
     items: 
     - name: Administration overview
