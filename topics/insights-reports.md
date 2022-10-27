@@ -2,7 +2,7 @@
 title: Work with insights reports
 description: This article gives an overview of insights reports in Microsoft Dynamics 365 Intelligent Order Management.
 author: derekkwanpm
-ms.date: 10/26/2022
+ms.date: 10/27/2022
 ms.topic: overview
 ms.author: derekkwan
 ms.reviewer: josaw
@@ -15,45 +15,45 @@ ms.reviewer: josaw
 
 This article gives an overview of insights reports in Microsoft Dynamics 365 Intelligent Order Management.
 
-Intelligent Order Management provides comprehensive out-of-the-box insights reports that cover a broad range of key performance indicators (KPIs) that are critical to your business. You can use insights reports to find and analyze various metrics such as products by order line, orders in jeopardy, returns by return reason, on time shipped ratio, and fill rates. Intelligent Order Management insights reports are powered by [Microsoft embedded Power BI](/power-bi/developer/embedded/embedded-analytics-power-bi).
+Intelligent Order Management provides comprehensive out-of-the-box insights reports that cover a broad range of key performance indicators (KPIs) that are critical to your business. You can use insights reports to find and analyze various metrics such as products by order line, orders in jeopardy, returns by return reason, on-time shipped ratio, and fill rates. Intelligent Order Management insights reports are powered by [Microsoft Power BI embedded analytics](/power-bi/developer/embedded/embedded-analytics-power-bi).
 
-## Insights report components
+## Insights report features
 
 Every insights report dashboard includes filters, help text, and multiple settings. 
 
-![Insights dashboard navigation.](media/insights_nav.png)
+<!--![Insights dashboard navigation.](media/insights_nav.png)-->
 
-- **Filters** - Each dashboard includes date and data filters that are relevant to the page. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visuals on the entire page.
-- **Help text** - Each visual on the dashboard has an **i** symbol that displays helpful information about the related visual.
-- **Settings** - Each visual, when selected, displays a menu with additional settings. These settings include:
-    - **Drill up**/**Drill down**/**Next level in hierarchy** - Drill up or down on the current visual to see the next level up or down in data. For example, you can drill up from **Months** to **Year**.
-    - **Next level in hierarchy**/**Expand all down one level in the hierarchy** - Expand levels down in the hierarchy of data. for example, from **Months** to **Quarters**.
-    - **Filters on visual** - Display current filters affecting a specific visual.
-    - **Focus mode** - Navigate to an expanded view of a specific visual.
-    - **Export data** - Export the underlying data to a CSV format. Any filters that are affecting the visual will be used in the export.
-    - **Show as a table** - View the underlying data for a specific visual in a table form.
-    - **Spotlight** - Highlight the selected visual.
-    - **Get insights** - View auto-generated insights for a specific visual, if available.
-    - **Sort axis** - Customize axis information on a specific visual.
+- **Filters** - Each dashboard includes relevant date and data filters. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visual information on the entire dashboard.
+- **Help text** - Each visual component on the dashboard has an **i** symbol that displays helpful information about it.
+- **Settings** - Each visual component displays a ellipsis ("**...**") menu that, when selected, displays additional settings. These settings include:
+    - **Drill up**/**Drill down**/**Next level in hierarchy** - This setting allows you to drill up or down on the current visual component to see the next level (up or down) of data. For example, you can drill up from **Months** to **Year**.
+    - **Next level in hierarchy**/**Expand all down one level in the hierarchy** - This setting allows you to expand levels up or down in the hierarchy of data. For example, you can expand up from **Months** to **Quarters**.
+    - **Filters on visual** - This setting allows you to display the current filters that affect a specific visual component.
+    - **Focus mode** - This setting allows you to navigate to an expanded view of a specific visual component.
+    - **Export data** - This setting allows you to export the underlying data in a comma-separated value (CSV) format. Any filters that affect the visual component are used in the export.
+    - **Show as a table** - This setting allows you to view the underlying data for a specific visual component in table form.
+    - **Spotlight** - This setting allows you to highlight the selected visual component.
+    - **Get insights** - This setting allows you to view automatically generated insights for a specific visual component, if available.
+    - **Sort axis** - This setting allows you to customize axis information on a specific visual component. 
 
 ## Insights metrics 
 
 The following table provides the full list of current metrics and descriptions for insights reports. The description in the table is the same as the help text description available in the product.
 
-The **Category** is located in the left navigation menu. **Page** is the tab on the page where the report exists. For example, when you select **Order dashboard** in the left navigation pane, and then select **Return Insights**, a page with all the returns metrics will open.
+You can access the category in the left navigation menu. You can access a specific insights report by selecting the page tab on the dashboard page. For example, when you select the **Order dashboard** category in the left navigation pane, and then select the **Return Insights** tab, an insights report page opens listing all the returns metrics.
 
 | Category          | Page                 | Metric                          | Type  | Description                                                                                                                                                                                |
 |-------------------|----------------------|---------------------------------|-------|--------------------|
 | Order dashboard   | Overview             | Lines per order                 | KPI   | Average order lines per order received.  |
-| Order dashboard   | Overview             | Orders mtd                      | KPI   | Total orders received for current month to date (Page date filters don't update this KPI). |
+| Order dashboard   | Overview             | Orders mtd                      | KPI   | Total orders received for current month to date. **Page date** filters don't update this KPI. |
 | Order dashboard   | Overview             | Orders mom growth rate          | KPI   | Growth rate of orders received month over month.  |
-| Order dashboard   | Overview             | Revenue (base) mtd              | KPI   | Total revenue of all orders for current month to date (Page date filters do not update this KPI). |
+| Order dashboard   | Overview             | Revenue (base) mtd              | KPI   | Total revenue of all orders for current month to date. **Page date** filters do not update this KPI. |
 | Order dashboard   | Overview             | Revenue (base) mom growth rate  | KPI   | Growth rate of revenue from orders month over month.  |
 | Order dashboard   | Overview             | Orders by provider              | Graph | Orders received grouped by order providers connected to Intelligent Order Management.  |
 | Order dashboard   | Overview             | Order details by region         | Map   | Map view of each order destination region's order details, such as revenue or order count. |
 | Order dashboard   | Overview             | Orders by date                  | Graph | Order count by date on a trendline. |
 | Order dashboard   | Overview             | Orders by status reason         | Graph | Order count grouped by order status.  |
-| Order dashboard   | Overview             | Top products by order line      | Graph | Top products ordered based on order lines.  |
+| Order dashboard   | Overview             | Top products by order line      | Graph | Top products ordered, based on order lines.  |
 | Order dashboard   | Order insights       | Lines per order                 | KPI   | Average order lines per order received.  |
 | Order dashboard   | Order insights       | Orders                          | KPI   | Total orders received.  |
 | Order dashboard   | Order insights       | Order lines                     | KPI   | Total order lines received. |
@@ -117,7 +117,7 @@ The **Category** is located in the left navigation menu. **Page** is the tab on 
 | Monitoring        | Order anomalies      | Quarterly revenue               | Graph | Revenue of orders by quarter on a trendline with any anomalies. Anomalies are defined as any values that are below 70% of the expected range of that value based on historical data.  |
 | Monitoring        | Order anomalies      | Orders                          | Table | Total orders on a trendline with any anomalies. Anomalies are defined as any values that are below 70% of the expected range of that value based on historical data.  |
 | Provider insights | Overview             | Total requests                  | KPI   | Total message and action events associated with providers connected to Intellingent Order Management. For example, big Commerce orders and order updates, FedEx shipping, and delivery notifications.    |
-| Provider insights | Overview             | MTD total request growth rate   | KPI   | Growth rate month to date of requests associated with providers connected to Intellingent Order Management. Page date filters don't update this KPI.  |
+| Provider insights | Overview             | MTD total request growth rate   | KPI   | Growth rate month to date of requests associated with providers connected to Intellingent Order Management. **Page date** filters don't update this KPI.  |
 | Provider insights | Overview             | SLA total requests              | KPI   | Percentage of requests that met the SLA for a given provider connected to Intellingent Order Management, where the SLA is defined as the length of allowable time for an event to process.                |
 | Provider insights | Overview             | Total requests failed           | KPI   | Total requests from providers that have failed.  |
 | Provider insights | Overview             | Total requests above threshold  | KPI   | Total requests that exceeded the allowable time for an event to process for a given provider.    |
@@ -127,7 +127,7 @@ The **Category** is located in the left navigation menu. **Page** is the tab on 
 | Provider insights | Overview             | Total requests failed by date   | Graph | Total failed requests by date on a trendline. |
 | Provider insights | Overview             | Total requests above threshold by date   | Graph | Total requests that exceeded the allowable time for an event to process for a given provider by date on a trendline.  |
 | Provider insights | Inbound requests     | Inbound requests                | KPI   | Total requests coming FROM providers connected to Intelligent Order Management. For example, an order from Big Commerce or a shipping notification from FedEx.  |
-| Provider insights | Inbound requests     | MTD inbound request growth rate | KPI   | Growth rate month to date of requests coming FROM providers connected to Intelligent Order Management. Page date filters don't update this KPI. |
+| Provider insights | Inbound requests     | MTD inbound request growth rate | KPI   | Growth rate month to date of requests coming FROM providers connected to Intelligent Order Management. **Page date** filters don't update this KPI. |
 | Provider insights | Inbound requests     | SLA inbound requests            | KPI   | Percentage of inbound requests that met the SLA for a given provider connected to Intelligent Order Management, where the SLA is defined as the length of allowable time for an event to process.        |
 | Provider insights | Inbound requests     | Inbound requests failed         | KPI   | Total requests coming FROM providers that have failed. |
 | Provider insights | Inbound requests     | Inbound requests above threshold    | KPI   | Total inbound requests that exceeded the allowable time for an event to process for a given provider.                       |
@@ -149,23 +149,23 @@ The **Category** is located in the left navigation menu. **Page** is the tab on 
 
 ## Customize dashboards 
 
-Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's insights reports or create new reports.
+Intelligent Order Management allows you to customize insights report dashbaords. Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's insights reports or create new reports. For more information about administering roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
 
-For more information about administering roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
+If you have access to customize or create insights reports, you will be able to select **Resume editing** on any insights page to enter edit mode.
 
-If you have access to customize or create insights reports, you will be able to select **Resume editing** on any insights page.
+<!--![Customize dashboard step 1](media/customize_dash_1.png)-->
 
-![Customize dashboard step 1](media/customize_dash_1.png)
+The following dashboard UI elements allow you to customize dashboards.
 
-When you select **Resume editing**, you will be in edit mode.
+- **Edit controls** - Use the controls on the top menu bar to save, discard, or publish your current draft. If you publish, you will publish changes for everyone in your organization.
+- **Customization controls** - There are three customization controls available in the right pane:
+    - **Filters** - Expand the **Filters** section to see which filters are currently applied, and to edit or add more filters.
+    - **Visualizations** - Select any visual component on the main screen, and then in the **Visualizations** pane, select a new visualization to change the appearance of the visual component. For more information, see [Change the type of visualization in a Power BI report](/power-bi/visuals/power-bi-report-change-visualization-type). You can also edit axis information, legends, and more. For more detailed instructions, see [Customize visualization titles, backgrounds, labels, and legends](/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend).
+    - **Fields** - The **Fields** pane contains the fields available for your current schema. Selecting any visual component in the main screen highlights the fields being used for that specific visual component. You can add or delete fields and update the data powering any visual component.
+
+    For more information on how to customize Power BI reports, see [Customize reports guide](/dynamics365/customer-service/customize-reports)
+- **New page** - Select the plus symbol (**+**) at the bottom of the dashboard to create a new blank page to build your own dashboard of visual components. For instructions on how to add visual components to a dashboard page, see [Add visuals to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i?tabs=powerbi-desktop).
+
+The following example image shows a dashboard with edit controls (1), customization controls (2), and the new page control (3) highlighted.
 
 ![Customize dashboard step 2](media/customize_dash_2.png)
-
-- (1) **Edit controls** - Use the controls on the top menu bar to save, discard, or publish your current draft. If you publish, you will publish changes for everyone in your organization.
-- (2) **Customization controls** - There are three controls in the right pane:
-    - **Filters** - Expand the **Filters** section to see which filters are currently applied, and to edit or add more.
-    - **Visualizations** - Select any visual on the main screen and the select a new visual to change it. For more information about changing the visuals, see [Change the type of visualization in a Power BI report](/power-bi/visuals/power-bi-report-change-visualization-type). You can also edit axis information, legends, and more. For more detailed instructions, see [Customize visualization titles, backgrounds, labels, and legends](/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend).
-    - **Fields** - These are the fields available for your current schema. Selecting any visual in the main screen highlights the fields being used for that specific visual. You can add or delete fields and update the data powering any visual from here.
-
-    For more information on how to customize PBI reports, see [Customize reports guide](/dynamics365/customer-service/customize-reports)
-- (3) **New page** - Create a new blank page to build your own dashboard of visuals. For instructions about how to add viduals to a page, see [Add visuals to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i?tabs=powerbi-desktop).
