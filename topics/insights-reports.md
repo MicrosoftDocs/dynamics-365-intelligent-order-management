@@ -25,7 +25,7 @@ Every insights report dashboard includes filters, help text, and multiple settin
 
 - **Filters** - Each dashboard includes relevant date and data filters. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visual information on the entire dashboard.
 - **Help text** - Each visual component on the dashboard has an **i** symbol that displays helpful information about it.
-- **Settings** - Each visual component displays a ellipsis ("**...**") menu that, when selected, displays additional settings. These settings include:
+- **Settings** - Each visual component displays an ellipsis ("**...**") menu that, when selected, displays additional settings. These settings include:
     - **Drill up**/**Drill down**/**Next level in hierarchy** - This setting allows you to drill up or down on the current visual component to see the next level (up or down) of data. For example, you can drill up from **Months** to **Year**.
     - **Next level in hierarchy**/**Expand all down one level in the hierarchy** - This setting allows you to expand levels up or down in the hierarchy of data. For example, you can expand up from **Months** to **Quarters**.
     - **Filters on visual** - This setting allows you to display the current filters that affect a specific visual component.
@@ -47,7 +47,7 @@ You can access the category in the left navigation menu. You can access a specif
 | Order dashboard   | Overview             | Lines per order                 | KPI   | Average order lines per order received.  |
 | Order dashboard   | Overview             | Orders mtd                      | KPI   | Total orders received for current month to date. **Page date** filters don't update this KPI. |
 | Order dashboard   | Overview             | Orders mom growth rate          | KPI   | Growth rate of orders received month over month.  |
-| Order dashboard   | Overview             | Revenue (base) mtd              | KPI   | Total revenue of all orders for current month to date. **Page date** filters do not update this KPI. |
+| Order dashboard   | Overview             | Revenue (base) mtd              | KPI   | Total revenue of all orders for current month to date. **Page date** filters don't update this KPI. |
 | Order dashboard   | Overview             | Revenue (base) mom growth rate  | KPI   | Growth rate of revenue from orders month over month.  |
 | Order dashboard   | Overview             | Orders by provider              | Graph | Orders received grouped by order providers connected to Intelligent Order Management.  |
 | Order dashboard   | Overview             | Order details by region         | Map   | Map view of each order destination region's order details, such as revenue or order count. |
@@ -105,10 +105,10 @@ You can access the category in the left navigation menu. You can access a specif
 | Product insights  | Overview             | Ordered quantity                | KPI   | Total quantity of products ordered from sales orders.  |
 | Product insights  | Overview             | Ordered quantity per order      | KPI   | Average quantity of products ordered from sales orders.  |
 | Product insights  | Overview             | Active products                 | KPI   | Current active products in your inventory.  |
-| Product insights  | Overview             | Top products by order lines     | Graph | Top products ordered grouped by order lines.   |
-| Product insights  | Overview           | Top products by ordered quantity  | Graph | Top products ordered grouped by ordered quantity.  |
-| Product insights  | Overview             | Top products by revenue (base)  | Graph | Top products ordered grouped by revenue.   |
-| Product insights  | Overview      | Top products by order lines over time  | Graph | Top products ordered grouped by order lines on a trendline.  |
+| Product insights  | Overview             | Top products by order lines     | Graph | Top products ordered, grouped by order lines.   |
+| Product insights  | Overview           | Top products by ordered quantity  | Graph | Top products ordered, grouped by ordered quantity.  |
+| Product insights  | Overview             | Top products by revenue (base)  | Graph | Top products ordered, grouped by revenue.   |
+| Product insights  | Overview      | Top products by order lines over time  | Graph | Top products ordered, grouped by order lines on a trendline.  |
 | Product insights  | Overview             | Key influencers/top segments    | ?     | Key influencers and top segments responsible for product sales.  |
 | Monitoring        | Order anomalies      | Order quantities                | Graph | Quantity of ordered products on a trendline with any anomalies. Anomalies are defined as any values that are below 70% of the expected range of that value based on historical data.     |
 | Monitoring        | Order anomalies      | Revenue                         | Graph | Revenue from orders on a trendline with any anomalies. Anomalies are defined as any values that are below 70% of the expected range of that value based on historical data.   |
@@ -116,12 +116,12 @@ You can access the category in the left navigation menu. You can access a specif
 | Monitoring        | Order anomalies      | Order delays                    | Graph | Delayed orders on a trendline with any anomalies. Anomalies are defined as any values that are below 70% of the expected range of that value based on historical data.     |
 | Monitoring        | Order anomalies      | Quarterly revenue               | Graph | Revenue of orders by quarter on a trendline with any anomalies. Anomalies are defined as any values that are below 70% of the expected range of that value based on historical data.  |
 | Monitoring        | Order anomalies      | Orders                          | Table | Total orders on a trendline with any anomalies. Anomalies are defined as any values that are below 70% of the expected range of that value based on historical data.  |
-| Provider insights | Overview             | Total requests                  | KPI   | Total message and action events associated with providers connected to Intellingent Order Management. For example, big Commerce orders and order updates, FedEx shipping, and delivery notifications.    |
-| Provider insights | Overview             | MTD total request growth rate   | KPI   | Growth rate month to date of requests associated with providers connected to Intellingent Order Management. **Page date** filters don't update this KPI.  |
-| Provider insights | Overview             | SLA total requests              | KPI   | Percentage of requests that met the SLA for a given provider connected to Intellingent Order Management, where the SLA is defined as the length of allowable time for an event to process.                |
+| Provider insights | Overview             | Total requests                  | KPI   | Total message and action events associated with providers connected to Intelligent Order Management. For example, big Commerce orders and order updates, FedEx shipping, and delivery notifications.    |
+| Provider insights | Overview             | MTD total request growth rate   | KPI   | Growth rate month to date of requests associated with providers connected to Intelligent Order Management. **Page date** filters don't update this KPI.  |
+| Provider insights | Overview             | SLA total requests              | KPI   | Percentage of requests that met the SLA for a given provider connected to Intelligent Order Management, where the SLA is defined as the length of allowable time for an event to process.                |
 | Provider insights | Overview             | Total requests failed           | KPI   | Total requests from providers that have failed.  |
 | Provider insights | Overview             | Total requests above threshold  | KPI   | Total requests that exceeded the allowable time for an event to process for a given provider.    |
-| Provider insights | Overview           | Total requests by provider      | Graph | Total requests grouped by providers connected to Intellingent Order Management.|
+| Provider insights | Overview           | Total requests by provider      | Graph | Total requests grouped by providers connected to Intelligent Order Management.|
 | Provider insights | Overview             | Total requests and message type by provider    | Table | Total requests grouped by provider and type/ This includes inbound vs outbound.  |
 | Provider insights | Overview             | Total requests by date          | Graph | Total requests by date on a trendline.  |
 | Provider insights | Overview             | Total requests failed by date   | Graph | Total failed requests by date on a trendline. |
@@ -149,15 +149,15 @@ You can access the category in the left navigation menu. You can access a specif
 
 ## Customize dashboards 
 
-Intelligent Order Management allows you to customize insights report dashbaords. Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's insights reports or create new reports. For more information about administering roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
+Intelligent Order Management allows you to customize insights report dashboards. Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's insights reports or create new reports. For more information about administering roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
 
-If you have access to customize or create insights reports, you will be able to select **Resume editing** on any insights page to enter edit mode.
+If you have access to customize or create insights reports, you'll be able to select **Resume editing** on any insights page to enter edit mode.
 
 <!--![Customize dashboard step 1](media/customize_dash_1.png)-->
 
 The following dashboard UI elements allow you to customize dashboards.
 
-- **Edit controls** - Use the controls on the top menu bar to save, discard, or publish your current draft. If you publish, you will publish changes for everyone in your organization.
+- **Edit controls** - Use the controls on the top menu bar to save, discard, or publish your current draft. If you publish, you'll publish changes for everyone in your organization.
 - **Customization controls** - There are three customization controls available in the right pane:
     - **Filters** - Expand the **Filters** section to see which filters are currently applied, and to edit or add more filters.
     - **Visualizations** - Select any visual component on the main screen, and then in the **Visualizations** pane, select a new visualization to change the appearance of the visual component. For more information, see [Change the type of visualization in a Power BI report](/power-bi/visuals/power-bi-report-change-visualization-type). You can also edit axis information, legends, and more. For more detailed instructions, see [Customize visualization titles, backgrounds, labels, and legends](/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend).
