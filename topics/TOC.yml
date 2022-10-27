@@ -72,6 +72,8 @@
         href: email-capabilities.md
       - name: Provider catalog
         href: provider-catalog.md
+      - name: Set up and launch demo providers
+        href: demo-providers.md
       - name: Set up Orderful provider
         href: set-up-orderful-provider.md
       - name: Set up BigCommerce provider
