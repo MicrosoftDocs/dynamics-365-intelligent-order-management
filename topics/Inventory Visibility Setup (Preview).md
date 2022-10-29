@@ -29,9 +29,14 @@ The Inventory Visibility Add-in is a first-party, out-of-box service that will b
     - Product Index Hierarchy
     - Data Source
     - Calculated Measure
-    - Soft Reservation Mapping
+    - Soft Reservation
     - Soft Reservation Hierarchy
+    - Intelligent Order Management Mappings
+    - ATP Setting
+    - Allocation
     - Feature Management
+  
+  ![IVSetup.](media/IVSetup.png)
 
 1. On the **Product Index Hierarchy** tab, confirm that the following elements appear:
 
@@ -100,11 +105,14 @@ The Inventory Visibility Add-in is a first-party, out-of-box service that will b
     - **Datasource** column: refers to the source system.
     - **Base Measure** column : refers to the IOM standard measure.
     - **Calculated measure** column : refers to the calculated measure used in the source system.
-
-  3.  **Set Allocation Group Mappings** : This section will allow you to map your defined allocation groups to a standard set of allocation groups in IOM.
+   
+    3. **Set Allocation Group Mappings** : This section will allow you to map your defined allocation groups to a standard set of allocation groups in IOM.
 
     - **Allocation Group** column: refers the group. this could range from group 0 to group 7.
     - **Allocation Group Name** : This section will allow you to map the group defined to a standard allocation group in IOM.
+
+
+![Mapping.](media/Mapping.png)
 
 ![NOTE] 
 > - Intelligent Order Management today supports allocation groups upto two.
@@ -120,36 +128,73 @@ After you've completed the preceding validation, the settings configure or reuse
 
 To set up the provider, follow these steps.
 
-1. In Intelligent Order Management, go to **Providers \> Catalog**.
-1. On the **Dynamics 365 Inventory Visibility** tile, select **Add Provider**.
-1. On the **Terms and Conditions** page, select **Create**.
-1. In the **Connections** section, you must set up two connections:
+1. In Intelligent Order Management, go to **Providers \> Library**.
+2. On the **Dynamics 365 Inventory Visibility** tile, click on **Select**.
+3. On the top right, select **Activate Providers**
+4. On the **Terms and Conditions** page, check the box and click on **Accept**.
+5. In the **Connections** section, you must set up two connections:
 
     - Inventory Visibility Dataverse (current environment) connection
     - Blob storage connection
-
-1. **For blob connection, follow these steps:**
+  
+ 6. **For blob connection, follow these steps:**
 
 - Select the Inventory Visibility Blob Storage connection.
 - Select **Create**. This will take you to power automate connections.
 - Add New Connection. Search Azure Blob Storage.
 - Click on **Create**. Enter Display Name, Azure Storage account name or blob endpoint.
 - Click **Save**.
+- A sample upload json would look like below:
+    
+        {
+	        "messagetype": "inventoryonhand",
+	        "feedtype": "overwrite",
+	        "source": "Flexe warehouse system",
+	        "customdimensions": false,
+	        "onhand": [
+		    {
+			"productid": "prod301",
+			"quantities": {
+				"pos": {
+					"inbound": 25
+			           }
+                           }
+			},
+			"dimensions": {
+				"locationid": "414"
+			              }
+		    {
+			"productid": "prod302",
+			"quantities": {
+				"pos": {
+					"inbound": 50
+				       }
+                           }
+			  },
+			"dimensions": {
+				"locationid": "414"
+			              }
+		]
+      }
+      
+  - Feedtype can be **Overwrite** for one time update. It can also be **Incremental** (adds Quantities to existing Inventory Visibility data).
 
-1. **For Inventory Visibility Dataverse (current environment) connection, follow below steps**.
+![AZBlob.](media/AzBlob.png)
+
+7.  **For Inventory Visibility Dataverse (current environment) connection, follow below steps**.
  
 - Select **Create**.This should automatically connect based on your system connections setup.
-- Click **Save** and **Activate**.
 
-1. Select **Save** for the connection, and then select **Activate**.
-
-1. On the **Parameters** tab, set the following non-mandatory parameters:
+8.  Click on **Next**.
+9.  On the **Parameters** section, set the following mandatory parameters:
 
     - **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you are using inventory upload through blob.
     - **Inventory Visibility File Drop Location** – Specify the path in Blob Storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
     - **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
 
-1. Select **Save**, and then select **Activate** to activate the provider.
+10. Review the **Transformations** and click **Next**.
+11. Review the **Connections** , click on **Activate**.
+12. Click **Next** and **Review and Finish**.
 
 ## Out-of-box capabilities
 
