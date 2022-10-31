@@ -143,3 +143,21 @@ Follow the below steps to make the assignments:
 - Chhose the predefined **Allocation Group Name** from Intelligent Order Management to map the Inventory Visibility **Allocation Group**.
 
 ![AllocationGroup.](media/AllocationGroup.png)
+
+## Using the allocation API
+
+As part of Dynamics 365 Intelligent Order Management, you will now also have a set of APIs to perform allocation relevant operations.
+As part of order orchestration, IOM will be bale to automatically determine if it needs to call Dynamcs 365 Supply Chain Management APIs 
+or Intelligent Order Management APIs.
+For more details on Supply Chain Management APIs, please visit [here.](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api)
+Below APIs are available for allocation as part of Intelligent Order Management:
+
+The request and response for these payloads resemble what is available from Supply Chain Management. The following table shows the mapping between the Intelligent Order Management APIs and Dynamics 365 Inventory Visibility APIs. It also provides links to the appropriate documentation.
+
+| Intelligent Order Management API name | Dynamics 365 Inventory Visibility API | Method | Description | Documentation |
+|---|---|---|---|---|
+| OnHandAllocate | POST /api/environment/{environmentId}/allocation/allocate | POST | Allocate Inventory across allocated groups. | [Allocate Inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#allocate) |
+| OnHandReallocate | POST /api/environment/{environmentId}/allocation/reallocate | POST | Reallocate Inventory. | [Reallocate inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#reallocate) |
+| OnHandUnallocate | POST /api/environment/{environmentId}/allocation/unallocate | POST | Unallocate Inventory. | [Unallocate Inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#unallocate) |
+| OnHandConsume | POST /api/environment/{environmentId}/allocation/consume | POST | Consume allocated inventory. | [Consume allocated inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#consume) |
+| OnHandAllocationQuery | /POST /api/environment/{environmentId}/allocation/query | POST | Query from allocated inventory. | [Allocation Query](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#query) |
