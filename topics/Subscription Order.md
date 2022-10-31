@@ -71,10 +71,10 @@ The sales order would then follow the **order orchestration** and genrate fulfil
 
 A job log will be now available to show the list of job runs and their statuses. This can be located on the **Home Page** left menu under **Monitoring** as **Background Jobs**. It will show you the list of job runs, their statuses and the number of records it has successfully processed and moved to fulfillment.
 
-![Job.](media/Job.png)
+![Job.](media/SubsJob.png)
 
 If a background job fails, you will also be able to manually run it using the **Run** option in the upper menu bar. Select the **Subscription-Order Job** and this will start a new instance of the background job.
 
 On clicking the Job line, you will be able to see the details of the background job run.
 
-![Jobdetails.](media/Jobdetails.png)
+![Jobdetails.](media/SubsDet.png)
