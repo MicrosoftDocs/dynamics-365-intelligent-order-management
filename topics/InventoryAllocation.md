@@ -46,3 +46,100 @@ The following terms and concepts are useful in discussions of inventory allocati
 The following illustration shows the business workflow for inventory allocation.
 
 ![Allocation.](media/Allocationpp.png)
+
+## Set up inventory allocation
+
+As a pre-requite to using Allocation feature in Intellligent Order Management, below should be done:
+
+  a. **Turn on the Allocation Feature:**
+
+- **Goto **Settings**.
+- Click on **Index and Reservarion**.
+- Click on the tab **Feature Management & Settings**
+- For **Allocation** turn on the **Toggle Switch**.
+    
+![AllocationOn.](media/AllocationOn.png)
+
+  b. **Enable the product for allocation:**
+
+- Goto **Products**.
+- Open the Product and click on **Additional Details** tab.
+- Under the **Inventory** section, select **Yes** for **Allows Inventory Allocation**.
+
+![ProdAllocationOn.](media/ProdAllocation.png)
+
+The inventory allocation feature consists of the following components:
+
+- The predefined, allocation-related data source, physical measures, and calculated measures.
+- Customizable allocation groups that have a maximum of eight levels.
+- A set of allocation application programming interfaces (APIs):
+  allocate
+  reallocate
+  unallocate
+  consume
+  query
+
+**The process of configuring the allocation feature has two steps:**
+
+- Set up the data source and its measures.
+- Set up the allocation group name and hierarchy.
+- Map Allocation groups to Intelligent Order Management mappings
+
+## Predefined data source
+
+When you enable the allocation feature and call the configuration update API, Inventory Visibility creates one predefined data source and several initial measures.
+
+The data source is named @iv.
+
+**Here are the initial physical measures:**
+
+1. @iv
+1. @allocated
+1. @cumulative_allocated
+1. @consumed
+1. @cumulative_consumed
+
+**Here are the initial calculated measures:**
+
+@iv
+@iv.@available_to_allocate = ?? – ?? – @iv.@allocated
+
+## Add other physical measures to the available-to-allocate calculated measure
+
+To use allocation, you must set up the available-to-allocate calculated measure (@iv.@available_to_allocate). For example, you have fno data source and the onordered measure, the pos data source and the inbound measure, and you want to do allocation on the on hand for the sum of fno.onordered and pos.inbound. In this case, @iv.@available_to_allocate should contain pos.inbound and fno.onordered in the formula. Here's an example:
+
+@iv.@available_to_allocate = fno.onordered + pos.inbound – @iv.@allocated
+
+    [!Note]
+
+    Data source @iv is a predefined data source and the physical measures defined in @iv with prefix @ are predefined measures. 
+    These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to 
+    encounter unexpected errors when using the allocation feature.
+
+    You can add new physical measures to the predefined calculated measure @iv.@available_to_allocate, but you must not change its 
+    name.
+    
+## Change the allocation group name
+
+A maximum of two allocation group names can be set for the cuurent release and will be extended to allocation groups. The groups have a hierarchy.
+
+To setup the Allocation groups follow the below steps:
+- Goto **Settings**
+- Click on **Index and Reservation**.
+- Click on the **Allocation** tab.
+
+For example, if you use two group names and set them to [channel, customerGroup], these names will be valid for allocation-related requests when you call the configuration update API.
+
+## Map the allocation groups to Intelligent Order Mnaagement
+
+In order to be able to call these groups form Intelligent Order management order orchestration flows, you will need to map these allocation groups to a predefined
+list of allocation groups from Intelligent Order Management.
+
+Follow the below steps to make the assignments:
+- Goto **Settings**.
+- Goto **Index and Reservations**.
+- Click on **Intelligent Order Management Mappings**.
+- Goto the section **Set Allocation Group Mappings**
+- Chhose the predefined **Allocation Group Name** from Intelligent Order Management to map the Inventory Visibility **Allocation Group**.
+
+![AllocationGroup.](media/AllocationGroup.png)
