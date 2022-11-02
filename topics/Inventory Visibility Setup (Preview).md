@@ -17,11 +17,16 @@ This topic describes how to set up the Inventory Visibility provider in Microsof
 
 The Inventory Visibility Add-in (also referred to as the Inventory Visibility service) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels.
 
-For more information about the Inventory Visibility service, see [Inventory Visibility Add In](/dynamics365/supply-chain/inventory/inventory-visibility).
+For more information about the Inventory Visibility service, see [Inventory Visibility Add In](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility).
 
 ## Prerequisites
 
 The Inventory Visibility Add-in is a first-party, out-of-box service that will be available as part of Intelligent Order Management. To add this provider so that it can be used in orchestration, you must validate and update the following configurations after you install the add-in.
+
+[!NOTE]
+
+The add in comes inbuilt with Intelligent Order Management. If you are a Dynamics 365 Supply Chain and Management customer 
+and want to use Inventory add in from SCM, then please follow the Inventory Visibility tips [here.](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-tips)
 
 1. Go to **Inventory Visibility \> Index And Reservations** site map area.
 1. Confirm that the following tabs appear on the page:
