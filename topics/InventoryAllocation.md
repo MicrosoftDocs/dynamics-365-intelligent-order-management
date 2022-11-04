@@ -47,7 +47,7 @@ The following illustration shows the business workflow for inventory allocation.
 
 ![Allocation.](media/Allocationpp.png)
 
-## Set up inventory allocation
+## Configure inventory allocation settings
 
 As a prerequisite to using Allocation feature in Intellligent Order Management, below should be done:
 
