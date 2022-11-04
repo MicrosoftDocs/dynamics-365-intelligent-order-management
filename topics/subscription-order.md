@@ -21,9 +21,9 @@ With appropriate subscription order management, retailers can get the following 
 - Predictable recurring revenue.
 - Better cash flow management
 
-## Prerequisite settings
+## Turn subscription order functionality on
 
-To configure the prerequisite settings, follow these steps.
+To turn subscription order functionality on, follow these steps.
 
 1. In the left navigation pane, select **Settings**, and then select **General app settings**.
 1. Select **Order handling preferences**, and then select **Manage**.
@@ -42,7 +42,7 @@ To specify the subscription frequency at the product level, follow these steps.
 
 ## How subscription order management works
 
-A subscription order can be created in an e-commerce application, or through a customer service representative in Intelligent Order Management. Both methods create a subscription order under **Orders**. A subscription order redefines a product that the customer has opted to be fulfilled as a subscription.
+A subscription order can be created in an e-commerce application, or through a customer service representative in Intelligent Order Management. Both methods create a subscription order under **Orders** in Intelligent Order Management.
 
 The following table lists subscription order fields.
 
@@ -64,5 +64,3 @@ A job log is available to show a list of job runs, their statuses, and the numbe
 ![Job.](media/SubsJob.png)
 
 If a background job fails, you have the option to run it manually by selecting the **Run** option in the upper menu bar. Then select **Subscription-Order Job** to start a new instance of the background job. To see the details of the background job run, select the job line.
-
-![Jobdetails.](media/SubsDet.png)
