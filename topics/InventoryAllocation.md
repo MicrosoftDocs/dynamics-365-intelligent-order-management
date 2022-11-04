@@ -1,15 +1,20 @@
 ---
 author: sumanic
-description: This topic describes how to set up the Inventory Visibility Inventory Allocation in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes how to set up inventory allocation in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/25/2022
 ms.topic: how-to
 ms.author: sumanic
-title: Set up Inventory Visibility Inventory Allocation
+title: Set up inventory allocation
 
 ---
 
+# Set up inventory allocation
+
+This article describes how to set up inventory allocation in Microsoft Dynamics 365 Intelligent Order Management.
+
 ## Business background and purpose
+
 In many cases, manufacturers, retailers, and other supply chain business holders must pre-allocate stock for important sales channels, locations, or customers, or for specific sales events. Inventory allocation is a typical practice in the sales operational planning process, and is done before the actual sales activities occur and a sales order is created.
 
 For example, a bicycle company has limited stock available for a very popular bike. This company does both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
@@ -32,24 +37,19 @@ The inventory allocation feature lets sales planners or key account managers man
 
 The following terms and concepts are useful in discussions of inventory allocation:
 
-
-**Allocation group** – The group that owns the allocation, such as a sales channel, customer group, or order type.
-
-**Allocation group value** – The value of each allocation group. For example, web or store might be the value of the sales channel allocation group, whereas VIP or normal might be the value of the customer allocation group.
-
-**Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. For example, you can define channel as hierarchy level 1, region as level 2, and customer group as level 3. During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you might allocate 200 red bikes to the Web channel, the London region, and the VIP customer group.
-
-**Available to allocate** – The virtual common pool that indicates the quantity that is available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
-
-**Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups.
-**Consumed** – A physical measure that indicates that quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the Allocated physical measure is automatically reduced.
+-**Allocation group** – The group that owns the allocation, such as a sales channel, customer group, or order type.
+- **Allocation group value** – The value of each allocation group. For example, web or store might be the value of the sales channel allocation group, whereas VIP or normal might be the value of the customer allocation group.
+- **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. For example, you can define channel as hierarchy level 1, region as level 2, and customer group as level 3. During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you might allocate 200 red bikes to the Web channel, the London region, and the VIP customer group.
+- **Available to allocate** – The virtual common pool that indicates the quantity that is available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
+- **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups.
+- **Consumed** – A physical measure that indicates that quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the Allocated physical measure is automatically reduced.
 The following illustration shows the business workflow for inventory allocation.
 
 ![Allocation.](media/Allocationpp.png)
 
 ## Set up inventory allocation
 
-As a pre-requite to using Allocation feature in Intellligent Order Management, below should be done:
+As a prerequisite to using Allocation feature in Intellligent Order Management, below should be done:
 
   a. **Turn on the Allocation Feature:**
 
@@ -91,7 +91,7 @@ When you enable the allocation feature and call the configuration update API, In
 
 The data source is named @iv.
 
-**Here are the initial physical measures:**
+### Initial physical measures
 
 1. @iv
 1. @allocated
@@ -99,7 +99,7 @@ The data source is named @iv.
 1. @consumed
 1. @cumulative_consumed
 
-**Here are the initial calculated measures:**
+### Initial calculated measures
 
 @iv
 @iv.@available_to_allocate = ?? – ?? – @iv.@allocated
@@ -130,7 +130,7 @@ To setup the Allocation groups follow the below steps:
 
 For example, if you use two group names and set them to [channel, customerGroup], these names will be valid for allocation-related requests when you call the configuration update API.
 
-## Map the allocation groups to Intelligent Order Mnaagement
+## Map allocation groups to Intelligent Order Mnaagement
 
 In order to be able to call these groups form Intelligent Order management order orchestration flows, you will need to map these allocation groups to a predefined
 list of allocation groups from Intelligent Order Management.
@@ -144,20 +144,20 @@ Follow the below steps to make the assignments:
 
 ![AllocationGroup.](media/AllocationGroup.png)
 
-## Using the allocation API
+## Use the allocation API
 
 As part of Dynamics 365 Intelligent Order Management, you will now also have a set of APIs to perform allocation relevant operations.
 As part of order orchestration, IOM will be bale to automatically determine if it needs to call Dynamcs 365 Supply Chain Management APIs 
 or Intelligent Order Management APIs.
-For more details on Supply Chain Management APIs, please visit [here.](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api)
+For more details on Supply Chain Management APIs, please visit [here.](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api)
 Below APIs are available for allocation as part of Intelligent Order Management:
 
 The request and response for these payloads resemble what is available from Supply Chain Management. The following table shows the mapping between the Intelligent Order Management APIs and Dynamics 365 Inventory Visibility APIs. It also provides links to the appropriate documentation.
 
 | Intelligent Order Management API name | Dynamics 365 Inventory Visibility API | Method | Description | Documentation |
 |---|---|---|---|---|
-| OnHandAllocate | POST /api/environment/{environmentId}/allocation/allocate | POST | Allocate Inventory across allocated groups. | [Allocate Inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#allocate) |
-| OnHandReallocate | POST /api/environment/{environmentId}/allocation/reallocate | POST | Reallocate Inventory. | [Reallocate inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#reallocate) |
-| OnHandUnallocate | POST /api/environment/{environmentId}/allocation/unallocate | POST | Unallocate Inventory. | [Unallocate Inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#unallocate) |
-| OnHandConsume | POST /api/environment/{environmentId}/allocation/consume | POST | Consume allocated inventory. | [Consume allocated inventory](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#consume) |
-| OnHandAllocationQuery | /POST /api/environment/{environmentId}/allocation/query | POST | Query from allocated inventory. | [Allocation Query](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-allocation#query) |
+| OnHandAllocate | POST /api/environment/{environmentId}/allocation/allocate | POST | Allocate Inventory across allocated groups. | [Allocate Inventory](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#allocate) |
+| OnHandReallocate | POST /api/environment/{environmentId}/allocation/reallocate | POST | Reallocate Inventory. | [Reallocate inventory](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#reallocate) |
+| OnHandUnallocate | POST /api/environment/{environmentId}/allocation/unallocate | POST | Unallocate Inventory. | [Unallocate Inventory](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#unallocate) |
+| OnHandConsume | POST /api/environment/{environmentId}/allocation/consume | POST | Consume allocated inventory. | [Consume allocated inventory](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#consume) |
+| OnHandAllocationQuery | /POST /api/environment/{environmentId}/allocation/query | POST | Query from allocated inventory. | [Allocation Query](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#query) |
