@@ -1,29 +1,31 @@
 ---
 author: sumanic
-description: This topic describes Subscription order management with D365 Intelligent Order Management.
+description: This article describes subscription order management in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/04/2022
 ms.topic: how-to
 ms.author: sumanic
-title: Subscription order
+title: Subscription order management
 
 ---
 
-# Subscription order management with Dynamics 365 Intelligent Order Management
+# Subscription order management
 
-This topic describes how Intelligent Order Management can handle subscription order giving customers the flexibility to have their orders fulfilled in a regular recurrence.
+This article describes subscription order management in Microsoft Dynamics 365 Intelligent Order Management.
+
+Intelligent Order Management has the capability to handle subscription orders, giving customers the flexibility to have their orders fulfilled on a regular basis.
 
 ## Subscription order
+
 A Subscription order allows customers to place their orders as goods or services which will be fulfilled in a regular cadence. This cadence could be determined at product level.
-With appropiate subscription order management customers can get the below benefits:
 
-a. Increased customer loyalty with strong customer base.
+With appropiate subscription order management, customers can get the below benefits:
 
-b. Predictable recurring revenue.
+- Increased customer loyalty with strong customer base.
+- Predictable recurring revenue.
+- Better cash flow management
 
-c. Better cash flow management
-
-## Pre-requisite Settings
+## Prerequisite Settings
 
 a. Appropriate **Settings** described below should be enabled.
 
@@ -47,11 +49,10 @@ b. Define **Subscription frequency** for **Products**.
    
    v.  Click on **Save** or **Save & Close**.
 
-## How does Subscription work?
+## How subscription order management works
 
-A subscription order could be created in an ecommerce application or though a customer service representative in D365 Intelligent Order Management. In either case this would create
-a **Subscription Order** and can be fould under **Orders**.
-A **Subscription order** is like a contract which defines the product that the customer has opted to be fulfilled as **subscriptions**.
+A subscription order could be created in an ecommerce application or though a customer service representative in D365 Intelligent Order Management. In either case this would create a **Subscription Order** and can be found under **Orders**. A **Subscription order** is like a contract which defines the product that the customer has opted to be fulfilled as **subscriptions**.
+
 It includes few specific fields that signify this contract as below:
 
 |Field name|Description|
@@ -62,12 +63,10 @@ It includes few specific fields that signify this contract as below:
 |Subscription End Date | The end date for the subscription in case there is one requested by customer. |
 |Last Ordered Date | This is an auto populated field that will hold the last order created date. |
 
-[!NOTE]
-  >- At this point one product per subscription is supported. Multiple products support will be available in later releases.
+> [!NOTE]
+> At this point one product per subscription is supported. Multiple products support will be available in later releases.
 
-
-Once a subscription order is created in D365 Intelligent Order Management, based on the product frequency opted by customer, a **background job** would automatically pick up these orders and generate **Sales orders** from the **subscription**.
-The sales order would then follow the **order orchestration** and genrate fulfillments accordingly.
+Once a subscription order is created in Intelligent Order Management, based on the product frequency opted by customer, a **background job** would automatically pick up these orders and generate **Sales orders** from the **subscription**. The sales order would then follow the **order orchestration** and genrate fulfillments accordingly.
 
 A job log will be now available to show the list of job runs and their statuses. This can be located on the **Home Page** left menu under **Monitoring** as **Background Jobs**. It will show you the list of job runs, their statuses and the number of records it has successfully processed and moved to fulfillment.
 
