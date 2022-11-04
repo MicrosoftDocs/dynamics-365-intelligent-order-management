@@ -13,9 +13,9 @@ title: Subscription order management
 
 This article describes subscription order management in Microsoft Dynamics 365 Intelligent Order Management.
 
-Intelligent Order Management has the capability to handle subscription orders, giving customers the flexibility to have their orders fulfilled on a regular basis. The order frequency can be specifed at the product level.
+Intelligent Order Management has the capability to handle subscription orders, giving customers the flexibility to have their orders fulfilled on a regular basis. The order frequency can be specified at the product level.
 
-With appropiate subscription order management, retailers can get the following benefits:
+With appropriate subscription order management, retailers can get the following benefits:
 
 - Increased customer loyalty with a strong customer base.
 - Predictable recurring revenue.
@@ -42,14 +42,14 @@ To specify the subscription frequency at the product level, follow these steps.
 
 ## How subscription order management works
 
-A subscription order can be created in an e-commerce application, or through a customer service representative in Intelligent Order Management. In either case, this would create a subscription order under **Orders**. A subscription order defines a product that the customer has opted to be fulfilled as a subscription.
+A subscription order can be created in an e-commerce application, or through a customer service representative in Intelligent Order Management. Both methods create a subscription order under **Orders**. A subscription order redefines a product that the customer has opted to be fulfilled as a subscription.
 
-It includes few specific fields that signify this contract as below:
+The following table lists subscription order fields.
 
 | Field name | Description |
 | ---- | ----------- |
-| **Fulfillment Frequency** | This field contains the product frequency that was setup in **Products**, and is the driver for subscription fulfillment jobs.|
-| **Current Subscription** | This field contains the current recurrence of the subscription. It is an integer that reflects the current subscription number.|
+| **Fulfillment Frequency** | The product frequency that was set up in **Products**. This value kicks off the subscription fulfillment job.|
+| **Current Subscription** | The current recurrence of the subscription. It's an integer that reflects the current subscription number.|
 | **Subscription Start Date** | The start date for the subscription. |
 | **Subscription End Date** | The end date for the subscription, if an end date was specified by the customer. |
 | **Last Ordered Date** | This field is autopopulated and contains the date that the last order was created. |
