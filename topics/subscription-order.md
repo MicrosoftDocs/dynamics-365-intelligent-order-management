@@ -13,7 +13,7 @@ title: Manage subscription orders
 
 This article describes how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
 
-Intelligent Order Management has the capability to handle subscription orders, giving customers the flexibility to have their orders fulfilled on a regular basis. The order frequency is specified at the product level.
+Intelligent Order Management has the capability to handle subscription orders, giving customers the flexibility to have their orders fulfilled regularly. The order frequency is specified at the product level.
 
 With appropriate subscription order management, retailers can get the following benefits:
 
@@ -21,11 +21,11 @@ With appropriate subscription order management, retailers can get the following 
 - Predictable recurring revenue.
 - Better cash flow management
 
-## Turn subscription order functionality on
+## Turn on subscription order functionality
 
-To get started management subscriptions, you must first turn the subscription order functionality on.
+To get started managing subscriptions, you must first turn on the subscription order functionality.
 
-To turn subscription order functionality on, follow these steps.
+To turn on subscription order functionality, follow these steps.
 
 1. In the left navigation pane, select **Settings**, and then select **General app settings**.
 1. Select **Order handling preferences**, and then select **Manage**.
@@ -67,4 +67,4 @@ A job log is available to show a list of job runs, their statuses, and the numbe
 
 ![Job.](media/SubsJob.png)
 
-If a background job fails, you have the option to run it manually by selecting the **Run** option in the upper menu bar. Then select **Subscription-Order Job** to start a new instance of the background job. To see the details of the background job run, select the job line.
+If a background job fails, you can run it manually by selecting the **Run** option in the upper menu bar. Then select **Subscription-Order Job** to start a new instance of the background job. To see the details of the background job run, select the job line.
