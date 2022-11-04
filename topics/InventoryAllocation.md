@@ -19,10 +19,9 @@ In many cases, manufacturers, retailers, and other supply chain business holders
 
 For example, a bicycle company has limited stock available for a very popular bike. This company does both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
 
-**Inventory allocation has two basic business purposes:**
+Inventory allocation has two basic business purposes:
 
 **Inventory protection (ringfencing)** – Organizations want to pre-allocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. The Inventory Visibility allocation feature aims to protect the allocated inventory, so that the other allocations, reservations, or other sales demands won't affect the previously allocated inventory.
-
 **Oversell control** – The Inventory Visibility allocation feature aims to put a restriction on the previously allocated quantities, so that the receiving party (for example, a channel or customer group) won't over-consume them when the actual sales transaction that is based on a soft reservation goes into effect.
 
 ## Allocation definition in Inventory Visibility Service
@@ -53,18 +52,18 @@ As a prerequisite to using Allocation feature in Intellligent Order Management, 
 
   a. **Turn on the Allocation Feature:**
 
-- **Goto **Settings**.
-- Click on **Index and Reservarion**.
-- Click on the tab **Feature Management & Settings**
-- For **Allocation** turn on the **Toggle Switch**.
+1. Go to **Settings**.
+1. Select **Index and Reservarion**.
+1. Select the **Feature Management & Settings** tab.
+1. For **Allocation**, turn on the **Toggle Switch**.
     
 ![AllocationOn.](media/AllocationOn.png)
 
   b. **Enable the product for allocation:**
 
-- Goto **Products**.
-- Open the Product and click on **Additional Details** tab.
-- Under the **Inventory** section, select **Yes** for **Allows Inventory Allocation**.
+1. Go to **Products**.
+1. Open the product and select the **Additional Details** tab.
+1. Under the **Inventory** section, select **Yes** for **Allows Inventory Allocation**.
 
 ![ProdAllocationOn.](media/ProdAllocation.png)
 
@@ -73,11 +72,11 @@ The inventory allocation feature consists of the following components:
 - The predefined, allocation-related data source, physical measures, and calculated measures.
 - Customizable allocation groups that have a maximum of eight levels.
 - A set of allocation application programming interfaces (APIs):
-  allocate
-  reallocate
-  unallocate
-  consume
-  query
+    - allocate
+    - reallocate
+    - unallocate
+    - consume
+    - query
 
 **The process of configuring the allocation feature has two steps:**
 
@@ -110,23 +109,18 @@ To use allocation, you must set up the available-to-allocate calculated measure 
 
 @iv.@available_to_allocate = fno.onordered + pos.inbound – @iv.@allocated
 
-    [!Note]
-
-    Data source @iv is a predefined data source and the physical measures defined in @iv with prefix @ are predefined measures. 
-    These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to 
-    encounter unexpected errors when using the allocation feature.
-
-    You can add new physical measures to the predefined calculated measure @iv.@available_to_allocate, but you must not change its 
-    name.
+> [!NOTE]
+> Data source @iv is a predefined data source and the physical measures defined in @iv with prefix @ are predefined measures. These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to encounter unexpected errors when using the allocation feature. You can add new physical measures to the predefined calculated measure @iv.@available_to_allocate, but you must not change its name.
     
 ## Change the allocation group name
 
 A maximum of two allocation group names can be set for the cuurent release and will be extended to allocation groups. The groups have a hierarchy.
 
-To setup the Allocation groups follow the below steps:
-- Goto **Settings**
-- Click on **Index and Reservation**.
-- Click on the **Allocation** tab.
+To set up the allocation groups follow these steps.
+
+1. Go to **Settings**.
+1. Select **Index and Reservation**.
+1. Select the **Allocation** tab.
 
 For example, if you use two group names and set them to [channel, customerGroup], these names will be valid for allocation-related requests when you call the configuration update API.
 
@@ -135,12 +129,13 @@ For example, if you use two group names and set them to [channel, customerGroup]
 In order to be able to call these groups form Intelligent Order management order orchestration flows, you will need to map these allocation groups to a predefined
 list of allocation groups from Intelligent Order Management.
 
-Follow the below steps to make the assignments:
-- Goto **Settings**.
-- Goto **Index and Reservations**.
-- Click on **Intelligent Order Management Mappings**.
-- Goto the section **Set Allocation Group Mappings**
-- Chhose the predefined **Allocation Group Name** from Intelligent Order Management to map the Inventory Visibility **Allocation Group**.
+to make assignments, follow these steps.
+
+1. Go to **Settings**.
+1. Go to **Index and Reservations**.
+1. Select **Intelligent Order Management Mappings**.
+1. Go to the **Set Allocation Group Mappings** section.
+1. Select the predefined **Allocation Group Name** from Intelligent Order Management to map the Inventory Visibility **Allocation Group**.
 
 ![AllocationGroup.](media/AllocationGroup.png)
 
@@ -148,8 +143,8 @@ Follow the below steps to make the assignments:
 
 As part of Dynamics 365 Intelligent Order Management, you will now also have a set of APIs to perform allocation relevant operations.
 As part of order orchestration, IOM will be bale to automatically determine if it needs to call Dynamcs 365 Supply Chain Management APIs 
-or Intelligent Order Management APIs.
-For more details on Supply Chain Management APIs, please visit [here.](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api)
+or Intelligent Order Management APIs. For more information on Supply Chain Management APIs, see [Using the allocation API](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api)
+
 Below APIs are available for allocation as part of Intelligent Order Management:
 
 The request and response for these payloads resemble what is available from Supply Chain Management. The following table shows the mapping between the Intelligent Order Management APIs and Dynamics 365 Inventory Visibility APIs. It also provides links to the appropriate documentation.
