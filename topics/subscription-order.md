@@ -1,19 +1,19 @@
 ---
 author: sumanic
-description: This article describes subscription order management in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/04/2022
 ms.topic: how-to
 ms.author: sumanic
-title: Subscription order management
+title: Manage subscription orders
 
 ---
 
-# Subscription order management
+# Manage subscription orders
 
-This article describes subscription order management in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
 
-Intelligent Order Management has the capability to handle subscription orders, giving customers the flexibility to have their orders fulfilled on a regular basis. The order frequency can be specified at the product level.
+Intelligent Order Management has the capability to handle subscription orders, giving customers the flexibility to have their orders fulfilled on a regular basis. The order frequency is specified at the product level.
 
 With appropriate subscription order management, retailers can get the following benefits:
 
@@ -22,6 +22,8 @@ With appropriate subscription order management, retailers can get the following 
 - Better cash flow management
 
 ## Turn subscription order functionality on
+
+To get started management subscriptions, you must first turn the subscription order functionality on.
 
 To turn subscription order functionality on, follow these steps.
 
@@ -32,6 +34,8 @@ To turn subscription order functionality on, follow these steps.
    ![Subscription order.](media/Subscription.png)
 
 ## Specify the subscription frequency 
+
+For each subscription order started in Intelligent Order Management, you must specify the subscription frequency.
 
 To specify the subscription frequency at the product level, follow these steps.
 
