@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/04/2022
+ms.date: 11/08/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Manage subscription orders
