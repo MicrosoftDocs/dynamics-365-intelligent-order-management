@@ -124,6 +124,8 @@
         href: ifo.md
       - name: Intelligent Fulfillment Optimization architecture
         href: ifo-arch.md
+    - name: Manage subscription orders
+      href: subscription-orders.md
   - name: Finance + Operations integration solution
     href: finops-integration-scenarios.md
   - name: Power BI integration
