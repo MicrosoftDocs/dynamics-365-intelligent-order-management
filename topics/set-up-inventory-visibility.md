@@ -1,15 +1,15 @@
 ---
 author: sumanic
-description: This topic describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
+description: This topic describes how to set up the Inventory Visibility provider (preview) in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 05/25/2022
 ms.topic: how-to
 ms.author: sumanic
-title: Set up Inventory Visibility provider
+title: Set up Inventory Visibility provider (preview)
 
 ---
 
-# Set up Inventory Visibility provider
+# Set up Inventory Visibility provider (preview)
 
 [!include [banner](includes/banner.md)]
 
@@ -17,7 +17,7 @@ This topic describes how to set up the Inventory Visibility provider in Microsof
 
 The Inventory Visibility Add-in (also referred to as the Inventory Visibility service) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels.
 
-For more information about the Inventory Visibility service, see [Inventory Visibility Add In](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility).
+For more information about the Inventory Visibility service, see [Inventory Visibility Add In](/dynamics365/supply-chain/inventory/inventory-visibility).
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ The Inventory Visibility Add-in is a first-party, out-of-box service that will b
 [!NOTE]
 
 The add in comes inbuilt with Intelligent Order Management. If you are a Dynamics 365 Supply Chain and Management customer 
-and want to use Inventory add in from SCM, then please follow the Inventory Visibility tips [here.](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-tips)
+and want to use Inventory add in from SCM, then please follow the Inventory Visibility tips [here.](/dynamics365/supply-chain/inventory/inventory-visibility-tips)
 
 1. Go to **Inventory Visibility \> Index And Reservations** site map area.
 1. Confirm that the following tabs appear on the page:
@@ -116,13 +116,11 @@ and want to use Inventory add in from SCM, then please follow the Inventory Visi
     - **Allocation Group** column: refers the group. this could range from group 0 to group 7.
     - **Allocation Group Name** : This section will allow you to map the group defined to a standard allocation group in IOM.
 
-
 ![Mapping.](media/Mapping.png)
 
-![NOTE] 
-> - Intelligent Order Management today supports allocation groups upto two.
+> ![NOTE] 
+> Intelligent Order Management today supports allocation groups up to two.
   
-
 After you've completed the preceding validation, the settings configure or reuse the physical and calculated measures across your data sources.
 
 ## Set up the Inventory Visibility provider
