@@ -38,8 +38,8 @@ For example, a bicycle company that does both online and in-store sales has limi
 
 Inventory allocation has two basic business purposes:
 
-**Inventory protection (also known as ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. Intelligent Order Management's Inventory Visibility allocation feature protects allocated inventory so that the other allocations, reservations, or sales demands won't affect previously allocated inventory.
-**Oversell control** – Oversell control restricts allocated quantities so that receiving parties don't consume more than their allocated quantity. Intelligent Order Management's Inventory Visibility allocation feature puts a restriction on previously allocated quantities, so that receiving parties such as channels or customer groups won't over-consume when actual sales transactions based on soft reservations go into effect.
+- **Inventory protection (also known as ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. Intelligent Order Management's Inventory Visibility allocation feature protects allocated inventory so that the other allocations, reservations, or sales demands won't affect previously allocated inventory.
+- **Oversell control** – Oversell control restricts allocated quantities so that receiving parties don't consume more than their allocated quantity. Intelligent Order Management's Inventory Visibility allocation feature puts a restriction on previously allocated quantities, so that receiving parties such as channels or customer groups won't over-consume when actual sales transactions based on soft reservations go into effect.
 
 ## Inventory Visibility allocation feature definition
 
@@ -101,11 +101,11 @@ The data source is named @iv.
 
 #### Initial physical measures
 
-1. @iv
-1. @allocated
-1. @cumulative_allocated
-1. @consumed
-1. @cumulative_consumed
+- @iv
+- @allocated
+- @cumulative_allocated
+- @consumed
+- @cumulative_consumed
 
 #### Initial calculated measures
 
@@ -133,7 +133,7 @@ To set up the allocation groups, follow these steps.
 
 For example, if you use two group names and set them to [channel, customerGroup], these names will be valid for allocation-related requests when you call the configuration update API.
 
-### Map Allocation groups to Intelligent Order Management mappings
+### Map allocation groups to Intelligent Order Management mappings
 
 In order to be able to call these groups form Intelligent Order management order orchestration flows, you will need to map these allocation groups to a predefined
 list of allocation groups from Intelligent Order Management.
@@ -152,7 +152,7 @@ to make assignments, follow these steps.
 
 As part of Dynamics 365 Intelligent Order Management, you will now also have a set of APIs to perform allocation relevant operations.
 As part of order orchestration, IOM will be bale to automatically determine if it needs to call Dynamcs 365 Supply Chain Management APIs 
-or Intelligent Order Management APIs. For more information on Supply Chain Management APIs, see [Using the allocation API](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api)
+or Intelligent Order Management APIs. For more information on Supply Chain Management APIs, see [Using the allocation API](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api).
 
 Below APIs are available for allocation as part of Intelligent Order Management:
 
