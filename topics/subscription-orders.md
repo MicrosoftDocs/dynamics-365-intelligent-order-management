@@ -11,6 +11,8 @@ title: Manage subscription orders
 
 # Manage subscription orders
 
+[!include [banner](includes/banner.md)]
+
 This article describes how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
 
 Intelligent Order Management can handle subscription orders, and therefore gives customers the flexibility to have their orders regularly fulfilled. The order frequency is specified at the product level.
