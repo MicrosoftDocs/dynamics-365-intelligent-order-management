@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This article describes how to set up inventory allocation in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes how to set up the Inventory Visibility allocation feature in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 11/08/2022
 ms.topic: how-to
@@ -13,26 +13,7 @@ title: Set up inventory allocation
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up inventory allocation in Microsoft Dynamics 365 Intelligent Order Management.
-
-## Business background and purpose
-
-In many cases, manufacturers, retailers, and other supply chain business stakeholders must preallocate stock for important sales channels, locations, or customers, or for specific sales events. Inventory allocation is a typical practice in the sales operational planning process, and is done before actual sales activities occur and a sales order is created.
-
-For example, a bicycle company that does both online and in-store sales has limited stock available for a very popular bicycle. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bicycle's available inventory is saved for them. To satisfy corporate partners, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
-
-Inventory allocation has two basic business purposes:
-
-**Inventory protection (also known as ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. Intelligent Order Management's inventory visibility allocation feature protects allocated inventory so that the other allocations, reservations, or sales demands won't affect previously allocated inventory.
-**Oversell control** – Oversell control restricts allocated quantities so that receiving parties don't consume more than their allocated quantity. Intelligent Order Management's inventory visibility allocation feature puts a restriction on previously allocated quantities, so that receiving parties such as channels or customer groups won't over-consume when actual sales transactions based on soft reservations go into effect.
-
-## Allocation definition in inventory visibility service
-
-Although the inventory visibility allocation feature doesn't set aside physical inventory quantities, it does refer to available the physical inventory quantity of a product to define its initial available-to-allocate virtual pool quantity. Inventory allocation is a soft allocation. In other words, the allocation is done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any e-commerce customers visit the sales channel or retail store to purchase the stock.
-
-The difference between inventory allocation and inventory soft reservation is that soft reservation is usually linked to actual sales transactions such as sales order lines. If you want to use the allocation and soft reservation features together, it is recommended that you do inventory allocation first and then soft reserve against the allocated quantities. <!--For more information, see [Consume as a soft reservation]().-->
-
-The inventory allocation feature lets sales planners and key account managers manage and preallocate important stock across allocation groups such as channels, regions, and customer groups. It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, so that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast sale or promotional events.
+This article describes how to set up the Inventory Visibility allocation feature in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Terminology
 
@@ -49,9 +30,39 @@ The following illustration shows the business workflow for inventory allocation.
 
 ![Allocation.](media/Allocationpp.png)
 
-## Configure inventory allocation settings
+## Business background and purpose
 
-As a prerequisite to using Allocation feature in Intellligent Order Management, below should be done:
+In many cases, manufacturers, retailers, and other supply chain business stakeholders must preallocate stock for important sales channels, locations, or customers, or for specific sales events. Inventory allocation is a typical practice in the sales operational planning process, and is done before actual sales activities occur and a sales order is created.
+
+For example, a bicycle company that does both online and in-store sales has limited stock available for a very popular bicycle. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bicycle's available inventory is saved for them. To satisfy corporate partners, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
+
+Inventory allocation has two basic business purposes:
+
+**Inventory protection (also known as ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. Intelligent Order Management's Inventory Visibility allocation feature protects allocated inventory so that the other allocations, reservations, or sales demands won't affect previously allocated inventory.
+**Oversell control** – Oversell control restricts allocated quantities so that receiving parties don't consume more than their allocated quantity. Intelligent Order Management's Inventory Visibility allocation feature puts a restriction on previously allocated quantities, so that receiving parties such as channels or customer groups won't over-consume when actual sales transactions based on soft reservations go into effect.
+
+## Inventory Visibility allocation feature definition
+
+The Inventory Visibility allocation feature consists of the following components:
+
+- The predefined, allocation-related data source, physical measures, and calculated measures.
+- Customizable allocation groups that have a maximum of eight levels.
+- A set of allocation application programming interfaces (APIs):
+    - allocate
+    - reallocate
+    - unallocate
+    - consume
+    - query
+
+Although the Inventory Visibility allocation feature doesn't set aside physical inventory quantities, it does refer to the available physical inventory quantity of a product to define its initial available-to-allocate virtual pool quantity. Inventory allocation is a soft allocation. In other words, the allocation is done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any e-commerce customers visit the sales channel or retail store to purchase the stock.
+
+The difference between inventory allocation and inventory soft reservation is that soft reservation is usually linked to actual sales transactions such as sales order lines. If you want to use the allocation and soft reservation features together, it is recommended that you do inventory allocation first and then soft reserve against the allocated quantities. <!--For more information, see [Consume as a soft reservation]().-->
+
+The inventory allocation feature lets sales planners and key account managers manage and preallocate important stock across allocation groups such as channels, regions, and customer groups. It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, so that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast sale or promotional events.
+
+## Prerequisites
+
+Before you configure Inventory Visibility allocation feature settings, you must complete the following prerequisite steps. 
 
 ### Turn on the allocation feature
 
@@ -74,30 +85,21 @@ To enable a product for allocation Intelligent Order Management, follow these st
 
 ![Additional Details tab with Allows Inventory Allocation being set to Yes](media/ProdAllocation.png)
 
-The inventory allocation feature consists of the following components:
+## Configure inventory allocation settings
 
-- The predefined, allocation-related data source, physical measures, and calculated measures.
-- Customizable allocation groups that have a maximum of eight levels.
-- A set of allocation application programming interfaces (APIs):
-    - allocate
-    - reallocate
-    - unallocate
-    - consume
-    - query
-
-**The process of configuring the allocation feature has two steps:**
+**The process of configuring the allocation feature has three steps:**
 
 - Set up the data source and its measures.
 - Set up the allocation group name and hierarchy.
-- Map Allocation groups to Intelligent Order Management mappings
+- Map Allocation groups to Intelligent Order Management mappings.
 
-## Predefined data source
+### Set up the data source and its measures
 
 When you enable the allocation feature and call the configuration update API, Inventory Visibility creates one predefined data source and several initial measures.
 
 The data source is named @iv.
 
-### Initial physical measures
+#### Initial physical measures
 
 1. @iv
 1. @allocated
@@ -105,12 +107,12 @@ The data source is named @iv.
 1. @consumed
 1. @cumulative_consumed
 
-### Initial calculated measures
+#### Initial calculated measures
 
 @iv
 @iv.@available_to_allocate = ?? – ?? – @iv.@allocated
 
-## Add other physical measures to the available-to-allocate calculated measure
+#### Add other physical measures to the available-to-allocate calculated measure
 
 To use allocation, you must set up the available-to-allocate calculated measure (@iv.@available_to_allocate). For example, you have fno data source and the onordered measure, the pos data source and the inbound measure, and you want to do allocation on the on hand for the sum of fno.onordered and pos.inbound. In this case, @iv.@available_to_allocate should contain pos.inbound and fno.onordered in the formula. Here's an example:
 
@@ -119,11 +121,11 @@ To use allocation, you must set up the available-to-allocate calculated measure 
 > [!NOTE]
 > Data source @iv is a predefined data source and the physical measures defined in @iv with prefix @ are predefined measures. These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to encounter unexpected errors when using the allocation feature. You can add new physical measures to the predefined calculated measure @iv.@available_to_allocate, but you must not change its name.
     
-## Change the allocation group name
+### Set up the allocation group name and hierarchy
 
 A maximum of two allocation group names can be set for the cuurent release and will be extended to allocation groups. The groups have a hierarchy.
 
-To set up the allocation groups follow these steps.
+To set up the allocation groups, follow these steps.
 
 1. Go to **Settings**.
 1. Select **Index and Reservation**.
@@ -131,7 +133,7 @@ To set up the allocation groups follow these steps.
 
 For example, if you use two group names and set them to [channel, customerGroup], these names will be valid for allocation-related requests when you call the configuration update API.
 
-## Map allocation groups to Intelligent Order Mnaagement
+### Map Allocation groups to Intelligent Order Management mappings
 
 In order to be able to call these groups form Intelligent Order management order orchestration flows, you will need to map these allocation groups to a predefined
 list of allocation groups from Intelligent Order Management.
