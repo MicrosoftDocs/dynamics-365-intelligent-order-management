@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic describes how to set up the Inventory Visibility provider (preview) in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 05/25/2022
+ms.date: 11/09/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Set up Inventory Visibility provider (preview)
@@ -148,7 +148,8 @@ To set up the provider, follow these steps.
 - Click on **Create**. Enter Display Name, Azure Storage account name or blob endpoint.
 - Click **Save**.
 - A sample upload json would look like below:
-    
+
+```JSON
         {
 	        "messagetype": "inventoryonhand",
 	        "feedtype": "overwrite",
@@ -179,7 +180,8 @@ To set up the provider, follow these steps.
 			              }
 		]
       }
-      
+```
+
   - Feedtype can be **Overwrite** for one time update. It can also be **Incremental** (adds Quantities to existing Inventory Visibility data).
 
 ![AZBlob.](media/AzBlob.png)
