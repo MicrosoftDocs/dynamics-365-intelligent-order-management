@@ -39,9 +39,6 @@ To validate and update the Inventory Visibility add-in configurations, follow th
     - **ATP Setting**
     - **Allocation**
     - **Feature Management**
-
-    ![IVSetup.](media/IVSetup.png)
-
 1. On the **Product Index Hierarchy** tab, confirm that the following elements appear:
     - A grid that has the title **Set Product Index Hierarchy**
     - A **New Index Set** button
@@ -81,24 +78,24 @@ To validate and update the Inventory Visibility add-in configurations, follow th
     - **Available For Reservation Calculated Measure** column
     - **Settings** button
 1. Go to **Intelligent Order Management Mappings**, and confirm the grid has the following elements:
-    1. **Set Physical Measure Mapping** - This section includes the following columns and allows you to map any of your datasource physical measures mappings to a standard physical measure.
-        - **Datasource** column: Refers to the source system.
-        - **Base Measure** column: Refers to the Intelligent Order Management standard measure.
-        - **Physical measure** column: Refers to the physical measure used in the source system.
-    2. **Set Calculated measure Mappings**: This section includes the following columns and allows you to map any of your datasource calculated measures mappings to a standard calculated measure.
-        - **Datasource** column: Refers to the source system.
-        - **Base Measure** column: Refers to the Intelligent Order Management standard measure.
-        - **Calculated measure** column: Refers to the calculated measure used in the source system.   
+    1. **Set Physical Measure Mapping** - This section includes the following columns and allows you to map any of your data source physical measures mappings to a standard physical measure.
+        - **Data Source** - Refers to the source system.
+        - **Base Measure** - Refers to the Intelligent Order Management standard measure.
+        - **Physical measure** - Refers to the physical measure used in the source system.
+    2. **Set Calculated measure Mappings**: This section includes the following columns and allows you to map any of your data source calculated measures mappings to a standard calculated measure.
+        - **Data Source** - Refers to the source system.
+        - **Base Measure** - Refers to the Intelligent Order Management standard measure.
+        - **Calculated measure** - Refers to the calculated measure used in the source system.   
     3. **Set Allocation Group Mappings**: This section includes the following columns and allows you to map your defined allocation groups to a standard set of allocation groups.
-        - **Allocation Group** column: Refers to a defined allocation group. This value can range from "group 0" to "group 7".
-        - **Allocation Group Name**: Refers to the standard allocation group your defined allocation group maps to.
+        - **Allocation Group** - Refers to a defined allocation group. This value can range from "group 0" to "group 7".
+        - **Allocation Group Name** - Refers to the standard allocation group your defined allocation group maps to.
 
 ![Mapping.](media/Mapping.png)
 
 > ![NOTE] 
-> Currently, Intelligent Order Management supports allocation groups of up to two.
+> Currently, Intelligent Order Management supports allocation groups of up to two groups.
   
-After you've completed the preceding validation, the settings configure or reuse the physical and calculated measures across your data sources.
+After you've completed the above validations and configuration updates, Intelligent Order Management configures or reuses the physical and calculated measures across all your data sources.
 
 ## Set up the provider
 
@@ -109,13 +106,13 @@ After you've completed the preceding validation, the settings configure or reuse
 To set up the provider, follow these steps.
 
 1. In Intelligent Order Management, go to **Providers \> Library**.
-2. On the **Dynamics 365 Inventory Visibility** tile, click on **Select**.
-3. On the top right, select **Activate Providers**
-4. On the **Terms and Conditions** page, check the box and click on **Accept**.
-5. In the **Connections** section, you must set up two connections:
-    - Inventory Visibility Dataverse (current environment) connection
-    - Inventory Visibility Blob Storage connection  
-6. To set up the Inventory Visibility Blob Storage connection, follow these steps:
+1. On the **Dynamics 365 Inventory Visibility** tile, click on **Select**.
+1. On the top right, select **Activate Providers**
+1. On the **Terms and Conditions** page, check the box and click on **Accept**.
+1. In the **Connections** section, you must set up two connections:
+    - Inventory Visibility Blob Storage connection
+    - Inventory Visibility Dataverse (current environment) connection  
+1. To set up the **Inventory Visibility Blob Storage** connection, follow these steps:
     1. Select the Inventory Visibility Blob Storage connection.
     1. Select **Create**. This action brings up the Microsoft Power Automate **Connections** page.
     1. Select **Add New Connection**. 
@@ -126,15 +123,15 @@ To set up the provider, follow these steps.
 
     ![AZBlob.](media/AzBlob.png)
 
-7. To set up the **Inventory Visibility Dataverse (current environment)** connection, select **Create**.
-8. Select **Next**.
-9. In the **Parameters** section, set the following mandatory parameters:
+1. To set up the **Inventory Visibility Dataverse (current environment)** connection, select **Create**.
+1. Select **Next**.
+1. In the **Parameters** section, set the following mandatory parameters:
     1. **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you're using inventory upload through blob storage.
     1. **Inventory Visibility File Drop Location** – Specify the path in blob storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
     1. **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
-10. Review the **Transformations** and then select **Next**.
-11. Review the **Connections** , and then select **Activate**.
-12. Select **Next**, and then select **Review and Finish**.
+1. Review the **Transformations** and then select **Next**.
+1. Review the **Connections** , and then select **Activate**.
+1. Select **Next**, and then select **Review and Finish**.
 
 ### Inventory Visibility JSON file example
 
