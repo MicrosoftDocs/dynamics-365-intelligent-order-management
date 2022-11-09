@@ -146,10 +146,25 @@ To set up the provider, follow these steps.
     1. Search for **Azure Blob Storage**, and then select it.
     1. Select **Create**. 
     1. Enter values for **Display name** and **Azure Storage account name or blob endpoint**.
-<!-- Enter value for Azure Storage Account Access Key here?-->
     1. Select **Save**.
 
-<!--- A sample upload json would look like below:
+![AZBlob.](media/AzBlob.png)
+
+7. To set up the Inventory Visibility Dataverse (current environment) connection, select **Create**. This should automatically connect based on your system connections setup.
+8. Select **Next**.
+9. In the **Parameters** section, set the following mandatory parameters:
+
+    1. **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you are using inventory upload through blob storage.
+    1. **Inventory Visibility File Drop Location** – Specify the path in blob storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
+    1. **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
+
+10. Review the **Transformations** and then select **Next**.
+11. Review the **Connections** , and then select **Activate**.
+12. Select **Next**, and then select **Review and Finish**.
+
+### Inventory Visibility JSON file example
+
+The following code is an example of what an uploaded Inventory Visibility JSON file would look like, where the **feedtype** value is set to **overwrite** for a one-time update. The **feedtype** value can also be set to **incremental**, which adds quantities to existing Inventory Visibility data.
 
 ```JSON
         {
@@ -182,23 +197,7 @@ To set up the provider, follow these steps.
 			              }
 		]
       }
-```
--->
-    1. For **Feedtype**, set the value to **Overwrite** for a one-time update. It can also be **Incremental** (which adds quantities to existing Inventory Visibility data).<!--Where is this done?-->
-
-![AZBlob.](media/AzBlob.png)
-
-7. To set up the Inventory Visibility Dataverse (current environment) connection, select **Create**. This should automatically connect based on your system connections setup.
-8. Select **Next**.
-9. In the **Parameters** section, set the following mandatory parameters:
-
-    1. **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you are using inventory upload through blob storage.
-    1. **Inventory Visibility File Drop Location** – Specify the path in blob storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
-    1. **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
-
-10. Review the **Transformations** and then select **Next**.
-11. Review the **Connections** , and then select **Activate**.
-12. Select **Next**, and then select **Review and Finish**.
+``` 
 
 ## Out-of-box capabilities
 
