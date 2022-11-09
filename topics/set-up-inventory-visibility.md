@@ -15,18 +15,16 @@ title: Set up Inventory Visibility provider (preview)
 
 This topic describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-The Inventory Visibility Add-in (also referred to as the Inventory Visibility service) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels.
+The Inventory Visibility add-in (also referred to as the Inventory Visibility service) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels.
 
 For more information about the Inventory Visibility service, see [Inventory Visibility Add In](/dynamics365/supply-chain/inventory/inventory-visibility).
 
 ## Prerequisites
 
-The Inventory Visibility Add-in is a first-party, out-of-box service that will be available as part of Intelligent Order Management. To add this provider so that it can be used in orchestration, you must validate and update the following configurations after you install the add-in.
+The Inventory Visibility add-in is a first-party, out-of-the-box service that is available as part of Intelligent Order Management. To add this provider so that it can be used in orchestration, you must validate and update the following configurations after you install the add-in.
 
-[!NOTE]
-
-The add in comes inbuilt with Intelligent Order Management. If you are a Dynamics 365 Supply Chain and Management customer 
-and want to use Inventory add in from SCM, then please follow the Inventory Visibility tips [here.](/dynamics365/supply-chain/inventory/inventory-visibility-tips)
+> [!NOTE]
+> If you are a Microsoft Dynamics 365 Supply Chain Management customer and want to use the Inventory Visibility add-in, see [Inventory Visibility tips](/dynamics365/supply-chain/inventory/inventory-visibility-tips).
 
 1. Go to **Inventory Visibility \> Index And Reservations** site map area.
 1. Confirm that the following tabs appear on the page:
@@ -119,7 +117,7 @@ and want to use Inventory add in from SCM, then please follow the Inventory Visi
 ![Mapping.](media/Mapping.png)
 
 > ![NOTE] 
-> Intelligent Order Management today supports allocation groups up to two.
+> Currently, Intelligent Order Management supports allocation groups of up to two.
   
 After you've completed the preceding validation, the settings configure or reuse the physical and calculated measures across your data sources.
 
@@ -140,14 +138,18 @@ To set up the provider, follow these steps.
     - Inventory Visibility Dataverse (current environment) connection
     - Blob storage connection
   
- 6. **For blob connection, follow these steps:**
+ 6. To set up the Inventory Visibility Blob Storage connection, follow these steps:
 
-- Select the Inventory Visibility Blob Storage connection.
-- Select **Create**. This will take you to power automate connections.
-- Add New Connection. Search Azure Blob Storage.
-- Click on **Create**. Enter Display Name, Azure Storage account name or blob endpoint.
-- Click **Save**.
-- A sample upload json would look like below:
+    1. Select the Inventory Visibility Blob Storage connection.
+    1. Select **Create**. This will take you to power automate connections.
+    1. Select **Add New Connection**. 
+    1. Search for **Azure Blob Storage**, and then select it.
+    1. Select **Create**. 
+    1. Enter values for **Display name** and **Azure Storage account name or blob endpoint**.
+<!-- Enter value for Azure Storage Account Access Key here?-->
+    1. Select **Save**.
+
+<!--- A sample upload json would look like below:
 
 ```JSON
         {
@@ -181,25 +183,22 @@ To set up the provider, follow these steps.
 		]
       }
 ```
-
-  - Feedtype can be **Overwrite** for one time update. It can also be **Incremental** (adds Quantities to existing Inventory Visibility data).
+-->
+    1. For **Feedtype**, set the value to **Overwrite** for a one-time update. It can also be **Incremental** (which adds quantities to existing Inventory Visibility data).<!--Where is this done?-->
 
 ![AZBlob.](media/AzBlob.png)
 
-7.  **For Inventory Visibility Dataverse (current environment) connection, follow below steps**.
- 
-- Select **Create**.This should automatically connect based on your system connections setup.
+7. To set up the Inventory Visibility Dataverse (current environment) connection, select **Create**. This should automatically connect based on your system connections setup.
+8. Select **Next**.
+9. In the **Parameters** section, set the following mandatory parameters:
 
-8.  Click on **Next**.
-9.  On the **Parameters** section, set the following mandatory parameters:
+    1. **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you are using inventory upload through blob storage.
+    1. **Inventory Visibility File Drop Location** – Specify the path in blob storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
+    1. **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
 
-    - **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you are using inventory upload through blob.
-    - **Inventory Visibility File Drop Location** – Specify the path in Blob Storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
-    - **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
-
-10. Review the **Transformations** and click **Next**.
-11. Review the **Connections** , click on **Activate**.
-12. Click **Next** and **Review and Finish**.
+10. Review the **Transformations** and then select **Next**.
+11. Review the **Connections** , and then select **Activate**.
+12. Select **Next**, and then select **Review and Finish**.
 
 ## Out-of-box capabilities
 
