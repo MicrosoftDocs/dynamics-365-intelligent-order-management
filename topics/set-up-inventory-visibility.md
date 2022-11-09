@@ -15,7 +15,7 @@ title: Set up Inventory Visibility provider (preview)
 
 This topic describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-The Inventory Visibility add-in (also referred to as the Inventory Visibility service) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels.
+The Inventory Visibility add-in (also known as the Inventory Visibility service) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels.
 
 For more information about the Inventory Visibility service, see [Inventory Visibility Add In](/dynamics365/supply-chain/inventory/inventory-visibility).
 
@@ -24,7 +24,7 @@ For more information about the Inventory Visibility service, see [Inventory Visi
 The Inventory Visibility add-in is a first-party, out-of-the-box service that is available as part of Intelligent Order Management. To add this provider so that it can be used in orchestration, you must validate and update the following configurations after you install the add-in.
 
 > [!NOTE]
-> If you are a Microsoft Dynamics 365 Supply Chain Management customer and want to use the Inventory Visibility add-in, see [Inventory Visibility tips](/dynamics365/supply-chain/inventory/inventory-visibility-tips).
+> If you're a Microsoft Dynamics 365 Supply Chain Management customer and want to use the Inventory Visibility add-in, see [Inventory Visibility tips](/dynamics365/supply-chain/inventory/inventory-visibility-tips).
 
 1. Go to **Inventory Visibility \> Index And Reservations** site map area.
 1. Confirm that the following tabs appear on the page:
@@ -79,17 +79,17 @@ The Inventory Visibility add-in is a first-party, out-of-the-box service that is
     - **Available For Reservation Calculated Measure** column
     - **Settings** button
 1. Go to **Intelligent Order Management Mappings**, and confirm the grid has the following elements:
-    1. **Set Physical Measure Mapping** : This section will allow you to map any of of your **Datasource** **Physical measures** mapping to a standard **Physical measure** in IOM.
-        - **Datasource** column: refers to the source system.
-        - **Base Measure** column : refers to the IOM standard measure.
-        - **Physical measure** column : refers to the physical measure used in the source system.
-    2. **Set Calculated measure Mappings**: This section will allow you to map any of of your **Datasource** **Calculated measures** mapping to a standard **Calculated measure** in IOM.
-        - **Datasource** column: refers to the source system.
-        - **Base Measure** column : refers to the IOM standard measure.
-        - **Calculated measure** column : refers to the calculated measure used in the source system.   
-    3. **Set Allocation Group Mappings** : This section will allow you to map your defined allocation groups to a standard set of allocation groups in IOM.
-        - **Allocation Group** column: refers the group. this could range from group 0 to group 7.
-        - **Allocation Group Name** : This section will allow you to map the group defined to a standard allocation group in IOM.
+    1. **Set Physical Measure Mapping** - This section will allow you to map any of your **Datasource** **Physical measures** mapping to a standard **Physical measure** in Intelligent Order Management.
+        - **Datasource** column: Refers to the source system.
+        - **Base Measure** column: Refers to the Intelligent Order Management standard measure.
+        - **Physical measure** column: Refers to the physical measure used in the source system.
+    2. **Set Calculated measure Mappings**: This section will allow you to map any of your **Datasource** **Calculated measures** mapping to a standard **Calculated measure** in Intelligent Order Management.
+        - **Datasource** column: Refers to the source system.
+        - **Base Measure** column: Refers to the Intelligent Order Management standard measure.
+        - **Calculated measure** column: Refers to the calculated measure used in the source system.   
+    3. **Set Allocation Group Mappings**: This section will allow you to map your defined allocation groups to a standard set of allocation groups in Intelligent Order Management.
+        - **Allocation Group** column: Refers to the group. This value can range from "group 0" to "group 7".
+        - **Allocation Group Name**: This section will allow you to map the group defined to a standard allocation group in Intelligent Order Management.
 
 ![Mapping.](media/Mapping.png)
 
@@ -115,7 +115,7 @@ To set up the provider, follow these steps.
     - Inventory Visibility Blob Storage connection  
 6. To set up the Inventory Visibility Blob Storage connection, follow these steps:
     1. Select the Inventory Visibility Blob Storage connection.
-    1. Select **Create**. This will take you to power automate connections.
+    1. Select **Create**. This action brings up the Microsoft Power Automate **Connections** page.
     1. Select **Add New Connection**. 
     1. Search for **Azure Blob Storage**, and then select it.
     1. Select **Create**. 
@@ -124,10 +124,10 @@ To set up the provider, follow these steps.
 
     ![AZBlob.](media/AzBlob.png)
 
-7. To set up the Inventory Visibility Dataverse (current environment) connection, select **Create**. This should automatically connect based on your system connections setup.
+7. To set up the **Inventory Visibility Dataverse (current environment)** connection, select **Create**.
 8. Select **Next**.
 9. In the **Parameters** section, set the following mandatory parameters:
-    1. **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you are using inventory upload through blob storage.
+    1. **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you're using inventory upload through blob storage.
     1. **Inventory Visibility File Drop Location** – Specify the path in blob storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
     1. **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
 10. Review the **Transformations** and then select **Next**.
