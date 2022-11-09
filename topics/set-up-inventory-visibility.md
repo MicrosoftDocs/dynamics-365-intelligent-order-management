@@ -28,7 +28,6 @@ The Inventory Visibility add-in is a first-party, out-of-the-box service that is
 
 1. Go to **Inventory Visibility \> Index And Reservations** site map area.
 1. Confirm that the following tabs appear on the page:
-
     - Product Index Hierarchy
     - Data Source
     - Calculated Measure
@@ -39,80 +38,58 @@ The Inventory Visibility add-in is a first-party, out-of-the-box service that is
     - Allocation
     - Feature Management
   
-  ![IVSetup.](media/IVSetup.png)
+    ![IVSetup.](media/IVSetup.png)
 
 1. On the **Product Index Hierarchy** tab, confirm that the following elements appear:
-
     - A grid that has the title **Set Product Index Hierarchy**
     - A **New Index Set** button
     - A grid that has the following columns:
-
         - Set Number
         - Dimension
         - Hierarchy
         - Settings Button Image
-
 1. On the **Data Source** tab, confirm that the following elements appear:
-
     - **Set Data Source** title
     - **New Data Source** button
-
 1. Confirm that the following controls appear:
-
     - Datasource - IV
     - Datasource - FNO
     - Datasource - IOM
     - Datasource - SAP
     - Datasource - POS
-
 1. Expand the **DataSource - IOM** control, and confirm that the following elements appear:
-
     - Under **Dimension Mappings**:
-
         - **Add** button
-
     - Under **Physical Measures**:
-
         - Measure Name
         - Modified On
         - Sample Data
-
 1. On the **Calculated Measure** tab, confirm that the following elements appear:
-
     - **Set Calculated Measures** tab
     - **New Calculated Measure** button
-
 1. Go to **Feature Management**, and enable the **OnHandReservation** feature.
 1. Go to **Soft Reservation Hierarchy**, and confirm that the grid has the following elements:
-
     - **Dimensions** column
     - **Hierarchy** column
     - **Settings** button
-
 1. Go to **Soft Reservation Mapping**, and confirm that the grid has the following elements:
-
     - **Physical Measure Data Source** column
     - **Physical Measure** column
     - **Available For Reservation Data Source** column
     - **Available For Reservation Calculated Measure** column
     - **Settings** button
-
 1. Go to **Intelligent Order Management Mappings**, and confirm the grid has the following elements:
-
-   1. **Set Physical Measure Mapping** : This section will allow you to map any of of your **Datasource** **Physical measures** mapping to a standard **Physical measure** in IOM.
-    - **Datasource** column: refers to the source system.
-    - **Base Measure** column : refers to the IOM standard measure.
-    - **Physical measure** column : refers to the physical measure used in the source system.
-
-   2. **Set Calculated measure Mappings**: This section will allow you to map any of of your **Datasource** **Calculated measures** mapping to a standard **Calculated measure** in IOM.
-    - **Datasource** column: refers to the source system.
-    - **Base Measure** column : refers to the IOM standard measure.
-    - **Calculated measure** column : refers to the calculated measure used in the source system.
-   
+    1. **Set Physical Measure Mapping** : This section will allow you to map any of of your **Datasource** **Physical measures** mapping to a standard **Physical measure** in IOM.
+        - **Datasource** column: refers to the source system.
+        - **Base Measure** column : refers to the IOM standard measure.
+        - **Physical measure** column : refers to the physical measure used in the source system.
+    2. **Set Calculated measure Mappings**: This section will allow you to map any of of your **Datasource** **Calculated measures** mapping to a standard **Calculated measure** in IOM.
+        - **Datasource** column: refers to the source system.
+        - **Base Measure** column : refers to the IOM standard measure.
+        - **Calculated measure** column : refers to the calculated measure used in the source system.   
     3. **Set Allocation Group Mappings** : This section will allow you to map your defined allocation groups to a standard set of allocation groups in IOM.
-
-    - **Allocation Group** column: refers the group. this could range from group 0 to group 7.
-    - **Allocation Group Name** : This section will allow you to map the group defined to a standard allocation group in IOM.
+        - **Allocation Group** column: refers the group. this could range from group 0 to group 7.
+        - **Allocation Group Name** : This section will allow you to map the group defined to a standard allocation group in IOM.
 
 ![Mapping.](media/Mapping.png)
 
@@ -134,12 +111,9 @@ To set up the provider, follow these steps.
 3. On the top right, select **Activate Providers**
 4. On the **Terms and Conditions** page, check the box and click on **Accept**.
 5. In the **Connections** section, you must set up two connections:
-
     - Inventory Visibility Dataverse (current environment) connection
-    - Blob storage connection
-  
- 6. To set up the Inventory Visibility Blob Storage connection, follow these steps:
-
+    - Inventory Visibility Blob Storage connection  
+6. To set up the Inventory Visibility Blob Storage connection, follow these steps:
     1. Select the Inventory Visibility Blob Storage connection.
     1. Select **Create**. This will take you to power automate connections.
     1. Select **Add New Connection**. 
@@ -148,16 +122,14 @@ To set up the provider, follow these steps.
     1. Enter values for **Display name** and **Azure Storage account name or blob endpoint**.
     1. Select **Save**.
 
-![AZBlob.](media/AzBlob.png)
+    ![AZBlob.](media/AzBlob.png)
 
 7. To set up the Inventory Visibility Dataverse (current environment) connection, select **Create**. This should automatically connect based on your system connections setup.
 8. Select **Next**.
 9. In the **Parameters** section, set the following mandatory parameters:
-
     1. **Inventory Visibility Error File Drop Location** – Specify the path of the location where the inventory error log should be saved if you are using inventory upload through blob storage.
     1. **Inventory Visibility File Drop Location** – Specify the path in blob storage where the Inventory Visibility file should be saved so that it can be read by and uploaded to the Inventory Visibility service.
     1. **Inventory Visibility Organization ID** – Specify the Intelligent Order Management organization ID.
-
 10. Review the **Transformations** and then select **Next**.
 11. Review the **Connections** , and then select **Activate**.
 12. Select **Next**, and then select **Review and Finish**.
