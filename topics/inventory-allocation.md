@@ -39,10 +39,7 @@ Inventory allocation has two basic business purposes:
 - **Inventory protection (also known as ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. The Inventory Visibility add-in inventory allocation feature protects allocated inventory so that the other allocations, reservations, or sales demands won't affect previously allocated inventory.
 - **Oversell control** – Oversell control restricts allocated quantities so that receiving parties don't consume more than their allocated quantity. The Inventory Visibility add-in inventory allocation feature puts a restriction on previously allocated quantities, so that receiving parties such as channels or customer groups won't over-consume when actual sales transactions based on soft reservations go into effect.
 
-<!--The following illustration shows the business workflow for inventory allocation.
-
-![Allocation.](media/Allocationpp.png) -->
-## Inventory Visibility add-in inventory allocation feature
+## Inventory Visibility inventory allocation feature
 
 The Inventory Visibility add-in inventory allocation feature consists of the following components:
 
@@ -84,7 +81,7 @@ To enable a product for allocation in Intelligent Order Management, follow these
 1. Open the product, and then select the **Additional Details** tab.
 1. Under the **Inventory** section, for **Allows Inventory Allocation**, select **Yes** from the drop-down list.
 
-![Additional Details tab with Allows Inventory Allocation being set to Yes](media/ProdAllocation.png)
+![Additional Details tab with Allows Inventory Allocation set to Yes](media/ProdAllocation.png)
 
 ## Configure inventory allocation settings
 
@@ -153,7 +150,7 @@ To map allocation groups, follow these steps.
 1. Go to the **Set Allocation Group Mappings** section.
 1. Select the predefined **Allocation Group Name** from Intelligent Order Management to map the Inventory Visibility **Allocation Group**.
 
-![AllocationGroup.](media/AllocationGroup.png)
+![Inventory Visibility Configuration page with Set Allocation Group Mappings section highlighted](media/AllocationGroup.png)
 
 ## Use the allocation API
 
@@ -161,7 +158,7 @@ Intelligent Order Management has a set of APIs to perform allocation relevant op
 
 The following APIs are available for allocation as part of Intelligent Order Management. The request and response for these payloads resemble what is available from Supply Chain Management. The table shows the mapping between the Intelligent Order Management APIs and Inventory Visibility add-in APIs, and provides links to relevant documentation.
 
-| Intelligent Order Management API name | Inventory Visibility API | Method | Description | Documentation |
+| Intelligent Order Management API | Inventory Visibility API | Method | Description | Documentation |
 |---|---|---|---|---|
 | OnHandAllocate | POST /api/environment/{environmentId}/allocation/allocate | POST | Allocate Inventory across allocated groups. | [Allocate Inventory](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#allocate) |
 | OnHandReallocate | POST /api/environment/{environmentId}/allocation/reallocate | POST | Reallocate Inventory. | [Reallocate inventory](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#reallocate) |
