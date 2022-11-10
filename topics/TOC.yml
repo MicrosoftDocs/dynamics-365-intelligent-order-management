@@ -104,6 +104,8 @@
         href: create-new-provider.md
     - name: Set up inventory dashboards
       href: inventory-dashboards.md
+    - name: Set up inventory allocation
+      href: inventory-allocation.md
     - name: Enable Bing Maps for your environment
       href: enable-bing-maps.md
     - name: Enable timeline capabilities
