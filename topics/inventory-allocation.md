@@ -1,8 +1,8 @@
 ---
 author: sumanic
-description: This article describes how to set up the Inventory Visibility allocation feature in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes how to set up the Inventory Visibility add-in inventory allocation feature in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 11/09/2022
+ms.date: 11/10/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Set up inventory allocation
@@ -13,9 +13,11 @@ title: Set up inventory allocation
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up the Inventory Visibility allocation feature in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes how to set up the Inventory Visibility add-in inventory allocation feature in Microsoft Dynamics 365 Intelligent Order Management.
 
-## Terminology
+For information about the Inventory Visibility add-in, see [Inventory Visibility Add In](/dynamics365/supply-chain/inventory/inventory-visibility). For information on how to add the Inventory Visibility add-in as a provider in Intelligent Order Management, see [Set up Inventory Visibility provider](set-up-inventory-visibility-provider.md).
+
+## Key terms
 
 The following terms and concepts are useful in discussions of inventory allocation:
 
@@ -26,10 +28,6 @@ The following terms and concepts are useful in discussions of inventory allocati
 - **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups.
 - **Consumed** – A physical measure that indicates quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the allocated physical measure is automatically reduced.
 
-The following illustration shows the business workflow for inventory allocation.
-
-![Allocation.](media/Allocationpp.png)
-
 ## Business background and purpose
 
 In many cases, manufacturers, retailers, and other supply chain business stakeholders must preallocate stock for important sales channels, locations, or customers, or for specific sales events. Inventory allocation is a typical practice in the sales operational planning process, and is done before actual sales activities occur and a sales order is created.
@@ -38,12 +36,16 @@ For example, a bicycle company that does both online and in-store sales has limi
 
 Inventory allocation has two basic business purposes:
 
-- **Inventory protection (also known as ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. Intelligent Order Management's Inventory Visibility allocation feature protects allocated inventory so that the other allocations, reservations, or sales demands won't affect previously allocated inventory.
-- **Oversell control** – Oversell control restricts allocated quantities so that receiving parties don't consume more than their allocated quantity. Intelligent Order Management's Inventory Visibility allocation feature puts a restriction on previously allocated quantities, so that receiving parties such as channels or customer groups won't over-consume when actual sales transactions based on soft reservations go into effect.
+- **Inventory protection (also known as ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. Intelligent Order Management's Inventory Visibility add-in inventory allocation feature protects allocated inventory so that the other allocations, reservations, or sales demands won't affect previously allocated inventory.
+- **Oversell control** – Oversell control restricts allocated quantities so that receiving parties don't consume more than their allocated quantity. Intelligent Order Management's Inventory Visibility add-in inventory allocation feature puts a restriction on previously allocated quantities, so that receiving parties such as channels or customer groups won't over-consume when actual sales transactions based on soft reservations go into effect.
 
-## Inventory Visibility allocation feature definition
+The following illustration shows the business workflow for inventory allocation.
 
-The Inventory Visibility allocation feature consists of the following components:
+![Allocation.](media/Allocationpp.png)
+
+## Inventory Visibility add-in inventory allocation feature
+
+The Inventory Visibility add-in inventory allocation feature consists of the following components:
 
 - The predefined, allocation-related data source, physical measures, and calculated measures.
 - Customizable allocation groups that have a maximum of eight levels.
@@ -54,7 +56,7 @@ The Inventory Visibility allocation feature consists of the following components
     - consume
     - query
 
-Although the Inventory Visibility allocation feature doesn't set aside physical inventory quantities, it does refer to the available physical inventory quantity of a product to define its initial available-to-allocate virtual pool quantity. Inventory allocation is a soft allocation. In other words, the allocation is done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any e-commerce customers visit the sales channel or retail store to purchase the stock.
+Although the inventory allocation feature doesn't set aside physical inventory quantities, it does refer to the available physical inventory quantity of a product to define its initial available-to-allocate virtual pool quantity. Inventory allocation is a soft allocation. In other words, the allocation is done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any e-commerce customers visit the sales channel or retail store to purchase the stock.
 
 The difference between inventory allocation and inventory soft reservation is that soft reservation is usually linked to actual sales transactions such as sales order lines. If you want to use the allocation and soft reservation features together, it is recommended that you do inventory allocation first and then soft reserve against the allocated quantities. <!--For more information, see [Consume as a soft reservation]().-->
 
