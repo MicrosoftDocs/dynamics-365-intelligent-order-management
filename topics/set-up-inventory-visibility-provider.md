@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 11/09/2022
+ms.date: 11/10/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Set up Inventory Visibility provider
@@ -78,15 +78,15 @@ To validate and update the Inventory Visibility add-in configurations, follow th
     - **Available For Reservation Calculated Measure** column
     - **Settings** button
 1. Go to **Intelligent Order Management Mappings**, and confirm the grid has the following elements:
-    1. **Set Physical Measure Mapping** - This section includes the following columns and allows you to map any of your data source physical measures mappings to a standard physical measure.
+    - **Set Physical Measure Mapping** - This section includes the following columns and allows you to map any of your data source physical measures mappings to a standard physical measure.
         - **Data Source** - Refers to the source system.
         - **Base Measure** - Refers to the Intelligent Order Management standard measure.
         - **Physical measure** - Refers to the physical measure used in the source system.
-    2. **Set Calculated measure Mappings**: This section includes the following columns and allows you to map any of your data source calculated measures mappings to a standard calculated measure.
+    - **Set Calculated measure Mappings**: This section includes the following columns and allows you to map any of your data source calculated measures mappings to a standard calculated measure.
         - **Data Source** - Refers to the source system.
         - **Base Measure** - Refers to the Intelligent Order Management standard measure.
         - **Calculated measure** - Refers to the calculated measure used in the source system.   
-    3. **Set Allocation Group Mappings**: This section includes the following columns and allows you to map your defined allocation groups to a standard set of allocation groups.
+    - **Set Allocation Group Mappings**: This section includes the following columns and allows you to map your defined allocation groups to a standard set of allocation groups.
         - **Allocation Group** - Refers to a defined allocation group. This value can range from "group 0" to "group 7".
         - **Allocation Group Name** - Refers to the standard allocation group your defined allocation group maps to.
 
