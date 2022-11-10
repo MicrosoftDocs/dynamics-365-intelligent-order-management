@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to set up the Inventory Visibility allocation feature in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 11/08/2022
+ms.date: 11/09/2022
 ms.topic: how-to
 ms.author: sumanic
 title: Set up inventory allocation
@@ -109,21 +109,21 @@ The data source is named @iv.
 
 #### Initial calculated measures
 
-@iv
-@iv.@available_to_allocate = ?? – ?? – @iv.@allocated
+`@iv`
+`@iv.@available_to_allocate = ?? – ?? – @iv.@allocated`
 
 #### Add other physical measures to the available-to-allocate calculated measure
 
-To use allocation, you must set up the available-to-allocate calculated measure (@iv.@available_to_allocate). For example, you have fno data source and the onordered measure, the pos data source and the inbound measure, and you want to do allocation on the on hand for the sum of fno.onordered and pos.inbound. In this case, @iv.@available_to_allocate should contain pos.inbound and fno.onordered in the formula. Here's an example:
+To use allocation, you must set up the available-to-allocate calculated measure (**@iv.@available_to_allocate**). For example, if you have the **fno** data source and the **onordered** measure, and the **pos** data source and the **inbound** measure, and you want to do allocation on the on-hand for the sum of **fno.onordered** and **pos.inbound**, the **@iv.@available_to_allocate** measure should contain both **pos.inbound** and **fno.onordered** in the formula, as shown in the following example:
 
-@iv.@available_to_allocate = fno.onordered + pos.inbound – @iv.@allocated
+`@iv.@available_to_allocate = fno.onordered + pos.inbound – @iv.@allocated`
 
 > [!NOTE]
-> Data source @iv is a predefined data source and the physical measures defined in @iv with prefix @ are predefined measures. These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to encounter unexpected errors when using the allocation feature. You can add new physical measures to the predefined calculated measure @iv.@available_to_allocate, but you must not change its name.
+> Data source **@iv** is a predefined data source and the physical measures defined in **@iv** with the prefix "@" are predefined measures. These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to encounter unexpected errors when using the allocation feature. You can add new physical measures to the predefined calculated measure **@iv.@available_to_allocate**, but you must not change its name.
     
 ### Set up the allocation group name and hierarchy
 
-A maximum of two allocation group names can be set for the cuurent release and will be extended to allocation groups. The groups have a hierarchy.
+A maximum of two allocation group names can be set for the current release and will be extended to allocation groups. The groups have a hierarchy.
 
 To set up the allocation groups, follow these steps.
 
@@ -151,7 +151,7 @@ to make assignments, follow these steps.
 ## Use the allocation API
 
 As part of Dynamics 365 Intelligent Order Management, you will now also have a set of APIs to perform allocation relevant operations.
-As part of order orchestration, IOM will be bale to automatically determine if it needs to call Dynamcs 365 Supply Chain Management APIs 
+As part of order orchestration, IOM will be bale to automatically determine if it needs to call Dynamics 365 Supply Chain Management APIs 
 or Intelligent Order Management APIs. For more information on Supply Chain Management APIs, see [Using the allocation API](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api).
 
 Below APIs are available for allocation as part of Intelligent Order Management:
