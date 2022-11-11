@@ -96,33 +96,33 @@ When you enable the inventory allocation feature and call the configuration upda
 
 #### Predefined data source
 
-The predefined data source is named **@iv**.
+The predefined data source is named `@iv`.
 
 #### Initial physical measures
 
 The following initial physical measures are created:
 
-- **@iv**
-- **@allocated**
-- **@cumulative\_allocated**
-- **@consumed**
-- **@cumulative\_consumed**
+- `@iv`
+- `@allocated`
+- `@cumulative\_allocated`
+- `@consumed`
+- `@cumulative\_consumed`
 
 #### Initial calculated measures
 
 The following initial calculated measures are created:
 
-- **@iv**
-- **@iv.@available_to_allocate** = ?? – ?? – **@iv.@allocated**
+- `@iv`
+- `@iv.@available_to_allocate = ?? – ?? – @iv.@allocated`
 
 #### Add other physical measures to the available-to-allocate calculated measure
 
-To use allocation, you must set up the available-to-allocate calculated measure (**@iv.@available_to_allocate**). For example, you have the **fno** data source and the **onordered** measure, and the **pos** data source and the **inbound** measure, and you want to do allocation on the on-hand inventory for the sum of **fno.onordered** and **pos.inbound**. In this case, the **@iv.@available_to_allocate** measure should contain both **pos.inbound** and **fno.onordered** in the formula, as shown in the following example:
+To use allocation, you must set up the available-to-allocate calculated measure (`@iv.@available_to_allocate`). For example, you have the **fno** data source and the **onordered** measure, and the **pos** data source and the **inbound** measure, and you want to do allocation on the on-hand inventory for the sum of **fno.onordered** and **pos.inbound**. In this case, the `@iv.@available_to_allocate` measure should contain both **pos.inbound** and **fno.onordered** in the formula, as shown in the following example:
 
 `@iv.@available_to_allocate = fno.onordered + pos.inbound – @iv.@allocated`
 
 > [!NOTE]
-> The **@iv** data source is a predefined data source, and the physical measures that are defined in **@iv** and prefixed with an at sign (@) are predefined measures. These measures are a predefined configuration for the inventory allocation feature. Therefore, to help avoid unexpected errors when you use the feature, don't change or delete the predefined measures. You can add new physical measures to the predefined **@iv.@available\_to\_allocate** calculated measure, but you must not change its name.
+> The `@iv` data source is a predefined data source, and the physical measures that are defined in `@iv` and prefixed with an at sign (@) are predefined measures. These measures are a predefined configuration for the inventory allocation feature. Therefore, to help avoid unexpected errors when you use the feature, don't change or delete the predefined measures. You can add new physical measures to the predefined `@iv.@available\_to\_allocate` calculated measure, but you must not change its name.
 
 ### Set up the allocation group name and hierarchy
 
