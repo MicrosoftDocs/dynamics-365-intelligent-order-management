@@ -104,9 +104,9 @@ The following initial physical measures are created:
 
 - `@iv`
 - `@allocated`
-- `@cumulative\_allocated`
+- `@cumulative_allocated`
 - `@consumed`
-- `@cumulative\_consumed`
+- `@cumulative_consumed`
 
 #### Initial calculated measures
 
@@ -122,7 +122,7 @@ To use allocation, you must set up the available-to-allocate calculated measure 
 `@iv.@available_to_allocate = fno.onordered + pos.inbound – @iv.@allocated`
 
 > [!NOTE]
-> The `@iv` data source is a predefined data source, and the physical measures that are defined in `@iv` and prefixed with an at sign (@) are predefined measures. These measures are a predefined configuration for the inventory allocation feature. Therefore, to help avoid unexpected errors when you use the feature, don't change or delete the predefined measures. You can add new physical measures to the predefined `@iv.@available\_to\_allocate` calculated measure, but you must not change its name.
+> The `@iv` data source is a predefined data source, and the physical measures that are defined in `@iv` and prefixed with an at sign (@) are predefined measures. These measures are a predefined configuration for the inventory allocation feature. Therefore, to help avoid unexpected errors when you use the feature, don't change or delete the predefined measures. You can add new physical measures to the predefined `@iv.@available_to_allocate` calculated measure, but you must not change its name.
 
 ### Set up the allocation group name and hierarchy
 
