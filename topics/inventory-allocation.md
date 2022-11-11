@@ -113,7 +113,7 @@ The following initial physical measures are created:
 The following initial calculated measures are created:
 
 - **@iv**
-- **@iv.@available_to_allocate = ?? – ?? – @iv.@allocated**
+- **@iv.@available_to_allocate** = ?? – ?? – **@iv.@allocated**
 
 #### Add other physical measures to the available-to-allocate calculated measure
 
