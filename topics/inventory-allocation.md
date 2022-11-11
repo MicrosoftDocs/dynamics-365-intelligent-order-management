@@ -113,11 +113,11 @@ The following initial physical measures are created:
 The following initial calculated measures are created:
 
 - **@iv**
-- **@iv.@available\_to\_allocate = ?? – ?? – @iv.@allocated**
+- **@iv.@available_to_allocate = ?? – ?? – @iv.@allocated**
 
 #### Add other physical measures to the available-to-allocate calculated measure
 
-To use allocation, you must set up the available-to-allocate calculated measure (**@iv.@available\_to\_allocate**). For example, you have the **fno** data source and the **onordered** measure, and the **pos** data source and the **inbound** measure, and you want to do allocation on the on-hand inventory for the sum of **fno.onordered** and **pos.inbound**. In this case, the **@iv.@available\_to\_allocate** measure should contain both **pos.inbound** and **fno.onordered** in the formula, as shown in the following example:
+To use allocation, you must set up the available-to-allocate calculated measure (**@iv.@available_to_allocate**). For example, you have the **fno** data source and the **onordered** measure, and the **pos** data source and the **inbound** measure, and you want to do allocation on the on-hand inventory for the sum of **fno.onordered** and **pos.inbound**. In this case, the **@iv.@available_to_allocate** measure should contain both **pos.inbound** and **fno.onordered** in the formula, as shown in the following example:
 
 `@iv.@available_to_allocate = fno.onordered + pos.inbound – @iv.@allocated`
 
