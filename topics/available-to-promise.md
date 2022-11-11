@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to set up available-to-promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 11/10/2022
+ms.date: 11/11/2022
 ms.topic: overview
 ms.author: sumanic
 title: Set up available-to-promise inventory capabilities
