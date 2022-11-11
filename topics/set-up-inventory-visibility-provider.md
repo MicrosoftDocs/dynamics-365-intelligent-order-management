@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This topic describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 11/10/2022
 ms.topic: how-to
@@ -13,9 +13,9 @@ title: Set up Inventory Visibility provider
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-The Inventory Visibility provider add-in (also known as the Inventory Visibility service) is a first-party, out-of-box service that's available as part of Intelligent Order Management. The Inventory Visibility provider enables real-time, on-hand inventory change postings and visibility tracking across all your data sources and channels.
+The Inventory Visibility provider add-in is a first-party, out-of-box service that's available as part of Intelligent Order Management. It's also known as the Inventory Visibility service. The Inventory Visibility provider enables real-time, on-hand inventory change postings and visibility tracking across all your data sources and channels.
 
 For more information about the Inventory Visibility service, see [Inventory Visibility Add In](/dynamics365/supply-chain/inventory/inventory-visibility).
 
