@@ -55,7 +55,7 @@ The Inventory Visibility add-in inventory allocation feature consists of the fol
 
 Although the inventory allocation feature doesn't set aside physical inventory quantities, it does refer to the available physical inventory quantity of a product to define the initial quantity of the available-to-allocate virtual pool. Inventory allocation is a soft allocation. In other words, the allocation is done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any e-commerce customers visit the sales channel or retail store to purchase the stock.
 
-The difference between inventory allocation and inventory soft reservation is that soft reservation is usually linked to actual sales transactions such as sales order lines. If you want to use the allocation and soft reservation features together, we recommend that you do inventory allocation first and then soft reserve against the allocated quantities.
+Inventory allocation differs from inventory soft reservation in that soft reservation is usually linked to actual sales transactions such as sales order lines. If you want to use the allocation and soft reservation features together, we recommend that you do inventory allocation first. Then soft reserve against the allocated quantities.
 
 The inventory allocation feature lets sales planners and account managers manage and preallocate important stock across allocation groups such as channels, regions, and customer groups. It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, so that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast sale or promotional events.
 
@@ -102,18 +102,18 @@ The predefined data source is named **@iv**.
 
 The following initial physical measures are created:
 
-- @iv
-- @allocated
-- @cumulative\_allocated
-- @consumed
-- @cumulative\_consumed
+- **@iv**
+- **@allocated**
+- **@cumulative\_allocated**
+- **@consumed**
+- **@cumulative\_consumed**
 
 #### Initial calculated measures
 
 The following initial calculated measures are created:
 
-- @iv
-- @iv.@available\_to\_allocate = ?? – ?? – @iv.@allocated
+- **@iv**
+- **@iv.@available\_to\_allocate = ?? – ?? – @iv.@allocated**
 
 #### Add other physical measures to the available-to-allocate calculated measure
 
