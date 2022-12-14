@@ -87,3 +87,13 @@ q.  The final screen will arrive and will show **Inactive** status for a while a
 
 # Out of the box provider actions
 
+*Provider actions* are associated with a provider and determine the actions that are available to you when you create an orchestration flow. *Transformations* are essential for any provider that retrieves or sends data from Intelligent Order Management to an external service.
+
+| Action | Description |
+| ---------- | ------- |
+| **FedEx Validate Address** | This provider action validates with FedEx on the correctness of shipping address. |
+| **Select FedEx TSS Plan** | This provider action optimizes the best plan for fulfillment based on available inventory. |
+| **FedEx Generate Shipping Label** | This provider action generates the shipping label from FedEx for forward shipments. |
+| **FedEx Cancel Shipment** | This provider action cancels a shipment until the time its shipped. |
+| **FedEx Generate Return Shipping Label** | This provider action generates the FedEx return label for a customer-initiated return. |
+| **FedEx Generate Return Drop Locations** | This provider action fetches the available drop off locations for a particular zip code. |
