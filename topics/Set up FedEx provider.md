@@ -74,6 +74,8 @@ k.  Click on **Create** button.
 
 l.  Once all connections are green, click on **Next** on the wizard.
 
+![AllConnections.](media/FedAllConn.png)
+
 m.  If you are using the webhook from Dataworks, then enter the **EDD Webhook CallbackSignatureKey** (This is basically the webhook name that was registered to consume Estimated Delivery delay updates from FedEx.) and **Retail Commerce ID** (generated while registering to FedExe Returns Tech.
 
 n.  Click on **Next**.
