@@ -18,14 +18,13 @@ FedEx Corporation, formerly Federal Express Corporation and later FDX Corporatio
 
 ## Prerequisites 
 
-FedEx has 3 areas of operations as below.  Customer needs to have their credentials available across these services with FedEx to be able to leverage the capabilities through Dynamics 365 Intelligent Order Management.
+FedEx has three areas of operations as below. Customers must have their credentials available across these services with FedEx to be able to use the capabilities through Dynamics 365 Intelligent Order Management.
 
-1. **FedEx APIF:** This area focuses on FedEx logistics that help brands access new information and capabilities to better fulfill, ship, and service customer orders. Deliver modern, high-value experiences directly to customers. To be able to register and integrate with the APIs for it, please follow below steps:
+- **FedEx APIF:** This area focuses on FedEx logistics that help brands access new information and capabilities to better fulfill, ship, and service customer orders. Deliver modern, high-value experiences directly to customers. To be able to register and integrate with the APIs for it, follow these steps:
    a. Create a FedEx developer portal sign up by following the steps [here](https://developer.fedex.com/api/en-ca/get-started.html).
-   b. Copy your project **API key**, **Secret** and **Shipping account** from the developer portal for setting up the connection and future transactions.
-   
-2. **FedEx Dataworks:** This area of FedEx focuses on Intelligence and predictability aspects of logistics like 2-Day delivery, Expected Delivery Delay predictions. The onboarding to these APIs is manual today and the brand needs to connect with FedEx to get the credentials.
-3. **FedEx Return Tech:** Enable easy returns from the merchant website with a branded, seamless customer return process including an option for a printer-less QR code experience and the ability to choose from approximately 60,000 convenient drop off locations.
+   b. Copy your project **API key**, **Secret** and **Shipping account** from the developer portal for setting up the connection and future transactions.  
+- **FedEx Dataworks:** This area of FedEx focuses on Intelligence and predictability aspects of logistics like 2-Day delivery, Expected Delivery Delay predictions. The onboarding to these APIs is manual today and the brand needs to connect with FedEx to get the credentials.
+- **FedEx Return Tech:** Enable easy returns from the merchant website with a branded, seamless customer return process including an option for a printer-less QR code experience and the ability to choose from approximately 60,000 convenient drop off locations.
 Follow below steps:
 
     a. Register at [Developer portal](https://developer-sandbox.supplychain.fedex.com/sandbox/) for sandbox environment. 
@@ -42,19 +41,19 @@ Follow below steps:
 1. This will open up a wizard for **Terms and Conditions**. Check on **FedEx**, click **Accept** button.
 1. Review the events and actions.
 1. Go to **Connections** section and review the **Microsoft Dataverse** connection that should have connected automatically.
-1. Click on **Create** beside **FedEx** connection. Enter the **Connection name**, choose the environment **Sandbox** or **Production**, **Client Id** and **Client Secret**.
-1. Click on **Create** button.
+1. Select **Create** beside **FedEx** connection. Enter the **Connection name**, choose the environment **Sandbox** or **Production**, **Client Id** and **Client Secret**.
+1. Select **Create** button.
 1. Repeat step (f), (g),(h) for **FedEx Dataworks**.
 1. Repeat step (f), (g) for **FedEx Supply Chain Returns**. Also for this connection, you need to enter **Client Application Name**, **Client Application Username** and **Client Application password**. 
-1. Click on **Create** button.
+1. Select **Create** button.
 1. Once all connections are green, click on **Next** on the wizard.
 
     ![AllConnections.](media/FedAllConn.png)
 
 1. If you're using the webhook from Dataworks, then enter the **EDD Webhook CallbackSignatureKey** (This is basically the webhook name that was registered to consume Estimated Delivery delay updates from FedEx.) and **Retail Commerce ID** (generated while registering to FedEx Returns Tech).
-1. Click on **Next**.
+1. Select **Next**.
 1. Review the Setup.
-1. Click on **Next**. Review the Connections and click on **Activate**.
+1. Select **Next**. Review the Connections and click on **Activate**.
 1. The final screen will arrive and will show **Inactive** status for a while after which it will show **Active**.
 
 ## Out of the box provider actions
