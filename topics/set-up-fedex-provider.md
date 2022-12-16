@@ -14,7 +14,7 @@ title: Set up the FedEx provider
 
 This article describes how to set up the FedEx provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-FedEx Corporation, formerly known as Federal Express Corporation and later as FDX Corporation, is an American multinational conglomerate holding company that's based in Memphis, Tennessee, and that's focused on transportation, e-commerce, and business services. The name "FedEx" is a syllabic abbreviation of the name of the company's original air division, Federal Express, which was used from 1973 until 2000. For more information about FedEx, see the [FedEx website](https://www.fedex.com/en-us/about.html).
+FedEx Corporation is an American multinational conglomerate holding company that's based in Memphis, Tennessee, and is focused on transportation, e-commerce, and business services. It was formerly known as Federal Express Corporation and later as FDX Corporation. The name "FedEx" is a syllabic abbreviation of the name of the company's original air division, Federal Express, which was used from 1973 until 2000. For more information about FedEx, see the [FedEx website](https://www.fedex.com/en-us/about.html).
 
 Dynamics 365 Intelligent Order Management integrates with FedEx services as an out-of-box provider model.
 
@@ -25,10 +25,10 @@ FedEx has the following three areas of operations. To use the capabilities of th
 - **FedEx APIF** – This FedEx area focuses on FedEx logistics that help brands access new information and capabilities so that they can better fulfill, ship, and service customer orders. To be able to register and integrate with the FedEx APIF APIs, you must follow these steps:
 
     1. Create a FedEx developer portal account by following the steps in [Getting started](https://developer.fedex.com/api/en-us/get-started.html).
-    1. Copy your project's **API key**, **Secret**, and **Shipping account** values from the developer portal. You will need these values later, when you set up the connection and future transactions.
+    1. Copy your project's **API key**, **Secret**, and **Shipping account** values from the developer portal. You'll need these values later, when you set up the connection and future transactions.
 
 - **FedEx Dataworks** – This FedEx area focuses on intelligence and predictability aspects of logistics, such two-day delivery and expected delivery delay predictions. The APIs in this area are manually onboarded, and you must connect with FedEx to obtain the credentials to onboard them.
-- **FedEx Return Tech** – This FedEx area lets you to enable easy returns from an e-commerce website through a branded, seamless customer return process that includes an option for a printer-less QR code experience and the ability to choose from approximately 60,000 drop-off locations. To configure FedEx Return Tech, follow these steps:
+- **FedEx Return Tech** – This FedEx area lets you enable easy returns from an e-commerce website through a branded, seamless customer return process that includes an option for a printer-less QR code experience and the ability to choose from approximately 60,000 drop-off locations. To configure FedEx Return Tech, follow these steps:
 
     1. Register in the [FedEx developer portal](https://developer-sandbox.supplychain.fedex.com/sandbox/) for the sandbox environment.
     1. Register in the [FedEx fulfillment portal](https://fulfillment.fedex.com/) for the production environment.
