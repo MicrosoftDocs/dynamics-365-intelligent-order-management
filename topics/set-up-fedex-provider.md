@@ -46,9 +46,8 @@ To set up the FedEx connections in Intelligent Order Management, follow these st
 1. Next to the **FedEx** connection, select **Create**.
 1. Enter a **Connection name** value, select the environment (**Sandbox** or **Production**), enter a **Client Id** value, and enter a **Client Secret** value.
 1. Select **Create**.
-1. Repeat steps 5 through 8 for the **FedEx Dataworks** connection.
-1. Repeat step 5 through 8 for the **FedEx Supply Chain Returns** connection. For this connection, you must also enter **Client Application Name**, **Client Application Username**, and **Client Application password** values. 
-1. Select **Create**.
+1. Repeat steps 6 through 8 for the **FedEx Dataworks** connection.
+1. Repeat step 6 through 8 for the **FedEx Supply Chain Returns** connection. For this connection, you must also enter **Client Application Name**, **Client Application Username**, and **Client Application password** values. 
 1. After all the connections show green check marks, select **Next**.
 1. If you're using the webhook from FedEx Dataworks, enter the **EDD Webhook CallbackSignatureKey** value. This key is the webhook name that was registered to consume estimated delivery delay updates from FedEx. 
 1. Enter the **Retail Commerce ID** value. This ID was generated when you registered with FedEx Return Tech.
