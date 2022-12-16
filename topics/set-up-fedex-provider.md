@@ -1,7 +1,7 @@
 ---
 author: sumanic
 description: This article describes how to set up the FedEx provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 12/14/2022
+ms.date: 12/19/2022
 ms.topic: how-to
 ms.author: josaw
 title: Set up the FedEx provider
