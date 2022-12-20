@@ -25,7 +25,7 @@ To extend support for inbound transactions and provide transaction visibility al
 - Transaction status and visibility of purchase orders from Supply Chain Management are available directly in Intelligent Order Management.
 - The **Purchase Order products** view is available on the **Sales Order** products tab, which provides visibility into incoming inventory from individual purchase order transactions. The **Purchase Order products** view is also available on the site map, for easy access to the status of individual purchase order lines at the product level.
 
-For more information about purchase orders, see [Purchase order overview](/dynamics365/supply-chain/procurement).
+For more information about purchase orders, see [Purchase order overview](/dynamics365/supply-chain/procurement/purchase-order-overview).
 
 ## Dual-write support for purchase orders
 
