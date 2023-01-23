@@ -12,7 +12,7 @@ title: Dynamics 365 Intelligent Order Management Installation
 # Install Dynamics 365 Intelligent Order Management
 
 ## Create an environment
-Before you install Dynamics 365 Intelligent Order Management, you'll need to create an environment. If you're integrating with Dynamics 365 finance and operations apps and you have set up Dual-write, an environment will already have been created for you. After the environment is created, the instructions remain the same.
+Before you install Dynamics 365 Intelligent Order Management, you need to create an environment. If you're integrating with Dynamics 365 finance and operations apps and you have set up Dual-write, an environment will already have been created for you. After the environment is created, the instructions remain the same.
 
 If you don't already have an environment, complete the following steps. 
 
