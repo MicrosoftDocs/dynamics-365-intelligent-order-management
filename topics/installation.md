@@ -32,4 +32,4 @@ You'll install Dynamics 365 Intelligent Order Management into the environment th
 While it's installing, you can use the Refresh button to see when it has completed.
 
 ## Next Steps
-Proceed with [Configuring Intelligent Order Management](https://learn.microsoft.com/en-us/dynamics365/intelligent-order-management/setup)
+Proceed with [Configuring Intelligent Order Management](setup.md)
