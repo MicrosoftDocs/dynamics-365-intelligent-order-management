@@ -1,6 +1,6 @@
 ---
 author: derekkwanpm
-description: This topic provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/24/2023
 ms.topic: conceptual
 ms.author: derekkwan
@@ -13,7 +13,7 @@ title: Simulations feature
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
+This article provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
 
 > [!NOTE]
 > The AI simulations feature is currently in development, with a planned private preview in 2023. If you are interested in previewing this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
