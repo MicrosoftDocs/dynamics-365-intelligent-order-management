@@ -1,6 +1,6 @@
 ---
 author: derekkwanpm
-description: This topic provides an overview of the AI Simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
+description: This topic provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/24/2023
 ms.topic: conceptual
 ms.author: derekkwan
@@ -13,17 +13,19 @@ title: Simulations feature
 
 [!include [banner](includes/banner.md)]
 
+This topic provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
+
 > [!NOTE]
-> The AI Simulations feature is currently in development, with a planned private preview in 2023. If you are interested in previewing this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
+> The AI simulations feature is currently in development, with a planned private preview in 2023. If you are interested in previewing this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
 
 Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiements to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer sastisfaction, revenue, and costs.
 
-The new Simulations feature for IOM is a no-code, business user friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatially improve your business results.
+The new simulations feature for Intelligent Order Management is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatially improve your business results.
 
 > [!NOTE]
-> All screenshots below are from a pre-production version of the feature, and may not demonstrate how the end product will appear.
+> All screenshots in this article are from a preproduction version of the simulation feature, and may not demonstrate how the final product will appear.
 
-## Accessing IOM Simulations
+## Access simulations
 
 You will be able access Simulations in the left menu of the IOM application, just like you would access any other features of IOM. On the Simulations landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
 
@@ -46,7 +48,7 @@ From the Simulations landing page, you can create a new simulation from the top 
 
 For the first version of Simulations, we will have available the **source optimization** scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
 
-### Naming your simulation
+### Name your simulation
 
 ![Sims naming form](media/sim_name.png)
 
@@ -80,7 +82,7 @@ When you're done selecting sources, the next step will allow you to select const
 
 ![Sims constraints](media/sims_constraints.png)
 
-### Viewing results
+### View results
 
 Your Simulation is done! The results page will show business critical KPIs and trends associated with the simulation you ran. You will notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, run over and over again to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the uppper and lower bounds provide the min and max numbers from all the potential results. 
 
@@ -93,11 +95,10 @@ On the results page, you will find several areas.
 3. Main KPI area will show all the business critical KPIs for your simulation.
 4. Map / metrics view: will show on a map the fulfillment sources for this simulation. Toggling to metrics view will show you sources in a table format, which includes inventory counts, which source was selected to fulfill which products, distance, and more.
 
-### More info
+### Additional information
 
 IOM Simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments, and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. IOM Simulations puts the power of AI in your pocket so you can take ownership for improving your business.
 
-If you would like to sign up to be one of our first customers to try this feature when it is released, drop your [contact info here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
 
 
 
