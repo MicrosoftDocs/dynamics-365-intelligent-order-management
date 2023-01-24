@@ -1,15 +1,15 @@
 ---
 author: derekkwanpm
 description: This topic provides an overview of the AI Simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 09/23/2022
+ms.date: 01/24/2023
 ms.topic: conceptual
 ms.author: derekkwan
 
-title: IOM Simulations (Coming soon)
+title: Simulations feature
+
 ---
 
-
-# IOM Simulations (Coming soon)
+# Simulations feature
 
 [!include [banner](includes/banner.md)]
 
@@ -76,7 +76,7 @@ On the next step, IOM will display the available fulfillment sources in both a l
 
 ### Constraints
 
-When you're done selecting sources, the next step will allow you to select constraints, such as location or source priority, maximum number of fulfillment sources, maximum distance between source to destination, and split order allowance. These are the same constraints available to the rest of IOM (look for "Business constraints" on [this help page](https://learn.microsoft.com/dynamics365/intelligent-order-management/ifo)). 
+When you're done selecting sources, the next step will allow you to select constraints, such as location or source priority, maximum number of fulfillment sources, maximum distance between source to destination, and split order allowance. These are the same constraints available to the rest of IOM (look for "Business constraints" on [this help page](ifo.md)). 
 
 ![Sims constraints](media/sims_constraints.png)
 
