@@ -1,6 +1,6 @@
 ---
 author: derekkwanpm
-description: This topic provides an overview for the AI Simulations feature for IOM.
+description: This topic provides an overview of the AI Simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 09/23/2022
 ms.topic: conceptual
 ms.author: derekkwan
@@ -13,29 +13,31 @@ title: IOM Simulations (Coming soon)
 
 [!include [banner](includes/banner.md)]
 
-*Please note this feature is currently in development with a planned Private Preview in 2023. If you are interested in previewing this feature, please drop your [contact info here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).*
+> [!NOTE]
+> The AI Simulations feature is currently in development, with a planned private preview in 2023. If you are interested in previewing this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
 
 Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiements to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer sastisfaction, revenue, and costs.
 
 The new Simulations feature for IOM is a no-code, business user friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatially improve your business results.
 
-*Please note all screenshots below are from a pre-production version of the feature, and may not demonstrate how the end product may appear.*
+> [!NOTE]
+> All screenshots below are from a pre-production version of the feature, and may not demonstrate how the end product will appear.
 
 ## Accessing IOM Simulations
 
 You will be able access Simulations in the left menu of the IOM application, just like you would access any other features of IOM. On the Simulations landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
 
-![Sims landing page](/topics/media/sims_landing.png)
+![Sims landing page](media/sims_landing.png)
 
 You can also compare the results of previous simulations side by side:
 
-![Sims results comparison](/topics/media/sims_compare.png)
+![Sims results comparison](media/sims_compare.png)
 
 ## Creating a simulation
 
 From the Simulations landing page, you can create a new simulation from the top menu. This will lead you to a wizard that will walk you step-by-step through setting up your simulations. The first screen will contain several pre-defined scenario templates that you can start with:
 
-![Simulations scenarios](/topics/media/sims_scenarios.png)
+![Simulations scenarios](media/sims_scenarios.png)
 
 1. **Source optimization**: Want to see what would be the impact to your costs, delivery times, and inventory if you included or excluded different fulfillment sources within a service area? Source optimization simulations allow you to swap sources in and out and measure impact to your fulfillment network. 
 2. **Demand shock impact**: What would be the impact on your current order management network if demand spiked by 2x or 3x in the next few months? How does that change your restocking cadence? How much would it drive up your costs to mainatain delivery times? Demand shock impact simulations will let you simulate various order volumes in the future and see the impact on your distribution centers and overall network. 
@@ -46,13 +48,13 @@ For the first version of Simulations, we will have available the **source optimi
 
 ### Naming your simulation
 
-![Sims naming form](/topics/media/sim_name.png)
+![Sims naming form](media/sim_name.png)
 
 Name your simulation something you will recognize easily at a glance, such as "max distance and source update for los angeles". The description field can be used as a "note", to add more details to help you remember the motivation or goals behind the simulation (or for others to understand the simulation at a glance). 
 
 ### Order types
 
-![Sims order type step 1](/topics/media/sims_order_type1.png)
+![Sims order type step 1](media/sims_order_type1.png)
 
 1. Indicator that displays the steps in the wizard, and how you're progressing
 2. Setting panel where you conifgure the settings of the simulation. For this step, you are selecting from two order types: 
@@ -62,7 +64,7 @@ Name your simulation something you will recognize easily at a glance, such as "m
 
 For example, if you select "simulate future demand", two settings will be displayed:
 
-![Sims future demand](/topics/media/sims_future_demand.png)
+![Sims future demand](media/sims_future_demand.png)
 
 You can select a date range (ex: 11/15/22 to 12/31/22), and you can also select a "demand multiplier". If you think for example, your business has grown and you will do 2x the demand you had in previous years, you can set the multiplier to 2. Or if you're just curious how your network would handle 4x the demand, you can set the multiplier to 4, or any number you want.
 
@@ -70,19 +72,19 @@ You can select a date range (ex: 11/15/22 to 12/31/22), and you can also select 
 
 On the next step, IOM will display the available fulfillment sources in both a list and map view, based on your settings from the previous step. On this screen, you can select or deselect any sources to include / exclude from the fulfillment plan.
 
-![Sims source selection](/topics/media/sims_sources.png)
+![Sims source selection](media/sims_sources.png)
 
 ### Constraints
 
 When you're done selecting sources, the next step will allow you to select constraints, such as location or source priority, maximum number of fulfillment sources, maximum distance between source to destination, and split order allowance. These are the same constraints available to the rest of IOM (look for "Business constraints" on [this help page](https://learn.microsoft.com/dynamics365/intelligent-order-management/ifo)). 
 
-![Sims constraints](/topics/media/sims_constraints.png)
+![Sims constraints](media/sims_constraints.png)
 
 ### Viewing results
 
 Your Simulation is done! The results page will show business critical KPIs and trends associated with the simulation you ran. You will notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, run over and over again to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the uppper and lower bounds provide the min and max numbers from all the potential results. 
 
-![Sims results](/topics/media/sims_results.png)
+![Sims results](media/sims_results.png)
 
 On the results page, you will find several areas.
 
