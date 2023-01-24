@@ -35,7 +35,7 @@ You can also compare the results of previous simulations side by side:
 
 ![Sims results comparison](media/sims_compare.png)
 
-## Creating a simulation
+## Create a simulation
 
 From the Simulations landing page, you can create a new simulation from the top menu. This will lead you to a wizard that will walk you step-by-step through setting up your simulations. The first screen will contain several pre-defined scenario templates that you can start with:
 
