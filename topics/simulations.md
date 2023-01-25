@@ -5,48 +5,53 @@ ms.date: 01/25/2023
 ms.topic: conceptual
 ms.author: derekkwan
 
-title: Simulations feature
+title: AI simulations feature
 
 ---
 
-# Simulations feature
+# AI simulations feature
 
 [!include [banner](includes/banner.md)]
 
-This article provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
+This article provides an overview of the artificial intelligence (AI) simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
 
 > [!NOTE]
-> The AI simulations feature is currently in development, with a planned private preview in 2023. If you are interested in previewing this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
+> The AI simulations feature is currently in development. If you're interested in participating in a private preview of this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
 
-Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiments to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer satisfaction, revenue, and costs.
+Businesses using order management systems often struggle with visibility into the automated fulfillment decisions made by those systems, as well the predictability of outcomes over time. Running A/B testing on the outcomes of a fulfillment system or conducting experiments to discover better strategies must be performed on real-life orders and customers, risking impact on customer satisfaction, revenue, and costs.
 
-The new simulations feature for Intelligent Order Management is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. Intelligent Order Management simulations use your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatically improve your business results.
+The Intelligent Order Management AI simulations feature is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. Intelligent Order Management AI simulations use your own data and repeatedly [sample that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) based on parameters that you set for a given scenario. Such simulations can provide estimated results that can help you deploy new strategies with more confidence. Knowing the expected results of experiments such as swapping out fulfillment centers or adjusting the allowable distance for deliveries can help you make data-informed decisions that dramatically improve your business results.
 
 > [!NOTE]
-> All screenshots in this article are from a preproduction version of the simulation feature, and may not demonstrate how the final product will appear.
+> All screenshots in this article are from a preproduction version of the simulation feature, and may not accurately represent how the final product will appear.
 
 ## Access simulations
 
-You'll be able access simulations in the left menu of the Intelligent Order Management application, just like you would access any other features of Intelligent Order Management. On the **Simulations** landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
+You can access simulations in the left navigation pane of Intelligent Order Management, just like you would access any other features. On the **Simulations** landing page, you'll see a list of all previous simulations you have run as sown in the following example image. 
 
-![Sims landing page](media/sims_landing.png)
+![Simulations landing page showing list of all previous simulations](media/sims_landing.png)
 
-You can also compare the results of previous simulations side by side:
+You can open any previous simulation to see its settings and results, and also compare the results of previous simulations side by side, as shown in the following example image.
 
-![Sims results comparison](media/sims_compare.png)
+![Previous simulations comparison](media/sims_compare.png)
 
 ## Create a simulation
 
-From the **Simulations** landing page, you can create a new simulation from the top menu. This will lead you to a wizard that will walk you step-by-step through setting up your simulations. The first screen will contain several pre-defined scenario templates that you can start with:
+To create a new simulation, at the top of the **Simulations** landing page, select **+New**. This opens a wizard that walks you through setting up your simulations step-by-step. The first screen contains several predefined scenario templates that you can start with, as shown in the following example image.
 
-![Simulations scenarios](media/sims_scenarios.png)
+![Predefined simulations scenarios](media/sims_scenarios.png)
 
-1. **Source optimization**: Want to see what would be the impact to your costs, delivery times, and inventory if you included or excluded different fulfillment sources within a service area? Source optimization simulations allow you to swap sources in and out and measure impact to your fulfillment network. 
-2. **Demand shock impact**: What would be the impact on your current order management network if demand spiked by 2x or 3x in the next few months? How does that change your restocking cadence? How much would it drive up your costs to mainatain delivery times? Demand shock impact simulations will let you simulate various order volumes in the future and see the impact on your distribution centers and overall network. 
-3. **Expand your fulfillment network**: Business expansion is a highly strategic and impactful decision that needs to be data-informed and future-proof. Expanding into a new geo, or simply opening a new distribution center or 3PL in a current service area, can have dramatic impact on your inventory decisions, your delivery times, and costs. Simulating the impact of business expansion across your order management network will allow you to make decisions with more confidence.  
-4. **Introduce new products**: New product expansion can have cannibalization effects on your current product lines, and cause a ripple effect across your order management network as buying patterns change, impacting your carefully planned inventory operations and your fulfillment and delivery plans. Simulating the impact of new product introduction will give you a future view of the expected impact of this type of expansion. 
+The predefined scenario templates work in the following ways.
 
-For the first version of simulations, we'll have available the **source optimization** scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
+- **Source optimization** - Want to see what would be the impact to your costs, delivery times, and inventory if you included or excluded different fulfillment sources within a service area? Source optimization simulations allow you to swap sources in and out and measure the impact to your fulfillment network. 
+- **Demand shock impact** - What would the impact be on your current order management network if demand spiked by two or three times current levels in the next few months? How would those changes affect your restocking cadence? How much would it drive up your costs to maintain delivery times? Demand shock impact simulations enable you to simulate various order volumes in the future and see the resulting impacts on your distribution centers and overall network. 
+- **Expand your fulfillment network** - Business expansion is a highly strategic and impactful decision that must be data-informed and future-proof. Expanding into a new geographic location, opening a new distribution center in a current service area, or tuning third-party logistics can have dramatic impacts on your inventory decisions, delivery times, and costs. Simulating the impact of business expansion across your order management network enables you to make decisions with more confidence.  
+- **Introduce new products** - New product expansion can have cannibalization effects on your current product lines, and cause ripple effects across your order management network as buying patterns change. These changes can impact your carefully planned inventory operations, and your fulfillment and delivery plans. Simulating the impact of new product introduction gives you a future view of the expected impact of this type of expansion. 
+
+> [!NOTE]
+> For the initial version of the simulation feature, only the **source optimization** scenario will be available, with the other scenarios to follow in subsequent releases. 
+
+Selecting the **Source optimization** scenario opens the **Create a simulation** wizard.
 
 ### Name your simulation
 
