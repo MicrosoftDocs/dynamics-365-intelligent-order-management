@@ -1,7 +1,7 @@
 ---
 author: derekkwanpm
 description: This article provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 01/24/2023
+ms.date: 01/25/2023
 ms.topic: conceptual
 ms.author: derekkwan
 
