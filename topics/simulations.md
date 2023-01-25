@@ -18,16 +18,16 @@ This article provides an overview of the AI simulations feature in Microsoft Dyn
 > [!NOTE]
 > The AI simulations feature is currently in development, with a planned private preview in 2023. If you are interested in previewing this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
 
-Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiements to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer sastisfaction, revenue, and costs.
+Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiments to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer satisfaction, revenue, and costs.
 
-The new simulations feature for Intelligent Order Management is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatially improve your business results.
+The new simulations feature for Intelligent Order Management is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatically improve your business results.
 
 > [!NOTE]
 > All screenshots in this article are from a preproduction version of the simulation feature, and may not demonstrate how the final product will appear.
 
 ## Access simulations
 
-You will be able access Simulations in the left menu of the IOM application, just like you would access any other features of IOM. On the Simulations landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
+You'll be able access Simulations in the left menu of the IOM application, just like you would access any other features of IOM. On the Simulations landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
 
 ![Sims landing page](media/sims_landing.png)
 
@@ -46,7 +46,7 @@ From the Simulations landing page, you can create a new simulation from the top 
 3. **Expand your fulfillment network**: Business expansion is a highly strategic and impactful decision that needs to be data-informed and future-proof. Expanding into a new geo, or simply opening a new distribution center or 3PL in a current service area, can have dramatic impact on your inventory decisions, your delivery times, and costs. Simulating the impact of business expansion across your order management network will allow you to make decisions with more confidence.  
 4. **Introduce new products**: New product expansion can have cannibalization effects on your current product lines, and cause a ripple effect across your order management network as buying patterns change, impacting your carefully planned inventory operations and your fulfillment and delivery plans. Simulating the impact of new product introduction will give you a future view of the expected impact of this type of expansion. 
 
-For the first version of Simulations, we will have available the **source optimization** scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
+For the first version of Simulations, we'll have available the **source optimization** scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
 
 ### Name your simulation
 
@@ -59,7 +59,7 @@ Name your simulation something you will recognize easily at a glance, such as "m
 ![Sims order type step 1](media/sims_order_type1.png)
 
 1. Indicator that displays the steps in the wizard, and how you're progressing
-2. Setting panel where you conifgure the settings of the simulation. For this step, you are selecting from two order types: 
+2. Setting panel where you configure the settings of the simulation. For this step, you're selecting from two order types: 
     1. Simulate future demand: choose a period of time in the future (ex: upcoming holiday season) and have IOM simulate what the demand will look like for that period
     2. Simulate a test order: create a test order or choose a previously created test order and simulate how IOM will fulfill that order
 3. Map view of your order management network, which can be configured on the next step of the wizard 
@@ -84,7 +84,7 @@ When you're done selecting sources, the next step will allow you to select const
 
 ### View results
 
-Your Simulation is done! The results page will show business critical KPIs and trends associated with the simulation you ran. You will notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, run over and over again to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the uppper and lower bounds provide the min and max numbers from all the potential results. 
+Your Simulation is done! The results page will show business critical KPIs and trends associated with the simulation you ran. You'll notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, run over and over again to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the upper and lower bounds provide the min and max numbers from all the potential results. 
 
 ![Sims results](media/sims_results.png)
 
