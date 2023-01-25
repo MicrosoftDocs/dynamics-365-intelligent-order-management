@@ -20,14 +20,14 @@ This article provides an overview of the AI simulations feature in Microsoft Dyn
 
 Businesses using order management systems often struggle with visibility into the automated fulfillment decisions of those systems, as well as having some predictability of outcomes over time. Additionally, A/B testing the outcomes of a fulfillment system, or attempting to run experiments to discover better strategies, have to be performed on real-life orders and customers, risking impact on customer satisfaction, revenue, and costs.
 
-The new simulations feature for Intelligent Order Management is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. IOM Simulations uses your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatically improve your business results.
+The new simulations feature for Intelligent Order Management is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. Intelligent Order Management simulations use your own data and repeatedly [samples that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) over and over again based on parameters that you set for a given scenario, and provides estimated results from those scenarios to help you deploy new strategies with more confidence. Knowing the expected values of swapping out fulfillment centers or adjusting the allowable distance for deliveries, among other experiments, will help you make data-informed decisions that can dramatically improve your business results.
 
 > [!NOTE]
 > All screenshots in this article are from a preproduction version of the simulation feature, and may not demonstrate how the final product will appear.
 
 ## Access simulations
 
-You'll be able access Simulations in the left menu of the IOM application, just like you would access any other features of IOM. On the Simulations landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
+You'll be able access simulations in the left menu of the Intelligent Order Management application, just like you would access any other features of Intelligent Order Management. On the **Simulations** landing page will be a list of all previous simulations you have run. You can open any previous simulation to see settings and results.
 
 ![Sims landing page](media/sims_landing.png)
 
@@ -37,7 +37,7 @@ You can also compare the results of previous simulations side by side:
 
 ## Create a simulation
 
-From the Simulations landing page, you can create a new simulation from the top menu. This will lead you to a wizard that will walk you step-by-step through setting up your simulations. The first screen will contain several pre-defined scenario templates that you can start with:
+From the **Simulations** landing page, you can create a new simulation from the top menu. This will lead you to a wizard that will walk you step-by-step through setting up your simulations. The first screen will contain several pre-defined scenario templates that you can start with:
 
 ![Simulations scenarios](media/sims_scenarios.png)
 
@@ -46,7 +46,7 @@ From the Simulations landing page, you can create a new simulation from the top 
 3. **Expand your fulfillment network**: Business expansion is a highly strategic and impactful decision that needs to be data-informed and future-proof. Expanding into a new geo, or simply opening a new distribution center or 3PL in a current service area, can have dramatic impact on your inventory decisions, your delivery times, and costs. Simulating the impact of business expansion across your order management network will allow you to make decisions with more confidence.  
 4. **Introduce new products**: New product expansion can have cannibalization effects on your current product lines, and cause a ripple effect across your order management network as buying patterns change, impacting your carefully planned inventory operations and your fulfillment and delivery plans. Simulating the impact of new product introduction will give you a future view of the expected impact of this type of expansion. 
 
-For the first version of Simulations, we'll have available the **source optimization** scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
+For the first version of simulations, we'll have available the **source optimization** scenario, with the others to follow in upcoming releases. Clicking on the "source optimization" scenario will start the setup wizard:
 
 ### Name your simulation
 
@@ -60,8 +60,8 @@ Name your simulation something you will recognize easily at a glance, such as "m
 
 1. Indicator that displays the steps in the wizard, and how you're progressing
 2. Setting panel where you configure the settings of the simulation. For this step, you're selecting from two order types: 
-    1. Simulate future demand: choose a period of time in the future (ex: upcoming holiday season) and have IOM simulate what the demand will look like for that period
-    2. Simulate a test order: create a test order or choose a previously created test order and simulate how IOM will fulfill that order
+    1. Simulate future demand: choose a period of time in the future (ex: upcoming holiday season) and have Intelligent Order Management simulate what the demand will look like for that period
+    2. Simulate a test order: create a test order or choose a previously created test order and simulate how Intelligent Order Management will fulfill that order
 3. Map view of your order management network, which can be configured on the next step of the wizard 
 
 For example, if you select "simulate future demand", two settings will be displayed:
@@ -72,13 +72,13 @@ You can select a date range (ex: 11/15/22 to 12/31/22), and you can also select 
 
 ### Fulfillment sources
 
-On the next step, IOM will display the available fulfillment sources in both a list and map view, based on your settings from the previous step. On this screen, you can select or deselect any sources to include / exclude from the fulfillment plan.
+On the next step, Intelligent Order Management will display the available fulfillment sources in both a list and map view, based on your settings from the previous step. On this screen, you can select or deselect any sources to include / exclude from the fulfillment plan.
 
 ![Sims source selection](media/sims_sources.png)
 
 ### Constraints
 
-When you're done selecting sources, the next step will allow you to select constraints, such as location or source priority, maximum number of fulfillment sources, maximum distance between source to destination, and split order allowance. These are the same constraints available to the rest of IOM (look for "Business constraints" on [this help page](ifo.md)). 
+When you're done selecting sources, the next step will allow you to select constraints, such as location or source priority, maximum number of fulfillment sources, maximum distance between source to destination, and split order allowance. These are the same constraints available to the rest of Intelligent Order Management (look for "Business constraints" on [this help page](ifo.md)). 
 
 ![Sims constraints](media/sims_constraints.png)
 
@@ -97,7 +97,7 @@ On the results page, you will find several areas.
 
 ### Additional information
 
-IOM Simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments, and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. IOM Simulations puts the power of AI in your pocket so you can take ownership for improving your business.
+Intelligent Order Management simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments, and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. Intelligent Order Management simulations puts the power of AI in your pocket so you can take ownership for improving your business.
 
 
 
