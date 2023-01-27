@@ -14,6 +14,8 @@
         href: trial-faq.md
     - name: Deployment
       href: deploy.md
+    - name: Installation
+      href: installation.md
     - name: Get support
       href: support.md
     - name: Quick start lab
@@ -41,7 +43,11 @@
       - name: Run sample order orchestration flow
         href: lab-run-sample-order-orch-flow.md
   - name: Architecture
-    href: architecture.md
+    items:
+      - name: Architecture overview
+        href: architecture.md
+      - name: State framework architecture
+        href: state-framework.md
   - name: Set up Intelligent Order Management
     items:
     - name: Get trial licenses
@@ -54,6 +60,8 @@
         href: orchestration-flows.md
       - name: Run sample order orchestration flow from BigCommerce
         href: run-sample-order-bigcommerce.md
+      - name: Manual order orchestration
+        href: manual-order-orchestration.md
     - name: Policies and rules
       href: policies-rules.md
     - name: Internal external ID mapping
@@ -66,6 +74,8 @@
         href: email-capabilities.md
       - name: Provider catalog
         href: provider-catalog.md
+      - name: Set up and launch demo providers
+        href: demo-providers.md
       - name: Set up Orderful provider
         href: set-up-orderful-provider.md
       - name: Set up BigCommerce provider
@@ -78,6 +88,10 @@
         href: setup-flexe-provider.md
       - name: Set up Intelligent Fulfillment Optimization provider
         href: set-up-ifo-provider.md
+      - name: Fulfillment and Returns Optimization provider overview
+        href: fulfillment-returns-optimization.md
+      - name: Set up Fulfillment and Returns Optimization provider
+        href: set-up-fro-provider.md
       - name: Set up Inventory Visibility provider
         href: set-up-inventory-visibility-provider.md
       - name: Set up Dynamics 365 Finance + Operations provider
@@ -86,16 +100,28 @@
         href: set-up-uber-freight-provider.md
       - name: Set up Adobe Commerce provider
         href: set-up-adobe-commerce-provider.md
+      - name: Set up FedEx provider
+        href: set-up-fedex-provider.md
       - name: Customize an out-of-box provider
         href: customize-provider.md
       - name: Create a new provider
         href: create-new-provider.md
     - name: Set up inventory dashboards
       href: inventory-dashboards.md
+    - name: Set up inventory allocation
+      href: inventory-allocation.md
     - name: Enable Bing Maps for your environment
       href: enable-bing-maps.md
     - name: Enable timeline capabilities
       href: enable-timeline-sales-order.md
+    - name: Integrate Supply Chain Management procurement
+      href: integrate-procurement.md
+    - name: Integrate Supply Chain Management transfer orders
+      href: integrate-transfer-orders.md
+    - name: Set up available to promise inventory capabilities
+      href: available-to-promise.md
+    - name: Set up backorder and preorder functionality
+      href: backorder-preorder.md
   - name: Manage your orders
     items:
     - name: Fulfillment optimization
@@ -104,6 +130,8 @@
         href: ifo.md
       - name: Intelligent Fulfillment Optimization architecture
         href: ifo-arch.md
+    - name: Manage subscription orders
+      href: subscription-orders.md
   - name: Finance + Operations integration solution
     href: finops-integration-scenarios.md
   - name: Power BI integration
@@ -112,10 +140,14 @@
       href: report-powerbi-integration.md
     - name: Power BI dashboards
       href: power-bi-dashboards.md
+    - name: Work with insights reports
+      href: insights-reports.md
   - name: Administration
     items: 
     - name: Administration overview
       href: admin.md
+    - name: Admin home workspace
+      href: admin-home.md
     - name: Data management
       href: data-management.md
   - name: Troubleshooting
@@ -130,8 +162,14 @@
     items:
     - name: Power Automate flows
       href: developer-flows.md
+    - name: Error handling and troubleshooting
+      href: troubleshoot-errors.md
+  - name: Inventory operations visibility
+    href: inventory-visibility.md
   - name: Extensibility
     href: extensibility.md
+  - name: Application lifecycle management
+    href: alm.md
   - name: Globalization
     href: globalization.md
   - name: Blogs and communities
