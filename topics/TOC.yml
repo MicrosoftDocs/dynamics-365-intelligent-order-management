@@ -158,6 +158,10 @@
         href: troubleshoot-trial-sign-up.md
       - name: Power BI reports don't provision
         href: troubleshoot-insights.md
+  - Name: Development
+    items:
+    - name: Power Automate flows
+      href: developer-flows.md
     - name: Error handling and troubleshooting
       href: troubleshoot-errors.md
   - name: Inventory operations visibility
