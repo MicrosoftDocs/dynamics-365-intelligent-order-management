@@ -83,7 +83,7 @@ Machine learning is used to analyze data using models and uses advanced algorith
 
 Intelligent Order Management makes use of the following Microsoft platform technologies.
 
--   Dataverse: Data in Intelligent Order Management is provided through the Dataverse platform. For more information, see [Microsoft Dataverse developer guide](/powerapps/developer/data-platform/overview.
+-   Dataverse: Data in Intelligent Order Management is provided through the Dataverse platform. For more information, see [Microsoft Dataverse developer guide](/powerapps/developer/data-platform/overview).
 
 -   Power Automate: For business users, Intelligent Order Management compiles organization flows into Power Automate. Developers can further extend the solution. To learn more about the capabilities of Power Automate, see [Getting started with Power Automate](/power-automate/getting-started).
 
