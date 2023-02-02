@@ -15,9 +15,11 @@ ms.custom: bap-template
 
 [!include [banner](includes/banner.md)]
 
+This article provides information about how to get support for Microsoft Dynamics 365 Intelligent Order Management.
+
 ## Creating a support ticket
 
-You can contact a Microsoft support representative and get support for Microsoft Dynamics 365 Intelligent Order Management using the **Help + support** experience in Microsoft Power Platform admin center.
+You can contact a Microsoft support representative and get support for Intelligent Order Management using the **Help + support** experience in Microsoft Power Platform admin center.
 
 ### Prerequisites
 
