@@ -20,35 +20,35 @@ Prerequisites
 
 You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
 
-    *	AAD Role Admin
-    *	Environment Administrator (or System Administrator role in Dataverse)
-    *	Company Admin
-    *	Billing Admin
-    *	Service Admin
-    *	CRM Service Admin
-    *	Power Platform Admin
-    *	Security Admin
-    *	Partner Delegated Admin
-    *	SharePoint Admin
-    *	Teams Admin
-    *	Exchange Admin
-    *	Power BI Admin
-    *	Compliance Admin
-    *	Helpdesk Admin
+*	AAD Role Admin
+*	Environment Administrator (or System Administrator role in Dataverse)
+*	Company Admin
+*	Billing Admin
+*	Service Admin
+*	CRM Service Admin
+*	Power Platform Admin
+*	Security Admin
+*	Partner Delegated Admin
+*	SharePoint Admin
+*	Teams Admin
+*	Exchange Admin
+*	Power BI Admin
+*	Compliance Admin
+*	Helpdesk Admin
 
 Available for the following [support plans](https://www.microsoft.com/dynamics365/support):
 
-    *	Subscription Support
-    *	Professional Direct Support
-    *	Unified Support
+*	Subscription Support
+*	Professional Direct Support
+*	Unified Support
 
 In order to create a support request:
 
-    1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) with your admin credentials.
-    1. Select Help + support > New support request.
-    1. Select the product Dynamics 365 Intelligent Order Management. 
-    1. Fill in the problem type, a description of the issue, and then select Solutions tab . If the guidance doesn't resolve your issue, scroll down and select Next.
-    1. Select the support plan and fill in the fields in the form pages.
+1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) with your admin credentials.
+1. Select Help + support > New support request.
+1. Select the product Dynamics 365 Intelligent Order Management. 
+1. Fill in the problem type, a description of the issue, and then select Solutions tab . If the guidance doesn't resolve your issue, scroll down and select Next.
+1. Select the support plan and fill in the fields in the form pages.
 
  
 Once you submit your request, it will appear in the list of support requests. You can check the status and edit your request on this page.
