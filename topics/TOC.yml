@@ -16,8 +16,6 @@
       href: deploy.md
     - name: Installation
       href: installation.md
-    - name: Get support
-      href: support.md
     - name: Quick start lab
       items:
       - name: Quick start lab overview
@@ -172,6 +170,8 @@
     href: alm.md
   - name: Globalization
     href: globalization.md
+  - name: Get support
+    href: support.md
   - name: Blogs and communities
     href: blog-community.md
   - name: Videos
