@@ -1,6 +1,6 @@
 ---
 title: Get support
-description: This article provides information about how to get support for Dynamics 365 Intelligent Order Management.
+description: This article provides information about how to get support for Microsoft Dynamics 365 Intelligent Order Management.
 ms.author: bennettray
 author: raybennett-msft
 ms.reviewer: johnmichalak
