@@ -1,11 +1,13 @@
 ---
-author: raybennett-msft
-description: This article provides information about how to get support for Dynamics 365 Intelligent Order Management.
-ms.date: 05/17/2021
-ms.topic: conceptual
-ms.author: bennettray
-
 title: Get support
+description: This article provides information about how to get support for Dynamics 365 Intelligent Order Management.
+ms.author: bennettray
+author: raybennett-msft
+ms.reviewer: johnmichalak
+ms.topic: conceptual
+ms.date: 02/02/2023
+ms.custom: bap-template
+
 ---
 
 
@@ -15,10 +17,11 @@ title: Get support
 
 ## Creating a support ticket
 
-You can get support for Intelligent Order Management through the Help + support experience in the Microsoft Power Platform admin center to contact a Microsoft support representative.
-Prerequisites
+You can contact a Microsoft support representative and get support for Microsoft Dynamics 365 Intelligent Order Management using the **Help + support** experience in Microsoft Power Platform admin center.
 
-You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
+### Prerequisites
+
+You have a security role that is enabled for creating support requests. Users with one of the following security roles can create support requests:
 
 *	AAD Role Admin
 *	Environment Administrator (or System Administrator role in Dataverse)
@@ -36,19 +39,19 @@ You have a security role that is enabled for creating support requests. Users ha
 *	Compliance Admin
 *	Helpdesk Admin
 
-Available for the following [support plans](https://www.microsoft.com/dynamics365/support):
+Support is available for the following [support plans](https://www.microsoft.com/dynamics365/support):
 
 *	Subscription Support
 *	Professional Direct Support
 *	Unified Support
 
-In order to create a support request:
+To create a support request, follow these steps.
 
-1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) with your admin credentials.
-1. Select Help + support > New support request.
+1. Sign on to [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com) using your admin credentials.
+1. Select **Help + support** > **New support request**.
 1. Select the product Dynamics 365 Intelligent Order Management. 
-1. Fill in the problem type, a description of the issue, and then select Solutions tab . If the guidance doesn't resolve your issue, scroll down and select Next.
-1. Select the support plan and fill in the fields in the form pages.
+1. Fill in the problem type, a description of the issue, and then select the **Solutions** tab. If the guidance doesn't resolve your issue, scroll down, and select **Next**.
+1. Select the support plan and fill in the fields on the form pages.
 
  
 Once you submit your request, it will appear in the list of support requests. You can check the status and edit your request on this page.
