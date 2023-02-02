@@ -59,7 +59,7 @@ To create a support request, follow these steps.
 Once you submit your request, it will appear in the list of support requests. You can check the status and edit your request on this page.
 
 ## Email Support
-If you are unable to create a support ticket you can reach out to <iomsupport@microsoft.com> for guidance on how to get a support ticket created.
+If you're unable to create a support ticket, you can reach out to <iomsupport@microsoft.com> for guidance on how to get a support ticket created.
  
 ## Other support options
 
