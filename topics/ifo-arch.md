@@ -1,67 +1,151 @@
 ---
 author: josaw1
-description: This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 07/23/2021
+description: This topic provides an introduction to Intelligent Fulfillment Optimization and instructions on how to set it up in Dynamics 365 Intelligent Order Management.
+ms.service: dynamics-365-intelligent-order-management
+ms.date: 02/24/2021
 ms.topic: conceptual
 ms.author: josaw
 
-title: Intelligent Fulfillment Optimization architecture
-
+title: Intelligent Fulfillment Optimization 
 ---
 
-# Intelligent Fulfillment Optimization architecture
+
+# Intelligent Fulfillment Optimization
 
 [!include [banner](includes/banner.md)]
 
 
-This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
+Intelligent Fulfillment Optimization is an intelligent optimization service that maximizes order fulfillment within the supply chain network. Intelligent Fulfillment Optimization helps you ensure that products are delivered to your customers with the right quantities, from the right sources, and at the right time. Intelligent Fulfillment Optimization can help you maximize profits, minimize costs, and satisfy service-level requirements.  
 
-Intelligent Fulfillment Optimization optimizes order fulfillment in a supply chain network, to help ensure that products are delivered to customers in the correct quantities, from the correct sources, and at the correct time. Intelligent fulfillment optimization can help minimize costs, maximize profits, and satisfy service-level requirements.
+In a modern supply network where product fulfillment can be from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or a spike in demand. Intelligent Fulfillment Optimization helps you maximize order fulfillment and find the right source for delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling from the closest sources.  
 
-In a modern supply network, where product fulfillment can come from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or spikes in demand. Intelligent Fulfillment Optimization helps optimize order fulfillment and find the best sources for product delivery, based on business objectives. These business objectives might include minimizing costs by determining the closest product fulfillment source that is possible under imposed constraints.
+Intelligent Fulfillment Optimization is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse, and optimizes the order fulfillment. It uses Azure Maps to geo-code shipping address information on orders and fulfillment sources. It also uses Azure Maps to find the distance between the shipping address and fulfillment source.
 
-Intelligent Fulfillment Optimization is built as an Azure microservice that is deployed to multiple geographies. In each geography, Intelligent Fulfillment Optimization is deployed to two active regions, and order processing requests are balanced between those regions. If one region becomes unavailable, it's automatically taken out of rotation. Order processing then resumes in the other available region.
 
-Intelligent Fulfillment Optimization follows Azure regional pairing, where each Azure region is paired with another region in the same geography. Regional pairing has the following benefits:
+## Set up Intelligent Fulfillment Optimization
 
-- If there is a broad outage, recovery of at least one region in every pair is prioritized.
-- Planned Azure system updates are rolled out to paired regions sequentially to minimize possible downtime.
-- In most cases (except Brazil), regional pairs reside in the same geography to meet data residency requirements.
+To enable Intelligent Fulfillment Optimization as part of the order orchestration journey, follow the steps in the [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. 
 
-For more information about regional pairs, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
+## Fulfillment sources 
 
-Intelligent Fulfillment Optimization can be enabled as part of the order orchestration journey in Dynamics 365 Intelligent Order Management. Intelligent Fulfillment Optimization optimizes orders only from geographies where it's available. It doesn't process orders from other geographies, even if they are configured in the order orchestration journey. Intelligent Fulfillment Optimization processes orders in the same geography where the Intelligent Order Management and Microsoft Power Platform environment is set up.
+Fulfillment sources are entities like warehouses, distribution centers, retail stores, drop-ship vendors, or virtual sites that house inventory or provide products. Fulfillment sources can be created and modified on the **Fulfillment > Sources** page in Intelligent Order Management.
 
-Intelligent Fulfillment Optimization is currently available in the United States, Europe, Australia, and Asia Pacific geographies. For support in other geographies, contact the Intelligent Order Management product team.
+For each of your fulfillment sources, you can define a name to uniquely identify them, time zone where the source or location resides, type of source (warehouse or other), address where it is located, latitude and longitude, and whether the system should look up inventory in the Inventory Visibility service for optimized fulfillment based on inventory availability.
 
-| Intelligent Order Management/Dataverse geography | Intelligent Fulfillment Optimization geography |
-|---|---|
-| United States | United States |
-| Europe | Europe |
-| Australia | Australia |
-| Asia Pacific | Asia Pacific |
-| Brazil | No order optimization is done. |
-| Canada | No order optimization is done. |
-| China | No order optimization is done. |
-| France | No order optimization is done. |
-| Germany | No order optimization is done. |
-| India | No order optimization is done. |
-| Japan | No order optimization is done. |
-| Switzerland | No order optimization is done. |
-| United Arab Emirates | No order optimization is done. |
-| United Kingdom | No order optimization is done. |
+To look up inventory from the Inventory Visibility service, set the **Use real inventory** field to **On**. To include inventory from a source and make the source available to fulfill the order, on the **Fulfillment > Sources** page, set the **Use real inventory** field to **Off**.
 
-To enable Intelligent Fulfillment Optimization as part of the order orchestration journey, configure the Intelligent Fulfillment Optimization provider as part of the order journey. Then, during the optimization process, Intelligent Fulfillment Optimization reads fulfillment strategy, business constraint, and order information from Dataverse. It then immediately writes fulfillment plans back to the Dataverse environment. Intelligent Fulfillment Optimization ensures that data doesn't persist beyond the microservice order optimization stage.
+The system assumes unlimited inventory. 
 
-Intelligent Fulfillment Optimization uses Azure Maps to calculate the fulfillment source that is closest to the address that an order is being shipped to. To do this calculation, it determines geocodes, or latitude and longitude, for the fulfillment source address and the order shipping address. Intelligent Fulfillment Optimization uses Azure Maps to calculate the road distance between two addresses (geocodes). If road distance calculation isn't enabled, aerial distance between the two locations is used.
+## Fulfillment source lists
 
-Azure Maps is a highly available global service and follows data residency practices for Azure.
+Fulfillment source lists enable you to group a list of sources and manage sources in a flexible manner, within specific constraints. Fulfillment source lists can be defined on the **Fulfillment > Source Lists** page in Intelligent Order Management.
 
-Intelligent Fulfillment Optimization also uses an inventory visibility service provider to determine on-hand inventory for different products at different fulfillment sources. You can enable this feature by configuring **use real inventory** on the fulfillment strategy and on each specific fulfillment source where inventory must be looked up.
+Depending on your business situation, you can define multiple source lists and use them as needed.  
+
+For example, in your strategy definition, you can include all the sources where fulfillment will occur. For your business constraints, you can use a different source list. You can also define different minimum inventory constraints for retail stores and warehouses, and assign your warehouses a higher fulfillment priority than your retail stores.  
+
+Active source lists are displayed on the **Fulfillment > Source Lists** page. To create a new source list, select **New**. Provide a name to easily identify the source list and add existing or new sources on the **Sources** tab. To remove a source from a source list, select the source on the **Sources** tab and then select **Remove**.
+
+## Business constraints 
+
+Business constraints are an optional component for fulfillment optimization. These are controls that you put in the optimization strategy. The following business constraints are supported.  
+
+-   Location or source priority.
+
+-   Maximum of fulfillment sources and partial order. 
+
+-   Maximum distance.
+
+To create or modify constraints, go to the **Fulfillment > Constraints** page in Intelligent Order Management. To create a specific constraint type, select the appropriate constraint type when you create the constraint.
+
+Every business constraint shares a set of common attributes as part of its definition. The details differ based on the type of business constraint. The following are common attributes applicable to all business constraints. 
+
+- **Name and Description**: A way to identify the business constraint.  
+
+- **Start date / End date**: Every business constraint must have a period of days when the constraint is enforced.  
+
+- **Constraint type**: This attribute indicates the type of business constraint.
+
+- **Is enabled**: You can enable or disable a business constraint.  
+
+- **Hard constraint**: A business constraint can be a hard constraint or not a hard constraint.  
+
+Every optimization run goes through two iterations. First, every business constraint is treated as a hard constraint regardless of the **Hard constraint** setting, so every constraint is applied. Then, the business constraints that aren't defined as hard constraints are removed. The system will attempt to assign order or order lines that weren't assigned to sources when the business constraints were applied to sources with the reduced constraint set. 
+
+You can define multiple business constraints of each type and apply them to different optimization strategies.  
+
+### Fulfillment location priority constraint 
+
+The fulfillment location priority constraint type allows organizations to define a hierarchy of sources by using priority. The optimization service will then consider priority when identifying fulfillment sources for specific products. Sources with higher priority are considered first, then the optimization service will resolve to other sources. A source with a priority of **1** is higher priority than a source with priority **2**.  
+
+You can define a location priority at the source list and then define a more specific product-based constraint for source and product in terms of priority.  For write-in products, or unknown products, the optimization service will use location priority and assume 100% inventory is available at the fulfillment source. 
+
+### Maximum distance constraint 
+
+The maximum distance constraint enables an organization to define the maximum distance a source or group of sources can extend to fulfill the order.  
+
+You can define the maximum distance for a source list and override for a specific source. If there is an overlapping maximum distance constraint defined for a source, the optimization service will apply the lower of the defined maximum distance for those sources. 
+
+### Maximum number of fulfillment sources and partial order constraint 
+
+The maximum number of fulfillment sources and partial order constraint enables you to define whether an order or order lines can be fulfilled by one or multiple sources and whether it can be partially fulfilled.  
+
+When you create this constraint, in the **Maximum providers per order** field, set **Partial lines** and **Partial orders** to **Yes.**
+
+## Fulfillment strategies 
+
+A fulfillment strategy helps define the optimization strategy. It brings together objectives, constraints, sources to be considered, and how inventory optimization should occur. You can create and modify a strategy on the **Fulfillment > Strategies** page in Intelligent Order Management.
+
+The strategy also defines whether unlimited product inventory is used, or real product inventory is used with the Inventory Visibility service. You can define whether the optimization run is a simulation, if it can be enabled or disabled, and if it can be valid for a date range. 
+
+Depending on the nature of your business, you can define multiple optimization strategies. You can define the list of fulfillment sources that participates in fulfillment and define constraints that the optimization service must consider. The constraints are hard constraints that the optimization service will mandatorily impose when it determines the optimal source.  
+
+**Fulfillment from the closest source** is supported as the pre-defined objective in every strategy.
+
+Intelligent Fulfillment Optimization batches the orders that are provided as part of the order journey to ensure maximum optimization is obtained for these set of orders. 
+
+Within a single business, fulfillment optimization can differ based on type of consumer, channel, and other business attributes. Intelligent Order Management supports the use of multiple fulfillment strategies. Businesses can set up multiple fulfillment strategies with policies or by setting the fulfillment strategy attribute on a sales order during the order intake process. 
+
+### Set up a fulfillment strategy
+
+To define a strategy, go to the **Fulfillment > Strategies** page in Intelligent Order Management and select **New**. For each strategy, you can provide a unique name, description, source list consisting of fulfillment sources for the strategy, and you can configure the strategy to use real inventory.   
+
+On the **Strategies** page, enter values for the following.
+
+- **Source List**: The fulfillment sources that must be considered when the optimization service is performing the optimization.  
+
+- **Use real inventory**: Indicates whether the optimization service should consider inventory from the Inventory Visibility service. If this setting is turned off, the system assumes unlimited inventory at the source. This setting overrides the setting that is defined at the source.  
+
+- **Simulation**: Indicates if the strategy will be used to simulate sourcing. In the **Fulfillment plan** output, the system writes a flag to indicate that the processing run is a simulation. 
+
+- **Process with empty sales origin**: Set this field to **Yes** if the sales order and line to be fulfilled don't contain a sales origin.  
+
+- **Use road distance calculation**: The optimization service calculates the distance between fulfillment source and shipping address on the sales order to find the closest source. If road distance calculation is not enabled, the service uses aerial distance between the two locations.
+
+- **Owner**: The user who created the strategy.  
+
+- **Optimization service batching**: The optimization service batches orders that are provided as part of the order orchestration journey and optimizes them together in a batch. The **Aggregation interval minutes** task determines the time window within which orders received are batched together. The **Maximum order line** task determines the number of tasks that should be created based on order lines that are received within the time interval.  
+
+- **Inventory visibility data source**: Specify the data source name that should be considered for inventory lookup.
+
+- **Inventory visibility measure name**: Specify the measure name that contains the inventory on hand for fulfillment optimization.
+
+
+## Fulfillment optimization in order orchestration flows
+
+Refer to the topic [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md) to set up and activate the Intelligent Fulfillment Optimization provider. After the provider is activated, you can enable intelligent optimization using Intelligent Fulfillment Optimization as part of the order orchestration journey. As order processing starts, the service will pick up orders that need optimization and determine the optimal location from the closest fulfillment source from the list of sources. Intelligent Fulfillment Optimization will calculate the latitude and longitude for the fulfillment source and the order line shipping address. It will also calculate the road and aerial distances between the two. It will apply the constraints and then determine the optimal fulfillment source. The results are written to Dataverse for further processing as part of order orchestration flow.  
+
+An organization can query the fulfillment plan to see the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type including fully sourced, partially sourced, not sourced, or exception.  
+
+## Multiple fulfillment strategies in order orchestration flows
+
+Intelligent Fulfillment Optimization supports multiple fulfillment strategies that can be set up based on the needs of different businesses. For example, a business may want to fulfill B2B orders from their distribution centers only, and B2C orders from all of their fulfillment sources (such as distribution centers, warehouses, and stores). With multiple fulfillment strategies, organizations can employ different fulfillment approaches for different sales orders. 
+
+Businesses can set fulfillment strategy attributes for sales orders during the orchestration journey by adding the fulfillment strategy identifier on the sales order. The fulfillment strategy can be set on a sales order based on the source, or by using transformations as part of order intake process. The fulfillment strategy can also be set with policy actions by using sales order attributes and other entities. With policies, businesses can employ the attributes of different entities in condition builder to set the strategy. If multiple strategies are set up but policy assignment for the fulfillment strategy is not configured, the system will pick the first strategy that is available. 
 
 ## Additional resources
 
-[Intelligent Fulfillment Optimization](ifo.md)
+[Intelligent Fulfillment Optimization architecture](ifo-arch.md)
 
 [Set up Intelligent Fulfillment Optimization provider](set-up-ifo-provider.md)
 
