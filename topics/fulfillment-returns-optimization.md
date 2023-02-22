@@ -52,7 +52,8 @@ Constraints are an optional component of fulfillment optimization. The following
 - Limit number of warehouses per order
 - Respect warehouse timings
 - Maximum order lines
-- 
+- Limit number of warehouses per order line
+
 
 To create or modify constraints, on the **Fulfillment settings** page, under **Constraints**, select **Manage**. To create a constraint of a specific constraint type, select the appropriate constraint type when you create the constraint.
 
