@@ -49,8 +49,10 @@ Constraints are an optional component of fulfillment optimization. The following
 
 - Maximum distance
 - Restrict partial fulfillment of orders
-- Limit number of warehouses
+- Limit number of warehouses per order
 - Respect warehouse timings
+- Maximum order lines
+- 
 
 To create or modify constraints, on the **Fulfillment settings** page, under **Constraints**, select **Manage**. To create a constraint of a specific constraint type, select the appropriate constraint type when you create the constraint.
 
@@ -89,11 +91,23 @@ When the **Respect warehouse timings** constraint is enabled, the Fulfillment an
 
 Sometimes, not all inventory is available at a single source. To fulfill orders in these cases, the Fulfillment and Returns Optimization provider splits a single sales order and assigns different warehouses to different parts of it. By using the **Limit number of warehouses** constraint, you can control the degree to which orders are split.
 
-You can configure this constraint to specify the maximum number of warehouses that you want a single order to be split among. In other words, if you specify three warehouses for this constraint, every sales order must be fulfilled from one, two, or three different warehouses. If fulfillment of a sales order requires more than three warehouses, the sales order won't be fulfilled at all unless the **Restrict partial fulfillment of orders** constraint is disabled and the **Limit number of warehouses** constraint is enabled.
+You can configure this constraint to specify the maximum number of warehouses that you want a single order to be split among. In other words, if you specify three warehouses for this constraint, every sales order must be fulfilled from one, two, or three different warehouses. If you prefer the whole sales order to be fulfilled from only one fulfillment source you must specify one as maximum number of warehouses. If fulfillment of a sales order requires more than three warehouses, the sales order won't be fulfilled at all unless the **Restrict partial fulfillment of orders** constraint is disabled and the **Limit number of warehouses** constraint is enabled.
 
 By default, the Fulfillment and Returns Optimization provider will split the sales order among as many warehouses as are required, while also respecting inventory conditions and other constraints.
 
 To specify the number of warehouses to split sales orders among, select **New Limit Number of Warehouses Constraint** to add an entry, and then select **Save**.
+
+#### Maximum number of order lines constraint
+
+Sometimes, fulfillment sources cannot process more than a certain number of order lines on a given day due to capacity or resource limitations. **Maximum number of order lines constraint** can be used to limit the number of order lines routed to a single fulfillment source. You can configure this constraint to specify the maximum order lines per day per fulfillment source or source list. Once this number has reached for the fulfillment source or source list, they will not be considered for selection during that day.
+
+
+### Introducing soft constraints
+
+Constraints can now be defined as hard or soft within the **Constraints** set up. If a constraint is defined as **soft** they are checked to see if they can be respected within fulfillment source determination algorithm, and if not they will still not be excluded from the selection.
+Constraints by default are hard constraints until they are disabled. To define a **Constraint** as a soft constraint, select **Is hard constraint** as **no** in **Constraints** set up.
+
+Example: If **Limit to one warehouse** is set up as a soft constraint, it will be first checked to see if the order can be fulfilled by a single source, however if that’s not possible multiple sources will be used to fulfill the order.
 
 ### Strategies
 
@@ -122,7 +136,7 @@ To define a strategy, follow these steps.
     - **Enable batch processing** – If this option is turned off, every order is processed in real time. If it's turned on, orders are collected into a queue and then periodically processed.
     - **Batch processing in minutes** – Specify the time interval for processing each queue, in minutes. The default value is **2**.
     - **Owner** – The user who created the strategy.
-
+    
 No inventory measure must be explicitly added here. Instead, inventory that is used for the Fulfillment and Returns Optimization provider must be configured in the following way in Intelligent Order Management.
 
 1. In the left navigation pane, under **Order settings**, change the area to **Settings \> Index and reservation**.
@@ -142,6 +156,11 @@ An organization can query the fulfillment plan to view the results. Fulfillment 
 The Fulfillment and Returns Optimization provider supports multiple fulfillment strategies that can be set up based on the needs of different businesses. For example, a business might want to fulfill business-to-business (B2B) orders only from its distribution centers but business-to-consumer (B2C) orders from all its fulfillment sources (such as distribution centers, warehouses, and stores). By having multiple fulfillment strategies, organizations can use different fulfillment approaches for different sales orders.
 
 Businesses can set fulfillment strategy attributes for sales orders during the orchestration journey by adding the fulfillment strategy identifier on the sales order. The fulfillment strategy can be set on a sales order based on the source, or by using transformations as part of the order intake process. The fulfillment strategy can also be set up with policy actions by using sales order attributes and other entities. Policies enable businesses to use the attributes of different entities in the condition builder to set the strategy. If multiple strategies are set up, but the policy assignment for the fulfillment strategy isn't configured, the system uses the configured default strategy.
+
+#### Alternate strategy
+
+The Fulfillment and Returns Optimization also supports definition of alternate strategy. This allows for more flexibility in the rule based fulfillment. If the default strategy assigned to the order is unsuccessful in determining the fulfillment source for the order or order lines, alternate strategy is used to determine the fulfillment source. For example, businesses may want to fulfill their orders using retail store inventory as default and in the absence of which they would want to fulfill by distribution centers. By having the flexibility to define **alternate strategy** for a default strategy, organizations can multiply the options for rule based fulfillment.
+On the **Strategies** page, specify **Alternate Strategy** under **General** section.
 
 ## Fulfillment plans
 
