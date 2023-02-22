@@ -88,7 +88,7 @@ Businesses sometimes have delivery trucks that leave every day at a specific tim
 
 When the **Respect warehouse timings** constraint is enabled, the Fulfillment and Returns Optimization provider ensures that sources create fulfillment orders only if they can be sent to the warehouse before the cutoff time. If they can't, the Fulfillment and Returns Optimization provider tries to assign the sales orders to warehouses that are still open to processing orders. In this way, the Fulfillment and Returns Optimization provider optimizes for faster fulfillment and delivery.
 
-#### Limit number of warehouses constraint
+#### Limit number of warehouses per order constraint
 
 Sometimes, not all inventory is available at a single source. To fulfill orders in these cases, the Fulfillment and Returns Optimization provider splits a single sales order and assigns different warehouses to different parts of it. By using the **Limit number of warehouses** constraint, you can control the degree to which orders are split.
 
@@ -97,6 +97,11 @@ You can configure this constraint to specify the maximum number of warehouses th
 By default, the Fulfillment and Returns Optimization provider will split the sales order among as many warehouses as are required, while also respecting inventory conditions and other constraints.
 
 To specify the number of warehouses to split sales orders among, select **New Limit Number of Warehouses Constraint** to add an entry, and then select **Save**.
+
+#### Limit number of warehouses per order line constraint
+
+You can configure this constraint to specify the maxiumum number of warehouses that you want a single order line to be split among. In other words, if you do not want to source a single order line using multiple sources, you can specify one on the number of warehouses.
+
 
 #### Maximum number of order lines constraint
 
