@@ -115,6 +115,15 @@ Constraints by default are hard constraints until they are disabled. To define a
 
 Example: If **Limit to one warehouse** is set up as a soft constraint, it will be first checked to see if the order can be fulfilled by a single source, however if that’s not possible multiple sources will be used to fulfill the order.
 
+#### Maintain Safety stock
+
+Some businesses maintain safety stocks to manage the customer demand efficiently and to prevent running too low on inventory. Fulfillment and Returns Optimization allows you to maintain safety stock at two levels.
+        - **Safety stock constraint** - This constraint allows you to maintain safety stock at a strategy level. When you maintain safety stock as a constraint it will 
+            apply to all the fulfillment sources within the strategy.
+            Safety stock at fulfillment source - Alternative to maintaining at the strategy level, you can specify safety stock at a fulfillment source level. 
+Fulfillment and returns optimization will exclude the fulfillment source if inventory is below the safety stock level maintained in either of these places.           
+        
+
 ### Strategies
 
 Strategies help define the optimization configuration that achieves your business needs. A strategy brings together objectives, constraints, and sources that must be considered, and specifies how inventory optimization should occur. To create and modify a strategy, on the **Fulfillment settings** page, under **Strategies**, select **Manage**.
