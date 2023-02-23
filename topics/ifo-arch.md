@@ -57,7 +57,7 @@ Intelligent Fulfillment Optimization uses Azure Maps to calculate the fulfillmen
 
 Azure Maps is a highly available global service and follows data residency practices for Azure.
 
-Intelligent Fulfillment Optimization also uses an inventory visibility service provider to determine on-hand inventory for different products at different fulfillment sources. You can enable this feature by configuring **use real inventory** on the fulfillment strategy and on each specific fulfillment source where inventory must be looked up.
+Intelligent Fulfillment Optimization also uses an inventory visibility service provider to determine on-hand inventory for different products at different fulfillment sources. You should specifcy the inventory source as a prerequsite in each specific fulfillment source where inventory must be looked up.
 
 ## Additional resources
 
