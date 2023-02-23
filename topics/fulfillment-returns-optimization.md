@@ -108,20 +108,22 @@ You can configure this constraint to specify the maxiumum number of warehouses t
 Sometimes, fulfillment sources cannot process more than a certain number of order lines on a given day due to capacity or resource limitations. **Maximum number of order lines constraint** can be used to limit the number of order lines routed to a single fulfillment source. You can configure this constraint to specify the maximum order lines per day per fulfillment source or source list. Once this number has reached for the fulfillment source or source list, they will not be considered for selection during that day.
 
 
-### Introducing soft constraints
+#### Maintain Safety stock
+
+Some businesses maintain safety stocks to manage the customer demand efficiently and to prevent running too low on inventory. Fulfillment and Returns Optimization allows you to maintain safety stock at two levels:
+
+         1.  Safety stock constraint: This constraint allows you to maintain safety stock at a strategy level that will apply to all the sources within the strategy.
+         2.  Safety stock at fulfillment source: Alternative to maintaining at the strategy level, you can specify safety stock at a fulfillment source level. 
+         
+Fulfillment and returns optimization will exclude the fulfillment source if inventory is below the safety stock level maintained in either of these places.  
+
+
+#### Introducing soft constraints
 
 Constraints can now be defined as hard or soft within the **Constraints** set up. If a constraint is defined as **soft** they are checked to see if they can be respected within fulfillment source determination algorithm, and if not they will still not be excluded from the selection.
 Constraints by default are hard constraints until they are disabled. To define a **Constraint** as a soft constraint, select **Is hard constraint** as **no** in **Constraints** set up.
 
-Example: If **Limit to one warehouse** is set up as a soft constraint, it will be first checked to see if the order can be fulfilled by a single source, however if that’s not possible multiple sources will be used to fulfill the order.
-
-#### Maintain Safety stock
-
-Some businesses maintain safety stocks to manage the customer demand efficiently and to prevent running too low on inventory. Fulfillment and Returns Optimization allows you to maintain safety stock at two levels.
-        - **Safety stock constraint** - This constraint allows you to maintain safety stock at a strategy level. When you maintain safety stock as a constraint it will 
-            apply to all the fulfillment sources within the strategy.
-            Safety stock at fulfillment source - Alternative to maintaining at the strategy level, you can specify safety stock at a fulfillment source level. 
-Fulfillment and returns optimization will exclude the fulfillment source if inventory is below the safety stock level maintained in either of these places.           
+Example: If **Limit to one warehouse** is set up as a soft constraint, it will be first checked to see if the order can be fulfilled by a single source, however if that’s not possible multiple sources will be used to fulfill the order.          
         
 
 ### Strategies
