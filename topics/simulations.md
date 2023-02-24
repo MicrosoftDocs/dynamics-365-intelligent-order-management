@@ -1,12 +1,11 @@
 ---
-author: derekkwanpm
+title: AI simulations feature
 description: This article provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/25/2023
-ms.topic: conceptual
+author: derekkwanpm
 ms.author: derekkwan
-
-title: AI simulations feature
-
+ms.topic: conceptual
+ms.custom: bap-template
 ---
 
 # AI simulations feature
@@ -23,15 +22,15 @@ Businesses using order management systems often struggle with visibility into th
 The Intelligent Order Management AI simulations feature is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. Intelligent Order Management AI simulations use your own data and repeatedly [sample that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) based on parameters that you set for a given scenario. Such simulations can provide estimated results that can help you deploy new strategies with more confidence. Knowing the expected results of experiments such as swapping out fulfillment centers or adjusting the allowable distance for deliveries can help you make data-informed decisions that dramatically improve your business results.
 
 > [!NOTE]
-> All screenshots in this article are from a preproduction version of the simulation feature, and may not accurately represent how the final product will appear.
+> All screenshots in this article are from a preproduction version of the simulation feature and may not accurately represent how the final product will appear.
 
 ## Access simulations
 
-You can access simulations in the left navigation pane of Intelligent Order Management, just like you would access any other features. On the **Simulations** landing page, you'll see a list of all previous simulations you have run as sown in the following example image. 
+You can access simulations in the left navigation pane of Intelligent Order Management, just like you would access any other features. On the **Simulations** landing page, you'll see a list of all previous simulations you have run as shown in the following example image. 
 
 ![Simulations landing page showing list of all previous simulations](media/sims_landing.png)
 
-You can open any previous simulation to see its settings and results, and also compare the results of previous simulations side by side, as shown in the following example image.
+You can open any previous simulation to see its settings and results. Also, you can compare the results of previous simulations side by side, as shown in the following example image.
 
 ![Previous simulations comparison](media/sims_compare.png)
 
@@ -57,7 +56,7 @@ Selecting the **Source optimization** scenario opens the **Create a simulation**
 
 ![Sims naming form](media/sim_name.png)
 
-Name your simulation something you will recognize easily at a glance, such as "max distance and source update for los angeles". The description field can be used as a "note", to add more details to help you remember the motivation or goals behind the simulation (or for others to understand the simulation at a glance). 
+Name your simulation something you will recognize easily, such as "Max distance and source update for Los Angeles". The description field can be used as a "note", to add more details to help you remember the motivation or goals behind the simulation (or for others to understand the simulation at a glance). 
 
 ### Order types
 
@@ -89,7 +88,7 @@ When you're done selecting sources, the next step will allow you to select const
 
 ### View results
 
-Your Simulation is done! The results page will show business critical KPIs and trends associated with the simulation you ran. You'll notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, run over and over again to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the upper and lower bounds provide the min and max numbers from all the potential results. 
+Your Simulation is done! The results page will show business critical KPIs, and trends associated with the simulation you ran. You'll notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, running repeatedly to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the upper and lower bounds provide the min and max numbers from all the potential results. 
 
 ![Sims results](media/sims_results.png)
 
@@ -102,7 +101,7 @@ On the results page, you will find several areas.
 
 ### Additional information
 
-Intelligent Order Management simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments, and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. Intelligent Order Management simulations puts the power of AI in your pocket so you can take ownership for improving your business.
+Intelligent Order Management simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. Intelligent Order Management simulations puts the power of AI in your pocket so you can take ownership for improving your business.
 
 
 
