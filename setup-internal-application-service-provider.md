@@ -23,4 +23,20 @@ To add the Internal Application Service provider follow these steps:
 5. For **Transformations**, select **Next**.
 6. Follow the prompts and select **Activate**
 
-Following actions and events are considered to be a part of th
+Following functionalities are a part of the provider and hence setting up this provider becomes a pre-requisite for the following processes.
+
+1. Creation and processing of return fulfillment orders
+2. Split orders: Ability to split a single order into multiple orders as part of orchestration flow based on assignment of split groups via execution policy.
+3. Creation of fulfillment orders for policy based fulfillment.
+
+
+Following out of box provider actions are available as part of the Internal Application Service Provider.
+
+| Action | Description |
+| ---------- | ------- |
+| Create Fulfillment Return Orders | This provider action Create Fulfillment Return Orders action creates Fulfillment plans for return orders and then processes these   plans to generate Fulfillment Orders. |
+| Create returns orders | This provider action Create Return Orders action processes the Return Order Request information and generates the Dataverse Return Order. |
+| Send fulfillment process request | This provider action checks product inventory and creates fulfillment plan and fulfillment order for policy based fulfillment. |
+| Split order | This provider action splits a parent order into child orders on the basis of split groups assigned to order lines. |
+
+
