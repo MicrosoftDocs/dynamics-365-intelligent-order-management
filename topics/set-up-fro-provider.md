@@ -26,8 +26,6 @@ To add the Fulfillment and Returns Optimization provider, follow these steps.
 1. Leave the mapping group set to **Default mapping group**.
 1. For **Transformations**, select **Next**.
 1. Select **Edit** to add **Dataverse connection for IOM**.
-1. Sign in to Dataverse by using your credentials. You should have already created a Dataverse connection in Power Automate by following the instructions in [Create connections](setup.md#create-connections).
-1. Go to the [Power Automate portal](https://us.flow.microsoft.com/), and copy the URL by following the instructions in [Set up platform connection references](setup.md#create-connections).
 1. Select **Save**, and then select **Next**.
 1. When all the preceding steps have been successfully completed, select **Activate**.
 
@@ -37,7 +35,14 @@ Customers typically add the **Send to Fulfillment and Returns Optimization** pro
 
 - **Name:** Send to fulfillment and returns optimization
 - **Input Events:** Validation of Order Lines has Succeeded
-- **Provider Action:** Send to fulfillment determination
+- **Provider Action:** Send to fulfillment optimization
+- **Output Event:** Fulfillment optimization request succeeded, Fulfillment optimization request failed
+- **Action Description** This provider action sends the order through fulfillment optimization and outputs a fulfillment plan and creates fulfillment order
+
+## Sample orchestration flow with the provider
+
+![Orchestration flow with FRO provider action.](media/flow-with-FRO-provider.png)
+
 
 ## Additional resources
 
