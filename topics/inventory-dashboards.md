@@ -1,7 +1,7 @@
 ---
 author: josaw1
 description: This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 05/26/2022
+ms.date: 02/27/2023
 ms.topic: conceptual
 ms.author: josaw
 
@@ -30,7 +30,7 @@ To configure the Inventory Visibility service for your Intelligent Order Managem
 
 1. In Intelligent Order Management for your organization, at the bottom of the left navigation pane, select the area switcher, and then select **settings**.
 1. Under **Inventory visibility**, go to the **Index and reservation** section.
-1. On the **Feature management** tab on the right side, turn on the **OnHandMostSpecificBackgroundService** option. This setting ensures that data flows from the Inventory Visibility service into Intelligent Order Management, so that it can be consumed by the dashboard. Please note that turning this flag off after the dashboard is functional, will cause the dashboard displaying incorrect information as the data is picked up from the time the flag is turned on and will not consider the prior data before the flag was turned off.
+1. On the **Feature management** tab on the right side, turn on the **OnHandMostSpecificBackgroundService** option. This setting ensures that data flows from the Inventory Visibility service into Intelligent Order Management, so that it can be consumed by the dashboard. Note that turning this flag off after the dashboard is functional, will cause the dashboard displaying incorrect information as the data is picked up from the time the flag is turned on and won't consider the prior data before the flag was turned off.
 
     Next, you must enable Microsoft Power BI Insights.
 
@@ -91,7 +91,7 @@ Yes. There are **Product name** and **Location ID** filters that you can use to 
 
 ### Can I sort the data differently than what is available out of the box?
 
-Yes. When you hover on a chart, a vertical ellipsis appears in the upper-right corner. To re-sort the data, select the ellipsis, select **Sort axis**, and then select the option that you want.
+Yes. When you hover on a chart, a vertical ellipsis appears in the upper-right corner. To resort the data, select the ellipsis, select **Sort axis**, and then select the option that you want.
 
 ### Can I modify the KPIs that the dashboard provides?
 
@@ -107,5 +107,5 @@ All data that is shown on the inventory dashboard is a current representation of
 
 ### Can I use the inventory dashboard if Intelligent Order Management is connected to  dynamics supply chain management?
 
-No. Currently the dashboard is only supported for IV datasource, which means this cannot be used when your inventory is managed within dynamics supply chain management.
+No. Currently the dashboard is only supported for IV datasource, which means this can't be used when your inventory is managed within dynamics supply chain management.
 
