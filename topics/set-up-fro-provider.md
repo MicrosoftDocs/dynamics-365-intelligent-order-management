@@ -38,12 +38,11 @@ Customers typically add the **Send to Fulfillment and Returns Optimization** pro
 - **Input Events:** Validation of Order Lines has Succeeded
 - **Provider Action:** Send to fulfillment optimization
 - **Output Event:** Fulfillment optimization request succeeded, Fulfillment optimization request failed
-- **Action Description** This provider action sends the order through fulfillment optimization and outputs a fulfillment plan and creates fulfillment order
+- **Action Description:** This provider action sends the order through fulfillment optimization and outputs a fulfillment plan and creates fulfillment order
 
 ## Sample orchestration flow with the provider
 
-![Orchestration flow with FRO provider action.](media/flow-with-FRO-provider.png)
-
+![Orchestration flow with a Fulfillment and Returns Optimization provider action.](media/flow-with-FRO-provider.png)
 
 ## Additional resources
 
