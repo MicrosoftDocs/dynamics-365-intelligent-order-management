@@ -1,11 +1,12 @@
 ---
-author: rinitha-reddy
-description: This article describes how to set up the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 10/19/2021
-ms.topic: conceptual
-ms.author: rikothap
 
 title: Set up the Fulfillment and Returns Optimization provider
+description: This article describes how to set up the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 02/27/2023
+ms.topic: conceptual
+ms.custom: bap-template
+author: anvenkat
+ms.author: anvenkat
 
 ---
 
@@ -36,7 +37,13 @@ Customers typically add the **Send to Fulfillment and Returns Optimization** pro
 
 - **Name:** Send to fulfillment and returns optimization
 - **Input Events:** Validation of Order Lines has Succeeded
-- **Provider Action:** Send to fulfillment determination
+- **Provider Action:** Send to fulfillment optimization
+- **Output Event:** Fulfillment optimization request succeeded, Fulfillment optimization request failed
+- **Action Description:** This provider action sends the order through fulfillment optimization and outputs a fulfillment plan and creates fulfillment order
+
+## Sample orchestration flow with the provider
+
+![Orchestration flow with a Fulfillment and Returns Optimization provider action.](media/flow-with-FRO-provider.png)
 
 ## Additional resources
 

@@ -1,10 +1,9 @@
 ---
-author: josaw1
-ms.author: josaw
-title: Intelligent Fulfillment Optimization
-description: This topic provides an introduction to Intelligent Fulfillment Optimization and instructions for setting it up in Microsoft Dynamics 365 Intelligent Order Management.
-ms.service: dynamics-365-intelligent-order-management
-ms.date: 02/24/2023
+title: Intelligent Fulfillment Optimization architecture
+description: This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 02/27/2023
+ms.author: anvenkat
+author: anush6121
 ms.topic: conceptual
 ms.custom: bap-template
 

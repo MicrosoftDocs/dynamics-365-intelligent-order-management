@@ -92,6 +92,10 @@
         href: set-up-fro-provider.md
       - name: Set up Inventory Visibility provider
         href: set-up-inventory-visibility-provider.md
+      - name: Set up Internal Application Service provider
+        href: setup-internal-application-service-provider.md
+      - name: Policy-based fulfillment
+        href: policy-based-fulfillment.md
       - name: Set up Dynamics 365 Finance + Operations provider
         href: set-up-finops-provider.md
       - name: Set up Uber Freight provider
