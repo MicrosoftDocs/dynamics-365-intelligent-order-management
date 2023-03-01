@@ -1,11 +1,13 @@
 ---
-author: josaw1
-description: This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 07/23/2021
-ms.topic: conceptual
-ms.author: josaw
 
 title: Intelligent Fulfillment Optimization architecture
+description: This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 02/27/2023
+ms.author: anvenkat
+author: anush6121
+ms.topic: conceptual
+ms.custom: bap-template
+
 
 ---
 
@@ -57,7 +59,7 @@ Intelligent Fulfillment Optimization uses Azure Maps to calculate the fulfillmen
 
 Azure Maps is a highly available global service and follows data residency practices for Azure.
 
-Intelligent Fulfillment Optimization also uses an inventory visibility service provider to determine on-hand inventory for different products at different fulfillment sources. You can enable this feature by configuring **use real inventory** on the fulfillment strategy and on each specific fulfillment source where inventory must be looked up.
+Intelligent Fulfillment Optimization also uses an inventory visibility service provider to determine on-hand inventory for different products at different fulfillment sources. You should specify the inventory source as a prerequisite in each specific fulfillment source where inventory must be looked up.
 
 ## Additional resources
 
