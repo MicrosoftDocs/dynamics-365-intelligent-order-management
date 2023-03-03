@@ -14,95 +14,110 @@ ms.custom: bap-template
 
 This article provides an overview of the artificial intelligence (AI) simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
 
-> [!Note]
+> [!NOTE]
 > The AI simulations feature is currently in development. If you're interested in participating in a private preview of this feature, add your contact information to the [Dynamics 365 IOM Simulations interest form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7PfTHWf5-FKvJrqC3rlH_NUMENXVVdFWlNKWEtDR082NEFVVE5VRjVZTi4u).
 
-Businesses using order management systems often struggle with visibility into the automated fulfillment decisions made by those systems, as well the predictability of outcomes over time. Running A/B testing on the outcomes of a fulfillment system or conducting experiments to discover better strategies must be performed on real-life orders and customers, risking impact on customer satisfaction, revenue, and costs.
+Businesses that use order management systems often struggle to gain visibility into the automated fulfillment decisions that those systems make, and also with the predictability of outcomes over time. Real-life orders must be used to run A/B testing on the outcomes of a fulfillment system, or to conduct experiments to discover better strategies. Therefore, there's a risk that customer satisfaction, revenue, and costs might be affected.
 
-The Intelligent Order Management AI simulations feature is a no-code, business user-friendly tool that allows you to run experiments on your data, not your customers. Intelligent Order Management AI simulations use your own data and repeatedly [sample that data](https://en.wikipedia.org/wiki/Monte_Carlo_method) based on parameters that you set for a given scenario. Such simulations can provide estimated results that can help you deploy new strategies with more confidence. Knowing the expected results of experiments such as swapping out fulfillment centers or adjusting the allowable distance for deliveries can help you make data-informed decisions that dramatically improve your business results.
+The AI simulations feature in Intelligent Order Management is a no-code, business user–friendly tool that lets you run experiments on your data, not your customers. Intelligent Order Management AI simulations use your own data and [repeatedly sample it](https://en.wikipedia.org/wiki/Monte_Carlo_method), based on parameters that you set for a given scenario. The estimated results that these simulations provide can help you more confidently deploy new strategies. When you know the expected results of experiments such as swapping out fulfillment centers or adjusting the allowable distance for deliveries, you can make data-informed decisions that can help dramatically improve your business results.
 
-> [!Note]
-> All screenshots in this article are from a preproduction version of the simulation feature and may not accurately represent how the final product will appear.
+> [!NOTE]
+> All screenshots in this article are from a preproduction version of the AI simulations feature. They might not accurately represent how the final product will appear.
 
 ## Access simulations
 
-You can access simulations in the left navigation pane of Intelligent Order Management, just like you would access any other features. On the **Simulations** landing page, you'll see a list of all previous simulations you have run as shown in the following example image. 
+You can access simulations, like other features, in the left navigation pane of Intelligent Order Management. The **Simulations** list page shows a list of all previous simulations that you've run, as shown in the following example.
 
-![Screenshot of the Simulations landing page showing list of all previous simulations.](media/sims_landing.png)
+![List of all previous simulations on the Simulations list page.](media/sims_landing.png)
 
-You can open any previous simulation to see its settings and results. Also, you can compare the results of previous simulations side by side, as shown in the following example image.
+You can open any previous simulation to view its settings and results. You can also compare the results of previous simulations side by side, as shown in the following example.
 
-![Screenshot of a previous simulations comparison.](media/sims_compare.png)
+![Side-by-side comparison of previous simulations.](media/sims_compare.png)
 
 ## Create a simulation
 
-To create a new simulation, at the top of the **Simulations** landing page, select **+New**. This opens a wizard that walks you through setting up your simulations step-by-step. The first screen contains several predefined scenario templates that you can start with, as shown in the following example image.
+To create a new simulation, select **New** at the top of the **Simulations** list page to open the **Create a simulation** wizard. This wizard guides you step by step through the process of setting up a new simulation.
 
-![Screenshot of a predefined simulation scenarios.](media/sims_scenarios.png)
+The first preliminary page of the wizard shows several predefined scenario templates that you can start with, as shown in the following example.
 
-The predefined scenario templates work in the following ways.
+![Predefined simulation scenarios in the wizard.](media/sims_scenarios.png)
 
-- **Source optimization** - Want to see what would be the impact to your costs, delivery times, and inventory if you included or excluded different fulfillment sources within a service area? Source optimization simulations allow you to swap sources in and out and measure the impact to your fulfillment network. 
-- **Demand shock impact** - What would the impact be on your current order management network if demand spiked by two or three times current levels in the next few months? How would those changes affect your restocking cadence? How much would it drive up your costs to maintain delivery times? Demand shock impact simulations enable you to simulate various order volumes in the future and see the resulting impacts on your distribution centers and overall network. 
-- **Expand your fulfillment network** - Business expansion is a highly strategic and impactful decision that must be data-informed and future-proof. Expanding into a new geographic location, opening a new distribution center in a current service area, or tuning third-party logistics can have dramatic impacts on your inventory decisions, delivery times, and costs. Simulating the impact of business expansion across your order management network enables you to make decisions with more confidence.  
-- **Introduce new products** - New product expansion can have cannibalization effects on your current product lines, and cause ripple effects across your order management network as buying patterns change. These changes can impact your carefully planned inventory operations, and your fulfillment and delivery plans. Simulating the impact of new product introduction gives you a future view of the expected impact of this type of expansion. 
+The predefined scenario templates work in the following ways:
 
-> [!Note]
-> For the initial version of the simulation feature, only the **source optimization** scenario will be available, with the other scenarios to follow in subsequent releases. 
+- **Source optimization** – What will be the impact on your costs, delivery times, and inventory if you include or exclude different fulfillment sources in a service area? Source optimization simulations let you swap sources in and out, and measure the impact on your fulfillment network.
+- **Demand shock impact** – What will be the impact on your current order management network if demand spikes by two or three times the current levels in the next few months? How will those changes affect your restocking cadence? How much will it drive up your costs to maintain delivery times? Demand shock impact simulations let you simulate different order volumes in the future and view the resulting impact on your distribution centers and overall network.
+- **Expand your fulfillment network** – Business expansion is a highly strategic and impactful decision that must be data-informed and future-proof. Expanding into a new geographic location, opening a new distribution center in a current service area, or tuning third-party logistics can have a dramatic impact on your inventory decisions, delivery times, and costs. By simulating the impact of business expansion across your order management network, you can more confidently make decisions.
+- **Introduce new products** – New product expansion can have cannibalization effects on your current product lines, and can cause ripple effects across your order management network as buying patterns change. These changes can affect your carefully planned inventory operations, and your fulfillment and delivery plans. By simulating the impact of new product introduction, you can get a future view of the expected impact of this type of expansion.
 
-Selecting the **Source optimization** scenario opens the **Create a simulation** wizard.
+> [!NOTE]
+> For the initial version of the AI simulations feature, only the **Source optimization** scenario is available. Other scenarios will be added in later releases.
+
+When you select a scenario, the second preliminary page of the wizard appears, where you enter a name and description for the simulation.
 
 ### Name your simulation
 
-![Screenshot of the Create a simulation screen.](media/sim_name.png)
+Name your simulation something that you'll easily recognize, such as **Max distance and source update for Los Angeles**. In the **Simulation description** field, you can add note-type details to help you remember the motivation or goals behind the simulation (or to help other users understand the simulation at a glance).
 
-Name your simulation something you'll recognize easily, such as "Max distance and source update for Los Angeles". The description field can be used as a "note", to add more details to help you remember the motivation or goals behind the simulation (or for others to understand the simulation at a glance). 
+![Simulation name and description entered in the wizard.](media/sim_name.png)
 
-### Order types
+When you've finished entering information on this page, select **Next** to open the page for the first step of the main part of the wizard.
 
-![Screenshot of th Fulfillment Optimization Sim order type step 1.](media/sims_order_type1.png)
+### Specify an order type
 
-1. Indicator that displays the steps in the wizard, and how you're progressing
-1. Setting panel where you configure the settings of the simulation. For this step, you're selecting from two order types: 
-    1. Simulate future demand: choose a period of time in the future (ex: upcoming holiday season) and have Intelligent Order Management simulate what the demand will look like for that period
-    1. Simulate a test order: create a test order or choose a previously created test order and simulate how Intelligent Order Management will fulfill that order
-1. Map view of your order management network, which can be configured on the next step of the wizard 
+In the first step of the wizard, you specify the type of orders that you want to simulate.
 
-For example, if you select "simulate future demand", two settings will be displayed:
+![Page for step 1 of the wizard, where an order type is specified.](media/sims_order_type1.png)
 
-![Screenshot of the Orders diablog box with Simulate future demand.](media/sims_future_demand.png)
+Here's an explanation of the elements on the page. (The numbers correspond to the numbered callouts in the preceding illustration.)
 
-You can select a date range (ex: 11/15/22 to 12/31/22), and you can also select a "demand multiplier". If you think for example, your business has grown and you'll do 2x the demand you had in previous years, you can set the multiplier to 2. Or if you're just curious how your network would handle 4x the demand, you can set the multiplier to 4, or any number you want.
+1. An indicator that shows the steps in the wizard and your progress through them.
+1. A settings pane where you configure the settings for the simulation. For the first step, you select between two types of orders:
 
-### Fulfillment sources
+    - **Simulate future demand** – Select this option to have Intelligent Order Management simulate what the demand will look like for a future period (for example, an upcoming holiday season).
+    - **Simulate a test order(s)** – Select this option to simulate how Intelligent Order Management will fulfill a new test order that you create or an existing test order that you select.
 
-On the next step, Intelligent Order Management will display the available fulfillment sources in both a list and map view, based on your settings from the previous step. On this screen, you can select or deselect any sources to include / exclude from the fulfillment plan.
+    Depending on the option that you select, additional settings become available. For example, if you select the **Simulate future demand** option, you can specify a date range (such as November 15, 2022, through December 31, 2022). You can also select a "demand multiplier." Therefore, if you think that your business has grown, and that you'll have two times the demand that you had in previous years, you can set the **Demand multiplier** field to **2**. Or, if you're just curious how your network would handle four times the demand, you can set the **Demand multiplier** field to **4**.
 
-![Screenshot of simulation source selection.](media/sims_sources.png)
+    ![Additional settings for the Simulate future demand order type.](media/sims_future_demand.png)
 
-### Constraints
+1. A map view of your order management network. You can configure this view in the next step of the wizard.
 
-When you're done selecting sources, the next step will allow you to select constraints, such as location or source priority, maximum number of fulfillment sources, maximum distance between source to destination, and split order allowance. These are the same constraints available to the rest of Intelligent Order Management (look for "Business constraints" on [this help page](ifo.md)). 
+When you've finished entering information on this page, select **Next** to open the page for the next step of the wizard.
 
-![Screenshot of simulation constraints selection.](media/sims_constraints.png)
+### Select fulfillment sources
+
+In the next step of the wizard, Intelligent Order Management shows the available fulfillment sources in both a list view and a map view, depending on your settings from the previous step. On this page, you can select or clear the selection of any source to specify the sources that are included in the fulfillment plan.
+
+![Page for step 2 of the wizard, where fulfillment sources are selected.](media/sims_sources.png)
+
+When you've finished selecting sources on this page, select **Next** to open the page for the next step of the wizard.
+
+### Select constraints
+
+In the next step, you can select constraints, such as the location or source priority, the maximum number of fulfillment sources, the maximum distance between source to destination, and the split order allowance. These constraints are the same constraints that are available to the rest of Intelligent Order Management. For more information, see [Business constraints](ifo.md#business-constraints).
+
+![Page for step 3 of the wizard, where constraints are selected.](media/sims_constraints.png)
+
+When you've finished selecting constraints on this page, select **Confirm** to view the results of the simulation.
 
 ### View results
 
-Your Simulation is done! The results page will show business critical KPIs, and trends associated with the simulation you ran. You'll notice the numbers are presented with "lower and upper bounds". This is because the results are based on a single simulation, running repeatedly to produce a wide range of potential results. This "Monte Carlo method" will often provide an accurate approximation of an actual future result (expected result). The "main" number on the KPIs is the expected result, and the upper and lower bounds provide the min and max numbers from all the potential results. 
+The results page shows business-critical key performance indicators (KPIs) and trends that are associated with the simulation that you ran. Notice that upper and lower bounds are presented for each KPI. The reason is that the results are based on a single simulation that's run repeatedly to produce a wide range of potential results. This so-called [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) often provides an accurate approximation of an actual future result (expected result). The main number for each KPI is the expected result, and the upper and lower bounds represent the minimum and maximum numbers from all the potential results.
 
-![Screenshot of simulation results.](media/sims_results.png)
+![Example of simulation results.](media/sims_results.png)
 
-On the results page, you'll find several areas.
+Here's an explanation of the different areas on the results page. (The numbers correspond to the numbered callouts in the preceding illustration.)
 
-1. Navigation back to your previous settings screens. You can go back to any previous setting and update it to iterate on the simulation you just ran. As an example, you experimented with 15-miles max distance, and want to use all the exact same settings to see what happens if you changed it to 20 miles. You can run this experiment without having to start over with a new simulation. Clicking on the "commit changes" button on the bottom of the screen will run the simulation again, and the results page will show deltas from the previous simulation.
-1. Configuration summary will show all the settings for the current simulation.
-1. Main KPI area will show all the business critical KPIs for your simulation.
-1. Map / metrics view: will show on a map the fulfillment sources for this simulation. Toggling to metrics view will show you sources in a table format, which includes inventory counts, which source was selected to fulfill which products, distance, and more.
+1. Navigation to the pages for previous steps of the wizard. You can go back to any previous step and update the settings to iterate the simulation that you just ran.
 
-### Additional information
+    For example, you've experimented with a maximum distance of 15 miles. You now want to see what happens if the maximum distance is changed to 20 miles but all the other settings remain the same. You can run this experiment without having to start a completely new simulation.
 
-Intelligent Order Management simulations will reinvent the way to think about order management systems. No longer will you push orders through a system and just wait for results that show the impact on your customers. You can now simulate a wide variety of scenarios to bring some predictability to your fulfillments and can optimize the system yourself by uncovering efficiencies with experimentation. But much better than simple A/B testing, these experiments are performed on your data and results are simulated, without having impact on your real customers. Intelligent Order Management simulations put the power of AI in your pocket so you can take ownership for improving your business.
+    When you select **Commit changes** at the bottom of the page, the simulation will be run again, and the results page will show deltas from the previous simulation.
 
+1. The configuration summary, which shows all the settings for the current simulation.
+1. The main KPI area, which shows all the business-critical KPIs for the current simulation.
+1. **Map** and **Metrics** views that you can switch between. The **Map** view that shows a map of the fulfillment sources for the current simulation. The **Metrics** view shows the sources in a table format that identifies which source was selected to fulfill which products, and that includes inventory counts, distance, and more.
 
+## Additional information
 
-
+Intelligent Order Management AI simulations will change the way that you think about order management systems. You no longer have to push orders through a system and wait for results that show the impact on your customers. You can now simulate a wide range of scenarios to bring some predictability to your fulfillment, and you can optimize the system yourself by uncovering efficiencies through experimentation. These experiments are much better than simple A/B testing, because they're performed on your data, and the results are simulated. Therefore, there's no impact on your real customers. Intelligent Order Management AI simulations put the power of AI in your hands, so that you can take ownership over improving your business.
