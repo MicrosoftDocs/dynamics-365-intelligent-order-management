@@ -53,6 +53,7 @@ Constraints are an optional component of fulfillment optimization. The following
 - Respect warehouse timings
 - Maximum order lines
 - Limit number of warehouses per order line
+- Safety stock constraint
 
 
 To create or modify constraints, on the **Fulfillment settings** page, under **Constraints**, select **Manage**. To create a constraint of a specific constraint type, select the appropriate constraint type when you create the constraint.
@@ -110,13 +111,12 @@ Sometimes, fulfillment sources cannot process more than a certain number of orde
 
 #### Maintain Safety stock
 
-Some businesses maintain safety stocks to manage the customer demand efficiently and to prevent running too low on inventory. Fulfillment and Returns Optimization allows you to maintain safety stock at two levels:
-
-         1.  Safety stock constraint: This constraint allows you to maintain safety stock at a strategy level that will apply to all the sources within the strategy.
-         2.  Safety stock at fulfillment source: Alternative to maintaining at the strategy level, you can specify safety stock at a fulfillment source level. 
+Some businesses maintain safety stocks to manage the customer demand efficiently and to prevent running too low on inventory. Fulfillment and Returns Optimization allows you to maintain safety stock at two levels at each of your fulfillment sources.
+Fulfillment and returns optimization will exclude the fulfillment source if inventory for the product is below the safety stock level. To configure the safety stock constraint you will need to do the following:
+Safety stock constraint: Create a new **Constraint** of **Constraint type** chosen as  **Safety stock Constraint**. 
+Safety stock at fulfillment source: You must also maintain the **safety stock** on the fulfillment source.
          
-Fulfillment and returns optimization will exclude the fulfillment source if inventory is below the safety stock level maintained in either of these places.  
-
+Once these settings are done  Fulfillment and returns optimization will exclude the fulfillment source if onhand inventory is below the safety stock limit.
 
 #### Introducing soft constraints
 
