@@ -38,14 +38,15 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. The order is pulled from BigCommerce into Intelligent Order Management.
 1. The order is validated in Intelligent Order Management.
 1. A company, site, and warehouse are assigned in Intelligent Order Management.
-1. The Finance + Operations provider action sends the order to Finance + Operations.
-1. An "order sent to fulfillment successful" event is raised in Intelligent Order Management.
-1. The order is shipped in Finance + Operations.
-1. An "order shipped" event is raised in Intelligent Order Management.
-1. The provider action updates the order status in BigCommerce.
-1. The order is invoiced in Finance + Operations.
-1. An "order invoiced" event is raised in Intelligent Order Management.
-1. The provider action updates the order status in BigCommerce.
+1. The Finance + Operations provider action sends the order to Finance + Operations(Use **Action** = **Send order to fulfillment**).
+1. The order is picked in Finance + Operations.
+1. The order state in Intelligent Order Management is updated to **Fulfillment in Process** with status reason **Picked**.
+1. The order is packed and delivered in Finance + Operations. 
+5. An "order shipped" event is raised in Intelligent Order Management that updates the Order state to **Completed** and status reason as **Fulfilled**
+6. The provider action updates the order status in BigCommerce.
+7. The order is invoiced in Finance + Operations.
+8. An "order invoiced" event is raised in Intelligent Order Management.
+9. The provider action updates the order status in BigCommerce.
 
 ### BigCommerce (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> Finance + Operations (accounting)
 
@@ -93,3 +94,23 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. An "order shipped" event is raised in Intelligent Order Management.
 1. The order is invoiced in SAP.
 1. An "order invoiced" event is received in Intelligent Order Management.
+
+### BigCommerce (new order) \> Intelligent Order Management with DOM for source determination \> Finance + Operations (fulfillment) \> Finance + Operations (accounting)
+
+1. An order is created in BigCommerce.
+1. The order is pulled from BigCommerce into Intelligent Order Management.
+1. The order is validated in Intelligent Order Management.
+1. A company, and sitee are assigned in Intelligent Order Management.
+1. The order is passed through the provider action **Send to Fulfillment Optimization**
+1. A fulfillment order is created for each of the fulfillment sources determined for the sales order lines.
+1. The sales order lines get passed to Finance + Operations through the provider action **Send sales order lines to billing**. This action also updates the sales order  lines with the shipping warehouse before the synchornization to Finance + Operations. Plase note that all the sales order lines that have a shipping warehouse on them are selected for synchronization. 
+1. If Fulfillment optimization fails to create a fulfillment order due to lack of inventory, those sales order lines are not synchronized to Finance + Operations.
+1. If **Backorder** is enabled in **General settings**>**Order handling preferences** , the sales order line is set to a state **Backorder hold** until a backorder job runs and finds the inventory and releases that line to fulfillment and subsequently to Finance + Operations.
+1. The order is picked in Finance + Operations.
+1. The order state in Intelligent Order Management is updated to **Fulfillment in Process** with status reason **Picked**.
+1. The order is packed and delivered in Finance + Operations.  
+7. An "order shipped" event is raised in Intelligent Order Management that updates the Order state to **Completed** and status reason as **Fulfilled**
+8. The provider action updates the order status in BigCommerce.
+9. The order is invoiced in Finance + Operations.
+10. An "order invoiced" event is raised in Intelligent Order Management.
+11. The provider action updates the order status in BigCommerce.
