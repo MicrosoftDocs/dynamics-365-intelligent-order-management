@@ -1,10 +1,10 @@
 ---
-author: rinitha-reddy
+author: anvenkat
 description: This article provides an overview of the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/19/2022
+ms.date: 03/10/2023
 ms.topic: overview
-ms.author: rikothap
+ms.author: anvenkat
 
 title: Fulfillment and Returns Optimization provider overview
 
@@ -73,7 +73,7 @@ The **Maximum distance** constraint enables an organization to define the maximu
 
 You can define the maximum distance for a source or a source list. If the maximum distance is defined for a source list that contains an individually defined source distance, an overlapping **Maximum distance** constraint might be defined for the source. In this case, the optimization service applies the lowest defined maximum distance for those sources.
 
-The following illustration shows an example where the Seattle warehouse can deliver only up to 10 miles from its radius, even though it's part of the **All Sources** list, where the maximum distance is 50 miles. Because of the way that this constraint works, the shortest distance is used if there is a conflict.
+The following illustration shows an example where the Seattle warehouse can deliver only up to 10 miles from its radius, even though it's part of the **All Sources** list, where the maximum distance is 50 miles. Because of the way that this constraint works, the shortest distance is used if there's a conflict.
 
 ![Maximum distance constraint.](media/constraint-max-radius.png)
 
@@ -101,19 +101,19 @@ To specify the number of warehouses to split sales orders among, select **New Li
 
 #### Limit number of warehouses per order line constraint
 
-You can configure this constraint to specify the maximum number of warehouses that you want a single order line to be split among. In other words, if you do not want to source a single order line using multiple sources, you can specify one on the number of warehouses.
+You can configure this constraint to specify the maximum number of warehouses that you want a single order line to be split among. In other words, if you don't want to source a single order line using multiple sources, you can specify one on the number of warehouses.
 
 
 #### Maximum number of order lines constraint
 
-Sometimes, fulfillment sources cannot process more than a certain number of order lines on a given day due to capacity or resource limitations. The **Maximum number of order lines constraint** can be used to limit the number of order lines routed to a single fulfillment source. You can configure this constraint to specify the maximum order lines per day, per fulfillment source, or source list. Once this number is reached for the fulfillment source or source list, order lines won't be considered for selection during that day.
+Sometimes, fulfillment sources can't process more than a certain number of order lines on a given day due to capacity or resource limitations. The **Maximum number of order lines constraint** can be used to limit the number of order lines routed to a single fulfillment source. You can configure this constraint to specify the maximum order lines per day, per fulfillment source, or source list. Once this number is reached for the fulfillment source or source list, order lines won't be considered for selection during that day.
 
 
 #### Maintain Safety stock
 
 Some businesses maintain safety stocks to manage customer demand efficiently, and to prevent running too low on inventory. Fulfillment and Returns Optimization allows you to maintain safety stock at two levels at each of your fulfillment sources.
 
-Fulfillment and returns optimization excludes the fulfillment source if inventory for the product is below the safety stock level. To configure the safety stock constraint, you will need to do the following:
+Fulfillment and returns optimization excludes the fulfillment source if inventory for the product is below the safety stock level. To configure the safety stock constraint, you'll need to do the following:
 
 - **Safety stock constraint**: Create a new **Constraint** and set the **Constraint type** to **Safety stock Constraint**. 
 - **Safety stock at fulfillment source**: You must also maintain the **Safety stock** on the fulfillment source.
@@ -124,7 +124,7 @@ After these are set up, Fulfillment and returns optimization will exclude the fu
 
 Constraints can be defined as hard or soft within the **Constraints** set up. If a constraint is defined as **soft** it's checked to see if it can be respected within fulfillment source determination algorithm, and if not, it won't be excluded from the selection.
 
-Constraints by default are hard constraints until they are disabled. To define a **Constraint** as a soft constraint, select **Is hard constraint** as **No** in **Constraints** set up.
+Constraints by default are hard constraints until they're disabled. To define a **Constraint** as a soft constraint, select **Is hard constraint** as **No** in **Constraints** set up.
 
 Example: If **Limit to one warehouse** is set up as a soft constraint, it will be first checked to see if the order can be fulfilled by a single source, however if that’s not possible multiple sources will be used to fulfill the order.          
         
