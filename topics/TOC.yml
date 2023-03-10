@@ -62,6 +62,8 @@
         href: manual-order-orchestration.md
     - name: Policies and rules
       href: policies-rules.md
+    - name: Intelligent Order Management alerts
+      href: alerts.md
     - name: Internal external ID mapping
       href: internal-external-id-mapping.md
     - name: Providers
@@ -132,6 +134,8 @@
         href: ifo.md
       - name: Intelligent Fulfillment Optimization architecture
         href: ifo-arch.md
+      - name: AI simulations feature
+        href: simulations.md
     - name: Manage subscription orders
       href: subscription-orders.md
   - name: Finance + Operations integration solution
