@@ -1,47 +1,54 @@
 ---
-author: rinitha-reddy
+ms.author: johnmichalak
+author: johnmichalak
+title: Fulfillment and Returns Optimization provider overview
 description: This article provides an overview of the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/19/2022
+ms.date: 02/22/2023
 ms.topic: overview
-ms.author: rikothap
-
-title: Fulfillment and Returns Optimization provider overview
+ms.custom: bap-template
 
 ---
 
 # Fulfillment and Returns Optimization provider overview
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article provides an overview of the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-The Fulfillment and Returns Optimization provider is an intelligent optimization service that determines the source of order fulfillment while also achieving required goals and respecting the desired configuration that is determined by the business. The Fulfillment and Returns Optimization provider helps you ensure that products are delivered to your customers in the right quantities, from the right sources, and at the right time. In this way, it can help you maximize profits, minimize costs, and satisfy service-level requirements.
+The Fulfillment and Returns Optimization provider is an intelligent optimization service that determines the source of order fulfillment while achieving required goals and respecting the desired configuration that is determined by the business. The Fulfillment and Returns Optimization provider helps you ensure that products are delivered to your customers in the right quantities, from the right sources, and at the right time. Therefore, it can help you maximize profits, minimize costs, and satisfy service-level requirements.
 
-In a modern supply network, where product fulfillment can come from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or spikes in demand. The Fulfillment and Returns Optimization provider helps you maximize order fulfillment and find the right source for the delivery of products, based on different business constraints and business objectives such as minimizing costs by fulfilling orders from the closest sources.
+In a modern supply network where product fulfillment can come from multiple channels, organizations must quickly adapt to order changes, supplier availability issues, or spikes in demand. The Fulfillment and Returns Optimization provider helps you maximize order fulfillment and find the right source for the delivery of products based on different business constraints and business objectives such as minimizing costs by fulfilling orders from the closest sources.
 
-The Fulfillment and Returns Optimization provider is built as a microservice. It reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Dataverse to optimize order fulfillment. The provider uses Azure Maps to provide geocode shipping address information about orders and fulfillment sources, and the distance between those locations.
+The Fulfillment and Returns Optimization provider is built as a microservice, and reads configuration data such as fulfillment sources, source lists, business constraints, and strategies from Microsoft Dataverse to optimize order fulfillment. The provider uses Azure Maps to provide geocode shipping address information for orders and fulfillment sources, and to provide the distance between those locations.
 
 ## Fulfillment and Returns Optimization provider settings
 
-To enable the Fulfillment and Returns Optimization provider as part of the order orchestration journey, set it up and activate it by following the instructions in [Set up Fulfillment and Returns Optimization provider](set-up-fro-provider.md). After the provider is activated, you must configure the following settings to achieve business goals.
+To enable the Fulfillment and Returns Optimization provider as part of the order orchestration journey, set up and activate the Fulfillment and Returns Optimization provider by following the instructions in [Set up Fulfillment and Returns Optimization provider](set-up-fro-provider.md). After the provider is activated, you must set the following settings to achieve business goals.
 
-### Sources 
+### Sources
 
-Fulfillment sources are entities such as warehouses, distribution centers, retail stores, drop-ship vendors, and virtual sites that house inventory or provide products. You can create and modify fulfillment sources by selecting the area switcher at the bottom of the left navigation pane and changing the area to **Settings \> Fulfillment Settings**. Then, on the **Fulfillment settings** page, under **Sources**, select **Manage**.
+Fulfillment sources are entities that house inventory or provide products. Examples include warehouses, distribution centers, retail stores, drop-ship vendors, and virtual sites. You can create and modify fulfillment sources by selecting the area switcher at the bottom of the left navigation pane and switching to **Settings \> Fulfillment Settings**. Then, on the **Fulfillment settings** page, under **Sources**, select **Manage**.
 
-For each of your fulfillment sources, you can define a unique name, set the time zone of the source, set the type of source (warehouse or other), specify where the source is located (latitude and longitude), and specify where the system should look for inventory in the Inventory Visibility service. In addition, you can add details about the average processing time of orders in a warehouse. These details will be used to determine the planned shipment date of different orders. You can also set a cutoff time for a warehouse. Then, if the **Respect warehouse timings constraint** setting is enabled, orders can be sent to a warehouse only between 12 AM and the cutoff time.
+For each of your fulfillment sources, you can perform the following actions:
+
+- Define a unique name.
+- Set the time zone of the source.
+- Set the type of source (warehouse or other).
+- Specify where the source is located (latitude and longitude)
+- Specify where the system should look for inventory in the Inventory Visibility service.
+
+You can add details about the average processing time of orders in a warehouse. This information will be used to determine the planned shipment date of various orders. You can also set the cutoff time of a warehouse. This information will be used if the **Respect warehouse timings constraint** setting is enabled, so that orders can be sent to a warehouse only between 12 AM and the cutoff time.
 
 ### Source lists
 
-Fulfillment source lists let you group a set of sources and manage them in a flexible manner, within specific constraints. To define fulfillment source lists, on the **Fulfillment settings** page, under **Source lists**, select **Manage**.
+Fulfillment source lists let you group a list of sources and manage the sources in a flexible manner, within specific constraints. To define fulfillment source lists, on the **Fulfillment settings** page, under **Source lists**, select **Manage**.
 
 Depending on your business situation, you can define multiple source lists and use them as needed.
 
 For example, in your strategy definition, you can include all the sources where fulfillment will occur. For your business constraints, you can use a different source list. You can also define different maximum distance constraints for retail stores and warehouses, and restrict partial fulfillment for only your retail stores.
 
-Active source lists are shown at **Source lists \> Manage**. To create a new source list, select **New**. Enter a name that helps easily identify the source list, and then add existing or new sources on the **Sources** tab. To remove a source from a source list, select the source on the **Sources** tab, and then select **Remove**.
+The **Manage** page shows active source lists (**Source Lists \> Manage**). To create a new source list, select **New**. Enter a name that will help you easily identify the source list, and then add new or existing sources on the **Sources** tab. To remove a source from a source list, select the source on the **Sources** tab, and then select **Remove**.
 
 ### Constraints
 
@@ -49,12 +56,12 @@ Constraints are an optional component of fulfillment optimization. The following
 
 - Maximum distance
 - Restrict partial fulfillment of orders
-- Limit number of warehouses
 - Respect warehouse timings
+- Limit number of warehouses
 
-To create or modify constraints, on the **Fulfillment settings** page, under **Constraints**, select **Manage**. To create a constraint of a specific constraint type, select the appropriate constraint type when you create the constraint.
+To create or modify constraints, on the **Fulfillment settings** page, under **Constraints**, select **Manage**. To create a constraint of a specific type, select the appropriate constraint type when you create the constraint.
 
-All business constraints share a set of common attributes as part of their definition. The details vary, depending on the type of business constraint. The following common attributes are applicable to all business constraints:
+All business constraints share a set of common attributes as part of their definition. The details differ, based on the type of business constraint. The following common attributes are applicable to all business constraints:
 
 - **Name** – This attribute is used to identify the business constraint.
 - **Description** – This attribute is used to describe the business constraint.
@@ -63,91 +70,92 @@ All business constraints share a set of common attributes as part of their defin
 
 You can define multiple business constraints of each type and apply them to different optimization strategies.
 
-#### Maximum distance constraint 
+#### Maximum distance constraint
 
-The **Maximum distance** constraint enables an organization to define the maximum distance that a source or group of sources can extend to fulfill an order. Currently, distance is considered the straight-line distance between the source and the customer address, as calculated by Azure Maps.
+The maximum distance constraint enables an organization to define the maximum distance that a source or group of sources can extend to fulfill an order. Currently, distance is considered the straight-line distance between the source and the customer address, as calculated by Azure Maps.
 
-You can define the maximum distance for a source or a source list. If the maximum distance is defined for a source list that contains an individually defined source distance, an overlapping **Maximum distance** constraint might be defined for the source. In this case, the optimization service applies the lowest defined maximum distance for those sources.
+You can define the maximum distance for a source or a source list. When the maximum distance is defined for a source list that contains an individually defined source distance, there might be an overlapping maximum distance constraint defined for the source. In this case, the optimization service applies the lowest defined maximum distance for the sources.
 
-The following illustration shows an example where the Seattle warehouse can deliver only up to 10 miles from its radius, even though it's part of the **All Sources** list, where the maximum distance is 50 miles. Because of the way that this constraint works, the shortest distance is used if there is a conflict.
+In the example in the following illustration, even though the Seattle warehouse is part of the **All Sources** list, it can deliver only up to 10 miles from its radius, because of the way that this constraint works. If there is a conflict, the shortest distance is used.
 
-![Maximum distance constraint.](media/constraint-max-radius.png)
+![Maximum radius constraint example.](media/constraint-max-radius.png)
 
-If no warehouse is suitable for sales orders because of a constraint, the system won't be able to create any fulfillment order for a sales order. Instead, the status of the sales order is changed to **Inventory not found**.
+If, as a result of a constraint, no warehouse is suitable for a sales order, the system won't be able to create any fulfillment order for the sales order. Instead, the status of the sales order will change to **Inventory not found**.
 
 #### Restrict partial fulfillment of orders constraint
 
-Sometimes, the Fulfillment and Returns Optimization provider must handle scenarios where demand exceeds supply. By default, when Intelligent Order Management receives orders that require more quantity than the available inventory, sales orders are split by order line. Some lines of the order are fulfilled, whereas others are either backordered or set to the **Inventory not found** order status. An individual order line can't be split further and partially assigned, but it can be assigned to different sources. When the **Restrict partial fulfillment of orders** constraint is enabled, the Fulfillment and Returns Optimization provider ensures that either the whole order is fulfilled or the order isn't fulfilled at all.
+Sometimes, the Fulfillment and Returns Optimization provider must handle scenarios where demand exceeds supply. By default, when Intelligent Order Management receives orders that require more quantity than the available inventory, sales orders are split by order line. Some lines of the order are then fulfilled, whereas others are either backordered or set to the **Inventory not found** order state. An individual order line can't be split further and partially assigned, but it can be assigned to different sources. When **Restrict partial fulfillment of orders constraint** is enabled, the Fulfillment and Returns Optimization provider ensures that either the entire order is fulfilled or the order isn't fulfilled at all.
 
 #### Respect warehouse timings constraint
 
-Businesses sometimes have delivery trucks that leave every day at a specific time. To optimize for this scenario, you can configure a different cutoff time for each source. To ensure that this constraint works as expected, before you run it, add cutoff times to the warehouses that must respect them.
+Businesses sometimes have delivery trucks that leave at a specific time every day. To optimize for this scenario, each source can be configured to have a different cutoff time. To ensure that this constraint works as expected, before you run it, add cutoff times to the warehouses that must respect them.
 
-When the **Respect warehouse timings** constraint is enabled, the Fulfillment and Returns Optimization provider ensures that sources create fulfillment orders only if they can be sent to the warehouse before the cutoff time. If they can't, the Fulfillment and Returns Optimization provider tries to assign the sales orders to warehouses that are still open to processing orders. In this way, the Fulfillment and Returns Optimization provider optimizes for faster fulfillment and delivery.
+When **Respect warehouse timings constraint** is enabled, the Fulfillment and Returns Optimization provider ensures that sources create fulfillment orders only if those orders can be sent to the warehouse before the cutoff times. If they can't, the Fulfillment and Returns Optimization provider tries to assign the sales orders to warehouses that are still open to processing orders. In this way, the Fulfillment and Returns Optimization provider optimizes for faster fulfillment and delivery.
 
 #### Limit number of warehouses constraint
 
-Sometimes, not all inventory is available at a single source. To fulfill orders in these cases, the Fulfillment and Returns Optimization provider splits a single sales order and assigns different warehouses to different parts of it. By using the **Limit number of warehouses** constraint, you can control the degree to which orders are split.
+There can be instances where not all inventory is available at a single source. To fulfill orders in these cases, the Fulfillment and Returns Optimization provider splits a single sales order and assigns different warehouses to different parts of it. The limit number of warehouses constraint lets you control the degree to which orders are split.
 
-You can configure this constraint to specify the maximum number of warehouses that you want a single order to be split among. In other words, if you specify three warehouses for this constraint, every sales order must be fulfilled from one, two, or three different warehouses. If fulfillment of a sales order requires more than three warehouses, the sales order won't be fulfilled at all unless the **Restrict partial fulfillment of orders** constraint is disabled and the **Limit number of warehouses** constraint is enabled.
+You can configure this constraint to specify the maximum number of warehouses that you want a single order to be split among.
 
-By default, the Fulfillment and Returns Optimization provider will split the sales order among as many warehouses as are required, while also respecting inventory conditions and other constraints.
+In other words, if you specify **3** as the maximum number of warehouses, every sales order must be fulfilled by one, two, or three different warehouses. If more than three warehouses are required to fulfill a sales order, the sales order won't be fulfilled at all, unless **Restrict partial fulfillment of orders constraint** is disabled and **Limit number of warehouses constraint** is enabled.
 
-To specify the number of warehouses to split sales orders among, select **New Limit Number of Warehouses Constraint** to add an entry, and then select **Save**.
+By default, the Fulfillment and Returns Optimization provider will split a sales order among as many warehouses as are required, while also respecting inventory conditions and other constraints.
+
+To specify the number of warehouses to split orders among, select **New Limit Number of Warehouses Constraint** to add an entry, and then select **Save**.
 
 ### Strategies
 
-Strategies help define the optimization configuration that achieves your business needs. A strategy brings together objectives, constraints, and sources that must be considered, and specifies how inventory optimization should occur. To create and modify a strategy, on the **Fulfillment settings** page, under **Strategies**, select **Manage**.
+A strategy helps define the optimization configuration that achieves your business needs. A strategy brings together objectives, constraints, and sources that should be considered, and specifies how inventory optimization should occur. To create and modify a strategy, on the **Fulfillment settings** page, under **Strategies**, select **Manage**.
 
-The predefined objective of every strategy is to fulfill orders while also minimizing distance.
+The predefined objective of every strategy is to fulfill orders while minimizing distance.
 
-Depending on the nature of your business, you can define multiple optimization strategies. You can define a list of fulfillment sources that participate in fulfillment. You can also define constraints that the optimization service must enforce. These constraints are "hard" constraints that the optimization service will mandatorily impose when it determines the optimal source. You can configure a strategy as the default strategy. Only one strategy can be the default strategy at any time.
+Depending on the nature of your business, you can define multiple optimization strategies. You can define a list of fulfillment sources that participate in fulfillment, and define constraints that the optimization service must enforce. Those constraints are hard constraints that the optimization service will mandatorily impose when it determines the optimal source. You can configure a strategy as the default strategy. However, only one strategy can be the default strategy at any single time.
 
-A strategy can be configured to run in either real-time mode or batched mode. When a strategy runs in batched mode, sales orders that use the strategy will be queued until the configured period is reached. Both real-time mode and batched mode lead to the creation of a single fulfillment plan.
+A strategy can be configured to run either in real-time mode or in batched mode. When a strategy runs in batched mode, sales orders that use it will be queued until the configured period is reached. Both real-time mode and batched mode result in the creation of a single fulfillment plan.
 
-Within a single business, fulfillment optimization can vary, depending on the type of customer, channel, and other business attributes. Intelligent Order Management supports the use of multiple fulfillment strategies. Businesses can set up multiple fulfillment strategies with policies, or by setting the fulfillment strategy attribute on a sales order during the order intake process.
+Within a single business, fulfillment optimization can vary, based on the type of customer, the channel, and other business attributes. Intelligent Order Management supports the use of multiple fulfillment strategies. Businesses can set up multiple fulfillment strategies either by using policies or by setting the fulfillment strategy attribute on a sales order during the order intake process.
 
 #### Set up a fulfillment strategy
 
 To define a strategy, follow these steps.
 
 1. On the **Fulfillment settings** page, under **Strategies**, select **Manage**.
-1. Select **New**.
+1. Select **New**. 
 1. On the **Strategies** page, set the following fields:
 
     - **Name** – Enter the name of the strategy.
     - **Description** – Enter a description of the strategy.
-    - **Source List** – Specify a list of the fulfillment sources that must be considered when the optimization is done.
-    - **Is default** – Specify whether the strategy is the default strategy. There must always be a default strategy, and only one strategy per organization can be listed as the default strategy. The default strategy is used if a sales order doesn't specify which strategy must be used to do optimization.
-    - **Enable batch processing** – If this option is turned off, every order is processed in real time. If it's turned on, orders are collected into a queue and then periodically processed.
-    - **Batch processing in minutes** – Specify the time interval for processing each queue, in minutes. The default value is **2**.
+    - **Source List** – Define the list of fulfillment sources that must be considered when the optimization is performed.
+    - **Is default** – Specify whether the strategy is the default strategy. There must always be a default strategy, and only one strategy per organization can be set as the default strategy. The default strategy is used if a sales order doesn't specify which strategy must be used to perform optimization.
+    - **Enable batch processing** – When this option is turned off, every order is processed in real time. When it's turned on, orders are collected in a queue and then processed periodically.
+    - **Batch processing in minutes** – Specify the time interval for processing each queue, in minutes. The default interval is two minutes.
     - **Owner** – The user who created the strategy.
 
-No inventory measure must be explicitly added here. Instead, inventory that is used for the Fulfillment and Returns Optimization provider must be configured in the following way in Intelligent Order Management.
+No inventory measure must be explicitly added here. Instead, inventory that's used for the Fulfillment and Returns Optimization provider must be configured in the following way:
 
-1. In the left navigation pane, under **Order settings**, change the area to **Settings \> Index and reservation**.
-1. Select **Intelligent Order Management mappings**.
+1. In Intelligent Order Management, in the left navigation pane, under **Order settings**, change the area to **Settings \> Index and reservation**, and then select **Intelligent Order Management mappings**.
 1. Configure the inventory source and the measure name. The measures that are used for the Fulfillment and Returns Optimization provider are **Onhand** and **ATP Onhand**.
 
 ### Fulfillment optimization in order orchestration flows
 
-To optimize fulfillment in order orchestration flows, you must first [set up and activate the Fulfillment and Returns Optimization provider](set-up-fro-provider.md). After the provider is activated, you can enable intelligent optimization by using the Fulfillment and Returns Optimization provider as part of the order orchestration journey.
+To optimize fulfillment in order orchestration flows, you must first [set up and activate the Fulfillment and Returns Optimization provider](set-up-fro-provider.md). After the provider is activated, you can enable intelligent optimization using the Fulfillment and Returns Optimization provider as part of the order orchestration journey.
 
-As order processing starts, the service picks up orders that require optimization and determines the optimal location from the closest fulfillment source in the list of sources. The Fulfillment and Returns Optimization provider then calculates the latitude and longitude for the fulfillment source's address and the shipping address on the order line. It also calculates the aerial distances between the two addresses. The provider then applies the constraints and determines the optimal fulfillment source. The results are written to Dataverse for further processing as part of the order orchestration flow.
+When order processing begins, the service picks up orders that require optimization and determines the optimal location from the closest fulfillment source in the list of sources. The Fulfillment and Returns Optimization provider then calculates the latitude and longitude for the fulfillment source address and the order line's shipping address. It also calculates the aerial distances between the two addresses. The provider then applies the constraints and determines the optimal fulfillment source. The results are written to Dataverse for further processing as part of the order orchestration flow.
 
-An organization can query the fulfillment plan to view the results. Fulfillment plans show the order line details, the original quantity on the line, the fulfilled quantity, and the fulfillment type (fully sourced, partially sourced, not sourced, or exception).
+An organization can query the fulfillment plan to view the results. Fulfillment plans show the order line details, original quantity on the line, fulfilled quantity, and fulfillment type (fully sourced, partially sourced, not sourced, or exception).
 
 ### Multiple fulfillment strategies in order orchestration flows
 
-The Fulfillment and Returns Optimization provider supports multiple fulfillment strategies that can be set up based on the needs of different businesses. For example, a business might want to fulfill business-to-business (B2B) orders only from its distribution centers but business-to-consumer (B2C) orders from all its fulfillment sources (such as distribution centers, warehouses, and stores). By having multiple fulfillment strategies, organizations can use different fulfillment approaches for different sales orders.
+The Fulfillment and Returns Optimization provider supports multiple fulfillment strategies that can be set up based on the needs of different businesses. For example, a business might want to fulfill business-to-business (B2B) orders from its distribution centers only and business-to-consumer (B2C) orders from all its fulfillment sources (such as distribution centers, warehouses, and stores). By using multiple fulfillment strategies, organizations can employ different fulfillment approaches for different sales orders.
 
-Businesses can set fulfillment strategy attributes for sales orders during the orchestration journey by adding the fulfillment strategy identifier on the sales order. The fulfillment strategy can be set on a sales order based on the source, or by using transformations as part of the order intake process. The fulfillment strategy can also be set up with policy actions by using sales order attributes and other entities. Policies enable businesses to use the attributes of different entities in the condition builder to set the strategy. If multiple strategies are set up, but the policy assignment for the fulfillment strategy isn't configured, the system uses the configured default strategy.
+Businesses can set fulfillment strategy attributes for sales orders during the orchestration journey by adding the fulfillment strategy identifier to the sales order. The fulfillment strategy can be set on a sales order based on the source, or by using transformations as part of the order intake process. The fulfillment strategy can also be set with policy actions by using sales order attributes and other entities. By using policies, businesses can employ the attributes of different entities in the condition builder to set the strategy. If multiple strategies are set up, but the policy assignment for the fulfillment strategy isn't configured, the system uses the configured default strategy.
 
 ## Fulfillment plans
 
-The result of any single fulfillment optimization (in batched mode or otherwise) is a single fulfillment plan. This entity contains details of the breakdown between warehouses and assignment of sales orders to those warehouses.
+The result of any single fulfillment optimization (in batch mode or otherwise) is a single fulfillment plan. This entity contains details of the breakdown between warehouses and the assignment of sales orders to these warehouses.
 
-The fulfillment plan is converted into fulfillment orders by an internal Power Automate flow. Fulfillment providers can consume this entity and use it to move the orchestration process to subsequent steps, such as delivery carriers.
+The fulfillment plan is converted into fulfillment orders by an internal Power Automate flow. The entity is consumable by fulfillment providers and can be used by them to move the orchestration process to subsequent steps, such as delivery carriers.
 
 ## Privacy notice
 
