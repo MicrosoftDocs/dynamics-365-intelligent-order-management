@@ -62,6 +62,8 @@
         href: manual-order-orchestration.md
     - name: Policies and rules
       href: policies-rules.md
+    - name: Intelligent Order Management alerts
+      href: alerts.md
     - name: Internal external ID mapping
       href: internal-external-id-mapping.md
     - name: Providers
@@ -92,6 +94,10 @@
         href: set-up-fro-provider.md
       - name: Set up Inventory Visibility provider
         href: set-up-inventory-visibility-provider.md
+      - name: Set up Internal Application Service provider
+        href: setup-internal-application-service-provider.md
+      - name: Policy-based fulfillment
+        href: policy-based-fulfillment.md
       - name: Set up Dynamics 365 Finance + Operations provider
         href: set-up-finops-provider.md
       - name: Set up Uber Freight provider
@@ -128,6 +134,8 @@
         href: ifo.md
       - name: Intelligent Fulfillment Optimization architecture
         href: ifo-arch.md
+      - name: AI simulations feature
+        href: simulations.md
     - name: Manage subscription orders
       href: subscription-orders.md
   - name: Finance + Operations integration solution
