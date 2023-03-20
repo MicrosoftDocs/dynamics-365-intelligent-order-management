@@ -53,7 +53,10 @@
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/dynamics-365-intelligent-order-management",
-      "recommendations": "true"
+      "recommendations": "true",
+      "search.app": [
+        "intelligentordermanagement-docs" 
+      ]	
     },
     "fileMetadata": {
       "ms.service":{
