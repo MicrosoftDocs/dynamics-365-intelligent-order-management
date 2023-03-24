@@ -133,6 +133,10 @@ By default, constraints are hard constraints until they're disabled. To define a
 
 For example, **Limit to one warehouse** is set up as a soft constraint. Therefore, it will first be checked to determine whether the order can be fulfilled by a single source. If the order can't be fulfilled by a single source, multiple sources will be used.
 
+#### Activating and Deactivating a fulfilment source
+
+Sometimes businesses may want to exclude certain fulfillment sources due to various reasons either temporarily or permanently. Fulfilment and returns optimization offers a flexibility to turn on or off the fulfillment source based on your needs. To exclude the fulfilment source, select **Deactivate** on the fulfillment source settings. If you want to include it back again, you can alternatively select **activate** on the fulfillment source settings.
+
 ### Strategies
 
 A strategy helps define the optimization configuration that achieves your business needs. A strategy brings together objectives, constraints, and sources that should be considered, and specifies how inventory optimization should occur. To create and modify a strategy, on the **Fulfillment settings** page, under **Strategies**, select **Manage**.
