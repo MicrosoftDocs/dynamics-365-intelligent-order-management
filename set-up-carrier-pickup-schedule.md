@@ -1,6 +1,6 @@
 ---
 author: Anusha Venkatesan
-description: This article describles how to set up carrier pick up schedule and assign to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describles shipping carrier settings and assignment to fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 03/24/2023
 ms.topic: overview
@@ -35,3 +35,14 @@ Please note that the current capability allows to select the pick up schedule fo
 ## Usage of carrier pick up schedule
 
 Carrier API's such as FedEx need an accurate date and time of pick up to be able to accurately calculate the Estimated delivery dates and times for the shipment. Carrier pick up schedule table is checked by carrier API to send them the next available pick up time based on the **Working calendar** of the fulfillment source.
+
+## Shipping carrier service types
+
+Shipping carriers offer various service types that can be preconfigured within the **Shipping carrier** set up. follow the steps below to set up the master data for various service types.
+
+1. Select the shipping carrier and select **related data**.
+2. Select **Carrier services**
+3. Add the relevant information here and save.Please note that the fields like **Method code**, **Carrier Code** and **Service type** are carrier specific and should be maintained by collaborating with your shipping carriers. 
+
+
+
