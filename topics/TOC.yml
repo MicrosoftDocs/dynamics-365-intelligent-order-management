@@ -86,8 +86,6 @@
         href: setup-shipstation-provider.md
       - name: Set up Flexe provider
         href: setup-flexe-provider.md
-      - name: Set up Intelligent Fulfillment Optimization provider
-        href: set-up-ifo-provider.md
       - name: Fulfillment and Returns Optimization provider overview
         href: fulfillment-returns-optimization.md
       - name: Set up Fulfillment and Returns Optimization provider
