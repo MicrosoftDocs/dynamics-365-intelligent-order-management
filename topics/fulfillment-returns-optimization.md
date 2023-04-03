@@ -133,9 +133,9 @@ By default, constraints are hard constraints until they're disabled. To define a
 
 For example, **Limit to one warehouse** is set up as a soft constraint. Therefore, it will first be checked to determine whether the order can be fulfilled by a single source. If the order can't be fulfilled by a single source, multiple sources will be used.
 
-#### Activating and deactivating a fulfilment source
+#### Activating and deactivating a fulfillment source
 
-Sometimes businesses may want to exclude certain fulfillment sources, due to various reasons, either temporarily or permanently. Fulfilment and returns optimization offers a flexibility to turn on or off the fulfillment source based on your needs. To exclude the fulfilment source, select **Deactivate** on the fulfillment source settings. If you want to include it back again, select **activate** on the fulfillment source settings.
+Sometimes businesses may want to exclude certain fulfillment sources, due to various reasons, either temporarily or permanently. Fulfillment and returns optimization offers a flexibility to turn on or off the fulfillment source based on your needs. To exclude the fulfillment source, select **Deactivate** on the fulfillment source settings. If you want to include it back again, select **activate** on the fulfillment source settings.
 
 ### Strategies
 
