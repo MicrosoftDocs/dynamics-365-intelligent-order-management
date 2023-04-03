@@ -43,7 +43,7 @@ This setup will enable order synchronization between Intelligent Order Managemen
         1. On the **CDS sales order lines (saleorderdetails)** page, select the **Filter** button (funnel symbol) next to **Microsoft Dataverse.order** to edit the query.
         1. In the **Edit query** dialog box, enter the following query string:
 
-            `msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and msdyn_statuscode ne 192350001`
+            `_msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and msdyn_statuscode ne 192350001`
 
         1. Select **Accept**.
         1. On both the **CDS sales order headers (saleorders)** page and the **CDS sales order lines (saleorderdetails)** page, edit the **msdyn\_isreadytosync** entity fields, and set the following values:
