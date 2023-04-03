@@ -40,7 +40,7 @@ To set up holidays or non-working hours, follow these steps.
 > [!Note}
 > The default time zone is the user's current time zone.
 
-## Assignment of Calendar to Fulfillment source
+## Assign a Calendar to Fulfillment source
 
 To assign a calendar to fulfillment source, follow these steps.
 
