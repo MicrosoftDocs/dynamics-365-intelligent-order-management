@@ -117,7 +117,17 @@ let
 										ispriceoverridden = true,
 										#"productid@odata.bind" = "/products(" & IOM.MapRecord(IOM.MappingTables[product], [sku = Record.FieldOrDefault(_, "sku")])[productid] & ")",
 										#"uomid@odata.bind" = "/uoms(" & IOM.MapRecord(IOM.MappingTables[uom], [unit = Record.FieldOrDefault(_, "unit")])[uomid] & ")",
-										quantity = [quantity]
+										quantity = [quantity],
+										shipto_name = Record.FieldOrDefault(orderheader, "shipto_name"),
+										shipto_contactname = Record.FieldOrDefault(orderheader, "shipto_contactname"),
+										shipto_line1 = Record.FieldOrDefault(orderheader, "shipto_line1"),
+										shipto_line2 = Record.FieldOrDefault(orderheader, "shipto_line2"),
+										shipto_line3 = Record.FieldOrDefault(orderheader, "shipto_line3"),
+										shipto_city = Record.FieldOrDefault(orderheader, "shipto_city"),
+										shipto_stateorprovince = Record.FieldOrDefault(orderheader, "shipto_stateorprovince"),
+										shipto_country = Record.FieldOrDefault(orderheader, "shipto_country"),
+										shipto_postalcode = Record.FieldOrDefault(orderheader, "shipto_postalcode"),
+										shipto_telephone = Record.FieldOrDefault(orderheader, "shipto_telephone")
 									]
 								), each [Value] <> null
 							)
@@ -125,9 +135,7 @@ let
 					),
 
 	salesorder = Record.AddField(orderheader, "order_details", orderlines)
-
 in Text.FromBinary(Json.FromValue(salesorder));
-
 ```
 12. For **Transformation Source Type**, enter "JsonPayload".
 13. Select **Save**.
