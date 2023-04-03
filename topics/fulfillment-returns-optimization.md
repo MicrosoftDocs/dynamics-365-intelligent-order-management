@@ -30,7 +30,7 @@ To enable the Fulfillment and Returns Optimization provider as part of the order
 
 ## Configurate Intelligent Order Management mappings
 
-It is important to maintain the **Intelligent Order Management mappings** as a pre-requisite inorder for fulfilment and returns optimization engine to work correctly. For more information please refer [Set up inventory visibility provider].(set-up-inventory-visibility-provider.md). Please note that calculated measure mappings needs to be set up if your application is connected to dynamics 365 finance and operations.
+It is important to maintain the **Intelligent Order Management mappings** as a pre-requisite inorder for fulfilment and returns optimization engine to work correctly. For more information please refer [Set up inventory visibility provider].(set-up-inventory-visibility-provider.md). Please note that calculated measure mappings needs to be set up if fulfilment happens through dynamics 365 finance and operations. 
 
 ### Sources
 
