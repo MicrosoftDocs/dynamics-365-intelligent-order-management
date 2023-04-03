@@ -99,13 +99,13 @@ To validate and update the Inventory Visibility add-in configurations, follow th
 
 1. Go to **Intelligent Order Management Mappings**, and confirm the grid has the following elements:
 
-    - **Set Physical Measure Mapping** – This section includes the following columns. You can use it to map any of the physical measure mappings of your data source to a standard physical measure.
+    - **Set Physical Measure Mapping** – This section includes the following columns. You can use it to map any of the physical measure mappings of your data source to a standard physical measure.This becomes essential if you are updating inventory using Intelligent Order Management.
 
         - **Data Source** – This column refers to the source system.
         - **Base Measure** – This column refers to the Intelligent Order Management standard measure.
         - **Physical measure** – This column refers to the physical measure that's used in the source system.
 
-    - **Set Calculated measure Mappings** – This section includes the following columns. You can use it to map any of the calculated measure mappings of your data source to a standard calculated measure.
+    - **Set Calculated measure Mappings** – This section includes the following columns. You can use it to map any of the calculated measure mappings of your data source to a standard calculated measure. This set up becomes critical when using fulfilment and returns optimization within Intelligent Order Management for fulfilment source determination and Dynamics 365 Finance and Operations for fulfilment.
 
         - **Data Source** – This column refers to the source system.
         - **Base Measure** – This column refers to the Intelligent Order Management standard measure.
