@@ -24,12 +24,15 @@ To set up calendar, follow these steps.
 1. On the page, select the calendar start date. For example, 01/01/2023, and select **Custom**.
 1. Select **Choose an end date**, and select the end date of the calendar year. For example, 12/31/2023.
 1. Deselect any non-working days.
-1. You can no select the working hours by going into each day and changing the **start time** and **end time** and select **Apply**.
+1. Select the working hours by selecting each day and changing the **start time** and **end time** and select **Apply**.
 
 > [!Note]
 > The time zone of the calendar needs to be selected based on the fulfillment source time zone it will be linked to. 
 
 ## Set up non-working hours or holidays
+
+> [!Note]
+> Non-working hours can also be used to set up time off.
 
 To set up holidays or non-working hours, follow these steps.
 
