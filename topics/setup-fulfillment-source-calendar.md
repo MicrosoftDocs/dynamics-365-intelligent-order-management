@@ -1,16 +1,16 @@
 ---
-author: anvenkat
+title: Set up a fulfillment source working calendar
 description: This article explains how to set up working calendar and assign to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 04/03/2023
-ms.topic: overview
+author: anvenkat
 ms.author: anvenkat
-
-title: setup fulfillment source calendar  
+ms.topic: how-to
+ms.custom: bap-template
 
 ---
 
-# Set up of the calendar
+# Set up a fulfillment source working calendar
 
 This article explains how to set up working calendar and assign to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
 
