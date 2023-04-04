@@ -30,10 +30,10 @@ To enable the Fulfillment and Returns Optimization provider as part of the order
 
 ## Configurate Intelligent Order Management mappings
 
-It's important to maintain the **Intelligent Order Management mappings** as a pre-requisite for the fulfilment and returns optimization engine to work correctly. For more information, see [Set up inventory visibility provider](set-up-inventory-visibility-provider.md). 
+It's important to maintain the **Intelligent Order Management mappings** as a pre-requisite for the fulfillment and returns optimization engine to work correctly. For more information, see [Set up inventory visibility provider](set-up-inventory-visibility-provider.md). 
 
 > [!Note]
-> Calculated measure mappings need to be set up if fulfilment happens through Microsoft Dynamics 365 finance and operations apps.
+> Calculated measure mappings need to be set up if fulfillment happens through Microsoft Dynamics 365 finance and operations apps.
 
 ### Sources
 
@@ -47,7 +47,7 @@ For each of your fulfillment sources, you can perform the following actions:
 - Specify where the source is located (latitude and longitude)
 - Specify where the system should look for inventory in the Inventory Visibility service.
 
-If you are using Intelligent Order Management with finance and operations apps, each fulfilment source should be mapped to a shipping warehouse. Be sure to maintain the shipping warehouse that's assigned in fulfilment source settings.
+If you are using Intelligent Order Management with finance and operations apps, each fulfillment source should be mapped to a shipping warehouse. Be sure to maintain the shipping warehouse that's assigned in fulfillment source settings.
 
 You can add details about the average processing time of orders in a warehouse. This information will be used to determine the planned shipment date of various orders. You can also set the cutoff time of a warehouse. This information will be used if the **Respect warehouse timings constraint** setting is enabled, so that orders can be sent to a warehouse only between 12 AM and the cutoff time.
 
