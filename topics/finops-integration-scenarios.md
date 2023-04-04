@@ -42,10 +42,10 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. The order is picked in Finance + Operations.
 1. The order state in Intelligent Order Management is updated to **Fulfillment in Process** with status reason **Picked**.
 1. The order is packed and delivered in Finance + Operations. 
-5. An "order shipped" event is raised in Intelligent Order Management that updates the Order state to **Completed** and status reason as **Fulfilled**
+5. An "order shipped" event is raised in Intelligent Order Management that updates the Order state to **Fulfilment in Process** and status reason as **Packed**
 6. The provider action updates the order status in BigCommerce.
 7. The order is invoiced in Finance + Operations.
-8. An "order invoiced" event is raised in Intelligent Order Management.
+8. An "order invoiced" event is raised in Intelligent Order Management that updates the order state to **Completed** and status reason to **Fulfilled**
 9. The provider action updates the order status in BigCommerce.
 
 ### BigCommerce (new order) \> Intelligent Order Management \> Flexe (fulfillment) \> Finance + Operations (accounting)
@@ -109,8 +109,7 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. The order is picked in Finance + Operations.
 1. The order state in Intelligent Order Management is updated to **Fulfillment in Process** with status reason **Picked**.
 1. The order is packed and delivered in Finance + Operations.  
-7. An "order shipped" event is raised in Intelligent Order Management that updates the Order state to **Completed** and status reason as **Fulfilled**
+7. An "order shipped" event is raised in Intelligent Order Management that updates the Order state to **Fulfillment in process** and status reason as **Packed**
 8. The provider action updates the order status in BigCommerce.
-9. The order is invoiced in Finance + Operations.
-10. An "order invoiced" event is raised in Intelligent Order Management.
-11. The provider action updates the order status in BigCommerce.
+9. The order is invoiced in Finance + Operations that updates the order state to **Completed** and status reason as **Fulfilled**
+10. The provider action updates the order status in BigCommerce.
