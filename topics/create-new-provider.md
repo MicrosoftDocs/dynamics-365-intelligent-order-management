@@ -406,11 +406,32 @@ The key difference between a provider message handler and a provider action is t
 
 The following is an example structure for a provider action Power Automate flow.
 
-1.  Start with a manual Power Automate trigger. Actions are invoked by the orchestration service, so they are considered by Power Automate to be manual triggers. The following information will be passed at runtime by the orchestration service.
-
-    1. **ProviderActionExecutionEventId**: The ID for the execution event record.
-
-    2. **EntityRecordId**: The root entity record ID that the orchestration raised the event for. The record can be used to resolve related records.
+1.  Start with an HTTP trigger. The following information will be passed at runtime by the orchestration service. The following JSON schema will be used for the body:
+```json
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "title": "ProviderActionExecutionEventId",
+            "type": "string",
+            "x-ms-dynamically-added": true,
+            "description": "Please enter your input",
+            "x-ms-content-hint": "TEXT"
+        },
+        "text_1": {
+            "title": "EntityRecordId",
+            "type": "string",
+            "x-ms-dynamically-added": true,
+            "description": "Please enter your input",
+            "x-ms-content-hint": "TEXT"
+        }
+    },
+    "required": [
+        "text",
+        "text_1"
+    ]
+}
+```
 
 2.  Initialize the action processing.
 
