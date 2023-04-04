@@ -27,6 +27,14 @@ The Fulfillment and Returns Optimization provider is built as a microservice, an
 
 To enable the Fulfillment and Returns Optimization provider as part of the order orchestration journey, set up and activate the Fulfillment and Returns Optimization provider by following the instructions in [Set up Fulfillment and Returns Optimization provider](set-up-fro-provider.md). After the provider is activated, you must set the following settings to achieve business goals.
 
+
+## Configurate Intelligent Order Management mappings
+
+It's important to maintain the **Intelligent Order Management mappings** as a pre-requisite for the fulfillment and returns optimization engine to work correctly. For more information, see [Set up inventory visibility provider](set-up-inventory-visibility-provider.md). 
+
+> [!Note]
+> Calculated measure mappings need to be set up if fulfillment happens through Microsoft Dynamics 365 finance and operations apps.
+
 ### Sources
 
 Fulfillment sources are entities that house inventory or provide products. Examples include warehouses, distribution centers, retail stores, drop-ship vendors, and virtual sites. You can create and modify fulfillment sources by selecting the area switcher at the bottom of the left navigation pane and switching to **Settings \> Fulfillment Settings**. Then, on the **Fulfillment settings** page, under **Sources**, select **Manage**.
@@ -38,6 +46,8 @@ For each of your fulfillment sources, you can perform the following actions:
 - Set the type of source (warehouse or other).
 - Specify where the source is located (latitude and longitude)
 - Specify where the system should look for inventory in the Inventory Visibility service.
+
+If you are using Intelligent Order Management with finance and operations apps, each fulfillment source should be mapped to a shipping warehouse. Be sure to maintain the shipping warehouse that's assigned in fulfillment source settings.
 
 You can add details about the average processing time of orders in a warehouse. This information will be used to determine the planned shipment date of various orders. You can also set the cutoff time of a warehouse. This information will be used if the **Respect warehouse timings constraint** setting is enabled, so that orders can be sent to a warehouse only between 12 AM and the cutoff time.
 
