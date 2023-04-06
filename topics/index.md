@@ -4,8 +4,6 @@ description: This page provides a list of the help topics and other resources fo
 ms.author: josaw
 ms.date: 03/01/2021
 ms.topic: conceptual
-search.app: dynamics-365-intelligent-order-management
-  - 
 search.audienceType: EndUser
   - 
 ms.custom: "intro-internal"
