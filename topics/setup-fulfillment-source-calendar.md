@@ -1,6 +1,6 @@
 ---
 title: Set up a fulfillment source working calendar
-description: This article explains how to set up working calendar and assign to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article explains how to set up a working calendar and assign it to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 04/03/2023
 author: anvenkat
@@ -12,50 +12,49 @@ ms.custom: bap-template
 
 # Set up a fulfillment source working calendar
 
-This article explains how to set up working calendar and assign to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
+This article explains how to set up a working calendar and assign it to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
 
-Business can set up working calendars for their stores or warehouses and assign to them in fulfillment source settings. Calendars are used to describe working, non-working hours, and time off information. 
+Businesses can set up working calendars for their stores or warehouses, and then assign them to fulfillment sources in fulfillment source settings. Calendars are used to describe working hours, non-working hours, and time-off information.
 
-To set up calendar, follow these steps.
+To set up a calendar, follow these steps.
 
-1. Go to **Fulfillment settings** > **Holiday Calendar** > **Manage**.
-1. On the **Quick create** page, enter the **Name** of the calendar, a **Description**, and select **Save and close**. You'll see a Calendar displayed with default working hours.
-1. Select **+New**, and then **Working hours** to add the actual working hours.
-1. On the page, select the calendar start date. For example, 01/01/2023, and select **Custom**.
-1. Select **Choose an end date**, and select the end date of the calendar year. For example, 12/31/2023.
-1. Deselect any non-working days.
-1. Select the working hours by selecting each day and changing the **start time** and **end time** and select **Apply**.
+1. Go to **Fulfillment settings** \> **Holiday Calendar** \> **Manage**.
+1. On the **Quick create** page, enter a name and description for the calendar, and then select **Save and close**. A calendar that uses default working hours is shown.
+1. To add the actual working hours, select **New**, and then select **Working hours**.
+1. Select the calendar's start date (for example, January 1, 2023), and then select **Custom**.
+1. Select **Choose an end date**, and then select the end date of the calendar year (for example, December 31, 2023).
+1. Clear the selection of any non-working days.
+1. Select the working hours by selecting each day, changing the start time and end time, and selecting **Apply**.
 
-> [!Note]
-> The time zone of the calendar needs to be selected based on the fulfillment source time zone it will be linked to. 
+> [!NOTE]
+> The time zone of the calendar must be selected based on the time zone of the fulfillment source that the calendar will be linked to.
 
 ## Set up non-working hours or holidays
 
-> [!Note]
+> [!NOTE]
 > Non-working hours can also be used to set up time off.
 
-To set up holidays or non-working hours, follow these steps.
+To set up non-working hours or holidays, follow these steps.
 
-1. Select **+New**, and then **Non-Working**.
-1. Select the date and the **Reason** for holiday.
-1. Select the **Start time** and **End time**.
+1. Select **New**, and then select **Non-Working**.
+1. Select the date and the reason for the holiday.
+1. Select the start time and end time.
 
-> [!Note}
+> [!NOTE]
 > The default time zone is the user's current time zone.
 
-## Assign a Calendar to Fulfillment source
+## Assign a calendar to a fulfillment source
 
-To assign a calendar to fulfillment source, follow these steps.
+To assign a calendar to a fulfillment source, follow these steps.
 
-1. Go to **Settings** > **Fulfillment Settings** > **Sources** > **Manage**.
-1. Select a **Source**.
-1. Select a value in **Working Calendar** lookup under **Schedule**.
+1. Go to **Settings** \> **Fulfillment Settings** \> **Sources** \> **Manage**.
+1. Select a source.
+1. Under **Schedule**, in the **Working Calendar** field, select a calendar.
 
-## Usage of Calendar for Fulfillment Optimization
+## Using a calendar for Fulfillment optimization
 
-In Intelligent Order Management, a **Working Calendar** is used by the Fulfillment optimization API when the **Respect warehouse timings** constraint is enabled.
-If this constraint is enabled, the **Working Calendar** of the fulfillment source is checked to see if the source is working. If the fulfillment source isn't working, it is filtered out from the selection, and the orders are routed to a working source.
+In Intelligent Order Management, a working calendar is used by the Fulfillment optimization API when the **Respect warehouse timings** constraint is enabled. If this constraint is enabled, the working calendar of the fulfillment source is checked to determine whether the fulfillment source is working. If the source isn't working, it's filtered out from the selection, and the orders are routed to a source that *is* working.
 
-## Usage of Calendar for carrier pickup time determination
+## Using a calendar to determine carrier pickup times
 
-Carrier APIs, such as FedEx, need an accurate date and time of pickup to accurately calculate the estimated delivery date. The **Working calendar** is used by the Fulfillment optimization API to check if the date and time is within the working hours for a fulfillment source. If the date and time is outside of the working hours, the next available working day is checked.  
+Carrier APIs, such as FedEx, need an accurate pickup date and time to accurately calculate the estimated delivery date. The Fulfillment optimization API uses the working calendar to determine whether the date and time are during the working hours of the fulfillment source. If the date and time are outside the working hours, the next available working day is checked.
