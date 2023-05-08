@@ -2,7 +2,7 @@
 
 As part of the April'23 release you can call intelligent order management Fulfillment optimization engine (DOM) from outside the sales order orchestration via Application process integration (API).
 Any platform such as ecommerce, marketplace or ERP can make an API request to Intelligent Order Management to get the optimal fulfillment source with shipping options such as carrier shipping rates and estimated delivery dates information. 
-The request API at the minimum should contain the shipping address, products and quantity when looking for just a fulfillment plan. In addition to fulfillment plan if you would like to get the carrier ship rates and estimated delivery dates, you must pass the carrier information.  Currently the API has been built to call Fedex rate API to get the shipping rates. However the payload respoonse is quite generic for any carrier.
+The request API at the minimum should contain the shipping address, products and quantity when looking for just a fulfillment plan. In addition to fulfillment plan if you would like to get the carrier ship rates and estimated delivery dates, you must pass the carrier information.  Currently the API has been built to call Fedex rate API to get the shipping rates. However the payload response is quite generic for any carrier.
 
 ## Pre-requisites
 
