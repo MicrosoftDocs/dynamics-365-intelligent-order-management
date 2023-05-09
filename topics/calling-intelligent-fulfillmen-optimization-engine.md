@@ -1,6 +1,6 @@
 ---
-title: Calling Intelligent Order Management Fulfillment optimization (DOM) as API
-description: This article explains how to call Dynamics 365 Intelligent Order Management Fulfillment optimization (DOM) as API.
+title: Calling the Intelligent Order Management Fulfillment optimization (DOM) as API
+description: This article explains how to call the Dynamics 365 Intelligent Order Management Fulfillment optimization (DOM) as API.
 ms.author: anvenkat
 author: anush6121
 ms.date: 05/06/2023
@@ -8,13 +8,15 @@ ms.topic: how-to
 ms.custom: bap-template
 ---
 
-# Calling Intelligent Order Management Fulfillment optimization (DOM) as API
+# Calling the Intelligent Order Management Fulfillment optimization (DOM) as API
 
 [!include [banner](includes/banner.md)]
 
 As part of the April'23 release you can call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) from outside the sales order orchestration via Application process integration (API). Any platform such as ecommerce, marketplace or ERP can make an API request to Intelligent Order Management to get the optimal fulfillment source with shipping options such as carrier shipping rates and estimated delivery dates information. The request API at the minimum should contain the shipping address, products and quantity when looking for just a fulfillment plan. In addition to fulfillment plan if you would like to get the carrier ship rates and estimated delivery dates, you must pass the carrier information. Currently the API has been built to call FedEx rate API to get the shipping rates. However, the payload response is generic for any carrier.
 
 ## Prerequisites
+
+The following prerequisites must be met before using the Intelligent Order Management Fulfillment optimization (DOM) as API.
 
 1. Install the latest version of Intelligent Order Management (version 1.0.0.6035).
 1. Set up the fulfillment settings, such as Strategies, source lists, and constraints. For more information, see [Fulfillment and Returns Optimization provider overview](fulfillment-returns-optimization.md).
@@ -24,15 +26,15 @@ As part of the April'23 release you can call the Microsoft Dynamics 365 Intellig
 If you're expecting the results with the shipping options from a FedEx carrier, you must ensure the following is set up.
 
 1. Set up a FedEx provider. For more information, see [Set up FedEx provider](set-up-fedex-provider.md).
-2. Set up a holiday calendar in **Settings** > **Fulfillment settings** > **Holiday calendar**. 
-3. Set up a carrier pickup schedule in **Settings** > **Fulfillment settings** > **Shipping carriers**. Select the carrier and go to pickup schedules and add new a **pickup schedule**.
-4. Ensure at least one calendar and pickup schedule is assigned to the **Fulfillment source** settings.
-5. Ensure weights and dimmensions are in the **shared product** table of the product. 
-6. Ensure the carrier shipping rate factors table is updated with the shipping rate factor and fall back rate information. To access the shipping rate factor tables, go to **Settings** > **Fulfillment settings** > **Shipping carriers** > **Shipping rate factor**.
+1. Set up a holiday calendar in **Settings** > **Fulfillment settings** > **Holiday calendar**. 
+1. Set up a carrier pickup schedule in **Settings** > **Fulfillment settings** > **Shipping carriers**. Select the carrier and go to pickup schedules and add new a **pickup schedule**.
+1. Ensure at least one calendar and pickup schedule is assigned to the **Fulfillment source** settings.
+1. Ensure weights and dimensions are in the **shared product** table of the product. 
+1. Ensure the carrier shipping rate factors table is updated with the shipping rate factor and fall back rate information. To access the shipping rate factor tables, go to **Settings** > **Fulfillment settings** > **Shipping carriers** > **Shipping rate factor**.
 
 ## Functionality description
 
-When an API request is made, Intelligent Order Management DOM engine is invoked to return the best fulfillment source for each of the lines based on the preconfigured fulfillment optimization strategies and constraints. If the request contains a carrier such as FedEx, the carrier pickup schedule is looked at in conjunction with the working calendar of the fulfillment source to send the next available pickup time to the carrier API's. The response to the DOM API combines both a fulfillment plan and the carrier output and present back to the calling application.
+When an API request is made, Intelligent Order Management DOM engine is invoked to return the best fulfillment source for each of the lines based on the preconfigured fulfillment optimization strategies and constraints. If the request contains a carrier such as FedEx, the carrier pickup schedule is looked at in conjunction with the working calendar of the fulfillment source to send the next available pickup time to the carrier APIs. The response to the DOM API combines both a fulfillment plan and the carrier output and present back to the calling application.
 
 ## Sample request API
 
@@ -179,6 +181,8 @@ Fulfillment Successful
 
 ## API reference guide
 
+This section describes...
+
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
 | fnoCompanyId | string, optional | Identifier for the company in the system. Required if Dataverse is linked to FNO. |
@@ -191,36 +195,45 @@ Fulfillment Successful
 | lineItems | OrderDetail, required | An array of order detail objects. Use an array of Order Detail model. |
 
 ### Model
-### Address
+
+This section describes...
+
+#### Address
+
+This section describes the address table.
+
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
 | addressType | string, optional values: Business, Residence, Any | Specifies whether the given address is residential. |           
-| name | string, optional | First line of the address. | Name of person. |
+| name | string, optional | Name of person. |
 | address1 | string, optional | First line of the address. |
 | address2 | string, optional | Second line of the address. |
 | address3 | string, optional | Third line of the address. |
-| city | string, reqyured | The city. |
+| city | string, required | The city. |
 | stateOrProvince | string, required | State. The two-letter ISO Origin State code is required. |
 | postalCode | string, required | The postal code |
 | country | string, required | Country Code. The two-letter ISO Origin Country code is required. |
 | phoneNumber | string, optional | The telephone number. |
 
-### Order detail
+#### Order detail
+
+This section describes the order detail table.
+
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
 | lineId | guid string, required | An identifier for the order line in the originating system. |
 | itemId | string, required | The name of the product is associated with this line item. Can't be null. |
 | quantity | number, required | The quantity of products ordered. | 
 | freeShipping | string, optional values: Yes, No | Yes means product weight is excluded when making rate request. |
-| dimensions | ProductDimensions, optional | Product dimensions are characteristics that serve to identify a product variant. Use the Product Dimensions model. Required                                             if Dataverse is linked to finance and operations apps and select the product dimensions to identify the product variant. |
+| dimensions | ProductDimensions, optional | Product dimensions are characteristics that serve to identify a product variant. Use the Product Dimensions model. Required if Dataverse is linked to finance and operations apps and select the product dimensions to identify the product variant. |
 
-### Product Dimensions
+#### Product dimensions
+
+This section describes the product dimensions table.
+
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
 | colorId | string, optional | The value of the item color. Required if Dataverse is linked to finance and operations apps. Select the product dimensions to identify the product variant that you want to work with. |
 | sizeId | string, optional | The value of the item size Required if Dataverse is linked to finance and operations apps. Select the product dimensions to identify the product variant that you want to work with. |
 | styleId | string, optional | The value of the item style Required if Dataverse is linked to finance and operations apps. Select the product dimensions to identify the product variant that you want to work with. |
 | configId | string, optional | The value of the item configuration Required if Dataverse is linked to finance and operations apps. Select the product dimensions to identify the product variant that you want to work with. |
-
-
-
