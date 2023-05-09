@@ -1,6 +1,6 @@
 ---
 title: Calling Intelligent Order Management Fulfillment optimization (DOM) as API
-description: This article how to call Dynamics 365 Intelligent Order Management Fulfillment optimization (DOM) as API.
+description: This article explains how to call Dynamics 365 Intelligent Order Management Fulfillment optimization (DOM) as API.
 ms.author: anvenkat
 author: anush6121
 ms.date: 05/06/2023
