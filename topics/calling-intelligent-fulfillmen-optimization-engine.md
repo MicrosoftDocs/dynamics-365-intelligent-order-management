@@ -181,7 +181,7 @@ Fulfillment Successful
 
 ## API reference guide
 
-This section describes...
+This section describes the data type and description of the header fields within the api request.
 
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
@@ -196,11 +196,11 @@ This section describes...
 
 ### Model
 
-This section describes...
+This section describes the fields that uses the datamodel in the api request.
 
 #### Address
 
-This section describes the address table.
+This section describes the fields within the address object in the request.
 
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
@@ -217,7 +217,7 @@ This section describes the address table.
 
 #### Order detail
 
-This section describes the order detail table.
+This section describes the fields within the order detail section of the api request.
 
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
