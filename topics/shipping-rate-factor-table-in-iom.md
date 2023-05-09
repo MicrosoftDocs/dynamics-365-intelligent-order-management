@@ -21,7 +21,7 @@ The following table describes each of the fields in the shipping rate factor tab
 | Field | Description |
 | ----- | ----------- |
 | **Name** | The name or description of the carrier service. |
-| **Fulfillment source type** | The **Fulfillment source type** in the **Fulfillment settings**. For example, use this when a store and distribution center has different carrier services that are offered with different rates. |
+| **Fulfillment source type** | The **Fulfillment source type** in the **Fulfillment settings**. For example, use this field when a store and distribution center has different carrier services that are offered with different rates. |
 | **Address type** | The destination address type. For example, **Business** or **Residence**. |
 | **Rate factor** | A mark up or mark down of the calculated rate from the carrier API, if applicable. |
 | **Free shipping** | A flag that indicates if the service is applicable for free shipping. |
@@ -31,7 +31,7 @@ The following table describes each of the fields in the shipping rate factor tab
 
 ## Using the shipping rate factor table in Intelligent Order Management DOM(Distributed Order Management) API.
 
-Intelligent Order Management DOM API calls the FedEx rate API to calculate the shipping rate. If the shipping rate couldn't be calculated for some reason due to an issue with the API, a fallback rate is calculate using the **fallback weight threshold** and the **fallback increment rate factor** that is defined for each service level in the table. If the carrier API returns a valid rate, a mark up or mark down percentage is applied from the **rate factor** percentage that is maintained in the table.
+Intelligent Order Management DOM API calls the FedEx rate API to calculate the shipping rate. If the shipping rate couldn't be calculated for some reason due to an issue with the API, a fallback rate is calculate using the **fallback weight threshold** and the **fallback increment rate factor** that is defined for each service level in the table. If the carrier API returns a valid rate, a mark up or mark down percentage is applied using the **rate factor** percentage that is maintained in the table.
 
 
 
