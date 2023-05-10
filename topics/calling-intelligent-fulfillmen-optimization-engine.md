@@ -37,6 +37,7 @@ If you're expecting the results with the shipping options from a FedEx carrier, 
 When an API request is made, Intelligent Order Management DOM engine is invoked to return the best fulfillment source for each of the lines based on the preconfigured fulfillment optimization strategies and constraints. If the request contains a carrier such as FedEx, the carrier pickup schedule is looked at in conjunction with the working calendar of the fulfillment source to send the next available pickup time to the carrier APIs. The response to the DOM API combines both a fulfillment plan and the carrier output and present back to the calling application.
 
 ## Sample request API
+Please create powerautomate flow ->dataverse unbound action to test in your environment.
 
 ``` json
 {{Dataverse URL}}/api/data/v9.2/msdyn_IomDomAPI 
