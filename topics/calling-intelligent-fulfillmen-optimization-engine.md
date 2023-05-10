@@ -18,10 +18,10 @@ As part of the April'23 release you can call the Microsoft Dynamics 365 Intellig
 
 The following prerequisites must be met before using the Intelligent Order Management Fulfillment optimization (DOM) as API.
 
-1. Install the latest version of Intelligent Order Management (version 1.0.0.6035).
-1. Set up the fulfillment settings, such as Strategies, source lists, and constraints. For more information, see [Fulfillment and Returns Optimization provider overview](fulfillment-returns-optimization.md).
-1. Set up inventory visibility provider. For more information, see [Inventory visibility](inventory-visibility.md).
-1. Ensure that the **warehouse id** is mapped to each of the fulfillment sources in the **Fulfillment source** settings.
+* Install the latest version of Intelligent Order Management (version 1.0.0.6035).
+* Set up the fulfillment settings, such as Strategies, source lists, and constraints. For more information, see [Fulfillment and Returns Optimization provider overview](fulfillment-returns-optimization.md).
+* Set up inventory visibility provider. For more information, see [Inventory visibility](inventory-visibility.md).
+* Ensure that the **warehouse id** is mapped to each of the fulfillment sources in the **Fulfillment source** settings.
 
 If you're expecting the results with the shipping options from a FedEx carrier, you must ensure the following is set up.
 
@@ -38,7 +38,7 @@ When an API request is made, Intelligent Order Management DOM engine is invoked 
 
 ## Sample request API
 
-``` text
+``` json
 {{Dataverse URL}}/api/data/v9.2/msdyn_IomDomAPI 
 **apiVersion**: 1.0 
 
@@ -181,7 +181,7 @@ Fulfillment Successful
 
 ## API reference guide
 
-This section describes the data type and description of the header fields within the api request.
+This section describes the data type and description of the header fields within the API request.
 
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
@@ -196,7 +196,7 @@ This section describes the data type and description of the header fields within
 
 ### Model
 
-This section describes the fields that uses the datamodel in the api request.
+This section describes the fields that use the data model in the API request.
 
 #### Address
 
@@ -217,7 +217,7 @@ This section describes the fields within the address object in the request.
 
 #### Order detail
 
-This section describes the fields within the order detail section of the api request.
+This section describes the fields within the order detail section of the API request.
 
 | Name | Data type | Description |
 |-------------------------|-------------------------|--------------------------|
