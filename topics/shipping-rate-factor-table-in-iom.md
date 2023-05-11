@@ -12,28 +12,23 @@ ms.custom: bap-template
 
 [!include [banner](includes/banner.md)]
 
-As part of April 2023 release, the Shipping rate factor table is now available within Microsoft Dynamics 365 Intelligent Order Management. This table allows you to configure rate mark ups, static rates, and increments based on weight thresholds for different carrier service levels. The rate factor table represents a fallback option when either the carrier rate API fails, or when the dynamic rate APIs aren't available for a carrier.
+As part of the April 2023 release, the Shipping rate factor table is now available in Microsoft Dynamics 365 Intelligent Order Management. This table lets you configure rate markups, static rates, and increments, based on weight thresholds for different carrier service levels. The Shipping rate factor table represents a fallback option when either the carrier rate API fails or the dynamic rate APIs aren't available for a carrier.
 
-## Description of fields within shipping rate factor table
+## Fields in the Shipping rate factor table
 
-The following table describes each of the fields in the shipping rate factor table.
+The following table describes the fields in the Shipping rate factor table.
 
 | Field | Description |
 | ----- | ----------- |
-| **Name** | The name or description of the carrier service. |
-| **Fulfillment source type** | The **Fulfillment source type** in the **Fulfillment settings**. For example, use this field when a store and distribution center has different carrier services that are offered with different rates. |
-| **Address type** | The destination address type. For example, **Business** or **Residence**. |
-| **Rate factor** | A mark up or mark down of the calculated rate from the carrier API, if applicable. |
-| **Free shipping** | A flag that indicates if the service is applicable for free shipping. |
-| **Fallback weight threshold** | The weight threshold for which a static rate is defined. |
-| **Fallback rate** | The static rate until weight threshold is met. |
-| **Fallback increment rate factor** | The rate factor that is applied for incremental weight over threshold. For example, if the weight threshold is 5 lbs, the static rate is $8, the increment rate factor is 0.75, and if the total weight of the order is 10 lbs, the rate is calculated as 8 + (0.75 \* 5) = 11.75. |
+| Name | The name or description of the carrier service. |
+| Fulfillment source type | The **Fulfillment source type** value in the fulfillment settings. Use this field when, for example, a store and a distribution center have different carrier services that are offered at different rates. |
+| Address type | The destination address type (for example, **Business** or **Residence**). |
+| Rate factor | A markup or markdown of the calculated rate from the carrier API, if applicable. |
+| Free shipping | A flag that indicates whether the service is applicable for free shipping. |
+| Fallback weight threshold | The weight threshold that a static rate is defined for. |
+| Fallback rate | The static rate until the weight threshold is met. |
+| Fallback increment rate factor | The rate factor that's applied for incremental weight over the threshold. For example, the weight threshold is 5 pounds, the static rate is $8, the increment rate factor is 0.75, and the total weight of the order is 10 pounds. In this case, the rate is calculated as 8 + (0.75 &times; 5) = 11.75. |
 
-## Using the shipping rate factor table in Intelligent Order Management DOM(Distributed Order Management) API.
+## Using the Shipping rate factor table in the Intelligent Order Management DOM API
 
-Intelligent Order Management DOM API calls the FedEx rate API to calculate the shipping rate. If the shipping rate couldn't be calculated for some reason due to an issue with the API, a fallback rate is calculate using the **fallback weight threshold** and the **fallback increment rate factor** that is defined for each service level in the table. If the carrier API returns a valid rate, a mark up or mark down percentage is applied using the **rate factor** percentage that is maintained in the table.
-
-
-
-
-
+The Intelligent Order Management Distributed Order Management (DOM) API calls the FedEx rate API to calculate the shipping rate. If the shipping rate can't be calculated because of an issue with the API, a fallback rate is calculated by using the **Fallback weight threshold** and **Fallback increment rate factor** values that are defined for each service level in the table. If the carrier API returns a valid rate, a markup or markdown percentage is applied by using the **Rate factor** percentage that's maintained in the table.
