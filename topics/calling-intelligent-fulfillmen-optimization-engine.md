@@ -93,9 +93,11 @@ Create a Power Automate flow–to–Dataverse unbound action to test in your env
         } 
     ] 
 }
+```
 
 ## Sample response
 
+```json
 Fulfillment Successful 
 { 
     "fulfillmentPlan": { 
@@ -140,7 +142,7 @@ This section describes the fields in the address object in the API request.
 
 | Name | Data type | Description |
 |------|-----------|-------------|
-| addressType | string, optional values: Business, Residence, Any | A value that indicates whether the specified address is residential. |
+| addressType | string, optional, values: Business, Residence, Any | A value that indicates whether the specified address is residential. |
 | name | string, optional | The name of the person. |
 | address1 | string, optional | The first line of the address. |
 | address2 | string, optional | The second line of the address. |
@@ -160,7 +162,7 @@ This section describes the fields in the order detail section of the API request
 | lineId | guid string, required | The identifier for the order line in the originating system. |
 | itemId | string, required | The name of the product that's associated with this line item. The value can't be null. |
 | quantity | number, required | The quantity of products that was ordered. | 
-| freeShipping | string, optional values: Yes, No | A value of *Yes* means that product weight is excluded when a rate request is made. |
+| freeShipping | string, optional, values: Yes, No | A value of *Yes* means that product weight is excluded when a rate request is made. |
 | dimensions | ProductDimensions, optional | Product dimensions are characteristics that identify a product variant. They use the Product Dimensions model. This field is required if Dataverse is linked to finance and operations apps. Select the product dimensions to identify the product variant. |
 
 #### Product dimensions
