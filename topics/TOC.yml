@@ -90,6 +90,12 @@
         href: set-up-ifo-provider.md
       - name: Fulfillment and Returns Optimization provider overview
         href: fulfillment-returns-optimization.md
+      - name: Call the Intelligent Order Management Fulfillment optimization engine (DOM) via API
+        href: calling-intelligent-fulfillmen-optimization-engine.md
+      - name: Set up a fulfillment source working calendar
+        href: setup-fulfillment-source-calendar.md
+      - name: Set up a carrier pickup schedule
+        href: set-up-carrier-pickup-schedule.md
       - name: Set up Fulfillment and Returns Optimization provider
         href: set-up-fro-provider.md
       - name: Set up Inventory Visibility provider
@@ -136,6 +142,8 @@
         href: ifo-arch.md
       - name: AI simulations feature
         href: simulations.md
+      - name: Shipping rate factor table overview
+        href: shipping-rate-factor-table-in-iom.md
     - name: Manage subscription orders
       href: subscription-orders.md
   - name: Finance + Operations integration solution
