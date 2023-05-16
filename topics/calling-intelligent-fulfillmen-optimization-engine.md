@@ -1,6 +1,6 @@
 ---
 title: Call the Intelligent Order Management Fulfillment optimization engine (DOM) via API
-description: This article explains how to call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) via Application process integration (API).
+description: This article explains how to call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) via Application programming interface (API).
 ms.author: anvenkat
 author: anush6121
 ms.date: 05/06/2023
@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 [!include [banner](includes/banner.md)]
 
-As part of the April 2023 release, you can call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) from outside the sales order orchestration via Application process integration (API). Any platform, such as an e-commerce, marketplace, or enterprise resource planning (ERP) platform, can make an API request to Intelligent Order Management to get the optimal fulfillment source, together with shipping options such as carrier shipping rates and estimated delivery date information. If you want to get just a fulfillment plan, the API request should contain, at a minimum, the shipping address, products, and quantity. If you want to get the carrier ship rates and estimated delivery dates in addition to a fulfillment plan, you must pass the carrier information. Currently, the API has been built to call the FedEx rate API to get the shipping rates. However, the payload response is generic for any carrier.
+As part of the April 2023 release, you can call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) from outside the sales order orchestration via Application programming interface (API). Any platform, such as an e-commerce, marketplace, or enterprise resource planning (ERP) platform, can make an API request to Intelligent Order Management to get the optimal fulfillment source, together with shipping options such as carrier shipping rates and estimated delivery date information. If you want to get just a fulfillment plan, the API request should contain, at a minimum, the shipping address, products, and quantity. If you want to get the carrier ship rates and estimated delivery dates in addition to a fulfillment plan, you must pass the carrier information. Currently, the API has been built to call the FedEx rate API to get the shipping rates. However, the payload response is generic for any carrier.
 
 ## Prerequisites
 
