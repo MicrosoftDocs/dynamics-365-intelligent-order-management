@@ -6,7 +6,7 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 search.audienceType: EndUser
   - 
-ms.custom: "intro-internal"
+ms.collection: get-started
 title: Intelligent Order Management home page (contains video)
 ---
 
