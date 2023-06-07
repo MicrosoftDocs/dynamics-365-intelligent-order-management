@@ -95,7 +95,7 @@ You can change the alert status of any row on the **Active Alerts** page. (The n
 
 3. To quickly change the alert status, select **Resolve**, **Activate**, or **Deactivate** on the menu bar to update the **Status Reason** value for the row.
 
-![Updating an alert on the Active Alerts page.](/topics/media/alerts_status.png)
+![Screenshot of updating an alert on the Active Alerts page.](media/alerts_status.png)
 
 ## Other notes
 
