@@ -19,7 +19,7 @@ In this release, Intelligent Order Management has alerts for order statuses. For
 
 This feature is still in private preview, and your administrator will have to enable alerts in the **Administration settings** area. After alerts are enabled, you can find them in the **Monitoring** section on the left menu.
 
-![Monitoring section of the left menu.](/topics/media/alerts_menu.png)
+![Monitoring section of the left menu.](media/alerts_menu.png)
 
 ## Create an alert
 
