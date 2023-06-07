@@ -19,7 +19,7 @@ In this release, Intelligent Order Management has alerts for order statuses. For
 
 This feature is still in private preview, and your administrator will have to enable alerts in the **Administration settings** area. After alerts are enabled, you can find them in the **Monitoring** section on the left menu.
 
-![Monitoring section of the left menu.](media/alerts_menu.png)
+![Screenshot of the monitoring section of the left menu.](media/alerts_menu.png)
 
 ## Create an alert
 
@@ -30,7 +30,7 @@ This feature is still in private preview, and your administrator will have to en
 
     On the **Active Alert Configurations** page, the top menu bar (labeled "1" in the illustration) contains several buttons, including **New**. The grid (labeled "2") contains a list of current alert configurations. Double-tap (or double-click) any configuration in the list to open the configuration settings and make changes to the configuration.
 
-    ![Top menu bar and grid on the Active Alert Configurations page.](/topics/media/alerts_config.png)
+    ![Screenshot of the top menu bar and grid on the Active Alert Configurations page.](media/alerts_config.png)
 
 2. Select **New** on the menu bar to open the **New Alert Configuration** page.
 3. Set the following fields:
@@ -80,7 +80,7 @@ Each row in the grid represents an order that's currently under alert. Here's an
 
     A status of **Active** indicates that the alert is active. The order itself might have a status of **In fulfillment** or **Sent for delivery**. The purpose of the alert status is to enable you to update the status of an alert if you've already taken action on the order. For example, if an alert is triggered because an order is delayed, and you expedited the order for delivery, you can change the alert status to **Resolved**. Therefore, you can use the list of alerts in the grid as a to-do list. You can view which orders are under alert, and then check them off as you take action on the orders to resolve the alerts.
 
-![Alert list on the Active Alerts page.](/topics/media/alerts_list.png)
+![Screenshot of the alert list on the Active Alerts page.](media/alerts_list.png)
 
 ## Update an alert
 
