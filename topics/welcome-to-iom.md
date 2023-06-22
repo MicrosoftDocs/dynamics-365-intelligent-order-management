@@ -6,9 +6,7 @@ ms.topic: conceptual
 search.audienceType: EndUser
 author: johnmichalak
 ms.author: johnmichalak
-  - 
 ms.collection: get-started
-title: Intelligent Order Management home page (contains video)
 ---
 
 # Welcome to Intelligent Order Management documentation
