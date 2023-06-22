@@ -136,11 +136,11 @@ additionalContent:
           url: /dynamics365/supply-chain/
         - title: Microsoft Supply Chain Center
           summary: Microsoft Supply Chain Center is a secure, enterprise-grade solution that unlocks supply chain resiliency.
-          url: /supply-chain-platform/supply-chain-center/welcome.md
+          url: /supply-chain-platform/supply-chain-center/
         - title: Microsoft Dynamics 365 Finance
           summary: Finance and operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings.
           url: /dynamics365/finance/
         - title: Microsoft Power BI
           summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, no matter how you use Power BI.
-          url: power-bi/
+          url: /power-bi/
 
