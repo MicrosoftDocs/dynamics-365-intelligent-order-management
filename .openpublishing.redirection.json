@@ -1,8 +1,8 @@
 {
   "redirections": [
     {
-      "source_path": "topics/index.md",
-      "redirect_url": "index.yml",
+      "source_path": "topics/index.yml",
+      "redirect_url": "index.md",
       "redirect_document_id": "false"
     },
     {
