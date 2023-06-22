@@ -23,7 +23,7 @@ The [Intelligent Order Management overview video](https://www.youtube.com/watch?
 - [Intelligent Order Management website](https://dynamics.microsoft.com/intelligent-order-management/)
 
 ## Videos
-- [Intelligent Order Management overview video](https://www.youtube.com/watch?v=X73HzFPrBb0&feature=youtu.be)
+- [Intelligent Order Management overview video](https://www.youtube.com/watch?v=X73HzFPrBb0))
 
 ## Blogs and communities
 - [Intelligent Order Management Blog](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/b/dynamics-365-intelligent-order-management-blog)
