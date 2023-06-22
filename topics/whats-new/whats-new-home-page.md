@@ -17,7 +17,7 @@ Wondering about upcoming and recently released capabilities in Intelligent Order
 
 See the release plans for what's coming. Choose the following links to learn about the latest versions of this app.
 
-- [2023 release wave 1](/dynamics365/release-plan/2023wave1/supply-chain-center/microsoft-supply-chain-center/dynamics-365-intelligent-order-managements)  
+- [2023 release wave 1](/dynamics365/release-plan/2023wave1/supply-chain-center/microsoft-supply-chain-center/dynamics-365-intelligent-order-management)  
 
 ## Releases of Dynamics 365 Intelligent Order Management
 
@@ -27,7 +27,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 |---------|--------------|---------------|-------------|
 | 10.0.32 |  10.0.1515   | March 2023    | |
 
-For earlier versions, see the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).  <!--required section-->
+For earlier versions, see the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans). 
 
 ## Get the latest version
 
