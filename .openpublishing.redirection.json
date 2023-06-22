@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "topics/index.md",
+      "redirect_url": "index.yml",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "topics/ifo.md",
       "redirect_url": "fulfillment-returns-optimization",
       "redirect_document_id": "false"
