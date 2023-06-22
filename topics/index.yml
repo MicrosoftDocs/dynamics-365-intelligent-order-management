@@ -81,8 +81,8 @@ additionalContent:
         text: Architecture overview
       - url: state-framework.md
         text: State framework architecture
-      - url: Alm.md
-        text: Application lifecycle management for Intelligent Order Management
+      - url: extensibility.md
+        text: Extensibility
     - title: Administer
       links: 
       - url: welcome-to-iom.md
