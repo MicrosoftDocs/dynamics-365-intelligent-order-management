@@ -27,7 +27,7 @@ highlightedContent:
     # Card
     - title: What's new
       itemType: whats-new
-      url: whats=new.md
+      url: whats-new/whats-new-home-page.md
     # Card
     - title: Training
       itemType: training
@@ -85,7 +85,7 @@ additionalContent:
         text: Application lifecycle management for Intelligent Order Management
     - title: Administer
       links: 
-      - url: welcome-to-project-operations.md
+      - url: welcome-to-iom.md
         text: Administration overview
       - url: admin-home.md
         text: Admin home workspace
@@ -99,7 +99,7 @@ additionalContent:
         text: Finance and operations integration solution
       - url: Report-powerbi-integration.md
         text: Reporting and Power BI integrations
-      - url: integrate-procure.md
+      - url: integrate-procurement.md
         text: Integrate Supply Chain Management procurement 
       - url: integrate-transfer-orders.md
         text: Integrate Supply Chain Management transfer orders
@@ -127,21 +127,19 @@ additionalContent:
         text: Blogs and communities
       - url: https://www.youtube.com/watch?v=X73HzFPrBb0
         text: Videos
-      - url: 
-        text: 
   - title: Related products
     items:
         # Card
         
         - title: Microsoft Dynamics 365 Supply Chain Management
           summary: Build an adaptable, resilient supply chain that automatically reacts to challenges using real-time visibility, agile planning, and advanced insights.
-          url: dynamics365/supply-chain/
+          url: /dynamics365/supply-chain/
         - title: Microsoft Supply Chain Center
           summary: Microsoft Supply Chain Center is a secure, enterprise-grade solution that unlocks supply chain resiliency.
-          url: supply-chain-platform/supply-chain-center/welcome.md
+          url: /supply-chain-platform/supply-chain-center/welcome.md
         - title: Microsoft Dynamics 365 Finance
           summary: Finance and operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings.
-          url: dynamics365/finance/
+          url: /dynamics365/finance/
         - title: Microsoft Power BI
           summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, no matter how you use Power BI.
           url: power-bi/
