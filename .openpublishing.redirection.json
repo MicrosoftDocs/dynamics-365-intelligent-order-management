@@ -7,12 +7,12 @@
     },
     {
       "source_path": "topics/ifo.md",
-      "redirect_url": "fulfillment-returns-optimization",
+      "redirect_url": "topics/fulfillment-returns-optimization.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "topics/set-up-ifo-provider.md",
-      "redirect_url": "set-up-fro-provider",
+      "redirect_url": "topics/set-up-fro-provider.md",
       "redirect_document_id": "false"
     }
   ]
