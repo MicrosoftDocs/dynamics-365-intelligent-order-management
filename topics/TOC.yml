@@ -1,4 +1,5 @@
 - name: Intelligent Order Management
+  href: index.yml
   items:
   - name: Welcome to Intelligent Order Management
     href: welcome-to-iom.md
