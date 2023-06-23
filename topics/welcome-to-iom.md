@@ -13,7 +13,7 @@ ms.collection: get-started
 
 [!include [banner](includes/banner.md)]
 
-Welcome to Dynamics 365 Intelligent Order Management. We're delighted to offer you a suite of capabilities to help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration. The standardization and optimization, together with incorporated intelligence, will optimize the speed of delivery while minimizing costs, resulting in improved customer satisfaction and higher gross margin to your organization.   
+Welcome to Dynamics 365 Intelligent Order Management. We're delighted to offer you a suite of capabilities that helps your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration. The standardization and optimization, together with incorporated intelligence, will optimize the speed of delivery while minimizing costs, resulting in improved customer satisfaction and higher gross margin to your organization.   
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyP4Y]
 
@@ -23,7 +23,7 @@ The [Intelligent Order Management overview video](https://www.youtube.com/watch?
 - [Intelligent Order Management website](https://dynamics.microsoft.com/intelligent-order-management/)
 
 ## Videos
-- [Intelligent Order Management overview video](https://www.youtube.com/watch?v=X73HzFPrBb0))
+- [Intelligent Order Management overview video](https://www.youtube.com/watch?v=X73HzFPrBb0)
 
 ## Blogs and communities
 - [Intelligent Order Management Blog](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/b/dynamics-365-intelligent-order-management-blog)
