@@ -27,5 +27,5 @@ The [Intelligent Order Management overview video](https://www.youtube.com/watch?
 
 ## Blogs and communities
 - [Intelligent Order Management Blog](https://community.dynamics.com/blogs/archive/?blogid=9750a36b-56e8-498d-83e8-8c0f61e08d8a&groupid=e4d5f019-32a2-4511-9d3b-533791132adb)
-- [Intelligent Order Management Community](https://community.dynamics.com/365/dynamics-365-intelligent-order-management)
-- [Intelligent Order Management Forum](https://community.dynamics.com/365/dynamics-365-intelligent-order-management/f/dynamics-365-intelligent-order-management-forum)
+- [Intelligent Order Management Community](https://community.dynamics.com/forums/thread/?partialUrl=dynamics-365-intelligent-order-management)
+- [Intelligent Order Management Forum](https://community.dynamics.com/forums/thread/?discussionforumid=020ad9c0-e36e-47e0-bcb0-408f88d0c5ef)
