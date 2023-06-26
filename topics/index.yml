@@ -85,7 +85,7 @@ additionalContent:
         text: Extensibility
     - title: Administer
       links: 
-      - url: welcome-to-iom.md
+      - url: admin.md
         text: Administration overview
       - url: admin-home.md
         text: Admin home workspace
