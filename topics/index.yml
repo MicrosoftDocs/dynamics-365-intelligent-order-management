@@ -113,7 +113,7 @@ additionalContent:
         text: Manage subscription orders
       - url: Simulations.md
         text: AI simulations feature
-    - title: Reports
+    - title: Get reports
       links:
       - url: power-bi-dashboards.md
         text: Power BI dashboards in Intelligent Order Management
