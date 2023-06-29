@@ -21,11 +21,11 @@ See the release plans for what's coming. Choose the following links to learn abo
 
 ## Releases of Dynamics 365 Intelligent Order Management
 
-Learn more about what's new or changed in recent releases in the links in the following table.
+This section will contain a table that lists the releases when available. 
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|---------------|-------------|
-| 10.0.32 |  10.0.1515   | March 2023    | |
+|  |    |   | |
 
 For earlier versions, see the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans). 
 
