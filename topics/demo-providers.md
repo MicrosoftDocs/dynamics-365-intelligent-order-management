@@ -17,6 +17,9 @@ This article describes how to set up and start demo providers in Microsoft Dynam
 
 Demo providers are designed to help you view how orders flow between Intelligent Order Management and third-party connections. After you set up demo providers, you can generate a test order and monitor its status in Intelligent Order Management as it moves through each step of an orchestration flow, from order validation through fulfillment.
 
+> [!NOTE]
+> Demo providers are only available in trial environments.
+
 The following demo provider applications are available:
 
 - **Demo e-commerce application** – This application is used to generate an order.
