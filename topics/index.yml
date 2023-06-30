@@ -1,0 +1,146 @@
+### YamlMime:Hub
+
+title:  Microsoft Dynamics 365 Intelligent Order Management documentation
+summary: Discover how to make the most of Microsoft Dynamics 365 Intelligent Order Management with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how Intelligent Order Management can help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
+brand: dynamics
+
+metadata:
+  title: Microsoft Dynamics 365 Intelligent Order Management documentation
+  description: Discover how to make the most of Microsoft Dynamics 365 Intelligent Order Management with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how Intelligent Order Management can help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
+  ms.topic: hub-page
+  author: johnmichalak
+  ms.author: johnmichalak
+  ms.date: 06/21/2023
+  ms.custom: bap-template
+  hide_bc: true
+
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+# Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
+
+  items:
+    # Card
+    - title: Welcome to Dynamics 365 Intelligent Order Management
+      itemType: get-started
+      url: welcome-to-iom.md
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: whats-new/whats-new-home-page.md
+    # Card
+    - title: Training
+      itemType: training
+      url: /training/browse/?expanded=dynamics-365&products=dynamics-iom
+    # Card
+    - title: Troubleshoot
+      itemType: concept
+      url: troubleshoot-errors.md
+      
+additionalContent: 
+  sections:
+  - title: Implement
+# Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices. 
+# Each card should have at least three and no more than five links. Do not include a "See also" link.
+    items:
+    - title: Guidance 
+      links: 
+      - url: deploy.md
+        text: Deployment options
+      - url: Installation.md
+        text: Install Intelligent Order Management
+      - url: policies-rules.md
+        text: Policies and rules
+    - title: Try/Buy
+      links: 
+      - url: trial-setup.md
+        text: Sign up for Intelligent Order Management trial
+      - url: get-trial-licenses.md
+        text: Get trial licenses for Intelligent Order Management
+      - url: Trial-faq.md
+        text: Trial FAQ
+      - url: lab-quick-start-overview.md
+        text: Quick start lab overview
+      - url: demo-providers.md
+        text: Set up and open demo providers
+    - title: Set up 
+      links:
+      - url: setup.md
+        text: Set up an environment
+      - url: Work-providers.md
+        text: Work with providers
+      - url: provider-catalog.md
+        text: Provider catalog
+      - url: email-capabilities.md
+        text: Email capabilities in Intelligent Order Management 
+  - title: Administer and develop
+    items:
+    - title: Architecture
+      links:
+      - url: architecture.md
+        text: Architecture overview
+      - url: state-framework.md
+        text: State framework architecture
+      - url: extensibility.md
+        text: Extensibility
+    - title: Administer
+      links: 
+      - url: admin.md
+        text: Administration overview
+      - url: admin-home.md
+        text: Admin home workspace
+      - url: Data-management.md
+        text: Data management
+    - title: Develop
+      links:
+      - url: developer-flows.md
+        text: Power Automate flows
+      - url: finops-integration-scenarios.md
+        text: Finance and operations integration solution
+      - url: Report-powerbi-integration.md
+        text: Reporting and Power BI integrations
+      - url: integrate-procurement.md
+        text: Integrate Supply Chain Management procurement 
+      - url: integrate-transfer-orders.md
+        text: Integrate Supply Chain Management transfer orders
+  - title: Use 
+    items:
+    - title: Manage your orders
+      links:
+      - url: fulfillment-returns-optimization.md
+        text: Fulfillment and Returns Optimization provider overview
+      - url: subscription-orders.md
+        text: Manage subscription orders
+      - url: Simulations.md
+        text: AI simulations feature
+    - title: Get reports
+      links:
+      - url: power-bi-dashboards.md
+        text: Power BI dashboards in Intelligent Order Management
+      - url: insights-reports.md
+        text: Intelligent Order Management Insights reporting
+    - title: More resources
+      links:
+      - url: support.md
+        text: Get support
+      - url: blog-community.md
+        text: Blogs and communities
+      - url: https://www.youtube.com/watch?v=X73HzFPrBb0
+        text: Videos
+  - title: Related products
+    items:
+        # Card
+        
+        - title: Microsoft Dynamics 365 Supply Chain Management
+          summary: Build an adaptable, resilient supply chain that automatically reacts to challenges using real-time visibility, agile planning, and advanced insights.
+          url: /dynamics365/supply-chain/
+        - title: Microsoft Supply Chain Center
+          summary: Microsoft Supply Chain Center is a secure, enterprise-grade solution that unlocks supply chain resiliency.
+          url: /supply-chain-platform/supply-chain-center/
+        - title: Microsoft Dynamics 365 Finance
+          summary: Finance and operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings.
+          url: /dynamics365/finance/
+        - title: Microsoft Power BI
+          summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, no matter how you use Power BI.
+          url: /power-bi/
+

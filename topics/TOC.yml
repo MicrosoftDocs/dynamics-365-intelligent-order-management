@@ -1,7 +1,8 @@
 - name: Intelligent Order Management
+  href: index.yml
   items:
-  - name: Intelligent Order Management home page
-    href: index.md
+  - name: Welcome to Intelligent Order Management
+    href: welcome-to-iom.md
   - name: Get started
     items:
     - name: Intelligent Order Management overview
