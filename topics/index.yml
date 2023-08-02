@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title:  Microsoft Dynamics 365 Intelligent Order Management documentation
-summary: Discover how to make the most of Microsoft Dynamics 365 Intelligent Order Management with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how Intelligent Order Management can help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
+title:  Dynamics 365 Intelligent Order Management documentation
+summary: Discover how to make the most of Dynamics 365 Intelligent Order Management with training, docs, and videos covering product capabilities and how-to articles. Learn how Intelligent Order Management can help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
 brand: dynamics
 
 metadata:
-  title: Microsoft Dynamics 365 Intelligent Order Management documentation
-  description: Discover how to make the most of Microsoft Dynamics 365 Intelligent Order Management with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how Intelligent Order Management can help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
+  title: Dynamics 365 Intelligent Order Management documentation
+  description: Discover how to make the most of Dynamics 365 Intelligent Order Management with training, docs, and videos covering product capabilities and how-to articles. Learn how Intelligent Order Management can help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
   ms.topic: hub-page
   author: johnmichalak
   ms.author: johnmichalak
@@ -131,13 +131,13 @@ additionalContent:
     items:
         # Card
         
-        - title: Microsoft Dynamics 365 Supply Chain Management
+        - title: Dynamics 365 Supply Chain Management
           summary: Build an adaptable, resilient supply chain that automatically reacts to challenges using real-time visibility, agile planning, and advanced insights.
           url: /dynamics365/supply-chain/
         - title: Microsoft Supply Chain Center
           summary: Microsoft Supply Chain Center is a secure, enterprise-grade solution that unlocks supply chain resiliency.
           url: /supply-chain-platform/supply-chain-center/
-        - title: Microsoft Dynamics 365 Finance
+        - title: Dynamics 365 Finance
           summary: Finance and operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings.
           url: /dynamics365/finance/
         - title: Microsoft Power BI
