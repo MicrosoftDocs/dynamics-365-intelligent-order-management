@@ -44,21 +44,37 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 1. Open the **Default Solution**.
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (Outlook)".
-1. Select the trigger type as **Manually trigger a flow** and then do the following:
-    1. Select **Add an input**, select **Text**, and then enter "ProviderActionExecutionEventId" in the first field.
-    1. Select **Add an input**, select **Text**, and then enter "EntityRecordId" in the first field.
+1. Select the trigger type as **HTTP** trigger
+    1.  Define a Power Automate trigger. This is typically an HTTP endpoint that is a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger is raised when an external service has data to send to Intelligent Order Management.
+    ![Screenshot of trigger for when an HTTP request is received.](media/trigger.png)
 
-    ![Manually trigger a flow properties](media/lab_man_trig_flow_prop.png)
-1. Create a variable initialization action:
-    - For **Name**, enter "ExecutionResult".
-    - For **Type**, select **Boolean**.
-    - For **Value**, enter "true".  
-1. Create a second variable initialization action:
-    - For **Name**, enter "ProcessedSaleOrderLines".
-    - For **Type**, select **Array**.
-1. Create a third variable initialization action:
-    - For **Name**, enter "ProcessedFulfillmentOrderLines".
-    - For **Type**, select **Array**.
+    The JSON Schema to use in your HTTP trigger is defined below.
+
+    ```json
+    {
+        "type": "object",
+        "properties": {
+            "text": {
+                "title": "ProviderActionExecutionEventId",
+                "type": "string",
+                "x-ms-dynamically-added": true,
+                "description": "Please enter your input",
+                "x-ms-content-hint": "TEXT"
+            },
+            "text_1": {
+                "title": "EntityRecordId",
+                "type": "string",
+                "x-ms-dynamically-added": true,
+                "description": "Please enter your input",
+                "x-ms-content-hint": "TEXT"
+            }
+        },
+        "required": [
+            "text",
+            "text_1"
+        ]
+    }
+```
 
     ![Variable initialization actions](media/lab_variable_init_actions.png)
 1. Add a **Try** scope.
