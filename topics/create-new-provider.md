@@ -300,6 +300,33 @@ The following is an example structure for creating a message handler type of Pow
 1.  Define a Power Automate trigger. This is typically an HTTP endpoint that is a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger is raised when an external service has data to send to Intelligent Order Management.
 ![Screenshot of trigger for when an HTTP request is received.](media/trigger.png)
 
+The JSON Schema to use in your HTTP trigger is defined below.
+
+```json
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "title": "ProviderActionExecutionEventId",
+            "type": "string",
+            "x-ms-dynamically-added": true,
+            "description": "Please enter your input",
+            "x-ms-content-hint": "TEXT"
+        },
+        "text_1": {
+            "title": "EntityRecordId",
+            "type": "string",
+            "x-ms-dynamically-added": true,
+            "description": "Please enter your input",
+            "x-ms-content-hint": "TEXT"
+        }
+    },
+    "required": [
+        "text",
+        "text_1"
+    ]
+}
+```
 2.  Initialize the message processing. There are two steps involved in this task.
 
     1.  Initialize the execution result that will be used to track the processing of the message.
