@@ -24,7 +24,7 @@ You can contact a Microsoft Support representative and get support for Intellige
 
 You must have a security role that's enabled for creating support requests. Users who have one of the following security roles can create support requests:
 
-- AAD Role Admin
+- Microsoft Entra Role Admin
 - Environment Administrator (or System Administrator role in Dataverse)
 - Company Admin
 - Billing Admin
