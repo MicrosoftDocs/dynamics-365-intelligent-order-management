@@ -74,9 +74,10 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
             "text_1"
         ]
     }
-```
+    ```
 
-    ![Variable initialization actions](media/lab_variable_init_actions.png)
+![Variable initialization actions](media/lab_variable_init_actions.png)
+
 1. Add a **Try** scope.
 1. Within the **Try** scope, add a **Perform an unbound action** action as follows:
     - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
@@ -399,4 +400,4 @@ To add a provider definition parameter to the IOMLabProviders solution, follow t
 1. Select **Add existing \> IOM Provider Definition Parameter**.
 1. Select **IOMLabOutboundFulfillmentEmail** and then select **Add** to add it to the solution.
 
-Next quick start lab step: [Export provider solution](lab-export-provider-solution.md)
+Next quick start lab step: [Export  solution](lab-export-provider-solution.md)
