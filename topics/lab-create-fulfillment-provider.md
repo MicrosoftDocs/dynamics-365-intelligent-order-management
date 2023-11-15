@@ -400,4 +400,4 @@ To add a provider definition parameter to the IOMLabProviders solution, follow t
 1. Select **Add existing \> IOM Provider Definition Parameter**.
 1. Select **IOMLabOutboundFulfillmentEmail** and then select **Add** to add it to the solution.
 
-Next quick start lab step: [Export provider solution](lab-export-provider-solution.md)
+Next quick start lab step: [Export  solution](lab-export--solution.md)
