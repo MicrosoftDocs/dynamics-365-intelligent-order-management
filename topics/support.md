@@ -65,6 +65,6 @@ If you can't create a support ticket, you can contact <iomsupport@microsoft.com>
 
 ## Other support options
 
-To get support, you can submit questions to the [community site for Dynamics 365 Intelligent Order Management](https://community.dynamics.com/365/dynamics-365-intelligent-order-management). Microsoft monitors this community site.
+To get support, you can submit questions to the [community site for Dynamics 365 Intelligent Order Management](https://community.dynamics.com/forums/thread/?partialUrl=dynamics-365-intelligent-order-management). Microsoft monitors this community site.
 
 Customers and partners who are part of our private preview program can post questions in the Yammer group.
