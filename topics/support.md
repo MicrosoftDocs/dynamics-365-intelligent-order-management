@@ -24,7 +24,7 @@ You can contact a Microsoft Support representative and get support for Intellige
 
 You must have a security role that's enabled for creating support requests. Users who have one of the following security roles can create support requests:
 
-- AAD Role Admin
+- Microsoft Entra Role Admin
 - Environment Administrator (or System Administrator role in Dataverse)
 - Company Admin
 - Billing Admin
@@ -65,6 +65,6 @@ If you can't create a support ticket, you can contact <iomsupport@microsoft.com>
 
 ## Other support options
 
-To get support, you can submit questions to the [community site for Dynamics 365 Intelligent Order Management](https://community.dynamics.com/365/dynamics-365-intelligent-order-management). Microsoft monitors this community site.
+To get support, you can submit questions to the [community site for Dynamics 365 Intelligent Order Management](https://community.dynamics.com/forums/thread/?partialUrl=dynamics-365-intelligent-order-management). Microsoft monitors this community site.
 
 Customers and partners who are part of our private preview program can post questions in the Yammer group.
