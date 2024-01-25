@@ -37,17 +37,6 @@ To create the Power Automate connection, follow these steps.
 1. In the search box on the upper right corner, enter "Power Automate Management".
 1. Select the plus symbol "**+**" to create the Power Automate connection. When prompted to sign in, make sure to use the same credentials you used to sign in to Intelligent Order Management.
 
-### Create Intelligent Order Management Data Transformer connection
-
-To create the Intelligent Order Management Data Transformer connection, follow these steps.
-
-1. Go to **Data \> Connections**.
-1. Select **New connection**.
-1. In the search box on the upper right corner, enter "IOM Data Transformer".
-    > [!NOTE]
-    > If you don’t see the connector, append ``?addConnectorHideKey=iomtransformer`` to the URL.
-1. Select the plus symbol "**+**" to create the Intelligent Order Management Data Transformer connection. When prompted to sign in, make sure to use the same credentials you used to sign in to Intelligent Order Management.
-
 ## Configure platform connection references
 
 > [!NOTE]
