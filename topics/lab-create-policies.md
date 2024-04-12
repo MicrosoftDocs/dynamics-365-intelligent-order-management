@@ -1,7 +1,9 @@
 ---
 author: josaw1
 description: This topic describes the steps required to create policies in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 10/01/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: how-to
 ms.author: josaw
 
