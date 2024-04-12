@@ -1,7 +1,9 @@
 ---
 author: josaw1
 description: This topic provides a list of the providers that are available in Dynamics 365 Intelligent Order Management.
-ms.date: 05/26/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 

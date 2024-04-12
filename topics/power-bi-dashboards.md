@@ -1,7 +1,9 @@
 ---
 author: josaw1
 description: This topic describes the Power BI dashboards that are available in Dynamics 365 Intelligent Order Management.
-ms.date: 06/15/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 

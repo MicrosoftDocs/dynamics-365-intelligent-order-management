@@ -1,7 +1,9 @@
 ---
 author: josaw1
 description: This topic provides an overview of the data management systems in Dynamics 365 Intelligent Order Management.
-ms.date: 05/17/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 

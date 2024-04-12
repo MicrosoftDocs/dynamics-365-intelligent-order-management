@@ -1,7 +1,9 @@
 ---
 author: v-chgri
 description: This topic can help troubleshoot issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management trial.
-ms.date: 07/01/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 

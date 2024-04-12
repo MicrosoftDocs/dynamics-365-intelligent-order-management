@@ -1,7 +1,9 @@
 ---
 author: josaw1
 description: This topic provides information about how to set up a Dynamics 365 Intelligent Order Management environment.
-ms.date: 08/09/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 

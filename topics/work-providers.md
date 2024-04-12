@@ -2,7 +2,9 @@
 
 author: sumanic
 description: This article provides an overview of the process of working with providers and explains how to set up a provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 10/07/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: sumanic
 

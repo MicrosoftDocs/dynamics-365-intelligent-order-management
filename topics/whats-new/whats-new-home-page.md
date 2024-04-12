@@ -5,8 +5,10 @@ description: This article points to articles that describe the new and changed f
 author: johnmichalak
 ms.author: johnmichalak
 ms.reviewer: johnmichalak
-ms.date: 06/30/2023
-ms.custom: bap-template
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.topic: whats-new
 ms.collection:  #Required; The values for this attribute will be updated over time. For now, leave this value blank.
 ---
