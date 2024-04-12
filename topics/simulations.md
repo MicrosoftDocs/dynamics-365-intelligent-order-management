@@ -7,7 +7,6 @@ ms.custom:
 author: derekkwanpm
 ms.author: derekkwan
 ms.topic: conceptual
-ms.custom: bap-template
 ---
 
 # AI simulations feature
