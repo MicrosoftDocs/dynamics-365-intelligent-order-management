@@ -535,7 +535,7 @@ You must have the following prerequisites before you can save your flows.
 
     -   Set up an Azure account with an active subscription. If you don't have an active account, you need to set up an account on the [Azure website](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-    -   PowerShell must be installed. For more information, see [Installing PowerShell](/powershell/scripting/install/installing-powershell?view=powershell-7.1).
+    -   PowerShell must be installed. For more information, see [Installing PowerShell](/powershell/scripting/install/installing-powershell).
 
     -   Enter the following command in PowerShell to get an access token: az login --allow-no-subscriptions account get-access-token --resource=https://YourDataverseTenantURL.api.crm.dynamics.com/ --query=accessToken --output=tsv \| Set-Clipboard.
 
