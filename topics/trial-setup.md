@@ -7,9 +7,7 @@ ms.date: 04/12/2024
 ms.custom: 
   - bap-template
 ms.topic: get-started
-ms.custom: template-trial-setup
 ms.reviewer: josaw
-ms.subservice: 
 ---
 
 
