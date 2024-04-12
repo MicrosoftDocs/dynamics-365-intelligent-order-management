@@ -4,7 +4,7 @@ description: This article describes the email capabilities that are available in
 ms.date: 04/12/2024
 ms.custom: 
   - bap-template
-ms.topic: 
+ms.topic: conceptual
 ms.author: anvenkat
 
 title: Email capabilities in Dynamics 365 Intelligent Order Management
