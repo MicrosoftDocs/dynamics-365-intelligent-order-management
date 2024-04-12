@@ -8,8 +8,6 @@ ms.custom:
 author: anvenkat
 ms.author: anvenkat
 ms.topic: how-to
-ms.custom: bap-template
-
 ---
 
 # Set up a fulfillment source working calendar
