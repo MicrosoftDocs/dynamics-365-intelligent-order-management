@@ -7,7 +7,6 @@ ms.custom:
   - bap-template
 ms.topic: conceptual
 ms.author: derekkwan
-ms.custom: bap-template
 ---
 
 # Intelligent Order Management Insights reporting
