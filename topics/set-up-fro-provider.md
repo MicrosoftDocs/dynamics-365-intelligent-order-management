@@ -6,7 +6,6 @@ ms.date: 04/12/2024
 ms.custom: 
   - bap-template
 ms.topic: conceptual
-ms.custom: bap-template
 author: anvenkat
 ms.author: anvenkat
 
