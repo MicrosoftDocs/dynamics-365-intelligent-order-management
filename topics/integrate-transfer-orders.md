@@ -1,7 +1,9 @@
 ---
 author: anvenkat
 description: This article describes how to integrate transfer orders in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
-ms.date: 10/19/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: overview
 ms.author: anvenkat
 
