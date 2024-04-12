@@ -1,12 +1,12 @@
 ---
+title: Admin home workspace
 author: sumanic
 description: This article describes the Admin home workspace in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 10/11/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: sumanic
-
-title: Admin home workspace
-
 ---
 
 # Admin home workspace
