@@ -8,8 +8,6 @@ ms.custom:
 ms.topic: how-to
 ms.author: anvenkat
 author: anvenkat
-ms.custom: bap-template
-
 ---
 
 # Set up the Internal Application Service provider
