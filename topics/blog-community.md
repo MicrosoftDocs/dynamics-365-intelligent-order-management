@@ -2,7 +2,9 @@
 author: josaw1
 description: This page provides a list of the blogs and community resources available for Intelligent Order Management features.   
 ms.author: josaw
-ms.date: 03/01/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 title: Blogs and communities
 ---
