@@ -85,7 +85,7 @@ The following tables must be synced for the **Transfer Order Products** table ma
 
 ![Transfer Order Products table map in dual-write.](media/to-lines.png)
 
-For more information about dual-write mapping references, see [Dual-write mapping reference](/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference).
+For more information about dual-write mapping references, see [Dual-write mapping reference](/finance/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference).
 
 ## Create a transfer order
 
