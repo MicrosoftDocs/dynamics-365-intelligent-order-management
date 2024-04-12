@@ -1,7 +1,9 @@
 ---
 author: anush6121 
 description: The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 04/04/2023
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: overview
 ms.author: anvenkat
 
