@@ -1,7 +1,9 @@
 ---
 author: josaw1
 description: This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 02/27/2023
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 

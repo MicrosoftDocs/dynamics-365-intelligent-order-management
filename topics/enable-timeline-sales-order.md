@@ -2,7 +2,9 @@
 author: josaw1
 description: This topic describes how to enable timeline capabilities in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 02/11/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 

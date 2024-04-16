@@ -3,7 +3,9 @@
 author: anvenkat
 description: This article provides an overview of the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/10/2023
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: overview
 ms.author: anvenkat
 

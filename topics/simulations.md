@@ -1,11 +1,12 @@
 ---
 title: AI simulations feature
 description: This article provides an overview of the AI simulations feature in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 01/25/2023
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 author: derekkwanpm
 ms.author: derekkwan
 ms.topic: conceptual
-ms.custom: bap-template
 ---
 
 # AI simulations feature

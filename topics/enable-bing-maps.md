@@ -1,7 +1,9 @@
 ---
 author: josaw1
 description: This topic provides information about how to enable the use of Bing Maps for your Dynamics 365 Intelligent Order Management environment.
-ms.date: 07/30/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: josaw
 
