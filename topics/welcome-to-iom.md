@@ -1,7 +1,9 @@
 ---
 title: Welcome to Intelligent Order Management documentation
 description: This page provides a list of the help topics and other resources for Intelligent Order Management features.   
-ms.date: 03/01/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 search.audienceType: EndUser
 author: johnmichalak

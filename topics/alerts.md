@@ -2,10 +2,11 @@
 title: Intelligent Order Management alerts
 description: This article provides an overview of alerts functionality and use cases in Microsoft Dynamics 365 Intelligent Order Management.
 author: derekkwanpm
-ms.date: 02/24/2023
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: derekkwan
-ms.custom: bap-template
 ---
 
 # Intelligent Order Management alerts

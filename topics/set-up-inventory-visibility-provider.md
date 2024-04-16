@@ -2,7 +2,9 @@
 author: sumanic
 description: This article describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 04/04/2023
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: how-to
 ms.author: sumanic
 title: Set up Inventory Visibility provider

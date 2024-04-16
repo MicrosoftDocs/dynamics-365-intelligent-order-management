@@ -2,7 +2,9 @@
 author: sumanic
 description: This article describes how to set up the inventory allocation feature of the Inventory Visibility add-in in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 11/11/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: how-to
 ms.author: sumanic
 title: Set up inventory allocation
