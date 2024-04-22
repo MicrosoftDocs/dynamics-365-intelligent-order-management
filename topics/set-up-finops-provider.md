@@ -2,7 +2,9 @@
 author: sumanic
 description: This topic explains how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/03/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: how-to
 ms.author: sumanic
 title: Set up the Dynamics 365 Finance + Operations provider
@@ -39,14 +41,14 @@ This setup will enable order synchronization between Intelligent Order Managemen
             `msdyn_ordertype eq 192350000 and _msdyn_company_value ne null and msdyn_isreadytosync eq true and statuscode ne 100003`
 
         1. Select **Accept**.
-        1. On the dual-write page, select **CDS sales order lines (saleorderdetails)**.
-        1. On the **CDS sales order lines (saleorderdetails)** page, select the **Filter** button (funnel symbol) next to **Microsoft Dataverse.order** to edit the query.
+        1. On the dual-write page, select **CDS sales order lines V2 (saleorderdetails)**.
+        1. On the **CDS sales order lines V2 (saleorderdetails)** page, select the **Filter** button (funnel symbol) next to **Microsoft Dataverse.order** to edit the query.
         1. In the **Edit query** dialog box, enter the following query string:
 
             `_msdyn_company_value ne null and _msdyn_shippingsite_value ne null and _msdyn_shippingwarehouse_value ne null and msdyn_isreadytosync eq true and msdyn_statuscode ne 192350001`
 
         1. Select **Accept**.
-        1. On both the **CDS sales order headers (saleorders)** page and the **CDS sales order lines (saleorderdetails)** page, edit the **msdyn\_isreadytosync** entity fields, and set the following values:
+        1. On both the **CDS sales order headers (saleorders)** page and the **CDS sales order lines V2 (saleorderdetails)** page, edit the **msdyn\_isreadytosync** entity fields, and set the following values:
 
             - **Sync direction:** Finance and operations apps to Dataverse
             - **Transform type:** Default

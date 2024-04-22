@@ -1,7 +1,9 @@
 ---
 author: sumanic
 description: This topic describes the internal external ID mapping in Dynamics 365 Intelligent Order Management.
-ms.date: 08/13/2021
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: conceptual
 ms.author: sumanic
 

@@ -1,7 +1,9 @@
 ---
 author: anvenkat
 description: This article describes how to integrate transfer orders in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
-ms.date: 10/19/2022
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
 ms.topic: overview
 ms.author: anvenkat
 
@@ -83,7 +85,7 @@ The following tables must be synced for the **Transfer Order Products** table ma
 
 ![Transfer Order Products table map in dual-write.](media/to-lines.png)
 
-For more information about dual-write mapping references, see [Dual-write mapping reference](/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference).
+For more information about dual-write mapping references, see [Dual-write mapping reference](dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference).
 
 ## Create a transfer order
 
