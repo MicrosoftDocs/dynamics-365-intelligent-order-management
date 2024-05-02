@@ -15,17 +15,9 @@ ms.collection:  #Required; The values for this attribute will be updated over ti
 
 # What's new or changed in Intelligent Order Management
 
-Wondering about upcoming and recently released capabilities in Intelligent Order Management? [Check out the release planner site](https://experience.dynamics.com/releaseplans/?app=Marketing). We've captured all the details, end to end, top to bottom, which you can use for planning.  
+This section contains a table that lists the releases when available. 
 
-See the release plans for what's coming. Choose the following link to learn about the latest versions of this app.
-
-- [2023 release wave 1](/dynamics365/release-plan/2023wave1/supply-chain-center/microsoft-supply-chain-center/dynamics-365-intelligent-order-management)  
-
-## Releases of Dynamics 365 Intelligent Order Management
-
-This section will contain a table that lists the releases when available. 
-
-| Version | Build number | Descriptiop |
+| Version | Build number | Description |
 |---------|--------------|---------------|
 | 1.0.0.6962 | build 1.0.215.0 | This build contains security improvements.  |
 | 1.0.0.6940 | build 1.0.202.0 | -Fixed an issue where step failures can create duplicate business events. <br> - Added run history URL for Unified Flows. <br> - Fixed an issue where import of a solution could fail due to shared variables not found in plugin context. |
