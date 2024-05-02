@@ -41,6 +41,8 @@
         href: lab-create-order-orch.md
       - name: Run sample order orchestration flow
         href: lab-run-sample-order-orch-flow.md
+      - name: What's new or changed
+        href: whats-new/whats-new-home-page.md
   - name: Architecture
     items:
       - name: Architecture overview
@@ -187,7 +189,5 @@
     href: support.md
   - name: Blogs and communities
     href: blog-community.md
-  - name: Release Notes
-    href: release-notes.md
   - name: Videos
     href: https://www.youtube.com/watch?v=X73HzFPrBb0&feature=youtu.be
