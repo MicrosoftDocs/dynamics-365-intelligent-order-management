@@ -41,8 +41,8 @@
         href: lab-create-order-orch.md
       - name: Run sample order orchestration flow
         href: lab-run-sample-order-orch-flow.md
-      - name: What's new or changed
-        href: whats-new/whats-new-home-page.md
+    - name: What's new or changed
+      href: whats-new/whats-new-home-page.md
   - name: Architecture
     items:
       - name: Architecture overview
