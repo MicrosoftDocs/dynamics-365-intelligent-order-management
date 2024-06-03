@@ -139,8 +139,6 @@
       items:
       - name: Intelligent Fulfillment Optimization architecture
         href: ifo-arch.md
-      - name: AI simulations feature
-        href: simulations.md
       - name: Shipping rate factor table overview
         href: shipping-rate-factor-table-in-iom.md
     - name: Manage subscription orders
