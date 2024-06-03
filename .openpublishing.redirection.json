@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "topics/simulations.md",
-      "redirect_url": "/topics/index.yml",
+      "redirect_url": "/topics/index",
       "redirect_document_id": "false"
     },
     {
