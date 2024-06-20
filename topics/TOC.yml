@@ -41,8 +41,8 @@
         href: lab-create-order-orch.md
       - name: Run sample order orchestration flow
         href: lab-run-sample-order-orch-flow.md
-      - name: What's new or changed
-        href: whats-new/whats-new-home-page.md
+    - name: What's new or changed
+      href: whats-new/whats-new-home-page.md
   - name: Architecture
     items:
       - name: Architecture overview
@@ -139,8 +139,6 @@
       items:
       - name: Intelligent Fulfillment Optimization architecture
         href: ifo-arch.md
-      - name: AI simulations feature
-        href: simulations.md
       - name: Shipping rate factor table overview
         href: shipping-rate-factor-table-in-iom.md
     - name: Manage subscription orders
