@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 04/12/2024
+ms.date: 08/20/2024
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -31,8 +31,6 @@ To provide these benefits to customers, Intelligent Order Management has introdu
 > [!NOTE]
 > Query pages in Intelligent Order Management can automatically detect an enabled instance of Dynamics 365. Inventory query pages use inventory capabilities in Dynamics 365 Finance to query and highlight product availability. If available-to-promise (ATP) inventory capabilities are enabled, an inventory query page can also query incoming availability from Finance.
 
-![Inventory operational visibility.](media/IVQuery.png)
-
 ## Access inventory query pages
 
 You can access inventory query pages from multiple areas for different scenarios. The following use cases highlight some of the methods.
@@ -52,10 +50,6 @@ To get operational visibility, an inventory planner will follow these steps.
 1. If you've uploaded your demand and supply view by using [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox.
 1. Select **Query**. Query results appear on the right side of the page.
 1. To hide the query section of the page and show only the results, select **Combo \> Hide search criteria** in the upper right.
-
-The following illustration shows an example of the query results for this use case.
-
-![Query results for use case 1.](media/QueryResult.png)
 
 ### Use case 2: A customer representative wants to view availability from the Products page
 
@@ -89,9 +83,6 @@ To view availability from the **Order Products** page, a customer representative
 1. Set the **Select Product** option to **Existing** or **Write-in**, and then select or add the product.
 1. Add the **Unit** value.
 1. Select **Check Availability**. The **Onhand Query** page appears. The **Organization ID** and **Product ID** fields are automatically set. If you've entered the **Fulfillment Source** value, the **Location ID** field is also automatically set.
-
-    ![Automatically set fields in the query for use case 3.](media/Autofill.png)
-
 1. By default, the **Organization ID** field is set to the Dataverse organization ID for Intelligent Order Management. If dual-write is enabled in Finance, you must enter the **Company ID** value in this field.
 1. Set the **Site ID** field.
 1. If you've uploaded your demand and supply view by using [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox.
