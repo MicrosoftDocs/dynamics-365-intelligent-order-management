@@ -1,8 +1,8 @@
 ---
 author: raybennett-msft
 description: This article describes how to get trial licenses that will allow you to have full operation of Microsoft Dynamics 365 Intelligent Order Management.
-ms.author: bennettray
-ms.date: 04/12/2024
+ms.author: anvenkat
+ms.date: 08/20/2024
 ms.custom: 
   - bap-template
 ms.topic: conceptual
@@ -30,9 +30,6 @@ To sign up for the trial licenses, follow these steps.
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 1. In the left navigation, select **Billing \> Purchase services**.
-
-    ![Billing > Purchase services in the left navigation in the Microsoft 365 admin center.](./media/licensing-iom1.png)
-
 1. On the **Purchase services** page, in the search field, enter **intelligent**. The **Dynamics 365 Intelligent Order Management Trial** and **Dynamics 365 Intelligent Order Management (USL) Trial** licenses should be included in the search results.
 
     ![Licenses in the search results on the Purchase services page.](./media/licensing-iom2.png)
@@ -65,4 +62,4 @@ To assign the Dynamics 365 Intelligent Order Management USL trial license to a u
 1. Under **Turn apps or services on or off**, select both the **Data integration for IOM with Power Automate USL** checkbox and the **Dynamics 365 Intelligent Order Management USL** checkbox.
 1. Select **Assign**.
 
-    ![Assign licenses to users dialog box.](./media/licensing-iom6.png)
+
