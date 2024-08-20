@@ -1,7 +1,7 @@
 ---
 author: raybennett-msft
 description: This article describes how to get trial licenses that will allow you to have full operation of Microsoft Dynamics 365 Intelligent Order Management.
-ms.author: bennettray
+ms.author: anvenkat
 ms.date: 08/20/2024
 ms.custom: 
   - bap-template
