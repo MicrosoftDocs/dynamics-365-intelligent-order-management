@@ -6,7 +6,7 @@ ms.date: 04/12/2024
 ms.custom: 
   - bap-template
 ms.topic: conceptual
-ms.author: derekkwan
+ms.author: anvenkat
 ---
 
 # Intelligent Order Management alerts
