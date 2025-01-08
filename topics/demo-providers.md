@@ -1,7 +1,7 @@
 ---
 author: rinitha-reddy
 description: This article describes how to set up and start demo providers in Microsoft Dynamics 365 Intelligent Order Management. 
-ms.author: rikothap
+ms.author: anvenkat
 ms.date: 04/12/2024
 ms.custom: 
   - bap-template
