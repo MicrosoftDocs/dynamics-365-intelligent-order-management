@@ -136,4 +136,11 @@ The following table shows some examples of error messages and describes the sugg
 ## Reprocessing orchestration errors
 
 If a sales order fails in orchestration step, it can be reprocessed from the failed step using the "Reprocess" button from the top ribbon.
+![iomreprocess.](media/iomreprocess.jpg)
 
+## Troubleshooting dual write errors
+
+If a sales order or sales order lines fail while being processed through dual write into Finance and operations, following places will show the errors.
+The out of box provider action that is used to send an order to FinOps will show failed in the **Orchestration step results** . The result details will show the error message from dual write for order header failures.
+If one or more sales order lines fail during dual write processing, the resulting dual write error message will be surfaced in a new field **Sync error** on the sales order line in dataverse and also available in the UI out of the box in IOM.
+![iomdwerror.](media/iomdwerror.jpg)
