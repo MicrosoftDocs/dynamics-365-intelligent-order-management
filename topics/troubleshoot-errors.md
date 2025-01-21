@@ -123,6 +123,7 @@ If a call to Intelligent Order Management Provider Transformer fails, the best w
 
     ![Example of flow steps.](media/troubleshooting-010.png)
 
+
 ### Example errors
 
 The following table shows some examples of error messages and describes the suggested steps to fix the errors.
@@ -131,3 +132,8 @@ The following table shows some examples of error messages and describes the sugg
 |---|---|
 | Failed to retrieve a matching provider transformation record. | The provider ID must match an *active provider instance*, not a provider definition. The source object and destination object on the transformation must match what is shown in your call to Intelligent Order Management Provider Transformer. |
 | Field "field\_name" was not found on the table. | You're trying to access data that no value is provided for in the record. If data is optional, you must use **Record.FieldOrDefault** as a default value. |
+
+## Reprocessing orchestration errors
+
+If a sales order fails in orchestration step, it can be reprocessed from the failed step using the "Reprocess" button from the top ribbon.
+
