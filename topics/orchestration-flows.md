@@ -136,3 +136,9 @@ The following illustration shows an example orchestration flow named "Test Order
 > -   A published orchestration flow can be stopped, which will update the status to "Unpublished." This ensures that data will no longer flow through that orchestration flow.
 > -   You may receive a message that explains that a stopped orchestration flow cannot be restarted. This message is incorrectly generated from the designer platform and does not apply to the implementation of the designer in Intelligent Order Management.
 > -   An unpublished orchestration flow can be edited and published again, which will update the status to "Published." This ensures that data will again flow through the new version of the orchestration flow.
+
+## Pause and resume Orchestration flow
+
+This newly introduced feature allows an IOM user to pause the orchestration flow during business hours to manage unforeseen downtimes caused by provider connection issues or to make changes to the orchestration flow and republish if needed. 
+
+To pause the orchestration, go to orchestration flow 
