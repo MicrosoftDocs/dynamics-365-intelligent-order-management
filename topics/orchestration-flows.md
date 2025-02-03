@@ -141,4 +141,8 @@ The following illustration shows an example orchestration flow named "Test Order
 
 This newly introduced feature allows an IOM user to pause the orchestration flow during business hours to manage unforeseen downtimes caused by provider connection issues or to make changes to the orchestration flow mid day and republish if needed. 
 
-To pause the orchestration, go to orchestration flow 
+To enable this feature, you should turn on the following settings in power apps.
+
+- Go to **Solution** >**Default solution**>**Settings**>**Enable orchestration pause and resume** and under **Setting environment value** >**Add existing value** to **yes**
+- Go to **Solution** >**Default solution**>**Settings**>**Enable plugin triggers for step execution in a journey** and change the default value to **yes**
+
