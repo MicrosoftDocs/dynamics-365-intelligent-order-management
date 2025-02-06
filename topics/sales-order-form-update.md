@@ -4,11 +4,13 @@ author: anvenkat
 description: Learn about the UX changes in sales order form within Microsoft Dynamics 365 Intelligent Order Management
 ms.custom: 
   - bap-template
-ms.topic: overview
+ms.topic: conceptual
 ms.author: anvenkat
 ---
 
 # Sales order form denormalization
+
+[!INCLUDE[banner](../includes/banner.md)]
 
 This article explains the UX changes made in the sales order form following the Microsoft fluent protocols. These changes allow for a simpler workflow to create, modify, and view orders in Microsoft Dynamics 365 Intelligent Order Management.
 
@@ -31,3 +33,4 @@ To enable sales order form denormalization, follow these steps.
      ![iomsalesordernew.](media/iomsalesordernew.jpg)
 
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
