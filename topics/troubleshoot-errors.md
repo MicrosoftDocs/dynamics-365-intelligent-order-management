@@ -153,3 +153,4 @@ If one or more sales order lines fail during Dual-write processing, the resultin
 
 If a sales order doesn't have any sales order lines, the order will be filtered from synching through Dual-write to avoid errors in the downstream processing. The error message will be surfaced in orchestration step results in IOM.
 
+[!INCLUDE[footer-include](includes/footer-banner.md)]

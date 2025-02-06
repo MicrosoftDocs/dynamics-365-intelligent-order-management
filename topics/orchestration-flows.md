@@ -120,4 +120,4 @@ To enable this feature, you should turn on the following settings in Microsoft P
 - Go to **Solution** >**Default solution**>**Settings**>**Enable orchestration pause and resume** and under **Setting environment value** >**Add existing value** to **yes**
 - Go to **Solution** >**Default solution**>**Settings**>**Enable plugin triggers for step execution in a journey** and change the default value to **yes**
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

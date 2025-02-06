@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # Custom entity orchestration
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](includes/banner.md)]
 
 Custom entity orchestration allows customers to orchestrate on the custom Microsoft Dataverse entities that are created for business purposes. For example, if there's a need to create a nonstandard entity for orchestrating fulfillment or transportation processes, custom entity orchestration would be a good choice. 
 
@@ -37,4 +37,4 @@ To enable custom entity orchestration, follow these steps.
    - **Business event input and output**
 
   
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
