@@ -137,7 +137,7 @@ The following table shows some examples of error messages and describes the sugg
 
 If a sales order fails in orchestration step, it can be reprocessed from the failed step using the "Reprocess" button from the top ribbon.
 
-![iomreprocess.](media/iomreprocess.jpg)
+![Screenshot with the Reprocess button highlited.](media/iomreprocess.jpg)
 
 ## Troubleshoot Dual-write errors
 
@@ -147,7 +147,7 @@ The out of box provider action that is used to send an order to FinOps shows **F
 
 If one or more sales order lines fail during Dual-write processing, the resulting Dual-write error message will be surfaced in a new field **Sync error** on the sales order line in Dataverse and also available in the UI out of the box in IOM.
 
-![iomdwerror.](media/iomdwerror.jpg)
+![Screenshot  that includes Dual-write sync errors.](media/iomdwerror.jpg)
 
 ### Filter order without lines in Dual-write
 

@@ -31,7 +31,7 @@ To enable sales order form denormalization, follow these steps.
   -  View the real time inventory for order lines without switching screens and reduced clicks.
   -  View your order details and related fulfillments along with tracking in one page without clicks.
 
-     ![iomsalesordernew.](media/iomsalesordernew.jpg)
+     ![Screenshot of Sales order details summary.](media/iomsalesordernew.jpg)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
