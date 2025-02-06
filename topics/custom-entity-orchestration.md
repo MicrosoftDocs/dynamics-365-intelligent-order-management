@@ -1,5 +1,5 @@
 ---
-title: Create orchestration flows
+title: Custom entity orchestration
 description: This topic provides information about orchestrating on custom entities within Microsoft Dynamics 365 Inetlligent Order Management
 ms.date: 02/03/2025
 author: anvenkat
