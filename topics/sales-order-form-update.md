@@ -1,11 +1,12 @@
 ---
 title: Sales order denormalization
-author: anvenkat
 description: Learn about the UX changes in sales order form within Microsoft Dynamics 365 Intelligent Order Management
+ms.date: 02/03/2025
+author: anvenkat
+ms.author: anvenkat
 ms.custom: 
   - bap-template
 ms.topic: conceptual
-ms.author: anvenkat
 ---
 
 # Sales order form denormalization
