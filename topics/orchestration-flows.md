@@ -24,7 +24,7 @@ Intelligent Order Management supports the ability to define orchestration flows 
 
 ## Orchestration types
 
-Orchestration types control which actions and elements can be used to define the orchestration flow. One orchestration type is currently supported out-of-the-box. Additional orchestration types will be released over time.
+Orchestration types control which actions and elements can be used to define the orchestration flow. One orchestration type is currently supported out-of-the-box. More orchestration types will be released over time.
 
 | Type            | Purpose                                                                                                        |
 |---------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -95,7 +95,7 @@ To create a new orchestration flow, follow these steps.
 1. In the **Name** field, enter "Test validation 2."
 1. In the **Input Events** field, select **New order**.
 1. Select **Add**.
-1. In the **Filter Policies** field, select **Filter Policy – Orderfull**.
+1. In the **Filter Policies** field, select **Filter Policy – Orderful**.
 1. In the **Execution Policies** field, select **Order header Validation Policy**.
 1. Select **Add**.
 1. Select **Publish**.

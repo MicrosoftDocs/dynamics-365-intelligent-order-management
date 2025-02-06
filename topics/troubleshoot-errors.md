@@ -131,7 +131,7 @@ The following table shows some examples of error messages and describes the sugg
 | Error message | Suggested steps |
 |---|---|
 | Failed to retrieve a matching provider transformation record. | The provider ID must match an *active provider instance*, not a provider definition. The source object and destination object on the transformation must match what is shown in your call to Intelligent Order Management Provider Transformer. |
-| Field "field\_name" was not found on the table. | You're trying to access data that no value is provided for in the record. If data is optional, you must use **Record.FieldOrDefault** as a default value. |
+| Field "field\_name" wasn't found on the table. | You're trying to access data that no value is provided for in the record. If data is optional, you must use **Record.FieldOrDefault** as a default value. |
 
 ## Reprocess orchestration errors
 
