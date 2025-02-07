@@ -135,22 +135,21 @@ The following table shows some examples of error messages and describes the sugg
 
 ## Reprocess orchestration errors
 
-If a sales order fails in orchestration step, it can be reprocessed from the failed step using the "Reprocess" button from the top ribbon.
+If a sales order fails in an orchestration step, you can reprocess it from the failed step by using the **Reprocess** button on the Action Pane.
 
-![Screenshot with the Reprocess button highlited.](media/iomreprocess.jpg)
+![Screenshot that highlights the Reprocess button on the Action Pane.](media/iomreprocess.jpg)
 
-## Troubleshoot Dual-write errors
+## Troubleshoot dual-write errors
 
-If a sales order or sales order lines fail while being processed through Dual-write into Finance and operations, following places show the errors.
+If a sales order or sales order lines fail while they are being processed through dual-write into finance and operations apps, the errors are shown in the following places:
 
-The out of box provider action that is used to send an order to FinOps shows **Failed** in the **Orchestration step results**. The result details show the error message from Dual-write for order header failures.
+- The out-of-box provider action that is used to send an order to finance and operations apps is shown as **Failed** on the **Orchestration step results** tab. The result details show the error message from dual-write for order header failures.
+- If one or more sales order lines fail during dual-write processing, the resulting dual-write error message appears in a new **Sync Error** field on the sales order line in Dataverse. It's also available out of the box in the Intelligent Order Management user interface (UI).
 
-If one or more sales order lines fail during Dual-write processing, the resulting Dual-write error message will be surfaced in a new field **Sync error** on the sales order line in Dataverse and also available in the UI out of the box in IOM.
+    ![Screenshot that highlights the Sync Error field.](media/iomdwerror.jpg)
 
-![Screenshot  that includes Dual-write sync errors.](media/iomdwerror.jpg)
+### Filter orders without lines in dual-write
 
-### Filter order without lines in Dual-write
-
-If a sales order doesn't have any sales order lines, the order will be filtered from synching through Dual-write to avoid errors in the downstream processing. The error message will be surfaced in orchestration step results in IOM.
+If a sales order doesn't have any sales order lines, the order is filtered from synchronization through dual-write to prevent errors in the downstream processing. The error message appears on the **Orchestration Step Results** tab in Intelligent Order Management.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
