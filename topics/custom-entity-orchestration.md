@@ -1,6 +1,6 @@
 ---
 title: Custom entity orchestration
-description: Learn about orchestration on custom entities in Microsoft Dynamics 365 Inetlligent Order Management.
+description: Learn about orchestration on custom entities in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 02/03/2025
 author: anvenkat
 ms.author: anvenkat
