@@ -107,7 +107,7 @@ The following illustration shows an example orchestration flow that is named **T
 
 ## Pause and resume an orchestration flow (preview)
 
-A new feature lets Intelligent Order Management users pause an orchestration flow during business hours. In this way, they can manage unforeseen downtime that is caused by provider connection issues, or they can make changes to the orchestration flow midday and republish it as required.
+A new feature lets Intelligent Order Management users pause an orchestration flow during business hours. In this way, they can manage unforeseen downtime that is caused by provider connection issues. They can also make changes to the orchestration flow midday and republish it as required.
 
 To enable this feature, turn on the following settings in Power Apps:
 
