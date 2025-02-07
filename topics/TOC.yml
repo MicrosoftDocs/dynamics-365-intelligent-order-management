@@ -69,6 +69,8 @@
       href: alerts.md
     - name: Internal external ID mapping
       href: internal-external-id-mapping.md
+    - name: Custom entity orchestration
+      href: custom-entity-orchestration.md
     - name: Providers
       items:
       - name: Work with providers
@@ -145,6 +147,8 @@
       href: subscription-orders.md
   - name: Finance + Operations integration solution
     href: finops-integration-scenarios.md
+  - name: Sales order denormalization
+    href: sales-order-form-update.md
   - name: Power BI integration
     items:
     - name: Reporting and Power BI integration
