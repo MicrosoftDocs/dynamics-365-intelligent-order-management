@@ -45,12 +45,14 @@ additionalContent:
     items:
     - title: Guidance 
       links: 
-      - url: deploy.md
-        text: Deployment options
-      - url: Installation.md
-        text: Install Intelligent Order Management
-      - url: policies-rules.md
-        text: Policies and rules
+      - text: Security, compliance, and privacy
+        url: /dynamics365/get-started/security
+      - text: Implementation guide
+        url: /dynamics365/guidance/implementation-guide/overview
+      - text: Implementation tools and samples
+        url: /dynamics365/guidance/resources/
+      - text: End-to-end business processes
+        url: /dynamics365/guidance/business-processes/overview
     - title: Try/Buy
       links: 
       - url: trial-setup.md
