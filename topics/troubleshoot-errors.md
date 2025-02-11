@@ -2,11 +2,11 @@
 title: Error handling and troubleshooting
 author: raybennett-msft
 description: This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 04/12/2024
+ms.date: 02/06/2025
 ms.custom: 
   - bap-template
 ms.topic: overview
-ms.author: bennettray
+ms.author: anvenkat
 ---
 
 # Error handling and troubleshooting
@@ -30,7 +30,7 @@ The following table describes the fields on the **Orchestration Step Results** t
 | Step | The step in the orchestration journey. If you select the value in this field, you're taken to the step result, where you can view results across all entities. |
 | Result | The result: either **Success** or **Failure**. |
 | Result Details | Any execution result value message that the step returned. |
-| Run Id | The Power Automate run ID. |
+| Run ID | The Power Automate run ID. |
 | Processed Record | The record that the step ran on. |
 
 ![Example of results on the Orchestration Step Results tab.](media/troubleshooting-002.png)
@@ -60,7 +60,7 @@ The following table describes the fields on the **Provider Inbound Errors** page
 | Error Status | The status of the error. You can deactivate an error so that it doesn't appear on this page. |
 | Provider | The provider that the error belongs to. |
 | Provider Message Handler | The message handler that failed. |
-| Message Id | An ID that is assigned to a message to uniquely identify it. |
+| Message ID | An ID that is assigned to a message to uniquely identify it. |
 | Error Message | The error message that was returned. |
 | Error Category | The category of the error. |
 | Run History URL | A link to the Power Automate flow that ran. |
@@ -87,7 +87,7 @@ The following table describes the fields on the **Provider Action Errors** page.
 
 ### Orchestration step errors
 
-The **Orchestration Step Errors** page shows orchestration steps that have failed across the system. You can use it to determine whether there is a systemic issue across runs. For more information about these errors, see the [Entity-specific orchestration step results](#entity-specific-orchestration-step-results) section earlier in this article.
+The **Orchestration Step Errors** page shows orchestration steps that have failed across the system. You can use it to determine whether there's a systemic issue across runs. For more information about these errors, see the [Entity-specific orchestration step results](#entity-specific-orchestration-step-results) section earlier in this article.
 
 ### Policy errors
 
@@ -123,6 +123,7 @@ If a call to Intelligent Order Management Provider Transformer fails, the best w
 
     ![Example of flow steps.](media/troubleshooting-010.png)
 
+
 ### Example errors
 
 The following table shows some examples of error messages and describes the suggested steps to fix the errors.
@@ -130,4 +131,25 @@ The following table shows some examples of error messages and describes the sugg
 | Error message | Suggested steps |
 |---|---|
 | Failed to retrieve a matching provider transformation record. | The provider ID must match an *active provider instance*, not a provider definition. The source object and destination object on the transformation must match what is shown in your call to Intelligent Order Management Provider Transformer. |
-| Field "field\_name" was not found on the table. | You're trying to access data that no value is provided for in the record. If data is optional, you must use **Record.FieldOrDefault** as a default value. |
+| Field "field\_name" wasn't found on the table. | You're trying to access data that no value is provided for in the record. If data is optional, you must use **Record.FieldOrDefault** as a default value. |
+
+## Reprocess orchestration errors
+
+If a sales order fails in an orchestration step, you can reprocess it from the failed step by using the **Reprocess** button on the Action Pane.
+
+![Screenshot that highlights the Reprocess button on the Action Pane.](media/iomreprocess.jpg)
+
+## Troubleshoot dual-write errors
+
+If a sales order or sales order lines fail while they are being processed through dual-write into finance and operations apps, the errors are shown in the following places:
+
+- The out-of-box provider action that is used to send an order to finance and operations apps is shown as **Failed** on the **Orchestration step results** tab. The result details show the error message from dual-write for order header failures.
+- If one or more sales order lines fail during dual-write processing, the resulting dual-write error message appears in a new **Sync Error** field on the sales order line in Dataverse. It's also available out of the box in the Intelligent Order Management user interface (UI).
+
+    ![Screenshot that highlights the Sync Error field.](media/iomdwerror.jpg)
+
+### Filter orders without lines in dual-write
+
+If a sales order doesn't have any sales order lines, the order is filtered from synchronization through dual-write to prevent errors in the downstream processing. The error message appears on the **Orchestration Step Results** tab in Intelligent Order Management.
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
