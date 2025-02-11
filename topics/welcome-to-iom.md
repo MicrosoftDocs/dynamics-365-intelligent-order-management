@@ -19,7 +19,7 @@ Welcome to Dynamics 365 Intelligent Order Management. We're delighted to offer y
 
 The [Intelligent Order Management overview video](https://www.youtube.com/watch?v=X73HzFPrBb0&feature=youtu.be) video is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyP4Y]
+> [!VIDEO d1b2c68f-4bc1-4fea-b4f1-03ab43d0dca0]
 
 ## Get started
 - [Intelligent Order Management website](https://dynamics.microsoft.com/intelligent-order-management/)
@@ -28,6 +28,6 @@ The [Intelligent Order Management overview video](https://www.youtube.com/watch?
 - [Intelligent Order Management overview video](https://www.youtube.com/watch?v=X73HzFPrBb0)
 
 ## Blogs and communities
-- [Intelligent Order Management Blog](https://community.dynamics.com/blogs/archive/?blogid=9750a36b-56e8-498d-83e8-8c0f61e08d8a&groupid=e4d5f019-32a2-4511-9d3b-533791132adb)
+- [Intelligent Order Management Blog](https://www.microsoft.com/dynamics-365/blog/business-leader/product/dynamics-365-intelligent-order-management/)
 - [Intelligent Order Management Community](https://community.dynamics.com/forums/thread/?partialUrl=dynamics-365-intelligent-order-management)
 - [Intelligent Order Management Forum](https://community.dynamics.com/forums/thread/?discussionforumid=020ad9c0-e36e-47e0-bcb0-408f88d0c5ef)
