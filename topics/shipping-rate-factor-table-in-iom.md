@@ -3,7 +3,7 @@ title: Shipping rate factor table overview
 description: This article explains the Shipping rate factor table.
 ms.author: anvenkat
 author: anush6121
-ms.date: 04/12/2024
+ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: how-to
