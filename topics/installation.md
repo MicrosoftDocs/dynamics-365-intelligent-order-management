@@ -1,8 +1,8 @@
 ---
 author: raybennett-msft
 description: This article describes how to create an environment and install Intelligent Order Management as a standalone application.
-ms.author: bennettray
-ms.date: 04/12/2024
+ms.author: anvenkat
+ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: conceptual

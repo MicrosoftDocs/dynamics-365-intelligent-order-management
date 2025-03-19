@@ -4,7 +4,7 @@ ms.author: anvenkat
 title: Policy-based fulfillment
 description: This article provides an overview of the settings and prerequisites that you should consider when you set up policy-based fulfillment in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 04/12/2024
+ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: how-to

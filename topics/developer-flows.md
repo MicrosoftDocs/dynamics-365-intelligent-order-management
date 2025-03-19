@@ -1,11 +1,11 @@
 ---
 author: raybennett-msft
 description: This article provides information about Intelligent Order Management Power Automate flows that you can use to develop your own custom solution.
-ms.date: 04/12/2024
+ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: conceptual
-ms.author: bennettray
+ms.author: anvenkat
 
 title: Dynamics 365 Intelligent Order Management Power Automate flows
 

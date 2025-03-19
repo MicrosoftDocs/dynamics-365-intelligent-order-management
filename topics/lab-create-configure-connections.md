@@ -1,7 +1,7 @@
 ---
 author: josaw1
 description: This topic describes the steps required to create and configure connections in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 04/12/2024
+ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: how-to
