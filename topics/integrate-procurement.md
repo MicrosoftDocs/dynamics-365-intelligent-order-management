@@ -2,7 +2,7 @@
 author: anvenkat
 description: This article describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 04/12/2024
+ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: conceptual

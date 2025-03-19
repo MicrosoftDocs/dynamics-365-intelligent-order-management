@@ -2,7 +2,7 @@
 title: Intelligent Order Management Insights reporting
 description: This article provides a full list of available Insights reports in Microsoft Dynamics 365 Intelligent Order Management.
 author: derekkwanpm
-ms.date: 04/12/2024
+ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: conceptual
