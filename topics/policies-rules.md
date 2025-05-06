@@ -4,7 +4,7 @@ description: This topic covers policy types and describes how to create a policy
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: josaw
 
 title: Policies and rules

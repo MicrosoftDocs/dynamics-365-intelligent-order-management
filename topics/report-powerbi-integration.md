@@ -4,7 +4,7 @@ description: This topic provides an overview of the reporting dashboards availab
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: josaw
 
 title: Reporting and Power BI integration

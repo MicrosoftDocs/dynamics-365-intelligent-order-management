@@ -4,7 +4,7 @@ description: This topic provides instructions on how to customize and out-of-box
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: josaw
 
 title: Customize an out-of-box provider

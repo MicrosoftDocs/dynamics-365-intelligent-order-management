@@ -5,7 +5,7 @@ ms.author: josaw
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 title: Blogs and communities
 ---
 
