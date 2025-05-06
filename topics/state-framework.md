@@ -4,7 +4,7 @@ description: This article describes the state framework architecture in Microsof
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: anvenkat
 
 title: State framework architecture
