@@ -4,7 +4,7 @@ description: This page provides a list of the help topics and other resources fo
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 search.audienceType: EndUser
 author: johnmichalak
 ms.author: johnmichalak
