@@ -5,7 +5,7 @@ description: This article describes the Admin home workspace in Microsoft Dynami
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: sumanic
 ---
 

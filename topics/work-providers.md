@@ -5,7 +5,7 @@ description: This article provides an overview of the process of working with pr
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: sumanic
 
 title: Work with providers

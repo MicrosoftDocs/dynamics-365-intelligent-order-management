@@ -4,7 +4,7 @@ description: This article provides information about Intelligent Order Managemen
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: anvenkat
 
 title: Dynamics 365 Intelligent Order Management Power Automate flows

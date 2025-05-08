@@ -5,7 +5,7 @@ ms.service: dynamics-365-intelligent-order-management
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: anvenkat
 
 title: Integrate Supply Chain Management procurement with Intelligent Order Management

@@ -6,7 +6,7 @@ author: anvenkat
 ms.author: anvenkat
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Sales order form denormalization
