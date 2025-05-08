@@ -4,7 +4,7 @@ description: This topic provides an overview of globalization options for Dynami
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: josaw
 
 title: Globalization

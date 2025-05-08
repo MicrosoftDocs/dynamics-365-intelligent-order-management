@@ -4,7 +4,7 @@ description: This topic provides information about how to enable the use of Bing
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: josaw
 
 title: Enable Bing Maps for your environment

@@ -4,7 +4,7 @@ description: This topic provides an overview of the data management systems in D
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: josaw
 
 title: Data management
