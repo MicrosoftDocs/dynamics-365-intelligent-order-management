@@ -5,7 +5,7 @@ ms.author: anvenkat
 ms.date: 08/20/2024
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 
 title: Get trial licenses for Intelligent Order Management
 ---

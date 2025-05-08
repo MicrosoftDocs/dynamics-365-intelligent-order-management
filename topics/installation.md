@@ -5,7 +5,7 @@ ms.author: anvenkat
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 
 title: Install Dynamics 365 Intelligent Order Management
 

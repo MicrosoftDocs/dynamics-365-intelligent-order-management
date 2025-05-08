@@ -4,7 +4,7 @@ description: This topic provides information about how to deploy Dynamics 365 In
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: josaw
 
 title: Deployment

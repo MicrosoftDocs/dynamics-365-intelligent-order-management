@@ -4,7 +4,7 @@ description: This topic provides information about how to set up a Dynamics 365 
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: josaw
 
 title: Set up an environment

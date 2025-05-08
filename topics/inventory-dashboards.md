@@ -4,7 +4,7 @@ description: This topic provides an overview of inventory-related dashboards in 
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: josaw
 
 title: Inventory dashboards

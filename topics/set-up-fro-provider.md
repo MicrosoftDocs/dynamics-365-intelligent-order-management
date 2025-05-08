@@ -5,7 +5,7 @@ description: This article describes how to set up the Fulfillment and Returns Op
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 author: anvenkat
 ms.author: anvenkat
 
