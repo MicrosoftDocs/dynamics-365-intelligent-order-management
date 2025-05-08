@@ -4,7 +4,7 @@ description: This topic describes the internal external ID mapping in Dynamics 3
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: article
 ms.author: sumanic
 
 title: Internal external ID mapping
