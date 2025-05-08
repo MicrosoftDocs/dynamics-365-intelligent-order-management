@@ -4,7 +4,7 @@ description: This topic can help troubleshoot issues that occur during sign-up f
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.author: josaw
 
 title: Troubleshoot trial sign-up issues
