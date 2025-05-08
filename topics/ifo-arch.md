@@ -6,7 +6,7 @@ ms.custom:
   - bap-template
 ms.author: anvenkat
 author: anush6121
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Intelligent Fulfillment Optimization
