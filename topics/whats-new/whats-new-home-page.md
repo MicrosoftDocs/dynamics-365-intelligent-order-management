@@ -19,7 +19,7 @@ This section contains a table that lists the releases when available.
 
 | Version | Description | Date |
 |---------|-------------|------|
-| 1.1.1.541 | <ul><li>Update logic instance and workflow upsert to support ALM.<li>Fix issues related to inbound provider errors. | April 2025 |
+| 1.1.1.541 | <ul><li>Update logic instance and workflow upsert to support ALM.<li>Fix issues related to inbound provider errors. | May 2025 |
 | 1.1.1.461 | <ul><li>Allow you to turn off the state framework completely. <li>Add business rule to show the provider activation error logs in failed provider instance activation page.<li>Enable changing states associated with the custom business events in configuration.| March 2025 |
 | 1.1.1.449 | <ul><li>Allow configuration for Send to finance and operations step to be successful even when one or more order lines fail to sync to finance and operations apps. | Feb 2025 |
 | 1.1.1.431 | <ul><li>Improve Dual-write error handling by surfacing the dual-write error at the orderline entity in Microsoft Dynamics 365 Intelligent Order Management.</li><li>Improve batch handling of dual-write order lines, so that the failure of some lines doesn't cause the whole batch to fail.</li><li>Allow multiple provider instances with one active instance.</li><li>Update the orchestration logic to fix the **Orchestrate** button for manual bulk orchestration on the list page.</li><li>Filter out orders that don't have any order lines from dual-write to finance and operations apps.</li></ul> | December 2024 |
