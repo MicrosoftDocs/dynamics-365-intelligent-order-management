@@ -67,6 +67,14 @@ To configure Intelligent Order Management, you first need to create a Dataverse 
 2. In the search box in the top-right corner, enter **Power Automate Management**.
 3. Select **+** next to **Power Automate Management**. When prompted to sign in, use the same credentials you used to sign in to Intelligent Order Management.
 
+### Create HTTP with Microsoft Entra ID (preauthorized) connection
+1.	On the **Data > Connections** page, select **New connection**.
+2.	In the search box in the top-right corner, enter **Http with Microsoft Entra**.
+3.	Select **+** next to **HTTP with Microsoft Entra ID (preauthorized)**.
+4.	Select **Connect directly (cloud-services)**. For **Base Resource URL**, enter the URL of your Dataverse environment, similar to **https://orgurl.crm.dynamics.com**. For **Microsoft Entra ID Resource URI (Application ID URI)  **, enter the same URL of your Dataverse environment.
+5.	When prompted to sign in, use the same credentials you used to sign in to Intelligent Order Management.
+
+
 ## Set up platform connection references
 
 After you create your connections, you need to configure them.
