@@ -1,22 +1,27 @@
 ---
+title: Fulfillment entity relationships in Intelligent Order Management
 author: anvenkat
-description: This article describes entity relationships for out of box entities
+description: Learn about entity relationships for out-of-box entities in Microsoft Dynamics 363 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/01/2025
+ms.date: 10/02/2025
 ms.custom: 
   - bap-template
-ms.topic: article
+ms.topic: overview
 ms.author: anvenkat
 
-## Fulfillment Entity Relationships in D365 IOM.
+# Fulfillment entity relationships in Intelligent Order Management
+
+[!include [banner](includes/banner.md)]
+
+This article explains entity relationships for out-of-box entities in Microsoft Dynamics 363 Intelligent Order Management.
 
 In Dynamics 365 Intelligent Order Management, order fulfillment is modeled through a set of interconnected entities that represent the customer order, its line items, fulfillment instructions, and tracking updates. These relationships enable traceability, support partial shipments, and provide visibility into fulfillment progress across systems.
 
 The following table outlines the key entities involved in the fulfillment lifecycle, along with their relationship cardinality and foreign key mappings.
 
-### Entity Relationship Table
+## Entity relationship table
 
-| Parent Entity ("One")         | Child Entity ("Many")           | Foreign Key in Child Entity           | Cardinality | Description                                                                 |
+| Parent entity ("One")         | Child entity ("Many")           | Foreign key in child entity           | Cardinality | Description                                                                 |
 |-------------------------------|----------------------------------|----------------------------------------|-------------|-----------------------------------------------------------------------------|
 | `Order`                       | `Order Product`                  | `salesorderid`                         | 1:N         | One order can contain multiple products.                                   |
 | `Order`                       | `Fulfillment Order`              | `salesorderid`                         | 1:N         | One order can generate multiple fulfillment orders.                         |
@@ -26,4 +31,4 @@ The following table outlines the key entities involved in the fulfillment lifecy
 | `Fulfillment Tracking`       | `Fulfillment Tracking Line`      | `fulfillmenttrackingid`                | 1:N         | One tracking header can have multiple line-level updates.                   |
 | `Fulfillment Order Product`  | `Fulfillment Tracking Line`      | `fulfillmentorderproductid`            | 1:N         | Each fulfillment order product can be tracked across multiple tracking lines. |
 
-This schema supports extensible fulfillment workflows, enabling systems to monitor progress, capture events, and reconcile fulfillment status back to the original order and product lines.
+This schema supports extensible fulfillment workflows that enable systems to monitor progress, capture events, and reconcile fulfillment status back to the original order and product lines.
