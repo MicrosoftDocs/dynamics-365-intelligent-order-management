@@ -145,6 +145,8 @@
         href: shipping-rate-factor-table-in-iom.md
     - name: Manage subscription orders
       href: subscription-orders.md
+    - name: Fulfillment entity relationships in Intelligent Order Management
+      href: fulfillment-entity-relationships.md
   - name: Finance + Operations integration solution
     href: finops-integration-scenarios.md
   - name: Sales order denormalization
