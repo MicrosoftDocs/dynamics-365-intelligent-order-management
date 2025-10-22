@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes the step by step walkthrough of Application Lifecyle Management preview.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 10/21/2025
 ms.custom: 
   - bap-template
 ms.topic: overview
@@ -20,74 +20,64 @@ This guide provides a step-by-step walkthrough for enabling and using the **Appl
 ---
 
 ## Prerequisites
-- Access to **Dynamics 365 Intelligent Order Management** environment.
-- Admin permissions for **Feature Management** and **Power Platform**.
-- Installed **Power Automate** connectors for IOM.
-
+Access to **Dynamics 365 Intelligent Order Management** source and target environments.
+ 
 ---
-
-## Step 1: Activate the ALM Preview Feature
-1. Sign in to your **Dynamics 365 environment**.
-2. Navigate to **Feature Management**.
-3. Search for **Application Lifecycle Management (ALM)**.
-4. Click **Enable** for the ALM preview feature.
-
-
-
+ 
+## Step 1: Activate the ALM Preview Feature in the source environment
+1. Sign in to your **Dynamics 365 environment** and the **Intelligent Order Management** app in the source environment.
+1. From the landing page, click **Settings** > **Configure**.
+1. Then click **General** > **Manage**.
+1. Then click **Feature version controls** > **Manage**.
+1. Find the setting for **Application Lifecycle Management Feature (preview)**.
+1. Enable the feature and pick a name for the export solution.
+ 
+ 
 ---
-
-## Step 2: Open IOM and Access Orchestration Flows
-1. Go to **Intelligent Order Management → Orchestration Designer**.
+ 
+## Step 2: Create the solution for export
+1. From the Power Apps Maker Portal, open the source environment.
+1. Open the solution list.
+1. Create a solution with the name you used in the previous configuration.
+ 
+---
+ 
+## Step 3: Open IOM and Access Orchestration Flows
+1. Sign in to your **Dynamics 365 environment** and the **Intelligent Order Management** app in the source environment.
+1. Go to **Intelligent Order Management → Orchestrations → Flows**.
 2. Select the orchestration flow you want to manage.
-3. Click **Edit** to open the flow details.
-
-
-
+ 
 ---
-
-## Step 3: Add Flow to a Solution
-1. In the flow details pane, click **Add to Solution**.
-2. Choose an existing solution or click **New Solution**.
-   - Enter **Name** and **Publisher** if creating a new solution.
-3. Confirm addition.
-
-
-
+ 
+## Step 4: Add Flow to a Solution
+1. In the command bar, click **Add to Solution**.
+2. Confirm addition.
+ 
 ---
-
-## Step 4: Export the Solution
+ 
+## Step 5: Export the Solution
 1. Navigate to **Power Platform → Solutions**.
 2. Select the solution containing your orchestration flow.
 3. Click **Export**.
-   - Choose **Managed** or **Unmanaged**.
+   - Choose **Managed**.
 4. Download the exported package.
-
-
-
+ 
+ 
 ---
-
-## Step 5: Import to Target Environment
+ 
+## Step 6: Import to Target Environment
 1. Switch to your **target environment**.
 2. Go to **Solutions → Import**.
-3. Upload the exported package.
-4. Validate and complete the import.
-
-
-
+3. Import the solution.
+ 
+ 
 ---
-
-## Step 6: Validate and Publish
-1. Open the solution in the target environment.
-2. Confirm the orchestration flow appears under **IOM → Orchestration Designer**.
-3. Click **Publish** to activate the flow.
+ 
+## Step 7: Validate and Publish
+1. Open IOM in the target environment.
+1. Confirm the Providers are created and activate them.
+1. Confirm the Policies are created and publish them.
+2. Confirm the Orchestration appears under  **Intelligent Order Management → Orchestrations → Flows**.
+3. Click **Publish** to activate the orchestration.
 4. Test with sample orders.
-
-
-
----
-
-## Step 7: Monitor and Troubleshoot
-- Use the **ALM dashboard** to:
-  - Check deployment status.
-  - Review error messages.
-  - Validate workflow IDs and environment variables.
+ 
