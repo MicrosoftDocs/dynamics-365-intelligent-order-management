@@ -186,7 +186,11 @@
   - name: Extensibility
     href: extensibility.md
   - name: Application lifecycle management
-    href: alm.md
+    items:
+    - name: Application lifecycle management overview
+      href: alm.md
+    - name: Application Lifecycle Management feature walkthrough
+      href: application-lifecycle-management.md
   - name: Globalization
     href: globalization.md
   - name: Get support
