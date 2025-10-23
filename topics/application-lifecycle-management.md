@@ -1,18 +1,18 @@
 ---
-author: sumanic
+title: Application Lifecycle Management feature walkthrough
 description: This article describes the step by step walkthrough of Application Lifecyle Management preview.
+author: sumanic
+ms.author: anvenkat
+ms.reviewer: johnmichalak
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 10/21/2025
 ms.custom: 
   - bap-template
 ms.topic: overview
-ms.author: anvenkat
-title: IOM application life cycle management.
-
 ---
 
 
-# Dynamics 365 IOM Application Lifecycle Management (ALM) – Preview Feature Walkthrough
+# Application Lifecycle Management feature walkthrough
 
 ## Overview
 This guide provides a step-by-step walkthrough for enabling and using the **Application Lifecycle Management (ALM)** preview feature in **Dynamics 365 Intelligent Order Management (IOM)**. It is based on the ALM demonstration video and includes instructions for activating the feature, adding orchestration flows to a solution, and deploying across environments.
