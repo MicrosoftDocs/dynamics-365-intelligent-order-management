@@ -189,7 +189,7 @@
     items:
     - name: Application lifecycle management overview
       href: alm.md
-    - name: Application Lifecycle Management feature walkthrough
+    - name: Application Lifecycle Management feature walkthrough (preview)
       href: application-lifecycle-management.md
   - name: Globalization
     href: globalization.md
