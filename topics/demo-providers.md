@@ -40,7 +40,7 @@ Before you can start to use demo providers, you must set them up. The setup proc
 
 ### Activate connections
 
-To activate connections, follow these steps.
+To activate connections, follow these steps:
 
 1. On the Intelligent Order Management home page, select **Settings**, and then select **Initial Connections**.
 1. Open each connection, wait for it to be established, and then select **Save and close**. (A green check mark indicates that a connection has been established.)
@@ -48,21 +48,21 @@ To activate connections, follow these steps.
 
 #### Change the fulfillment process policy
 
-To change the fulfillment process policy, follow these steps.
+To change the fulfillment process policy, follow these steps:
 
 1. Go to **Settings \> General app settings \> Order handling preferences**.
 1. In the **Fulfillment Process policy** section, select **Fulfillment Order Creation** to change the policy from **Inventory Check and Fulfillment Order Creation**.
 
 ### Publish policies
 
-To publish policies, follow these steps.
+To publish policies, follow these steps:
 
 1. In the left navigation pane, under **Orchestration**, select **Policies**.
 1. Select and publish each policy in the list.
 
 ### Add providers
 
-To add providers, follow these steps.
+To add providers, follow these steps:
 
 1. In the left navigation pane, under **Providers**, select **Library**.
 1. Select and activate the **Internal Application Service**, **Demo Order Fulfillment**, **Demo Order Intake**, and **Demo Order Inventory** providers.
@@ -80,7 +80,7 @@ After you activate the providers, changes take approximately six minutes to go i
 
 ### Publish a demo orchestration flow
 
-To publish a demo orchestration flow, follow these steps.
+To publish a demo orchestration flow, follow these steps:
 
 1. Go to **Orchestrations \> Flows**.
 1. Select **Demo Order Journey** to open it.
@@ -99,7 +99,7 @@ After the orchestration flow is published, the demo providers are ready to use.
 
 First, open the e-commerce demo app, and play the part of a consumer as you place an order in a simulated e-commerce store. The order will then flow into Intelligent Order Management, where you can view its status and details in the sales and fulfillment order tables.
 
-To open the e-commerce demo app, follow these steps.
+To open the e-commerce demo app, follow these steps:
 
 1. In the left navigation pane, select the area switcher at the bottom left, and then select **Demo Providers**.
 1. On the **Demo Providers** page, under **Ecommerce Store - Demo**, select **Launch Demo**. The e-commerce demo site appears.
@@ -114,7 +114,7 @@ To open the e-commerce demo app, follow these steps.
 
 After the order is placed, it can be verified in the Intelligent Order Management sales table.
 
-To verify the order, follow these steps.
+To verify the order, follow these steps:
 
 1. In the left navigation pane, select the area switcher at the bottom left, and then select **Sales orders**.
 1. The order that you created appears at the top of the list. Select the order to open it and review the order details.
@@ -125,7 +125,7 @@ When Intelligent Order Management receives an order, it runs an orchestration fl
 
 Next, open the demo fulfillment provider app to fulfill the order.
 
-To open the demo fulfillment provider app, follow these steps.
+To open the demo fulfillment provider app, follow these steps:
 
 1. In the left navigation pane, select the area switcher at the bottom left, and then select **Demo Providers**.
 1. On the **Demo Providers** page, under **Fulfillment Center - Demo**, select **Launch Demo**.
@@ -167,7 +167,7 @@ Select **Finish** to close the wizard. Then return to Intelligent Order Manageme
 
 The demo inventory app is where you can view the information about different inventories and their respective products and warehouses. After the order is shipped to the fulfillment center, the quantity of the product is decreased according to the sales order.
 
-To open the demo inventory app, follow these steps.
+To open the demo inventory app, follow these steps:
 
 1. In the left navigation pane, select the area switcher at the bottom left, and then select **Demo Providers**.
 1. On the **Demo Providers** page, under **Inventory System - Demo**, select **Launch Demo**.

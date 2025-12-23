@@ -22,7 +22,7 @@ This topic describes the steps required to create a RequestBin custom connector 
 
 ## Create RequestBin account
 
-To create a RequestBin account, follow these steps.
+To create a RequestBin account, follow these steps:
 
 1. Go to RequestBin.com and select **Create Request Bin**.
 1. You can choose to create a public bin, but if you want to keep your request bin long-term, sign in with one of the suggested authentication methods.
@@ -30,7 +30,7 @@ To create a RequestBin account, follow these steps.
 
 ## Create custom connector
 
-To create a custom connector, follow these steps.
+To create a custom connector, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
 1. Select **New \> Custom connector** and name it "RequestBin".

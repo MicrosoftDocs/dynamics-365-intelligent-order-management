@@ -33,7 +33,7 @@ Manual order orchestration supports the following features:
 
 ## Create a new manual order and send it through orchestration
 
-To create a new manual order and send it through orchestration, follow these steps.
+To create a new manual order and send it through orchestration, follow these steps:
 
 1. On the **Sales** page, select **New**.
 1. On the **Order** page, enter values for the mandatory fields, and then select **Save**.
@@ -63,7 +63,7 @@ The following table describes some of the new page fields.
 
 ### Bulk-update Fulfillment source values on the Order products page
 
-To do a bulk update of **Fulfillment source** values on the **Order products** page, follow these steps.
+To do a bulk update of **Fulfillment source** values on the **Order products** page, follow these steps:
 
 1. In the left navigation pane, select **Intelligent Order Management \> Order types \> Orders \> Order Products**.
 1. Apply a filter to the **Order product** rows that you want to change, and then select **Edit**.
@@ -71,14 +71,14 @@ To do a bulk update of **Fulfillment source** values on the **Order products** p
 
 ## Manually cancel rows on the Order products page
 
-To manually cancel one or more rows on the **Order products** page, follow these steps.
+To manually cancel one or more rows on the **Order products** page, follow these steps:
 
 1. Go to **Sales order**, and then select the **Order product** rows that you want to cancel.
 1. Select **Cancel**. The status of the selected **Order product** rows is changed to **Canceled**. Any **Order product** rows that are already in fulfillment or that have already been delivered will be locked for editing as defined by the order state.
 
 ## Determine when an account is on credit hold
 
-To determine when a customer account is on credit hold, follow these steps.
+To determine when a customer account is on credit hold, follow these steps:
 
 1. Go to **Account \> Accounting tab \> On hold status**. 
 1. If the **On hold status** field is set to any value other than **No**, the customer is on credit hold.
@@ -89,13 +89,13 @@ As part of the sales order save operation, a check is made against the **On hold
 
 The Simple substitution feature lets you substitute and maintain products in the product master data, and reference substitute products during order creation. This feature can be turned on when you must substitute one product with another product for a limited period.
 
-To turn on the Simple substitution feature, follow these steps.
+To turn on the Simple substitution feature, follow these steps:
 
 1. Go to **Settings \> General App Settings \> Order handling preferences**.
 1. Select **Manage**.
 1. Select **Simple Substitution**, and then set the option to **On**.
 
-To maintain the substitute product in **Products**, follow these steps.
+To maintain the substitute product in **Products**, follow these steps:
 
 1. Go to **Demand Planning \> Products \> Additional Details \> Product Relationships**.
 1. Select **New Product Relationship**.
@@ -120,7 +120,7 @@ An on-hand inventory check is available on both the **Sales order products** pag
 
 The Clone order feature supports cloning existing sales orders so that they can be reordered.
 
-To clone an existing sales order, follow these steps.
+To clone an existing sales order, follow these steps:
 
 1. On the **Order listing** page, select the order to clone.
 1. On the top menu, select **Clone**. The following message appears: "Cloning in progress. Please wait."

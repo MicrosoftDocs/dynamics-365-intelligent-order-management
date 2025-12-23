@@ -19,7 +19,7 @@ title: Enable Bing Maps for your environment
 
 Dynamics 365 Intelligent Order Management can display information about fulfillment order source and destination locations using Bing Maps. Enabling Bing Maps for your environment is typically done when you deploy the environment. 
 
-To enable Bing Maps for your environment, follow these steps.
+To enable Bing Maps for your environment, follow these steps:
 
 1.	Go to **Settings** > **Advanced Settings**.
 2.	Select **Settings** > **Administration** > **System Settings**.

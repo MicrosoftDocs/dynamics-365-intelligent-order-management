@@ -163,7 +163,7 @@ Within a single business, fulfillment optimization can vary, based on the type o
 
 #### Set up a fulfillment strategy
 
-To define a strategy, follow these steps.
+To define a strategy, follow these steps:
 
 1. On the **Fulfillment settings** page, under **Strategies**, select **Manage**.
 1. Select **New**. 

@@ -29,7 +29,7 @@ This setup will enable order synchronization between Intelligent Order Managemen
 - Intelligent Order Management must be installed in the same Dataverse instance that Finance + Operations is installed in.
 - Mappings that are associated with dual-write must be enabled in Intelligent Order Management.
 
-    To enable mappings that are associated with dual-write, follow these steps.
+    To enable mappings that are associated with dual-write, follow these steps:
 
     1. In Finance + Operations, go to **Workspaces \> Data management \> Dual-write**.
     1. Set the dual-write mappings to enable synchronization from Intelligent Order Management to Finance + Operations. Order mapping filters must be added to delay order synchronization to Finance + Operations when an order isn't ready to be synced.
@@ -75,7 +75,7 @@ This setup will enable order synchronization between Intelligent Order Managemen
 
 ## Set up the provider
 
-To set up the Finance + Operations provider, follow these steps.
+To set up the Finance + Operations provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers \> Catalog**.
 1. On the **Microsoft finance and operations apps** tile, select **Add Provider**.

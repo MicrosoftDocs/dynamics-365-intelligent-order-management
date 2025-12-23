@@ -84,7 +84,7 @@ When you delete a provider instance, the system removes any configuration you co
 
 Before you delete a provider instance, ensure that you aren't using the provider in any of your orchestration flows.
 
-To delete a provider instance, follow these steps.
+To delete a provider instance, follow these steps:
 
 1. Remove any related provider actions from your orchestration flows. Dependent flows will break if you delete a provider without removing the related steps.
 1. Go to **Provider \> Installed**.

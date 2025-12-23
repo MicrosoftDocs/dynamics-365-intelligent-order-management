@@ -47,7 +47,7 @@ Support is available for the following [support plans](https://www.microsoft.com
 
 ### Create a support request
 
-To create a support request, follow these steps.
+To create a support request, follow these steps:
 
 1. Sign in to [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com) by using your admin credentials.
 1. Select **Help + support** \> **New support request**.
