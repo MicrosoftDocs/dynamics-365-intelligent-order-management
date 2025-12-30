@@ -42,7 +42,7 @@ A policy consists of five fields, as shown in the following table.
 
 ## Create a new policy
 
-To create a new policy, follow these steps.
+To create a new policy, follow these steps:
 
 1.	Go to **Orchestration** > **Policies**.  
 2.	Select **New** to initiate the policy creation process.
@@ -85,7 +85,7 @@ The supported operators differentiate each field type, as shown in the following
 
 ## Create a rule
 
-To create a new example rule, follow these steps.
+To create a new example rule, follow these steps:
 
 1.	Go to **Orchestration** > **Policies**.
 1.	Select a policy record (for example, “Order line validations extended”).

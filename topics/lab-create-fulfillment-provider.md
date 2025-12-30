@@ -19,7 +19,7 @@ This topic describes the steps required to create a fulfillment provider in Micr
 
 ## Create new provider definition
 
-To create new provider definition, follow these steps.
+To create new provider definition, follow these steps:
 
 1. Go to **Providers \> Catalog**.
 1. Select **New Provider Definition**.
@@ -32,7 +32,7 @@ To create new provider definition, follow these steps.
 
 ## Add provider definition to solution
 
-To add a provider definition to the solution, follow these steps.
+To add a provider definition to the solution, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition**.
@@ -40,7 +40,7 @@ To add a provider definition to the solution, follow these steps.
 
 ## Create provider action to send a fulfillment payload to Outlook
 
-To create a provider action to send a fulfillment payload to Outlook, follow these steps.
+To create a provider action to send a fulfillment payload to Outlook, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to **Solutions**.
 1. Open the **Default Solution**.
@@ -181,7 +181,7 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 
 ## Add a provider definition logic definition to the Outlook provider definition
 
-To add a provider definition logic definition to the Outlook provider definition, follow these steps.
+To add a provider definition logic definition to the Outlook provider definition, follow these steps:
 
 1. Go to **Providers \> Catalog**.
 1. Select the newly-created **IOMLabFulfillmentProvider**.
@@ -207,7 +207,7 @@ To add a provider definition logic definition to the Outlook provider definition
 
 ## Add a provider definition logic definition to the Outlook IOMLabProviders solution
 
-To add a provider definition logic definition to the Outlook IOMLabProviders solution, follow these steps.
+To add a provider definition logic definition to the Outlook IOMLabProviders solution, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Logic Definition**.
@@ -215,7 +215,7 @@ To add a provider definition logic definition to the Outlook IOMLabProviders sol
 
 ## Add provider definition connection references to IOMLabProviders solution
 
-To add provider definition connection references to the IOMLabProviders solution, follow these steps.
+To add provider definition connection references to the IOMLabProviders solution, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Connection Reference**.
@@ -223,7 +223,7 @@ To add provider definition connection references to the IOMLabProviders solution
 
 ## Create a provider action to send a fulfillment payload to RequestBin
 
-To create a provider action to send a fulfillment payload to RequestBin, follow these steps.
+To create a provider action to send a fulfillment payload to RequestBin, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to **Solutions**.
 1. Open the **Default Solution**.
@@ -344,7 +344,7 @@ To create a provider action to send a fulfillment payload to RequestBin, follow 
 
 ## Add provider definition logic definition to the provider definition (RequestBin)
 
-To add a provider definition logic definition to the RequestBin provider definition, follow these steps.
+To add a provider definition logic definition to the RequestBin provider definition, follow these steps:
 
 1. Go to **Providers \> Catalog**.
 1. Select the newly-created **IOMLabFulfillmentProvider**.
@@ -366,7 +366,7 @@ To add a provider definition logic definition to the RequestBin provider definit
 
 ## Add provider definition parameter to the provider definition
 
-To add a provider definition parameter to the provider definition, follow these steps.
+To add a provider definition parameter to the provider definition, follow these steps:
 
 1. Select **Parameters**. 
 1. Select **+ New IOM Provider Definition Parameter**.
@@ -380,7 +380,7 @@ To add a provider definition parameter to the provider definition, follow these 
 
 ## Add provider definition logic definition to IOMLabProviders solution (RequestBin)
 
-To add a provider definition logic definition to the RequestBin IOMLabProviders solution, follow these steps.
+To add a provider definition logic definition to the RequestBin IOMLabProviders solution, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Logic Definition**.
@@ -388,7 +388,7 @@ To add a provider definition logic definition to the RequestBin IOMLabProviders 
 
 ## Add provider definition connection reference to IOMLabProviders solution
 
-To add a provider definition connection reference to the IOMLabProviders solution, follow these steps.
+To add a provider definition connection reference to the IOMLabProviders solution, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Connection Reference**.
@@ -396,7 +396,7 @@ To add a provider definition connection reference to the IOMLabProviders solutio
 
 ## Add provider definition parameter to IOMLabProviders solution
 
-To add a provider definition parameter to the IOMLabProviders solution, follow these steps.
+To add a provider definition parameter to the IOMLabProviders solution, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Parameter**.

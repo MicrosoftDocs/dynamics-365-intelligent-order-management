@@ -28,7 +28,7 @@ To use the Inventory Visibility provider in orchestration, you must first instal
 > [!NOTE]
 > If you're a Dynamics 365 Supply Chain Management customer and want to use the Inventory Visibility add-in, see [Inventory Visibility tips](/dynamics365/supply-chain/inventory/inventory-visibility-tips).
 
-To validate and update the Inventory Visibility add-in configurations, follow these steps.
+To validate and update the Inventory Visibility add-in configurations, follow these steps:
 
 1. Go to **Inventory Visibility \> Index And Reservations** in the site map.
 1. Confirm that the following tabs appear on the page:
@@ -131,7 +131,7 @@ After you've completed the preceding validations and configuration updates, Inte
 > - The Inventory Visibility provider can be used to connect both to the inventory service that's available as part of Intelligent Order Management and to a Dynamics 365 Finance Inventory Visibility instance to soft reserve or update inventory upon shipment or receipt at returns.
 > - The upload capability that uses Azure Blob Storage is exclusive to Intelligent Order Management and can only be used to upload an instance of the Intelligent Order Management Inventory service.
 
-To set up the provider, follow these steps.
+To set up the provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers \> Library**.
 1. On the **Dynamics 365 Inventory Visibility** tile, select **Select**.

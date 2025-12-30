@@ -105,7 +105,7 @@ If no record is found in the **State Transition** table for the business event t
 
 ### Add a new state and transition
 
-To add a new state and transition, follow these steps.
+To add a new state and transition, follow these steps:
 
 1. Add a new state definition.
 1. Add a new state definition reason, if it's required.

@@ -27,7 +27,7 @@ The second trial license that you need is the Dynamics 365 Intelligent Order Man
 
 ## Sign up for the trial licenses
 
-To sign up for the trial licenses, follow these steps.
+To sign up for the trial licenses, follow these steps:
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 1. In the left navigation, select **Billing \> Purchase services**.
@@ -47,7 +47,7 @@ To sign up for the trial licenses, follow these steps.
 
 ## Assign the Dynamics 365 Intelligent Order Management USL trial license to a user
 
-To assign the Dynamics 365 Intelligent Order Management USL trial license to a user, follow these steps.
+To assign the Dynamics 365 Intelligent Order Management USL trial license to a user, follow these steps:
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 1. In the left navigation, select **Billing \> Licenses**.
