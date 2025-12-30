@@ -27,7 +27,7 @@ To set up the Uber Freight provider, you must have an Uber Freight development a
 
 ## Set up the provider
 
-To set up the provider, follow these steps.
+To set up the provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers \> Catalog**.
 2. On the **Uber Freight** tile, select **Add Provider**.

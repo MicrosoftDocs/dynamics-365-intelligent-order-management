@@ -23,7 +23,7 @@ When the timeline is enabled on the **Sales order** or **Fulfillment order** pag
 
 ## Enable timeline
 
-To enable the timeline, follow these steps.
+To enable the timeline, follow these steps:
 
 1.	Go to **Settings** > **Advanced Settings**. 
 2.	Expand **Settings**. 

@@ -61,7 +61,7 @@ You can add multiple calculated measures to calculate multiple ATP quantities. H
 > [!NOTE]
 > A calculated measure is a composition of physical measures. A calculated measure formula can include only physical measures without duplicates. It can't include calculated measures.
 
-To define the calculated measure for the ATP settings, follow these steps.
+To define the calculated measure for the ATP settings, follow these steps:
 
 1. Go to **Settings**.
 1. In the left navigation, under **Inventory settings**, select **Index and Reservation**.
