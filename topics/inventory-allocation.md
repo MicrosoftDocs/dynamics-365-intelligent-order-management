@@ -67,7 +67,7 @@ Before you configure settings for the Inventory Visibility add-in inventory allo
 
 ### Turn on the inventory allocation feature
 
-To turn on the inventory allocation feature in Intelligent Order Management, follow these steps.
+To turn on the inventory allocation feature in Intelligent Order Management, follow these steps:
 
 1. Go to **Settings**.
 1. Select **Index and Reservation**.
@@ -77,7 +77,7 @@ To turn on the inventory allocation feature in Intelligent Order Management, fol
 
 ### Enable a product for allocation
 
-To enable a product for allocation in Intelligent Order Management, follow these steps.
+To enable a product for allocation in Intelligent Order Management, follow these steps:
 
 1. Go to **Products**, and open the product.
 1. On the **Additional Details** tab, in the **Inventory** section, in the **Allows Inventory Allocation** field, select **Yes**.
@@ -130,7 +130,7 @@ To use allocation, you must set up the available-to-allocate calculated measure 
 
 In the current release, a maximum of two allocation group names can be set and will be extended to allocation groups. The groups have a hierarchy.
 
-To set up the allocation groups, follow these steps.
+To set up the allocation groups, follow these steps:
 
 1. Go to **Settings**.
 1. Select **Index and Reservation**.
@@ -142,7 +142,7 @@ For example, you use two group names, and set them to **channel** and **customer
 
 To be able to call groups from Intelligent Order Management order orchestration flows, you must map allocation groups to a predefined list of allocation groups.
 
-To map allocation groups, follow these steps.
+To map allocation groups, follow these steps:
 
 1. Go to **Settings**.
 1. Go to **Index and Reservations**.

@@ -65,7 +65,7 @@ The following table lists other available actions and elements.
 
 ## Create a new orchestration flow
 
-To create an orchestration flow, follow these steps.
+To create an orchestration flow, follow these steps:
 
 1. Go to **Orchestration** \> **Flows**.
 1. Select **New** to initiate the process for orchestration flow creation. The orchestration flow designer canvas is opened.

@@ -29,7 +29,7 @@ For more information, see [Email marketing overview](/dynamics365/marketing/prep
 
 ### Enable the enhanced email template editor feature
 
-To enable the enhanced email template editor feature, follow these steps.
+To enable the enhanced email template editor feature, follow these steps:
 
 1. Sign in to the [Power Apps portals admin center](/power-apps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center) for your environment. 
 1. Go to **Solutions \> Default Solution**, and ensure that **Solution preview on** is turned on.
@@ -71,7 +71,7 @@ Predefined tokens are provided out of the box to support the three standard temp
 
 ### Copy and create a new order confirmation template
 
-To copy and create a new order confirmation template, follow these steps.
+To copy and create a new order confirmation template, follow these steps:
 
 1. Go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**, and open the order confirmation template.
 1. Select **\</\> HTML** in the upper right, and then copy the HTML content from the **HTML** window.
@@ -101,7 +101,7 @@ To send emails through the orchestration flow, you must first activate the Dynam
 
 #### Activate the Dynamics 365 Communication provider
 
-To activate the Dynamics 365 Communication provider, follow these steps.
+To activate the Dynamics 365 Communication provider, follow these steps:
 
 1. Go to **Intelligent Order Management \> Providers \> Catalog \> Dynamics 365 Communication**, and select **Create**.
 1. Go to **Connections**, and select **Communications Dataverse (current environment) Connection**.
@@ -115,7 +115,7 @@ To activate the Dynamics 365 Communication provider, follow these steps.
 
 For this example, you will add the order confirmation template to an orchestration flow.
 
-To add an order confirmation template to an orchestration flow, follow these steps.
+To add an order confirmation template to an orchestration flow, follow these steps:
 
 1. Add the **Send email** tile to the orchestration flow, and then, in the **Name** field, enter a name for the tile.
 1. Under **Email Template**, select the **Order Confirmation** email template.

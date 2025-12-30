@@ -123,7 +123,7 @@ Your order number is shown on the **View Orders** page.
 
 ## View a BigCommerce order in Intelligent Order Management
 
-To view the results of the orchestration and the flow, follow these steps.
+To view the results of the orchestration and the flow, follow these steps:
 
 1. In Intelligent Order Management, go to **Sales Orders**. Your BigCommerce order is shown in the **Name** column.
 1. Select the order number to view the summary.

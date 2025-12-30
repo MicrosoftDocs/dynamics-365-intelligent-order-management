@@ -16,7 +16,7 @@ This article explains how to set up a working calendar and assign it to a fulfil
 
 Businesses can set up working calendars for their stores or warehouses, and then assign them to fulfillment sources in fulfillment source settings. Calendars are used to describe working hours, non-working hours, and time-off information.
 
-To set up a calendar, follow these steps.
+To set up a calendar, follow these steps:
 
 1. Go to **Fulfillment settings** \> **Holiday Calendar** \> **Manage**.
 1. On the **Quick create** page, enter a name and description for the calendar, and then select **Save and close**. A calendar that uses default working hours is shown.
@@ -34,7 +34,7 @@ To set up a calendar, follow these steps.
 > [!NOTE]
 > Non-working hours can also be used to set up time off.
 
-To set up non-working hours or holidays, follow these steps.
+To set up non-working hours or holidays, follow these steps:
 
 1. Select **New**, and then select **Non-Working**.
 1. Select the date and the reason for the holiday.
@@ -45,7 +45,7 @@ To set up non-working hours or holidays, follow these steps.
 
 ## Assign a calendar to a fulfillment source
 
-To assign a calendar to a fulfillment source, follow these steps.
+To assign a calendar to a fulfillment source, follow these steps:
 
 1. Go to **Settings** \> **Fulfillment Settings** \> **Sources** \> **Manage**.
 1. Select a source.

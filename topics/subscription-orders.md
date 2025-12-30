@@ -29,7 +29,7 @@ Through appropriate subscription order management, retailers can gain the follow
 
 To get started with subscription management, you must first turn on the subscription order functionality.
 
-To turn on subscription order functionality, follow these steps.
+To turn on subscription order functionality, follow these steps:
 
 1. In the left navigation pane, select **Settings**, and then select **General app settings**.
 1. Select **Order handling preferences**, and then select **Manage**.
@@ -41,7 +41,7 @@ To turn on subscription order functionality, follow these steps.
 
 For each subscription order that is started in Intelligent Order Management, you must specify the subscription frequency.
 
-To specify the subscription frequency at the product level, follow these steps.
+To specify the subscription frequency at the product level, follow these steps:
 
 1. In the left navigation pane, select **Demand Planning**, and then select **Products**.
 1. Select the product to specify the subscription frequency for.
