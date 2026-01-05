@@ -20,6 +20,11 @@ This section contains a table that lists the releases when available.
 
 | Version | Description | Date |
 |---------|-------------|------|
+| 1.1.1.1305 | <ul><li> Introduce smart retry logic to improve resilience of order synchronization when transient platform failures occur<li> Improve tracked property resolution to ensure consistent behavior across unified orchestration flows. <li> Fix solution import sequencing and plugin registration issues to improve upgrade and provisioning reliability.| Dec 2025 |
+| 1.1.1.1213 | <ul><li> Make order line batch sizes configurable to improve performance and avoid plugin timeouts in high‑volume scenarios. <li> Fix event‑driven order split behavior to prevent duplicate processing in orchestration flows. <li> Introduce a throttling wrapper that evaluates incoming order payloads and determines whether orders are processed immediately or queued for asynchronous processing.| Nov 2025 |
+| 1.1.1.1033 | <ul><li> Deliver localization updates to improve global readiness and consistency.<li> Apply security hardening improvements, accessibiity compliance ,including package signing and dependency updates. | Oct 2025 |
+| 1.1.1.924 | <ul><li> Introduce bulk operation support for sales order detail updates to improve performance and scalability.<li> Fix intermittent orchestration failures caused by static variable usage in plug-ins. | Sep 2025 |
+| 1.1.1.745 | <ul><li> Deliver targeted bug fixes and stability improvements for order orchestration scenarios based on customer feedback. | Aug 2025 |
 | 1.1.1.744 | <ul><li> Improve resilience of orchestration by better handling of policy evaluation failures. <li> Introduce reprocess capability from sales order listings page. <li> Improve resilience of FinOps provider for Release to Fulfillment action when UpdateMultiple call fails. <li>Other performance and security improvements. |July 2025 |
 | 1.1.1.630 | <ul><li>Operational visibility query bug fixes to handle dimension based lookup. <li> Fix split order child flow publishing. | May 2025 | 
 | 1.1.1.541 | <ul><li>Update logic instance and workflow upsert to support ALM.<li>Fix issues related to inbound provider errors. | April 2025 |
