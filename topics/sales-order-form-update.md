@@ -17,7 +17,7 @@ This article explains the user experience (UX) changes that were made to the sal
 
 ## Enable sales order form denormalization
 
-To enable sales order form denormalization, follow these steps.
+To enable sales order form denormalization, follow these steps:
 
 1. Go to **Settings** \> **General Settings** \> **Feature version controls** \> **Manage**.
 1. Select **Enhanced Pages Sales order KPI view**, and set the option to **On**.

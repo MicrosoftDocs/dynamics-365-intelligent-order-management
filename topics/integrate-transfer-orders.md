@@ -89,7 +89,7 @@ For more information about dual-write mapping references, see [Dual-write mappin
 
 ## Create a transfer order
 
-To create a transfer order, follow these steps.
+To create a transfer order, follow these steps:
 
 1. In the left navigation pane, under **Orders**, select **Transfer orders**. 
 1. Select **New**.

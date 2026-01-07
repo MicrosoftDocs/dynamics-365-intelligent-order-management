@@ -20,7 +20,7 @@ The Internal Application Service provider is an internal provider that supports 
 - As part of the orchestration flow, split one order into multiple orders, based on the assignment of split groups via an execution policy.
 - Create fulfillment orders for policy-based fulfillment.
 
-To add the Internal Application Service provider, follow these steps.
+To add the Internal Application Service provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Provider settings \> Library**.
 1. Select the tile for the Internal Application Service provider, and then select **Activate Providers** in the upper-right corner of the page.

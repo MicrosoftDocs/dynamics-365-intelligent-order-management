@@ -17,7 +17,7 @@ In the August 2021 release of Microsoft Dynamics 365 Intelligent Order Managemen
 
 > Your reports are being provisioned. Please allow up to 24 hours for the process to complete.
 
-To fix this issue, follow these steps. This procedure will reenable the Fulfillment Source table to sync and provision the Power BI reports.
+To fix this issue, follow these steps: This procedure will reenable the Fulfillment Source table to sync and provision the Power BI reports.
 
 1. Disable the Power BI Insights setting:
 

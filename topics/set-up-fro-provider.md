@@ -20,7 +20,7 @@ This article describes how to set up the Fulfillment and Returns Optimization pr
 
 ## Add the Fulfillment and Returns Optimization provider
 
-To add the Fulfillment and Returns Optimization provider, follow these steps.
+To add the Fulfillment and Returns Optimization provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers \> Library**.
 1. Select the tile, and then select **Activate Provider** in the upper-right corner of the page.

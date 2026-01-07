@@ -24,7 +24,7 @@ This topic describes the steps required to onboard a provider instance in Micros
 
 ### Create Outlook connection
 
-To create an Outlook connection, follow these steps.
+To create an Outlook connection, follow these steps:
 
 1. Select **New connection**.
 1. In the search box in the upper right corner, enter "Outlook.com".
@@ -33,7 +33,7 @@ To create an Outlook connection, follow these steps.
 
 ### Create RequestBin connection
 
-To create a RequestBin connection, follow these steps.
+To create a RequestBin connection, follow these steps:
 
 1. Select **New connection**.
 1. In the search box in the upper right corner, enter "requestbin".
@@ -41,7 +41,7 @@ To create a RequestBin connection, follow these steps.
 
 ## Add provider for order intake
 
-To add a provider for order intake, follow these steps.
+To add a provider for order intake, follow these steps:
 
 1. Go to **Providers \> Catalog** and select **Add Provider** on the **IOMLabOrderIntakeProvider** tile.
 1. Under the **Connections** section, select **Microsoft Dataverse** to navigate to the **IOM Provider Connection Reference** form. Similar to how platform connection references were set up, you'll need to set up connection references to corresponding Power Automate connections created in previous steps.  
@@ -60,7 +60,7 @@ To add a provider for order intake, follow these steps.
 
 ## Add provider for fulfillment 
 
-To add a provider for fulfillment, follow these steps.
+To add a provider for fulfillment, follow these steps:
 
 1. Go to **Providers \> Catalog** and select **Add Provider** on the **IOMLabFulfillmentProvider** tile.
 1. Under the **Connections** section, set up all the connections listed. 
@@ -72,7 +72,7 @@ To add a provider for fulfillment, follow these steps.
 
 ## View the deployed Power Automate component
 
-To view the deployed Power Automate component, follow these steps.
+To view the deployed Power Automate component, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and confirm that you are in the correct Intelligent Order Management trial environment. To check which environment you are in, select the **Environment** icon on the top right corner of the maker portal.
 1. Go to **Solutions \> Default Solution**. 

@@ -38,7 +38,7 @@ You can access inventory query pages from multiple areas for different scenarios
 
 ### Use case 1: An inventory planner wants operational visibility
 
-To get operational visibility, an inventory planner will follow these steps.
+To get operational visibility, an inventory planner will follow these steps:
 
 1. In the left navigation pane, under **Demand planning**, select **Operational visibility**. The **Onhand Query** page appears. Queries are defined on the left side of the page, and the results appear on the right side.
 1. If you're using Intelligent Order Management without Dynamics 365 Supply Chain Management, the **Organization ID** field is automatically set to the Dataverse organization ID. If dual-write is enabled in Finance, you must enter the **Company ID** value in this field.
@@ -54,7 +54,7 @@ To get operational visibility, an inventory planner will follow these steps.
 
 ### Use case 2: A customer representative wants to view availability from the Products page
 
-To view availability from the **Products** page, a customer representative will follow these steps.
+To view availability from the **Products** page, a customer representative will follow these steps:
 
 1. In the left navigation pane, under **Demand planning**, select **Products**.
 1. Select a product, and then select **View**.
@@ -71,7 +71,7 @@ To view availability from the **Products** page, a customer representative will 
 
 ### Use case 3: A customer representative wants to view availability from the Order Products page
 
-To view availability from the **Order Products** page, a customer representative will follow these steps.
+To view availability from the **Order Products** page, a customer representative will follow these steps:
 
 1. In the left navigation pane, under **Orders**, select **Sales Orders**.
 1. Select **New** to create an order.

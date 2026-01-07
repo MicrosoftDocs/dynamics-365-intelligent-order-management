@@ -58,7 +58,7 @@ For information about dual-write purchase order mapping, see [Mapping reference]
 
 ## Create a purchase order
 
-To create a purchase order in Intelligent Order Management, follow these steps.
+To create a purchase order in Intelligent Order Management, follow these steps:
 
 1. In the site map, go to **Purchase orders**.
 1. Select **New**, enter values for the mandatory fields, and then select **Save**.

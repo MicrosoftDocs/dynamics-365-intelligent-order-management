@@ -27,7 +27,7 @@ To set up the Adobe Commerce provider, you must have a sample store set up. For 
 
 ## Set up the provider
 
-To set up the provider, follow these steps.
+To set up the provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers \> Catalog**.
 1. On the **Adobe Commerce** tile, select **Add Provider**.
@@ -74,7 +74,7 @@ After your store is set up, you're ready to run a sample transaction by using Ad
 
 First, you must set up a customer in Adobe Commerce.
 
-To set up a customer in Adobe Commerce, follow these steps.
+To set up a customer in Adobe Commerce, follow these steps:
 
 1. In Adobe Commerce, open the **Customer** page.
 1. Select **Add New Customers**.
@@ -95,7 +95,7 @@ To set up a customer in Adobe Commerce, follow these steps.
 
 Next, you must set up price list mapping.
 
-To set up price list mapping, follow these steps.
+To set up price list mapping, follow these steps:
 
 1. Go to **Mappings \> Price Lists**.
 1. Select **New**.
@@ -113,7 +113,7 @@ To set up price list mapping, follow these steps.
 
 After you set up price list mapping, you must set up unit mapping.
 
-To set up unit mapping, follow these steps.
+To set up unit mapping, follow these steps:
 
 1. Go to **Mappings \> Units**.
 1. Select **New**.
@@ -131,7 +131,7 @@ To set up unit mapping, follow these steps.
 
 Next, you must set up product mapping.
 
-To set up product mapping, follow these steps.
+To set up product mapping, follow these steps:
 
 1. Go to **Mappings \> Products**.
 1. Select **New**.
@@ -149,7 +149,7 @@ To set up product mapping, follow these steps.
 
 Next, you must create an order in Adobe Commerce and submit it to Intelligent Order Management.
 
-To create an order in Adobe Commerce, follow these steps.
+To create an order in Adobe Commerce, follow these steps:
 
 1. Sign in to the Adobe Commerce store account that you previously set up.
 1. Go to **Sales \> Orders**, and select **Create New Order**.
@@ -165,7 +165,7 @@ To create an order in Adobe Commerce, follow these steps.
 
 ### View an Adobe Commerce order in Intelligent Order Management
 
-To view the results of the orchestration and the flow, follow these steps.
+To view the results of the orchestration and the flow, follow these steps:
 
 1. In Intelligent Order Management, go to **Sales Orders**. Your Adobe Commerce order is shown in the **Name** column.
 1. Select the order number to view the summary.

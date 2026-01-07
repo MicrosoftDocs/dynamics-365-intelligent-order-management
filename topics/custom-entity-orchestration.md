@@ -20,7 +20,7 @@ Custom entity orchestration lets customers do orchestration on custom Microsoft 
 
 ## Enable custom entity orchestration
 
-To enable custom entity orchestration, follow these steps.
+To enable custom entity orchestration, follow these steps:
 
 1. Create a custom table in Power Apps. This table is any custom table that you might create outside the out-of-box business Dataverse entities that are available for orchestration.
 1. In Power Apps, go to **More**, select **Choices**, and then select **Associated Entity**. In the option set, add the custom table that you created.
