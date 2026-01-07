@@ -10,21 +10,19 @@ ms.custom: bap-template
 
 # Copy an environment with Intelligent Order Management
 
-This article describes the recommended steps for copying environments that use Dynamics 365 Intelligent Order Management (IOM). It covers copying both the Dynamics 365 Finance and Operations database and the associated Power Platform Dataverse environment that hosts the IOM app.
+[!include [banner](includes/banner.md)]
+
+This article describes the recommended steps for copying environments that use Dynamics 365 Intelligent Order Management. It covers copying both the finance and operations database and the associated Microsoft Dataverse environment that hosts the Intelligent Order Management app.
 
 Use this guidance when performing environment refreshes for testing, validation, or disaster recovery purposes.
-
----
 
 ## Before you begin
 
 - Ensure you have administrative access to:
-  - Dynamics 365 Finance and Operations
+  - Finance and operations apps
   - Power Platform admin center
 - Confirm that Intelligent Order Management is installed in the target environment.
 - Plan a validation window after the copy completes to reconfigure integrations and orchestrations.
-
----
 
 ## Step 1: Copy Finance and Operations and Dataverse environments
 
@@ -33,8 +31,6 @@ Use this guidance when performing environment refreshes for testing, validation,
 
 After the copy completes, the target environment is placed in **administration mode**, and all background operations are disabled.
 
----
-
 ## Step 2: Exit administration mode
 
 1. Go to the [Power Platform admin center](/power-platform/admin/admin-documentation).
@@ -42,19 +38,15 @@ After the copy completes, the target environment is placed in **administration m
 1. In **Details**, select **Edit**.
 1. Turn off **Administration mode** and save.
 
-The environment must exit administration mode before IOM background processes can run.
+The environment must exit administration mode before Intelligent Order Management background processes can run.
 
----
-
-## Step 3: Reconfigure IOM connections and system activation
+## Step 3: Reconfigure Intelligent Order Management connections and system activation
 
 1. Open the Intelligent Order Management app.
 1. When prompted, allow app permissions to access the environment.
 1. Go to **Core settings > Admin home > Connection references**.
 1. Open each connection reference and save it to ensure it's owned by the correct user.
-1. Select **Activate system** to re-enable IOM.
-
----
+1. Select **Activate system** to re-enable Intelligent Order Management.
 
 ## Step 4: Review and activate Power Automate flows
 
@@ -65,13 +57,11 @@ The environment must exit administration mode before IOM background processes ca
 
 For flow-specific guidance, see [Copy an environment – Flows](/power-platform/admin/copy-environment#flows).
 
----
-
 ## Step 5: Prepare orchestrations for provider reinstallation
 
 To ensure clean provider reinstallation, remove provider actions from all orchestration flows.
 
-1. In the IOM app, go to **Orchestrations > Flows**.
+1. In the Intelligent Order Management app, go to **Orchestrations > Flows**.
 1. For each orchestration (published and unpublished):
    - Open the flow.
    - Exit read-only mode if necessary.
@@ -81,15 +71,11 @@ To ensure clean provider reinstallation, remove provider actions from all orches
 
 This step is required because provider actions aren't valid after an environment copy.
 
----
-
 ## Step 6: Reinstall providers
 
-1. In the IOM app, go to **Providers > Installed**.
+1. In the Intelligent Order Management app, go to **Providers > Installed**.
 1. Delete all installed providers.
 1. Go to **Providers > Library** and reinstall the required providers.
-
----
 
 ## Step 7: Restore provider actions and publish orchestrations
 
@@ -97,8 +83,6 @@ This step is required because provider actions aren't valid after an environment
 1. Add provider actions back to each orchestration.
 1. When selecting provider actions, type to search and ensure you select newly created provider actions.
 1. Save and publish each flow.
-
----
 
 ## Step 8: Reconfigure dual-write (if applicable)
 
@@ -114,8 +98,6 @@ If dual-write is enabled in the target environment:
 > [!NOTE]
 > Initial synchronization might not be necessary if the data is already aligned.
 
----
-
 ## Troubleshooting
 
 ### Dual-write initial sync fails due to missing reference data
@@ -126,8 +108,6 @@ You might encounter an error indicating that a team or business unit reference c
 
 - Run **Reset link**, and then run **Health check**.
 
----
-
 ### Provider action **Send for Fulfillment** doesn't trigger
 
 If the provider action execution history is empty and you see an *Event expired in the 'Ready' state* error, the Microsoft Finance and Operations apps provider might be incorrectly installed.
@@ -136,8 +116,6 @@ If the provider action execution history is empty and you see an *Event expired 
 
 - Delete the provider.
 - Reinstall it from the provider library.
-
----
 
 ### Inspect provider action run history
 
@@ -148,10 +126,10 @@ To validate provider execution:
 1. Filter **Cloud flows** by `msdyn_finops_releaseordertosync`.
 1. Review execution status and connection references.
 
----
-
 ## Additional resources
 
-- [Troubleshoot issues during initial synchronization](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-troubleshooting-initial-sync)
-- [Troubleshoot live synchronization issues](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-troubleshooting-live-sync)
-- [Dual-write error codes reference](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-error-codes)
+[Troubleshoot issues during initial synchronization](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-troubleshooting-initial-sync)
+[Troubleshoot live synchronization issues](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-troubleshooting-live-sync)
+[Dual-write error codes reference](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-error-codes)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
