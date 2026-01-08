@@ -185,6 +185,8 @@
     href: extensibility.md
   - name: Application lifecycle management
     href: alm.md
+  - name: Copy an environment with Intelligent Order Management
+    href: copy-environments-that-use-intelligent-order-management.md
   - name: Globalization
     href: globalization.md
   - name: Get support
