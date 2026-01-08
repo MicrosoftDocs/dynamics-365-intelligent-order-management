@@ -186,11 +186,14 @@
   - name: Extensibility
     href: extensibility.md
   - name: Application lifecycle management
+    href: alm.md
     items:
     - name: Application lifecycle management overview
       href: alm.md
     - name: Application Lifecycle Management feature walkthrough (preview)
       href: application-lifecycle-management.md
+    - name: Copy an environment with Intelligent Order Management
+      href: copy-environments-that-use-intelligent-order-management.md
   - name: Globalization
     href: globalization.md
   - name: Get support
