@@ -24,14 +24,16 @@ Use this guidance when performing environment refreshes for testing, validation,
 - Confirm that Intelligent Order Management is installed in the target environment.
 - Plan a validation window after the copy completes to reconfigure integrations and orchestrations.
 
-## Step 1: Copy Finance and Operations and Dataverse environments
+## Step 1: Copy the finance and operations apps and Dataverse environments
 
-1. Copy the Finance and Operations database by following the instructions in [Database refresh](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
+1. Copy the finance and operations apps database by following the instructions in [Database refresh](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 1. Copy the Power Platform Dataverse environment by following [Copy an environment](/power-platform/admin/copy-environment).
 
 After the copy completes, the target environment is placed in **administration mode**, and all background operations are disabled.
 
 ## Step 2: Exit administration mode
+
+To exit administration mode, follow these steps:
 
 1. Go to the [Power Platform admin center](/power-platform/admin/admin-documentation).
 1. Select the copied target environment.
@@ -42,6 +44,8 @@ The environment must exit administration mode before Intelligent Order Managemen
 
 ## Step 3: Reconfigure Intelligent Order Management connections and system activation
 
+To reconfigure Intelligent Order Management connections and system activation, follow these steps:
+
 1. Open the Intelligent Order Management app.
 1. When prompted, allow app permissions to access the environment.
 1. Go to **Core settings > Admin home > Connection references**.
@@ -49,6 +53,8 @@ The environment must exit administration mode before Intelligent Order Managemen
 1. Select **Activate system** to re-enable Intelligent Order Management.
 
 ## Step 4: Review and activate Power Automate flows
+
+To review and activate Power Automate flows, follow these steps:
 
 1. Go to the [Power Apps maker portal](/power-apps/maker/canvas-apps/sign-in-to-power-apps).
 1. Select the target environment.
@@ -59,7 +65,7 @@ For flow-specific guidance, see [Copy an environment – Flows](/power-platform/
 
 ## Step 5: Prepare orchestrations for provider reinstallation
 
-To ensure clean provider reinstallation, remove provider actions from all orchestration flows.
+To ensure clean provider reinstallation, remove provider actions from all orchestration flows. To prepare orchestrations for provider reinstallation, follow these steps:
 
 1. In the Intelligent Order Management app, go to **Orchestrations > Flows**.
 1. For each orchestration (published and unpublished):
@@ -73,11 +79,15 @@ This step is required because provider actions aren't valid after an environment
 
 ## Step 6: Reinstall providers
 
+To reinstall providers, follow these steps:
+
 1. In the Intelligent Order Management app, go to **Providers > Installed**.
 1. Delete all installed providers.
 1. Go to **Providers > Library** and reinstall the required providers.
 
 ## Step 7: Restore provider actions and publish orchestrations
+
+To restore provider actions and publish orchestrations, follow these steps:
 
 1. Return to **Orchestrations > Flows**.
 1. Add provider actions back to each orchestration.
@@ -98,28 +108,17 @@ If dual-write is enabled in the target environment:
 > [!NOTE]
 > Initial synchronization might not be necessary if the data is already aligned.
 
-## Troubleshooting
-
 ### Dual-write initial sync fails due to missing reference data
 
-You might encounter an error indicating that a team or business unit reference can't be resolved during initial sync. Although the data exists, the environment copy process might rename the default team associated with the root business unit.
-
-**Workaround**:
-
-- Run **Reset link**, and then run **Health check**.
+You might encounter an error indicating that a team or business unit reference can't be resolved during initial sync. Although the data exists, the environment copy process might rename the default team associated with the root business unit. If this occurs, run **Reset link**, and then run **Health check**.
 
 ### Provider action **Send for Fulfillment** doesn't trigger
 
-If the provider action execution history is empty and you see an *Event expired in the 'Ready' state* error, the Microsoft Finance and Operations apps provider might be incorrectly installed.
-
-**Resolution**:
-
-- Delete the provider.
-- Reinstall it from the provider library.
+If the provider action execution history is empty and you see an *Event expired in the 'Ready' state* error, the Microsoft Finance and Operations apps provider might be incorrectly installed. If this occurs, delete the provider and then reinstall it from the provider library.
 
 ### Inspect provider action run history
 
-To validate provider execution:
+To validate provider execution, follow these steps:
 
 1. Open the Power Apps maker portal.
 1. Select **Solutions > Default Solution**.
