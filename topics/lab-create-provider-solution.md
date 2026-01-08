@@ -21,7 +21,7 @@ It is recommended to have one provider per solution, but multiple providers can 
 
 ## Create a new provider solution
 
-To create a new provider solution, follow these steps.
+To create a new provider solution, follow these steps:
 
 1. Go to the [Power App Maker Portal](https://make.powerapps.com) and sign in with your Intelligent Order Management credentials. 
 1. Go to **Solutions**.

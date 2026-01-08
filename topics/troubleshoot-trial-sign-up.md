@@ -39,7 +39,7 @@ If the account that you use to sign up is related to an existing tenant, but you
 
 If a Dynamics 365 Customer Engagement license is already associated with your tenant, you might experience issues when you deploy your trial. In this case, we recommend that you create a new tenant.
 
-To create a new tenant, follow these steps.
+To create a new tenant, follow these steps:
 
 1. Open a new private window in your browser.
 1. Go to <https://dynamics.microsoft.com/intelligent-order-management>.

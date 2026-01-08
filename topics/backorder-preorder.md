@@ -109,7 +109,7 @@ Next, you must enable some general app settings.
 
 Next, you must enable preorder eligibility for products.
 
-To enable preorder eligibility for a product, follow these steps.
+To enable preorder eligibility for a product, follow these steps:
 
 1. In the sitemap, go to **Demand Planning**, and then select **Products**.
 1. Select a product.

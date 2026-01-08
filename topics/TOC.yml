@@ -145,6 +145,8 @@
         href: shipping-rate-factor-table-in-iom.md
     - name: Manage subscription orders
       href: subscription-orders.md
+    - name: Fulfillment entity relationships in Intelligent Order Management
+      href: fulfillment-entity-relationships.md
   - name: Finance + Operations integration solution
     href: finops-integration-scenarios.md
   - name: Sales order denormalization
@@ -185,8 +187,13 @@
     href: extensibility.md
   - name: Application lifecycle management
     href: alm.md
-  - name: Copy an environment with Intelligent Order Management
-    href: copy-environments-that-use-intelligent-order-management.md
+    items:
+    - name: Application lifecycle management overview
+      href: alm.md
+    - name: Application Lifecycle Management feature walkthrough (preview)
+      href: application-lifecycle-management.md
+    - name: Copy an environment with Intelligent Order Management
+      href: copy-environments-that-use-intelligent-order-management.md
   - name: Globalization
     href: globalization.md
   - name: Get support

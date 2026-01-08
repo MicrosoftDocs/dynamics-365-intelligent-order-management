@@ -18,7 +18,7 @@ In policy-based fulfillment, an execution policy is used to set the fulfillment 
 
 ## General settings for policy-based fulfillment
 
-To configure your preferences for policy-based fulfillment, follow these steps.
+To configure your preferences for policy-based fulfillment, follow these steps:
 
 1. Go to **Settings** \> **General Settings** \> **Order handling preferences** \> **Manage**.
 1. Under **Fulfillment process policy**, select one of the following policy options:

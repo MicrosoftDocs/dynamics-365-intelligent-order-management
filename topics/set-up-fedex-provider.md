@@ -38,7 +38,7 @@ FedEx has the following three areas of operations. To use the capabilities of th
 
 ## Set up FedEx connections
 
-To set up the FedEx connections in Intelligent Order Management, follow these steps.
+To set up the FedEx connections in Intelligent Order Management, follow these steps:
 
 1. Go to **Providers**, and then select **Library**.
 1. Select **FedEx**, and then select **Activate Providers**.

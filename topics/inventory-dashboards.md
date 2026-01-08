@@ -28,7 +28,7 @@ To view inventory dashboards for your Intelligent Order Management organization,
 
 Dashboards can provide useful information only if your Intelligent Order Management organization is configured to use the Inventory Visibility service. For more information, see [Inventory Visibility Add-in overview](/dynamics365/supply-chain/inventory/inventory-visibility).
 
-To configure the Inventory Visibility service for your Intelligent Order Management organization, follow these steps.
+To configure the Inventory Visibility service for your Intelligent Order Management organization, follow these steps:
 
 1. In Intelligent Order Management for your organization, at the bottom of the left navigation pane, select the area switcher, and then select **settings**.
 1. Under **Inventory visibility**, go to the **Index and reservation** section.

@@ -72,7 +72,7 @@ The following tables are required for orchestration migration:
 
 ## Add tables as solution components and export your solution from the source environment
 
-To add tables as solution components and export your solution from the source environment, follow these steps.
+To add tables as solution components and export your solution from the source environment, follow these steps:
 
 1. Go to <https://make.preprod.powerapps.com> for your test environment or <https://make.powerapps.com> for your production environment.
 1. In the upper right, select the appropriate environment.
@@ -99,7 +99,7 @@ To add tables as solution components and export your solution from the source en
 
 ## Import your solution into your target environment
 
-To import your solution into your target environment, follow these steps.
+To import your solution into your target environment, follow these steps:
 
 1. In your target environment, in Intelligent Order Management, ensure that your orchestrations, providers, and policies are deactivated/unpublished. You must complete this step for each provider, policy, and orchestration that you're importing.
 1. In your maker portal (<https://make.preprod.powerapps.com> for your test environment or <https://make.powerapps.com> for your production environment), select the target environment that you want to import the solution into.

@@ -16,7 +16,7 @@ This article explains how to set up a shipping carrier and assign it to a fulfil
 
 Businesses can set up pickup schedules for their shipping carriers, and then assign them to their stores or warehouses. A carrier pickup schedule indicates the times when a shipping carrier will arrive at a business's facility to pick up packages.
 
-To set up a carrier pickup schedule, follow these steps.
+To set up a carrier pickup schedule, follow these steps:
 
 1. Go to **Fulfillment settings** \> **Shipping carriers** \> **Manage**.
 1. Select the shipping carrier.
@@ -30,7 +30,7 @@ To set up a carrier pickup schedule, follow these steps.
 
 ## Assign a carrier pickup schedule to a fulfillment source
 
-To assign a carrier pickup schedule to a fulfillment source, follow these steps.
+To assign a carrier pickup schedule to a fulfillment source, follow these steps:
 
 1. Go to **Settings** \> **Fulfillment Settings** \> **Sources** \> **Manage**.
 1. Select a source.
@@ -47,7 +47,7 @@ Carrier APIs, such as FedEx, need an accurate pickup date and time to accurately
 
 Shipping carriers offer different service types that can be preconfigured in the **Shipping carrier** setup.
 
-To set up the master data for carrier service types, follow these steps.
+To set up the master data for carrier service types, follow these steps:
 
 1. Select the shipping carrier, and then select **Related data**.
 1. Select **Carrier services**.
