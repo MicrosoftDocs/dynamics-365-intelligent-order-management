@@ -3,7 +3,7 @@ title: Call the Intelligent Order Management Fulfillment optimization engine (DO
 description: This article explains how to call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) via Application programming interface (API).
 ms.author: anvenkat
 author: anush6121
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to

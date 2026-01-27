@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to set up and manage backorder and preorder functionality in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -35,11 +35,11 @@ If the [available-to-promise (ATP) settings are enabled](#enable-the-atp-setting
 
 The following illustration shows an example of an order orchestration journey that has a policy-based fulfillment assignment. 
 
-![Orchestration journey with a policy-based fulfillment assignment.](media/SampleOrch.png)
+:::image type="content" source="media/SampleOrch.png" alt-text="Screenshot of an orchestration journey with a policy-based fulfillment assignment.":::
 
 The example in the following illustration highlights key updates that are made to sales order lines when they are backordered. The order line is updated with a **State** value of **Sale Order Product on Hold** and a **Status Reason** value of **Backorder Hold**. The **Estimated Shipment Date** and **Inventory Availability Date** values are also updated.
 
-![Key updates to backordered sales order lines.](media/BackorderHold.png)
+:::image type="content" source="media/BackorderHold.png" alt-text="Screenshot of key updates to backordered sales order lines.":::
 
 After a product is backordered, a background job that is automatically run triggers an inventory check, based on the launch date, to determine whether the order lines can be moved to subsequent fulfillment. From the orchestration, Intelligent Order Management will determine whether an inventory check should be triggered independently or through the fulfillment and returns optimization process.
 
@@ -63,7 +63,7 @@ Preorders provide the following benefits:
 
 When an order is created in Intelligent Order Management, if it contains products that are marked as **Preorder eligible** and that have a launch date, those lines on the sales order are updated with a **Status Reason** value of **Preorder Hold**. They are also updated with the product launch date, as defined in the prerequisite settings.
 
-![Sales order line updated with a Preorder Hold status and a launch date.](media/PreOrderHold.png)
+:::image type="content" source="media/PreOrderHold.png" alt-text="Screenshot of a sales order line updated with a Preorder Hold status and a launch date.":::
 
 After a product is preordered, a background job that is automatically run triggers an inventory check, based on the launch date, to determine whether the order lines can be moved to subsequent fulfillment. From the orchestration, Intelligent Order Management will determine whether an inventory check should be triggered independently or through the fulfillment and returns optimization process.
 
@@ -87,7 +87,7 @@ First, you must enable the ATP settings.
 1. In the left navigation, under **Inventory settings**, select **Index and Reservation**.
 1. On the **Feature Management & Settings** tab, turn on the **OnHandChangeSchedule** option.
 
-![OnHandChangeSchedule option turned on.](media/ATP.png)
+:::image type="content" source="media/ATP.png" alt-text="Screenshot of the OnHandChangeSchedule option turned on.":::
 
 ### Upload on-hand schedule changes
 
@@ -103,7 +103,7 @@ Next, you must enable some general app settings.
 1. Set the **Backorders** option to **On**.
 1. After you enable backorders, a **Cancellation SLA** section appears. Here, you can optionally enter the number of days that you want to try to fulfill the backorder. After that number of days has passed, the order will automatically be canceled.
 
-![Order handling preferences page.](media/Backorder.png)
+:::image type="content" source="media/Backorder.png" alt-text="Screenshot of the Order handling preferences page.":::
 
 ### Enable preorder eligibility for products
 
@@ -117,4 +117,4 @@ To enable preorder eligibility for a product, follow these steps:
 1. In the **Launch Date** field, enter the date when the product will be released.
 1. Select **Save** or **Save & Close**.
 
-![Pre-order Eligible and Launch Date fields on the Product page.](media/Preorder.png)
+:::image type="content" source="media/Preorder.png" alt-text="Screenshot of the Pre-order Eligible and Launch Date fields on the Product page.":::

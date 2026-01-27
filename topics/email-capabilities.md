@@ -1,7 +1,7 @@
 ---
 author: anush6121 
 description: This article describes the email capabilities that are available in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to

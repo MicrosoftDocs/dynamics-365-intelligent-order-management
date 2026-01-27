@@ -3,9 +3,9 @@
 title: What's new or changed in Intelligent Order Management
 description: This article points to articles that describe the new and changed features in each release of Intelligent Order Management.
 author: johnmichalak
-ms.author: johnmichalak
+ms.author: anvenkat
 ms.reviewer: johnmichalak
-ms.date: 05/27/2025
+ms.date: 01/27/2026
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template

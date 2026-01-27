@@ -1,11 +1,11 @@
 ---
 author: josaw1
 description: This topic provides an overview of the administration and security concepts in Dynamics 365 Intelligent Order Management. 
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
-ms.author: josaw
+ms.author: anvenkat
 
 title: Administration overview
 ---
@@ -14,7 +14,6 @@ title: Administration overview
 # Administration overview
 
 [!include [banner](includes/banner.md)]
-
 
 Your organization will have access to Dynamics 365 Intelligent Order Management after you provision the app. To learn more, see [Deployment](deploy.md).
 

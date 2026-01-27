@@ -1,8 +1,8 @@
 ---
 author: josaw1
 description: This page provides a list of the blogs and community resources available for Intelligent Order Management features.   
-ms.author: josaw
-ms.date: 03/21/2025
+ms.author: anvenkat
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article

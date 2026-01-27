@@ -2,7 +2,7 @@
 title: Admin home workspace
 author: sumanic
 description: This article describes the Admin home workspace in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article
@@ -20,11 +20,11 @@ The **Admin home** administrator workspace in Intelligent Order Management makes
 
 To access the **Admin home** workspace, on the Intelligent Order Management **Home** page, select **Settings**, and then, in the left navigation pane, select **Admin home**. 
 
-![Accessing the Admin home workspace from the Home page.](media/adminhome.png)
+:::image type="content" source="media/adminhome.png" alt-text="Screenshot of accessing the Admin home workspace from the Home page.":::
 
 Alternatively, at the bottom of the left navigation pane, select **Intelligent Order Management \> Settings** to change the workspace area, and then select **Admin home**.
 
-![Admin home page with Settings highlighted](media/adminchangearea.png)
+:::image type="content" source="media/adminchangearea.png" alt-text="Screenshot of Admin home page with Settings highlighted.":::
 
 The **Admin home** workspace contains shortcuts to settings for key areas of Intelligent Order Management. All detailed settings areas and their subareas can be accessed in the left navigation pane.
 

@@ -1,11 +1,11 @@
 ---
 author: josaw1
 description: This topic provides information about how to deploy Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article
-ms.author: josaw
+ms.author: anvenkat
 
 title: Deployment
 
@@ -16,18 +16,17 @@ title: Deployment
 
 [!include [banner](includes/banner.md)]
 
-
 Intelligent Order Management is a Software as a Service (SaaS) app that runs on the Microsoft Azure infrastructure.
 
 ## Deployment options
 
 The preview release of Intelligent Order Management can be deployed as a trial in two ways.
 
--   Sign up for trial: Visit the [Dynamics 365 Intelligent Order Management marketing page](https://dynamics.microsoft.com/intelligent-order-management/). Select **Get started** to step through the process of creating a trial system. You'll be prompted to enter your email address and other information. To access Intelligent Order Management, you must meet at least one of the following requirements: 
-    - If you aren't a part of a Microsoft tenant: Microsoft will create a tenant for you, and add Intelligent Order Management to it. You'll be the admin of the tenant and environment. 
-    - If you're an admin of an existing Microsoft tenant: Microsoft will provide a trial Microsoft Power Apps environment and install Intelligent Order Management there. If you're a part of an existing Microsoft tenant and not the admin, you won't be able to get access to the trial. 
+- Sign up for trial: Visit the [Dynamics 365 Intelligent Order Management marketing page](https://dynamics.microsoft.com/intelligent-order-management/). Select **Get started** to step through the process of creating a trial system. You'll be prompted to enter your email address and other information. To access Intelligent Order Management, you must meet at least one of the following requirements:
+  - If you aren't a part of a Microsoft tenant: Microsoft will create a tenant for you, and add Intelligent Order Management to it. You'll be the admin of the tenant and environment.
+  - If you're an admin of an existing Microsoft tenant: Microsoft will provide a trial Microsoft Power Apps environment and install Intelligent Order Management there. If you're a part of an existing Microsoft tenant and not the admin, you won't be able to get access to the trial.
 
--   Power Platform Administration Center: If you're an existing Microsoft Power Platform admin, you can deploy a new environment for your organization for evaluation. Learn about Power Platform Administration Center in [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals). You'll only be able to deploy in trial environments. Learn more about deployment environments in [About trial environments](/power-platform/admin/trial-environments).
+- Power Platform Administration Center: If you're an existing Microsoft Power Platform admin, you can deploy a new environment for your organization for evaluation. Learn about Power Platform Administration Center in [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals). You'll only be able to deploy in trial environments. Learn more about deployment environments in [About trial environments](/power-platform/admin/trial-environments).
 
 ## System requirements
 
@@ -50,4 +49,5 @@ Microsoft is managing the trial environments for customers to evaluate and provi
 Trial environments are for evaluation and feedback purposes and come with demo data to support evaluations. Trial environments will be deleted after the 30-day trial period if you provision a trial environment and your environment isn't designated to be recovered after the 30-day trial period has ended.
 
 ## Additional resources
+
 [Set up an environment](setup.md)

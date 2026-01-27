@@ -5,7 +5,7 @@ author: sumanic
 ms.author: anvenkat
 ms.reviewer: johnmichalak
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/24/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: overview

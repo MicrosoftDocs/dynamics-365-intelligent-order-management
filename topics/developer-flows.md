@@ -1,7 +1,7 @@
 ---
 author: raybennett-msft
 description: This article provides information about Intelligent Order Management Power Automate flows that you can use to develop your own custom solution.
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article

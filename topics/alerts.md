@@ -2,7 +2,7 @@
 title: Intelligent Order Management alerts
 description: This article provides an overview of alerts functionality and use cases in Microsoft Dynamics 365 Intelligent Order Management.
 author: derekkwanpm
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article
@@ -14,13 +14,13 @@ ms.author: anvenkat
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Time-sensitive and high-impact issues can become buried in a sea of business events. If there's no way to surface those issues in a structured and timely manner, they'll be lost, and might lead to customer dissatisfaction and business disruption. Microsoft Dynamics 365 Intelligent Order Management provides alerts about business-critical events, so that you can act quickly when issues arise. 
+Time-sensitive and high-impact issues can become buried in a sea of business events. If there's no way to surface those issues in a structured and timely manner, they'll be lost, and might lead to customer dissatisfaction and business disruption. Microsoft Dynamics 365 Intelligent Order Management provides alerts about business-critical events, so that you can act quickly when issues arise.
 
 In this release, Intelligent Order Management has alerts for order statuses. For example, an order can trigger an alert if the current date is three days before the requested delivery date of an order, but the order hasn't yet been sent to fulfillment.
 
 This feature is still in private preview, and your administrator will have to enable alerts in the **Administration settings** area. After alerts are enabled, you can find them in the **Monitoring** section on the left menu.
 
-![Screenshot of the monitoring section of the left menu.](media/alerts_menu.png)
+:::image type="content" source="media/alerts_menu.png" alt-text="Screenshot of the monitoring section of the left menu.":::
 
 ## Create an alert
 
@@ -31,7 +31,7 @@ This feature is still in private preview, and your administrator will have to en
 
     On the **Active Alert Configurations** page, the top menu bar (labeled "1" in the illustration) contains several buttons, including **New**. The grid (labeled "2") contains a list of current alert configurations. Double-tap (or double-click) any configuration in the list to open the configuration settings and make changes to the configuration.
 
-    ![Screenshot of the top menu bar and grid on the Active Alert Configurations page.](media/alerts_config.png)
+    ![Screenshot of the top menu bar and grid on the Active Alert Configurations page.](media/alerts_config.png)n the Active Alert Configurations page.":::
 
 2. Select **New** on the menu bar to open the **New Alert Configuration** page.
 3. Set the following fields:
@@ -81,7 +81,7 @@ Each row in the grid represents an order that's currently under alert. Here's an
 
     A status of **Active** indicates that the alert is active. The order itself might have a status of **In fulfillment** or **Sent for delivery**. The purpose of the alert status is to enable you to update the status of an alert if you've already taken action on the order. For example, if an alert is triggered because an order is delayed, and you expedited the order for delivery, you can change the alert status to **Resolved**. Therefore, you can use the list of alerts in the grid as a to-do list. You can view which orders are under alert, and then check them off as you take action on the orders to resolve the alerts.
 
-![Screenshot of the alert list on the Active Alerts page.](media/alerts_list.png)
+:::image type="content" source="media/alerts_list.png" alt-text="Screenshot of the alert list on the Active Alerts page.":::
 
 ## Update an alert
 
@@ -96,7 +96,7 @@ You can change the alert status of any row on the **Active Alerts** page. (The n
 
 3. To quickly change the alert status, select **Resolve**, **Activate**, or **Deactivate** on the menu bar to update the **Status Reason** value for the row.
 
-![Screenshot of updating an alert on the Active Alerts page.](media/alerts_status.png)
+![Screenshot of updating an alert on the Active Alerts page.](media/alerts_status.png)ing an alert on the Active Alerts page.":::
 
 ## Other notes
 

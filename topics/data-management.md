@@ -5,7 +5,7 @@ ms.date: 03/21/2025
 ms.custom: 
   - bap-template
 ms.topic: article
-ms.author: josaw
+ms.author: anvenkat
 
 title: Data management
 
@@ -13,24 +13,22 @@ title: Data management
 
 
 # Data management
+
 [!include [banner](includes/banner.md)]
-
-
-
 
 Managing data is an important part of setup and administration in Dynamics 365 Intelligent Order Management. Data in Intelligent Order Management can be classified into the following categories.
 
--   System data: Setup data needed to support the administration of the app. Additionally, reference data is base data needed to support setup of master data or transactional data.
+- System data: Setup data needed to support the administration of the app. Additionally, reference data is base data needed to support setup of master data or transactional data.
 
--   Master data: Entities for orienting a business process. Master data may be needed to validate or drive different processes in the orchestration of order transactions.
+- Master data: Entities for orienting a business process. Master data may be needed to validate or drive different processes in the orchestration of order transactions.
 
--   Transaction data: The main transactional document recorded by the app in the processing of order flows.
+- Transaction data: The main transactional document recorded by the app in the processing of order flows.
 
 Intelligent Order Management is designed to be used in complex environments where data is communicated between many internal and external systems. You'll design systems that will be used to share master data with other systems.
 
 Intelligent Order Management is built on Microsoft Dataverse and the common data model, which allow you to store data you consider to be master data. Intelligent Order Management can be configured to be the central app with a single view of orders in your organization, so you may want to consider it to be the master system. However, master data such as products or accounts may originate from other business apps, such as your existing ERP app, and therefore you may consider that ERP app the master data system for some types of data.
 
-## System data 
+## System data
 
 You can configure and use parameters throughout Intelligent Order Management. The app provides pages where you can administer system parameters that are needed to control functionality. You can use those pages when you're initially setting up Intelligent Order Management and throughout day-to-day administration.
 
@@ -58,8 +56,8 @@ In Intelligent Order Management, orchestration is designed around the order conc
 
 Intelligent Order Management enables admins and business users to use several different tools to import and export data.
 
--   Using the app: Business users can use pages in the app to export to Excel and import from Excel to update data like transactions and master data.
+- Using the app: Business users can use pages in the app to export to Excel and import from Excel to update data like transactions and master data.
 
--   Maker Portal: Admins can use the Maker Portal to import and export data from Dataverse. To learn more, see [Import or export data from Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-import-export).
+- Maker Portal: Admins can use the Maker Portal to import and export data from Dataverse. To learn more, see [Import or export data from Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-import-export).
 
--   Dataflows: Admins can leverage the capabilities of dataflows to move data between Dataverse and other apps. To learn more, see [Self-service data prep with dataflows](/powerapps/maker/data-platform/self-service-data-prep-with-dataflows).
+- Dataflows: Admins can leverage the capabilities of dataflows to move data between Dataverse and other apps. To learn more, see [Self-service data prep with dataflows](/powerapps/maker/data-platform/self-service-data-prep-with-dataflows).

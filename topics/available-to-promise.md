@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to set up available-to-promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
@@ -48,7 +48,7 @@ First, you should enable the ATP settings in Intelligent Order Management.
 1. In the left navigation, under **Inventory settings**, select **Index and Reservation**.
 1. On the **Feature Management & Settings** tab, turn on the **OnHandChangeSchedule** option.
 
-![OnHandChangeSchedule option turned on.](media/ATP.png)
+:::image type="content" source="media/ATP.png" alt-text="Screenshot of the OnHandChangeSchedule option turned on in Feature Management and Settings.":::
 
 ### Define the calculated measure for the ATP settings
 
@@ -70,7 +70,7 @@ To define the calculated measure for the ATP settings, follow these steps:
 1. In the **Schedule Period** field, enter the number of days for the schedule period. Currently, a maximum value of **7** is supported.
 1. Select **Save**.
 
-![Calculated measure defined for the ATP settings.](media/ATPSetting.png)
+:::image type="content" source="media/ATPSetting.png" alt-text="Screenshot of the calculated measure defined for the ATP settings.":::
 
 #### Calculated measure examples
 
@@ -102,7 +102,7 @@ Next, you must define the Intelligent Order Management calculated measure mappin
 
 1. In the **Calculated Measure** field, select the calculated measure that you selected in the calculated measure for the ATP settings.
 
-![Calculated measure mapping defined.](media/IOMmapping.png)
+:::image type="content" source="media/IOMmapping.png" alt-text="Screenshot of the calculated measure mapping defined in Intelligent Order Management Mappings.":::
 
 ## Run a sample transaction with ATP check
 
@@ -113,7 +113,7 @@ Intelligent Order Management can perform inventory checks as an independent prov
 
 The following illustration shows an example of an orchestration journey that has a policy-based fulfillment assignment.
 
-![Sample orchestration](media/SampleOrch.png)
+:::image type="content" source="media/SampleOrch.png" alt-text="Screenshot of a sample orchestration journey with policy-based fulfillment assignment.":::
 
 The following provider actions are available as part of Intelligent Order Management. They will check ATP when the ATP settings are enabled.
 
@@ -124,7 +124,7 @@ The following provider actions are available as part of Intelligent Order Manage
 
 The example in the following illustration highlights the **Estimated Ship Date** and **Inventory Availability Date** values on the sales order line after the preceding order orchestration runs. In this example, the inventory check found no inventory and has backordered the lines.
 
-![Example of the results of an order orchestration run.](media/BackorderHold.png)
+:::image type="content" source="media/BackorderHold.png" alt-text="Screenshot of the results of an order orchestration run showing Estimated Ship Date and Inventory Availability Date values.":::
 
 ## API URLs
 
