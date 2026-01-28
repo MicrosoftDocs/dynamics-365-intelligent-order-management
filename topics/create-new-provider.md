@@ -22,16 +22,16 @@ To create a new provider, use the following steps. You can also use these steps 
 
 Before you create a provider, it's important to understand what you want the provider to do and what you want to use it for. Providers have multiple components and you may not need all of the components.
 
-Use the following table to determine which components you'll need.
+Use the following table to determine which components you need.
 
 | Condition | Component needed |
 |-------------------------|-------------------------|
-| The service you want to create a provider for doesn't have a connector in Power Automate.</br>For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors). | Create a customer connector or use a generic connector. |
-| Your provider will exchange data between an external service and Microsoft Dataverse. | Your provider will need a provider transformation. Add a provider transformation component for each transformation. |
-| Your provider will execute logic from the orchestration designer. | Create a separate Power Automate flow to represent each of the actions. |
+| The service you want to create a provider for doesn't have a connector in Power Automate.</br> For more information, see [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors). | Create a customer connector or use a generic connector. |
+| Your provider exchanges data between an external service and Microsoft Dataverse. | Your provider needs a provider transformation. Add a provider transformation component for each transformation. |
+| Your provider executes logic from the orchestration designer. | Create a separate Power Automate flow to represent each of the actions. |
 | Your provider needs to process messages from an external service. | Create a Power Automate Message Handler flow. |
-| Your provider will pull messages from an external service at a regular interval. | Create a Power Automate Message Puller flow. |
-| Your provider will raise business events that aren't currently defined in Intelligent Order Management. | Create a new business event definition and add existing events. |
+| Your provider pulls messages from an external service at a regular interval. | Create a Power Automate Message Puller flow. |
+| Your provider raises business events that aren't currently defined in Intelligent Order Management. | Create a new business event definition and add existing events. |
 
 When you have a good understanding of the solutions, you can proceed to implementing your provider.
 
@@ -51,7 +51,7 @@ Create a solution in Power Apps that will contain the components of your provide
 
 ### Add a provider definition
 
-A provider definition contains details about your provider. The definition determines how your provider will appear in the Provider Catalog.
+A provider definition contains details about your provider. The definition determines how your provider appears in the Provider Catalog.
 
 1. In the provider solution you created, select **New**.
 
@@ -69,9 +69,9 @@ A provider definition contains details about your provider. The definition deter
 
 1. If you want to add a logo, upload the image.
 
-1. Validate that your provider definition appears in the solution. A record with the component type **IOM Provider Definition** should be displayed. If it isn't displayed, select **Add existing**, and then select the record you just created.
+1. Validate that your provider definition appears in the solution. A record with the component type **IOM Provider Definition** should be displayed. If it isn't displayed, select **Add existing**, and then select the record you created.
 
-1. Validate that your provider appears in the Provider Catalog. If you set the **Is Active** field to **Yes**, your provider definition will show up in the Provider Catalog. Open Intelligent Order Management. Go to **Providers > Catalog**. Verify that your provider definition is displayed.
+1. Validate that your provider appears in the Provider Catalog. If you set the **Is Active** field to **Yes**, your provider definition shows up in the Provider Catalog. Open Intelligent Order Management. Go to **Providers > Catalog**. Verify that your provider definition is displayed.
 
 ### Add components to solution
 
@@ -81,11 +81,11 @@ After you create your provider definition, add the provider components to the so
 
 1. Select **Add existing**.
 
-1. Select the Intelligent Order Management component type, then select the record you just created.
+1. Select the Intelligent Order Management component type, then select the record you created.
 
 ## Create a provider transformation
 
-If your provider requires a transformation, you need to add a provider transformation component to your solution. You may be required to create multiple transformations.
+If your provider requires a transformation, you need to add a provider transformation component to your solution. You might be required to create multiple transformations.
 
 1. In your provider solution, select **New.**
 
@@ -93,17 +93,17 @@ If your provider requires a transformation, you need to add a provider transform
 
 1. Add the following details:
 
-    1. **Display name**: The name of your provider transformation, for example, "Transform Sales Orders".
+    1. **Display name**: The name of your provider transformation, for example, "Transform Sales Orders."
 
-    1. **Logical name:** The unique identifier of your provider. This value will be the import and export key of the data. It should start with the publisher's prefix. For example, Microsoft uses the publisher prefix msdyn\_. Examples for logical name are: msdyn\_flexe\_fulfillmentorderproduct\_orderline, and msdyn\_flexe\_fulfillmentorder\_order.
+    1. **Logical name:** The unique identifier of your provider. This value is the import and export key of the data. It should start with the publisher's prefix. For example, Microsoft uses the publisher prefix msdyn\_. Examples for logical name are: msdyn\_flexe\_fulfillmentorderproduct\_orderline, and msdyn\_flexe\_fulfillmentorder\_order.
 
-    1. **Source type**: This field indicates what type of data is received. There are two options: **JsonDocument** or **Dataverse Entity**. If your data is already in Dataverse, select **Dataverse Entity**. If not, select **JsonDocument**. This information will be used in the Power Automate element you define to look up the transformation.
+    1. **Source type**: This field indicates what type of data is received. There are two options: **JsonDocument** or **Dataverse Entity**. If your data is already in Dataverse, select **Dataverse Entity**. If not, select **JsonDocument**. This information is used in the Power Automate element you define to look up the transformation.
 
-    1. **Source object name**: The name of the data you are transforming. If you are transforming a Dataverse record, make sure the **Source Object Name** is the same name as in the Dataverse table.
+    1. **Source object name**: The name of the data you're transforming. If you're transforming a Dataverse record, make sure the **Source Object Name** is the same name as in the Dataverse table.
 
     1. **Destination object name**: The destination of the record you want to transform.
 
-    1. **Transformation**: The Power Query Online MQuery that will be used to transform the input data. For information about Power Query and MQuery, see [What is Power Query?](/power-query/power-query-what-is-power-query) and [Power Query M formula language reference.](/powerquery-m/) The following is an example of a MQuery that transforms a sales order from an external order service to a sales order in Intelligent Order Management.
+    1. **Transformation**: The Power Query Online MQuery that is used to transform the input data. For information about Power Query and MQuery, see [What is Power Query?](/power-query/power-query-what-is-power-query) and [Power Query M formula language reference.](/powerquery-m/) The following is an example of a MQuery that transforms a sales order from an external order service to a sales order in Intelligent Order Management.
 
 ```powerquery-m
 shared TransformSourceData =
@@ -241,7 +241,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 1. Select **Save.**
 
-1. Validate that your transformation component appears correctly. A component type of **IOM Provider Definition Transformation** with the transformation name should be displayed. If it isn't displayed, select **Add existing**, and then select the transformation you just created.
+1. Validate that your transformation component appears correctly. A component type of **IOM Provider Definition Transformation** with the transformation name should be displayed. If it isn't displayed, select **Add existing**, and then select the transformation you created.
 
 ## Add business event definitions
 
@@ -267,7 +267,7 @@ If the business event that you want to create isn't already in Intelligent Order
 
 1. Select **Save**.
 
-1. Check your solution to verify that the **IOM Provider Business Event Definition** record is displayed. If the record does not appear in the solution, select **Add existing**, and then select the record you just created.
+1. Check your solution to verify that the **IOM Provider Business Event Definition** record is displayed. If the record doesn't appear in the solution, select **Add existing**, and then select the record you created.
 
 ## Add a connector
 
@@ -285,7 +285,7 @@ After you create your custom connector, add it to your provider solution as a co
 
 ## Types of Power Automate flows
 
-Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you'll need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](/training/modules/introduction-power-automate/).
+Any action that is executed in the orchestration designer is represented by Power Automate flows. If you want Power Automate to retrieve specific information or execute specific actions, you need to create the flows for those actions. To learn more about Power Automate, see [Introduction to Power Automate](/training/modules/introduction-power-automate/).
 
 Add your flows as **Provider Definition Logic Definition** components to your provider.
 
@@ -331,7 +331,7 @@ The JSON Schema to use in your HTTP trigger is defined below.
 
 1. Initialize the message processing. There are two steps involved in this task.
 
-    1. Initialize the execution result that will be used to track the processing of the message.
+    1. Initialize the execution result that is used to track the processing of the message.
 
     1. Acknowledge the provider message in Intelligent Order Management so you can track, retry, and display the processing state. This is a Power Automate action that Intelligent Order Management introduces. This action is called **Acknowledge Provider message request in IOM**. This action has the following required parameters.
 
@@ -339,11 +339,11 @@ The JSON Schema to use in your HTTP trigger is defined below.
 
         1. **PowerAutomateRunId**: The unique identifier for the Power Automate run that received the message and allows the pipeline to retry the processing and link the execution logs. You can retrieve this by having a compose function with workflow()\['run'\]?\['name'\].
 
-        1. **ProviderMessageExternalRequestId**: An identifier for the message sent. If no identifier is present, a GUID can be generated. This identifier is used by the pipeline to help prevent the sender from sending duplicate messages. The identifier is dependent on the source payload. For example: concat(triggerOutputs()?\['body'\]?\['type'\]?\['name'\], '\_', triggerOutputs()?\['body'\]?\['id'\]).
+        1. **ProviderMessageExternalRequestId**: An identifier for the message sent. If no identifier is present, a GUID can be generated. This identifier is used by the pipeline to help prevent the sender from sending duplicate messages. The identifier is dependent on the source payload. For example: concat(triggerOutputs()?\['body'\]?\['type'\]?\['name'\], '\_', triggerOutputs()?\['body'\]?\['ID'\]).
 
 :::image type="content" source="media/acknowledge.png" alt-text="Screenshot of Acknowledge provider message request screen.":::
 
-1. The provider transformation you defined earlier will retrieve the input data and transform it. Intelligent Order Management provides an out-of-box child-flow called **IOM Provider Transformer** that will execute the transformation. Add the following details to process the event or message:
+1. The provider transformation you defined earlier retrieves the input data and transform it. Intelligent Order Management provides an out-of-box child-flow called **IOM Provider Transformer** that executes the transformation. Add the following details to process the event or message:
 
     1. **Provider name**: The name of the provider linked to the message handler. This value must be the same name as your provider transformation.
 
@@ -357,7 +357,7 @@ The JSON Schema to use in your HTTP trigger is defined below.
 
 :::image type="content" source="media/transform.png" alt-text="Screenshot of transform message with Power Query Online.":::
 
-1. You can insert data into Dataverse by using HTTP requests or the Dataverse connector **Insert** action. If you're doing more than one insert and want to improve performance, wrap the inserts into a change set so that the requests are in a transaction batch.
+1. You can insert data into Dataverse by using HTTP requests or the Dataverse connector **Insert** action. If you're doing more than one insert and want to improve performance, wrap the inserts into a changeset so that the requests are in a transaction batch.
 
 :::image type="content" source="media/InsertImages.png" alt-text="Screenshot of insert messages flow.":::
 
@@ -365,7 +365,7 @@ The JSON Schema to use in your HTTP trigger is defined below.
 
     1. **BusinessEventName**: Name of the event that you want raised.
 
-    1. **EntityRecordId**: The ID of the record just created and associated to the event.
+    1. **EntityRecordId**: The ID of the record created and associated to the event.
 
 1. Update the message processing state by using the **Update Provider Message Request Status** action to save the processing execution result. Add the following details.
 
@@ -444,7 +444,7 @@ The key difference between a provider message handler and a provider action is t
 
 The following is an example structure for a provider action Power Automate flow.
 
-1. Start with an HTTP trigger. The following information will be passed at runtime by the orchestration service. The following JSON schema will be used for the body:
+1. Start with an HTTP trigger. The following information will be passed at runtime by the orchestration service. The following JSON schema is used for the body:
 
 ```json
 {
@@ -476,7 +476,7 @@ The following is an example structure for a provider action Power Automate flow.
 
     1. Initialize the execution result and any other processing variables.
 
-    1. Acknowledge the start of the action execution by using the **Start Provider Action Execution** Dataverse action. This will allow the pipeline to track, retry, and display the processing state within Intelligent Order Management. Add the following information.
+    1. Acknowledge the start of the action execution by using the **Start Provider Action Execution** Dataverse action. This allows the pipeline to track, retry, and display the processing state within Intelligent Order Management. Add the following information.
 
         1. **ProviderActionExecutionEventId:** This value was passed into the action as an input parameter in step 1.
 
@@ -518,13 +518,13 @@ The following is an example structure for a provider action Power Automate flow.
 
 ### Child flow  
 
-A child flow is a sub-flow that is referenced in other Power Automate flows. It's helpful to define a child flow if there are some steps that you repeat across multiple areas. There isn't a specific template or recommended process for child flows, as they're primarily meant to be used for the convenience of consolidating similar steps.  
+A child flow is a subflow that is referenced in other Power Automate flows. It's helpful to define a child flow if there are some steps that you repeat across multiple areas. There isn't a specific template or recommended process for child flows, as they're primarily meant to be used for the convenience of consolidating similar steps.  
   
 Provider child flows can't call other provider child flows.
 
 ## Create cloud flows
 
-When you understand the types of flows that you want to create, you are ready to create cloud flows. To do this, follow these steps:
+When you understand the types of flows that you want to create, you're ready to create cloud flows. To do this, follow these steps:
 
 1. Open the default solution in your Power Apps environment.
 
@@ -543,15 +543,15 @@ After you create your flows, you need to save them as **Provider Definition Logi
 
 You must have the following prerequisites before you can save your flows.
 
-- To save your Power Automate logic definitions, you will need to issue OData requests. To do so, you need an account with PostMan or a similar service.
+- To save your Power Automate logic definitions, you need to issue OData requests. To do so, you need an account with PostMan or a similar service.
 
-- You will need to generate an access token to your Dataverse environment to issue GET and POST requests.
+- You need to generate an access token to your Dataverse environment to issue GET and POST requests.
 
   - Set up an Azure account with an active subscription. If you don't have an active account, you need to set up an account on the [Azure website](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
   - PowerShell must be installed. For more information, see [Installing PowerShell](/powershell/scripting/install/installing-powershell).
 
-  - Enter the following command in PowerShell to get an access token: az login --allow-no-subscriptions account get-access-token --resource=<https://YourDataverseTenantURL.api.crm.dynamics.com/> --query=accessToken --output=tsv \| Set-Clipboard.
+  - Enter the following command in PowerShell to get an access token: `az sign in --allow-no-subscriptions account get-access-token --resource=<https://YourDataverseTenantURL.api.crm.dynamics.com/> --query=accessToken --output=tsv \| Set-Clipboard.`
 
 To save your Power Automate definition, do the following.
 
@@ -565,11 +565,11 @@ To save your Power Automate definition, do the following.
 
         1. Run Power Automate.
 
-        1. The **xrmWorkflowId** property from the execution results will contain the workflow ID.
+        1. The **xrmWorkflowId** property from the execution results contains the workflow ID.
 
         :::image type="content" source="media/workflowID.png" alt-text="Screenshot of workflow ID.":::
 
-        1. Delete this action from the flow so that it does not run again.
+        1. Delete this action from the flow so that it doesn't run again.
 
     1. Optionally, you can issue a Get OData request.
 
@@ -590,7 +590,7 @@ To save your Power Automate definition, do the following.
 
     :::image type="content" source="media/definitionID.png" alt-text="Screenshot of how to find the provider definition ID.":::
 
-1. Make a note of the option set value for the type of Power Automate that you are saving.
+1. Make a note of the option set value for the type of Power Automate that you're saving.
 
     1. **Child flow**: 192350002
 
@@ -672,7 +672,7 @@ POST {Env url}/api/data/v9.1/msdyn\_SaveProviderDefinitionConnectionReference
 
     1. Go to your provider solution.
 
-    1. Verify that the Provider Definition Logic Definition reference component you created was added. If it wasn't added, select **Add Existing** and add the component you just created.
+    1. Verify that the Provider Definition Logic Definition reference component you created was added. If it wasn't added, select **Add Existing** and add the component you created.
 
 ## Share your providers
 
