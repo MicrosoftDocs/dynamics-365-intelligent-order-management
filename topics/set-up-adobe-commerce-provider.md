@@ -1,7 +1,7 @@
 ---
 author: sumanic
 description: This article describes how to set up the Adobe Commerce provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 01/07/2026
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to

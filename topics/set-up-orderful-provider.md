@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic provides information about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Set up Orderful provider
 
 ---
@@ -15,12 +14,11 @@ title: Set up Orderful provider
 
 [!include [banner](includes/banner.md)]
 
-
 This topic provides information about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
 
 Orderful is a cloud electronic data interchange (EDI) platform for manufacturers, distributors, retailers, and technology companies. The Orderful provider enables Intelligent Order Management to access and process purchase orders from Orderful.  
   
-For more information about Orderful, contact Orderful at <sales+msft@orderful.com>. 
+For more information about Orderful, contact Orderful at <sales+msft@orderful.com>.
 
 ## Prerequisites
 
@@ -32,15 +30,15 @@ To set up the provider, follow these steps:
 
 1. In Intelligent Order Management, go to **Providers &gt; Catalog**.
 
-2. Select **Add Provider** on the **Orderful** tile.
+1. Select **Add Provider** on the **Orderful** tile.
 
-3. Select **Create** on the **Terms and Conditions** page.
+1. Select **Create** on the **Terms and Conditions** page.
 
-4. There are two connections that you need to set up in the **Connections** section.
+1. There are two connections that you need to set up in the **Connections** section.
 
     1. Orderful Dataverse connection.
 
-    2. Orderful connection:
+    1. Orderful connection:
 
        1. Select the connection.
 
@@ -48,7 +46,7 @@ To set up the provider, follow these steps:
 
        1. Search for **Orderful** and then select the connector.
 
-       1. Enter the following information: 
+       1. Enter the following information:
           - **Connection Name**: Enter a name of your choice.
           - **API Key**: Enter the Orderful API key. You can retrieve it by following the instructions [here](https://ui.orderful.com/settings/api-credentials).
 
@@ -66,18 +64,17 @@ To set up the provider, follow these steps:
 
        1. Select **Save and close**.
 
-5.  Go to the **Parameters** tab and add the **Owner Id** and **Webhook Name**. 
+1. Go to the **Parameters** tab and add the **Owner Id** and **Webhook Name**.
 
-6. Select **Save**.
+1. Select **Save**.
 
-7. Select **Activate** to activate the provider.
+1. Select **Activate** to activate the provider.
 
-8. Select **Save and close**.
+1. Select **Save and close**.
 
-9. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
+1. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
 
-
-##  Out-of-box capabilities
+## Out-of-box capabilities
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
@@ -88,5 +85,5 @@ To set up the provider, follow these steps:
 |    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Orderful 850 Purchase Order to Dataverse Sales Order**</br>  |
 
 ## Additional resources
-[Orderful API documentation](https://docs.orderful.com/)
 
+[Orderful API documentation](https://docs.orderful.com/)

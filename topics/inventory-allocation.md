@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to set up the inventory allocation feature of the Inventory Visibility add-in in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -49,11 +49,11 @@ The Inventory Visibility add-in inventory allocation feature consists of the fol
 - Customizable allocation groups that have a maximum of eight levels
 - A set of allocation application programming interfaces (APIs):
 
-    - allocate
-    - reallocate
-    - unallocate
-    - consume
-    - query
+  - allocate
+  - reallocate
+  - unallocate
+  - consume
+  - query
 
 Although the inventory allocation feature doesn't set aside physical inventory quantities, it does refer to the available physical inventory quantity of a product to define the initial quantity of the available-to-allocate virtual pool. Inventory allocation is a soft allocation. In other words, the allocation is done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any e-commerce customers visit the sales channel or retail store to purchase the stock.
 
@@ -73,7 +73,7 @@ To turn on the inventory allocation feature in Intelligent Order Management, fol
 1. Select **Index and Reservation**.
 1. On the **Feature Management & Settings** tab, turn on the toggle switch for **Allocation**.
 
-![Feature Management & Settings tab of the Inventory Visibility Configuration page, where the Allocation toggle switch is turned on.](media/AllocationOn.png)
+:::image type="content" source="media/AllocationOn.png" alt-text="Screenshot of the Feature Management and Settings tab of the Inventory Visibility Configuration page, where the Allocation toggle switch is turned on.":::
 
 ### Enable a product for allocation
 
@@ -82,7 +82,7 @@ To enable a product for allocation in Intelligent Order Management, follow these
 1. Go to **Products**, and open the product.
 1. On the **Additional Details** tab, in the **Inventory** section, in the **Allows Inventory Allocation** field, select **Yes**.
 
-![Additional Details tab where the Allows Inventory Allocation field is set to Yes.](media/ProdAllocation.png)
+:::image type="content" source="media/ProdAllocation.png" alt-text="Screenshot of the Additional Details tab where the Allows Inventory Allocation field is set to Yes.":::
 
 ## Configure inventory allocation settings
 
@@ -148,7 +148,7 @@ To map allocation groups, follow these steps:
 1. Go to **Index and Reservations**.
 1. On the **Intelligent Order Management Mappings**, in the **Set Allocation Group Mappings** section, in the  **Allocation Group Name** field, select the predefined allocation group name from Intelligent Order Management to map the Inventory Visibility allocation group.
 
-![Set Allocation Group Mappings section of the Inventory Visibility Configuration page.](media/AllocationGroup.png)
+:::image type="content" source="media/AllocationGroup.png" alt-text="Screenshot of the Set Allocation Group Mappings section of the Inventory Visibility Configuration page.":::
 
 ## Use the allocation API
 

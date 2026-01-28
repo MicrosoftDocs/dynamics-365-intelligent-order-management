@@ -1,7 +1,7 @@
 ---
 author: raybennett-msft
 description: This article describes the state framework architecture in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -27,7 +27,7 @@ The state framework data model introduces some updates and new additions to the 
 
 The following illustration shows the tables that have been added in the state framework data model.
 
-![State framework data model.](media/state-framework-1.png)
+:::image type="content" source="media/state-framework-1.png" alt-text="Screenshot of the state framework data model diagram.":::
 
 ### Updates to the data model
 
@@ -116,4 +116,4 @@ To add a new state and transition, follow these steps:
     1. Set the **State** field to what the state should be set to when the business event is raised.
     1. Set the **State Reason** field to what you want the reason to be when the business event is raised.
 
-1. Add any properties (**ReadOnly** or **Timeline**) that are required. 
+1. Add any properties (**ReadOnly** or **Timeline**) that are required.

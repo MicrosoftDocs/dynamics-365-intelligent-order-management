@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Inventory dashboards
 ---
 
@@ -20,7 +19,7 @@ Inventory management is one of the most expensive parts of the order management 
 
 The following illustration shows an example of an inventory dashboard in Intelligent Order Management.
 
-![Example of an inventory dashboard.](media/InventoryDashboard.png)
+:::image type="content" source="media/InventoryDashboard.png" alt-text="Screenshot of an example inventory dashboard in Intelligent Order Management.":::
 
 ## Prerequisites and setup
 

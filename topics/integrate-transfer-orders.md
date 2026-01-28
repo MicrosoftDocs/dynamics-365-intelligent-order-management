@@ -1,7 +1,7 @@
 ---
 author: anvenkat
 description: This article describes how to integrate transfer orders in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
@@ -39,10 +39,10 @@ The following prerequisites must be met before you can activate dual-write suppo
 
 - Install or update the following dual-write packages to ensure that you have the latest versions:
 
-    - Dual-write core solution package
-    - Dual-write Application Core package
-    - Dual-write Finance package
-    - Dual-write Human Resources package
+  - Dual-write core solution package
+  - Dual-write Application Core package
+  - Dual-write Finance package
+  - Dual-write Human Resources package
 
 - If dual-write for sales orders is already installed in your environment, ensure that it's up to date.
 - If an older version of Intelligent Order Management is running in your instance, and dual-write is already installed there, ensure that you import the user experience (UX) solution package for purchase orders and transfer orders.
@@ -66,7 +66,7 @@ The following tables must be synced for the **Transfer Order Header** table map:
 - Terms of delivery
 - Warehouses
 
-![Transfer Order Header table map in dual-write.](media/transfer-header.png)
+:::image type="content" source="media/transfer-header.png" alt-text="Screenshot of the Transfer Order Header table map in dual-write.":::
 
 The following tables must be synced for the **Transfer Order Products** table map:
 
@@ -83,7 +83,7 @@ The following tables must be synced for the **Transfer Order Products** table ma
 - Sites
 - Warehouses
 
-![Transfer Order Products table map in dual-write.](media/to-lines.png)
+:::image type="content" source="media/to-lines.png" alt-text="Screenshot of the Transfer Order Products table map in dual-write.":::
 
 For more information about dual-write mapping references, see [Dual-write mapping reference](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference).
 
@@ -91,7 +91,7 @@ For more information about dual-write mapping references, see [Dual-write mappin
 
 To create a transfer order, follow these steps:
 
-1. In the left navigation pane, under **Orders**, select **Transfer orders**. 
+1. In the left navigation pane, under **Orders**, select **Transfer orders**.
 1. Select **New**.
 1. Set the following mandatory fields:
 
@@ -112,4 +112,4 @@ As transfer orders are processed in Supply Chain Management, status updates are 
 
 A view of transfer orders is available via a tab on the sales order product page. The **Transfer Orders** tab shows the list of transfers for the order product, including values for the **Shipping Warehouse** and **To Warehouse** fields. This tab provides visibility into incoming inventory for the warehouse that is assigned to the sales order product.
 
-![Transfer order view.](media/transfer-order.png)
+:::image type="content" source="media/transfer-order.png" alt-text="Screenshot of the transfer order view on the sales order product page.":::

@@ -2,7 +2,7 @@
 author: sumanic
 description: This topic explains how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -56,20 +56,20 @@ This setup will enable order synchronization between Intelligent Order Managemen
 
 - Order synchronization from Intelligent Order Management to Finance + Operations requires that some key parameters be sent in the order:
 
-    - **Sales Order** policy parameters:
+  - **Sales Order** policy parameters:
 
-        - Company
-        - Invoice Customer
+    - Company
+    - Invoice Customer
 
-    - **Sales Order Product** policy parameters:
+  - **Sales Order Product** policy parameters:
 
-        - Company
-        - Shipping Site
-        - Shipping Warehouse
+    - Company
+    - Shipping Site
+    - Shipping Warehouse
 
     These parameter values can be passed through policy rule definitions in Intelligent Order Management, as shown in the following example for a sales order policy.
 
-    ![Dual-write Sales Order entity mapping.](media/SOHeaderPolicy.png)
+    :::image type="content" source="media/SOHeaderPolicy.png" alt-text="Screenshot of the Dual-write Sales Order entity mapping.":::
 
     For more information, see [Policies and rules](policies-rules.md).
 
@@ -99,4 +99,4 @@ To send an order from Intelligent Order Management to Finance + Operations, you 
 
 The following illustration shows an example of an order processing orchestration flow that has a custom **Send Order to FinOps for Fulfillment** action.
 
-![Orchestration flow with a custom Send Order to FinOps for Fulfillment action.](media/F&OFlow.png)
+:::image type="content" source="media/F&OFlow.png" alt-text="Screenshot of an orchestration flow with a custom Send Order to FinOps for Fulfillment action.":::

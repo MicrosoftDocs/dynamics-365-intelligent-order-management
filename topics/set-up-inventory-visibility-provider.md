@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -118,9 +118,9 @@ To validate and update the Inventory Visibility add-in configurations, follow th
         - **Allocation Group** – This column refers to a defined allocation group. The value can range from **group 0** through **group 7**.
         - **Allocation Group Name** – This column refers to the standard allocation group that your defined allocation group maps to.
 
-![Mapping.](media/Mapping.png)
+:::image type="content" source="media/Mapping.png" alt-text="Screenshot of the Intelligent Order Management Mappings configuration.":::
 
-> ![NOTE] 
+> [!NOTE] 
 > Currently, Intelligent Order Management supports allocation groups of up to two groups.
 
 After you've completed the preceding validations and configuration updates, Intelligent Order Management configures or reuses the physical and calculated measures across all your data sources.
@@ -152,7 +152,7 @@ To set up the provider, follow these steps:
     1. Enter values for the **Display name** and **Azure Storage account name or blob endpoint** fields.
     1. Select **Save**.
 
-    ![Azure Blob Storage dialog box.](media/AzBlob.png)
+    :::image type="content" source="media/AzBlob.png" alt-text="Screenshot of the Azure Blob Storage dialog box.":::
 
 1. To set up the **Inventory Visibility Dataverse (current environment)** connection, select **Create**.
 1. Select **Next**.

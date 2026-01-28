@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic describes the steps required to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Create intake provider
 
 ---
@@ -53,7 +52,7 @@ To add a transformation to the provider definition, follow these steps:
 1. For **Source Object Name**, enter "IOMLabOrderIntakeProvider".
 1. For **Destination Object Name**, enter "Dataverse Order".
 1. For **Transformation**, paste in the following M query code:
-```M
+
 shared ImportMappingKey = [
     account = {
 			[
@@ -139,10 +138,10 @@ let
 	salesorder = Record.AddField(orderheader, "order_details", orderlines)
 in Text.FromBinary(Json.FromValue(salesorder));
 ```
-12. For **Transformation Source Type**, enter "JsonPayload".
-13. Select **Save**.
-14. Create a JSON file, paste in the following code, and save it.
-```JSON
+1. For **Transformation Source Type**, enter "JsonPayload".
+1. Select **Save**.
+1. Create a JSON file, paste in the following code, and save it.
+
 {
   "ordernumber": "IOMLabOrder001",
   "shiptocity": "BELLEVUE",
@@ -162,9 +161,8 @@ in Text.FromBinary(Json.FromValue(salesorder));
   ]
 } 
 
-```
-15. Next to the **Sample Data** field, select **Choose File** and upload the JSON file you created.
-16. Select **Save & close**.
+1. Next to the **Sample Data** field, select **Choose File** and upload the JSON file you created.
+1. Select **Save & close**.
 
 ## Add provider definition transformation to solution
 
@@ -192,7 +190,7 @@ To create a provider message handler, follow these steps:
 1. For **Importance**, select **Any**.
 1. For **Only with Attachment**, select **Yes**.
 
-    ![Outlook trigger)](media/lab_trigger_outlook.png)
+    :::image type="content" source="media/lab_trigger_outlook.png" alt-text="Screenshot of Outlook trigger configuration.":::
 1. Select **New step** and add "Parse JSON".
 1. For **Content**, paste in the following code:
     ```JSON
@@ -216,7 +214,7 @@ To create a provider message handler, follow these steps:
 1. Rename the action "IOM System Properties".
 1. Select **Save**.
 
-    ![System properties action)](media/lab_iom_system_properties_action.png)
+    :::image type="content" source="media/lab_iom_system_properties_action.png" alt-text="Screenshot of IOM System Properties action.":::
 1. Select **New step**, add a **Parse JSON** action, and rename to "Initialize Provider Variables".
 1. For **Content**, paste in the following code:
     ```JSON
@@ -232,7 +230,7 @@ To create a provider message handler, follow these steps:
 1. For **Value**, select **true**.
 1. Select **Save**.
 
-    ![Initialize processing execution result](media/lab_initialize_processing_execution_result.png)
+    :::image type="content" source="media/lab_initialize_processing_execution_result.png" alt-text="Screenshot of Initialize Processing Execution Result action.":::
 1. Select **New step**, add "scope", and rename to "Try".
 1. In the **Try** scope, select **Add an action**.
 1. Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM".
@@ -242,11 +240,11 @@ To create a provider message handler, follow these steps:
 1. For **ProviderExternalRequestId**, enter ``guid()`` as an expression. 
 1. Select **Save**.
 
-    ![Acknowledge provider message](media/lab_acknowledge_provider_message.png)
+    :::image type="content" source="media/lab_acknowledge_provider_message.png" alt-text="Screenshot of Acknowledge provider message action.":::
 1. Select **Add an action**, and then add an **Apply to each** control.
 1. For **Select an output from previous steps**, select **Attachments**.
 
-    ![Apply to each control](media/lab_apply_to_each_control_3.png)
+    :::image type="content" source="media/lab_apply_to_each_control_3.png" alt-text="Screenshot of Apply to each control configuration.":::
 1. Select **Add an action** within the **Apply to each** loop, add **Run a child flow** from the **Flow** connector, and rename it "Transform Message with Power Query Online".
 1. Select the child flow **IOM Provider Transformer**.
 1. For **Provider Id**, select the **ProviderId** variable.
@@ -255,37 +253,37 @@ To create a provider message handler, follow these steps:
 1. For **Payload**, enter ``decodeBase64(items('Apply_to_each')?['ContentBytes'])`` as an expression.
 1. Select **Save**.
 
-    ![Transform message with Power Query](media/lab_transform_message_power_query.png)
+    :::image type="content" source="media/lab_transform_message_power_query.png" alt-text="Screenshot of Transform message with Power Query Online action.":::
 1. After the transformation step, select **Add an action**, add **Run a child flow** from the Flow connector, and rename it "Create Order".
 1. For **Child Flow**, enter "IOM Sales Order Creation".
 1. For **Payload**, enter ``string(json(outputs('Transform_Message_with_Power_Query_Online')?['Body']?['result'])?[0][0])`` as an expression.
 1. Select **Save**.
 
-    ![Create Order](media/lab_create_order.png)
+    :::image type="content" source="media/lab_create_order.png" alt-text="Screenshot of Create Order action.":::
 1. Collapse the **Try** scope by selecting its title bar.
 1. Select **New step**, add a scope and rename it "Catch".
 1. In the **Catch** scope, select the ellipsis ("**...**"), and then select **Configure run after**.
 1. Select the **has failed** and **has timed out** checkboxes, and then select **Done**.
 
-    ![Configure run after](media/lab_configure_run_after.png)
+    :::image type="content" source="media/lab_configure_run_after.png" alt-text="Screenshot of Configure run after settings.":::
 1. In the **Catch** scope, select **Add an action**, add a **Set variable** action and rename it "Set the execution result to failed".
 1. For **Name**, enter "Executionresult".
 1. For **Value**, select **False**.
 1. Select **Save**.
 
-    ![Set variable action](media/lab_set_variable.png)
+    :::image type="content" source="media/lab_set_variable.png" alt-text="Screenshot of Set variable action.":::
 1. Collapse the **Catch** scope by selecting its title bar.
 1. Select **New step**, add a scope and rename it "Finally".
 1. In the **Finally** scope, select the ellipsis ("**...**"), and then select **Configure run after**. 
 1. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
 
-    ![Configure run after (Finally scope)](media/lab_configure_run_after_2.png)
+    :::image type="content" source="media/lab_configure_run_after_2.png" alt-text="Screenshot of Configure run after settings for Finally scope.":::
 1. In the **Finally** scope, select **Add an action**, add a **Perform an unbound action** action and rename it "Save Provider message request execution result".
 1. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus".
 1. For **ProviderMessageRequestExecutionId**, enter ``@outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
 1. Select **Save**.
 
-    ![Save provider message request execution result](media/lab_save_provider_message_request_execution_result.png)
+    :::image type="content" source="media/lab_save_provider_message_request_execution_result.png" alt-text="Screenshot of Save Provider message request execution result action.":::
 
 ## Add provider definition logic definition to the provider definition
 

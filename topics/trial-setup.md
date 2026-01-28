@@ -2,12 +2,12 @@
 title: Sign up for a free trial - Dynamics 365 Intelligent Order Management | Microsoft Docs"
 description: Learn how to quickly sign up for and start a free Dynamics 365 Intelligent Order Management trial. Explore the app with tours and videos, and find additional learning resources.
 author: josaw1
-ms.author: josaw
-ms.date: 03/21/2025
+ms.author: anvenkat
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: get-started
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ---
 
 

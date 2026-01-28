@@ -3,7 +3,7 @@ title: Fulfillment entity relationships in Intelligent Order Management
 author: anvenkat
 description: Learn about entity relationships for out-of-box entities in Microsoft Dynamics 363 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/02/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: overview

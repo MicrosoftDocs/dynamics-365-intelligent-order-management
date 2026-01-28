@@ -2,12 +2,11 @@
 author: anvenkat
 description: This article describes manual order orchestration in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: article
 ms.author: anvenkat
-
 title: Manual order orchestration in Intelligent Order Management
 
 ---

@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic describes the steps required to run a sample order orchestration flow in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Run sample order orchestration flow
 
 ---
@@ -26,14 +25,14 @@ To set up a customer, follow these steps:
 1. For **Account Name**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
 1. Select **Save & close**.
 
-## Set up account mapping 
+## Set up account mapping
 
 To set up account mapping, follow these steps:
 
-1. In the lower right corner of your Intelligent Order Management application screen, change the area from **IOM** to **Configurations**. If you use a left-to-right (LTR) language, this setting is located in the lower left corner of your application screen. 
+1. In the lower right corner of your Intelligent Order Management application screen, change the area from **IOM** to **Configurations**. If you use a left-to-right (LTR) language, this setting is located in the lower left corner of your application screen.
 1. Go to **Mappings \> Accounts**.
 1. Select **New**.
-1. On the **New IOM Account Mapping** page, do the following: 
+1. On the **New IOM Account Mapping** page, do the following:
     1. For **Mapping Group**, enter "Default Mapping Group".
     1. For **Customer**, enter "DefaultAccount-IOMLabOrderIntakeProvider".
     1. For **External Field Name**, enter "ProviderName".

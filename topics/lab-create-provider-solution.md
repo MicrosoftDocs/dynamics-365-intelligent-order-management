@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic describes the steps required to create a new provider solution package in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Create a new provider solution package
 
 ---
@@ -31,6 +30,6 @@ To create a new provider solution, follow these steps:
 1. For **Publisher**, select **CDS Default Publisher**.
 1. For **Version**, enter "1.0.0.0".
 
-![New solution properties](media/lab_new_solution.png)
+   :::image type="content" source="media/lab_new_solution.png" alt-text="Screenshot of the new solution properties.":::
 
 Next quick start lab step: [Create RequestBin custom connector](lab-create-requestbin-connector.md).

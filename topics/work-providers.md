@@ -2,7 +2,7 @@
 
 author: sumanic
 description: This article provides an overview of the process of working with providers and explains how to set up a provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -25,7 +25,7 @@ Intelligent Order Management includes a library of out-of-box providers that you
 
 The following illustration shows an example of providers in the Intelligent Order Management provider library.
 
-![Intelligent Order Management provider library.](media/Providers.png)
+:::image type="content" source="media/Providers.png" alt-text="Screenshot of the Intelligent Order Management provider library.":::
 
 ## Provider architecture
 
@@ -58,7 +58,7 @@ Follow these steps to set up one or more providers.
 1. Select **Accept** to accept the terms and conditions.
 1. For the first provider, select **See details** to open the **Provider Activation** page. There, you can optionally edit the provider name or leave it as it appears on the **Connection** page.
 
-    ![Provider Activation page.](media/Provactivation.png)
+    :::image type="content" source="media/Provactivation.png" alt-text="Screenshot of the Provider Activation page.":::
 
 1. Scroll down to the **Connections** section to view the connections that are associated with the provider.
 1. Next to the provider connection, select **Create** to open a page where you can enter the connection details.

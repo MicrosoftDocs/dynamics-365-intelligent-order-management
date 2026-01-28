@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic provides an overview of Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
-ms.author: josaw
-
+ms.author: anvenkat
 title: Intelligent Order Management overview
 ---
 
@@ -14,7 +13,6 @@ title: Intelligent Order Management overview
 # Intelligent Order Management overview
 
 [!include [banner](includes/banner.md)]
-
 
 With Dynamics 365 Intelligent Order Management, customers can manage the orchestration of orders through to fulfillment. These capabilities enable organizations to orchestrate order flows across different platforms and apps.
 
@@ -28,25 +26,25 @@ Intelligent Order Management is designed as a Microsoft Dataverse application an
 
 Partners and customers can benefit from the following.
 
--   Partners can understand the core architecture and integration capabilities and start developing solutions to integrate with external service or build application functionality.
+- Partners can understand the core architecture and integration capabilities and start developing solutions to integrate with external service or build application functionality.
 
--   Customers can learn the core components including the orchestration, fulfillment optimization, provider services concepts, data platform, and insights capabilities.
+- Customers can learn the core components including the orchestration, fulfillment optimization, provider services concepts, data platform, and insights capabilities.
 
 ## Components
 
-Intelligent Order Management is delivered as a cloud-based solution. The following list contains the core components of the solution: 
+Intelligent Order Management is delivered as a cloud-based solution. The following list contains the core components of the solution:
 
--   App: The Intelligent Order Management app provides an interface to view orders and the fulfillment state. It provides a single place to view orders, regardless of the order source or how they were fulfilled.
+- App: The Intelligent Order Management app provides an interface to view orders and the fulfillment state. It provides a single place to view orders, regardless of the order source or how they were fulfilled.
 
--   Providers: Providers enable the transfer of orders and fulfillment information between different platforms and apps.
+- Providers: Providers enable the transfer of orders and fulfillment information between different platforms and apps.
 
--   Orchestration: Flows are configured to manage the journey of an order. Communication with providers creates events that drive an order through the flow. Customers implement business processes for their products and business requirements.
+- Orchestration: Flows are configured to manage the journey of an order. Communication with providers creates events that drive an order through the flow. Customers implement business processes for their products and business requirements.
 
--   Inventory Visibility Service: This service provides real-time visibility of inventory in the supply network so that decisions can be made through the order flow. Inventory can be communicated from source and target systems through the orchestration flows and providers.
+- Inventory Visibility Service: This service provides real-time visibility of inventory in the supply network so that decisions can be made through the order flow. Inventory can be communicated from source and target systems through the orchestration flows and providers.
 
--   Fulfillment optimization: This is a service that can be leveraged through the orchestration flow. The service enables optimization decisions about where an order can be fulfilled, using concepts such as cost and closest in distance.
+- Fulfillment optimization: This is a service that can be leveraged through the orchestration flow. The service enables optimization decisions about where an order can be fulfilled, using concepts such as cost and closest in distance.
 
--   Insights: Understanding order and fulfillment metrics is critical in decision-making. Dashboards provide visibility to key order data and fulfillment key performance indicators (KPIs).
+- Insights: Understanding order and fulfillment metrics is critical in decision-making. Dashboards provide visibility to key order data and fulfillment key performance indicators (KPIs).
 
 ### Intelligent Order Management app
 

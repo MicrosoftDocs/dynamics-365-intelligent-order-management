@@ -3,7 +3,7 @@
 author: anvenkat
 description: This article provides an overview of the Fulfillment and Returns Optimization provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
@@ -94,7 +94,7 @@ You can define the maximum distance for a source or a source list. When the maxi
 
 The following illustration shows an example where the Seattle warehouse can deliver only up to 10 miles from its radius, even though it's part of the **All Sources** list, where the maximum distance is 50 miles. Because of the way that this constraint works, the shortest distance is used if there's a conflict.
 
-![Maximum radius constraint example.](media/constraint-max-radius.png)
+:::image type="content" source="media/constraint-max-radius.png" alt-text="Screenshot of the maximum radius constraint example showing Seattle warehouse with a 10-mile delivery radius.":::
 
 If, as a result of a constraint, no warehouse is suitable for a sales order, the system won't be able to create any fulfillment order for the sales order. Instead, the status of the sales order will change to **Inventory not found**.
 
@@ -132,7 +132,7 @@ Some businesses maintain safety stocks to efficiently manage customer demand, an
 
 The Fulfillment and Returns Optimization provider excludes a fulfillment source if inventory for the product is below the safety stock level. To configure the safety stock constraint, you must perform the following setup:
 
-- **Safety stock constraint:** Create a new constraint, and set the **Constraint type** field to **Safety stock Constraint**. 
+- **Safety stock constraint:** Create a new constraint, and set the **Constraint type** field to **Safety stock Constraint**.
 - **Safety stock at fulfillment source:** Maintain the safety stock on the fulfillment source.
 
 After this setup is completed, the Fulfillment and Returns Optimization provider will exclude the fulfillment source if on-hand inventory is below the safety stock limit.

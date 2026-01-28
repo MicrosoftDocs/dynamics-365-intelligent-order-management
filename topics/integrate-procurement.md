@@ -2,7 +2,7 @@
 author: anvenkat
 description: This article describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -35,10 +35,10 @@ The following prerequisites must be met before you can activate dual-write suppo
 
 - Install or update the following dual-write packages to ensure that you have the latest versions:
 
-    - Dual-write core solution package
-    - Dual-write Application Core package
-    - Dual-write finance package
-    - Dual-write Human Resources package
+  - Dual-write core solution package
+  - Dual-write Application Core package
+  - Dual-write finance package
+  - Dual-write Human Resources package
 
 - If dual-write for sales orders is already installed in your environment, ensure that it's up to date.
 - If an older version of Intelligent Order Management is running in your instance, and dual-write is already installed there, ensure that you import the user experience (UX) solution package for purchase orders and transfer orders.
@@ -68,7 +68,7 @@ To create a purchase order in Intelligent Order Management, follow these steps:
     > If you save the header without entering any of the field values, and you then want to edit them immediately afterward, you must confirm the header in Supply Chain Management before you can update any of the fields on the **Purchase Order** page.
 
 1. Select **Save**.
-1. Select **New Purchase Order Product**, and then select values in the **Existing Product**, **Line number**, **Associate to Warehouse**, **Quantity**, and **Unit of measure** fields. 
+1. Select **New Purchase Order Product**, and then select values in the **Existing Product**, **Line number**, **Associate to Warehouse**, **Quantity**, and **Unit of measure** fields.
 1. Select **Save**. If the transaction is successfully saved, the dual-write operation was successful, and the purchase order was created and updated in Supply Chain Management.
 
 ## UI fields for purchase order entities
@@ -158,7 +158,7 @@ The **Purchase Order Receipt** and **Purchase Order Receipt products** entities 
 
 The following illustration shows an example of the **New Purchase Order Receipt Product** page.
 
-![New Purchase Order Receipt Product page.](media/goods-receipt.png)
+:::image type="content" source="media/goods-receipt.png" alt-text="Screenshot of the New Purchase Order Receipt Product page.":::
 
 For information about the detailed mapping between Supply Chain Management purchase order status and purchase order line status, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
 
@@ -166,4 +166,4 @@ For information about the detailed mapping between Supply Chain Management purch
 
 The **Purchase Orders** tab that is available on the sales order products page lists all the open purchase order lines for the product. The following illustration shows an example.
 
-![Purchase Orders tab of a sales order products page.](media/po-view-sp.png)
+:::image type="content" source="media/po-view-sp.png" alt-text="Screenshot of the Purchase Orders tab on a sales order products page.":::

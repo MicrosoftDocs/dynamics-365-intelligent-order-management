@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic describes the steps required to create policies in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Create policies
 
 ---
@@ -41,8 +40,9 @@ To create new order header validation policy rule, follow these steps:
     1. In the third field, select **US**.
 1. For **Policy**, enter or select "Order header validation policy".
 
-![Order header validation rule](media/lab_order_header_validation_rule.png)
-1. Select **Save & close**. 
+   :::image type="content" source="media/lab_order_header_validation_rule.png" alt-text="Screenshot of the order header validation rule.":::
+
+1. Select **Save & close**.
 
 ## Publish the header validation policy
 
@@ -75,7 +75,8 @@ To create a new order line validation policy rule, follow these steps:
     1. In the third field, enter or select **5**.
 1. Under **Action**, set the **Add Action** value to **No**.
 
-![Order line validation rule](media/lab_order_line_validation_rule.png)
+   :::image type="content" source="media/lab_order_line_validation_rule.png" alt-text="Screenshot of the order line validation rule.":::
+
 1. Select **Save and close**.
 
 ## Publish the line validation policy
@@ -112,7 +113,8 @@ To create a new simple fulfillment assignment policy rule for the Seattle store,
     1. In the second field, select **Set Value**.
     1. In the third field, enter or select **Seattle store**.
 
-![Assignment rule (Seattle)](media/lab_assignment_rule_seattle.png)
+   :::image type="content" source="media/lab_assignment_rule_seattle.png" alt-text="Screenshot of the assignment rule for Seattle.":::
+
 1. Select **Save and close**.
 
 ## Create new simple fulfillment assignment policy rule for Chicago store
@@ -129,7 +131,7 @@ To create a new simple fulfillment assignment policy rule for the Chicago store,
     1. In the first field, select **Fulfillment Source**.
     1. In the second field, select **Set Value**.
     1. In the third field, enter or select **Chicago store**.
-![Assignment rule (Chicago)](media/lab_assignment_rule_chicago.png)
+:::image type="content" source="media/lab_assignment_rule_chicago.png" alt-text="Screenshot of the assignment rule for Chicago.":::
 
 1. Select **Save and close**.
 
@@ -164,7 +166,8 @@ To create a new filter rule for the Seattle store, follow these steps:
     1. In the third field, enter or select **Seattle store**.
 1. Under **Action**, set the **Add Action** value to **No**.
 
-![Filter rule (Seattle)](media/lab_filter_rule_seattle.png)
+   :::image type="content" source="media/lab_filter_rule_seattle.png" alt-text="Screenshot of the filter rule for Seattle.":::
+
 1. Select **Save and close**.
 
 ## Publish filter policy for Seattle store
@@ -198,7 +201,8 @@ To create a new filter rule for the Chicago store, follow these steps:
     1. In the third field, enter or select **Chicago store**.
 1. Under **Action**, set the **Add Action** value to **No**.
 
-![Filter rule (Chicago)](media/lab_filter_rule_chicago.png)
+   :::image type="content" source="media/lab_filter_rule_chicago.png" alt-text="Screenshot of the filter rule for Chicago.":::
+
 1. Select **Save and close**.
 
 ## Publish filter policy for Chicago store
@@ -210,7 +214,7 @@ To publish the filter policy for the Chicago store, follow these steps:
 
 If you've followed along, you should now see the transpiled Power Automate cloud flows as shown in the following illustration.
 
-![Transpiled Power Automate cloud flows for policies in Intelligent Order Management](media/lab_create_policies.png)
+:::image type="content" source="media/lab_create_policies.png" alt-text="Screenshot of the transpiled Power Automate cloud flows for policies in Intelligent Order Management.":::
 
 ## Add input event to action type
 
@@ -220,9 +224,8 @@ To add an input event to an action type, follow these steps:
 1. Select **Policy Based Fulfillment Determination**.
 1. Select **+ New IOM Action Type Input Business Event**.
 1. For **Name**, enter "Validation of Order Lines has Succeeded".
-1. For **Action Type**, enter "Policy Based Fulfillment Determination". 
+1. For **Action Type**, enter "Policy Based Fulfillment Determination".
 1. For **Business Event Definition**, enter "Validation of Order Lines has Succeeded".
 1. Select **Save**.
 
 Next quick start lab step: [Create order orchestration](lab-create-order-orch.md)
-

@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 08/20/2024
+ms.date: 01/28/2026
 ms.topic: how-to
 ms.author: sumanic
 title: Inventory operations visibility
@@ -79,7 +79,7 @@ To view availability from the **Order Products** page, a customer representative
 1. In the left navigation pane, under **Orders**, select **Order Products**.
 1. Select **Add Products**. The **Quick Create: Order Product** dialog box appears.
 
-    ![Quick Create: Order Product dialog box.](media/QuickForm.png)
+    :::image type="content" source="media/QuickForm.png" alt-text="Screenshot of the Quick Create: Order Product dialog box.":::
 
 1. Set the **Select Product** option to **Existing** or **Write-in**, and then select or add the product.
 1. Add the **Unit** value.

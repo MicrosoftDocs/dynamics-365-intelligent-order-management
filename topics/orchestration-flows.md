@@ -1,7 +1,7 @@
 ---
 title: Create orchestration flows
 description: Learn about orchestration flows and how to create them in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 02/03/2025
+ms.date: 01/28/2026
 author: anvenkat
 ms.author: anvenkat
 ms.custom: 

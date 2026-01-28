@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic covers policy types and describes how to create a policy with rules in Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: article
-ms.author: josaw
-
+ms.author: anvenkat
 title: Policies and rules
 
 ---
@@ -21,7 +20,7 @@ This topic covers policy types and describes how to create a policy with rules i
 
 ## Policy types
 
-Policies and their associated rules are used for different purposes in the Intelligent Order Management orchestration flow. Policies are classified into different policy types. Policy types ensure that users can easily select the appropriate policies in the orchestration flow. The two supported policy types are listed in the following table. 
+Policies and their associated rules are used for different purposes in the Intelligent Order Management orchestration flow. Policies are classified into different policy types. Policy types ensure that users can easily select the appropriate policies in the orchestration flow. The two supported policy types are listed in the following table.
 
 | Policy type                   | Description                                                                                                         |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -44,17 +43,17 @@ A policy consists of five fields, as shown in the following table.
 
 To create a new policy, follow these steps:
 
-1.	Go to **Orchestration** > **Policies**.  
-2.	Select **New** to initiate the policy creation process.
-3.	In the **Policy Name** field, enter a unique name (for example, “Order line validations extended”). 
-4.	In the **Policy Type** field, select **Execution Policy**. 
-5.	In the **Policy Criticality** field, select **Information**. 
-6.	In the **Associated Entity** field, select **Order Product**. 
-7.	Select **Save**.
+1. Go to **Orchestration** > **Policies**.  
+1. Select **New** to initiate the policy creation process.
+1. In the **Policy Name** field, enter a unique name (for example, "Order line validations extended").
+1. In the **Policy Type** field, select **Execution Policy**.
+1. In the **Policy Criticality** field, select **Information**.
+1. In the **Associated Entity** field, select **Order Product**.
+1. Select **Save**.
 
-The following image shows the policy details entered for the “Order line validations extended” policy example.
+The following image shows the policy details entered for the "Order line validations extended" policy example.
 
-![Order line validations extended policy example.](media/order-line-validations-extended.png)
+:::image type="content" source="media/order-line-validations-extended.png" alt-text="Screenshot of the Order line validations extended policy example.":::
 
 ## Rules
 
@@ -62,9 +61,9 @@ You can create conditional rules in Intelligent Order Management by using Condit
 
 To add a condition to your policy, select **New IOM Rule**. An **Add** button appears in the rule definition that, when selected, displays the following options:
 
-   - **Add row**: Each individual condition that you check for, such as “the value is greater than 10,” or “the list does not contain Test”, creates a new row in Condition Builder.
-   - **Add group**: You can combine one or more rows together in a group. Each group is combined by using either an **And** or an **Or** operator. If you select **And**, then all the condition rows must be true. If you select **Or**, then only one of the condition rows needs to be true.
-   - **Add related entity**: You can add conditions against values in related entities. You can also select between entities that are related to the primary entity of the policy. The supported relations are **Many to One** and **One to Many**.
+- **Add row**: Each individual condition that you check for, such as “the value is greater than 10,” or “the list does not contain Test”, creates a new row in Condition Builder.
+- **Add group**: You can combine one or more rows together in a group. Each group is combined by using either an **And** or an **Or** operator. If you select **And**, then all the condition rows must be true. If you select **Or**, then only one of the condition rows needs to be true.
+- **Add related entity**: You can add conditions against values in related entities. You can also select between entities that are related to the primary entity of the policy. The supported relations are **Many to One** and **One to Many**.
 
 You can have as many rows or groups as you need to build out your logic and you can continue adding rows or groups both at the top level of the condition, and inside groups using **Add** buttons. If you want a simplified view of the condition, you can collapse it using a button at the top-right of each group.
 
@@ -87,10 +86,10 @@ The supported operators differentiate each field type, as shown in the following
 
 To create a new example rule, follow these steps:
 
-1.	Go to **Orchestration** > **Policies**.
-1.	Select a policy record (for example, “Order line validations extended”).
-1.	Select **New IOM Rule** to initiate the rule creation process.
-1. In the **Rule Name** field, enter a unique name (for example, “Order product and amount validation”).
+1. Go to **Orchestration** > **Policies**.
+1. Select a policy record (for example, "Order line validations extended").
+1. Select **New IOM Rule** to initiate the rule creation process.
+1. In the **Rule Name** field, enter a unique name (for example, "Order product and amount validation").
 
 ### Create a condition
 
@@ -120,7 +119,7 @@ To create a new example rule, follow these steps:
 
 The following image shows the "Order product and amount validation" rule example as it would appear in the rule editor screen.
 
-![Sample Policy Setup](media/Policy.png)
+:::image type="content" source="media/Policy.png" alt-text="Screenshot of the sample policy setup in the rule editor screen.":::
 
 ## Add custom action
 

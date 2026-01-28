@@ -2,7 +2,7 @@
 title: Intelligent Order Management Insights reporting
 description: This article provides a full list of available Insights reports in Microsoft Dynamics 365 Intelligent Order Management.
 author: derekkwanpm
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: article
@@ -24,8 +24,8 @@ Intelligent Order Management Insights are powered by [embedded Power BI](/power-
 Every Insights dashboard includes filters, help text, and settings. (The numbered paragraphs correspond to the numbered callouts in the illustration.)
 
 1. **Filters** – Each dashboard includes a date filter and data filters that are relevant to the page. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visuals on the whole page.
-2. **Help text** – Each visual on the dashboard has an **i** button that shows helpful information about the related visual.
-3. **Settings** – When each visual is selected, a toolbar of additional settings appears. Here are some of these settings:
+1. **Help text** – Each visual on the dashboard has an **i** button that shows helpful information about the related visual.
+1. **Settings** – When each visual is selected, a toolbar of additional settings appears. Here are some of these settings:
 
     - **Drill up**, **Drill down**, and **Next level in hierarchy** – Drill up or down on the visual to view the next level up or down in the data. For example, you can drill up from **Months** to **Year**.
     - **Next level in hierarchy** and **Expand all down one level in the hierarchy** – Expand levels down in the hierarchy of data. For example, you can expand from **Months** to **Quarters**.
@@ -37,7 +37,7 @@ Every Insights dashboard includes filters, help text, and settings. (The numbere
     - **Get insights** – View automatically generated Insights for the visual, if they're available.
     - **Sort axis** – Customize axis information for the visual.
 
-![Filters, help text, and settings on an Insights dashboard.](media/insights_nav.png)
+:::image type="content" source="media/insights_nav.png" alt-text="Screenshot of filters, help text, and settings on an Insights dashboard.":::
 
 ## Insights metrics
 
@@ -156,12 +156,12 @@ Only users who have [administrator](/power-bi/admin/service-admin-role) and auth
 
 If you have the correct access to customize or create Insights reports, you can select **Resume editing** on any Insights page to enter edit mode.
 
-![Resume editing button on an Insights page.](media/customize_dash_1.png)
+:::image type="content" source="media/customize_dash_1.png" alt-text="Screenshot of the Resume editing button on an Insights page.":::
 
 When you enter edit mode, the following controls become available. (The numbered paragraphs correspond to the numbered callouts in the illustration that follows.)
 
 1. **Editing controls** – Use the buttons on the top menu bar to save, discard, or publish your current draft. If you select **Publish**, you'll publish changes for everyone in your organization.
-2. **Customization controls** – There are three expandable/collapsible panes on the right side of the page:
+1. **Customization controls** – There are three expandable/collapsible panes on the right side of the page:
 
     - **Filters** – View which filters are currently applied, edit the applied filters, or add more filters.
     - **Visualizations** – Select any visual in the main part of the page, and then select a new visual in this pane to change it. For more information about how to change visuals, see [Change the type of visualization in a Power BI report](/power-bi/visuals/power-bi-report-change-visualization-type). You can also edit axis information, legends, and more. For detailed instructions, see [Customize visualization titles, backgrounds, labels, and legends](/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend).
@@ -169,6 +169,6 @@ When you enter edit mode, the following controls become available. (The numbered
 
     For more information about how to customize Power BI reports, see [Customize reports guide](/dynamics365/customer-service/customize-reports).
 
-3. **New page button** – Select the plus sign (**+**) to create a blank page where you can build your own dashboard of visuals. For information about how to add visuals to a page, see [Add visuals to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i?tabs=powerbi-desktop).
+1. **New page button** – Select the plus sign (**+**) to create a blank page where you can build your own dashboard of visuals. For information about how to add visuals to a page, see [Add visuals to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i?tabs=powerbi-desktop).
 
-![Editing controls, customization controls, and New page button on an Insights page.](media/customize_dash_2.png)
+:::image type="content" source="media/customize_dash_2.png" alt-text="Screenshot of editing controls, customization controls, and New page button on an Insights page.":::

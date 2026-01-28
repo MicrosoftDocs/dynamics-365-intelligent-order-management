@@ -1,7 +1,7 @@
 ---
 title: Sales order form denormalization
 description: Learn about the user experience (UX) changes in the sales order form in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 02/03/2025
+ms.date: 01/28/2026
 author: anvenkat
 ms.author: anvenkat
 ms.custom: 
@@ -31,6 +31,6 @@ To enable sales order form denormalization, follow these steps:
 - You can view the real-time inventory for order lines without having to switch pages. The number of taps or clicks that are required is also reduced.
 - You can view order details and related fulfillments together with tracking on one page. No taps or clicks are required.
 
-    ![Screenshot of a sales order details summary.](media/iomsalesordernew.jpg)
+    :::image type="content" source="media/iomsalesordernew.jpg" alt-text="Screenshot of a sales order details summary.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

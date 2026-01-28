@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic describes the steps required to create and configure connections in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Create and configure connections
 
 ---
@@ -19,7 +18,7 @@ This topic describes the steps required to create and configure connections in M
 
 ## Create platform Power Automate connections
 
-Navigate to https://us.flow.microsoft.com/ and ensure you are in the right Intelligent Order Management trial environment. To confirm which environment you are in, select the **Environment** icon on the top right corner of the Power Automate portal.
+Navigate to <https://us.flow.microsoft.com/> and ensure you are in the right Intelligent Order Management trial environment. To confirm which environment you are in, select the **Environment** icon on the top right corner of the Power Automate portal.
 
 ### Create Dataverse connection
 
@@ -46,12 +45,12 @@ To create the Power Automate connection, follow these steps:
 
 To configure platform connection references, follow these steps:
 
-1.	On the Intelligent Order Management **Welcome and get started** screen, select **Configure settings \> Manage**.
-1.	For each connection reference, do the following:
+1. On the Intelligent Order Management **Welcome and get started** screen, select **Configure settings \> Manage**.
+1. For each connection reference, do the following:
     1. Select the connection reference.
-    1. Go to the [Power Automate portal](https://powerautomate.microsoft.com/). 
+    1. Go to the [Power Automate portal](https://powerautomate.microsoft.com/).
     1. To retrieve the connection URL, select the corresponding connection to navigate to that specific connection page, and then copy the URL. For example, if you are setting up the Intelligent Order Management Data Transformer, you need to select the **IOM Data Transformer** connection on the Power Automate connection page and then copy the Intelligent Order Management Data Transformer connection page URL from your browser's address bar.
     1. Return to the corresponding Intelligent Order Management platform connection reference page and paste the copied URL into the **Connection URL** field.
-1. Select **Activate System**. 
+1. Select **Activate System**.
 
 Next quick start lab step: [Create provider solution](lab-create-provider-solution.md)

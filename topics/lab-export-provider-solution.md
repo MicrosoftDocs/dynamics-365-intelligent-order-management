@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic describes the steps required to export a provider solution in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Export provider solution
 
 ---
@@ -19,7 +18,7 @@ This topic describes the steps required to export a provider solution in Microso
 
 At this stage of the quick start lab you should now see the following components in your provider solution.
 
-![Provider solution components](media/lab_export_components.png)
+:::image type="content" source="media/lab_export_components.png" alt-text="Screenshot of the provider solution components.":::
 
 For instructions on exporting your solution, see [Export solutions](/powerapps/maker/data-platform/export-solutions).
 

@@ -1,12 +1,11 @@
 ---
 author: josaw1
 description: This topic describes the steps required to onboard a provider instance in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Onboard provider instance
 
 ---
@@ -78,7 +77,7 @@ To view the deployed Power Automate component, follow these steps:
 1. Go to **Solutions \> Default Solution**. 
 1. Filter the solution component to display only "Cloud flow". You should now see the following Power Automate flows.
 
-![Power Automate cloud flows in Intelligent Order Management](media/lab_power_automate_flows.png)
+:::image type="content" source="media/lab_power_automate_flows.png" alt-text="Screenshot of Power Automate cloud flows in Intelligent Order Management.":::
 
 Next quick start lab step: [Create policies](lab-create-policies.md)
 

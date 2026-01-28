@@ -1,7 +1,7 @@
 ---
 author: sumanic
 description: This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -14,7 +14,6 @@ title: Set up ShipStation provider
 # Set up ShipStation provider
 
 [!include [banner](includes/banner.md)]
-
 
 This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 

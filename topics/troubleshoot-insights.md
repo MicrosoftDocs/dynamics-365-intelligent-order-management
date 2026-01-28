@@ -2,11 +2,11 @@
 title: Power BI reports aren't provisioned in the trial version
 author: josaw1
 description: This troubleshooting topic provides a solution for cases where Microsoft Power BI reports for Dynamics 365 Intelligent Order Management aren't provisioned.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: troubleshooting
-ms.author: josaw
+ms.author: anvenkat
 ---
 
 # Power BI reports aren't provisioned in the trial version

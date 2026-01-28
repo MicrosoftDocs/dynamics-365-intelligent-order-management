@@ -1,11 +1,11 @@
 ---
 author: sumanic
 description: This article describes how to set up the FedEx provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
+ms.author: anvenkat
 title: Set up the FedEx provider
 
 ---
@@ -20,7 +20,7 @@ FedEx Corporation is an American multinational conglomerate holding company that
 
 Dynamics 365 Intelligent Order Management integrates with FedEx services as an out-of-box provider model.
 
-## Prerequisites 
+## Prerequisites
 
 FedEx has the following three areas of operations. To use the capabilities of these areas via Intelligent Order Management, customers must make their credentials available across them.
 

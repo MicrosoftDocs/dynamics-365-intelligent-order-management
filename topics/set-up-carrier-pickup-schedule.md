@@ -2,7 +2,7 @@
 title: Set up a carrier pickup schedule
 description: This article explains how to set up a shipping carrier and assign it to a fulfillment source in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 author: anvenkat

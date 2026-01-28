@@ -2,7 +2,7 @@
 author: sumanic
 description: This article describes how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -35,7 +35,7 @@ To turn on subscription order functionality, follow these steps:
 1. Select **Order handling preferences**, and then select **Manage**.
 1. Set the **Subscription Orders** option to **On**.
 
-    ![Subscription Orders option set to On.](media/Subscription.png)
+    :::image type="content" source="media/Subscription.png" alt-text="Screenshot of the Subscription Orders option set to On.":::
 
 ## Specify the subscription frequency 
 
@@ -67,8 +67,6 @@ The following table describes the subscription order fields.
 
 After a subscription order is created in Intelligent Order Management, based on the product frequency that the customer selected, a background job automatically picks up the orders and generates sales orders from the subscription. The sales orders then follow the order orchestration and generate fulfillments accordingly.
 
-A job log that is available shows a list of job runs, their status, and the number of records that have been successfully processed and moved to fulfillment. To access the job log, in the left navigation pane, select **Monitoring \> Background Jobs**. The **Active Background Order Processing Job Runs** page appears, as shown in the following example image.
-
-![Job log on the Active Background Order Processing Job Runs page.](media/SubsJob.png)
+:::image type="content" source="media/SubsJob.png" alt-text="Screenshot of the job log on the Active Background Order Processing Job Runs page.":::
 
 If a background job fails, you can manually run it. Select **Run** on the upper toolbar, and then select **Subscription-Order Job** to start a new instance of the background job. To view the details of the background job run, select the job line.

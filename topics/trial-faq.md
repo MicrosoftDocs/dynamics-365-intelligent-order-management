@@ -3,7 +3,7 @@ title: Trial FAQ - Dynamics 365 Intelligent Order Management | Microsoft Docs
 description: Solutions to common questions related to Dynamics 365 Intelligent Order Management trial setup and management. Learn how to resolve platform and app-specific issues.
 author: josaw1
 ms.author: josaw
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: get-started
@@ -16,7 +16,7 @@ This topic answers your most frequently asked questions about the free product t
 
 [!INCLUDE[trial-include](includes/trial-include.md)]
 
-### Can I convert the trial to a paid license?
+## Can I convert the trial to a paid license?
 
 Yes. You can purchase a license using a credit card purchase by going to the [admin center](https://admin.microsoft.com/Adminportal/Home). Alternatively, you can work with Microsoft Sales to establish a volume licensing or enterprise agreement. Visit our [Pricing page](https://dynamics.microsoft.com/pricing/) for more information on pricing and purchasing.
 
@@ -24,7 +24,7 @@ To purchase a license using an existing account, work with the administrator of 
 
 After you have applied for the license to your tenant, you can remove the sample data and publish your environment to production. However, you must manually reset the configuration and remove any test data that you've added. We recommend that you create a new environment to use for your production environment and add the configurations you’d like to move forward with.
 
-### What are the trial limits and quotas?
+## What are the trial limits and quotas?
 
 The following limitations apply for the trial:
 
@@ -41,6 +41,7 @@ After you sign up for the trial, you will be redirected to the landing page for 
 ### What features are available in the trial?
 
 The environment you receive as part of the trial is a fully functional Dynamics 365 environment with the following capabilities:
+
 - [Orchestration flows](orchestration-flows.md)
 - [Providers](work-providers.md)
 - [Intelligent fulfillment optimization](ifo.md)
@@ -61,4 +62,3 @@ Sample data is provided with the trial environment and experience. To get a fres
 
 [Try Intelligent Order Management](trial-setup.md)  
 [Overview of Intelligent Order Management](overview.md)
-

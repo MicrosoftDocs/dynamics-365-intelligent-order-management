@@ -1,7 +1,7 @@
 ---
 author: josaw1
 description: This topic provides an overview of the reporting dashboards available in Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: concept-article
@@ -15,14 +15,13 @@ title: Reporting and Power BI integration
 
 [!include [banner](includes/banner.md)]
 
-
 Dynamics 365 Intelligent Order Management provides insights for the business data moving through the system. The insights are critical for business users to monitor key metrics, respond to issues, and take actions to move orders through their business process.
 
 There are two types of dashboard technologies available in Intelligent Order Management.
 
--   Microsoft Unified Client Interface (UCI) dashboards: UCI dashboards can be used to visualize app data stored in Microsoft Dataverse.
+- Microsoft Unified Client Interface (UCI) dashboards: UCI dashboards can be used to visualize app data stored in Microsoft Dataverse.
 
--   Microsoft Power BI dashboards: Power BI dashboards can be used to visualize app data stored in Dataverse or other data sources that Power BI can work with.
+- Microsoft Power BI dashboards: Power BI dashboards can be used to visualize app data stored in Dataverse or other data sources that Power BI can work with.
 
 ## UCI Dashboards
 
