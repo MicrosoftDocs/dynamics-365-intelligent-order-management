@@ -1,6 +1,6 @@
 ---
 title: Call the Intelligent Order Management Fulfillment optimization engine (DOM) via API
-description: This article explains how to call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) via Application programming interface (API).
+description: Learn how to call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) via Application programming interface (API).
 ms.author: anvenkat
 author: anush6121
 ms.date: 01/27/2026
@@ -35,7 +35,7 @@ If you're expecting results that have the shipping options from a FedEx carrier,
 
 ## Functionality description
 
-When an API request is made, the Intelligent Order Management Fulfillment optimization engine (DOM) is invoked to return the best fulfillment source for each line, based on the preconfigured fulfillment optimization strategies and constraints. If the request contains a carrier such as FedEx, the carrier pickup schedule is looked at in conjunction with the working calendar of the fulfillment source, and the next available pickup time is sent to the carrier APIs. The response to the DOM API combines both a fulfillment plan and the carrier output, and presents them back to the calling application.
+When an API request is made, the Intelligent Order Management Fulfillment optimization engine (DOM) is invoked to return the best fulfillment source for each line, based on the preconfigured fulfillment optimization strategies and constraints. If the request contains a carrier such as FedEx, the carrier pickup schedule is looked at with the working calendar of the fulfillment source, and the next available pickup time is sent to the carrier APIs. The response to the DOM API combines both a fulfillment plan and the carrier output, and presents them back to the calling application.
 
 ## Sample API request
 
@@ -151,7 +151,7 @@ This section describes the fields in the address object in the API request.
 | city | string, required | The city. |
 | stateOrProvince | string, required | The state or province. The two-letter ISO Origin State code is required. |
 | postalCode | string, required | The postal code. |
-| country | string, required | The country or region code. The two-letter ISO Origin Country code is required. |
+| country/region | string, required | The country/region code. The two-letter ISO Origin country/region code is required. |
 | phoneNumber | string, optional | The telephone number. |
 
 #### Order detail
@@ -161,8 +161,8 @@ This section describes the fields in the order detail section of the API request
 | Name | Data type | Description |
 |------|-----------|-------------|
 | lineId | guid string, required | The identifier for the order line in the originating system. |
-| itemId | string, required | The name of the product that's associated with this line item. The value can't be null. |
-| quantity | number, required | The quantity of products that was ordered. | 
+| itemId | string, required | The name of the product associated with this line item. The value can't be null. |
+| quantity | number, required | The quantity of products that were ordered. | 
 | freeShipping | string, optional, values: Yes, No | A value of *Yes* means that product weight is excluded when a rate request is made. |
 | dimensions | ProductDimensions, optional | Product dimensions are characteristics that identify a product variant. They use the Product Dimensions model. This field is required if Dataverse is linked to finance and operations apps. Select the product dimensions to identify the product variant. |
 

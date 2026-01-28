@@ -1,15 +1,13 @@
 ---
 author: anvenkat
-description: This article describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
+description: Learn how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
 ms.author: anvenkat
-
 title: Integrate Supply Chain Management procurement with Intelligent Order Management
-
 ---
 
 # Integrate Supply Chain Management procurement with Intelligent Order Management
@@ -19,19 +17,19 @@ title: Integrate Supply Chain Management procurement with Intelligent Order Mana
 
 This article describes how to integrate procurement in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 
-To extend support for inbound transactions and provide transaction visibility alongside inventory visibility, a **Purchase Orders** entity has been introduced in Intelligent Order Management. The **Purchase Orders** entity includes the following features:
+To extend support for inbound transactions and provide transaction visibility alongside inventory visibility, Intelligent Order Management introduces a **Purchase Orders** entity. The **Purchase Orders** entity includes the following features:
 
-- Dual-write support for purchase orders is available, so that purchase order data flows seamlessly from Dataverse into Intelligent Order Management and is visible in real or near-real time.
-- Users can create purchase orders in Intelligent Order Management. The purchase orders are then processed in Supply Chain Management via dual-write support.
-- The user interface (UI) fields for the **Purchase Orders** entity have been designed to support sales order fulfillment scenarios.
+- Dual-write support for purchase orders, so that purchase order data flows seamlessly from Dataverse into Intelligent Order Management and is visible in real or near-real time.
+- The ability to create purchase orders in Intelligent Order Management. The system then processes the purchase orders in Supply Chain Management via dual-write support.
+- User interface (UI) fields for the **Purchase Orders** entity that support sales order fulfillment scenarios.
 - Transaction status and visibility of purchase orders from Supply Chain Management are available directly in Intelligent Order Management.
-- The **Purchase Order products** view is available on the **Sales Order** products tab, which provides visibility into incoming inventory from individual purchase order transactions. The **Purchase Order products** view is also available on the site map, for easy access to the status of individual purchase order lines at the product level.
+- The **Purchase Order products** view on the **Sales Order** products tab provides visibility into incoming inventory from individual purchase order transactions. The **Purchase Order products** view is also available on the site map, for easy access to the status of individual purchase order lines at the product level.
 
 For more information about purchase orders, see [Purchase order overview](/dynamics365/supply-chain/procurement/purchase-order-overview).
 
 ## Dual-write support for purchase orders
 
-The following prerequisites must be met before you can activate dual-write support for purchase orders:
+Before you activate dual-write support for purchase orders, make sure you meet the following prerequisites:
 
 - Install or update the following dual-write packages to ensure that you have the latest versions:
 
@@ -40,17 +38,17 @@ The following prerequisites must be met before you can activate dual-write suppo
   - Dual-write finance package
   - Dual-write Human Resources package
 
-- If dual-write for sales orders is already installed in your environment, ensure that it's up to date.
-- If an older version of Intelligent Order Management is running in your instance, and dual-write is already installed there, ensure that you import the user experience (UX) solution package for purchase orders and transfer orders.
+- If dual-write for sales orders is already installed in your environment, make sure it's up to date.
+- If an older version of Intelligent Order Management is running in your instance, and dual-write is already installed there, make sure you import the user experience (UX) solution package for purchase orders and transfer orders.
 
 ## General guidelines for installing the add-on UX package for new users
 
-- If you're installing Intelligent Order Management first, you should install the dual-write solution before you import the UX package solution.
-- If you're installing the dual-write solution first, the UX package solution will be imported as part of the installation. You can then install Intelligent Order Management.
+- If you're installing Intelligent Order Management first, install the dual-write solution before you import the UX package solution.
+- If you're installing the dual-write solution first, the UX package solution is imported as part of the installation. You can then install Intelligent Order Management.
 
 ## Initial synchronization of prerequisite tables
 
-After all the preceding prerequisites have been met, you must do an initial synchronization of the prerequisite and dependent master data and tables, so that existing purchase orders are available in both Supply Chain Management and Intelligent Order Management. For information about which tables you must sync and how to sync them, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
+After you meet all the preceding prerequisites, you must perform an initial synchronization of the prerequisite and dependent master data and tables. This synchronization makes existing purchase orders available in both Supply Chain Management and Intelligent Order Management. For information about which tables you must sync and how to sync them, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
 
 ## Dual-write purchase order mapping reference
 
@@ -62,7 +60,7 @@ To create a purchase order in Intelligent Order Management, follow these steps:
 
 1. In the site map, go to **Purchase orders**.
 1. Select **New**, enter values for the mandatory fields, and then select **Save**.
-1. On the **Purchase Order** header entity, enter values in the **Name**, **Receiving Warehouse**, **Site**, **Vendor**, and **Company** fields. The **Name** value denotes the purchase order number that will be assigned in Supply Chain Management.
+1. On the **Purchase Order** header entity, enter values in the **Name**, **Receiving Warehouse**, **Site**, **Vendor**, and **Company** fields. The **Name** value represents the purchase order number that Supply Chain Management assigns.
 
     > [!NOTE]
     > If you save the header without entering any of the field values, and you then want to edit them immediately afterward, you must confirm the header in Supply Chain Management before you can update any of the fields on the **Purchase Order** page.
@@ -75,40 +73,40 @@ To create a purchase order in Intelligent Order Management, follow these steps:
 
 The following sections list the UI fields that are available for purchase order entities.
 
-### Purchase Order header fields
+### Purchase order header fields
 
 - Name
-- Purchase Order ID
-- Contact Email
-- Receiving Warehouse
+- Purchase order ID
+- Contact email
+- Receiving warehouse
 - Vendor
-- Vendor Reference
+- Vendor reference
 - Company
-- Receiving Site ID
-- Reason Code
-- Reason Comment
-- Delivery Terms
-- Shipping Via
-- Expected Date
-- Confirmed Delivery Dates
-- Delivery Address
+- Receiving site ID
+- Reason code
+- Reason comment
+- Delivery terms
+- Shipping via
+- Expected date
+- Confirmed delivery dates
+- Delivery address
 
-### Purchase Order product fields
+### Purchase order product fields
 
-- Purchase Order ID
-- Existing Product
+- Purchase order ID
+- Existing product
 - Description
-- Line Number
-- Associate to Warehouse
+- Line number
+- Associate to warehouse
 - Company
-- Receiving Site ID
+- Receiving site ID
 - Quantity
-- Unit Cost
-- Discount Amount
-- Discount Percentage
-- Total Price
+- Unit cost
+- Discount amount
+- Discount percentage
+- Total price
 - Amount
-- Purchase Order line Status
+- Purchase order line status
 
 ### Purchase Order Goods Receipt header fields
 
@@ -142,13 +140,13 @@ The following sections list the UI fields that are available for purchase order 
 
 The following dual-write scenarios are supported:
 
-- Purchase orders can be created and updated by Dataverse users, but the process and data are controlled by Supply Chain Management. The constraints on updates to purchase order columns in Supply Chain Management apply when updates come from Intelligent Order Management. For example, you can't update a purchase order if it has been finalized, and you can't update a purchase order that was created in Intelligent Order Management until the purchase order is confirmed in Supply Chain Management.
+- Dataverse users can create and update purchase orders, but Supply Chain Management controls the process and data. The constraints on updates to purchase order columns in Supply Chain Management apply when updates come from Intelligent Order Management. For example, you can't update a purchase order if it's finalized, and you can't update a purchase order that was created in Intelligent Order Management until the purchase order is confirmed in Supply Chain Management.
 - Several columns are managed only by Supply Chain Management and can't be updated in Intelligent Order Management. To learn which columns can't be updated, review the mapping tables in the product. Most of these columns are set to read-only on Dataverse pages.
 
-    For example, the columns for price information are managed by Supply Chain Management. Supply Chain Management has trade agreements in place, and columns such as **Unit price**, **Discount**, and **Net amount** come only from Supply Chain Management. To ensure that a price is synced to Intelligent Order Management, you should use the **Sync** feature on the **Purchase Order** and **Purchase Order Product** pages in Dataverse after purchase order data is entered. For more information, see [Sync with the Dynamics 365 Supply Chain Management procurement data on demand](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement#sync-procurement).
+    For example, Supply Chain Management manages the columns for price information. Supply Chain Management has trade agreements in place, and columns such as **Unit price**, **Discount**, and **Net amount** come only from Supply Chain Management. To ensure that a price is synced to Intelligent Order Management, use the **Sync** feature on the **Purchase Order** and **Purchase Order Product** pages in Dataverse after entering purchase order data. For more information, see [Sync with the Dynamics 365 Supply Chain Management procurement data on demand](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement#sync-procurement).
 
-- Product receipts (which are known as purchase order receipts in Dataverse) are managed by Supply Chain Management and can't be created from Dataverse if Supply Chain Management is installed. The product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
-- Under-delivery is allowed in Supply Chain Management. The OneFSSCM solution adds logic so that, when a product receipt line (known as a purchase order receipt product in Dataverse) is created or updated, an inventory journal row is created in Dataverse to adjust the remaining quantity that is on order for under-delivery scenarios.
+- Supply Chain Management manages product receipts (which are known as purchase order receipts in Dataverse) and can't be created from Dataverse if Supply Chain Management is installed. Product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
+- Supply Chain Management allows under-delivery. The OneFSSCM solution adds logic so that, when a product receipt line (known as a purchase order receipt product in Dataverse) is created or updated, an inventory journal row is created in Dataverse to adjust the remaining quantity that is on order for under-delivery scenarios.
 
 ## Transaction status and visibility of purchase orders from Supply Chain Management directly in Intelligent Order Management
 

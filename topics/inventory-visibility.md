@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This article describes inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about inventory operations visibility in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 01/28/2026
 ms.topic: how-to
@@ -9,7 +9,6 @@ title: Inventory operations visibility
 ms.custom:
   - bap-template
   - sfi-image-nochange
-
 ---
 
 # Inventory operations visibility
@@ -38,7 +37,7 @@ You can access inventory query pages from multiple areas for different scenarios
 
 ### Use case 1: An inventory planner wants operational visibility
 
-To get operational visibility, an inventory planner will follow these steps:
+To get operational visibility, an inventory planner follows these steps:
 
 1. In the left navigation pane, under **Demand planning**, select **Operational visibility**. The **Onhand Query** page appears. Queries are defined on the left side of the page, and the results appear on the right side.
 1. If you're using Intelligent Order Management without Dynamics 365 Supply Chain Management, the **Organization ID** field is automatically set to the Dataverse organization ID. If dual-write is enabled in Finance, you must enter the **Company ID** value in this field.
@@ -54,7 +53,7 @@ To get operational visibility, an inventory planner will follow these steps:
 
 ### Use case 2: A customer representative wants to view availability from the Products page
 
-To view availability from the **Products** page, a customer representative will follow these steps:
+To view availability from the **Products** page, a customer representative follows these steps:
 
 1. In the left navigation pane, under **Demand planning**, select **Products**.
 1. Select a product, and then select **View**.
@@ -65,13 +64,13 @@ To view availability from the **Products** page, a customer representative will 
     - **Site ID**
     - **Location ID** – Enter the **Warehouse ID** value that is associated with a store or warehouse.
 
-1. If you've uploaded your demand and supply view by using [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox.
+1. If you uploaded your demand and supply view by using [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox.
 1. Select **Query**. Query results appear on the right side of the page.
 1. To hide the query section of the page and show only the results, select **Combo \> Hide search criteria** in the upper right.
 
 ### Use case 3: A customer representative wants to view availability from the Order Products page
 
-To view availability from the **Order Products** page, a customer representative will follow these steps:
+To view availability from the **Order Products** page, a customer representative follows these steps:
 
 1. In the left navigation pane, under **Orders**, select **Sales Orders**.
 1. Select **New** to create an order.
@@ -83,12 +82,12 @@ To view availability from the **Order Products** page, a customer representative
 
 1. Set the **Select Product** option to **Existing** or **Write-in**, and then select or add the product.
 1. Add the **Unit** value.
-1. Select **Check Availability**. The **Onhand Query** page appears. The **Organization ID** and **Product ID** fields are automatically set. If you've entered the **Fulfillment Source** value, the **Location ID** field is also automatically set.
+1. Select **Check Availability**. The **Onhand Query** page appears. The **Organization ID** and **Product ID** fields are automatically set. If you entered the **Fulfillment Source** value, the **Location ID** field is also automatically set.
 1. By default, the **Organization ID** field is set to the Dataverse organization ID for Intelligent Order Management. If dual-write is enabled in Finance, you must enter the **Company ID** value in this field.
 1. Set the **Site ID** field.
-1. If you've uploaded your demand and supply view by using [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox.
+1. If you uploaded your demand and supply view by using [Dynamics 365 Inventory Services](/dynamics365/supply-chain/inventory/inventory-visibility-available-to-promise), select the **Query ATP** checkbox.
 1. Select **Query**. Query results appear on the right side of the page.
 1. To hide the query section of the page and show only the results, select **Combo \> Hide search criteria** in the upper right.
-1. Review the availability. When you've finished, select **Save** on the **Order Products** page.
+1. Review the availability. When you finished, select **Save** on the **Order Products** page.
 
 Query results that are shown are based on the physical and calculated measures that are configured as part of inventory configuration.

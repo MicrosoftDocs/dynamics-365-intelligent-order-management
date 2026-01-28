@@ -1,6 +1,6 @@
 ---
 title: Application Lifecycle Management feature walkthrough (preview)
-description: This article describes the step by step walkthrough of Application Lifecycle Management.
+description: Learn how to activate, configure, and deploy the ALM preview feature in Dynamics 365 Intelligent Order Management to streamline your workflows.
 author: sumanic
 ms.author: anvenkat
 ms.reviewer: johnmichalak

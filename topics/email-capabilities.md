@@ -1,6 +1,6 @@
 ---
 author: anush6121 
-description: This article describes the email capabilities that are available in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about the email capabilities that are available in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/27/2026
 ms.custom: 
   - bap-template
@@ -37,7 +37,7 @@ To enable the enhanced email template editor feature, follow these steps:
 1. Ensure that the **Default value** option is set to **Yes**.
 
     > [!NOTE]
-    > If you set the **Default value** option back to **No**, the platform email capabilities will be missing some of the key email editor enhancements of the enhanced editor feature. In addition, the orchestration flow will have to be changed so that it uses the older templates.
+    > If you set the **Default value** option back to **No**, the platform email capabilities are missing some of the key email editor enhancements of the enhanced editor feature. In addition, the orchestration flow has to be changed so that it uses the older templates.
 
 1. Go to **Setting environment value**, select **Add existing value**, select **Yes**, and then select **Save**.
 
@@ -91,13 +91,13 @@ To copy and create a new order confirmation template, follow these steps:
     Xrm.Page.getAttribute('msdyn_placeholders').setValue(placeholdersStr)
     ```
 
-Your new custom template will resemble the out-of-box version, and you will be able to edit it.
+Your new custom template resembles the out-of-box version, and you are able to edit it.
 
 The Intelligent Order Management team is working toward an easier solution for copying and creating a template in upcoming releases.
 
 ### Send emails through the orchestration flow
 
-To send emails through the orchestration flow, you must first activate the Dynamics 365 Communication provider and then add the email template to the orchestration flow.
+To send emails through the orchestration flow, you must first activate the Dynamics 365 Communication provider, and then add the email template to the orchestration flow.
 
 #### Activate the Dynamics 365 Communication provider
 
@@ -113,14 +113,14 @@ To activate the Dynamics 365 Communication provider, follow these steps:
 
 #### Add the email template to an orchestration flow
 
-For this example, you will add the order confirmation template to an orchestration flow.
+For this example, you add the order confirmation template to an orchestration flow.
 
 To add an order confirmation template to an orchestration flow, follow these steps:
 
 1. Add the **Send email** tile to the orchestration flow, and then, in the **Name** field, enter a name for the tile.
 1. Under **Email Template**, select the **Order Confirmation** email template.
-1. Select **Send Email for Sales Order**, because the order confirmation email will be generated from sales orders for this example. Alternatively, select **Send Email for Fulfillment Order Line** for a shipment confirmation template or **Send Email for Return Order** for a returns order process.
-1. In the **Input Events** field, select **Validation of Order lines has Succeeded**. An input event indicates when the email should be invoked. It can change, based on how the orchestration is configured and how the email will be sent.
+1. Select **Send Email for Sales Order**, because the order confirmation email generates from sales orders for this example. Alternatively, select **Send Email for Fulfillment Order Line** for a shipment confirmation template or **Send Email for Return Order** for a returns order process.
+1. In the **Input Events** field, select **Validation of Order lines has Succeeded**. An input event indicates when the email should be invoked. It can change, based on how the orchestration is configured and how the email is sent.
 
 ## Check email delivery status
 

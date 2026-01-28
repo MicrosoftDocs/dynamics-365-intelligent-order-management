@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This article describes how to set up the inventory allocation feature of the Inventory Visibility add-in in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about how to set up the inventory allocation feature of the Inventory Visibility add-in in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 01/28/2026
 ms.custom: 
@@ -8,7 +8,6 @@ ms.custom:
 ms.topic: how-to
 ms.author: sumanic
 title: Set up inventory allocation
-
 ---
 
 # Set up inventory allocation
@@ -34,7 +33,7 @@ The following terms and concepts are useful in discussions of inventory allocati
 
 In many cases, manufacturers, retailers, and other supply chain business stakeholders must preallocate stock for important sales channels, locations, or customers, or for specific sales events. Inventory allocation is a typical practice in the sales operational planning process. It's done before actual sales activities occur and a sales order is created.
 
-For example, a bicycle company that does both online and in-store sales has limited stock available for a popular bicycle. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that the company save a specific portion of the bicycle's available inventory for them. To satisfy corporate partners, the bicycle company must be able to balance stock distribution across channels, and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation. In this way, each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
+For example, a bicycle company that does both online and in-store sales has limited stock available for a popular bicycle. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that the company saves a specific portion of the bicycle's available inventory for them. To satisfy corporate partners, the bicycle company must be able to balance stock distribution across channels, and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation. In this way, each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
 
 Inventory allocation has two basic business purposes:
 
@@ -57,7 +56,7 @@ The Inventory Visibility add-in inventory allocation feature consists of the fol
 
 Although the inventory allocation feature doesn't set aside physical inventory quantities, it does refer to the available physical inventory quantity of a product to define the initial quantity of the available-to-allocate virtual pool. Inventory allocation is a soft allocation. In other words, the allocation is done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any e-commerce customers visit the sales channel or retail store to purchase the stock.
 
-Inventory allocation differs from inventory soft reservation in that soft reservation is usually linked to actual sales transactions such as sales order lines. If you want to use the allocation and soft reservation features together, we recommend that you do inventory allocation first. Then soft reserve against the allocated quantities.
+Inventory allocation differs from inventory soft reservation in that soft reservation is linked to actual sales transactions such as sales order lines. If you want to use the allocation and soft reservation features together, we recommend that you do inventory allocation first. Then soft reserve against the allocated quantities.
 
 The inventory allocation feature lets sales planners and account managers manage and preallocate important stock across allocation groups such as channels, regions, and customer groups. It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, so that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast sale or promotional events.
 
@@ -128,7 +127,7 @@ To use allocation, you must set up the available-to-allocate calculated measure 
 
 ### Set up the allocation group name and hierarchy
 
-In the current release, a maximum of two allocation group names can be set and will be extended to allocation groups. The groups have a hierarchy.
+In the current release, a maximum of two allocation group names can be set and extended to allocation groups. The groups have a hierarchy.
 
 To set up the allocation groups, follow these steps:
 
@@ -136,7 +135,7 @@ To set up the allocation groups, follow these steps:
 1. Select **Index and Reservation**.
 1. Select the **Allocation** tab.
 
-For example, you use two group names, and set them to **channel** and **customerGroup**. Those names will then be valid for allocation-related requests when you call the configuration update API.
+For example, you use two group names, and set them to **channel** and **customerGroup**. Those names are valid for allocation-related requests when you call the configuration update API.
 
 ### Map allocation groups to Intelligent Order Management mappings
 
@@ -152,7 +151,7 @@ To map allocation groups, follow these steps:
 
 ## Use the allocation API
 
-Intelligent Order Management has a set of APIs to perform operations that are relevant to allocation. As part of order orchestration, Intelligent Order Management will automatically determine whether it must call Microsoft Dynamics 365 Supply Chain Management APIs or Intelligent Order Management APIs. For more information about Supply Chain Management APIs, see [Using the allocation API](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api).
+Intelligent Order Management has a set of APIs to perform operations that are relevant to allocation. As part of order orchestration, Intelligent Order Management determines whether it must call Microsoft Dynamics 365 Supply Chain Management APIs or Intelligent Order Management APIs. For more information about Supply Chain Management APIs, see [Using the allocation API](/dynamics365/supply-chain/inventory/inventory-visibility-allocation#using-allocation-api).
 
 The following APIs are available for allocation as part of Intelligent Order Management. The request and response for the payloads resemble what's available from Supply Chain Management. The table shows the mapping between the Intelligent Order Management APIs and Inventory Visibility add-in APIs, and provides links to relevant documentation.
 

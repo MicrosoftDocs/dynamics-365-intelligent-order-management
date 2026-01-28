@@ -1,14 +1,12 @@
 ---
 author: josaw1
-description: This article provides information about how Dynamics 365 Intelligent Order Management can be extended.
+description: Learn about how Dynamics 365 Intelligent Order Management can be extended.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: article
 ms.author: anvenkat
-
 title: Extensibility
-
 ---
 
 
@@ -24,11 +22,11 @@ Understanding some of the terminology in Microsoft Dataverse will help you to ge
 
 ## Data model
 
-As part of the Intelligent Order Management solution, the application extends Common Data Model in Dataverse. As a customer, you can modify data entities to store additional data needed to implement your business processes. Modifying an entity allows you to add new fields to capture data or new tables to store related data that can help with the order and fulfillment process. For more information, see [Tables in Dataverse](/powerapps/maker/data-platform/entity-overview).
+As part of the Intelligent Order Management solution, the application extends Common Data Model in Dataverse. As a customer, you can modify data entities to store other data needed to implement your business processes. Modifying an entity allows you to add new fields to capture data or new tables to store related data that can help with the order and fulfillment process. For more information, see [Tables in Dataverse](/powerapps/maker/data-platform/entity-overview).
 
 ## User interface
 
-The Intelligent Order Management user interface is built using model-driven app concepts. You can use the same technology to build additional forms that capture data for management orders, fulfillment, or other processes. For more information, see [What are model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
+The Intelligent Order Management user interface is built using model-driven app concepts. You can use the same technology to build other forms that capture data for management orders, fulfillment, or other processes. For more information, see [What are model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
 ## Business logic
 
@@ -45,4 +43,4 @@ Intelligent Order Management orchestration is business process logic that repres
 
 ## Business intelligence
 
-Intelligent Order Management is built on and extends Common Data Model. Understanding the concepts of Common Data Model model will help you to determine what data can be stored with Intelligent Order Management, and to identify what you can use to enhance the reporting and business intelligence solutions you design for your business. For more information about Common Data Model, see [Common Data Model](/common-data-model).
+Intelligent Order Management is built on and extends the Common Data Model. Understanding the concepts of the Common Data Model helps you determine what data you can store with Intelligent Order Management and what you can use to enhance the reporting and business intelligence solutions you design for your business. For more information about the Common Data Model, see [Common Data Model](/common-data-model).

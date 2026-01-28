@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article provides an overview of the administration and security concepts in Dynamics 365 Intelligent Order Management. 
+description: Learn about the administration and security concepts in Dynamics 365 Intelligent Order Management. 
 ms.date: 01/27/2026
 ms.custom: 
   - bap-template
@@ -31,4 +31,4 @@ If you plan to implement Intelligent Order Management with a dual-write enabled 
 
 ## Dual-write overview
 
-If you plan to implement Intelligent Order Management with finance and operations apps such as Supply Chain Management, Commerce, or Finance, you'll need to configure dual-write. To learn about dual-write, see [Dual-write overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview).
+If you plan to implement Intelligent Order Management with finance and operations apps such as Supply Chain Management, Commerce, or Finance, you need to configure dual-write. To learn about dual-write, see [Dual-write overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview).

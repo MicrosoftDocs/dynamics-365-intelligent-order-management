@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article provides instructions on how to create a new provider for Dynamics 365 Intelligent Order Management.
+description: Learn how to create a new provider for Dynamics 365 Intelligent Order Management.
 ms.date: 01/27/2026
 ms.custom: 
   - bap-template
@@ -20,7 +20,7 @@ To create a new provider, use the following steps. You can also use these steps 
 
 ## Define provider architecture
 
-Before you create a provider, it's important to understand what you want the provider to do and what you want to use it for. Providers have multiple components and you may not need all of the components.
+Before you create a provider, it's important to understand what you want the provider to do and what you want to use it for. Providers have multiple components and you might not need all of the components.
 
 Use the following table to determine which components you need.
 
@@ -59,7 +59,7 @@ A provider definition contains details about your provider. The definition deter
 
 1. Add the following details:
 
-    1. **Display name**: The name you want to give your provider, for example, "Test Provider".
+    1. **Display name**: The name you want to give your provider, for example, "Test Provider."
 
     1. **Logical name**: The export key for your provider.
 
@@ -245,7 +245,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 ## Add business event definitions
 
-If your provider will create or use new business events, you must add **IOM Provider Definition Business Event Definition** components to your solution. You only need to add business events that aren't already in Intelligent Order Management.
+If your provider creates or uses new business events, you must add **IOM Provider Definition Business Event Definition** components to your solution. You only need to add business events that aren't already in Intelligent Order Management.
 
 If the business event that you want to create isn't already in Intelligent Order Management, you can create your own.
 
@@ -301,7 +301,7 @@ The following is an example structure for creating a message handler type of Pow
 
 :::image type="content" source="media/trigger.png" alt-text="Screenshot of trigger for when an HTTP request is received.":::
 
-The JSON Schema to use in your HTTP trigger is defined below.
+Use the following JSON Schema to use in your HTTP trigger.
 
 ```json
 {
@@ -432,7 +432,7 @@ The following is an example structure for creating a message puller type of Powe
 
     1. **Checkpoint**: This can be any string value (max 100). In this example, this is the ID of the last processed message.
 
-    1. **WorkFlowId**: You can retrieve this ID by adding a compose function set to workflow()\['tags'\]\['xrmWorkflowId'\].
+    1. **WorkFlowId**: You can retrieve this ID by adding the compose function set to workflow()\['tags'\]\['xrmWorkflowId'\].
 
 :::image type="content" source="media/process4.png" alt-text="Screenshot of Process messages 4.":::
 
@@ -444,7 +444,7 @@ The key difference between a provider message handler and a provider action is t
 
 The following is an example structure for a provider action Power Automate flow.
 
-1. Start with an HTTP trigger. The following information will be passed at runtime by the orchestration service. The following JSON schema is used for the body:
+1. Start with an HTTP trigger. The following information is passed at runtime by the orchestration service. The following JSON schema is used for the body:
 
 ```json
 {
@@ -553,7 +553,7 @@ You must have the following prerequisites before you can save your flows.
 
   - Enter the following command in PowerShell to get an access token: `az sign in --allow-no-subscriptions account get-access-token --resource=<https://YourDataverseTenantURL.api.crm.dynamics.com/> --query=accessToken --output=tsv \| Set-Clipboard.`
 
-To save your Power Automate definition, do the following.
+To save your Power Automate definition, follow these steps:
 
 1. Find the workflow ID of the Power Automate flow you want to save. Do one of the following.
 

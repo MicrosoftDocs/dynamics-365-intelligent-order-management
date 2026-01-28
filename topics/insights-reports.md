@@ -23,15 +23,15 @@ Intelligent Order Management Insights are powered by [embedded Power BI](/power-
 
 Every Insights dashboard includes filters, help text, and settings. (The numbered paragraphs correspond to the numbered callouts in the illustration.)
 
-1. **Filters** – Each dashboard includes a date filter and data filters that are relevant to the page. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country**. Each filter updates the visuals on the whole page.
+1. **Filters** – Each dashboard includes a date filter and data filters that are relevant to the page. For example, the **Orders Insights** page has filters for **Providers** and **Ship to country/region**. Each filter updates the visuals on the whole page.
 1. **Help text** – Each visual on the dashboard has an **i** button that shows helpful information about the related visual.
-1. **Settings** – When each visual is selected, a toolbar of additional settings appears. Here are some of these settings:
+1. **Settings** – When each visual is selected, a toolbar of more settings appears. Here are some of these settings:
 
     - **Drill up**, **Drill down**, and **Next level in hierarchy** – Drill up or down on the visual to view the next level up or down in the data. For example, you can drill up from **Months** to **Year**.
     - **Next level in hierarchy** and **Expand all down one level in the hierarchy** – Expand levels down in the hierarchy of data. For example, you can expand from **Months** to **Quarters**.
     - **Filters on visual** – Show the current filters that affect the visual.
     - **Focus mode** – Go to an expanded view of the visual.
-    - **Export data** – Export the underlying data to a file in comma-separated values (CSV) format. Any filters that affect the visual will be used in the export.
+    - **Export data** – Export the underlying data to a file in comma-separated values (CSV) format. Any filters that affect the visual is used in the export.
     - **Show as a table** – View the underlying data for the visual in table format.
     - **Spotlight** – Highlight the visual.
     - **Get insights** – View automatically generated Insights for the visual, if they're available.
@@ -50,7 +50,7 @@ The "Category" column indicates the category in the left navigation. The "Page" 
 | Order dashboard   | Overview             | Lines per order                                | KPI   | Average order lines per order received. |
 | Order dashboard   | Overview             | Orders mtd                                     | KPI   | Total orders received for current month to date (Page date filters don't update this KPI). |
 | Order dashboard   | Overview             | Orders mom growth rate                         | KPI   | Growth rate of orders received month over month. |
-| Order dashboard   | Overview             | Revenue (base) mtd                             | KPI   | Total revenue of all orders for current month to date (Page date filters do not update this KPI). |
+| Order dashboard   | Overview             | Revenue (base) mtd                             | KPI   | Total revenue of all orders for current month to date (Page date filters don't update this KPI). |
 | Order dashboard   | Overview             | Revenue (base) mom growth rate                 | KPI   | Growth rate of revenue from orders month over month. |
 | Order dashboard   | Overview             | Orders by provider                             | Graph | Orders received grouped by order providers connected to Intelligent Order Management. |
 | Order dashboard   | Overview             | Order details by region                        | Map   | Map view of each order destination region's order details, such as revenue or order count. |
@@ -83,10 +83,10 @@ The "Category" column indicates the category in the left navigation. The "Page" 
 | Order dashboard   | Returns insights     | Returns by order status                        | Graph | Returns count grouped by order status. |
 | Order dashboard   | Returns insights     | Returns by fulfillment status                  | Graph | Returns count grouped by fulfillment status. |
 | Order dashboard   | Returns insights     | Returns by warehouse                           | Graph | Returns count grouped by warehouse. |
-| Order dashboard   | Returns insights     | Returns by country                             | Graph | Returns count grouped by country on a map view. |
+| Order dashboard   | Returns insights     | Returns by country/region                             | Graph | Returns count grouped by country/region on a map view. |
 | Order dashboard   | Fulfillment insights | Fulfillment lines                              | KPI   | Total fulfillment lines created. |
 | Order dashboard   | Fulfillment insights | Internal cycle time (hours)                    | KPI   | The average time it takes to ship an order. |
-| Order dashboard   | Fulfillment insights | Internal cycle time (sla)                      | KPI   | SLA percentage representing orders that have shipped by an internal cycle time goal. |
+| Order dashboard   | Fulfillment insights | Internal cycle time (SLA))                      | KPI   | SLA percentage representing orders that have shipped by an internal cycle time goal. |
 | Order dashboard   | Fulfillment insights | Fulfillment lines shipped                      | KPI   | Total fulfillment lines that have been shipped. |
 | Order dashboard   | Fulfillment insights | Shipped quantity                               | KPI   | Total orders that have been shipped. |
 | Order dashboard   | Fulfillment insights | On-time shipped ratio                          | Graph | On time shipped percentage shows the percentage of orders delivered on time. Orders without a requested ship date are excluded from this metric. |
@@ -96,12 +96,12 @@ The "Category" column indicates the category in the left navigation. The "Page" 
 | Order dashboard   | Fulfillment insights | Fulfillments by region                         | Map   | Map view of fulfillment order details grouped by region of order destination. |
 | Order dashboard   | Fulfillment insights | Fulfillment lines shipped                      | Graph | Count of fulfillment lines shipped on a trendline. |
 | Order dashboard   | Fulfillment insights | Internal cycle time (hours)                    | Graph | The average time it takes to ship an order by date on a trendline. |
-| Order dashboard   | Fulfillment insights | Internal cycle time (sla)                      | Graph | SLA percentage representing orders that have shipped by an internal cycle time goal by date on a trendline. |
+| Order dashboard   | Fulfillment insights | Internal cycle time (SLA)                      | Graph | SLA percentage representing orders that have shipped by an internal cycle time goal by date on a trendline. |
 | Licenses          | Overview             | Total order lines                              | KPI   | Total order lines received. |
 | Licenses          | Overview             | Orders lines MTD                               | KPI   | Total order lines month to date. **Page date** filters don't update this KPI. |
 | Licenses          | Overview             | Orders lines mom growth rate                   | KPI   | Growth rate of orders lines received month over month. |
 | Licenses          | Overview             | Order lines by date                            | Graph | Order lines by date on a trendline. |
-| Licenses          | Overview             | Total order lines by date with 6 month proj    | Graph | Count of total order lines by date on a trendline, with a six month projection into the future based on historical data. |
+| Licenses          | Overview             | Total order lines by date with six month project    | Graph | Count of total order lines by date on a trendline, with a six month projection into the future based on historical data. |
 | Product insights  | Overview             | Orders                                         | KPI   | Total orders received. |
 | Product insights  | Overview             | Order lines                                    | KPI   | Total order lines received. |
 | Product insights  | Overview             | Lines per order                                | KPI   | Average order lines per order received. |
@@ -119,7 +119,7 @@ The "Category" column indicates the category in the left navigation. The "Page" 
 | Monitoring        | Order anomalies      | Order delays                                   | Graph | Delayed orders on a trendline with any anomalies. Anomalies are defined as any value that is below 70% of the expected range of that value based on historical data. |
 | Monitoring        | Order anomalies      | Quarterly revenue                              | Graph | Revenue of orders by quarter on a trendline with any anomalies. Anomalies are defined as any value that is below 70% of the expected range of that value based on historical data. |
 | Monitoring        | Order anomalies      | Orders                                         | Table | Total orders on a trendline with any anomalies. Anomalies are defined as any value that is below 70% of the expected range of that value based on historical data. |
-| Provider insights | Overview             | Total requests                                 | KPI   | Total message and action events associated with providers connected to Intelligent Order Management. For example, big Commerce orders and order updates, FedEx shipping, and delivery notifications. |
+| Provider insights | Overview             | Total requests                                 | KPI   | Total message and action events associated with providers connected to Intelligent Order Management. For example, large Commerce orders and order updates, FedEx shipping, and delivery notifications. |
 | Provider insights | Overview             | MTD total request growth rate                  | KPI   | Growth rate month to date of requests associated with providers connected to Intelligent Order Management. Page date filters don't update this KPI. |
 | Provider insights | Overview             | SLA total requests                             | KPI   | Percentage of requests that met the SLA for a given provider connected to Intelligent Order Management, where the SLA is defined as the length of allowable time for an event to process. |
 | Provider insights | Overview             | Total requests failed                          | KPI   | Total requests from providers that have failed. |
@@ -160,7 +160,7 @@ If you have the correct access to customize or create Insights reports, you can 
 
 When you enter edit mode, the following controls become available. (The numbered paragraphs correspond to the numbered callouts in the illustration that follows.)
 
-1. **Editing controls** – Use the buttons on the top menu bar to save, discard, or publish your current draft. If you select **Publish**, you'll publish changes for everyone in your organization.
+1. **Editing controls** – Use the buttons on the top menu bar to save, discard, or publish your current draft. If you select **Publish**, you publish changes for everyone in your organization.
 1. **Customization controls** – There are three expandable/collapsible panes on the right side of the page:
 
     - **Filters** – View which filters are currently applied, edit the applied filters, or add more filters.

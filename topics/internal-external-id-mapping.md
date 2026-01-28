@@ -1,12 +1,11 @@
 ---
 author: sumanic
-description: This article describes the internal external ID mapping in Dynamics 365 Intelligent Order Management.
+description: Learn about the internal external ID mapping in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: article
 ms.author: sumanic
-
 title: Internal external ID mapping
 ---
 
@@ -34,7 +33,7 @@ The following configurations are provided with Intelligent Order Management:
 - Unit Groups
 - Units
 
-On the **Configurations** page, you can configure the mapping of columns and values across your different providers. Each of the configurations above map to a corresponding Microsoft Dataverse mapping table that will preserve mappings so they can be used in various provider integrations.
+On the **Configurations** page, you can configure the mapping of columns and values across your different providers. Each of the configurations above map to a corresponding Microsoft Dataverse mapping table that preserves mappings so they can be used in various provider integrations.
 
 The following mappings are transactional mappings that don't need to be configured. The transactional mappings are view-only.
 

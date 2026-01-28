@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This article describes how to set up available-to-promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn how to set up available-to-promise (ATP) capabilities in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 01/27/2026
 ms.custom: 
@@ -98,7 +98,7 @@ Next, you must define the Intelligent Order Management calculated measure mappin
 1. In the **Base Measure** field, select **atponhand**.
 
     > [!NOTE]
-    > The base measure is a predefined measure in Intelligent Order Management that is called from the inventory check actions in orchestration. This base measure mapping will be maintained by using the calculated measure for the ATP settings.
+    > The base measure is a predefined measure in Intelligent Order Management that is called from the inventory check actions in orchestration. This base measure mapping is maintained by using the calculated measure for the ATP settings.
 
 1. In the **Calculated Measure** field, select the calculated measure that you selected in the calculated measure for the ATP settings.
 
@@ -106,16 +106,16 @@ Next, you must define the Intelligent Order Management calculated measure mappin
 
 ## Run a sample transaction with ATP check
 
-Intelligent Order Management can perform inventory checks as an independent provider action. If a fulfillment source has already been assigned to the sales order lines via a policy or manual order creation, you can orchestrate the order to perform independent inventory checks. If the previously described settings are enabled, the system will also check ATP dates and determine the **Material Availability Date** and **Estimated Shipment Date** values on the sales order line.
+Intelligent Order Management can perform inventory checks as an independent provider action. If a fulfillment source is assigned to the sales order lines via a policy or manual order creation, you can orchestrate the order to perform independent inventory checks. If the previously described settings are enabled, the system checks ATP dates and determine the **Material Availability Date** and **Estimated Shipment Date** values on the sales order line.
 
 > [!NOTE]
-> Inventory checks will also occur as part of fulfillment and returns optimization. The sales order lines will be updated accordingly, based on the ATP settings.
+> Inventory checks occur as part of fulfillment and returns optimization. The sales order lines are updated accordingly, based on the ATP settings.
 
 The following illustration shows an example of an orchestration journey that has a policy-based fulfillment assignment.
 
 :::image type="content" source="media/SampleOrch.png" alt-text="Screenshot of a sample orchestration journey with policy-based fulfillment assignment.":::
 
-The following provider actions are available as part of Intelligent Order Management. They will check ATP when the ATP settings are enabled.
+The following provider actions are available as part of Intelligent Order Management. They check ATP when the ATP settings are enabled.
 
 | Provider action | Description |
 |---|---|
@@ -139,7 +139,7 @@ The following example shows a payload for the inventory query to call various se
 }
 ```
 
-The associated path will resemble the following example.
+The associated path resembles the following example.
 
 `{{orgurl}}/api/data/v9.1/msdyn_IOMInventoryAPICall`
 

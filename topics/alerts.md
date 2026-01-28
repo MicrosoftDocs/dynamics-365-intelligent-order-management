@@ -1,6 +1,6 @@
 ---
 title: Intelligent Order Management alerts
-description: This article provides an overview of alerts functionality and use cases in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about alerts functionality and use cases in Microsoft Dynamics 365 Intelligent Order Management.
 author: derekkwanpm
 ms.date: 01/27/2026
 ms.custom: 
@@ -73,11 +73,11 @@ Each row in the grid represents an order that's currently under alert. Here's an
 - **Alert Configuration** – This column contains a link to the configuration that's triggering the alert.
 - **Status Reason** – This column contains the status of the alert. The following alert statuses are used:
 
-    - Active
-    - In progress
-    - On hold
-    - Inactive
-    - Resolved
+  - Active
+  - In progress
+  - On hold
+  - Inactive
+  - Resolved
 
     A status of **Active** indicates that the alert is active. The order itself might have a status of **In fulfillment** or **Sent for delivery**. The purpose of the alert status is to enable you to update the status of an alert if you already took action on the order. For example, if an alert is triggered because an order is delayed, and you expedited the order for delivery, you can change the alert status to **Resolved**. Therefore, you can use the list of alerts in the grid as a to-do list. You can view which orders are under alert, and then check them off as you take action on the orders to resolve the alerts.
 

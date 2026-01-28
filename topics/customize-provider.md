@@ -1,14 +1,12 @@
 ---
 author: josaw1
-description: This article provides instructions on how to customize and out-of-box provider in Dynamics 365 Intelligent Order Management.
+description: Learn how to customize and out-of-box provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
 ms.author: anvenkat
-
 title: Customize an out-of-box provider
-
 ---
 
 
@@ -18,9 +16,9 @@ title: Customize an out-of-box provider
 
 One option for customizing a provider for Dynamics 365 Intelligent Order Management is to modify a provider that comes out of the box with Intelligent Order Management. Choose this option if:
 
-- You have custom fields or need to change the way fields are mapped from an external service to Intelligent Order Management. In this case, you'll need to modify the provider transformation.
+- You have custom fields or need to change the way fields are mapped from an external service to Intelligent Order Management. In this case, you need to modify the provider transformation.
 
-- You want to change what happens when a specific action is triggered in the orchestration designer. In this case, you'll need to modify the provider action.
+- You want to change what happens when a specific action is triggered in the orchestration designer. In this case, you need to modify the provider action.
 
 If this option isn't adequate for your needs, you can [create a new provider](create-new-provider.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Admin home workspace
 author: sumanic
-description: This article describes the Admin home workspace in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about the Admin home workspace in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/27/2026
 ms.custom: 
   - bap-template
@@ -55,7 +55,7 @@ Each settings area in the left navigation pane is divided into settings subareas
 | | Email settings | You can use this subarea to manage different email templates that are provided out of the box. You can also use it to define your own templates. |
 | Provider settings | Library | This subarea contains a gallery of providers. From the gallery, you can install providers and add their connections. |
 | | Installed | This subarea shows the providers that you've successfully installed and activated. It also shows the list of providers that are inactive and awaiting completion. |
-| | Additional settings | <p>This subarea provides additional settings that are required to make a provider work end to end. It includes the following components:</p><ul><li> **Transformations** – This setting lets you add power queries to enable communication between external system data in the app.</li><li>**Mapping groups** – This setting lets you support data that is shared across multiple providers.</li><li>**Actions** – This setting lets you manage the provider functions in the form of actions in the orchestration flows.</li><li>**Action types** – This setting lets you manage your provider actions in the form of associated functions.</li></ul> |
+| | Additional settings | <p>This subarea provides other settings that are required to make a provider work end to end. It includes the following components:</p><ul><li> **Transformations** – This setting lets you add power queries to enable communication between external system data in the app.</li><li>**Mapping groups** – This setting lets you support data that is shared across multiple providers.</li><li>**Actions** – This setting lets you manage the provider functions in the form of actions in the orchestration flows.</li><li>**Action types** – This setting lets you manage your provider actions in the form of associated functions.</li></ul> |
 | Orchestration settings | Order journeys | This subarea lets you set up your order orchestration flows. These orchestration flows can be **order**, **returns**, and **inventory** orchestrations. |
 | | Policies | This subarea lets you set up different business rules that can be used in the orchestration flows. |
 | | Business events | This subarea enables different **input** and **output** business events that trigger subsequent actions in the orchestration flow. |
