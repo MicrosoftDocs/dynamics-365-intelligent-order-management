@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides an overview of the reporting dashboards available in Dynamics 365 Intelligent Order Management.
+description: This article provides an overview of the reporting dashboards available in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template

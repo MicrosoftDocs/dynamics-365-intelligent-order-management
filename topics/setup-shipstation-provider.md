@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
+description: This article describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -15,7 +15,7 @@ title: Set up ShipStation provider
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
+This article describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 
 ShipStation is a software as a service (SaaS) shipping platform that allows you to manage all your small parcel shipping needs in one place. The ShipStation provider enables Intelligent Order Management to access and manage carrier pickups.  
   

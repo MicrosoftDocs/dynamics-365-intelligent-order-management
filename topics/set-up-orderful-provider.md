@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
+description: This article provides information about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,7 +14,7 @@ title: Set up Orderful provider
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
+This article provides information about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
 
 Orderful is a cloud electronic data interchange (EDI) platform for manufacturers, distributors, retailers, and technology companies. The Orderful provider enables Intelligent Order Management to access and process purchase orders from Orderful.  
   

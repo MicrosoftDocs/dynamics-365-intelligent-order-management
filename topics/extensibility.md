@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information about how Dynamics 365 Intelligent Order Management can be extended.
+description: This article provides information about how Dynamics 365 Intelligent Order Management can be extended.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -16,7 +16,7 @@ title: Extensibility
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Intelligent Order Management is built as a Microsoft Dataverse application that enables customers and partners to extend the application. This topic lists where you can find more information about how the application that can be extended to provide the functionality that your business requires
+Dynamics 365 Intelligent Order Management is built as a Microsoft Dataverse application that enables customers and partners to extend the application. This article lists where you can find more information about how the application that can be extended to provide the functionality that your business requires
 
 ## Terminology
 

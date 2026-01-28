@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -13,7 +13,7 @@ title: Inventory dashboards
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
+This article provides an overview of inventory-related dashboards in Microsoft Dynamics 365 Intelligent Order Management.
 
 Inventory management is one of the most expensive parts of the order management process. Intelligent Order Management's inventory dashboards provide visibility into the items that your business has in stock versus the demand for those items. It also provides other relevant key performance indicators (KPIs) that can help you lower costs.
 

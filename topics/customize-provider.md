@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides instructions on how to customize and out-of-box provider in Dynamics 365 Intelligent Order Management.
+description: This article provides instructions on how to customize and out-of-box provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/27/2026
 ms.custom: 
   - bap-template

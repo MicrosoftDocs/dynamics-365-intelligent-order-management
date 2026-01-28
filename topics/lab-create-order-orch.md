@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic describes the steps required to create order orchestration in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes the steps required to create order orchestration in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,7 +14,7 @@ title: Create order orchestration
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the steps required to create order orchestration in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes the steps required to create order orchestration in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Add the Validate order header tile
 

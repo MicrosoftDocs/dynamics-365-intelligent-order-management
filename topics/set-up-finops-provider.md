@@ -1,6 +1,6 @@
 ---
 author: sumanic
-description: This topic explains how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Dynamics 365 Intelligent Order Management.
+description: This article explains how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
 ms.date: 01/28/2026
 ms.custom: 
@@ -15,7 +15,7 @@ title: Set up the Dynamics 365 Finance + Operations provider
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Dynamics 365 Intelligent Order Management.
+This article explains how to set up the Microsoft Dynamics 365 Finance + Operations (on-premises) provider in Dynamics 365 Intelligent Order Management.
 
 Finance + Operations helps businesses manage their global financial systems, operational business processes, and streamlined supply chains, so that business decision makers can make fast, informed decisions. The Finance + Operations provider enables Intelligent Order Management to write orders to Finance + Operations or consume orders from Finance + Operations. It also performs other supply chain actions.
 

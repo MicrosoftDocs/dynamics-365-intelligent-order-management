@@ -1,6 +1,6 @@
 ---
 title: Intelligent Fulfillment Optimization architecture
-description: This topic provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article provides an overview of the architecture for Intelligent Fulfillment Optimization in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template

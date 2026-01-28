@@ -12,7 +12,7 @@ ms.reviewer: josaw
 
 # Dynamics 365 Intelligent Order Management trial FAQ
 
-This topic answers your most frequently asked questions about the free product trial of Intelligent Order Management.
+This article answers your most frequently asked questions about the free product trial of Intelligent Order Management.
 
 [!INCLUDE[trial-include](includes/trial-include.md)]
 

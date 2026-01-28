@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic describes the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management. 
+description: This article describes the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management. 
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,7 +14,7 @@ title: Create fulfillment provider
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Create new provider definition
 

@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic describes the steps required to create a RequestBin custom connector in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes the steps required to create a RequestBin custom connector in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,7 +14,7 @@ title: Create RequestBin custom connector
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the steps required to create a RequestBin custom connector in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes the steps required to create a RequestBin custom connector in Microsoft Dynamics 365 Intelligent Order Management.
 
 > [!NOTE]
 > RequestBin is non-Microsoft third party software used to collect, inspect, and debug HTTP requests and webhooks. This lab uses it for demo purposes, please use it at your own discretion. 

@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
+description: This article provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,7 +14,7 @@ title: Set up BigCommerce provider
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
+This article provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 
 BigCommerce is a flexible, open SaaS platform. You can connect to BigCommerce to retrieve orders, products, and related information. The BigCommerce provider enables Intelligent Order Management to access and process purchase orders from BigCommerce.  
 

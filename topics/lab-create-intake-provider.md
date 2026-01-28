@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic describes the steps required to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes the steps required to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,11 +14,11 @@ title: Create intake provider
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the steps required to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes the steps to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Create new provider definition
 
-To create new provider definition, follow these steps:
+To create a new provider definition, follow these steps:
 
 1. Go to **Providers \> Catalog**.
 1. Select **New Provider Definition**.
@@ -33,7 +33,7 @@ To create new provider definition, follow these steps:
 
 To add a provider definition to a solution, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition**.
 1. Select **IOMLabOrderIntakeProvider**, and then select **Add** to add it to the solution. 
 
@@ -42,7 +42,7 @@ To add a provider definition to a solution, follow these steps:
 To add a transformation to the provider definition, follow these steps:
 
 1. Go to **Providers \> Catalog**.
-1. Select the newly-created **IOMLabOrderIntakeProvider**.
+1. Select the newly created **IOMLabOrderIntakeProvider**.
 1. Select **Edit** on the menu bar. 
 1. Select the **Transformations** tab.
 1. Select **+ New IOM Provider Definition Transformation**.
@@ -53,6 +53,7 @@ To add a transformation to the provider definition, follow these steps:
 1. For **Destination Object Name**, enter "Dataverse Order".
 1. For **Transformation**, paste in the following M query code:
 
+```M Query
 shared ImportMappingKey = [
     account = {
 			[
@@ -138,10 +139,12 @@ let
 	salesorder = Record.AddField(orderheader, "order_details", orderlines)
 in Text.FromBinary(Json.FromValue(salesorder));
 ```
+
 1. For **Transformation Source Type**, enter "JsonPayload".
 1. Select **Save**.
 1. Create a JSON file, paste in the following code, and save it.
 
+``` JSON
 {
   "ordernumber": "IOMLabOrder001",
   "shiptocity": "BELLEVUE",
@@ -160,6 +163,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
     }
   ]
 } 
+```
 
 1. Next to the **Sample Data** field, select **Choose File** and upload the JSON file you created.
 1. Select **Save & close**.
@@ -168,7 +172,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 To add a provider definition transformation to a solution, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Transformation**.
 1. Select **IOMLab Order to Dataverse Order**, and then select **Add** to add it to the solution.
 
@@ -191,14 +195,18 @@ To create a provider message handler, follow these steps:
 1. For **Only with Attachment**, select **Yes**.
 
     :::image type="content" source="media/lab_trigger_outlook.png" alt-text="Screenshot of Outlook trigger configuration.":::
+
 1. Select **New step** and add "Parse JSON".
 1. For **Content**, paste in the following code:
+1. 
     ```JSON
     {
     "ProviderId": "00000000-0000-0000-0000-000000000000"
     }
     ```
+
 1. Directly paste in the following sample schema code:
+
     ```JSON
     {
       "type": "object",
@@ -209,20 +217,24 @@ To create a provider message handler, follow these steps:
       }
     }
     ```
+
 1. Select **Done**.
 1. Select the ellipsis ("**...**") and then select **Rename**. 
 1. Rename the action "IOM System Properties".
 1. Select **Save**.
 
     :::image type="content" source="media/lab_iom_system_properties_action.png" alt-text="Screenshot of IOM System Properties action.":::
+
 1. Select **New step**, add a **Parse JSON** action, and rename to "Initialize Provider Variables".
 1. For **Content**, paste in the following code:
+
     ```JSON
     {
       "SourceObjectName": "IOMLabOrderIntakeProvider",
       "DestinationObjectName": "Dataverse Order"
     }
     ``` 
+
 1. Select **Save**.
 1. Select **New step**, add an **Initialize variable** action, and rename to "Initialize Processing Execution Result".
 1. For **Name**, enter "ExecutionResult".
@@ -231,6 +243,7 @@ To create a provider message handler, follow these steps:
 1. Select **Save**.
 
     :::image type="content" source="media/lab_initialize_processing_execution_result.png" alt-text="Screenshot of Initialize Processing Execution Result action.":::
+
 1. Select **New step**, add "scope", and rename to "Try".
 1. In the **Try** scope, select **Add an action**.
 1. Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM".
@@ -241,10 +254,12 @@ To create a provider message handler, follow these steps:
 1. Select **Save**.
 
     :::image type="content" source="media/lab_acknowledge_provider_message.png" alt-text="Screenshot of Acknowledge provider message action.":::
+
 1. Select **Add an action**, and then add an **Apply to each** control.
 1. For **Select an output from previous steps**, select **Attachments**.
 
     :::image type="content" source="media/lab_apply_to_each_control_3.png" alt-text="Screenshot of Apply to each control configuration.":::
+
 1. Select **Add an action** within the **Apply to each** loop, add **Run a child flow** from the **Flow** connector, and rename it "Transform Message with Power Query Online".
 1. Select the child flow **IOM Provider Transformer**.
 1. For **Provider Id**, select the **ProviderId** variable.
@@ -254,30 +269,35 @@ To create a provider message handler, follow these steps:
 1. Select **Save**.
 
     :::image type="content" source="media/lab_transform_message_power_query.png" alt-text="Screenshot of Transform message with Power Query Online action.":::
+
 1. After the transformation step, select **Add an action**, add **Run a child flow** from the Flow connector, and rename it "Create Order".
 1. For **Child Flow**, enter "IOM Sales Order Creation".
 1. For **Payload**, enter ``string(json(outputs('Transform_Message_with_Power_Query_Online')?['Body']?['result'])?[0][0])`` as an expression.
 1. Select **Save**.
 
     :::image type="content" source="media/lab_create_order.png" alt-text="Screenshot of Create Order action.":::
+
 1. Collapse the **Try** scope by selecting its title bar.
 1. Select **New step**, add a scope and rename it "Catch".
 1. In the **Catch** scope, select the ellipsis ("**...**"), and then select **Configure run after**.
 1. Select the **has failed** and **has timed out** checkboxes, and then select **Done**.
 
     :::image type="content" source="media/lab_configure_run_after.png" alt-text="Screenshot of Configure run after settings.":::
+
 1. In the **Catch** scope, select **Add an action**, add a **Set variable** action and rename it "Set the execution result to failed".
 1. For **Name**, enter "Executionresult".
 1. For **Value**, select **False**.
 1. Select **Save**.
 
     :::image type="content" source="media/lab_set_variable.png" alt-text="Screenshot of Set variable action.":::
+
 1. Collapse the **Catch** scope by selecting its title bar.
 1. Select **New step**, add a scope and rename it "Finally".
 1. In the **Finally** scope, select the ellipsis ("**...**"), and then select **Configure run after**. 
 1. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
 
     :::image type="content" source="media/lab_configure_run_after_2.png" alt-text="Screenshot of Configure run after settings for Finally scope.":::
+
 1. In the **Finally** scope, select **Add an action**, add a **Perform an unbound action** action and rename it "Save Provider message request execution result".
 1. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus".
 1. For **ProviderMessageRequestExecutionId**, enter ``@outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
@@ -290,7 +310,7 @@ To create a provider message handler, follow these steps:
 To add a provider definition logic definition to the provider definition, follow these steps:
 
 1. In your Intelligent Order Management application, go to **Providers \> Catalog**.
-1. Select the newly-created **IOMLabOrderIntakeProvider**.
+1. Select the newly created **IOMLabOrderIntakeProvider**.
 1. Select **Edit** on the menu bar. 
 1. Select the **Logic definitions** tab.
 1. Select **+ New IOM Provider Definition Logic Definition**.
@@ -307,13 +327,13 @@ To add a provider definition logic definition to the provider definition, follow
 1. Select **Connections**. You should see both the **Microsoft Dataverse** and **Outlook.com** connection reference definitions listed. 
 
 > [!NOTE]
-> If you see connections reference definitions other than **Microsoft Dataverse** and **Outlook.com**, this means that you are using more than one Dataverse connection reference in your order intake message handler flow. To fix this, go to your flow and ensure that all Dataverse actions are using the same connection reference.
+> If you see connections reference definitions other than **Microsoft Dataverse** and **Outlook.com**, this means that you're using more than one Dataverse connection reference in your order intake message handler flow. To fix this, go to your flow and ensure that all Dataverse actions are using the same connection reference.
 
 ## Add provider definition logic definition to IOMLabProviders solution
 
 To add a provider definition logic definition to the IOMLabProviders solution, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Logic Definition**.
 1. Select **IOM Lab Order Intake Message Request Handler** and then select **Add** to add it to the solution.
 
@@ -321,7 +341,7 @@ To add a provider definition logic definition to the IOMLabProviders solution, f
 
 To add a provider definition connection reference to the IOMLabProviders solution, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition Connection Reference**.
 1. Select the **Microsoft Dataverse** and **Outlook.com** connection reference definitions and then select **Add** to add them to the solution. 
 

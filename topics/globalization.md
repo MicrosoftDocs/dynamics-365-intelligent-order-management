@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides an overview of globalization options for Dynamics 365 Intelligent Order Management.
+description: This article provides an overview of globalization options for Dynamics 365 Intelligent Order Management.
 ms.date: 03/21/2025
 ms.custom: 
   - bap-template

@@ -1,22 +1,21 @@
 ---
 author: josaw1
-description: This topic provides an overview of the quick start guide for Microsoft Dynamics 365 Intelligent Order Management.
+description: This article provides an overview of the quick start guide for Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
 ms.author: anvenkat
 title: Quick start overview
-
 ---
 
 # Quick start lab overview
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the quick start lab for Microsoft Dynamics 365 Intelligent Order Management.
+This article provides an overview of the quick start lab for Microsoft Dynamics 365 Intelligent Order Management.
 
-In this quick start lab, you will learn how to:
+In this quick start lab, you learn how to:
 
 - Create providers.
 - Set up platform connection references.
@@ -32,7 +31,7 @@ In this quick start lab, you will learn how to:
 The quick start lab includes the following scenarios.
 
 - Order comes into IOM as email attachment.
-- Validate order header to make sure ship to country is US.
+- Validate order header to make sure ship to country/region is US.
 - Validate order line to make sure quantity is more than 1.
 - Route order based on quantity.
   - If quantity >= 100, send to Seattle store.

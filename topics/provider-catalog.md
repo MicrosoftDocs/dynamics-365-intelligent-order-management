@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic provides a list of the providers that are available in Dynamics 365 Intelligent Order Management.
+description: This article provides a list of the providers that are available in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,7 +14,7 @@ title: Provider catalog
 
 [!include [banner](includes/banner.md)]
 
-This topic contains a list of all the providers that are available in Dynamics 365 Intelligent Order Management. You can select a provider to get more detailed information about the provider.
+This article contains a list of all the providers that are available in Dynamics 365 Intelligent Order Management. You can select a provider to get more detailed information about the provider.
 
 ## List of providers
 

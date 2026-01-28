@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This topic describes the steps required to create a new provider solution package in Microsoft Dynamics 365 Intelligent Order Management.
+description: This article describes the steps required to create a new provider solution package in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -14,7 +14,7 @@ title: Create a new provider solution package
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the steps required to create a new provider solution package in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes the steps required to create a new provider solution package in Microsoft Dynamics 365 Intelligent Order Management.
 
 It is recommended to have one provider per solution, but multiple providers can be included in the same solution. This is the solution that can be shared and will be installed on Intelligent Order Management environments.
 
