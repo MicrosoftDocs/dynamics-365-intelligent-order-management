@@ -496,7 +496,7 @@ The following is an example structure for a provider action Power Automate flow.
 
         1. **Record ID**: Provided when transforming an outbound Dataverse record. Add a **Payload** or a **Record ID** value, but not both.
 
-:::image type="content" source="media/transform.png" alt-text="Screenshot of transform message with Power Query Online.":::
+        :::image type="content" source="media/transform.png" alt-text="Screenshot of transform message with Power Query Online.":::
 
     1. Execute any custom actions you've defined. These are actions that are present on the Power Automate connector you're using.
 
@@ -561,13 +561,13 @@ To save your Power Automate definition, do the following.
 
         1. Create a compose action with the workflow() expression at the end of your Power Automate flow.
 
-:::image type="content" source="media/compose.png" alt-text="Screenshot of Compose action.":::
+        :::image type="content" source="media/compose.png" alt-text="Screenshot of Compose action.":::
 
         1. Run Power Automate.
 
         1. The **xrmWorkflowId** property from the execution results will contain the workflow ID.
 
-:::image type="content" source="media/workflowID.png" alt-text="Screenshot of workflow ID.":::
+        :::image type="content" source="media/workflowID.png" alt-text="Screenshot of workflow ID.":::
 
         1. Delete this action from the flow so that it does not run again.
 
@@ -575,20 +575,20 @@ To save your Power Automate definition, do the following.
 
         1. Go to the flow that you want to save the workflow ID for. Find the unique identifier in the URL. This is the ID that appears after ../flows/ in the URL.
 
-:::image type="content" source="media/uniqueID.png" alt-text="Screenshot of how to find unique identifier.":::
+        :::image type="content" source="media/uniqueID.png" alt-text="Screenshot of how to find unique identifier.":::
 
         1. Issue an OData request to retrieve the workflow metadata. The following is an example GET request.  
             GET {Env url}/api/data/v9.1/workflows?$filter=workflowidunique eq '{Unique Workflow Id from the Power Automate U}'&$select=workflowid,workflowidunique
 
         1. Save the returned **workflowid** property.
 
-2. Find the provider definition ID.
+1. Find the provider definition ID.
 
     1. Select the provider definition that you want to save the flow to.
 
     1. Copy the provider definition ID from the URL. This is the part of the URL ../id={example number}/.
 
-:::image type="content" source="media/definitionID.png" alt-text="Screenshot of how to find the provider definition ID.":::
+    :::image type="content" source="media/definitionID.png" alt-text="Screenshot of how to find the provider definition ID.":::
 
 1. Make a note of the option set value for the type of Power Automate that you are saving.
 
