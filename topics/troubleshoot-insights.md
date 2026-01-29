@@ -5,7 +5,7 @@ description: Learn about a solution for cases where Microsoft Power BI reports f
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
-ms.topic: concept article
+ms.topic: concept-article
 ms.author: anvenkat
 ---
 

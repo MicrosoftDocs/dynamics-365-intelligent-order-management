@@ -4,7 +4,7 @@ description: Learn about issues that occur during sign-up for the Microsoft Dyna
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
-ms.topic: Concept article
+ms.topic: concept-article
 ms.author: anvenkat
 title: Troubleshoot trial sign-up issues
 
