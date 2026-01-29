@@ -18,7 +18,7 @@ title: Application lifecycle management for Dynamics 365 Intelligent Order Manag
 
 This article describes application lifecycle management (ALM) in Microsoft Dynamics 365 Intelligent Order Management. It includes information about how to move solutions from one environment to another or package solutions for storage in source control.
 
-The following information specifies the setup tables that are required to migrate data for Dynamics 365 Intelligent Order Management configurations. These setup tables require a manual step to add each entity to an unmanaged solution. After the desired entities are added, the solution can be exported via a package file that contains the data of the entities that were added to the unmanaged solution. The package file can then be imported into another Intelligent Order Management environment, where the data can be activated for use.
+The following information specifies the setup tables that are required to migrate data for Dynamics 365 Intelligent Order Management configurations. These setup tables require a manual step to add each entity to an unmanaged solution. After you add the desired entities, you can export the solution as a package file that contains the data of the entities that you added to the unmanaged solution. You can then import the package file into another Intelligent Order Management environment, where you can activate the data for use.
 
 ## Setup tables
 
@@ -47,7 +47,7 @@ The following tables are required for policy rule migration:
 - Rule
 
 > [!NOTE]
-> When you manually add rules, the parent policies are automatically added.
+> When you manually add rules, you also automatically add the parent policies.
 
 ### Tables required for provider migration
 
@@ -67,7 +67,7 @@ The following tables are required for provider migration:
 The following tables are required for orchestration migration:
 
 - Designer
-- Policy and Rule tables
+- Policy and rule tables
 - Provider tables, if orchestration has provider actions.
 
 ## Add tables as solution components and export your solution from the source environment

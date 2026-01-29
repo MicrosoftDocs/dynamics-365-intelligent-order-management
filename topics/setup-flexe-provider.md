@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article provides information about how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
+description: Learn about how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -16,13 +16,13 @@ title: Set up Flexe provider
 
 This article provides information about how to set up the Flexe provider in Dynamics 365 Intelligent Order Management.
 
-Flexe is warehousing and fulfillment service that provides simple integrations, performance insights, and scalability. The Flexe provider enables Intelligent Order Management to access and process purchase orders from Flexe.  
+Flexe is a warehousing and fulfillment service that provides simple integrations, performance insights, and scalability. The Flexe provider enables Intelligent Order Management to access and process purchase orders from Flexe.  
 
 For more information about Flexe, see the [Flexe website](https://www.flexe.com/why-flexe/technology-platform).
 
 ## Prerequisites
 
-To set up the Flexe provider, you need to have Flexe developer account. You can create an account on the [Flexe developer portal](https://developer-sandbox.flexe.com).
+To set up the Flexe provider, you need a Flexe developer account. You can create an account on the [Flexe developer portal](https://developer-sandbox.flexe.com).
 
 ## Set up the provider
 
@@ -34,7 +34,7 @@ To set up the provider, follow these steps:
 
 1. Select **Create** on the **Terms and Conditions** page.
 
-1. There are two connections that you need to set up in the **Connections** section.
+1. In the **Connections** section, set up two connections.
 
     1. Flexe Common Data Service connection.
 

@@ -87,7 +87,7 @@ Each row in the grid represents an order that's currently under alert. Here's an
 
 You can change the alert status for any row on the **Active Alerts** page. (The numbered steps correspond to the numbered callouts in the illustration.)
 
-1. In the row for the alert that you want to update, hover over the area to the left of the **Order** column, and then select the checkbox to select the row. When you select a row, the top menu bar changes.
+1. In the row for the alert that you want to update, hover over the area to the left of the **Order** column, and then select the check box to select the row. When you select a row, the top menu bar changes.
 1. To edit details of the alert, including the alert status, select **Edit** on the menu bar to open the **Alert edit** page. This page shows alert details such as the owner of the alert, the order that's under alert, and the configuration. You can make the following changes:
 
     - In the **Owner** field, select someone else in your organization as the owner of the alert.
@@ -100,6 +100,6 @@ You can change the alert status for any row on the **Active Alerts** page. (The 
 
 ## Other notes
 
-Future releases include some out-of-box alerts, in-app notifications, and other alert types, such as inventory alerts and data anomalies.
+Future releases include some out-of-the-box alerts, in-app notifications, and other alert types, such as inventory alerts and data anomalies.
 
 During the private preview phase, some resource limitations exist. If an alert configuration triggers more than 5,000 orders at a time, the alert fails. Although this situation rarely occurs, you can help safeguard against it by ensuring that the **Time before expected** value is lower than the **Days before expected date** value. For example, the number of orders that aren't sent to delivery 10 days before the expected delivery date is greater than the number two days before the expected delivery date. Therefore, the limit of 5,000 orders is much less likely to be reached two days before the expected delivery date.

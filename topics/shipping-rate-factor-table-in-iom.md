@@ -1,6 +1,6 @@
 ---
 title: Shipping rate factor table overview
-description: This article explains the Shipping rate factor table.
+description: Learn about the Shipping rate factor table.
 ms.author: anvenkat
 author: anush6121
 ms.date: 01/28/2026
@@ -22,7 +22,7 @@ The following table describes the fields in the Shipping rate factor table.
 | Field | Description |
 | ----- | ----------- |
 | Name | The name or description of the carrier service. |
-| Fulfillment source type | The **Fulfillment source type** value in the fulfillment settings. Use this field when, for example, a store and a distribution center have different carrier services that are offered at different rates. |
+| Fulfillment source type | The **Fulfillment source type** value in the fulfillment settings. Use this field when, for example, a store and a distribution center have different carrier services that the two locations offer at different rates. |
 | Address type | The destination address type (for example, **Business** or **Residence**). |
 | Rate factor | A markup or markdown of the calculated rate from the carrier API, if applicable. |
 | Free shipping | A flag that indicates whether the service is applicable for free shipping. |
@@ -32,4 +32,4 @@ The following table describes the fields in the Shipping rate factor table.
 
 ## Using the Shipping rate factor table in the Intelligent Order Management DOM API
 
-The Intelligent Order Management Distributed Order Management (DOM) API calls the FedEx rate API to calculate the shipping rate. If the shipping rate can't be calculated because of an issue with the API, a fallback rate is calculated by using the **Fallback weight threshold** and **Fallback increment rate factor** values that are defined for each service level in the table. If the carrier API returns a valid rate, a markup or markdown percentage is applied by using the **Rate factor** percentage that's maintained in the table.
+The Intelligent Order Management Distributed Order Management (DOM) API calls the FedEx rate API to calculate the shipping rate. If the shipping rate can't be calculated because of an issue with the API, the API calculates a fallback rate by using the **Fallback weight threshold** and **Fallback increment rate factor** values that you define for each service level in the table. If the carrier API returns a valid rate, the API applies a markup or markdown percentage by using the **Rate factor** percentage that you maintain in the table.

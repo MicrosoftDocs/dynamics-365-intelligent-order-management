@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article provides information about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
+description: Learn about how to set up the Orderful provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -22,7 +22,7 @@ For more information about Orderful, contact Orderful at <sales+msft@orderful.co
 
 ## Prerequisites
 
-To set up the Orderful provider, you need to have an Orderful developer account. You can create an account on [Orderful sign-in page](https://ui.orderful.com).
+To set up the Orderful provider, you need an Orderful developer account. You can create an account on the [Orderful sign-in page](https://ui.orderful.com).
 
 ## Set up the provider
 
@@ -34,7 +34,7 @@ To set up the provider, follow these steps:
 
 1. Select **Create** on the **Terms and Conditions** page.
 
-1. There are two connections that you need to set up in the **Connections** section.
+1. Set up two connections in the **Connections** section:
 
     1. Orderful Dataverse connection.
 
@@ -78,9 +78,9 @@ To set up the provider, follow these steps:
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**Orderful Connection**<br>**Orderful Dataverse (current environment) Connection**</br>   |
-|    Parameters             |    Some providers require additional configuration information to retrieve and send information.<br>**Owner ID**<br>**Webhook Name**</br>  |
-|    Provider   Actions     |    The actions associated with a provider determine what actions are available to you when you create an orchestration flow.   |
+|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance might require one or more connections that it uses to gain access and communicate with the external service.<br>**Orderful Connection**<br>**Orderful Dataverse (current environment) Connection**</br>   |
+|    Parameters             |    Some providers require extra configuration information to retrieve and send information.<br>**Owner ID**<br>**Webhook Name**</br>  |
+|    Provider   Actions     |    The actions associated with a provider determine what actions are available when you create an orchestration flow.   |
 |    Business   Events      |   The events defined for a provider are events that the associate provider actions can raise in the orchestration designer.        |
 |    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Orderful 850 Purchase Order to Dataverse Sales Order**</br>  |
 

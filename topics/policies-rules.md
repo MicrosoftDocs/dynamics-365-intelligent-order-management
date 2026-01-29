@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article covers policy types and describes how to create a policy with rules in Dynamics 365 Intelligent Order Management.
+description: Learn about policy types and how to create a policy with rules in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -69,7 +69,7 @@ You can have as many rows or groups as you need to build out your logic. You can
 
 Additionally, an ellipsis menu ("...") on the right side of each row and group allows you to delete a row or group. Check boxes on the left side of each row or group allows you to select several different rows. Then, you can select **Group** from the ellipsis menu to combine the rows into a single group.
 
-The supported operators differentiate each field type, as shown in the following table.
+The supported operators differ for each field type, as shown in the following table.
 
 | Operator                      | Field | Entity-based field |
 |-------------------------------|-------|--------------------|

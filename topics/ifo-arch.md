@@ -39,13 +39,13 @@ By using fulfillment source lists, you can group a list of sources and manage th
 
 Depending on your business situation, you can define multiple source lists and use them as needed.
 
-For example, in your strategy definition, you can include all the sources where fulfillment occurs. For your business constraints, use a different source list. You can also define different minimum inventory constraints for retail stores and warehouses, and assign your warehouses a higher fulfillment priority than your retail stores.
+For example, in your strategy definition, include all the sources where fulfillment occurs. For your business constraints, use a different source list. You can also define different minimum inventory constraints for retail stores and warehouses, and assign your warehouses a higher fulfillment priority than your retail stores.
 
 The **Source Lists** page shows active source lists. To create a new source list, select **New**. Enter a name that helps you easily identify the source list, and add new or existing sources on the **Sources** tab. To remove a source from a source list, select the source on the **Sources** tab, and then select **Remove**.
 
 ## Business constraints
 
-Business constraints are an optional component for fulfillment optimization. They're controls that you add to the optimization strategy. The following business constraints are supported:
+Business constraints are an optional component for fulfillment optimization. Add them as controls to the optimization strategy. The following business constraints are supported:
 
 - Fulfillment location priority
 - Maximum distance

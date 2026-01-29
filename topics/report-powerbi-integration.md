@@ -1,12 +1,11 @@
 ---
 author: josaw1
-description: This article provides an overview of the reporting dashboards available in Dynamics 365 Intelligent Order Management.
+description: Learn about the reporting dashboards available in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: concept-article
 ms.author: josaw
-
 title: Reporting and Power BI integration
 ---
 
@@ -15,22 +14,22 @@ title: Reporting and Power BI integration
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Intelligent Order Management provides insights for the business data moving through the system. The insights are critical for business users to monitor key metrics, respond to issues, and take actions to move orders through their business process.
+Dynamics 365 Intelligent Order Management provides insights for the business data moving through the system. These insights are critical for business users to monitor key metrics, respond to problems, and take actions to move orders through their business process.
 
-There are two types of dashboard technologies available in Intelligent Order Management.
+Intelligent Order Management offers two types of dashboard technologies.
 
-- Microsoft Unified Client Interface (UCI) dashboards: UCI dashboards can be used to visualize app data stored in Microsoft Dataverse.
+- Microsoft Unified Client Interface (UCI) dashboards: Use UCI dashboards to visualize app data stored in Microsoft Dataverse.
 
-- Microsoft Power BI dashboards: Power BI dashboards can be used to visualize app data stored in Dataverse or other data sources that Power BI can work with.
+- Microsoft Power BI dashboards: Use Power BI dashboards to visualize app data stored in Dataverse or other data sources that Power BI can work with.
 
-## UCI Dashboards
+## UCI dashboards
 
-Intelligent Order Management ships with a dashboard called **Daily Events** that can be used to monitor common data required by the business user in a typical workday.
+Intelligent Order Management includes a dashboard called **Daily Events** that business users can use to monitor common data during a typical workday.
 
-To learn more about interactive dashboards, see [Create or edit model-driven app dashboards](/powerapps/maker/model-driven-apps/create-edit-dashboards).
+For more information about interactive dashboards, see [Create or edit model-driven app dashboards](/powerapps/maker/model-driven-apps/create-edit-dashboards).
 
 ## Power BI dashboards
 
-Intelligent Order Management ships with a dashboard called **Order Management** and is based on Power BI technology. This dashboard provides longer-range insights into the order and fulfillment data moving through the app.
+Intelligent Order Management includes a dashboard called **Order Management** that's based on Power BI technology. This dashboard provides longer-range insights into the order and fulfillment data moving through the app.
 
-To learn more about building dashboards with Power BI, see the [Power BI documentation](/power-bi/).
+For more information about building dashboards with Power BI, see the [Power BI documentation](/power-bi/).

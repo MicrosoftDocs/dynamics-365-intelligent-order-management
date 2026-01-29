@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article describes the steps required to run a sample order orchestration flow in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about the steps required to run a sample order orchestration flow in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -71,7 +71,7 @@ To set up product mapping, follow these steps:
 
 1. Go to **Mappings \> Products**.
 1. Select **New**.
-1. On the **New IOM Product Mapping** page, complete the following steps:
+1. On **New IOM Product Mapping**, complete the following steps:
     1. For **IOM Provider**, enter `IOMLabOrderIntakeProvider`.
     1. For **Product**, enter `Barista Home`.
     1. For **External Field Name**, enter `sku`.

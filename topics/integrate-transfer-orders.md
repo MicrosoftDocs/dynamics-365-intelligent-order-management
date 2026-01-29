@@ -16,24 +16,24 @@ title: Integrate Supply Chain Management transfer orders with Intelligent Order 
 
 This article describes how to integrate transfer orders in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Intelligent Order Management.
 
-Warehouse workers create transfer orders to transfer products from one warehouse or location to another. Here are some typical reasons why transfer orders are created:
+Warehouse workers create transfer orders to transfer products from one warehouse or location to another. Here are some typical reasons why workers create transfer orders:
 
 - Product transfers from manufacturing to a distribution facility
 - Stock replenishment at a store from a distribution center
 - Ad-hoc transfers to a warehouse from another warehouse to meet a spike in demand
 - Transfers between warehouses for service purposes, such as packaging and customization requirements
 
-As part of the process of extending support and providing visibility into enterprise transactions, a **Transfer Order** entity is introduced in Intelligent Order Management. This entity includes the following features:
+To extend support and provide visibility into enterprise transactions, Intelligent Order Management introduces a **Transfer Order** entity. This entity includes the following features:
 
 - Dual-write support for transfer orders is available, so that transfer order data flows seamlessly from Dataverse into Intelligent Order Management and is visible in real or near-real time.
-- Transfer orders can be created in Intelligent Order Management. They're then processed in Supply Chain Management via dual-write support.
-- The user interface (UI) fields for the **Transfer Orders** entity are designed to support sales order fulfillment scenarios.
-- Transaction status and visibility of transfer orders from Supply Chain Management are available directly in Intelligent Order Management.
+- You can create transfer orders in Intelligent Order Management. Dual-write support processes them in Supply Chain Management.
+- The user interface (UI) fields for the **Transfer Orders** entity support sales order fulfillment scenarios.
+- You can access transaction status and visibility of transfer orders from Supply Chain Management directly in Intelligent Order Management.
 - The **Transfer Order products** view is available on a tab of the sales order product page and provides visibility into the transfers from individual transfer order transactions.
 
 ## Dual-write support for transfer orders
 
-The following prerequisites must be met before you can activate dual-write support for transfer orders:
+Before you activate dual-write support for transfer orders, make sure you meet the following prerequisites:
 
 - Install or update the following dual-write packages to ensure that you have the latest versions:
 
@@ -42,21 +42,21 @@ The following prerequisites must be met before you can activate dual-write suppo
   - Dual-write Finance package
   - Dual-write Human Resources package
 
-- If dual-write for sales orders is already installed in your environment, ensure that it's up to date.
-- If an older version of Intelligent Order Management is running in your instance, and dual-write is already installed there, ensure that you import the user experience (UX) solution package for purchase orders and transfer orders.
+- If dual-write for sales orders is already installed in your environment, make sure it's up to date.
+- If an older version of Intelligent Order Management is running in your instance and dual-write is already installed, make sure you import the user experience (UX) solution package for purchase orders and transfer orders.
 
 ## General guidelines for installing the add-on UX package for new users
 
-- If you're installing Intelligent Order Management first, you should install the dual-write solution before you import the UX package solution.
-- If you're installing the dual-write solution first, the UX package solution is imported as part of the installation. You can then install Intelligent Order Management.
+- If you're installing Intelligent Order Management first, install the dual-write solution before you import the UX package solution.
+- If you're installing the dual-write solution first, the installation imports the UX package solution. You can then install Intelligent Order Management.
 
 ## Initial synchronization of prerequisite tables
 
-After all the preceding prerequisites have been met, you must sync the reference data between Supply Chain Management and Dataverse before you can create new transfer orders and work with existing transfer orders. You use the initial write functionality to detect the table relationships and find the tables that you must enable for a given map.
+After you meet all the preceding prerequisites, sync the reference data between Supply Chain Management and Dataverse before you create new transfer orders and work with existing transfer orders. Use the initial write functionality to detect the table relationships and find the tables that you must enable for a given map.
 
 In the dual-write synchronization settings, you see the prerequisite tables for both the **Transfer Order Headers** table map and the **Transfer Order Products** table map.
 
-The following tables must be synced for the **Transfer Order Header** table map:
+Sync the following tables for the **Transfer Order Header** table map:
 
 - Sites
 - Worker
@@ -66,7 +66,7 @@ The following tables must be synced for the **Transfer Order Header** table map:
 
 :::image type="content" source="media/transfer-header.png" alt-text="Screenshot of the Transfer Order Header table map in dual-write.":::
 
-The following tables must be synced for the **Transfer Order Products** table map:
+Sync the following tables for the **Transfer Order Products** table map:
 
 - Worker
 - Modes of delivery
@@ -104,7 +104,7 @@ To create a transfer order, follow these steps:
 
 ## Process transfer order and status updates
 
-As transfer orders are processed in Supply Chain Management, status updates are reflected in Dataverse via dual-write and become visible in Intelligent Order Management. When a transfer order is shipped, the status is updated to **Shipped** on the header and lines. The **Shipped Quantity** value is reflected on the **Transfer Order product** page. When the transfer order is received in Supply Chain Management, the status is updated to **Received** on the header. After the item is received, the **Line Status** value is set to **None**.
+As transfer orders are processed in Supply Chain Management, dual-write reflects status updates in Dataverse, and they become visible in Intelligent Order Management. When you ship a transfer order, the status is **Shipped** on the header and lines. The **Shipped Quantity** value appears on the **Transfer Order product** page. When you receive the transfer order in Supply Chain Management, the status is **Received** on the header. After the item is received, the **Line Status** value is set to **None**.
 
 ## View transfer order products on the sales order product page
 

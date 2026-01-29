@@ -13,9 +13,9 @@ ms.author: anvenkat
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Intelligent Order Management provides comprehensive, out-of-box reports that are known as *Insights*. Insights cover a broad range of key performance indicators (KPIs) that are critical for your business.
+Microsoft Dynamics 365 Intelligent Order Management provides comprehensive, out-of-the-box reports that are known as *Insights*. Insights cover a broad range of key performance indicators (KPIs) that are critical for your business.
 
-You can use Insights to find various metrics, such as products by order line, orders that are in jeopardy, returns by return reason, on-time shipped ratio, and fill rate.
+Use Insights to find various metrics, such as products by order line, orders that are in jeopardy, returns by return reason, on-time shipped ratio, and fill rate.
 
 Intelligent Order Management Insights are powered by [embedded Power BI](/power-bi/developer/embedded/embedded-analytics-power-bi).
 
@@ -31,7 +31,7 @@ Every Insights dashboard includes filters, help text, and settings. (The numbere
     - **Next level in hierarchy** and **Expand all down one level in the hierarchy** – Expand levels down in the hierarchy of data. For example, you can expand from **Months** to **Quarters**.
     - **Filters on visual** – Show the current filters that affect the visual.
     - **Focus mode** – Go to an expanded view of the visual.
-    - **Export data** – Export the underlying data to a file in comma-separated values (CSV) format. Any filters that affect the visual is used in the export.
+    - **Export data** – Export the underlying data to a file in comma-separated values (CSV) format. Any filters that affect the visual are used in the export.
     - **Show as a table** – View the underlying data for the visual in table format.
     - **Spotlight** – Highlight the visual.
     - **Get insights** – View automatically generated Insights for the visual, if they're available.
@@ -63,7 +63,7 @@ The "Category" column indicates the category in the left navigation. The "Page" 
 | Order dashboard   | Order insights       | Orders past due                                | KPI   | Orders that are past the requested delivery date. |
 | Order dashboard   | Order insights       | Revenue (base)                                 | KPI   | Total revenue of all orders. |
 | Order dashboard   | Order insights       | D orders                                       | Graph | Sales orders that are delayed from delivery by revenue and order count. |
-| Order dashboard   | Order insights       | Orders in jeopardy                             | Graph | Sales orders that are in jeopardy as they haven't been sent to fulfillment and are at risk of being delayed by revenue and order count. |
+| Order dashboard   | Order insights       | Orders in jeopardy                             | Graph | Sales orders that are in jeopardy as they aren't sent to fulfillment and are at risk of being delayed by revenue and order count. |
 | Order dashboard   | Order insights       | Order lines by status reason                   | Graph | Order lines count grouped by order status. |
 | Order dashboard   | Order insights       | Order lines by provider                        | Graph | Orders lines count grouped by order providers connected to Intelligent Order Management. |
 | Order dashboard   | Order insights       | Revenue (base) by provider                     | Graph | Revenue of orders received grouped by order providers connected to Intelligent Order Management. |
@@ -87,11 +87,11 @@ The "Category" column indicates the category in the left navigation. The "Page" 
 | Order dashboard   | Fulfillment insights | Fulfillment lines                              | KPI   | Total fulfillment lines created. |
 | Order dashboard   | Fulfillment insights | Internal cycle time (hours)                    | KPI   | The average time it takes to ship an order. |
 | Order dashboard   | Fulfillment insights | Internal cycle time (SLA))                      | KPI   | SLA percentage representing orders that have shipped by an internal cycle time goal. |
-| Order dashboard   | Fulfillment insights | Fulfillment lines shipped                      | KPI   | Total fulfillment lines that have been shipped. |
-| Order dashboard   | Fulfillment insights | Shipped quantity                               | KPI   | Total orders that have been shipped. |
+| Order dashboard   | Fulfillment insights | Fulfillment lines shipped                      | KPI   | Total fulfillment lines that are shipped. |
+| Order dashboard   | Fulfillment insights | Shipped quantity                               | KPI   | Total orders that are shipped. |
 | Order dashboard   | Fulfillment insights | On-time shipped ratio                          | Graph | On time shipped percentage shows the percentage of orders delivered on time. Orders without a requested ship date are excluded from this metric. |
 | Order dashboard   | Fulfillment insights | Book to ship ratio                             | Graph | Book to ship ratio shows the value ratio of orders booked vs shipped. |
-| Order dashboard   | Fulfillment insights | Fill rate                                      | Graph | Fill rate shows the percentage of orders that have been fulfilled successfully. |
+| Order dashboard   | Fulfillment insights | Fill rate                                      | Graph | Fill rate shows the percentage of orders that are fulfilled successfully. |
 | Order dashboard   | Fulfillment insights | Fulfillments by source type                    | Graph | Fulfillment orders grouped by source type such as Warehouse. |
 | Order dashboard   | Fulfillment insights | Fulfillments by region                         | Map   | Map view of fulfillment order details grouped by region of order destination. |
 | Order dashboard   | Fulfillment insights | Fulfillment lines shipped                      | Graph | Count of fulfillment lines shipped on a trendline. |
@@ -122,46 +122,46 @@ The "Category" column indicates the category in the left navigation. The "Page" 
 | Provider insights | Overview             | Total requests                                 | KPI   | Total message and action events associated with providers connected to Intelligent Order Management. For example, large Commerce orders and order updates, FedEx shipping, and delivery notifications. |
 | Provider insights | Overview             | MTD total request growth rate                  | KPI   | Growth rate month to date of requests associated with providers connected to Intelligent Order Management. Page date filters don't update this KPI. |
 | Provider insights | Overview             | SLA total requests                             | KPI   | Percentage of requests that met the SLA for a given provider connected to Intelligent Order Management, where the SLA is defined as the length of allowable time for an event to process. |
-| Provider insights | Overview             | Total requests failed                          | KPI   | Total requests from providers that have failed. |
+| Provider insights | Overview             | Total requests failed                          | KPI   | Total requests from providers that failed. |
 | Provider insights | Overview             | Total requests above threshold                 | KPI   | Total requests that exceeded the allowable time for an event to process for a given provider. |
 | Provider insights | Overview             | Total requests by provider                     | Graph | Total requests grouped by providers connected to Intelligent Order Management.|
-| Provider insights | Overview             | Total requests and message type by provider    | Table | Total requests grouped by provider and type/ This includes inbound vs outbound. |
+| Provider insights | Overview             | Total requests and message type by provider    | Table | Total requests grouped by provider and type. This includes inbound vs outbound. |
 | Provider insights | Overview             | Total requests by date                         | Graph | Total requests by date on a trendline. |
 | Provider insights | Overview             | Total requests failed by date                  | Graph | Total failed requests by date on a trendline. |
 | Provider insights | Overview             | Total requests above threshold by date         | Graph | Total requests that exceeded the allowable time for an event to process for a given provider by date on a trendline. |
 | Provider insights | Inbound requests     | Inbound requests                               | KPI   | Total requests coming FROM providers connected to Intelligent Order Management. For example, an order from Big Commerce or a shipping notification from FedEx. |
 | Provider insights | Inbound requests     | MTD inbound request growth rate                | KPI   | Growth rate month to date of requests coming FROM providers connected to Intelligent Order Management. Page date filters don't update this KPI. |
 | Provider insights | Inbound requests     | SLA inbound requests                           | KPI   | Percentage of inbound requests that met the SLA for a given provider connected to Intelligent Order Management, where the SLA is defined as the length of allowable time for an event to process. |
-| Provider insights | Inbound requests     | Inbound requests failed                        | KPI   | Total requests coming FROM providers that have failed. |
+| Provider insights | Inbound requests     | Inbound requests failed                        | KPI   | Total requests coming FROM providers that failed. |
 | Provider insights | Inbound requests     | Inbound requests above threshold               | KPI   | Total inbound requests that exceeded the allowable time for an event to process for a given provider. |
-| Provider insights | Inbound requests     | inbound requests by provider                   | Graph | Total requests coming FROM providers, grouped by providers. |
+| Provider insights | Inbound requests     | Inbound requests by provider                   | Graph | Total requests coming FROM providers, grouped by providers. |
 | Provider insights | Inbound requests     | Inbound requests and message type by provider  | Table | Total requests coming FROM providers, grouped by providers and inbound type. |
 | Provider insights | Inbound requests     | Inbound requests by date by provider           | Graph | Total requests coming FROM providers by date on a trendline. |
-| Provider insights | Inbound requests     | Inbound requests failed by date by provider    | Graph | Total requests coming FROM providers that have failed by date on a trendline. |
+| Provider insights | Inbound requests     | Inbound requests failed by date by provider    | Graph | Total requests coming FROM providers that failed by date on a trendline. |
 | Provider insights | Inbound requests     | Inbound request anomalies on execution time    | Graph | Providers with inbound requests that exceeded the allowable time for an event to process. |
 | Provider insights | Outbound requests    | Outbound requests                              | KPI   | Total requests sent TO providers connected to Intelligent Order Management. |
 | Provider insights | Outbound requests    | MTD outbound requests growth rate              | KPI   | Growth rate month to date of requests sent TO providers connected to Intelligent Order Management. The **Page date** filters don't update this KPI. |
 | Provider insights | Outbound requests    | SLA outbound requests                          | KPI   | Percentage of outbound requests that met the SLA for a given provider connected to Intelligent Order Management, where the SLA is defined as the length of allowable time for an event to process. |
-| Provider insights | Outbound requests    | Outbound requests failed                       | KPI   | Total requests sent TO providers that have failed. |
+| Provider insights | Outbound requests    | Outbound requests failed                       | KPI   | Total requests sent TO providers that failed. |
 | Provider insights | Outbound requests    | Outbound requests above threshold              | KPI   | Total outbound requests that exceeded the allowable time for an event to process for a given provider. |
 | Provider insights | Outbound requests    | Outbound requests by provider                  | Graph | Total requests sent TO providers grouped by provider. |
 | Provider insights | Outbound requests    | Outbound requests and message type by provider | Table | Total requests sent TO providers grouped by provider and outbound type. |
 | Provider insights | Outbound requests    | Outbound requests by date by provider          | Graph | Total requests sent TO providers by date on a trendline. |
-| Provider insights | Outbound requests    | Outbound requests failed by date by provider   | Graph | Total requests sent TO providers that have failed by date on a trendline. |
+| Provider insights | Outbound requests    | Outbound requests failed by date by provider   | Graph | Total requests sent TO providers that failed by date on a trendline. |
 | Provider insights | Outbound requests    | Outbound requests anomalies on execution time  | Graph | Providers with outbound requests that exceeded the allowable time for an event to process. |
 
 ## Customize dashboards
 
-Only users who have [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's Insights reports or create new reports. For more information about how to administer roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
+Only users with [administrator](/power-bi/admin/service-admin-role) and author access can customize your organization's Insights reports or create new reports. For more information about how to administer roles, see [What is Power BI administration](/power-bi/admin/service-admin-administering-power-bi-in-your-organization) and [Grant users access](/power-platform/admin/grant-users-access).
 
-If you have the correct access to customize or create Insights reports, you can select **Resume editing** on any Insights page to enter edit mode.
+If you have the correct access to customize or create Insights reports, select **Resume editing** on any Insights page to enter edit mode.
 
 :::image type="content" source="media/customize_dash_1.png" alt-text="Screenshot of the Resume editing button on an Insights page.":::
 
 When you enter edit mode, the following controls become available. (The numbered paragraphs correspond to the numbered callouts in the illustration that follows.)
 
-1. **Editing controls** – Use the buttons on the top menu bar to save, discard, or publish your current draft. If you select **Publish**, you publish changes for everyone in your organization.
-1. **Customization controls** – There are three expandable/collapsible panes on the right side of the page:
+1. **Editing controls** – Use the buttons on the top menu bar to save, discard, or publish your current draft. If you select **Publish**, you make your changes available to everyone in your organization.
+1. **Customization controls** – There are three expandable and collapsible panes on the right side of the page:
 
     - **Filters** – View which filters are currently applied, edit the applied filters, or add more filters.
     - **Visualizations** – Select any visual in the main part of the page, and then select a new visual in this pane to change it. For more information about how to change visuals, see [Change the type of visualization in a Power BI report](/power-bi/visuals/power-bi-report-change-visualization-type). You can also edit axis information, legends, and more. For detailed instructions, see [Customize visualization titles, backgrounds, labels, and legends](/power-bi/visuals/power-bi-visualization-customize-title-background-and-legend).

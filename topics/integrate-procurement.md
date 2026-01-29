@@ -48,7 +48,7 @@ Before you activate dual-write support for purchase orders, make sure you meet t
 
 ## Initial synchronization of prerequisite tables
 
-After you meet all the preceding prerequisites, you must perform an initial synchronization of the prerequisite and dependent master data and tables. This synchronization makes existing purchase orders available in both Supply Chain Management and Intelligent Order Management. For information about which tables you must sync and how to sync them, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
+After you meet all the preceding prerequisites, perform an initial synchronization of the prerequisite and dependent master data and tables. This synchronization makes existing purchase orders available in both Supply Chain Management and Intelligent Order Management. For information about which tables you must sync and how to sync them, see [Integrate procurement between Supply Chain Management and Field Service](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/scm-field-service-procurement).
 
 ## Dual-write purchase order mapping reference
 

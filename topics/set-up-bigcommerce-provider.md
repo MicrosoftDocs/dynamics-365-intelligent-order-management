@@ -1,13 +1,12 @@
 ---
 author: josaw1
-description: This article provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
+description: Learn about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
 ms.author: anvenkat
 title: Set up BigCommerce provider
-
 ---
 
 # Set up BigCommerce provider
@@ -22,7 +21,7 @@ For more information about BigCommerce, see the [BigCommerce website](https://ww
 
 ## Prerequisites
 
-You need to have a sample store set up. Go to the [BigCommerce website](https://www.bigcommerce.com) and select **Start your free trial**. Follow the instructions to set up your sample store.
+You need to set up a sample store. Go to the [BigCommerce website](https://www.bigcommerce.com) and select **Start your free trial**. Follow the instructions to set up your sample store.
 
 ## Set up the provider
 
@@ -34,7 +33,7 @@ To set up the provider, follow these steps:
 
 1. Select **Create** on the **Terms and Conditions** page.
 
-1. There are two connections that you need to set up in the **Connections** section.
+1. Set up two connections in the **Connections** section.
 
     1. BigCommerce Common Data Service Connection
 

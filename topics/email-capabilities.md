@@ -6,7 +6,6 @@ ms.custom:
   - bap-template
 ms.topic: how-to
 ms.author: anvenkat
-
 title: Email capabilities in Dynamics 365 Intelligent Order Management
 ---
 
@@ -17,9 +16,9 @@ This article describes the email capabilities that are available in Microsoft Dy
 Dynamics 365 Intelligent Order Management supports the following out-of-box email capabilities:
 
 - An enhanced email template editor
-- Three email templates that can be called in the orchestration flow
+- Three email templates that you can call in the orchestration flow
 - A highly performant and scalable email sending service
-- A generic email domain that can be used in the "from" email address
+- A generic email domain that you can use in the "from" email address
 
 ## Enhanced email template editor
 
@@ -32,26 +31,26 @@ For more information, see [Email marketing overview](/dynamics365/marketing/prep
 To enable the enhanced email template editor feature, follow these steps:
 
 1. Sign in to the [Power Apps portals admin center](/power-apps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center) for your environment. 
-1. Go to **Solutions \> Default Solution**, and ensure that **Solution preview on** is turned on.
+1. Go to **Solutions \> Default Solution**, and turn on **Solution preview on**.
 1. Under **Default Solution**, go to the **Show Email Preview** setting.
-1. Ensure that the **Default value** option is set to **Yes**.
+1. Set the **Default value** option to **Yes**.
 
     > [!NOTE]
-    > If you set the **Default value** option back to **No**, the platform email capabilities are missing some of the key email editor enhancements of the enhanced editor feature. In addition, the orchestration flow has to be changed so that it uses the older templates.
+    > If you set the **Default value** option back to **No**, the platform email capabilities don't include some of the key email editor enhancements of the enhanced editor feature. In addition, the orchestration flow uses older templates.
 
 1. Go to **Setting environment value**, select **Add existing value**, select **Yes**, and then select **Save**.
 
 ## Out-of-box email templates
 
-Three out-of-box email templates are included with the product:
+The product includes three out-of-box email templates:
 
-- **Order Confirmation** – The email communication that is sent to a customer after an order is received in the app.
-- **Shipment confirmation** – The email communication that contains tracking information and is sent to a customer after order items are shipped.
-- **Return pick up confirmation** – The email communication that is sent to a customer after a returns process is started.
+- **Order Confirmation** – The email communication that the app sends to a customer after it receives an order.
+- **Shipment confirmation** – The email communication that the app sends to a customer after it ships order items. It contains tracking information.
+- **Return pick up confirmation** – The email communication that the app sends to a customer after it starts a returns process.
 
 To access the email templates, go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**.
 
-The preceding templates can be edited to meet your business needs. For each template that you use, we recommend that you create a new template, copy the contents of the relevant out-of-box template into it, save it, and then customize it. By copying and modifying out-of-box templates, you help prevent issues with future Intelligent Order Management upgrades.
+You can edit the preceding templates to meet your business needs. For each template that you use, create a new template. Copy the contents of the relevant out-of-box template into the new template, save it, and then customize it. By copying and modifying out-of-box templates, you help prevent problems with future Intelligent Order Management upgrades.
 
 ### Sections in an email template
 
@@ -63,18 +62,18 @@ The out-of-box templates include a few image placeholders:
 - **P2, P3, P4, P5** – For social media logos, as needed.
 
 > [!NOTE]
-> The current version of Intelligent Order Management doesn't include image support. Images must be stored in a content distribution network (CDN) of your choice and publicly accessed via the internet. Image support is in development for an upcoming release.
+> The current version of Intelligent Order Management doesn't include image support. You must store images in a content distribution network (CDN) of your choice and make them publicly accessible via the internet. Image support is in development for an upcoming release.
 
 #### Predefined tokens
 
-Predefined tokens are provided out of the box to support the three standard templates in Intelligent Order Management. You can find the whole token list by selecting **Personalization** in the template. By hovering over each token, you can view the **Source**, **Data type**, and **Default value** values for it.
+The out-of-box predefined tokens support the three standard templates in Intelligent Order Management. You can find the whole token list by selecting **Personalization** in the template. By hovering over each token, you can view the **Source**, **Data type**, and **Default value** values for it.
 
 ### Copy and create a new order confirmation template
 
 To copy and create a new order confirmation template, follow these steps:
 
-1. Go to **Intelligent Order Management \> Configurations \> Communications \> Email templates**, and open the order confirmation template.
-1. Select **\</\> HTML** in the upper right, and then copy the HTML content from the **HTML** window.
+1. Go to **Intelligent Order Management > Configurations > Communications > Email templates**, and open the order confirmation template.
+1. Select **</> HTML** in the upper right, and then copy the HTML content from the **HTML** window.
 1. Select the **F12** key on your keyboard to open your browser's developer tools.
 1. In the **Console** section of the developer tools, run the following command to copy the tokens and placeholders from the template.
 
@@ -83,7 +82,7 @@ To copy and create a new order confirmation template, follow these steps:
     ```
 
 1. Select **New** to create a new email template, name the template, and then save it.
-1. In the new template, select **\</\>HTML** in the upper right, and then paste the HTML content that you copied in step 2 into the **HTML** window.
+1. In the new template, select **</>HTML** in the upper right, and then paste the HTML content that you copied in step 2 into the **HTML** window.
 1. Close the **HTML** window, and save the template.
 1. In the **Console** section of the developer tools, run the following command.
 
@@ -91,13 +90,13 @@ To copy and create a new order confirmation template, follow these steps:
     Xrm.Page.getAttribute('msdyn_placeholders').setValue(placeholdersStr)
     ```
 
-Your new custom template resembles the out-of-box version, and you are able to edit it.
+Your new custom template resembles the out-of-box version, and you can edit it.
 
 The Intelligent Order Management team is working toward an easier solution for copying and creating a template in upcoming releases.
 
 ### Send emails through the orchestration flow
 
-To send emails through the orchestration flow, you must first activate the Dynamics 365 Communication provider, and then add the email template to the orchestration flow.
+To send emails through the orchestration flow, first activate the Dynamics 365 Communication provider, and then add the email template to the orchestration flow.
 
 #### Activate the Dynamics 365 Communication provider
 
@@ -109,7 +108,7 @@ To activate the Dynamics 365 Communication provider, follow these steps:
 1. Select **Parameters**, and then, in the **value** field, enter the "from" email address. (See the note that follows.)
 
     > [!NOTE]
-    > The domain of the "from" email address (the part after the \@ sign) should always be `d365iom.com`. The part before the \@ sign can be any text, but we recommended that you add your company or brand name to it (for example `support_<your brand name>@d65iom.com`, `admin_<your brand name>@d365iom.com`, or `noreply_<your brand name>@d365iom.com`).
+    > The domain of the "from" email address (the part after the \@ sign) should always be `d365iom.com`. The part before the \@ sign can be any text, but add your company or brand name to it (for example `support_<your brand name>@d65iom.com`, `admin_<your brand name>@d365iom.com`, or `noreply_<your brand name>@d365iom.com`).
 
 #### Add the email template to an orchestration flow
 
@@ -124,4 +123,4 @@ To add an order confirmation template to an orchestration flow, follow these ste
 
 ## Check email delivery status
 
-You can check the status of email delivery in **Orchestration Step Results** in the sales order view. There should be an orchestration step that corresponds to email delivery and that shows the delivery status in the **Result** column. The **Result Details** column shows more details.
+You can check the status of email delivery in **Orchestration Step Results** in the sales order view. Look for an orchestration step that corresponds to email delivery. This step shows the delivery status in the **Result** column. The **Result Details** column provides more details.

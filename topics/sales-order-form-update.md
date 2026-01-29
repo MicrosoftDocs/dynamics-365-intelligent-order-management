@@ -13,7 +13,7 @@ ms.topic: article
 
 [!INCLUDE[banner](includes/banner.md)]
 
-This article explains the user experience (UX) changes that were made to the sales order form (page) in Microsoft Dynamics 365 Intelligent Order Management, based on the Microsoft fluent protocols. These changes simplify the workflow for creating, modifying, and viewing orders in Intelligent Order Management.
+This article explains the user experience (UX) changes that were made to the sales order form in Microsoft Dynamics 365 Intelligent Order Management, based on the Microsoft fluent protocols. These changes simplify the workflow for creating, modifying, and viewing orders in Intelligent Order Management.
 
 ## Enable sales order form denormalization
 
@@ -23,7 +23,7 @@ To enable sales order form denormalization, follow these steps:
 1. Select **Enhanced Pages Sales order KPI view**, and set the option to **On**.
 
 > [!NOTE]
-> When you enable the feature, your view of the sales order form is changed to the new view.
+> When you enable the feature, you change your view of the sales order form to the new view.
 
 ## Summary of changes
 

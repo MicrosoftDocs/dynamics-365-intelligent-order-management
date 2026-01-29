@@ -16,33 +16,33 @@ title: Data management
 
 [!include [banner](includes/banner.md)]
 
-Managing data is an important part of setup and administration in Dynamics 365 Intelligent Order Management. Data in Intelligent Order Management can be classified into the following categories.
+Managing data is an important part of setup and administration in Dynamics 365 Intelligent Order Management. You can classify data in Intelligent Order Management into the following categories.
 
 - System data: Set up data needed to support the administration of the app. Additionally, reference data is base data needed to support setup of master data or transactional data.
 
-- Master data: Entities for orienting a business process. Master data may be needed to validate or drive different processes in the orchestration of order transactions.
+- Master data: Entities for orienting a business process. You might need master data to validate or drive different processes in the orchestration of order transactions.
 
 - Transaction data: The main transactional document recorded by the app in the processing of order flows.
 
-Intelligent Order Management is designed to be used in complex environments where data is communicated between many internal and external systems. You'll design systems that is used to share master data with other systems.
+Intelligent Order Management is designed for complex environments where many internal and external systems communicate data. You design systems that share master data with other systems.
 
-Intelligent Order Management is built on Microsoft Dataverse and the common data model, which allow you to store data you consider to be master data. Intelligent Order Management can be configured to be the central app with a single view of orders in your organization, so you might want to consider it to be the master system. However, master data such as products or accounts might originate from other business apps, such as your existing ERP app, and therefore you might consider that ERP app the master data system for some types of data.
+Intelligent Order Management is built on Microsoft Dataverse and the common data model, which you can use to store data you consider to be master data. You can configure Intelligent Order Management as the central app with a single view of orders in your organization, so you might consider it the master system. However, other business apps, such as your existing ERP app, might originate master data such as products or accounts. Therefore, you might consider that ERP app the master data system for some types of data.
 
 ## System data
 
-You can configure and use parameters throughout Intelligent Order Management. The app provides pages where you can administer system parameters that are needed to control functionality. You can use those pages when you're initially setting up Intelligent Order Management and throughout day-to-day administration.
+You can configure and use parameters throughout Intelligent Order Management. The app provides pages where you can administer system parameters that are needed to control functionality. Use these pages when you're initially setting up Intelligent Order Management and throughout day-to-day administration.
 
-Some data might be important for the operation of the systems, such as currency and units of measure. This type of reference data can be accessed through the pages provided for master data entities like product and can also be imported and exported with the tools listed in the following sections.
+Some data is important for the operation of the systems, such as currency and units of measure. You can access this type of reference data through the pages provided for master data entities like product. You can also import and export this data by using the tools listed in the following sections.
 
 ## Master data
 
-Business apps are often designed around master data entities that are key business entities such as accounts and products. Intelligent Order Management uses these types of entities to validate data as it moves through the orchestration flow. For example, you might have customer account numbers, so when an order is brought into Intelligent Order Management, you might want to look up the account number.
+Business apps often use master data entities that represent key business entities such as accounts and products. Intelligent Order Management uses these types of entities to validate data as it moves through the orchestration flow. For example, you might have customer account numbers, so when an order comes into Intelligent Order Management, you might want to look up the account number.
 
-Intelligent Order Management is designed to work with or without master data. Master data is an important concept if you choose to use the orchestration capabilities, but you can use different source and destination systems to control master data at those endpoints.
+Intelligent Order Management works with or without master data. Master data is an important concept if you use the orchestration capabilities, but you can use different source and destination systems to control master data at those endpoints.
 
-An example is account data from e-commerce systems in D2C and D2C flows. If you receive an order from an online marketplace, it's unlikely that you have an account number from that system. The order arrives with minimal customer information. You might receive thousands of these orders a day in high volume scenarios, but there will be enough information on the orders to send to fulfillment, and you won't validate these orders against an account master list. Similarly, products on the order lines can use the write-in product concepts, so you might choose to not catalog a product list in Intelligent Order Management for validation of product information as it moves through the orchestration flow.
+An example is account data from e-commerce systems in D2C and D2C flows. If you receive an order from an online marketplace, you likely don't have an account number from that system. The order arrives with minimal customer information. You might receive thousands of these orders a day in high volume scenarios, but there's enough information on the orders to send to fulfillment, and you don't validate these orders against an account master list. Similarly, products on the order lines can use the write-in product concepts, so you might choose to not catalog a product list in Intelligent Order Management for validation of product information as it moves through the orchestration flow.
 
-If you need to set up master data such as accounts or products, you can use the appropriate page in the app and you can use the import and export tools listed in the following sections.
+If you need to set up master data such as accounts or products, use the appropriate page in the app and use the import and export tools listed in the following sections.
 
 ## Transactional data
 

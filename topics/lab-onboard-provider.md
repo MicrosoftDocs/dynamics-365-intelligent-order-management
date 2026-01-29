@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article describes the steps required to onboard a provider instance in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about the steps required to onboard a provider instance in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -19,7 +19,7 @@ This article describes the steps required to onboard a provider instance in Micr
 ## Create application connections
 
 > [!NOTE]
-> If you followed the previous provider creation steps you can skip this section, since you have already created these application connections.
+> If you followed the previous provider creation steps, you already created these application connections and can skip this section.
 
 ### Create Outlook connection
 
@@ -28,7 +28,7 @@ To create an Outlook connection, follow these steps:
 1. Select **New connection**.
 1. In the search box in the upper right corner, enter "Outlook.com".
 1. Select the plus symbol ("**+**") to create the connection.
-1. Sign in with your Outlook credentials (user name and password), which are not related to your Intelligent Order Management credentials.
+1. Sign in by using your Outlook credentials (user name and password). These credentials aren't related to your Intelligent Order Management credentials.
 
 ### Create RequestBin connection
 
@@ -43,7 +43,7 @@ To create a RequestBin connection, follow these steps:
 To add a provider for order intake, follow these steps:
 
 1. Go to **Providers \> Catalog** and select **Add Provider** on the **IOMLabOrderIntakeProvider** tile.
-1. Under the **Connections** section, select **Microsoft Dataverse** to navigate to the **IOM Provider Connection Reference** form. Similar to how platform connection references were set up, you'll need to set up connection references to corresponding Power Automate connections created in previous steps.  
+1. Under the **Connections** section, select **Microsoft Dataverse** to navigate to the **IOM Provider Connection Reference** form. Similar to how you set up platform connection references, set up connection references to corresponding Power Automate connections created in previous steps.  
 1. On the **IOM Provider Connection Reference** form: 
     1. Copy the connection URL from the Dataverse Power Automate connection details page and paste it into the **Connection URL** field.
     1. Select **Save**. 
@@ -63,7 +63,7 @@ To add a provider for fulfillment, follow these steps:
 
 1. Go to **Providers \> Catalog** and select **Add Provider** on the **IOMLabFulfillmentProvider** tile.
 1. Under the **Connections** section, set up all the connections listed. 
-1. On the **Parameters** tab, enter the email account where you want the fulfillment order payload to be sent to. This can be any valid email address. 
+1. On the **Parameters** tab, enter the email account where you want the fulfillment order payload to be sent. This account can be any valid email address. 
 1. On the **IOMLabFulfillmentProvider** form: 
     1. Select **Save**. 
     1. Select **Activate**.
@@ -73,7 +73,7 @@ To add a provider for fulfillment, follow these steps:
 
 To view the deployed Power Automate component, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and confirm that you are in the correct Intelligent Order Management trial environment. To check which environment you are in, select the **Environment** icon on the top right corner of the maker portal.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and confirm that you're in the correct Intelligent Order Management trial environment. To check which environment you're in, select the **Environment** icon on the top right corner of the maker portal.
 1. Go to **Solutions \> Default Solution**. 
 1. Filter the solution component to display only "Cloud flow". You should now see the following Power Automate flows.
 

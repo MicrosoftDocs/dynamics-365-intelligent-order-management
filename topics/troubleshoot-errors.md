@@ -1,7 +1,7 @@
 ---
-title: Error handling and troubleshooting
+title: Error handling
 author: raybennett-msft
-description: This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn error handling in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.topic: overview
 ms.author: anvenkat
@@ -10,12 +10,12 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Error handling and troubleshooting
+# Error handling
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes error handling in Microsoft Dynamics 365 Intelligent Order Management.
 
 Dynamics 365 Intelligent Order Management has five primary error handling pages that you can use to diagnose issues with your environment. Each error handling page provides different information, based on the type of error.
 
@@ -107,7 +107,7 @@ The following table describes the fields on the **Policy Errors** page.
 
 :::image type="content" source="media/troubleshooting-007.png" alt-text="Screenshot of the Policy Errors page.":::
 
-## Troubleshoot Power Query transformation failures
+## Power Query transformation failures
 
 If a call to Intelligent Order Management Provider Transformer fails, the best way to debug the failure is to directly observe the Power Automate execution.
 
@@ -124,7 +124,6 @@ If a call to Intelligent Order Management Provider Transformer fails, the best w
 
     :::image type="content" source="media/troubleshooting-010.png" alt-text="Screenshot of flow steps.":::
 
-
 ### Example errors
 
 The following table shows some examples of error messages and describes the suggested steps to fix the errors.
@@ -140,7 +139,7 @@ If a sales order fails in an orchestration step, you can reprocess it from the f
 
 :::image type="content" source="media/iomreprocess.jpg" alt-text="Screenshot that highlights the Reprocess button on the Action Pane.":::
 
-## Troubleshoot dual-write errors
+## Dual-write errors
 
 If a sales order or sales order lines fail while they are being processed through dual-write into finance and operations apps, the errors are shown in the following places:
 

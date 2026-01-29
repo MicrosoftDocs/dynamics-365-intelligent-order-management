@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article describes the steps required to export a provider solution in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about the steps required to export a provider solution in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -26,7 +26,7 @@ For instructions on exporting your solution, see [Export solutions](/powerapps/m
 
 To clean up after export, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com), navigate to **Solutions \> default solution**, and then filter on **Cloud flow**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com), navigate to **Solutions > default solution**, and then filter on **Cloud flow**.
 1. Stop the following cloud flows that you created to initialize provider definition logic definition: 
     - IOM Lab Order Intake Message Request Handler.
     - IOM Lab Sends To Fulfillment (Outlook).

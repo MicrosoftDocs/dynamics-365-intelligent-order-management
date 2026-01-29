@@ -30,7 +30,7 @@ To sign up for the trial licenses, follow these steps:
 
 1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 1. In the left navigation, select **Billing \> Purchase services**.
-1. On the **Purchase services** page, in the search field, enter **intelligent**. The search results should include the **Dynamics 365 Intelligent Order Management Trial** and **Dynamics 365 Intelligent Order Management (USL) Trial** licenses.
+1. On the **Purchase services** page, enter **intelligent** in the search field. The search results include the **Dynamics 365 Intelligent Order Management Trial** and **Dynamics 365 Intelligent Order Management (USL) Trial** licenses.
 
     ![Licenses in the search results on the Purchase services page.](./media/licensing-iom2.png)
 

@@ -48,7 +48,7 @@ The dashboard provides two interactive filters: **Product name** and **Location 
 
 #### Product name
 
-Product name information flows into the inventory dashboard from the **Products** section of Intelligent Order Management. The **Products** section contains data for all products that sales orders can be created for and inventory can be recorded for.
+Product name information flows into the inventory dashboard from the **Products** section of Intelligent Order Management. The **Products** section contains data for all products that you can create sales orders for and record inventory for.
 
 #### Location ID
 
@@ -104,7 +104,7 @@ The [KPIs](#kpis) section describes how these KPIs are calculated. You can also 
 
 ### Can I look for historical information of the inventory?
 
-All data that the inventory dashboard shows is a current representation of the inventory system. However, keep in mind that there's 4 to 10 hours of latency. The ability to view previous states of the inventory system isn't currently supported.
+All data that the inventory dashboard shows is a current representation of the inventory system. However, there's 4 to 10 hours of latency. The ability to view previous states of the inventory system isn't currently supported.
 
 ### Can I use the inventory dashboard if Intelligent Order Management is connected to  dynamics supply chain management?
 

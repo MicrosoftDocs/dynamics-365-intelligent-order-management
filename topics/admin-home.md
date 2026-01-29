@@ -16,17 +16,17 @@ ms.author: sumanic
 
 This article describes the **Admin home** workspace in Microsoft Dynamics 365 Intelligent Order Management.
 
-The **Admin home** administrator workspace in Intelligent Order Management makes all levels of Intelligent Order Management–related setups and settings easily accessible and available to administrators. Access to the **Admin home** workspace can be role-based, according to customer needs.
+The **Admin home** administrator workspace in Intelligent Order Management makes all levels of Intelligent Order Management–related setups and settings easily accessible and available to administrators. You can provide access to the **Admin home** workspace based on roles and customer needs.
 
-To access the **Admin home** workspace, on the Intelligent Order Management **Home** page, select **Settings**, and then, in the left navigation pane, select **Admin home**. 
+To access the **Admin home** workspace, on the Intelligent Order Management **Home** page, select **Settings**. In the left navigation pane, select **Admin home**. 
 
 :::image type="content" source="media/adminhome.png" alt-text="Screenshot of accessing the Admin home workspace from the Home page.":::
 
-Alternatively, at the bottom of the left navigation pane, select **Intelligent Order Management \> Settings** to change the workspace area, and then select **Admin home**.
+Alternatively, at the bottom of the left navigation pane, select **Intelligent Order Management \> Settings** to change the workspace area. Then, select **Admin home**.
 
 :::image type="content" source="media/adminchangearea.png" alt-text="Screenshot of Admin home page with Settings highlighted.":::
 
-The **Admin home** workspace contains shortcuts to settings for key areas of Intelligent Order Management. All detailed settings areas and their subareas can be accessed in the left navigation pane.
+The **Admin home** workspace contains shortcuts to settings for key areas of Intelligent Order Management. You can access all detailed settings areas and their subareas in the left navigation pane.
 
 ## Key settings areas in the left navigation pane
 

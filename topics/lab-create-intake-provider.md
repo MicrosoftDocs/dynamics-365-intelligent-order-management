@@ -1,6 +1,6 @@
 ---
 author: josaw1
-description: This article describes the steps required to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about the steps required to create an intake provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
@@ -51,7 +51,7 @@ To add a transformation to the provider definition, follow these steps:
 1. For **Provider Definition**, enter or select **IOMLabOrderIntakeProvider**.
 1. For **Source Object Name**, enter "IOMLabOrderIntakeProvider".
 1. For **Destination Object Name**, enter "Dataverse Order".
-1. For **Transformation**, paste in the following M query code:
+1. For **Transformation**, paste the following M query code:
 
 ```M Query
 shared ImportMappingKey = [
@@ -142,7 +142,7 @@ in Text.FromBinary(Json.FromValue(salesorder));
 
 1. For **Transformation Source Type**, enter "JsonPayload".
 1. Select **Save**.
-1. Create a JSON file, paste in the following code, and save it.
+1. Create a JSON file, paste the following code, and save it.
 
 ``` JSON
 {
@@ -173,17 +173,17 @@ in Text.FromBinary(Json.FromValue(salesorder));
 To add a provider definition transformation to a solution, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
-1. Select **Add existing \> IOM Provider Definition Transformation**.
+1. Select **Add existing > IOM Provider Definition Transformation**.
 1. Select **IOMLab Order to Dataverse Order**, and then select **Add** to add it to the solution.
 
 ## Create provider message handler
 
 To create a provider message handler, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com), navigate to **Solutions**, and open the **Default Solution**. 
+1. Go to the [Power App Maker portal](https://make.powerapps.com), go to **Solutions**, and open the **Default Solution**. 
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Order Intake Message Request Handler".
-1. Select the trigger type as **Outlook.com – When a new email arrives (V2)**, and then sign in with your outlook.com account credentials.
+1. Select the trigger type as **Outlook.com – When a new email arrives (V2)**, and then sign in by using your outlook.com account credentials.
 1. For **Folder**, select **Inbox**.
 1. For **To**, select **Recipient email addresses separated by semicolons**.
 1. For **CC**, select **CC recipient email addresses separated by semicolons**.
@@ -225,7 +225,7 @@ To create a provider message handler, follow these steps:
 
     :::image type="content" source="media/lab_iom_system_properties_action.png" alt-text="Screenshot of IOM System Properties action.":::
 
-1. Select **New step**, add a **Parse JSON** action, and rename to "Initialize Provider Variables".
+1. Select **New step**, add a **Parse JSON** action, and rename it to "Initialize Provider Variables".
 1. For **Content**, paste in the following code:
 
     ```JSON
@@ -236,7 +236,7 @@ To create a provider message handler, follow these steps:
     ``` 
 
 1. Select **Save**.
-1. Select **New step**, add an **Initialize variable** action, and rename to "Initialize Processing Execution Result".
+1. Select **New step**, add an **Initialize variable** action, and rename it to "Initialize Processing Execution Result".
 1. For **Name**, enter "ExecutionResult".
 1. For **Type**, select **Boolean**.
 1. For **Value**, select **true**.
@@ -244,9 +244,9 @@ To create a provider message handler, follow these steps:
 
     :::image type="content" source="media/lab_initialize_processing_execution_result.png" alt-text="Screenshot of Initialize Processing Execution Result action.":::
 
-1. Select **New step**, add "scope", and rename to "Try".
+1. Select **New step**, add "scope", and rename it to "Try".
 1. In the **Try** scope, select **Add an action**.
-1. Add "perform an unbound action" from the **Dataverse** connector and rename it "Acknowledge the Provider Message in IOM".
+1. Add "perform an unbound action" from the **Dataverse** connector and rename it to "Acknowledge the Provider Message in IOM".
 1. For **Action Name**, enter "msdyn_CreateProviderMessageRequestExecution".
 1. For **PowerAutomateWorkflowId**, enter ``workflow()['tags']['xrmWorkflowId']`` as an expression. 
 1. For **PowerAutomateRunId**, enter ``workflow()['run']?['name']`` as an expression. 
@@ -278,13 +278,13 @@ To create a provider message handler, follow these steps:
     :::image type="content" source="media/lab_create_order.png" alt-text="Screenshot of Create Order action.":::
 
 1. Collapse the **Try** scope by selecting its title bar.
-1. Select **New step**, add a scope and rename it "Catch".
+1. Select **New step**, add a scope, and rename it "Catch".
 1. In the **Catch** scope, select the ellipsis ("**...**"), and then select **Configure run after**.
 1. Select the **has failed** and **has timed out** checkboxes, and then select **Done**.
 
     :::image type="content" source="media/lab_configure_run_after.png" alt-text="Screenshot of Configure run after settings.":::
 
-1. In the **Catch** scope, select **Add an action**, add a **Set variable** action and rename it "Set the execution result to failed".
+1. In the **Catch** scope, select **Add an action**, add a **Set variable** action, and rename it "Set the execution result to failed".
 1. For **Name**, enter "Executionresult".
 1. For **Value**, select **False**.
 1. Select **Save**.
@@ -292,13 +292,13 @@ To create a provider message handler, follow these steps:
     :::image type="content" source="media/lab_set_variable.png" alt-text="Screenshot of Set variable action.":::
 
 1. Collapse the **Catch** scope by selecting its title bar.
-1. Select **New step**, add a scope and rename it "Finally".
+1. Select **New step**, add a scope, and rename it "Finally".
 1. In the **Finally** scope, select the ellipsis ("**...**"), and then select **Configure run after**. 
 1. Select the **is successful**, **has failed**, **is skipped**, and **has timed out** checkboxes, and then select **Done**.
 
     :::image type="content" source="media/lab_configure_run_after_2.png" alt-text="Screenshot of Configure run after settings for Finally scope.":::
 
-1. In the **Finally** scope, select **Add an action**, add a **Perform an unbound action** action and rename it "Save Provider message request execution result".
+1. In the **Finally** scope, select **Add an action**, add a **Perform an unbound action** action, and rename it "Save Provider message request execution result".
 1. For **Action Name**, enter "msdyn_UpdateProviderMessageRequestStatus".
 1. For **ProviderMessageRequestExecutionId**, enter ``@outputs('Acknowledge_the_Provider_Message_in_IOM')?["body/ProviderMessageRequestExecutionId']``.
 1. Select **Save**.
@@ -322,12 +322,12 @@ To add a provider definition logic definition to the provider definition, follow
 1. For **Timeout Minutes**, enter "2".
 1. For **Max Retry Attempts**, enter "3".
 1. For **Description**, enter "IOM Lab Order Intake Message Request Handler".
-1. Select **Save**. This generates a JSON representation of the message handler cloud flow and fills in the **Client Data** field.
+1. Select **Save**. This action generates a JSON representation of the message handler cloud flow and fills in the **Client Data** field.
 1. Select **Save & close**.
 1. Select **Connections**. You should see both the **Microsoft Dataverse** and **Outlook.com** connection reference definitions listed. 
 
 > [!NOTE]
-> If you see connections reference definitions other than **Microsoft Dataverse** and **Outlook.com**, this means that you're using more than one Dataverse connection reference in your order intake message handler flow. To fix this, go to your flow and ensure that all Dataverse actions are using the same connection reference.
+> If you see connections reference definitions other than **Microsoft Dataverse** and **Outlook.com**, this condition means that you're using more than one Dataverse connection reference in your order intake message handler flow. To fix this problem, go to your flow and ensure that all Dataverse actions use the same connection reference.
 
 ## Add provider definition logic definition to IOMLabProviders solution
 

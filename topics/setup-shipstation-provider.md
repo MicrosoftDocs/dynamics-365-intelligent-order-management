@@ -1,14 +1,12 @@
 ---
 author: sumanic
-description: This article describes how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
+description: Learn about how to set up the ShipStation provider in Dynamics 365 Intelligent Order Management.
 ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
 ms.author: sumanic
-
 title: Set up ShipStation provider
-
 ---
 
 # Set up ShipStation provider
@@ -38,8 +36,8 @@ To set up the ShipStation provider, follow these steps:
     1. Select **Retrieve Connection Link**.
     1. Search for **ShipStation** and then select the connector. 
     1. For **Connection Name**, enter a name for the connection.
-    1. For **Username**, enter the ShipStation API key located at https://ss.shipstation.com/#/settings/api. 
-    1. For **Password**, enter the ShipStation API secret located at https://ss.shipstation.com/#/settings/api.
+    1. For **Username**, enter the ShipStation API key located at `https://ss.shipstation.com/#/settings/api`. 
+    1. For **Password**, enter the ShipStation API secret located at `https://ss.shipstation.com/#/settings/api`.
     1. Save the connection.
     1. Copy the connection URL.
     1. Go back to the **Connection URL** page in Intelligent Order Management and paste the URL.
@@ -56,8 +54,8 @@ The following table describes the out-of-box provider capabilities in Intelligen
 
 |  Capability | Details |
 | ------------------ | -------------------------------- |
-|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance may require one or more connections that it uses to gain access and communicate with the external service.<br>**ShipStation connection**<br>**ShipStation Dataverse connection (current environment)**   |
-|    Parameters             |    Some providers require additional configuration information to retrieve and send information.
+|    Connection             |   The connection component in Intelligent Order Management allows a provider to establish a connection with an external service. Each provider instance might require one or more connections that it uses to gain access and communicate with the external service.<br>**ShipStation connection**<br>**ShipStation Dataverse connection (current environment)**   |
+|    Parameters             |    Some providers require extra configuration information to retrieve and send information.
 |    Provider actions     |    The actions associated with a provider that determine what actions are available to you when you create an orchestration flow.   |
 |    Business events      |   The events defined for a provider are events that the associated provider actions can raise in the orchestration designer.        |
 |    Transformations        |    Provider transformations are essential to any provider that retrieves or sends data from Intelligent Order Management to an external service.<br>**Dataverse fulfillment order to ShipStation order**  |

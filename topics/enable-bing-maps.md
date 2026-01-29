@@ -14,7 +14,7 @@ title: Enable Bing Maps for your environment
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Intelligent Order Management can display information about fulfillment order source and destination locations using Bing Maps. Typically, you enable Bing Maps for your environment when you deploy the environment.
+Dynamics 365 Intelligent Order Management can display information about fulfillment order source and destination locations by using Bing Maps. Typically, you enable Bing Maps for your environment when you deploy the environment.
 
 To enable Bing Maps for your environment, follow these steps:
 
