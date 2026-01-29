@@ -1,35 +1,33 @@
 ---
 author: v-chgri
-description: This topic can help troubleshoot issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management trial.
-ms.date: 03/21/2025
+description: Learn about issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management trial.
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
-ms.topic: troubleshooting-general
-ms.author: josaw
-
+ms.topic: concept-article
+ms.author: anvenkat
 title: Troubleshoot trial sign-up issues
 
 ---
 
-# Troubleshoot trial sign-up issues
+# Troubleshoot trial sign-up problems
 
 [!include [banner](includes/banner.md)]
 
-
-This topic can help troubleshoot issues that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management trial. It provides some workarounds that you can try if you receive error messages that resemble the following examples when you sign up for the trial:
+This article helps you troubleshoot problems that occur during sign-up for the Microsoft Dynamics 365 Intelligent Order Management trial. It provides some workarounds that you can try if you receive error messages that resemble the following examples when you sign up for the trial:
 
 - "You're already signed up for this subscription with..."
 - "You are not a member of this organization"
 
-The purpose of a preview trial is to test in public and then incorporate improvements into later updates, based on feedback. The Intelligent Order Management team will continue to monitor trial feedback and will provide updated instructions as required.
+A preview trial is designed for testing in public. The product team uses the feedback to make improvements in later updates. The Intelligent Order Management team continues to monitor trial feedback and will provide updated instructions as required.
 
-## Sign-in issues
+## Sign-in problems
 
-During sign-in, you might experience an authentication issue and receive the following message: "Sign in required - Please select sign in to continue." In this case, try the following workarounds:
+During sign-in, you might experience an authentication problem and receive the following message: "Sign in required - Please select sign in to continue." In this case, try the following workarounds:
 
 - Start your browser session in a private window.
 - Clear cookies for your browser session.
-- Start your browser session in a different browser. A browser-specific cache issue is currently being investigated.
+- Start your browser session in a different browser. The product team is currently investigating a browser-specific cache problem.
 
 ## Account and tenant license issues
 

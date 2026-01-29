@@ -1,8 +1,8 @@
 ---
 title: Admin home workspace
 author: sumanic
-description: This article describes the Admin home workspace in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+description: Learn about the Admin home workspace in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article
@@ -16,17 +16,17 @@ ms.author: sumanic
 
 This article describes the **Admin home** workspace in Microsoft Dynamics 365 Intelligent Order Management.
 
-The **Admin home** administrator workspace in Intelligent Order Management makes all levels of Intelligent Order Management–related setups and settings easily accessible and available to administrators. Access to the **Admin home** workspace can be role-based, according to customer needs.
+The **Admin home** administrator workspace in Intelligent Order Management makes all levels of Intelligent Order Management–related setups and settings easily accessible and available to administrators. You can provide access to the **Admin home** workspace based on roles and customer needs.
 
-To access the **Admin home** workspace, on the Intelligent Order Management **Home** page, select **Settings**, and then, in the left navigation pane, select **Admin home**. 
+To access the **Admin home** workspace, on the Intelligent Order Management **Home** page, select **Settings**. In the left navigation pane, select **Admin home**. 
 
-![Accessing the Admin home workspace from the Home page.](media/adminhome.png)
+:::image type="content" source="media/adminhome.png" alt-text="Screenshot of accessing the Admin home workspace from the Home page.":::
 
-Alternatively, at the bottom of the left navigation pane, select **Intelligent Order Management \> Settings** to change the workspace area, and then select **Admin home**.
+Alternatively, at the bottom of the left navigation pane, select **Intelligent Order Management \> Settings** to change the workspace area. Then, select **Admin home**.
 
-![Admin home page with Settings highlighted](media/adminchangearea.png)
+:::image type="content" source="media/adminchangearea.png" alt-text="Screenshot of Admin home page with Settings highlighted.":::
 
-The **Admin home** workspace contains shortcuts to settings for key areas of Intelligent Order Management. All detailed settings areas and their subareas can be accessed in the left navigation pane.
+The **Admin home** workspace contains shortcuts to settings for key areas of Intelligent Order Management. You can access all detailed settings areas and their subareas in the left navigation pane.
 
 ## Key settings areas in the left navigation pane
 
@@ -55,7 +55,7 @@ Each settings area in the left navigation pane is divided into settings subareas
 | | Email settings | You can use this subarea to manage different email templates that are provided out of the box. You can also use it to define your own templates. |
 | Provider settings | Library | This subarea contains a gallery of providers. From the gallery, you can install providers and add their connections. |
 | | Installed | This subarea shows the providers that you've successfully installed and activated. It also shows the list of providers that are inactive and awaiting completion. |
-| | Additional settings | <p>This subarea provides additional settings that are required to make a provider work end to end. It includes the following components:</p><ul><li> **Transformations** – This setting lets you add power queries to enable communication between external system data in the app.</li><li>**Mapping groups** – This setting lets you support data that is shared across multiple providers.</li><li>**Actions** – This setting lets you manage the provider functions in the form of actions in the orchestration flows.</li><li>**Action types** – This setting lets you manage your provider actions in the form of associated functions.</li></ul> |
+| | Additional settings | <p>This subarea provides other settings that are required to make a provider work end to end. It includes the following components:</p><ul><li> **Transformations** – This setting lets you add power queries to enable communication between external system data in the app.</li><li>**Mapping groups** – This setting lets you support data that is shared across multiple providers.</li><li>**Actions** – This setting lets you manage the provider functions in the form of actions in the orchestration flows.</li><li>**Action types** – This setting lets you manage your provider actions in the form of associated functions.</li></ul> |
 | Orchestration settings | Order journeys | This subarea lets you set up your order orchestration flows. These orchestration flows can be **order**, **returns**, and **inventory** orchestrations. |
 | | Policies | This subarea lets you set up different business rules that can be used in the orchestration flows. |
 | | Business events | This subarea enables different **input** and **output** business events that trigger subsequent actions in the orchestration flow. |
