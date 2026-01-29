@@ -151,4 +151,4 @@ To complete test run 4, follow these steps:
 1. Save the sample sales order payload as a JSON file. Attach the file to an email with the subject "IOMLabOrderIntakeOrder".
 1. Send the email to the Outlook account that you previously used to set up the IOMLabOrderIntake provider.
 
-The order fails the header ship to country validation. The status reason is "Order Validation Failed".
+The order fails the header ship to country/region validation. The status reason is "Order Validation Failed".
