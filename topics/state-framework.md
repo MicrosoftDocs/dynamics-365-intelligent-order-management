@@ -1,14 +1,12 @@
 ---
 author: raybennett-msft
-description: This article describes the state framework architecture in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+description: Learn about the state framework architecture in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
 ms.author: anvenkat
-
 title: State framework architecture
-
 ---
 # State framework architecture
 
@@ -17,7 +15,7 @@ title: State framework architecture
 
 This article describes the state framework architecture in Microsoft Dynamics 365 Intelligent Order Management.
 
-State framework architecture is a new concept that was introduced in Dynamics 365 Intelligent Order Management in the October 2022 release. The state framework is a way of validating business process rules by checking, at runtime, whether the current state of an entity is allowed to move to another state. For example, a transition from **New** to **In Progress** will be successful if it's defined, but a transition from **Completed** to **In Progress** will throw an error.
+State framework architecture is a new concept that Microsoft introduced in Dynamics 365 Intelligent Order Management in the October 2022 release. The state framework validates business process rules by checking, at runtime, whether the current state of an entity can move to another state. For example, a transition from **New** to **In Progress** succeeds if it's defined, but a transition from **Completed** to **In Progress** throws an error.
 
 Users can add their own states, state reasons, and transitions. However, they can't customize the out-of-box definitions.
 
@@ -25,21 +23,21 @@ Users can add their own states, state reasons, and transitions. However, they ca
 
 The state framework data model introduces some updates and new additions to the current data model.
 
-The following illustration shows the tables that have been added in the state framework data model.
+The following illustration shows the tables that the state framework data model adds.
 
-![State framework data model.](media/state-framework-1.png)
+:::image type="content" source="media/state-framework-1.png" alt-text="Screenshot of the state framework data model diagram.":::
 
 ### Updates to the data model
 
 #### Entity State and State Reason columns
 
-The state framework introduces two new columns to the entities that are part of Intelligent Order Management. These columns were added to support localizable **State** and **State Reason** status fields. The state framework also introduces a new **ReadOnly** field that indicates that a record should not be editable in the user interface (UI).
+The state framework introduces two new columns to the entities that are part of Intelligent Order Management. These columns support localizable **State** and **State Reason** status fields. The state framework also introduces a new **ReadOnly** field that indicates that a record isn't editable in the user interface (UI).
 
 | Field | Description |
 |---|---|
 | State | The state that the entity is in, as defined by the **State Definition** table. |
 | State Reason | A detailed description of the reason why the entity is in its current state. |
-| ReadOnly | Set the value to **True** if the record should not be editable in the UI. Otherwise, set it to **False**. |
+| ReadOnly | Set the value to **True** if the record isn't editable in the UI. Otherwise, set it to **False**. |
 
 ### New additions to the data model
 
@@ -48,7 +46,7 @@ The state framework introduces two new columns to the entities that are part of 
 The **State Definition** table enables the creation of a set of states that are allowable on each entity. These states have associated properties that contain metadata to indicate the different behaviors of each state.
 
 > [!NOTE]
-> States are used to determine valid transitions as part of the orchestration journey.
+> Use states to determine valid transitions as part of the orchestration journey.
 
 | Field | Description |
 |---|---|
@@ -66,7 +64,7 @@ The **State Definition Reason** table provides extra details about why something
 |---|---|
 | State Definition Reason | The GUID of the state reason. |
 | State | The state that the state reason is associated with. |
-| Details | The name/description of the state reason. |
+| Details | The name or description of the state reason. |
 
 #### State Definition Properties table
 
@@ -75,11 +73,11 @@ The **State Definition Properties** table contains extra metadata for each state
 | Field | Description |
 |---|---|
 | State Definition Properties | The GUID of the property. |
-| Timeline Position | The order in which the state should be shown in the **Progress Bar Timeline** control in the UI. (This control is introduced in the October 2022 release.) |
+| Timeline Position | The order in which the state appears in the **Progress Bar Timeline** control in the UI. (This control is introduced in the October 2022 release.) |
 
 ### State Transition table
 
-The **State Transition** table contains a list of state transitions that will occur when a business event is raised. The business event will set the state only if the current state is an allowable state.
+The **State Transition** table contains a list of state transitions that occur when a business event is raised. The business event sets the state only if the current state is an allowable state.
 
 | Field | Description |
 |---|---|
@@ -101,7 +99,7 @@ The following table shows an example of data in this table.
 
 ### No transition exists for the business event
 
-If no record is found in the **State Transition** table for the business event that is being raised, the validation will automatically succeed, but no **State** or **State Reason** value will be set.
+If the **State Transition** table doesn't contain a record for the business event that you're raising, the validation automatically succeeds, but the process doesn't set a **State** or **State Reason** value.
 
 ### Add a new state and transition
 
@@ -113,7 +111,7 @@ To add a new state and transition, follow these steps:
 
     1. Associate the new state transition with a new business event.
     1. Set the **Source** field to what is allowed. Add one row per allowable source.
-    1. Set the **State** field to what the state should be set to when the business event is raised.
-    1. Set the **State Reason** field to what you want the reason to be when the business event is raised.
+    1. Set the **State** field to the state when the business event is raised.
+    1. Set the **State Reason** field to the reason when the business event is raised.
 
-1. Add any properties (**ReadOnly** or **Timeline**) that are required. 
+1. Add any required properties (**ReadOnly** or **Timeline**).

@@ -1,41 +1,39 @@
 ---
 author: josaw1
-description: This topic provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+description: Learn about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Set up BigCommerce provider
-
 ---
 
 # Set up BigCommerce provider
 
 [!include [banner](includes/banner.md)]
 
-
-This topic provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
+This article provides information about how to set up the BigCommerce provider in Dynamics 365 Intelligent Order Management.
 
 BigCommerce is a flexible, open SaaS platform. You can connect to BigCommerce to retrieve orders, products, and related information. The BigCommerce provider enables Intelligent Order Management to access and process purchase orders from BigCommerce.  
 
-For more information about BigCommerce, see the [BigCommerce website](https://www.bigcommerce.com). 
+For more information about BigCommerce, see the [BigCommerce website](https://www.bigcommerce.com).
 
-## Prerequisites 
+## Prerequisites
 
-You need to have a sample store set up. Go to the [BigCommerce website](https://www.bigcommerce.com) and select **Start your free trial**. Follow the instructions to set up your sample store. 
+You need to set up a sample store. Go to the [BigCommerce website](https://www.bigcommerce.com) and select **Start your free trial**. Follow the instructions to set up your sample store.
 
 ## Set up the provider
-To set up the provider, follow these steps: 
 
-1.  In Intelligent Order Management, go to **Providers > Catalog**.
+To set up the provider, follow these steps:
 
-2.  Select **Add Provider** on the **BigCommerce** tile.
+1. In Intelligent Order Management, go to **Providers > Catalog**.
 
-3.  Select **Create** on the **Terms and Conditions** page.
+1. Select **Add Provider** on the **BigCommerce** tile.
 
-4.  There are two connections that you need to set up in the **Connections** section.
+1. Select **Create** on the **Terms and Conditions** page.
+
+1. Set up two connections in the **Connections** section.
 
     1. BigCommerce Common Data Service Connection
 
@@ -47,7 +45,7 @@ To set up the provider, follow these steps:
 
         1. Search for **BigCommerce** and then select the connector.
 
-        1. Enter the following information: 
+        1. Enter the following information:
 
             - **Connection Name**: Enter a name of your choice.
             - **API Key**: Enter the BigCommerce API key. You can retrieve it by following the instructions here: https://\<your store hash code\>.mybigcommerce.com/manage/settings/auth/api-accounts.
@@ -66,15 +64,15 @@ To set up the provider, follow these steps:
 
         1. Select **Save and close**.
 
-5. Go to the **Parameters** tab and add the BigCommerce store hash.
+1. Go to the **Parameters** tab and add the BigCommerce store hash.
 
-6. Select **Save**.
+1. Select **Save**.
 
-7. Select **Activate** to activate the provider.
+1. Select **Activate** to activate the provider.
 
-8. Select **Save and close**.
+1. Select **Save and close**.
 
-9. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
+1. Go to **Providers > Installed** and validate that the provider you set up is listed with the status **Activated**.
 
 ## Out-of-box capabilities
 
