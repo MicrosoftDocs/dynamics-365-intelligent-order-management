@@ -1,8 +1,8 @@
 ---
 author: sumanic
-description: This article describes how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about how to manage subscription orders in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -27,7 +27,7 @@ Through appropriate subscription order management, retailers can gain the follow
 
 ## Turn on subscription order functionality
 
-To get started with subscription management, you must first turn on the subscription order functionality.
+To get started with subscription management, turn on the subscription order functionality.
 
 To turn on subscription order functionality, follow these steps:
 
@@ -35,11 +35,11 @@ To turn on subscription order functionality, follow these steps:
 1. Select **Order handling preferences**, and then select **Manage**.
 1. Set the **Subscription Orders** option to **On**.
 
-    ![Subscription Orders option set to On.](media/Subscription.png)
+    :::image type="content" source="media/Subscription.png" alt-text="Screenshot of the Subscription Orders option set to On.":::
 
 ## Specify the subscription frequency 
 
-For each subscription order that is started in Intelligent Order Management, you must specify the subscription frequency.
+For each subscription order that you start in Intelligent Order Management, specify the subscription frequency.
 
 To specify the subscription frequency at the product level, follow these steps:
 
@@ -50,25 +50,23 @@ To specify the subscription frequency at the product level, follow these steps:
 
 ## How subscription order management works
 
-A subscription order can be created either in an e-commerce application or through a customer service representative in Intelligent Order Management. Both methods create a subscription order under **Orders** in Intelligent Order Management.
+You can create a subscription order in an e-commerce application or through a customer service representative in Intelligent Order Management. Both methods create a subscription order under **Orders** in Intelligent Order Management.
 
 The following table describes the subscription order fields.
 
 | Field name | Description |
 | ---- | ----------- |
-| Fulfillment Frequency | The product frequency that was set up in **Products**. This value initiates the subscription fulfillment job.|
+| Fulfillment Frequency | The product frequency that you set up in **Products**. This value initiates the subscription fulfillment job.|
 | Current Subscription | The current recurrence of the subscription. The value is an integer that reflects the current subscription number.|
 | Subscription Start Date | The start date for the subscription. |
-| Subscription End Date | The end date for the subscription, if the customer specified an end date. |
+| Subscription End Date | The end date for the subscription, if the customer specifies an end date. |
 | Last Ordered Date | The date when the last order was created. This field is automatically set. |
 
 > [!NOTE]
-> Currently, one product per subscription is supported. Support for multiple-product subscription will be available in later releases.
+> Currently, Intelligent Order Management supports one product per subscription. Support for multiple-product subscription will be available in later releases.
 
-After a subscription order is created in Intelligent Order Management, based on the product frequency that the customer selected, a background job automatically picks up the orders and generates sales orders from the subscription. The sales orders then follow the order orchestration and generate fulfillments accordingly.
+After you create a subscription order in Intelligent Order Management, a background job automatically picks up the orders and generates sales orders from the subscription, based on the product frequency that the customer selected. The sales orders then follow the order orchestration and generate fulfillments accordingly.
 
-A job log that is available shows a list of job runs, their status, and the number of records that have been successfully processed and moved to fulfillment. To access the job log, in the left navigation pane, select **Monitoring \> Background Jobs**. The **Active Background Order Processing Job Runs** page appears, as shown in the following example image.
-
-![Job log on the Active Background Order Processing Job Runs page.](media/SubsJob.png)
+:::image type="content" source="media/SubsJob.png" alt-text="Screenshot of the job log on the Active Background Order Processing Job Runs page.":::
 
 If a background job fails, you can manually run it. Select **Run** on the upper toolbar, and then select **Subscription-Order Job** to start a new instance of the background job. To view the details of the background job run, select the job line.

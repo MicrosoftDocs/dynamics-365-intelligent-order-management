@@ -1,11 +1,11 @@
 ---
 title: Application Lifecycle Management feature walkthrough (preview)
-description: This article describes the step by step walkthrough of Application Lifecycle Management.
+description: Learn how to activate, configure, and deploy the ALM preview feature in Dynamics 365 Intelligent Order Management to streamline your workflows.
 author: sumanic
 ms.author: anvenkat
 ms.reviewer: johnmichalak
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 10/24/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
@@ -31,11 +31,11 @@ To activate the ALM preview feature in the source environment, follow these step
 1. Select **General** > **Manage**.
 1. Select **Feature version controls** > **Manage**.
 1. Find the setting for **Application Lifecycle Management Feature**.
-1. Enable the feature and pick a name for the export solution.
+1. Enable the feature and enter a name for the export solution.
 
 ## Step 2: Create the solution for export
 
-To create the solution for export, follow these steps
+To create the solution for export, follow these steps.
 
 1. From the Power Apps Maker portal, open the source environment.
 1. Open the solution list.

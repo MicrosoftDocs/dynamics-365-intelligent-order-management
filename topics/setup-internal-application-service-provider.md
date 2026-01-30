@@ -1,8 +1,8 @@
 ---
 title: Set up the Internal Application Service provider
-description: This article describes how to set up the Internal Application Service provider in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about how to set up the Internal Application Service provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to

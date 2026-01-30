@@ -1,12 +1,11 @@
 ---
 author: anush6121 
-description: The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+description: Learn about the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: overview
 ms.author: anvenkat
-
 title: Finance + Operations integration solution
 ---
 
@@ -14,7 +13,7 @@ title: Finance + Operations integration solution
 
 [!include [banner](includes/banner.md)]
 
-The topic describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics 365 Intelligent Order Management.
+This article describes how the Microsoft Dynamics 365 Finance + Operations (on-premises) integration solution integrates with Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Prerequisites
 
@@ -25,10 +24,10 @@ You must set up Finance + Operations as a provider and enable dual-write in Data
 The Finance + Operations high-level solution for integration with Intelligent Order Management works in the following ways:
 
 - Intelligent Order Management uses dual-write for data synchronization between Finance + Operations and Intelligent Order Management.
-- E-commerce orders that come into Intelligent Order Management won't have company codes. Before synchronization to Finance + Operations, a policy will be used to assign company codes.
-- The Finance + Operations provider action will send an order from Intelligent Order Management to Finance + Operations fulfillment or billing when the order is ready for synchronization. 
-- The Finance + Operations data assignment policy and provider actions will be called in the designed orchestration flow.
-- The Finance + Operations order status event handler will monitor and raise business events in Intelligent Order Management when the order status is updated in Finance + Operations.
+- E-commerce orders that come into Intelligent Order Management won't have company codes. Before synchronization to Finance + Operations, a policy is used to assign company codes.
+- The Finance + Operations provider action sends an order from Intelligent Order Management to Finance + Operations fulfillment or billing when the order is ready for synchronization. 
+- The Finance + Operations data assignment policy and provider actions are called in the designed orchestration flow.
+- The Finance + Operations order status event handler monitors and raises business events in Intelligent Order Management when the order status is updated in Finance + Operations.
 
 ## Finance + Operations provider integration scenarios with Intelligent Order Management
 
@@ -105,7 +104,7 @@ Following scenarios outline the processes for integration of Finance + Operation
 1. A company, and site are assigned in Intelligent Order Management.
 1. The order is passed through the provider action **Send to Fulfillment Optimization**.
 1. A fulfillment order is created for each of the fulfillment sources determined for the sales order lines.
-1. The sales order lines are passed to Finance + Operations through the provider action **Send sales order lines to billing**. This action also updates the sales order lines with the shipping warehouse before the synchronization to Finance + Operations. Note that all of the sales order lines that have a shipping warehouse on them are selected for synchronization. 
+1. The sales order lines are passed to Finance + Operations through the provider action **Send sales order lines to billing**. This action also updates the sales order lines with the shipping warehouse before the synchronization to Finance + Operations. All of the sales order lines that have a shipping warehouse on them are selected for synchronization. 
 1. If Fulfillment optimization fails to create a fulfillment order due to lack of inventory, those sales order lines aren't synchronized to Finance + Operations.
 1. If **Backorder** is enabled in **General settings** \> **Order handling preferences** , the sales order line is set to a state **Backorder hold** until a backorder job runs and finds the inventory and releases that line to fulfillment and then to Finance + Operations.
 1. The order is picked in Finance + Operations.

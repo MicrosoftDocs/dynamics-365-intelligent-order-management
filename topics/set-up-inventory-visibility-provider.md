@@ -1,8 +1,8 @@
 ---
 author: sumanic
-description: This article describes how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
+description: Learn about how to set up the Inventory Visibility provider in Microsoft Dynamics 365 Intelligent Order Management.
 ms.service: dynamics-365-intelligent-order-management
-ms.date: 03/21/2025
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -23,7 +23,7 @@ For more information about the Inventory Visibility service, see [Inventory Visi
 
 ## Prerequisites
 
-To use the Inventory Visibility provider in orchestration, you must first install the add-in, and then validate and update the following configurations.
+To use the Inventory Visibility provider in orchestration, install the add-in. Then validate and update the following configurations.
 
 > [!NOTE]
 > If you're a Dynamics 365 Supply Chain Management customer and want to use the Inventory Visibility add-in, see [Inventory Visibility tips](/dynamics365/supply-chain/inventory/inventory-visibility-tips).
@@ -101,34 +101,34 @@ To validate and update the Inventory Visibility add-in configurations, follow th
 
 1. Go to **Intelligent Order Management Mappings**, and confirm the grid has the following elements:
 
-    - **Set Physical Measure Mapping** – This section includes the following columns. You can use it to map any of the physical measure mappings of your data source to a standard physical measure. This becomes essential if you are updating inventory using Intelligent Order Management.
+    - **Set Physical Measure Mapping** – This section includes the following columns. Use it to map any of the physical measure mappings of your data source to a standard physical measure. This step becomes essential if you're updating inventory by using Intelligent Order Management.
 
         - **Data Source** – This column refers to the source system.
         - **Base Measure** – This column refers to the Intelligent Order Management standard measure.
         - **Physical measure** – This column refers to the physical measure that's used in the source system.
 
-    - **Set Calculated measure Mappings** – This section includes the following columns. You can use it to map any of the calculated measure mappings of your data source to a standard calculated measure. This setup becomes critical when using fulfillment and returns optimization within Intelligent Order Management for fulfillment source determination and finance and operations apps for fulfillment.
+    - **Set Calculated measure Mappings** – This section includes the following columns. Use it to map any of the calculated measure mappings of your data source to a standard calculated measure. This setup becomes critical when using fulfillment and returns optimization within Intelligent Order Management for fulfillment source determination and finance and operations apps for fulfillment.
 
         - **Data Source** – This column refers to the source system.
         - **Base Measure** – This column refers to the Intelligent Order Management standard measure.
         - **Calculated measure** – This column refers to the calculated measure that's used in the source system.
 
-    - **Set Allocation Group Mappings** – This section includes the following columns. You can use it to map your defined allocation groups to a standard set of allocation groups.
+    - **Set Allocation Group Mappings** – This section includes the following columns. Use it to map your defined allocation groups to a standard set of allocation groups.
 
         - **Allocation Group** – This column refers to a defined allocation group. The value can range from **group 0** through **group 7**.
         - **Allocation Group Name** – This column refers to the standard allocation group that your defined allocation group maps to.
 
-![Mapping.](media/Mapping.png)
+:::image type="content" source="media/Mapping.png" alt-text="Screenshot of the Intelligent Order Management Mappings configuration.":::
 
-> ![NOTE] 
+> [!NOTE] 
 > Currently, Intelligent Order Management supports allocation groups of up to two groups.
 
-After you've completed the preceding validations and configuration updates, Intelligent Order Management configures or reuses the physical and calculated measures across all your data sources.
+After you complete the preceding validations and configuration updates, Intelligent Order Management configures or reuses the physical and calculated measures across all your data sources.
 
 ## Set up the provider
 
 > [!NOTE]
-> - The Inventory Visibility provider can be used to connect both to the inventory service that's available as part of Intelligent Order Management and to a Dynamics 365 Finance Inventory Visibility instance to soft reserve or update inventory upon shipment or receipt at returns.
+> - Use the Inventory Visibility provider to connect to both the inventory service that's available as part of Intelligent Order Management and to a Dynamics 365 Finance Inventory Visibility instance to soft reserve or update inventory upon shipment or receipt at returns.
 > - The upload capability that uses Azure Blob Storage is exclusive to Intelligent Order Management and can only be used to upload an instance of the Intelligent Order Management Inventory service.
 
 To set up the provider, follow these steps:
@@ -137,7 +137,7 @@ To set up the provider, follow these steps:
 1. On the **Dynamics 365 Inventory Visibility** tile, select **Select**.
 1. In the upper right, select **Activate Providers**.
 1. On the **Terms and Conditions** page, select the checkbox, and then select **Accept**.
-1. In the **Connections** section, you must set up two connections:
+1. In the **Connections** section, set up two connections:
 
     - Inventory Visibility Blob Storage connection
     - Inventory Visibility Dataverse (current environment) connection
@@ -152,7 +152,7 @@ To set up the provider, follow these steps:
     1. Enter values for the **Display name** and **Azure Storage account name or blob endpoint** fields.
     1. Select **Save**.
 
-    ![Azure Blob Storage dialog box.](media/AzBlob.png)
+    :::image type="content" source="media/AzBlob.png" alt-text="Screenshot of the Azure Blob Storage dialog box.":::
 
 1. To set up the **Inventory Visibility Dataverse (current environment)** connection, select **Create**.
 1. Select **Next**.
@@ -168,7 +168,7 @@ To set up the provider, follow these steps:
 
 ### Inventory Visibility JSON file example
 
-The following JavaScript Object Notation (JSON) example shows what the contents of an uploaded Inventory Visibility JSON file look like. In this example, the **feedtype** value is set to **overwrite** for a one-time update. The value can also be set to **incremental** to add quantities to existing Inventory Visibility data.
+The following JavaScript Object Notation (JSON) example shows what the contents of an uploaded Inventory Visibility JSON file look like. In this example, the **feedtype** value is set to **overwrite** for a one-time update. You can also set the value to **incremental** to add quantities to existing Inventory Visibility data.
 
 ```JSON
 {
@@ -205,7 +205,7 @@ The following JavaScript Object Notation (JSON) example shows what the contents 
 
 ## Out-of-box capabilities
 
-*Provider actions* are associated with a provider and determine the actions that are available to you when you create an orchestration flow. *Transformations* are essential for any provider that retrieves or sends data from Intelligent Order Management to an external service.
+*Provider actions* associate with a provider and determine the actions that are available when you create an orchestration flow. *Transformations* are essential for any provider that retrieves or sends data from Intelligent Order Management to an external service.
 
 | Capability | Details |
 | ---------- | ------- |

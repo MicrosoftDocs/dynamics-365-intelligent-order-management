@@ -1,8 +1,8 @@
 ---
 author: raybennett-msft
-description: This article describes application lifecycle management (ALM) in Microsoft Dynamics 365 Intelligent Order Management. It includes information about how to move solutions from one environment to another or package solutions for storage in source control.
+description: Learn about application lifecycle management (ALM) in Microsoft Dynamics 365 Intelligent Order Management. It includes information about how to move solutions from one environment to another or package solutions for storage in source control.
 ms.author: anvenkat
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article
@@ -18,7 +18,7 @@ title: Application lifecycle management for Dynamics 365 Intelligent Order Manag
 
 This article describes application lifecycle management (ALM) in Microsoft Dynamics 365 Intelligent Order Management. It includes information about how to move solutions from one environment to another or package solutions for storage in source control.
 
-The following information specifies the setup tables that are required to migrate data for Dynamics 365 Intelligent Order Management configurations. These setup tables require a manual step to add each entity to an unmanaged solution. After the desired entities are added, the solution can be exported via a package file that contains the data of the entities that were added to the unmanaged solution. The package file can then be imported into another Intelligent Order Management environment, where the data can be activated for use.
+The following information specifies the setup tables that are required to migrate data for Dynamics 365 Intelligent Order Management configurations. These setup tables require a manual step to add each entity to an unmanaged solution. After you add the desired entities, you can export the solution as a package file that contains the data of the entities that you added to the unmanaged solution. You can then import the package file into another Intelligent Order Management environment, where you can activate the data for use.
 
 ## Setup tables
 
@@ -47,7 +47,7 @@ The following tables are required for policy rule migration:
 - Rule
 
 > [!NOTE]
-> When you manually add rules, the parent policies are automatically added.
+> When you manually add rules, you also automatically add the parent policies.
 
 ### Tables required for provider migration
 
@@ -67,7 +67,7 @@ The following tables are required for provider migration:
 The following tables are required for orchestration migration:
 
 - Designer
-- Policy and Rule tables
+- Policy and rule tables
 - Provider tables, if orchestration has provider actions.
 
 ## Add tables as solution components and export your solution from the source environment
@@ -112,12 +112,12 @@ To enable changes to be rolled back to a specific version for policy and rules, 
 
 In the policy table, there are two states for records:
 
-- **Current** – There is only one current record for the policy.
+- **Current** – There's only one current record for the policy.
 - **Archived** – There can be many archived records, depending on the number of changes that have been made to the linked policy and rules.
 
-An archived version of the policy will have appropriate rules linked, based on the policy ID. The versioning record is created every time that a policy is unpublished.
+An archived version of the policy has appropriate rules linked, based on the policy ID. The versioning record is created every time that a policy is unpublished.
 
-The following tables highlight how the two tables are linked and how the **PolicyVersionId** column is used to group the versions that are created for a policy. The **PolicyVersionId** column is filled with the policy ID of the first policy record that was created. The policy ID value will persist for each subsequent version that is created, whereas the **PolicyId** column will be filled with a new globally unique identifier (GUID), together with a new rule that is created to link to that new GUID.
+The following tables highlight how the two tables are linked and how the **PolicyVersionId** column is used to group the versions that are created for a policy. The **PolicyVersionId** column is filled with the policy ID of the first policy record that was created. The policy ID value persists for each subsequent version that is created, whereas the **PolicyId** column is filled with a new globally unique identifier (GUID), together with a new rule that is created to link to that new GUID.
 
 | Policy | Type |
 |---|---|

@@ -1,8 +1,8 @@
 ---
-title: Error handling and troubleshooting
+title: Error handling
 author: raybennett-msft
-description: This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 02/06/2025
+description: Learn error handling in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 01/28/2026
 ms.topic: overview
 ms.author: anvenkat
 ms.custom:
@@ -10,12 +10,12 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Error handling and troubleshooting
+# Error handling
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This article describes error handling and troubleshooting in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes error handling in Microsoft Dynamics 365 Intelligent Order Management.
 
 Dynamics 365 Intelligent Order Management has five primary error handling pages that you can use to diagnose issues with your environment. Each error handling page provides different information, based on the type of error.
 
@@ -34,7 +34,7 @@ The following table describes the fields on the **Orchestration Step Results** t
 | Run ID | The Power Automate run ID. |
 | Processed Record | The record that the step ran on. |
 
-![Example of results on the Orchestration Step Results tab.](media/troubleshooting-002.png)
+:::image type="content" source="media/troubleshooting-002.png" alt-text="Screenshot of results on the Orchestration Step Results tab.":::
 
 ## System errors
 
@@ -47,7 +47,7 @@ You can view system errors for four error types:
 
 To access the error pages for these error types, select **Monitoring \> Errors** in the left navigation pane to open the **Error pages** landing page. Then select **Manage** for a specific error type.
 
-![Errors pages landing page.](media/troubleshooting-004.png)
+:::image type="content" source="media/troubleshooting-004.png" alt-text="Screenshot of the Errors pages landing page.":::
 
 ### Provider inbound errors
 
@@ -66,7 +66,7 @@ The following table describes the fields on the **Provider Inbound Errors** page
 | Error Category | The category of the error. |
 | Run History URL | A link to the Power Automate flow that ran. |
 
-![Example of errors on the Provider Inbound Errors page.](media/troubleshooting-005.png)
+:::image type="content" source="media/troubleshooting-005.png" alt-text="Screenshot of errors on the Provider Inbound Errors page.":::
 
 ### Provider action errors
 
@@ -84,7 +84,7 @@ The following table describes the fields on the **Provider Action Errors** page.
 | Result Details | Any execution result that the flow returned. |
 | Run History URL | The Power Automate flow run that failed. |
 
-![Example of the Provider Action Errors page.](media/troubleshooting-006.png)
+:::image type="content" source="media/troubleshooting-006.png" alt-text="Screenshot of the Provider Action Errors page.":::
 
 ### Orchestration step errors
 
@@ -105,9 +105,9 @@ The following table describes the fields on the **Policy Errors** page.
 | Processed Record | The record that failed. |
 | Result Details | The details of any error message that was returned. |
 
-![Example of the Policy Errors page.](media/troubleshooting-007.png)
+:::image type="content" source="media/troubleshooting-007.png" alt-text="Screenshot of the Policy Errors page.":::
 
-## Troubleshoot Power Query transformation failures
+## Power Query transformation failures
 
 If a call to Intelligent Order Management Provider Transformer fails, the best way to debug the failure is to directly observe the Power Automate execution.
 
@@ -116,14 +116,13 @@ If a call to Intelligent Order Management Provider Transformer fails, the best w
 1. Search for the **IOM Provider Transformer** cloud flow, and open it.
 1. Review the information in the **28 day run history** grid.
 
-    ![Example of the 28 day run history grid.](media/troubleshooting-009.png)
+    :::image type="content" source="media/troubleshooting-009.png" alt-text="Screenshot of the 28 day run history grid.":::
 
 1. Find the execution that you're interested in, and open it.
 1. Expand **Try Process**. Depending on your version of Intelligent Order Management, you might have to expand further to find the call to **Transform data**.
 1. If the process is successful, you can view the result of the transformation directly. If an exception error is thrown, you can view the exception details by selecting **Show raw outputs** to show the raw outputs of the call.
 
-    ![Example of flow steps.](media/troubleshooting-010.png)
-
+    :::image type="content" source="media/troubleshooting-010.png" alt-text="Screenshot of flow steps.":::
 
 ### Example errors
 
@@ -138,16 +137,16 @@ The following table shows some examples of error messages and describes the sugg
 
 If a sales order fails in an orchestration step, you can reprocess it from the failed step by using the **Reprocess** button on the Action Pane.
 
-![Screenshot that highlights the Reprocess button on the Action Pane.](media/iomreprocess.jpg)
+:::image type="content" source="media/iomreprocess.jpg" alt-text="Screenshot that highlights the Reprocess button on the Action Pane.":::
 
-## Troubleshoot dual-write errors
+## Dual-write errors
 
 If a sales order or sales order lines fail while they are being processed through dual-write into finance and operations apps, the errors are shown in the following places:
 
 - The out-of-box provider action that is used to send an order to finance and operations apps is shown as **Failed** on the **Orchestration step results** tab. The result details show the error message from dual-write for order header failures.
 - If one or more sales order lines fail during dual-write processing, the resulting dual-write error message appears in a new **Sync Error** field on the sales order line in Dataverse. It's also available out of the box in the Intelligent Order Management user interface (UI).
 
-    ![Screenshot that highlights the Sync Error field.](media/iomdwerror.jpg)
+    :::image type="content" source="media/iomdwerror.jpg" alt-text="Screenshot that highlights the Sync Error field.":::
 
 ### Filter orders without lines in dual-write
 

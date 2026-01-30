@@ -1,14 +1,12 @@
 ---
 author: sumanic
-description: This article describes how to set up the Adobe Commerce provider in Microsoft Dynamics 365 Intelligent Order Management.
-ms.date: 03/21/2025
+description: Learn about how to set up the Adobe Commerce provider in Microsoft Dynamics 365 Intelligent Order Management.
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
 ms.author: sumanic
-
 title: Set up Adobe Commerce provider
-
 ---
 
 # Set up Adobe Commerce provider
@@ -17,7 +15,7 @@ title: Set up Adobe Commerce provider
 
 This article describes how to set up the Adobe Commerce provider in Microsoft Dynamics 365 Intelligent Order Management.
 
-Adobe Commerce (formerly Magento) is an e-commerce platform that is designed to give online businesses a flexible shopping cart system, and enable them to manage the appearance, content, and features of an online store.
+Adobe Commerce (formerly Magento) is an e-commerce platform that gives online businesses a flexible shopping cart system. It enables businesses to manage the appearance, content, and features of an online store.
 
 For more information about Adobe Commerce, see [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html).
 
@@ -32,10 +30,10 @@ To set up the provider, follow these steps:
 1. In Intelligent Order Management, go to **Providers \> Catalog**.
 1. On the **Adobe Commerce** tile, select **Add Provider**.
 1. On the **Terms and Conditions** page, select **Create**.
-1. In the **Connections** section, you must set up two connections:
+1. In the **Connections** section, set up two connections:
 
     - Adobe Commerce Dataverse (current environment) Connection
-    - Adobe Commerce connection:
+    - Adobe Commerce connection
 
     To set up each connection, follow these steps:
 
@@ -54,7 +52,7 @@ To set up the provider, follow these steps:
 
 1. Select **Activate** to activate the provider.
 1. Select **Save and close**.
-1. Go to **Providers \> Installed**, and validate that the provider that you set up is listed and has a status of **Activated**.
+1. Go to **Providers \> Installed**, and validate that the provider you set up is listed and has a status of **Activated**.
 
 ## Out-of-box capabilities
 
@@ -68,7 +66,7 @@ The Adobe Commerce provider has the following capabilities.
 
 ## Run a sample transaction by using Adobe Commerce
 
-After your store is set up, you're ready to run a sample transaction by using Adobe Commerce. To set up data for the sample transaction, complete the following procedures in Adobe Commerce and Intelligent Order Management.
+After you set up your store, you're ready to run a sample transaction by using Adobe Commerce. To set up data for the sample transaction, complete the following procedures in Adobe Commerce and Intelligent Order Management.
 
 ### Create a customer in Adobe Commerce
 
@@ -82,18 +80,18 @@ To set up a customer in Adobe Commerce, follow these steps:
 1. In the **Customer email** field, enter the customer's email address. Then select **Save**.
 1. Add **Customer Address Details**.
 1. Enter the customer's address information, and then select **Save Customer**.
-1. To use the customer for a transaction, you must sign out of Adobe Commerce and then sign back in.
+1. To use the customer for a transaction, sign out of Adobe Commerce and then sign back in.
 
 ### Configure the mappings in Intelligent Order Management
 
-- In Intelligent Order Management, in the lower-right corner of any page, change the area from **IOM** to **Configurations**.
+- In Intelligent Order Management, change the area from **IOM** to **Configurations** in the lower-right corner of any page.
 
     > [!NOTE]
-    > If you use a left-to-right (LTR) language, the setting is in the lower-left corner.
+    > If you use a left-to-right (LTR) language, find the setting in the lower-left corner.
 
 #### Set up price list mapping
 
-Next, you must set up price list mapping.
+Next, set up price list mapping.
 
 To set up price list mapping, follow these steps:
 
@@ -111,7 +109,7 @@ To set up price list mapping, follow these steps:
 
 #### Set up unit mapping
 
-After you set up price list mapping, you must set up unit mapping.
+After you set up price list mapping, set up unit mapping.
 
 To set up unit mapping, follow these steps:
 
@@ -129,7 +127,7 @@ To set up unit mapping, follow these steps:
 
 #### Set up product mapping
 
-Next, you must set up product mapping.
+Next, set up product mapping.
 
 To set up product mapping, follow these steps:
 
@@ -147,7 +145,7 @@ To set up product mapping, follow these steps:
 
 ### Create an order in Adobe Commerce
 
-Next, you must create an order in Adobe Commerce and submit it to Intelligent Order Management.
+Next, create an order in Adobe Commerce and submit it to Intelligent Order Management.
 
 To create an order in Adobe Commerce, follow these steps:
 

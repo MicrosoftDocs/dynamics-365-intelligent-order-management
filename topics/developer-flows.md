@@ -1,30 +1,28 @@
 ---
 author: raybennett-msft
-description: This article provides information about Intelligent Order Management Power Automate flows that you can use to develop your own custom solution.
-ms.date: 03/21/2025
+description: Learn about Intelligent Order Management Power Automate flows that you can use to develop your own custom solution.
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: article
 ms.author: anvenkat
-
 title: Dynamics 365 Intelligent Order Management Power Automate flows
-
 ---
 
 # Dynamics 365 Intelligent Order Management Power Automate flows
 
-This article provides a list of the flows that are available as part of Microsoft Dynamics 365 Intelligent Order Management. You can use these flows to build your own custom providers or solutions.
+This article provides a list of the flows that are available as part of Microsoft Dynamics 365 Intelligent Order Management. Use these flows to build your own custom providers or solutions.
 
 ## Mapping flows
 
 ### Create account mapping
 
-The **Create account mapping** flow lets you create a customer account mapping that uses the specified external field name and external field value for the lookup to map back to an account ID.
+The **Create account mapping** flow creates a customer account mapping that uses the specified external field name and external field value for the lookup to map back to an account ID.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
-| Provider ID | The provider ID that the mapping is for. | True |
-| Mapping Group ID | The mapping group ID that the mapping is for. | True |
+| Provider ID | The provider ID for the mapping. | True |
+| Mapping Group ID | The mapping group ID for the mapping. | True |
 | Account ID | The account ID to return when a match is found. | True |
 | External Field Name | The name of the field to check for the value in the external data source. | True |
 | External Field Value | The field value to match in the external data source. | True |
@@ -36,46 +34,46 @@ The mapping returns the account ID, whether it's just created or it already exis
 
 ### Create contact mapping
 
-The **Create contact mapping** flow lets you create a customer contact mapping that uses the specified external field name and external field value for the lookup to map back to a contact ID.
+The **Create contact mapping** flow creates a customer contact mapping that uses the specified external field name and external field value for the lookup to map back to a contact ID.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
-| Provider ID | The provider ID that the mapping is for. | True |
-| Mapping Group ID | The mapping group ID that the mapping is for. | True |
+| Provider ID | The provider ID for the mapping. | True |
+| Mapping Group ID | The mapping group ID for the mapping. | True |
 | Contact ID | The contact ID to return when a match is found. | True |
 | External Field Name | The name of the field to check for the value in the external data source. | True |
 | External Field Value | The field value to match in the external data source. | True |
 
-The mapping returns the contact ID, whether it's just created or it already exists.
+The mapping returns the contact ID, whether it's new or already exists.
 
 > [!NOTE]
 > This value is the ID of the mapping, not the contact.
 
 ### Create fulfillment order mapping
 
-The **Create fulfillment order mapping** flow lets you create a fulfillment order mapping that uses the specified external field name and external field value for the lookup to map back to a fulfillment order ID.
+The **Create fulfillment order mapping** flow creates a fulfillment order mapping that uses the specified external field name and external field value for the lookup to map back to a fulfillment order ID.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
-| Provider ID | The provider ID that the mapping is for. | True |
-| Mapping Group ID | The mapping group ID that the mapping is for. | True |
+| Provider ID | The provider ID for the mapping. | True |
+| Mapping Group ID | The mapping group ID for the mapping. | True |
 | Fulfillment Order ID | The fulfillment order ID to return when a match is found. | True |
 | External Field Name | The name of the field to check for the value in the external data source. | True |
 | External Field Value | The field value to match in the external data source. | True |
 
-The mapping returns the fulfillment order mapping ID, whether it's just created or it already exists.
+The mapping returns the fulfillment order mapping ID, whether it's newly created or already exists.
 
 > [!NOTE]
 > This value is the ID of the mapping, not the fulfillment order.
 
 ### Create fulfillment order product mapping
 
-The **Create fulfillment order product mapping** flow lets you create a fulfillment order product mapping that uses the specified external field name and external field value for the lookup to map back to a fulfillment order product ID.
+The **Create fulfillment order product mapping** flow creates a fulfillment order product mapping that uses the specified external field name and external field value for the lookup to map back to a fulfillment order product ID.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
-| Provider ID | The provider ID that the mapping is for. | True |
-| Mapping Group ID | The mapping group ID that the mapping is for. | True |
+| Provider ID | The provider ID for the mapping. | True |
+| Mapping Group ID | The mapping group ID for the mapping. | True |
 | Fulfillment Order Product ID | The fulfillment order product ID to return when a match is found. | True |
 | External Field Name | The name of the field to check for the value in the external data source. | True |
 | External Field Value | The field value to match in the external data source. | True |
@@ -87,12 +85,12 @@ The mapping returns the fulfillment order product mapping ID, whether it's just 
 
 ### Create order mapping
 
-The **Create order mapping** flow lets you create an order mapping that uses the specified external field name and external field value for the lookup to map back to an order.
+The **Create order mapping** flow creates an order mapping that uses the specified external field name and external field value for the lookup to map back to an order.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
-| Provider ID | The provider ID that the mapping is for. | True |
-| Mapping Group ID | The mapping group ID that the mapping is for. | True |
+| Provider ID | The provider ID for the mapping. | True |
+| Mapping Group ID | The mapping group ID for the mapping. | True |
 | Order ID | The order ID to return when a match is found. | True |
 | External Field Name | The name of the field to check for the value in the external data source. | True |
 | External Field Value | The field value to match in the external data source. | True |
@@ -109,9 +107,9 @@ The **Get external mapping** flow returns the external field value that maps to 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
 | Mapping Table | The mapping table to look up for the external value. | True |
-| Provider ID | The provider ID that the mapping is for. | True |
-| Mapping Group ID | The mapping group ID that the mapping is for. | True |
-| Internal Record Value | The value that's used internally to match. | True |
+| Provider ID | The provider ID for the mapping. | True |
+| Mapping Group ID | The mapping group ID for the mapping. | True |
+| Internal Record Value | The value used internally to match. | True |
 | External Field Name | The name of the field to check for the value in the external data source. | True |
 
 The mapping returns the record if a matching table, internal record value, and external field name exist for the specified provider or mapping group.
@@ -123,10 +121,10 @@ The **Get internal mapping** flow returns the internal field value that maps to 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
 | Mapping Table | The mapping table to look up for the external value. | True |
-| Provider ID | The provider ID that the mapping is for. | True |
-| Mapping Group ID | The mapping group ID that the mapping is for. | True |
+| Provider ID | The provider ID for the mapping. | True |
+| Mapping Group ID | The mapping group ID for the mapping. | True |
 | External Field Name | The name of the field to check for the value in the external data source. | True |
-| External Field Value | The value that's used externally to match. | True |
+| External Field Value | The value used externally to match. | True |
 
 The mapping returns the record if a matching table, external field value, and external field name exist for the specified provider or mapping group.
 
@@ -157,7 +155,7 @@ The flow returns the tracking number ID from the **Fulfillment Trackings** table
 
 ### Fulfillment line and aggregated order events
 
-The **Fulfillment line and aggregated order events** flow raises a business event on a fulfillment order line. When this event is raised, a check is done to verify that all lines have the same status. If they have the same status, the specified fulfillment order–level business event is raised at the header level.
+The **Fulfillment line and aggregated order events** flow raises a business event on a fulfillment order line. When this event is raised, the flow verifies that all lines have the same status. If they have the same status, the flow raises the specified fulfillment order–level business event at the header level.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
@@ -167,7 +165,7 @@ The **Fulfillment line and aggregated order events** flow raises a business even
 | FulfillmentOrderRecordId | The fulfillment order to raise the business event for. | True |
 | Payload | The optional JavaScript Object Notation (JSON) payload to pass together with the business event. | False |
 
-The flow returns **IsSuccessful true** if the business event was successfully raised.
+The flow returns **IsSuccessful true** if the business event is successfully raised.
 
 ## Customer account and contact flows
 
@@ -181,7 +179,7 @@ The **Create or update an account** flow creates or updates an existing account,
 | Account ID | The ID of the account to update. | False |
 
 > [!NOTE]
-> The **Account** table has specific fields that are required in the JSON payload. To see what fields are required, go to **Dataverse** \> **Tables** \> **All**, find your table, and select **Columns**. Use the **Required** field to determine what's required.
+> The **Account** table has specific fields that are required in the JSON payload. To see what fields are required, go to **Dataverse** > **Tables** > **All**, find your table, and select **Columns**. Use the **Required** field to determine what's required.
 
 The flow returns the ID of the created or updated account.
 
@@ -195,7 +193,7 @@ The **Create or update a contact** flow creates or updates an existing contact, 
 | Contact ID | The ID of the account to update. | False |
 
 > [!NOTE]
-> The **Contact** table has specific fields that are required in the JSON payload. To see what fields are required, go to **Dataverse** \> **Tables** \> **All**, find your table, and select **Columns**. Use the **Required** field to determine what's required.
+> The **Contact** table has specific fields that are required in the JSON payload. To see what fields are required, go to **Dataverse** > **Tables** > **All**, find your table, and select **Columns**. Use the **Required** field to determine what's required.
 
 The flow returns the ID of the created or updated contact.
 
@@ -211,13 +209,13 @@ The **Sales order creation** flow creates a sales order, based on the specified 
 | ProviderId | The ID of the calling provider. | False |
 
 > [!NOTE]
-> Both the **Order** table and the **Order Line** table have specific fields that are required in the JSON payload. To see what fields are required, go to **Dataverse** \> **Tables** \> **All**, find your table, and select **Columns**. Use the **Required** field to determine what's required.
+> Both the **Order** table and the **Order Line** table have specific fields that are required in the JSON payload. To see what fields are required, go to **Dataverse** > **Tables** > **All**, find your table, and select **Columns**. Use the **Required** field to determine what's required.
 
 The flow returns the ID of the created sales order.
 
-### Raise lines and Aggregated order events
+### Raise lines and aggregated order events
 
-The **Raise lines and Aggregated order events** flow raises a business event on a sales order line. When this event is raised, a check is done to verify that all lines have the same status. If they have the same status, the specified order-level business event is raised at the header level.
+The **Raise lines and Aggregated order events** flow raises a business event on a sales order line. When this event is raised, the flow checks that all lines have the same status. If they have the same status, the flow raises the specified order-level business event at the header level.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
@@ -227,7 +225,7 @@ The **Raise lines and Aggregated order events** flow raises a business event on 
 | OrderRecordId | The order to raise the business event for. | True |
 | Payload | The optional JSON payload to pass together with the business event. | False |
 
-The flow returns **IsSuccessful true** if the business event was successfully raised.
+The flow returns **IsSuccessful true** if the business event is successfully raised.
 
 ### Raise sales order lines business event
 
@@ -238,11 +236,11 @@ The **Raise sales order lines business event** flow raises a business event for 
 | SalesOrderId | The order record for which a business event should be raised for each line. | True |
 | BusinessEventId | The order line business event to raise for each line. | True |
 
-The flow returns **IsSuccessful true** if the business event was successfully raised.
+The flow returns **IsSuccessful true** if the business event is successfully raised.
 
 ### Unit conversion
 
-The **Unit conversion** flow converts a quantity from one unit to another by using the unit conversions that are set up for a product.
+The **Unit conversion** flow converts a quantity from one unit to another by using the unit conversions that you set up for a product.
 
 | Parameter | Description | Required |
 | --------- | ----------- | -------- |
@@ -250,15 +248,15 @@ The **Unit conversion** flow converts a quantity from one unit to another by usi
 | From unit | The unit to convert from. | True |
 | To unit | The unit to convert to. | True |
 
-The flow returns the unit conversion, if a conversion exists.
+The flow returns the unit conversion if a conversion exists.
 
 ## Miscellaneous flows
 
 ### Provider transformer
 
-The **Provider transformer** flow applies a Power Query transformation that's defined on a provider, and then returns the transformed data. This flow looks up an active provider instance by ID, and checks for a transformation that has a matching source object name and destination object name.
+The **Provider transformer** flow applies a Power Query transformation that you define on a provider, and then returns the transformed data. This flow looks up an active provider instance by ID, and checks for a transformation that has a matching source object name and destination object name.
 
-If the type of transformation is a Dataverse entity, a record ID is required. The record ID that's provided is looked up for the entity that's defined on the transformation. If a record is found, it's used for the transformation.
+If the type of transformation is a Dataverse entity, a record ID is required. The flow looks up the record ID for the entity that's defined on the transformation. If a record is found, the flow uses it for the transformation.
 
 If the type of transformation is **JsonPayload**, a value is required for the **Payload** parameter.
 
@@ -271,9 +269,9 @@ If the type of transformation is **JsonPayload**, a value is required for the **
 | Record ID | The record to look up for the entity that's associated with the transformation. | False |
 
 > [!NOTE]
-> Either a **Payload** value or a **Record ID** value is required.
+> You must provide either a **Payload** value or a **Record ID** value.
 >
-> The **Provider ID** value is a GUID and is replaced when a provider is activated. You can enter any GUID for this parameter.
+> The system replaces the **Provider ID** value, which is a GUID, when you activate a provider. You can enter any GUID for this parameter.
 
 If the flow is successful, it returns a JSON representation of the transformed record.
 
@@ -288,6 +286,6 @@ The **Raise a business event** flow raises a business event for the specified en
 | Payload | An optional payload to deliver together with the business event. | False |
 
 > [!NOTE]
-> The **EntityRecordId** value can be a comma-delimited list of record IDs. If a delimited list is provided, a business event is raised for each record.
+> The **EntityRecordId** value can be a comma-delimited list of record IDs. If you provide a delimited list, the flow raises a business event for each record.
 
-The flow returns **IsSuccessful true** if the business event was successfully raised.
+The flow returns **IsSuccessful true** if the business event is successfully raised.

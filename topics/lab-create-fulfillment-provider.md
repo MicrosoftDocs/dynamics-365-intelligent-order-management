@@ -1,12 +1,11 @@
 ---
 author: josaw1
-description: This topic describes the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management. 
-ms.date: 03/21/2025
+description: Learn about the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management. 
+ms.date: 01/28/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
-ms.author: josaw
-
+ms.author: anvenkat
 title: Create fulfillment provider
 
 ---
@@ -15,11 +14,11 @@ title: Create fulfillment provider
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management.
+This article describes the steps required to create a fulfillment provider in Microsoft Dynamics 365 Intelligent Order Management.
 
 ## Create new provider definition
 
-To create new provider definition, follow these steps:
+To create a new provider definition, follow these steps:
 
 1. Go to **Providers \> Catalog**.
 1. Select **New Provider Definition**.
@@ -34,23 +33,24 @@ To create new provider definition, follow these steps:
 
 To add a provider definition to the solution, follow these steps:
 
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
+1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly created solution **IOMLabProviders**.
 1. Select **Add existing \> IOM Provider Definition**.
-1. Select **IOMLabFulfillmentProvider** and then select **Add** to add it to the solution. 
+1. Select **IOMLabFulfillmentProvider** and then select **Add** to add it to the solution.
 
 ## Create provider action to send a fulfillment payload to Outlook
 
-To create a provider action to send a fulfillment payload to Outlook, follow these steps:
+To create a provider action that sends a fulfillment payload to Outlook, follow these steps:
 
 1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to **Solutions**.
 1. Open the **Default Solution**.
 1. Select **New**.
 1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (Outlook)".
 1. Select the trigger type as **HTTP** trigger
-    1.  Define a Power Automate trigger. This is typically an HTTP endpoint that is a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger is raised when an external service has data to send to Intelligent Order Management.
-    ![Screenshot of trigger for when an HTTP request is received.](media/trigger.png)
+    1. Define a Power Automate trigger. Typically, this trigger is an HTTP endpoint that acts as a webhook trigger (recommended), connector trigger, or a Dataverse insert trigger. The trigger starts when an external service sends data to Intelligent Order Management.
 
-    The JSON Schema to use in your HTTP trigger is defined below.
+    :::image type="content" source="media/trigger.png" alt-text="Screenshot of trigger for when an HTTP request is received.":::
+
+    Use the following JSON Schema in your HTTP trigger.
 
     ```json
     {
@@ -78,25 +78,25 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
     }
     ```
 
-![Variable initialization actions](media/lab_variable_init_actions.png)
+:::image type="content" source="media/lab_variable_init_actions.png" alt-text="Screenshot of variable initialization actions.":::
 
 1. Add a **Try** scope.
 1. Within the **Try** scope, add a **Perform an unbound action** action as follows:
     - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
     - **PowerAutomateRunId**: Specify the following as an expression: `workflow()['run']?['name']`.
 
-    ![Try scope](media/lab_try_scope.png)
+    :::image type="content" source="media/lab_try_scope.png" alt-text="Screenshot of Try scope configuration.":::
 1. Add a **Get a row by ID** action and then do the following:
     - For **Table name**, enter "Fulfillment Orders".
     - For **Row ID**, select **EntityRecordId** under **Dynamic content**.
 
-    ![Get a row ID action](media/lab_get_row_id_action.png)
+    :::image type="content" source="media/lab_get_row_id_action.png" alt-text="Screenshot of Get a row by ID action configuration.":::
 1. Add a **Send an email** action from the Outlook.com connector, as follows. There are couple of email connectors, make sure to select Outlook.com since that's the connection set up earlier.
-    - On the **To** line, "placeholder@placeholder.com” is used as placeholder text. This will be replaced by a provider parameter in later steps.
+    - On the **To** line, "<placeholder@placeholder.com>" is used as placeholder text. This text is replaced by a provider parameter in later steps.
     - On the **Subject** line, "name" is obtained from the **Get fulfillment order** step under **Dynamic content**.
     - For **Body**, specify the following as an expression: `outputs('Get_fulfillment_order')['body']`
 
-    ![Send an email action](media/lab_send_email_action.png)    
+    :::image type="content" source="media/lab_send_email_action.png" alt-text="Screenshot of Send an email action configuration.":::
 1. Add a **List rows** action as follows:
     - For **Table name**, enter "Fulfillment Order Products".
     - For **Fetch Xml query** enter the following: </br>
@@ -105,78 +105,78 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
     <fetch>  
       <entity name="msdyn_fulfillmentorderdetail">  
        <all-attributes />
-   	     <filter>
+         <filter>
          <condition attribute="msdyn_fulfillmentid" operator="eq" value="@{triggerBody()['text_1']}"/>
          </filter>
       </entity>  
     </fetch>
     ```
 
-    ![List rows action](media/lab_list_rows_action.png)
-1. Add an **Apply to each** control with a **Send an email** action as follows:   
-    - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
-    - **name** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
+    :::image type="content" source="media/lab_list_rows_action.png" alt-text="Screenshot of List rows action configuration.":::
+1. Add an **Apply to each** control with a **Send an email** action as follows:
+    - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**.
+    - **name** is obtained from the **Get fulfillment order line** step under **Dynamic content**.
     - **Current item** is selected from under **Dynamic content**.
 
-    ![Apply to each control](media/lab_apply_to_each_control.png)
+    :::image type="content" source="media/lab_apply_to_each_control.png" alt-text="Screenshot of Apply to each control configuration.":::
 1. Within the loop, add an **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedFulfillmentOrderLines".
-    - For **Value**, select **Fulfillment line ID** from under **Dynamic content**. 
+    - For **Value**, select **Fulfillment line ID** from under **Dynamic content**.
 
-    ![Append to array action (fulfillment)](media/lab_append_to_array_1.png)
+    :::image type="content" source="media/lab_append_to_array_1.png" alt-text="Screenshot of Append to array variable action for fulfillment order lines.":::
 1. Within the loop, add another **Append to array variable** action as follows:
     - For **Name**, enter "ProcessedSalesOrderLines".
     - For **Value**, select **Sales line ID** from under **Dynamic content**.
 
-    ![Append to array action (sales)](media/lab_append_to_array_2.png)
-1. Collapse the **Try** scope by selecting its title bar. 
+    :::image type="content" source="media/lab_append_to_array_2.png" alt-text="Screenshot of Append to array variable action for sales order lines.":::
+1. Collapse the **Try** scope by selecting its title bar.
 1. Select **New step** and add another scope named "Catch".
 1. On the **Catch** scope, select the ellipsis ("**...**"), select **Configure run after**, and configure as follows:
     - Select the **has failed** checkbox.
-    - Select the **has timed out** checkbox.
+    - Select the **has failed** checkbox.
 
-    ![Catch scope)](media/lab_catch_scope.png)
-1. In the **Catch** scope, select **Add an action** and add a **Set variable** action, and rename it "Set the execution result to failed".
+    :::image type="content" source="media/lab_catch_scope.png" alt-text="Screenshot of Catch scope configuration.":::
+1. In the **Catch** scope, select **Add an action** and add a **Set variable** action. Rename the action to "Set the execution result to failed".
 1. Configure the properties as follows:
     - For **Name**, enter "ExecutionResult".
     - For **Value**, enter "false".
 
-    ![Set variable)](media/lab_set_variable.png)
+    :::image type="content" source="media/lab_set_variable.png" alt-text="Screenshot of Set variable action configuration.":::
 1. Select **New step**, and add another scope named "Finally".
 1. On the **Finally** scope, select the ellipsis ("**...**"),  select **Configure run after**, and configure as follows:
     - Select the **is successful** checkbox.
-    - Select the **has timed out** checkbox.
+    - Select the **has failed** checkbox.
     - Select the **is skipped** checkbox.
-    - Select the **has timed out** checkbox.
+    - Select the **has failed** checkbox.
 
-    ![Finally scope)](media/lab_finally_scope.png)
+    :::image type="content" source="media/lab_finally_scope.png" alt-text="Screenshot of Finally scope configuration.":::
 1. In the **Finally** scope, add a "condition" step and compare the **ExecutionResult** variable to true as follows:
     - In the first field, select the **ExecutionResult** variable.
     - In the second field, select **is equal to**.
     - In the third field, select **true**.
 
-    ![Condition step](media/lab_condition_step.png)
+    :::image type="content" source="media/lab_condition_step.png" alt-text="Screenshot of condition step configuration.":::
 1. In the **If yes** branch, add a **Run a child flow** action and rename it "Raise Business Events for processed fulfillment order lines".
 1. Configure the properties as follows:
     - For **Child flow**, enter "IOM Raise Business Event".
     - For **BusinessEventDefinitionId**, enter "063d85c8-60a4-eb11-9443-000d3a313675".
     - For **EntityRecordId**, specify the following as expressions: `string(variables('ProcessedFulfillmentOrderLines'))`
 
-    ![Run child flow action (business events)](media/lab_run_child_flow_action_1.png)
+    :::image type="content" source="media/lab_run_child_flow_action_1.png" alt-text="Screenshot of Run child flow action for business events.":::
 1. In the **If yes** branch, add another **Run a child flow** action and rename it "Raise Sales Order Aggregated Events".
 1. Configure the properties as follows:
    - For **LineBusinessEventDefinitionId**, enter "ccf64002-61a4-eb11-9443-000d3a313675".
    - For **LineRecordId**, specify the following as an expression: `string(variables('ProcessedSalesOrderLines'))`.
    - For **OrderBusinessEventDefinitionId**, enter "48688716-61a4-eb11-9443-000d3a313675".
 
-    ![Run child flow action (aggregated events)](media/lab_run_child_flow_action_2.png)
+    :::image type="content" source="media/lab_run_child_flow_action_2.png" alt-text="Screenshot of Run child flow action for aggregated events.":::
 1. Collapse the condition step.  
 1. Add a **Perform an unbound action** action as follows:
     - For **Action name**, enter "msdyn_CompleteProviderActionExecution".
     - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content**.
     - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content**.
 
-    ![Perform unbound action)](media/lab_perform_unbound_action.png)
+    :::image type="content" source="media/lab_perform_unbound_action.png" alt-text="Screenshot of Perform an unbound action configuration.":::
 1. Select **Save**.
 
 ## Add a provider definition logic definition to the Outlook provider definition
@@ -184,8 +184,8 @@ To create a provider action to send a fulfillment payload to Outlook, follow the
 To add a provider definition logic definition to the Outlook provider definition, follow these steps:
 
 1. Go to **Providers \> Catalog**.
-1. Select the newly-created **IOMLabFulfillmentProvider**.
-1. Select **Edit** on the menu bar. 
+1. Select the newly created **IOMLabFulfillmentProvider**.
+1. Select **Edit** on the menu bar.
 1. Select the **Logic definitions** tab.
 1. Select **+ New IOM Provider Definition Logic Definition**.
 1. For **Display Name**, enter "IOM Lab Send to Fulfillment (Outlook)".
@@ -197,209 +197,7 @@ To add a provider definition logic definition to the Outlook provider definition
 1. For **Max Retry Attempts**, enter "3".
 1. For **Description**, enter "IOM Lab Send to Fulfillment (Outlook)".
 1. For **Action Type**, enter "Send to Fulfillment".
-1. Select **Save**. This will generate a JSON representation of the message handler cloud flow and populate the **Client Data** field.
+1. Select **Save**. This action generates a JSON representation of the message handler cloud flow and populates the **Client Data** field.
 1. Replace the placeholder email with provider parameter as follows:
-    1. Copy the text block in the **Client Data** field and paste it into Notepad. 
-    1. In the text block, find "placeholder@placeholder.com" and replace it with "{{IOMLabOutboundFulfillmentEmail}}".
-    1. Copy the modified text block back into the **Client Data** field.
-    1. Select **Save and close**.
-1. Select **Connections**. You should see both the **Microsoft Dataverse** and **Outlook.com** connection reference definitions listed.
-
-## Add a provider definition logic definition to the Outlook IOMLabProviders solution
-
-To add a provider definition logic definition to the Outlook IOMLabProviders solution, follow these steps:
-
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing \> IOM Provider Definition Logic Definition**.
-1. Select **IOM Lab Send To Fulfillment (Outlook)** and then select **Add** to add it to the solution. 
-
-## Add provider definition connection references to IOMLabProviders solution
-
-To add provider definition connection references to the IOMLabProviders solution, follow these steps:
-
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing \> IOM Provider Definition Connection Reference**.
-1. Select both the **Microsoft Dataverse** and **Outlook.com** provider definition connection references, and then select **Add** to add them to the solution. 
-
-## Create a provider action to send a fulfillment payload to RequestBin
-
-To create a provider action to send a fulfillment payload to RequestBin, follow these steps:
-
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to **Solutions**.
-1. Open the **Default Solution**.
-1. Select **New**.
-1. Select **Cloud Flow**, and then name it "IOM Lab Send To Fulfillment (RequestBin)".
-1. Select the trigger type as **Manually trigger a flow** and then do the following:
-    1. Select **Add an input**, select **Text**, and then enter "ProviderActionExecutionEventId" in the first field.
-    1. Select **Add an input**, select **Text**, and then enter "EntityRecordId" in the first field.
-
-    ![Manually trigger a flow properties (RequestBin)](media/lab_man_trig_flow_prop.png)
-1. Create a variable initialization action:
-    - For **Name**, enter "ExecutionResult".
-    - For **Type**, select **Boolean**.
-    - For **Value**, enter "true".  
-1. Create a second variable initialization action:
-    - For **Name**, enter "ProcessedSaleOrderLines".
-    - For **Type**, select **Array**.
-1. Create a third variable initialization action:
-    - For **Name**, enter "ProcessedFulfillmentOrderLines".
-    - For **Type**, select **Array**.
-
-    ![Variable initialization actions (RequestBin)](media/lab_variable_init_actions.png)
-1. Add a **Try** scope.
-1. Within the **Try** scope, add a **Perform an unbound action** action as follows:
-    - **ProviderActionExecutionEventId**: Under **Dynamic content**, select **ProviderActionExecutionEventId**.
-    - **PowerAutomateRunId**: Specify the following as an expression: `workflow()['run']?['name']`.
-
-    ![Try scope (RequestBin)](media/lab_try_scope.png)
-1. Add a **Get a row by ID** action and configure it as follows:
-    - For **Table name**, enter "Fulfillment Orders".
-    - For **Row ID**, select **EntityRecordId** under **Dynamic content**.
-
-    ![Get a row ID action (RequestBin)](media/lab_get_row_id_action.png)
-1. Add a **Create fulfillment order** action from the RequestBin connector, as follows. 
-    - For **Body**, select **body** from under **Dynamic content**.
-
-    ![Create fulfillment order action)](media/lab_create_fulfillment_order.png)
-1. Add a **List rows** action as follows:
-    - For **Table name**, enter "Fulfillment Order Products".
-    - For **Fetch Xml query** enter the following: </br>
-
-    ```XML
-    <fetch>  
-      <entity name="msdyn_fulfillmentorderdetail">  
-       <all-attributes />
-   	     <filter>
-         <condition attribute="msdyn_fulfillmentid" operator="eq" value="@{triggerBody()['text_1']}"/>
-         </filter>
-      </entity>  
-    </fetch>
-    ```
-
-    ![List rows action](media/lab_list_rows_action.png)
-1. Add an "Apply to each" control with a **Create fulfillment order lines** action from the RequestBin connection as follows:
-    - **value** is obtained from the **Get fulfillment order line** step under **Dynamic content**. 
-    - **Current item** is selected from under **Dynamic content**.
-
-    ![Apply to each control (Requestbin)](media/lab_apply_to_each_control_2.png)
-1. Within the loop, add an **Append to array variable** action as follows:
-    - For **Name**, enter "ProcessedFulfillmentOrderLines".
-    - For **Value**, select **Fulfillment line ID** from under **Dynamic content**. 
-
-    ![Append to array action (fulfillment)](media/lab_append_to_array_1.png)
-1. Within the loop, add another **Append to array variable** action as follows:
-    - For **Name**, enter "ProcessedSalesOrderLines".
-    - For **Value**, select **Sales line ID** from under **Dynamic content**.
-
-    ![Append to array action (sales)](media/lab_append_to_array_2.png)
-1. Collapse the **Try** scope by selecting its title bar. 
-1. Select **New step** and add another scope renamed "Catch".
-1. On the **Catch** scope, select the ellipsis ("**...**"), select **Configure run after**, and configure as follows:
-    - Select the **has failed** checkbox.
-    - Select the **has timed out** checkbox.
-
-    ![Catch scope)](media/lab_catch_scope.png)
-1. In the **Catch** scope, select **Add an action** and add a **Set variable** action, and rename it "Set the execution result to failed".
-1. Configure the properties as follows:
-    - For **Name**, enter "ExecutionResult".
-    - For **Value**, enter "false".
-
-    ![Set variable)](media/lab_set_variable.png)
-1. Select **New step**, and add another scope renamed "Finally".
-1. In the **Finally** scope, select the ellipsis ("**...**"),  select **Configure run after**, and configure as follows:
-    - Select the **is successful** checkbox.
-    - Select the **has timed out** checkbox.
-    - Select the **is skipped** checkbox.
-    - Select the **has timed out** checkbox.
-
-    ![Finally scope)](media/lab_finally_scope.png)
-1. In the **Finally** scope, add a "condition" step and compare the **ExecutionResult** variable to "true" as follows:
-    - In the first field, select the **ExecutionResult** variable.
-    - In the second field, select **is equal to**.
-    - In the third field, select **true**.
-
-    ![Condition step](media/lab_condition_step.png)
-1. In the **If yes** branch, add a **Run a child flow** action and rename it "Raise Business Events for processed fulfillment order lines".
-1. Configure the properties as follows:
-    - For **Child flow**, enter "IOM Raise Business Event".
-    - For **BusinessEventDefinitionId**, enter "063d85c8-60a4-eb11-9443-000d3a313675".
-    - For **EntityRecordId**, specify the following as expressions: `string(variables('ProcessedFulfillmentOrderLines'))`
-
-    ![Run child flow action (business events)](media/lab_run_child_flow_action_1.png)
-1. In the **If yes** branch, add another **Run a child flow** action and rename it "Raise Sales Order Aggregated Events".
-1. Configure the properties as follows:
-   - For **LineBusinessEventDefinitionId**, enter "ccf64002-61a4-eb11-9443-000d3a313675".
-   - For **LineRecordId**, specify the following as an expression: `string(variables('ProcessedSalesOrderLines'))`.
-   - For **OrderBusinessEventDefinitionId**, enter "48688716-61a4-eb11-9443-000d3a313675".
-
-    ![Run child flow action (aggregated events)](media/lab_run_child_flow_action_2.png)
-1. Collapse the condition step.  
-1. Add a **Perform an unbound action** action as follows:
-    - For **Action name**, enter "msdyn_CompleteProviderActionExecution".
-    - For **ExecutionResult**, select the **ExecutionResult** variable from under **Dynamic content**.
-    - For **ProviderActionExecutionEventId**, select **ProviderActionExecutionEventId** from under **Dynamic content**.
-
-    ![Perform unbound action)](media/lab_perform_unbound_action.png)
-1. Select **Save**.
-
-## Add provider definition logic definition to the provider definition (RequestBin)
-
-To add a provider definition logic definition to the RequestBin provider definition, follow these steps:
-
-1. Go to **Providers \> Catalog**.
-1. Select the newly-created **IOMLabFulfillmentProvider**.
-1. Select **Edit** on the menu bar. 
-1. Select the **Logic definitions** tab.
-1. Select **+ New IOM Provider Definition Logic Definition**.
-1. For **Display Name**, enter "IOM Lab Send to Fulfillment (RequestBin)".
-1. For **Logical Name**, enter "msdyn_LabSentToFulfillmentRequestBin".
-1. For **Provider Definition**, enter "IOMLabFulfillmentProvider".
-1. For **Logic Type**, enter "Provider Action".
-1. For **Workflow Name**, enter "IOM Lab Send to Fulfillment (RequestBin)".
-1. For **Timeout Minutes**, enter "2".
-1. For **Max Retry Attempts**, enter "3".
-1. For **Description**, enter "IOM Lab Send to Fulfillment (RequestBin)".
-1. For **Action Type**, enter "Send to Fulfillment".
-1. Select **Save**. This will generate a JSON representation of the message handler cloud flow and populate the **Client Data** field.
-1. Select **Save and close**.
-1. Select **Connections**. You should see the **Microsoft Dataverse**, **Outlook.com**, and **RequestBin** connection reference definitions listed.
-
-## Add provider definition parameter to the provider definition
-
-To add a provider definition parameter to the provider definition, follow these steps:
-
-1. Select **Parameters**. 
-1. Select **+ New IOM Provider Definition Parameter**.
-1. For **Display Name**, enter "IOMLAbOutboundFulfillmentEmail".
-1. For **Data Type**, enter "Text".
-1. For **Provider Definition**, enter "IOMLabFulfillmentProvider".
-1. For **Key**, enter "IOMLabOutboundFulfillmentEmail".
-1. For **Logical Name**, enter "msdyn_IOMLabOutboundFulfillmentEmail".
-1. For **Is Required**, enter "Yes".
-1. Select **Save and close**.
-
-## Add provider definition logic definition to IOMLabProviders solution (RequestBin)
-
-To add a provider definition logic definition to the RequestBin IOMLabProviders solution, follow these steps:
-
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing \> IOM Provider Definition Logic Definition**.
-1. Select **IOM Lab Send To Fulfillment (RequestBin)** and then select **Add** to add it to the solution. 
-
-## Add provider definition connection reference to IOMLabProviders solution
-
-To add a provider definition connection reference to the IOMLabProviders solution, follow these steps:
-
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing \> IOM Provider Definition Connection Reference**.
-1. Select **RequestBin** and then select **Add** to add it to the solution.
-
-## Add provider definition parameter to IOMLabProviders solution
-
-To add a provider definition parameter to the IOMLabProviders solution, follow these steps:
-
-1. Go to the [Power App Maker portal](https://make.powerapps.com) and navigate to the newly-created solution **IOMLabProviders**.
-1. Select **Add existing \> IOM Provider Definition Parameter**.
-1. Select **IOMLabOutboundFulfillmentEmail** and then select **Add** to add it to the solution.
-
-Next quick start lab step: [Export  solution](lab-export-provider-solution.md)
+    1. Copy the text block in the **Client Data** field and paste it into Notepad.
+    1. In the text block, find "<placeholder@placeholder.com>" and replace it with "{{IOMLabOutboundFulfillmentEmail}}".

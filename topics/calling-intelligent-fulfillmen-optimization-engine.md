@@ -1,9 +1,9 @@
 ---
 title: Call the Intelligent Order Management Fulfillment optimization engine (DOM) via API
-description: This article explains how to call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) via Application programming interface (API).
+description: Learn how to call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) via Application programming interface (API).
 ms.author: anvenkat
 author: anush6121
-ms.date: 03/21/2025
+ms.date: 01/27/2026
 ms.custom: 
   - bap-template
 ms.topic: how-to
@@ -13,18 +13,18 @@ ms.topic: how-to
 
 [!include [banner](includes/banner.md)]
 
-As part of the April 2023 release, you can call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) from outside the sales order orchestration via Application programming interface (API). Any platform, such as an e-commerce, marketplace, or enterprise resource planning (ERP) platform, can make an API request to Intelligent Order Management to get the optimal fulfillment source, together with shipping options such as carrier shipping rates and estimated delivery date information. If you want to get just a fulfillment plan, the API request should contain, at a minimum, the shipping address, products, and quantity. If you want to get the carrier ship rates and estimated delivery dates in addition to a fulfillment plan, you must pass the carrier information. Currently, the API has been built to call the FedEx rate API to get the shipping rates. However, the payload response is generic for any carrier.
+Starting with the April 2023 release, you can call the Microsoft Dynamics 365 Intelligent Order Management Fulfillment optimization engine (DOM) from outside the sales order orchestration via Application programming interface (API). Any platform, such as an e-commerce, marketplace, or enterprise resource planning (ERP) platform, can make an API request to Intelligent Order Management to get the optimal fulfillment source, together with shipping options such as carrier shipping rates and estimated delivery date information. To get just a fulfillment plan, include at least the shipping address, products, and quantity in the API request. To get the carrier ship rates and estimated delivery dates in addition to a fulfillment plan, pass the carrier information. Currently, the API is built to call the FedEx rate API to get the shipping rates. However, the payload response is generic for any carrier.
 
 ## Prerequisites
 
-The following prerequisites must be met before you use the Intelligent Order Management Fulfillment optimization engine (DOM) via API:
+Before you use the Intelligent Order Management Fulfillment optimization engine (DOM) via API, make sure you meet the following prerequisites:
 
 - Install the latest version of Intelligent Order Management (version 1.0.0.6035).
 - Set up the fulfillment settings, such as strategies, source lists, and constraints. For more information, see [Fulfillment and Returns Optimization provider overview](fulfillment-returns-optimization.md).
 - Set up an inventory visibility provider. For more information, see [Inventory visibility](inventory-visibility.md).
 - Ensure that the warehouse ID is mapped to each fulfillment source in the fulfillment source settings.
 
-If you're expecting results that have the shipping options from a FedEx carrier, you must ensure the following setup is completed.
+If you expect results that include the shipping options from a FedEx carrier, make sure you complete the following setup.
 
 1. Set up a FedEx provider. For more information, see [Set up FedEx provider](set-up-fedex-provider.md).
 1. Set up a holiday calendar at **Settings** \> **Fulfillment settings** \> **Holiday calendar**. 
@@ -35,11 +35,11 @@ If you're expecting results that have the shipping options from a FedEx carrier,
 
 ## Functionality description
 
-When an API request is made, the Intelligent Order Management Fulfillment optimization engine (DOM) is invoked to return the best fulfillment source for each line, based on the preconfigured fulfillment optimization strategies and constraints. If the request contains a carrier such as FedEx, the carrier pickup schedule is looked at in conjunction with the working calendar of the fulfillment source, and the next available pickup time is sent to the carrier APIs. The response to the DOM API combines both a fulfillment plan and the carrier output, and presents them back to the calling application.
+When you make an API request, the Intelligent Order Management Fulfillment optimization engine (DOM) returns the best fulfillment source for each line, based on the preconfigured fulfillment optimization strategies and constraints. If the request contains a carrier such as FedEx, the carrier pickup schedule is checked along with the working calendar of the fulfillment source, and the next available pickup time is sent to the carrier APIs. The response to the DOM API combines both a fulfillment plan and the carrier output, and presents them back to the calling application.
 
 ## Sample API request
 
-Create a Power Automate flow–to–Dataverse unbound action to test in your environment.
+Create a Power Automate flow-to-Dataverse unbound action to test in your environment.
 
 ```json
 {{Dataverse URL}}/api/data/v9.2/msdyn_IomDomAPI  
@@ -126,9 +126,9 @@ This section describes the data type and the header fields in the API request.
 |------|-----------|-------------|
 | fnoCompanyId | string, optional | The identifier for the company in the system. This field is required if Dataverse is linked to finance and operations apps. |
 | salesOrderOrigin | string, optional | The identifier for the order origin in the system. This field is required if inventory must consume from allocated, based on the order origin. |
-| orderId | guid string, required | A user-defined order number that's used to identify an order or cart ID in the originating system. |
-| strategyId | guid string, optional | The identifier for the fulfillment strategy in Intelligent Order Management. If this identifier isn't provided, the process uses the default strategy that's defined in the system. |
-| carrier | string, optional | This field is required to retrieve shipping rates and predictive delivery estimates. The supported value is **FedEx**. |
+| orderId | guid string, required | A user-defined order number that identifies an order or cart ID in the originating system. |
+| strategyId | guid string, optional | The identifier for the fulfillment strategy in Intelligent Order Management. If you don't provide this identifier, the process uses the default strategy that's defined in the system. |
+| carrier | string, optional | You need this field to retrieve shipping rates and predictive delivery estimates. The supported value is **FedEx**. |
 | orderDestinationAddress | Address, required | The recipient's shipping address. Use the Address model. |
 | customerInformation | CustomerInformation, optional | Customer information for the order. Use the Customer Information model. |
 | lineItems | OrderDetail, required | An array of order detail objects. Use an array of the Order Detail model. |
@@ -151,7 +151,7 @@ This section describes the fields in the address object in the API request.
 | city | string, required | The city. |
 | stateOrProvince | string, required | The state or province. The two-letter ISO Origin State code is required. |
 | postalCode | string, required | The postal code. |
-| country | string, required | The country or region code. The two-letter ISO Origin Country code is required. |
+| country/region | string, required | The country/region code. The two-letter ISO Origin country/region code is required. |
 | phoneNumber | string, optional | The telephone number. |
 
 #### Order detail
@@ -161,8 +161,8 @@ This section describes the fields in the order detail section of the API request
 | Name | Data type | Description |
 |------|-----------|-------------|
 | lineId | guid string, required | The identifier for the order line in the originating system. |
-| itemId | string, required | The name of the product that's associated with this line item. The value can't be null. |
-| quantity | number, required | The quantity of products that was ordered. | 
+| itemId | string, required | The name of the product associated with this line item. The value can't be null. |
+| quantity | number, required | The quantity of products that were ordered. | 
 | freeShipping | string, optional, values: Yes, No | A value of *Yes* means that product weight is excluded when a rate request is made. |
 | dimensions | ProductDimensions, optional | Product dimensions are characteristics that identify a product variant. They use the Product Dimensions model. This field is required if Dataverse is linked to finance and operations apps. Select the product dimensions to identify the product variant. |
 
